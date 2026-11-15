@@ -48,14 +48,16 @@ function compute(card,amount,cat,date,annualSpend,fxFee,merchant,policies){
  }
  const gross=(base+bonus)*validPoint;
  const feeInput=settings.fee[card.id];
- const annualFee=feeInput!==undefined&&feeInput!==""?Number(feeInput):card.fee;
+ const defaultFee=card.feePolicy?.assumedAnnualFee ?? card.fee;
+ const annualFee=feeInput!==undefined&&feeInput!==""?Number(feeInput):defaultFee;
  const feeKnown=annualFee!==null&&annualFee!==undefined&&Number.isFinite(Number(annualFee))&&Number(annualFee)>=0;
  // Per-spend proportional allocation. Avoid dividing by zero.
  const feeCost=feeKnown&&annualSpend>0?Number(annualFee)*amount/annualSpend:0;
  const fxCost=overseas?amount*fxFee/100:0;
  const net=gross-feeCost-fxCost;
  const warnings=[];
- if(!feeKnown)warnings.push("年費未核實，暫未扣除；可在卡片設定填入"); else if(Number(annualFee)>0) warnings.push("依牌告年費攤提；若已達免年費條件，請將個人實際年費設為0");
+ if(!feeKnown)warnings.push("年費未核實，暫未扣除；可在卡片設定填入"); else if(Number(annualFee)>0) warnings.push("按預估實付年費攤提，可於卡片設定調整");
+ else if(card.feePolicy?.method==="e-statement" && (feeInput===undefined || feeInput==="")) warnings.push("年費預設0元：假設已申請並維持電子帳單免年費資格");
  if(cat==="convenience")warnings.push("僅適用所選超商的合格一般商品；代收、儲值等交易另有排除");
  if(["linepay","jkopay","applepay"].includes(cat))warnings.push("實際商戶認列與第三方支付排除依銀行公告");
  if(cat==="overseas")warnings.push("跨境手續費為估算值，匯率與交易認列可能不同");
@@ -88,11 +90,12 @@ function renderResults(){
 function renderCard(card){
  const owned=settings.owned.includes(card.id);
  const amount=card.fee==null?"尚待核實":money(card.fee);
- const feeOverride=settings.fee[card.id]??"";
+ const feeOverride=settings.fee[card.id]??card.feePolicy?.assumedAnnualFee??"";
  const pointValue=settings.pointValue[card.id]??card.pointValue??1;
+ const defaultFeeNote=card.feePolicy?.assumedAnnualFee===0?'電子帳單免年費預設 NT$0；請確認已符合條件':'年費無確認減免條件，請核對官方';
  const rules=(card.rules||[]).filter(r=>r.cap!=null);
  const status=card.verified?"已查核部分回饋":"回饋待查核";
- return '<article class="card"><span class="bank">'+escapeHtml(card.bank)+' · '+status+'</span><h3>'+escapeHtml(card.name)+'</h3><p>'+escapeHtml(card.base.note)+'</p><div class="facts"><div>牌告年費<strong>'+amount+'</strong></div><div>最低年收入<strong>'+(card.income==null?"尚待核實":money(card.income))+'</strong></div><div>免年費方式<strong>'+escapeHtml(card.waiver)+'</strong></div><div>點數形式<strong>'+escapeHtml(card.reward)+'</strong></div></div><div class="card-footer"><label class="check"><input type="checkbox" data-owned="'+escapeHtml(card.id)+'" '+(owned?"checked":"")+'> 我持有這張卡</label><a href="'+escapeHtml(card.source)+'" target="_blank" rel="noopener noreferrer">查看官方條款 ↗</a><a href="'+escapeHtml(card.application)+'" target="_blank" rel="noopener noreferrer">申辦資訊 ↗</a></div><details class="bonus-box"><summary>個人設定：年費、點數價值、已用加碼額度</summary><label>個人預估實付年費（元；免年費填0）<input type="number" min="0" placeholder="未確認" data-fee="'+escapeHtml(card.id)+'" value="'+escapeHtml(feeOverride)+'"></label><label>每 1 點換算新台幣<input type="number" min="0" step=".01" data-point="'+escapeHtml(card.id)+'" value="'+escapeHtml(pointValue)+'"></label>'+rules.map(rule=>'<label>'+escapeHtml(rule.label)+' 已用點數（'+escapeHtml(rule.period==="statement"?"帳單週期":"每月")+'，上限 '+fmt(rule.cap)+'）<input type="number" min="0" step="1" data-used="'+escapeHtml(capGroup(card,rule))+'" value="'+escapeHtml(settings.used[capGroup(card,rule)]??0)+'"></label>').join('')+'<p>若多項回饋共用上限，請以實際官方條款核對。請手動在新計費週期歸零。</p></details><p class="subtle">查核日：'+escapeHtml(card.verified||"待查核")+' · '+escapeHtml(card.gift||"未登錄首刷禮")+'</p></article>';
+ return '<article class="card"><span class="bank">'+escapeHtml(card.bank)+' · '+status+'</span><h3>'+escapeHtml(card.name)+'</h3><p>'+escapeHtml(card.base.note)+'</p><div class="facts"><div>牌告年費<strong>'+amount+'</strong></div><div>最低年收入<strong>'+(card.income==null?"尚待核實":money(card.income))+'</strong></div><div>免年費方式<strong>'+escapeHtml(card.waiver)+'</strong></div><div>點數形式<strong>'+escapeHtml(card.reward)+'</strong></div></div><div class="card-footer"><label class="check"><input type="checkbox" data-owned="'+escapeHtml(card.id)+'" '+(owned?"checked":"")+'> 我持有這張卡</label><a href="'+escapeHtml(card.source)+'" target="_blank" rel="noopener noreferrer">查看官方條款 ↗</a><a href="'+escapeHtml(card.application)+'" target="_blank" rel="noopener noreferrer">申辦資訊 ↗</a></div><details class="bonus-box"><summary>個人設定：年費、點數價值、已用加碼額度</summary><label>預估實付年費（元；電子帳單免年費預設0）<input type="number" min="0" placeholder="未確認" data-fee="'+escapeHtml(card.id)+'" value="'+escapeHtml(feeOverride)+'"></label><label>每 1 點換算新台幣<input type="number" min="0" step=".01" data-point="'+escapeHtml(card.id)+'" value="'+escapeHtml(pointValue)+'"></label>'+rules.map(rule=>'<label>'+escapeHtml(rule.label)+' 已用點數（'+escapeHtml(rule.period==="statement"?"帳單週期":"每月")+'，上限 '+fmt(rule.cap)+'）<input type="number" min="0" step="1" data-used="'+escapeHtml(capGroup(card,rule))+'" value="'+escapeHtml(settings.used[capGroup(card,rule)]??0)+'"></label>').join('')+'<p>若多項回饋共用上限，請以實際官方條款核對。請手動在新計費週期歸零。</p></details><p class="subtle">查核日：'+escapeHtml(card.verified||"待查核")+' · '+escapeHtml(card.gift||"未登錄首刷禮")+'</p></article>';
 }
 function renderCards(){
  const q=$("#search").value.trim().toLowerCase(),bank=$("#bank-filter").value,ownedOnly=$("#owned-filter").checked;

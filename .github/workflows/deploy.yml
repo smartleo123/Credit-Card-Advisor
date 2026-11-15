@@ -21,6 +21,8 @@ jobs:
       - name: Validate site assets and data
         run: |
           python -m json.tool data/cards.json > /dev/null
+          python -m unittest discover -s tests -v
+          node --check app.js
           test -f index.html && test -f app.js && test -f style.css
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3

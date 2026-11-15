@@ -1,0 +1,7775 @@
+{
+  "license": "CC BY 4.0（https://creativecommons.org/licenses/by/4.0/deed.zh-hant）",
+  "attribution": "台灣支付優惠站 https://pay.elggum.com",
+  "disclaimer_zh": "本資料整理自銀行與支付業者公開資訊，可能有誤或已變更，實際回饋以各機構公告為準。謹慎理財 信用至上。",
+  "data_date": "2026-11-14",
+  "slug": "dining",
+  "title_zh": "餐廳",
+  "amount_twd": 1000,
+  "monthly_twd": [
+    1000,
+    3000,
+    10000
+  ],
+  "note_zh": "以本站收錄的 97 家同類商店取每張卡最好的一家計算；不同商店可能不一樣，點進卡片看細節。",
+  "default_sort": "once",
+  "ranking_sort_zh": "每張卡有三個數字：basic＝不用做任何事（基本條件：最低等級、不登錄、不做任務、不設薪轉、不算月消費門檻）；once＝做一次就好（同 basic，但活動登錄、只做一次的任務算做完；限量、月消費門檻、每月任務仍不算，once.requirements 列出要做的事）；best＝最佳情況（最高等級、登錄與條件全部達成，best.requirements 列出需要的條件）。陣列預設依 once.net_twd_per_1000 由高到低排序（沒有 once 時用 basic）；有 monthly 的排行改依 monthly.once 的中間檔位（monthly_twd[1]）月回饋排序，差距小於該檔金額 0.05%（以該組第一名為準）標為並列（tie＝true），並列只是標籤、不改次序（只有數字完全相等時才依序再比 basic、best、卡名；expired＝true 的已過期項目一律排在最後）。best 有 threshold_twd 時，表示這個最佳情況要當月或當期帳單累積刷滿 threshold_twd 元才拿得到：best.net_rate_bp 是「刷到門檻那麼多、總共拿多少」的回饋率（這一筆照最佳情況算，為了達到門檻另外要刷的金額照 basic 的回饋率算，加起來除以 threshold_twd），txn_rate_bp 是只看這一筆的回饋率，net_twd_per_1000 仍是這一筆的回饋金額。monthly.best 在小於 threshold_twd 的檔位，光靠這個通路刷不到門檻，數字改用 monthly.once 的同一檔位（沒有 once 用 basic）；大於等於門檻的檔位照原本算。better_at 是同一類別裡回饋比較高的其他商店（例：超商排行用 7-ELEVEN、全家裡比較低的那家排名，萊爾富比較高就寫在這裡），只是附註，不影響名次。only_at 出現時，表示該欄（scenario）的 net_rate_bp 只有 merchant_names 這幾家商店拿得到（最多列 3 家，count＝拿得到的家數，total＝這個類別收錄的商店數），其他商店拿不到這個數字；只有依類別排的排行會有這個欄位，類別內每家商店都拿得到時不會出現。reviewed＝true 是照官網原文二次核對過（90 天內、來源沒有出入）的卡，排在前面、有名次；reviewed＝false 是還沒二次核對的卡，排在後面、沒有名次（各自依上面的規則排序；免年費、活動、期間這類清單不分前後）；有卡回饋大於 0 時，回饋是 0 的卡不列入（免年費清單、以及有 better_at 的卡除外）。",
+  "entries": [
+    {
+      "card_id": "cathay-cube",
+      "card_name": "國泰世華 CUBE 卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": "autumn",
+        "tier": "level1",
+        "net_twd_per_1000": 80,
+        "net_rate_bp": 800,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "今天切到「秋日遊」方案",
+          "前提：消費當天（以授權日為準）要先在 CUBE App 切到對應方案；每位正卡人每天只能切一次，附卡跟著正卡的設定。"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": "autumn",
+        "tier": "level1",
+        "net_twd_per_1000": 80,
+        "net_rate_bp": 800,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "今天切到「秋日遊」方案",
+          "前提：消費當天（以授權日為準）要先在 CUBE App 切到對應方案；每位正卡人每天只能切一次，附卡跟著正卡的設定。"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": "autumn",
+        "tier": "level1",
+        "net_twd_per_1000": 80,
+        "net_rate_bp": 800,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "今天切到「秋日遊」方案",
+          "前提：消費當天（以授權日為準）要先在 CUBE App 切到對應方案；每位正卡人每天只能切一次，附卡跟著正卡的設定。"
+        ],
+        "needs_registration": false
+      },
+      "verified_ai": "2026-11-13",
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          80,
+          240,
+          800
+        ],
+        "best": [
+          80,
+          240,
+          800
+        ],
+        "once": [
+          80,
+          240,
+          800
+        ]
+      },
+      "only_at": {
+        "merchant_names": [
+          "橘色涮涮屋"
+        ],
+        "count": 1,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 800
+      },
+      "reviewed": true
+    },
+    {
+      "card_id": "sunny-jcb-precious",
+      "card_name": "陽信 JCB 晶緻卡（原哆啦A夢晶緻卡）",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 50,
+        "net_rate_bp": 500,
+        "cap_twd_max": 300,
+        "max_spend_twd": 7500,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 50,
+        "net_rate_bp": 500,
+        "cap_twd_max": 300,
+        "max_spend_twd": 7500,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 50,
+        "net_rate_bp": 500,
+        "cap_twd_max": 300,
+        "max_spend_twd": 7500,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "verified_ai": "2026-11-13",
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          50,
+          150,
+          400
+        ],
+        "best": [
+          50,
+          150,
+          400
+        ],
+        "once": [
+          50,
+          150,
+          400
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "Uber Eats",
+          "foodpanda",
+          "麥當勞"
+        ],
+        "count": 48,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 500
+      },
+      "reviewed": true
+    },
+    {
+      "card_id": "sunny-penguin-jcb",
+      "card_name": "陽信彭大家族聯名晶緻卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 50,
+        "net_rate_bp": 500,
+        "cap_twd_max": 300,
+        "max_spend_twd": 7500,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 50,
+        "net_rate_bp": 500,
+        "cap_twd_max": 300,
+        "max_spend_twd": 7500,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 50,
+        "net_rate_bp": 500,
+        "cap_twd_max": 300,
+        "max_spend_twd": 7500,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "verified_ai": "2026-11-13",
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          50,
+          150,
+          400
+        ],
+        "best": [
+          50,
+          150,
+          400
+        ],
+        "once": [
+          50,
+          150,
+          400
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "Uber Eats",
+          "foodpanda",
+          "麥當勞"
+        ],
+        "count": 48,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 500
+      },
+      "reviewed": true
+    },
+    {
+      "card_id": "sino-green",
+      "card_name": "永豐 現金回饋 Green 卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 50,
+        "net_rate_bp": 500,
+        "cap_twd_max": 300,
+        "max_spend_twd": 7500,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "需完成「電子帳單＋永豐或京城自扣」：帳單設成電子或行動帳單，並在帳單結帳日前設定正卡人本人的永豐或京城銀行新臺幣帳戶自動扣繳永豐信用卡帳款且扣款成功。"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 50,
+        "net_rate_bp": 500,
+        "cap_twd_max": 300,
+        "max_spend_twd": 7500,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "需完成「電子帳單＋永豐或京城自扣」：帳單設成電子或行動帳單，並在帳單結帳日前設定正卡人本人的永豐或京城銀行新臺幣帳戶自動扣繳永豐信用卡帳款且扣款成功。"
+        ],
+        "needs_registration": false
+      },
+      "verified_ai": "2026-11-13",
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          10,
+          30,
+          100
+        ],
+        "best": [
+          50,
+          150,
+          400
+        ],
+        "once": [
+          50,
+          150,
+          400
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "星巴克",
+          "路易莎咖啡",
+          "屋馬燒肉"
+        ],
+        "count": 19,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 500
+      },
+      "reviewed": true
+    },
+    {
+      "card_id": "hsbc-live-plus",
+      "card_name": "滙豐 Live+ 現金回饋卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 38.8,
+        "net_rate_bp": 388,
+        "cap_twd_max": 888,
+        "max_spend_twd": 29600,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 48.8,
+        "net_rate_bp": 488,
+        "cap_twd_max": 1088,
+        "max_spend_twd": 29600,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "需完成「滙豐帳戶自動扣繳」：設定滙豐銀行帳戶自動扣繳卡費。"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 48.8,
+        "net_rate_bp": 488,
+        "cap_twd_max": 1088,
+        "max_spend_twd": 29600,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "需完成「滙豐帳戶自動扣繳」：設定滙豐銀行帳戶自動扣繳卡費。"
+        ],
+        "needs_registration": false
+      },
+      "verified_ai": "2026-11-13",
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          38.8,
+          116.4,
+          388
+        ],
+        "best": [
+          48.8,
+          146.4,
+          488
+        ],
+        "once": [
+          48.8,
+          146.4,
+          488
+        ]
+      },
+      "only_at": {
+        "merchant_names": [
+          "麥當勞",
+          "星巴克",
+          "路易莎咖啡"
+        ],
+        "count": 94,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 488
+      },
+      "reviewed": true
+    },
+    {
+      "card_id": "sino-cashcard-jcb",
+      "card_name": "永豐 現金回饋 JCB 卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "pxpay_plus",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 40,
+        "net_rate_bp": 400,
+        "cap_twd_max": 300,
+        "max_spend_twd": 10000,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "需完成「電子／行動帳單＋永豐或京城帳戶自動扣繳」：帳單寄送方式設成電子或行動帳單，並在帳單結帳日前設定正卡人本人的永豐或京城銀行新臺幣帳戶自動扣繳永豐信用卡帳款且扣款成功。"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "pxpay_plus",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 40,
+        "net_rate_bp": 400,
+        "cap_twd_max": 300,
+        "max_spend_twd": 10000,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "需完成「電子／行動帳單＋永豐或京城帳戶自動扣繳」：帳單寄送方式設成電子或行動帳單，並在帳單結帳日前設定正卡人本人的永豐或京城銀行新臺幣帳戶自動扣繳永豐信用卡帳款且扣款成功。"
+        ],
+        "needs_registration": false
+      },
+      "verified_ai": "2026-11-13",
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          10,
+          30,
+          100
+        ],
+        "best": [
+          40,
+          120,
+          400
+        ],
+        "once": [
+          40,
+          120,
+          400
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "一般餐廳（便當店、小吃）"
+        ],
+        "count": 1,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 400
+      },
+      "reviewed": true
+    },
+    {
+      "card_id": "sinopac-mitsui-outlet",
+      "card_name": "永豐 MITSUI OUTLET PARK 聯名卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 3,
+        "net_rate_bp": 30,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 73,
+        "net_rate_bp": 730,
+        "cap_twd_max": 100,
+        "max_spend_twd": 1428,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "需完成「電子／行動帳單＋永豐或京城帳戶自扣」：活動期間同時設定電子或行動帳單，以及用永豐或京城銀行帳戶自動扣繳永豐信用卡帳款（回饋前要完成並扣款成功）。",
+          "登錄：館外實體餐飲 7% 刷卡金（需登錄＋任務）"
+        ],
+        "needs_registration": true
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 73,
+        "net_rate_bp": 730,
+        "cap_twd_max": 100,
+        "max_spend_twd": 1428,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "需完成「電子／行動帳單＋永豐或京城帳戶自扣」：活動期間同時設定電子或行動帳單，以及用永豐或京城銀行帳戶自動扣繳永豐信用卡帳款（回饋前要完成並扣款成功）。",
+          "登錄：館外實體餐飲 7% 刷卡金（需登錄＋任務）"
+        ],
+        "needs_registration": true
+      },
+      "verified_ai": "2026-11-13",
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          3,
+          9,
+          30
+        ],
+        "best": [
+          73,
+          109,
+          130
+        ],
+        "once": [
+          73,
+          109,
+          130
+        ]
+      },
+      "only_at": {
+        "merchant_names": [
+          "星巴克",
+          "路易莎咖啡",
+          "得正"
+        ],
+        "count": 87,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 730
+      },
+      "reviewed": true
+    },
+    {
+      "card_id": "taishin-jkopay",
+      "card_name": "台新街口聯名卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 35,
+        "net_rate_bp": 350,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": true,
+        "cap_points_max": 10000,
+        "requirements": [
+          "前提：回饋為街口幣：交易當下和回饋當下都要在街口支付 App 綁定本卡（身分證字號一致）才有，街口幣只能在街口支付通路折抵。"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 35,
+        "net_rate_bp": 350,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": true,
+        "cap_points_max": 10000,
+        "requirements": [
+          "前提：回饋為街口幣：交易當下和回饋當下都要在街口支付 App 綁定本卡（身分證字號一致）才有，街口幣只能在街口支付通路折抵。"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 35,
+        "net_rate_bp": 350,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": true,
+        "cap_points_max": 10000,
+        "requirements": [
+          "前提：回饋為街口幣：交易當下和回饋當下都要在街口支付 App 綁定本卡（身分證字號一致）才有，街口幣只能在街口支付通路折抵。"
+        ],
+        "needs_registration": false
+      },
+      "verified_ai": "2026-11-13",
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          35,
+          105,
+          350
+        ],
+        "best": [
+          35,
+          105,
+          350
+        ],
+        "once": [
+          35,
+          105,
+          350
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "Uber Eats",
+          "foodpanda"
+        ],
+        "count": 2,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 350
+      },
+      "reviewed": true
+    },
+    {
+      "card_id": "esun-unicard",
+      "card_name": "玉山 Unicard",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": "any8",
+        "tier": null,
+        "net_twd_per_1000": 25,
+        "net_rate_bp": 250,
+        "cap_twd_max": 1000,
+        "max_spend_twd": 40000,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "今天切到「任意選」方案",
+          "前提：百大指定消費加碼分三種方案，在玉山 Wallet 切換；整個月的加碼看「當月最後一天」用的是哪個方案。"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": "any8",
+        "tier": null,
+        "net_twd_per_1000": 35,
+        "net_rate_bp": 350,
+        "cap_twd_max": 1000,
+        "max_spend_twd": 40000,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "需完成「帳單 e 化 + 玉山帳戶自動扣繳」：同時申請電子帳單並用玉山臺幣帳戶自動扣繳卡費，一般消費才從 0.3% 提高到 1%。",
+          "今天切到「任意選」方案",
+          "前提：百大指定消費加碼分三種方案，在玉山 Wallet 切換；整個月的加碼看「當月最後一天」用的是哪個方案。"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": "up",
+        "tier": null,
+        "net_twd_per_1000": 45,
+        "net_rate_bp": 450,
+        "cap_twd_max": 5000,
+        "max_spend_twd": 142857,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "需完成「帳單 e 化 + 玉山帳戶自動扣繳」：同時申請電子帳單並用玉山臺幣帳戶自動扣繳卡費，一般消費才從 0.3% 提高到 1%。",
+          "需完成「UP選 訂閱條件」：上個月 Unicard 刷卡滿 3 萬元且上個月玉山平均資產滿 30 萬元可免費升級；否則每月用 149 點 e point 訂閱。",
+          "今天切到「UP選」方案",
+          "前提：百大指定消費加碼分三種方案，在玉山 Wallet 切換；整個月的加碼看「當月最後一天」用的是哪個方案。"
+        ],
+        "needs_registration": false
+      },
+      "verified_ai": "2026-11-13",
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          25,
+          75,
+          250
+        ],
+        "best": [
+          45,
+          135,
+          450
+        ],
+        "once": [
+          35,
+          105,
+          350
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "Uber Eats",
+          "foodpanda",
+          "麥當勞"
+        ],
+        "count": 55,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 450
+      },
+      "reviewed": true
+    },
+    {
+      "card_id": "ctbc-uniopen",
+      "card_name": "中信 uniopen 聯名卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 30,
+        "net_rate_bp": 300,
+        "cap_twd_max": 500,
+        "max_spend_twd": 25000,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：須在中信 App 連結 uniopen 會員才能累積 OPENPOINT。"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 30,
+        "net_rate_bp": 300,
+        "cap_twd_max": 500,
+        "max_spend_twd": 25000,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：須在中信 App 連結 uniopen 會員才能累積 OPENPOINT。"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "icash_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 70,
+        "net_rate_bp": 700,
+        "cap_twd_max": 650,
+        "max_spend_twd": 25000,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "單筆滿 199 元才有加碼",
+          "總量有限：全體 icash Pay 會員每月總回饋上限 300 萬點，額滿即停，以 icash 官網公告為準",
+          "前提：須在中信 App 連結 uniopen 會員才能累積 OPENPOINT。"
+        ],
+        "needs_registration": false
+      },
+      "verified_ai": "2026-11-13",
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          30,
+          90,
+          300
+        ],
+        "best": [
+          70,
+          210,
+          450
+        ],
+        "once": [
+          30,
+          90,
+          300
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "星巴克",
+          "Mister Donut"
+        ],
+        "count": 2,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 700
+      },
+      "reviewed": true
+    },
+    {
+      "card_id": "ctbc-allme",
+      "card_name": "中信 ALL ME 卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "pi_wallet",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 30,
+        "net_rate_bp": 300,
+        "cap_twd_max": 300,
+        "max_spend_twd": 15000,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "pi_wallet",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 30,
+        "net_rate_bp": 300,
+        "cap_twd_max": 300,
+        "max_spend_twd": 15000,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "pi_wallet",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 30,
+        "net_rate_bp": 300,
+        "cap_twd_max": 300,
+        "max_spend_twd": 15000,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "verified_ai": "2026-11-13",
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          30,
+          90,
+          300
+        ],
+        "best": [
+          30,
+          90,
+          300
+        ],
+        "once": [
+          30,
+          90,
+          300
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "屋馬燒肉",
+          "漢堡王",
+          "85 度 C"
+        ],
+        "count": 8,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 300
+      },
+      "reviewed": true
+    },
+    {
+      "card_id": "rakuten-panda-j",
+      "card_name": "樂天 Panda J 卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "line_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 30,
+        "net_rate_bp": 300,
+        "cap_twd_max": 250,
+        "max_spend_twd": 10000,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "line_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 30,
+        "net_rate_bp": 300,
+        "cap_twd_max": 250,
+        "max_spend_twd": 10000,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "line_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 30,
+        "net_rate_bp": 300,
+        "cap_twd_max": 250,
+        "max_spend_twd": 10000,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "verified_ai": "2026-11-13",
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          30,
+          90,
+          300
+        ],
+        "best": [
+          30,
+          90,
+          300
+        ],
+        "once": [
+          30,
+          90,
+          300
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "Uber Eats",
+          "foodpanda",
+          "麥當勞"
+        ],
+        "count": 42,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 300
+      },
+      "reviewed": true
+    },
+    {
+      "card_id": "firstbank-ileo",
+      "card_name": "第一銀行 iLEO 信用卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 20,
+        "net_rate_bp": 200,
+        "cap_twd_max": 500,
+        "max_spend_twd": 33333,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "line_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 30,
+        "net_rate_bp": 300,
+        "cap_twd_max": 700,
+        "max_spend_twd": 33333,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "需完成「本行帳戶扣繳卡費＋電子帳單」：申辦第一銀行帳戶（含 iLEO 數位帳戶）自動扣繳卡費並只收電子帳單（紙本併行不算），指定支付滿千加碼 1% 與海外實體加碼 1% 才算。",
+          "單筆滿 1,000 元才有加碼"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "line_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 75,
+        "net_rate_bp": 310,
+        "cap_twd_max": 900,
+        "max_spend_twd": 33333,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "需完成「本行帳戶扣繳卡費＋電子帳單」：申辦第一銀行帳戶（含 iLEO 數位帳戶）自動扣繳卡費並只收電子帳單（紙本併行不算），指定支付滿千加碼 1% 與海外實體加碼 1% 才算。",
+          "當月累積消費滿 5,000 元才有加碼",
+          "單筆滿 1,000 元才有加碼",
+          "總量有限：每月限量 1,200 份，每月 22 日上午 10 點起登錄、額滿即關閉",
+          "每月登錄：外送 5%（當月消費滿 5,000 元，每月登錄）"
+        ],
+        "needs_registration": true,
+        "threshold_twd": 5000,
+        "txn_rate_bp": 750
+      },
+      "verified_ai": "2026-11-13",
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          20,
+          60,
+          200
+        ],
+        "best": [
+          30,
+          90,
+          450
+        ],
+        "once": [
+          30,
+          90,
+          300
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "Uber Eats",
+          "foodpanda"
+        ],
+        "count": 2,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 310
+      },
+      "reviewed": true
+    },
+    {
+      "card_id": "mega-bt21",
+      "card_name": "兆豐 宇宙明星BT21信用卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 3,
+        "net_rate_bp": 30,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "line_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 30,
+        "net_rate_bp": 300,
+        "cap_twd_max": 200,
+        "max_spend_twd": 10000,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "需完成「電子帳單」：使用電子帳單（不含行動帳單）並取消紙本帳單。",
+          "需完成「電子帳單＋帳戶自動扣繳」：使用電子帳單（不含行動帳單）並取消紙本，且上一期帳單已用本行或他行帳戶自動扣繳成功（至少扣足最低應繳金額）；完成後次期起才有指定支付加碼。"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "tw_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 45,
+        "net_rate_bp": 450,
+        "cap_twd_max": 300,
+        "max_spend_twd": 10000,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "需完成「電子帳單」：使用電子帳單（不含行動帳單）並取消紙本帳單。",
+          "需完成「電子帳單＋帳戶自動扣繳」：使用電子帳單（不含行動帳單）並取消紙本，且上一期帳單已用本行或他行帳戶自動扣繳成功（至少扣足最低應繳金額）；完成後次期起才有指定支付加碼。",
+          "限掃碼付款（感應支付不算）",
+          "每月登錄：兆豐信用卡綁台灣Pay 掃碼消費每月登錄享 1.5% 刷卡金"
+        ],
+        "needs_registration": true
+      },
+      "verified_ai": "2026-11-13",
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          3,
+          9,
+          30
+        ],
+        "best": [
+          45,
+          135,
+          400
+        ],
+        "once": [
+          30,
+          90,
+          300
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "一般餐廳（便當店、小吃）"
+        ],
+        "count": 1,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 450
+      },
+      "reviewed": true
+    },
+    {
+      "card_id": "esun-ubear",
+      "card_name": "玉山 U Bear 信用卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 0,
+        "net_rate_bp": 0,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 30,
+        "net_rate_bp": 300,
+        "cap_twd_max": 150,
+        "max_spend_twd": 7500,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "需完成「帳單 e 化＋自動扣繳」：綁定帳單 e 化並申請玉山臺幣帳戶自動扣繳卡費，各給 0.5%。",
+          "需完成「帳單 e 化」：綁定電子或行動帳單。"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 30,
+        "net_rate_bp": 300,
+        "cap_twd_max": 150,
+        "max_spend_twd": 7500,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "需完成「帳單 e 化＋自動扣繳」：綁定帳單 e 化並申請玉山臺幣帳戶自動扣繳卡費，各給 0.5%。",
+          "需完成「帳單 e 化」：綁定電子或行動帳單。"
+        ],
+        "needs_registration": false
+      },
+      "verified_ai": "2026-11-01",
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "best": [
+          30,
+          90,
+          250
+        ],
+        "once": [
+          30,
+          90,
+          250
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "Uber Eats",
+          "foodpanda",
+          "麥當勞"
+        ],
+        "count": 43,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 300
+      },
+      "reviewed": true
+    },
+    {
+      "card_id": "esun-ecard",
+      "card_name": "玉山數位e卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 0,
+        "net_rate_bp": 0,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "apple_pay",
+        "plan": "pet",
+        "tier": null,
+        "net_twd_per_1000": 30,
+        "net_rate_bp": 300,
+        "cap_twd_max": 250,
+        "max_spend_twd": 10000,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "需完成「申請帳單e化＋玉山臺幣帳戶自動扣繳卡費」：兩項都要做到才有 0.5% 回饋。",
+          "今天切到「寵生活版」方案"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "apple_pay",
+        "plan": "pet",
+        "tier": null,
+        "net_twd_per_1000": 30,
+        "net_rate_bp": 300,
+        "cap_twd_max": 250,
+        "max_spend_twd": 10000,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "需完成「申請帳單e化＋玉山臺幣帳戶自動扣繳卡費」：兩項都要做到才有 0.5% 回饋。",
+          "今天切到「寵生活版」方案"
+        ],
+        "needs_registration": false
+      },
+      "verified_ai": "2026-11-13",
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "best": [
+          30,
+          90,
+          300
+        ],
+        "once": [
+          30,
+          90,
+          300
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "星巴克",
+          "CAFE!N 硬咖啡",
+          "屋馬燒肉"
+        ],
+        "count": 30,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 300
+      },
+      "reviewed": true
+    },
+    {
+      "card_id": "firstbank-icash",
+      "card_name": "第一銀行 icash 聯名卡",
+      "confidence": "official_x2",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 0,
+        "net_rate_bp": 0,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "icash_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 30,
+        "net_rate_bp": 300,
+        "cap_twd_max": 300,
+        "max_spend_twd": 10000,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "登錄：便利支付 3% 刷卡金（需登錄）"
+        ],
+        "needs_registration": true
+      },
+      "best": {
+        "method": "icash_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 30,
+        "net_rate_bp": 300,
+        "cap_twd_max": 300,
+        "max_spend_twd": 10000,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "登錄：便利支付 3% 刷卡金（需登錄）"
+        ],
+        "needs_registration": true
+      },
+      "verified_ai": "2026-11-01",
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "best": [
+          30,
+          90,
+          300
+        ],
+        "once": [
+          30,
+          90,
+          300
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "星巴克",
+          "屋馬燒肉",
+          "一般餐廳（便當店、小吃）"
+        ],
+        "count": 14,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 300
+      },
+      "reviewed": true
+    },
+    {
+      "card_id": "firstbank-ipass",
+      "card_name": "第一銀行一卡通聯名卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "tw_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 25,
+        "net_rate_bp": 250,
+        "cap_twd_max": 100,
+        "max_spend_twd": 6666,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "限掃碼付款（感應支付不算）"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "tw_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 25,
+        "net_rate_bp": 250,
+        "cap_twd_max": 100,
+        "max_spend_twd": 6666,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "限掃碼付款（感應支付不算）"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "tw_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 25,
+        "net_rate_bp": 250,
+        "cap_twd_max": 100,
+        "max_spend_twd": 6666,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "限掃碼付款（感應支付不算）"
+        ],
+        "needs_registration": false
+      },
+      "verified_ai": "2026-11-13",
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          25,
+          75,
+          200
+        ],
+        "best": [
+          25,
+          75,
+          200
+        ],
+        "once": [
+          25,
+          75,
+          200
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "一般餐廳（便當店、小吃）"
+        ],
+        "count": 1,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 250
+      },
+      "reviewed": true
+    },
+    {
+      "card_id": "tbb-greenlife-ipass",
+      "card_name": "臺企 永續生活一卡通卡",
+      "confidence": "official_x2",
+      "basic": {
+        "method": "tw_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 15,
+        "net_rate_bp": 150,
+        "cap_twd_max": 100,
+        "max_spend_twd": 6666,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "限掃碼付款（感應支付不算）"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "tw_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 25,
+        "net_rate_bp": 250,
+        "cap_twd_max": 450,
+        "max_spend_twd": 35000,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "需完成「Hokii 數位會員＋臺企數位帳戶自動扣繳」：加入臺企 Hokii 數位會員，同時開臺企臺幣與外幣數位存款帳戶，並設定用臺幣數位存款帳戶（不含證券交割戶）自動扣繳本卡卡費、當期扣款成功。",
+          "限掃碼付款（感應支付不算）"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "tw_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 25,
+        "net_rate_bp": 250,
+        "cap_twd_max": 450,
+        "max_spend_twd": 35000,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "需完成「Hokii 數位會員＋臺企數位帳戶自動扣繳」：加入臺企 Hokii 數位會員，同時開臺企臺幣與外幣數位存款帳戶，並設定用臺幣數位存款帳戶（不含證券交割戶）自動扣繳本卡卡費、當期扣款成功。",
+          "限掃碼付款（感應支付不算）"
+        ],
+        "needs_registration": false
+      },
+      "verified_ai": "2026-11-13",
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          15,
+          45,
+          100
+        ],
+        "best": [
+          25,
+          75,
+          200
+        ],
+        "once": [
+          25,
+          75,
+          200
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "一般餐廳（便當店、小吃）"
+        ],
+        "count": 1,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 250
+      },
+      "reviewed": true
+    },
+    {
+      "card_id": "tbb-greenlife-easy",
+      "card_name": "臺企 永續生活悠遊卡",
+      "confidence": "official_x2",
+      "basic": {
+        "method": "tw_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 15,
+        "net_rate_bp": 150,
+        "cap_twd_max": 100,
+        "max_spend_twd": 6666,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "限掃碼付款（感應支付不算）"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "tw_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 25,
+        "net_rate_bp": 250,
+        "cap_twd_max": 450,
+        "max_spend_twd": 35000,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "需完成「Hokii 數位會員＋臺企數位帳戶自動扣繳」：加入臺企 Hokii 數位會員，同時開臺企臺幣與外幣數位存款帳戶，並設定用臺幣數位存款帳戶（不含證券交割戶）自動扣繳本卡卡費、當期扣款成功。",
+          "限掃碼付款（感應支付不算）"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "tw_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 25,
+        "net_rate_bp": 250,
+        "cap_twd_max": 450,
+        "max_spend_twd": 35000,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "需完成「Hokii 數位會員＋臺企數位帳戶自動扣繳」：加入臺企 Hokii 數位會員，同時開臺企臺幣與外幣數位存款帳戶，並設定用臺幣數位存款帳戶（不含證券交割戶）自動扣繳本卡卡費、當期扣款成功。",
+          "限掃碼付款（感應支付不算）"
+        ],
+        "needs_registration": false
+      },
+      "verified_ai": "2026-11-13",
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          15,
+          45,
+          100
+        ],
+        "best": [
+          25,
+          75,
+          200
+        ],
+        "once": [
+          25,
+          75,
+          200
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "一般餐廳（便當店、小吃）"
+        ],
+        "count": 1,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 250
+      },
+      "reviewed": true
+    },
+    {
+      "card_id": "firstbank-titanium-travel",
+      "card_name": "第一銀行 鈦金商旅卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "tw_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 21,
+        "net_rate_bp": 210,
+        "cap_twd_max": 100,
+        "max_spend_twd": 6666,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "限掃碼付款（感應支付不算）"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "tw_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 21,
+        "net_rate_bp": 210,
+        "cap_twd_max": 100,
+        "max_spend_twd": 6666,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "限掃碼付款（感應支付不算）"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 30,
+        "net_rate_bp": 300,
+        "cap_twd_max": 300,
+        "max_spend_twd": 10000,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "總量有限：限量 15,000 名，額滿關閉登錄",
+          "登錄：精選通路 3%（需登錄）"
+        ],
+        "needs_registration": true
+      },
+      "verified_ai": "2026-11-01",
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          21,
+          63,
+          160
+        ],
+        "best": [
+          30,
+          90,
+          300
+        ],
+        "once": [
+          21,
+          63,
+          160
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "星巴克"
+        ],
+        "count": 1,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 300
+      },
+      "reviewed": true
+    },
+    {
+      "card_id": "firstbank-dual-titanium",
+      "card_name": "第一銀行 雙幣鈦金商旅卡",
+      "confidence": "official_x2",
+      "basic": {
+        "method": "tw_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 21,
+        "net_rate_bp": 210,
+        "cap_twd_max": 100,
+        "max_spend_twd": 6666,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "限掃碼付款（感應支付不算）"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "tw_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 21,
+        "net_rate_bp": 210,
+        "cap_twd_max": 100,
+        "max_spend_twd": 6666,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "限掃碼付款（感應支付不算）"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 30,
+        "net_rate_bp": 300,
+        "cap_twd_max": 300,
+        "max_spend_twd": 10000,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "總量有限：限量 15,000 名，額滿關閉登錄",
+          "登錄：精選通路 3%（需登錄）"
+        ],
+        "needs_registration": true
+      },
+      "verified_ai": "2026-11-01",
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          21,
+          63,
+          160
+        ],
+        "best": [
+          30,
+          90,
+          300
+        ],
+        "once": [
+          21,
+          63,
+          160
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "星巴克"
+        ],
+        "count": 1,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 300
+      },
+      "reviewed": true
+    },
+    {
+      "card_id": "tbb-visa-infinite",
+      "card_name": "臺企 福企無限卡",
+      "confidence": "official_x2",
+      "basic": {
+        "method": "tw_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 21,
+        "net_rate_bp": 210,
+        "cap_twd_max": 100,
+        "max_spend_twd": 6666,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "限掃碼付款（感應支付不算）"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "tw_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 21,
+        "net_rate_bp": 210,
+        "cap_twd_max": 100,
+        "max_spend_twd": 6666,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "限掃碼付款（感應支付不算）"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "tw_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 21,
+        "net_rate_bp": 210,
+        "cap_twd_max": 100,
+        "max_spend_twd": 6666,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "限掃碼付款（感應支付不算）"
+        ],
+        "needs_registration": false
+      },
+      "verified_ai": "2026-11-13",
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          21,
+          63,
+          160
+        ],
+        "best": [
+          21,
+          63,
+          160
+        ],
+        "once": [
+          21,
+          63,
+          160
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "一般餐廳（便當店、小吃）"
+        ],
+        "count": 1,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 210
+      },
+      "reviewed": true
+    },
+    {
+      "card_id": "ubot-laidian",
+      "card_name": "聯邦賴點卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "line_pay",
+        "plan": null,
+        "tier": "regular",
+        "net_twd_per_1000": 20,
+        "net_rate_bp": 200,
+        "cap_twd_max": 200,
+        "max_spend_twd": 20000,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "單筆滿 100 元才有加碼",
+          "前提：要拿 LINE POINTS 回饋，須申辦電子化帳單（電子、行動或 LINE 帳單），並把卡綁定在台灣的 LINE Pay 帳號。"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "line_pay",
+        "plan": null,
+        "tier": "regular",
+        "net_twd_per_1000": 20,
+        "net_rate_bp": 200,
+        "cap_twd_max": 200,
+        "max_spend_twd": 20000,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "單筆滿 100 元才有加碼",
+          "前提：要拿 LINE POINTS 回饋，須申辦電子化帳單（電子、行動或 LINE 帳單），並把卡綁定在台灣的 LINE Pay 帳號。"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "line_pay",
+        "plan": null,
+        "tier": "regular",
+        "net_twd_per_1000": 50,
+        "net_rate_bp": 500,
+        "cap_twd_max": 400,
+        "max_spend_twd": 20000,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "單筆滿 100 元才有加碼",
+          "前提：要拿 LINE POINTS 回饋，須申辦電子化帳單（電子、行動或 LINE 帳單），並把卡綁定在台灣的 LINE Pay 帳號。",
+          "每月登錄：聯邦信用卡 Uber Eats、foodpanda 每月登錄筆筆 3%"
+        ],
+        "needs_registration": true
+      },
+      "verified_ai": "2026-11-13",
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          20,
+          60,
+          200
+        ],
+        "best": [
+          50,
+          150,
+          400
+        ],
+        "once": [
+          20,
+          60,
+          200
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "Uber Eats",
+          "foodpanda"
+        ],
+        "count": 2,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 500
+      },
+      "reviewed": true
+    },
+    {
+      "card_id": "dbs-eco-plus",
+      "card_name": "星展 eco 永續優選 PLUS 卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 20,
+        "net_rate_bp": 200,
+        "cap_twd_max": 300,
+        "max_spend_twd": 20000,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 20,
+        "net_rate_bp": 200,
+        "cap_twd_max": 300,
+        "max_spend_twd": 20000,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 20,
+        "net_rate_bp": 200,
+        "cap_twd_max": 300,
+        "max_spend_twd": 20000,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "verified_ai": "2026-11-13",
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          20,
+          60,
+          200
+        ],
+        "best": [
+          20,
+          60,
+          200
+        ],
+        "once": [
+          20,
+          60,
+          200
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "Uber Eats",
+          "foodpanda",
+          "星巴克"
+        ],
+        "count": 95,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 200
+      },
+      "reviewed": true
+    },
+    {
+      "card_id": "firstbank-wonderful",
+      "card_name": "第一銀行 Wonderful 星璨卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "tw_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 20,
+        "net_rate_bp": 200,
+        "cap_twd_max": 100,
+        "max_spend_twd": 6666,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "限掃碼付款（感應支付不算）"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "tw_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 20,
+        "net_rate_bp": 200,
+        "cap_twd_max": 100,
+        "max_spend_twd": 6666,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "限掃碼付款（感應支付不算）"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "tw_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 20,
+        "net_rate_bp": 200,
+        "cap_twd_max": 100,
+        "max_spend_twd": 6666,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "限掃碼付款（感應支付不算）"
+        ],
+        "needs_registration": false
+      },
+      "verified_ai": "2026-11-13",
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          20,
+          60,
+          150
+        ],
+        "best": [
+          20,
+          60,
+          150
+        ],
+        "once": [
+          20,
+          60,
+          150
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "一般餐廳（便當店、小吃）"
+        ],
+        "count": 1,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 200
+      },
+      "reviewed": true
+    },
+    {
+      "card_id": "tbb-artfun",
+      "card_name": "臺企 藝FUN悠遊御璽卡",
+      "confidence": "official_x2",
+      "basic": {
+        "method": "tw_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 20,
+        "net_rate_bp": 200,
+        "cap_twd_max": 100,
+        "max_spend_twd": 6666,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "限掃碼付款（感應支付不算）"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "tw_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 20,
+        "net_rate_bp": 200,
+        "cap_twd_max": 100,
+        "max_spend_twd": 6666,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "限掃碼付款（感應支付不算）"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "tw_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 20,
+        "net_rate_bp": 200,
+        "cap_twd_max": 100,
+        "max_spend_twd": 6666,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "限掃碼付款（感應支付不算）"
+        ],
+        "needs_registration": false
+      },
+      "verified_ai": "2026-11-01",
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          20,
+          60,
+          150
+        ],
+        "best": [
+          20,
+          60,
+          150
+        ],
+        "once": [
+          20,
+          60,
+          150
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "一般餐廳（便當店、小吃）"
+        ],
+        "count": 1,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 200
+      },
+      "reviewed": true
+    },
+    {
+      "card_id": "tbb-visa-platinum",
+      "card_name": "臺企 VISA 白金卡",
+      "confidence": "official_x2",
+      "basic": {
+        "method": "tw_pay",
+        "plan": null,
+        "tier": "t1",
+        "net_twd_per_1000": 17,
+        "net_rate_bp": 170,
+        "cap_twd_max": 1600,
+        "max_spend_twd": 750000,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "需符合「當期刷卡 1～49,999 元」：0.2%",
+          "限掃碼付款（感應支付不算）"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "tw_pay",
+        "plan": null,
+        "tier": "t1",
+        "net_twd_per_1000": 17,
+        "net_rate_bp": 170,
+        "cap_twd_max": 1600,
+        "max_spend_twd": 750000,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "需符合「當期刷卡 1～49,999 元」：0.2%",
+          "限掃碼付款（感應支付不算）"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "tw_pay",
+        "plan": null,
+        "tier": "t5",
+        "net_twd_per_1000": 22.5,
+        "net_rate_bp": 225,
+        "cap_twd_max": 1600,
+        "max_spend_twd": 200000,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "需符合「當期刷卡 20 萬元以上」：0.75%（白金卡限定）",
+          "限掃碼付款（感應支付不算）"
+        ],
+        "needs_registration": false
+      },
+      "verified_ai": "2026-11-01",
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          17,
+          51,
+          120
+        ],
+        "best": [
+          22.5,
+          67.5,
+          175
+        ],
+        "once": [
+          17,
+          51,
+          120
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "一般餐廳（便當店、小吃）"
+        ],
+        "count": 1,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 225
+      },
+      "reviewed": true
+    },
+    {
+      "card_id": "hsbc-travelone-signature",
+      "card_name": "滙豐 旅人御璽卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 16.67,
+        "net_rate_bp": 167,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 16.67,
+        "net_rate_bp": 167,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 16.67,
+        "net_rate_bp": 167,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "verified_ai": "2026-11-13",
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          16.67,
+          50.01,
+          166.7
+        ],
+        "best": [
+          16.67,
+          50.01,
+          166.7
+        ],
+        "once": [
+          16.67,
+          50.01,
+          166.7
+        ]
+      },
+      "tie": true,
+      "reviewed": true
+    },
+    {
+      "card_id": "hsbc-travel-infinite",
+      "card_name": "滙豐 旅人無限卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 16.67,
+        "net_rate_bp": 167,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 16.67,
+        "net_rate_bp": 167,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 16.67,
+        "net_rate_bp": 167,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "verified_ai": "2026-11-13",
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          16.67,
+          50.01,
+          166.7
+        ],
+        "best": [
+          16.67,
+          50.01,
+          166.7
+        ],
+        "once": [
+          16.67,
+          50.01,
+          166.7
+        ]
+      },
+      "tie": true,
+      "reviewed": true
+    },
+    {
+      "card_id": "hsbc-travelone",
+      "card_name": "滙豐 旅人輕旅卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 15,
+        "net_rate_bp": 150,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 15,
+        "net_rate_bp": 150,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 15,
+        "net_rate_bp": 150,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "verified_ai": "2026-11-13",
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          15,
+          45,
+          150
+        ],
+        "best": [
+          15,
+          45,
+          150
+        ],
+        "once": [
+          15,
+          45,
+          150
+        ]
+      },
+      "tie": true,
+      "reviewed": true
+    },
+    {
+      "card_id": "taishin-richart",
+      "card_name": "台新 Richart 卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": "chill",
+        "tier": "level1",
+        "net_twd_per_1000": 13,
+        "net_rate_bp": 130,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "需符合「Level 1」：核卡後即適用，各方案最高 1.3%。",
+          "今天切到「Chill刷」方案",
+          "前提：每天可在 Richart Life App 切換方案，消費當下的方案決定回饋。"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": "chill",
+        "tier": "level1",
+        "net_twd_per_1000": 13,
+        "net_rate_bp": 130,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "需符合「Level 1」：核卡後即適用，各方案最高 1.3%。",
+          "今天切到「Chill刷」方案",
+          "前提：每天可在 Richart Life App 切換方案，消費當下的方案決定回饋。"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": "chill",
+        "tier": "level2",
+        "net_twd_per_1000": 100,
+        "net_rate_bp": 1000,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "需符合「Level 2」：設定台新銀行帳戶自動扣繳台新信用卡帳款；下一期帳單結帳後的消費適用，最高 3.8%。",
+          "今天切到「Chill刷」方案",
+          "前提：每天可在 Richart Life App 切換方案，消費當下的方案決定回饋。"
+        ],
+        "needs_registration": false
+      },
+      "verified_ai": "2026-11-13",
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          13,
+          39,
+          130
+        ],
+        "best": [
+          100,
+          300,
+          1000
+        ],
+        "once": [
+          13,
+          39,
+          130
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "50嵐",
+          "得正",
+          "五桐號"
+        ],
+        "count": 13,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 1000
+      },
+      "reviewed": true
+    },
+    {
+      "card_id": "taishin-familymart-richart",
+      "card_name": "台新 全家Richart 聯名卡",
+      "confidence": "official_x2",
+      "basic": {
+        "method": "physical",
+        "plan": "chill",
+        "tier": "level1",
+        "net_twd_per_1000": 13,
+        "net_rate_bp": 130,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "需符合「Level 1」：核卡後即適用，各方案最高 1.3%。",
+          "今天切到「Chill刷」方案",
+          "前提：每天可在 Richart Life App 切換方案，消費當下的方案決定回饋。"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": "chill",
+        "tier": "level1",
+        "net_twd_per_1000": 13,
+        "net_rate_bp": 130,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "需符合「Level 1」：核卡後即適用，各方案最高 1.3%。",
+          "今天切到「Chill刷」方案",
+          "前提：每天可在 Richart Life App 切換方案，消費當下的方案決定回饋。"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": "chill",
+        "tier": "level2",
+        "net_twd_per_1000": 100,
+        "net_rate_bp": 1000,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "需符合「Level 2」：設定台新銀行帳戶自動扣繳台新信用卡帳款；下一期帳單結帳後的消費適用，最高 3.8%。",
+          "今天切到「Chill刷」方案",
+          "前提：每天可在 Richart Life App 切換方案，消費當下的方案決定回饋。"
+        ],
+        "needs_registration": false
+      },
+      "verified_ai": "2026-11-13",
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          13,
+          39,
+          130
+        ],
+        "best": [
+          100,
+          300,
+          1000
+        ],
+        "once": [
+          13,
+          39,
+          130
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "50嵐",
+          "得正",
+          "五桐號"
+        ],
+        "count": 13,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 1000
+      },
+      "reviewed": true
+    },
+    {
+      "card_id": "yuanta-diamond-easycard",
+      "card_name": "元大 鑽金悠遊聯名卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 12,
+        "net_rate_bp": 120,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 12,
+        "net_rate_bp": 120,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 12,
+        "net_rate_bp": 120,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "verified_ai": "2026-11-13",
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          12,
+          36,
+          120
+        ],
+        "best": [
+          12,
+          36,
+          120
+        ],
+        "once": [
+          12,
+          36,
+          120
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "Uber Eats",
+          "foodpanda",
+          "星巴克"
+        ],
+        "count": 95,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 120
+      },
+      "reviewed": true
+    },
+    {
+      "card_id": "obank-debit",
+      "card_name": "王道銀行 簽帳金融卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": "general",
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "需符合「一般戶」：預設。",
+          "前提：需開立王道銀行存款帳戶；刷卡金額直接從帳戶扣款。"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": "general",
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "需符合「一般戶」：預設。",
+          "前提：需開立王道銀行存款帳戶；刷卡金額直接從帳戶扣款。"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "line_pay",
+        "plan": null,
+        "tier": "payroll",
+        "net_twd_per_1000": 63,
+        "net_rate_bp": 630,
+        "cap_twd_max": 1200,
+        "max_spend_twd": 24000,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "需符合「薪轉戶」：任職單位與王道簽約代發薪資，且連續兩個月內有撥薪紀錄。",
+          "單筆滿 300 元才有加碼",
+          "前提：需開立王道銀行存款帳戶；刷卡金額直接從帳戶扣款。",
+          "每月登錄：王道 刷支付給利就是王道（簽帳金融卡綁行動支付加碼 5%）"
+        ],
+        "needs_registration": true
+      },
+      "verified_ai": "2026-11-13",
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          10,
+          30,
+          100
+        ],
+        "best": [
+          63,
+          189,
+          630
+        ],
+        "once": [
+          10,
+          30,
+          100
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "foodpanda",
+          "麥當勞",
+          "星巴克"
+        ],
+        "count": 54,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 630
+      },
+      "reviewed": true
+    },
+    {
+      "card_id": "tcb-hospital",
+      "card_name": "合庫 一般醫院卡",
+      "confidence": "official_x2",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "申辦資格限制：需為榮民總醫院、長庚醫院、成大醫院、三軍總醫院及所屬院區的在職員工才能申請（依合庫官網卡片頁）。",
+          "前提：限合作醫院員工"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "申辦資格限制：需為榮民總醫院、長庚醫院、成大醫院、三軍總醫院及所屬院區的在職員工才能申請（依合庫官網卡片頁）。",
+          "前提：限合作醫院員工"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 50,
+        "net_rate_bp": 233,
+        "cap_twd_max": 100,
+        "max_spend_twd": 2500,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "當期帳單累積消費滿 2,999 元才有加碼",
+          "申辦資格限制：需為榮民總醫院、長庚醫院、成大醫院、三軍總醫院及所屬院區的在職員工才能申請（依合庫官網卡片頁）。",
+          "前提：限合作醫院員工"
+        ],
+        "needs_registration": false,
+        "threshold_twd": 2999,
+        "txn_rate_bp": 500
+      },
+      "verified_ai": "2026-11-01",
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          10,
+          30,
+          100
+        ],
+        "best": [
+          10,
+          130,
+          200
+        ],
+        "once": [
+          10,
+          30,
+          100
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "Uber Eats",
+          "foodpanda",
+          "麥當勞"
+        ],
+        "count": 50,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 233
+      },
+      "reviewed": true
+    },
+    {
+      "card_id": "tcb-kanahei",
+      "card_name": "合庫 卡娜赫拉的小動物悠遊聯名卡（環保綠能卡）",
+      "confidence": "official_x2",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "line_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 110,
+        "net_rate_bp": 433,
+        "cap_twd_max": 100,
+        "max_spend_twd": 1000,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "當期帳單累積消費滿 2,999 元才有加碼",
+          "限掃碼付款（感應支付不算）"
+        ],
+        "needs_registration": false,
+        "threshold_twd": 2999,
+        "txn_rate_bp": 1100
+      },
+      "verified_ai": "2026-11-01",
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          10,
+          30,
+          100
+        ],
+        "best": [
+          10,
+          130,
+          200
+        ],
+        "once": [
+          10,
+          30,
+          100
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "Uber Eats",
+          "foodpanda",
+          "麥當勞"
+        ],
+        "count": 50,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 433
+      },
+      "reviewed": true
+    },
+    {
+      "card_id": "tcb-kanahei-virtual",
+      "card_name": "合庫 卡娜赫拉的小動物無實體卡",
+      "confidence": "official_x2",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "line_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 110,
+        "net_rate_bp": 433,
+        "cap_twd_max": 100,
+        "max_spend_twd": 1000,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "當期帳單累積消費滿 2,999 元才有加碼",
+          "限掃碼付款（感應支付不算）"
+        ],
+        "needs_registration": false,
+        "threshold_twd": 2999,
+        "txn_rate_bp": 1100
+      },
+      "verified_ai": "2026-11-01",
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          10,
+          30,
+          100
+        ],
+        "best": [
+          10,
+          130,
+          200
+        ],
+        "once": [
+          10,
+          30,
+          100
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "Uber Eats",
+          "foodpanda",
+          "麥當勞"
+        ],
+        "count": 50,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 433
+      },
+      "reviewed": true
+    },
+    {
+      "card_id": "tcb-ntuh",
+      "card_name": "合庫 台大醫院卡",
+      "confidence": "official_x2",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "申辦資格限制：需為台大醫院在職員工才能申請；另須成年、在合庫開立活期性存款且無不良信用紀錄（依合庫官網卡片頁）。",
+          "前提：限台大醫院員工"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "申辦資格限制：需為台大醫院在職員工才能申請；另須成年、在合庫開立活期性存款且無不良信用紀錄（依合庫官網卡片頁）。",
+          "前提：限台大醫院員工"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 50,
+        "net_rate_bp": 233,
+        "cap_twd_max": 100,
+        "max_spend_twd": 2500,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "當期帳單累積消費滿 2,999 元才有加碼",
+          "申辦資格限制：需為台大醫院在職員工才能申請；另須成年、在合庫開立活期性存款且無不良信用紀錄（依合庫官網卡片頁）。",
+          "前提：限台大醫院員工"
+        ],
+        "needs_registration": false,
+        "threshold_twd": 2999,
+        "txn_rate_bp": 500
+      },
+      "verified_ai": "2026-11-01",
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          10,
+          30,
+          100
+        ],
+        "best": [
+          10,
+          130,
+          200
+        ],
+        "once": [
+          10,
+          30,
+          100
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "Uber Eats",
+          "foodpanda",
+          "麥當勞"
+        ],
+        "count": 50,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 233
+      },
+      "reviewed": true
+    },
+    {
+      "card_id": "ubot-linebank",
+      "card_name": "聯邦 LINE Bank 聯名卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 40,
+        "net_rate_bp": 400,
+        "cap_twd_max": 200,
+        "max_spend_twd": 6666,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "每月登錄：聯邦信用卡 Uber Eats、foodpanda 每月登錄筆筆 3%"
+        ],
+        "needs_registration": true
+      },
+      "verified_ai": "2026-11-01",
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          10,
+          30,
+          100
+        ],
+        "best": [
+          40,
+          120,
+          300
+        ],
+        "once": [
+          10,
+          30,
+          100
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "Uber Eats",
+          "foodpanda"
+        ],
+        "count": 2,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 400
+      },
+      "reviewed": true
+    },
+    {
+      "card_id": "ubot-m-world",
+      "card_name": "聯邦 M 世界卡",
+      "confidence": "official_x2",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：年收入 NT$100 萬以上"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：年收入 NT$100 萬以上"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 40,
+        "net_rate_bp": 400,
+        "cap_twd_max": 200,
+        "max_spend_twd": 6666,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：年收入 NT$100 萬以上",
+          "每月登錄：聯邦信用卡 Uber Eats、foodpanda 每月登錄筆筆 3%"
+        ],
+        "needs_registration": true
+      },
+      "verified_ai": "2026-11-01",
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          10,
+          30,
+          100
+        ],
+        "best": [
+          40,
+          120,
+          300
+        ],
+        "once": [
+          10,
+          30,
+          100
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "Uber Eats",
+          "foodpanda"
+        ],
+        "count": 2,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 400
+      },
+      "reviewed": true
+    },
+    {
+      "card_id": "ubot-jiho",
+      "card_name": "聯邦 吉鶴卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 40,
+        "net_rate_bp": 400,
+        "cap_twd_max": 200,
+        "max_spend_twd": 6666,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "每月登錄：聯邦信用卡 Uber Eats、foodpanda 每月登錄筆筆 3%"
+        ],
+        "needs_registration": true
+      },
+      "verified_ai": "2026-11-13",
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          10,
+          30,
+          100
+        ],
+        "best": [
+          40,
+          120,
+          300
+        ],
+        "once": [
+          10,
+          30,
+          100
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "Uber Eats",
+          "foodpanda"
+        ],
+        "count": 2,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 400
+      },
+      "reviewed": true
+    },
+    {
+      "card_id": "ctbc-linepay",
+      "card_name": "中信 LINE Pay 信用卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 100,
+        "net_rate_bp": 1000,
+        "cap_twd_max": 200,
+        "max_spend_twd": 2222,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "登錄：中信 LINE Pay JCB 卡 摩斯漢堡 LINE POINTS 10%（每季登錄）"
+        ],
+        "needs_registration": true
+      },
+      "verified_ai": "2026-11-13",
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          10,
+          30,
+          100
+        ],
+        "best": [
+          76.67,
+          96.67,
+          166.67
+        ],
+        "once": [
+          10,
+          30,
+          100
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "摩斯漢堡",
+          "壽司郎",
+          "藏壽司"
+        ],
+        "count": 3,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 1000
+      },
+      "reviewed": true
+    },
+    {
+      "card_id": "ubot-mcard",
+      "card_name": "聯邦 M 卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 5,
+        "net_rate_bp": 50,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "需完成「電子化帳單」：申辦電子化帳單；未申辦則國內 0.5%、國外 1.5%。"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 40,
+        "net_rate_bp": 400,
+        "cap_twd_max": 200,
+        "max_spend_twd": 6666,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "需完成「電子化帳單」：申辦電子化帳單；未申辦則國內 0.5%、國外 1.5%。",
+          "每月登錄：聯邦信用卡 Uber Eats、foodpanda 每月登錄筆筆 3%"
+        ],
+        "needs_registration": true
+      },
+      "verified_ai": "2026-11-01",
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          5,
+          15,
+          50
+        ],
+        "best": [
+          40,
+          120,
+          300
+        ],
+        "once": [
+          10,
+          30,
+          100
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "Uber Eats",
+          "foodpanda"
+        ],
+        "count": 2,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 400
+      },
+      "reviewed": true
+    },
+    {
+      "card_id": "esun-pi",
+      "card_name": "玉山 Pi 拍錢包信用卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 3,
+        "net_rate_bp": 30,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：須註冊並綁定 Pi 拍錢包 App（身分資料相符），綁卡成功並申請帳單 e 化才有 P 幣回饋。"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "需完成「帳單 e 化」：申請電子帳單後，基本回饋從 0.3% 提高到 1%。",
+          "前提：須註冊並綁定 Pi 拍錢包 App（身分資料相符），綁卡成功並申請帳單 e 化才有 P 幣回饋。"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 30,
+        "net_rate_bp": 39,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": true,
+        "cap_points_max": 3000,
+        "requirements": [
+          "需完成「帳單 e 化」：申請電子帳單後，基本回饋從 0.3% 提高到 1%。",
+          "當月累積消費滿 30,000 元才有加碼",
+          "前提：須註冊並綁定 Pi 拍錢包 App（身分資料相符），綁卡成功並申請帳單 e 化才有 P 幣回饋。",
+          "登錄：月累積 3 萬元以上加碼"
+        ],
+        "needs_registration": true,
+        "threshold_twd": 30000,
+        "txn_rate_bp": 300
+      },
+      "verified_ai": "2026-11-13",
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          3,
+          9,
+          30
+        ],
+        "best": [
+          10,
+          30,
+          100
+        ],
+        "once": [
+          10,
+          30,
+          100
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "Uber Eats",
+          "foodpanda",
+          "星巴克"
+        ],
+        "count": 95,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 39
+      },
+      "reviewed": true
+    },
+    {
+      "card_id": "ubot-green",
+      "card_name": "聯邦 綠卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 0,
+        "net_rate_bp": 0,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "需完成「申辦電子化帳單」：成功申辦聯邦電子化帳單（電子、行動或 LINE 帳單），且回饋時仍有效。"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 40,
+        "net_rate_bp": 400,
+        "cap_twd_max": 200,
+        "max_spend_twd": 6666,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "需完成「申辦電子化帳單」：成功申辦聯邦電子化帳單（電子、行動或 LINE 帳單），且回饋時仍有效。",
+          "每月登錄：聯邦信用卡 Uber Eats、foodpanda 每月登錄筆筆 3%"
+        ],
+        "needs_registration": true
+      },
+      "verified_ai": "2026-11-01",
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "best": [
+          40,
+          120,
+          300
+        ],
+        "once": [
+          10,
+          30,
+          100
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "Uber Eats",
+          "foodpanda"
+        ],
+        "count": 2,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 400
+      },
+      "reviewed": true
+    },
+    {
+      "card_id": "kgi-more-buy",
+      "card_name": "凱基魔BUY 卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 7,
+        "net_rate_bp": 70,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 7,
+        "net_rate_bp": 70,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "line_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 40,
+        "net_rate_bp": 180,
+        "cap_twd_max": 300,
+        "max_spend_twd": 9090,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "當月累積消費滿 3,000 元才有加碼",
+          "每月登錄：行動支付國內消費加碼 3.3%"
+        ],
+        "needs_registration": true,
+        "threshold_twd": 3000,
+        "txn_rate_bp": 400
+      },
+      "verified_ai": "2026-11-13",
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          7,
+          21,
+          70
+        ],
+        "best": [
+          7,
+          120,
+          370
+        ],
+        "once": [
+          7,
+          21,
+          70
+        ]
+      },
+      "only_at": {
+        "merchant_names": [
+          "Uber Eats",
+          "foodpanda",
+          "麥當勞"
+        ],
+        "count": 54,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 180
+      },
+      "reviewed": true
+    },
+    {
+      "card_id": "ubot-maicoin",
+      "card_name": "聯邦 MaiCoin 聯名卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 5,
+        "net_rate_bp": 50,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 5,
+        "net_rate_bp": 50,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 75,
+        "net_rate_bp": 750,
+        "cap_twd_max": 1400,
+        "max_spend_twd": 30000,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "前月新增消費滿 30,001 元，當月才有加碼",
+          "每月登錄：聯邦信用卡 Uber Eats、foodpanda 每月登錄筆筆 3%"
+        ],
+        "needs_registration": true
+      },
+      "verified_ai": "2026-11-01",
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          5,
+          15,
+          50
+        ],
+        "best": [
+          75,
+          225,
+          650
+        ],
+        "once": [
+          5,
+          15,
+          50
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "Uber Eats",
+          "foodpanda"
+        ],
+        "count": 2,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 750
+      },
+      "reviewed": true
+    },
+    {
+      "card_id": "tcbbank-mysense",
+      "card_name": "台中銀行 MySense 悠遊御璽卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 0,
+        "net_rate_bp": 0,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 0,
+        "net_rate_bp": 0,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 100,
+        "net_rate_bp": 500,
+        "cap_twd_max": 300,
+        "max_spend_twd": 3000,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "當期帳單累積消費滿 2,000 元才有加碼"
+        ],
+        "needs_registration": false,
+        "threshold_twd": 2000,
+        "txn_rate_bp": 1000
+      },
+      "verified_ai": "2026-11-01",
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "best": [
+          0,
+          300,
+          300
+        ],
+        "once": [
+          0,
+          0,
+          0
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "Uber Eats",
+          "foodpanda",
+          "星巴克"
+        ],
+        "count": 40,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 500
+      },
+      "reviewed": true
+    },
+    {
+      "card_id": "feib-happy-premium",
+      "card_name": "遠東快樂無限卡／快樂世界商務卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 0,
+        "net_rate_bp": 0,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 0,
+        "net_rate_bp": 0,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 15,
+        "net_rate_bp": 8,
+        "cap_twd_max": 1500,
+        "max_spend_twd": 100000,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "需完成「遠銀帳戶自扣卡費＋綁定 HAPPY+ LINE 個人化服務」：未完成時台幣滿額回饋為每 2 萬 200 元。",
+          "當月累積消費滿 20,000 元才有加碼"
+        ],
+        "needs_registration": false,
+        "threshold_twd": 20000,
+        "txn_rate_bp": 150
+      },
+      "verified_ai": "2026-11-13",
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "best": [
+          0,
+          0,
+          0
+        ],
+        "once": [
+          0,
+          0,
+          0
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "Uber Eats",
+          "foodpanda",
+          "星巴克"
+        ],
+        "count": 95,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 8
+      },
+      "reviewed": true
+    },
+    {
+      "card_id": "ctbc-agoda",
+      "card_name": "中信 Agoda 聯名卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 50,
+        "net_rate_bp": 500,
+        "cap_twd_max": 500,
+        "max_spend_twd": 12500,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 50,
+        "net_rate_bp": 500,
+        "cap_twd_max": 500,
+        "max_spend_twd": 12500,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 50,
+        "net_rate_bp": 500,
+        "cap_twd_max": 500,
+        "max_spend_twd": 12500,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          50,
+          150,
+          500
+        ],
+        "best": [
+          50,
+          150,
+          500
+        ],
+        "once": [
+          50,
+          150,
+          500
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "壽司郎",
+          "欣葉",
+          "吉野家"
+        ],
+        "count": 6,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 500
+      },
+      "reviewed": false
+    },
+    {
+      "card_id": "sinopac-55688",
+      "card_name": "永豐 55688 聯名卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 40,
+        "net_rate_bp": 400,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": true,
+        "cap_points_max": 200,
+        "requirements": [
+          "需完成「永豐或京城帳戶自動扣繳」：帳單結帳日前設定正卡人本人的永豐或京城銀行新臺幣帳戶自動扣繳永豐信用卡帳款，並扣款成功。"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 40,
+        "net_rate_bp": 400,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": true,
+        "cap_points_max": 200,
+        "requirements": [
+          "需完成「永豐或京城帳戶自動扣繳」：帳單結帳日前設定正卡人本人的永豐或京城銀行新臺幣帳戶自動扣繳永豐信用卡帳款，並扣款成功。"
+        ],
+        "needs_registration": false
+      },
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          10,
+          30,
+          100
+        ],
+        "best": [
+          40,
+          120,
+          300
+        ],
+        "once": [
+          40,
+          120,
+          300
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "foodpanda",
+          "星巴克",
+          "路易莎咖啡"
+        ],
+        "count": 88,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 400
+      },
+      "reviewed": false
+    },
+    {
+      "card_id": "scsb-teresa",
+      "card_name": "上海商銀 TeresaCard 悠遊極緻卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 38,
+        "net_rate_bp": 380,
+        "cap_twd_max": 300,
+        "max_spend_twd": 10000,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 38,
+        "net_rate_bp": 380,
+        "cap_twd_max": 300,
+        "max_spend_twd": 10000,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 38,
+        "net_rate_bp": 380,
+        "cap_twd_max": 300,
+        "max_spend_twd": 10000,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          38,
+          114,
+          380
+        ],
+        "best": [
+          38,
+          114,
+          380
+        ],
+        "once": [
+          38,
+          114,
+          380
+        ]
+      },
+      "only_at": {
+        "merchant_names": [
+          "Uber Eats",
+          "foodpanda",
+          "星巴克"
+        ],
+        "count": 89,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 380
+      },
+      "reviewed": false
+    },
+    {
+      "card_id": "ctbc-cht",
+      "card_name": "中信 中華電信聯名卡",
+      "confidence": "official_x2",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 30,
+        "net_rate_bp": 300,
+        "cap_twd_max": 600,
+        "max_spend_twd": 30000,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 30,
+        "net_rate_bp": 300,
+        "cap_twd_max": 600,
+        "max_spend_twd": 30000,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 30,
+        "net_rate_bp": 300,
+        "cap_twd_max": 600,
+        "max_spend_twd": 30000,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          30,
+          90,
+          300
+        ],
+        "best": [
+          30,
+          90,
+          300
+        ],
+        "once": [
+          30,
+          90,
+          300
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "Uber Eats",
+          "foodpanda"
+        ],
+        "count": 2,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 300
+      },
+      "reviewed": false
+    },
+    {
+      "card_id": "hsbc-diamond",
+      "card_name": "滙豐 匯鑽卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 30,
+        "net_rate_bp": 300,
+        "cap_twd_max": 2000,
+        "max_spend_twd": 66666,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 30,
+        "net_rate_bp": 300,
+        "cap_twd_max": 2000,
+        "max_spend_twd": 66666,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 30,
+        "net_rate_bp": 300,
+        "cap_twd_max": 2000,
+        "max_spend_twd": 66666,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          30,
+          90,
+          300
+        ],
+        "best": [
+          30,
+          90,
+          300
+        ],
+        "once": [
+          30,
+          90,
+          300
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "Uber Eats",
+          "麥當勞",
+          "星巴克"
+        ],
+        "count": 41,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 300
+      },
+      "reviewed": false
+    },
+    {
+      "card_id": "chb-my-cash",
+      "card_name": "彰銀鈦金商旅卡（My樂現金回饋卡）",
+      "confidence": "official_x2",
+      "basic": {
+        "method": "google_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": 100,
+        "max_spend_twd": 20000,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "google_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 25,
+        "net_rate_bp": 250,
+        "cap_twd_max": 400,
+        "max_spend_twd": 20000,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "需完成「電子帳單或彰銀帳戶自扣」：使用彰銀信用卡電子帳單，或約定以彰銀存款帳戶自動扣繳卡費（以當期結帳日的狀態認定）。"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "google_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 30,
+        "net_rate_bp": 300,
+        "cap_twd_max": 500,
+        "max_spend_twd": 20000,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "需完成「電子帳單或彰銀帳戶自扣」：使用彰銀信用卡電子帳單，或約定以彰銀存款帳戶自動扣繳卡費（以當期結帳日的狀態認定）。",
+          "需完成「數位存款月平均 2 萬」：正卡人開立彰銀數位存款帳戶，當月臺／外幣活期存款月平均餘額達 20,000 元。"
+        ],
+        "needs_registration": false
+      },
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          10,
+          30,
+          100
+        ],
+        "best": [
+          30,
+          90,
+          300
+        ],
+        "once": [
+          25,
+          75,
+          250
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "一般餐廳（便當店、小吃）"
+        ],
+        "count": 1,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 300
+      },
+      "reviewed": false
+    },
+    {
+      "card_id": "tbb-yilan",
+      "card_name": "臺企 宜蘭悠遊認同卡",
+      "confidence": "official_x2",
+      "basic": {
+        "method": "tw_pay",
+        "plan": null,
+        "tier": "lt30k",
+        "net_twd_per_1000": 18,
+        "net_rate_bp": 180,
+        "cap_twd_max": 100,
+        "max_spend_twd": 6666,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "需符合「當期一般消費未滿 3 萬元」：依當期帳單可計回饋的消費合計。",
+          "限掃碼付款（感應支付不算）"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "tw_pay",
+        "plan": null,
+        "tier": "lt30k",
+        "net_twd_per_1000": 18,
+        "net_rate_bp": 180,
+        "cap_twd_max": 100,
+        "max_spend_twd": 6666,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "需符合「當期一般消費未滿 3 萬元」：依當期帳單可計回饋的消費合計。",
+          "限掃碼付款（感應支付不算）"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "tw_pay",
+        "plan": null,
+        "tier": "ge30k",
+        "net_twd_per_1000": 20,
+        "net_rate_bp": 200,
+        "cap_twd_max": 100,
+        "max_spend_twd": 6666,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "需符合「當期一般消費滿 3 萬元」：依當期帳單可計回饋的消費合計。",
+          "限掃碼付款（感應支付不算）"
+        ],
+        "needs_registration": false
+      },
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          18,
+          54,
+          130
+        ],
+        "best": [
+          20,
+          60,
+          150
+        ],
+        "once": [
+          18,
+          54,
+          130
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "一般餐廳（便當店、小吃）"
+        ],
+        "count": 1,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 200
+      },
+      "reviewed": false
+    },
+    {
+      "card_id": "tbb-chaotiangong",
+      "card_name": "臺企 北港朝天宮認同卡",
+      "confidence": "official_x2",
+      "basic": {
+        "method": "tw_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 18,
+        "net_rate_bp": 180,
+        "cap_twd_max": 100,
+        "max_spend_twd": 6666,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "限掃碼付款（感應支付不算）"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "tw_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 18,
+        "net_rate_bp": 180,
+        "cap_twd_max": 100,
+        "max_spend_twd": 6666,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "限掃碼付款（感應支付不算）"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "tw_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 18,
+        "net_rate_bp": 180,
+        "cap_twd_max": 100,
+        "max_spend_twd": 6666,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "限掃碼付款（感應支付不算）"
+        ],
+        "needs_registration": false
+      },
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          18,
+          54,
+          130
+        ],
+        "best": [
+          18,
+          54,
+          130
+        ],
+        "once": [
+          18,
+          54,
+          130
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "一般餐廳（便當店、小吃）"
+        ],
+        "count": 1,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 180
+      },
+      "reviewed": false
+    },
+    {
+      "card_id": "tbb-temple",
+      "card_name": "臺企 宮廟認同卡",
+      "confidence": "official_x2",
+      "basic": {
+        "method": "tw_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 18,
+        "net_rate_bp": 180,
+        "cap_twd_max": 100,
+        "max_spend_twd": 6666,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "限掃碼付款（感應支付不算）"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "tw_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 18,
+        "net_rate_bp": 180,
+        "cap_twd_max": 100,
+        "max_spend_twd": 6666,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "限掃碼付款（感應支付不算）"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "tw_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 18,
+        "net_rate_bp": 180,
+        "cap_twd_max": 100,
+        "max_spend_twd": 6666,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "限掃碼付款（感應支付不算）"
+        ],
+        "needs_registration": false
+      },
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          18,
+          54,
+          130
+        ],
+        "best": [
+          18,
+          54,
+          130
+        ],
+        "once": [
+          18,
+          54,
+          130
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "一般餐廳（便當店、小吃）"
+        ],
+        "count": 1,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 180
+      },
+      "reviewed": false
+    },
+    {
+      "card_id": "tbb-smeg",
+      "card_name": "臺企 信保基金111關懷認同卡",
+      "confidence": "official_x2",
+      "basic": {
+        "method": "tw_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 15,
+        "net_rate_bp": 150,
+        "cap_twd_max": 100,
+        "max_spend_twd": 6666,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "限掃碼付款（感應支付不算）"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "tw_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 15,
+        "net_rate_bp": 150,
+        "cap_twd_max": 100,
+        "max_spend_twd": 6666,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "限掃碼付款（感應支付不算）"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "tw_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 15,
+        "net_rate_bp": 150,
+        "cap_twd_max": 100,
+        "max_spend_twd": 6666,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "限掃碼付款（感應支付不算）"
+        ],
+        "needs_registration": false
+      },
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          15,
+          45,
+          100
+        ],
+        "best": [
+          15,
+          45,
+          100
+        ],
+        "once": [
+          15,
+          45,
+          100
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "一般餐廳（便當店、小吃）"
+        ],
+        "count": 1,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 150
+      },
+      "reviewed": false
+    },
+    {
+      "card_id": "tbb-lionsclub",
+      "card_name": "臺企 國際獅子會台灣總會認同卡",
+      "confidence": "official_x2",
+      "basic": {
+        "method": "tw_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 15,
+        "net_rate_bp": 150,
+        "cap_twd_max": 100,
+        "max_spend_twd": 6666,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "限掃碼付款（感應支付不算）"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "tw_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 15,
+        "net_rate_bp": 150,
+        "cap_twd_max": 100,
+        "max_spend_twd": 6666,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "限掃碼付款（感應支付不算）"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "tw_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 15,
+        "net_rate_bp": 150,
+        "cap_twd_max": 100,
+        "max_spend_twd": 6666,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "限掃碼付款（感應支付不算）"
+        ],
+        "needs_registration": false
+      },
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          15,
+          45,
+          100
+        ],
+        "best": [
+          15,
+          45,
+          100
+        ],
+        "once": [
+          15,
+          45,
+          100
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "一般餐廳（便當店、小吃）"
+        ],
+        "count": 1,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 150
+      },
+      "reviewed": false
+    },
+    {
+      "card_id": "tbb-eldercaring",
+      "card_name": "臺企 銀色之愛信用卡",
+      "confidence": "official_x2",
+      "basic": {
+        "method": "tw_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 15,
+        "net_rate_bp": 150,
+        "cap_twd_max": 100,
+        "max_spend_twd": 6666,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "限掃碼付款（感應支付不算）"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "tw_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 15,
+        "net_rate_bp": 150,
+        "cap_twd_max": 100,
+        "max_spend_twd": 6666,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "限掃碼付款（感應支付不算）"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "tw_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 15,
+        "net_rate_bp": 150,
+        "cap_twd_max": 100,
+        "max_spend_twd": 6666,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "限掃碼付款（感應支付不算）"
+        ],
+        "needs_registration": false
+      },
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          15,
+          45,
+          100
+        ],
+        "best": [
+          15,
+          45,
+          100
+        ],
+        "once": [
+          15,
+          45,
+          100
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "一般餐廳（便當店、小吃）"
+        ],
+        "count": 1,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 150
+      },
+      "reviewed": false
+    },
+    {
+      "card_id": "taishin-daquanlian",
+      "card_name": "台新 大全聯信用卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "pxpay_plus",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 8,
+        "net_rate_bp": 80,
+        "cap_twd_max": 1500,
+        "max_spend_twd": 187500,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：大全聯福利卡號要先綁定 PX Pay，未綁定沒有福利點回饋（店內、全支付店外都一樣）。"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "pxpay_plus",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 15,
+        "net_rate_bp": 150,
+        "cap_twd_max": 1500,
+        "max_spend_twd": 100000,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "需完成「台新帳戶自動扣繳卡費」：設定台新帳戶自動扣繳卡費，全支付店外才是 1.5%（否則 0.8%）。",
+          "前提：大全聯福利卡號要先綁定 PX Pay，未綁定沒有福利點回饋（店內、全支付店外都一樣）。"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "pxpay_plus",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 15,
+        "net_rate_bp": 150,
+        "cap_twd_max": 1500,
+        "max_spend_twd": 100000,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "需完成「台新帳戶自動扣繳卡費」：設定台新帳戶自動扣繳卡費，全支付店外才是 1.5%（否則 0.8%）。",
+          "前提：大全聯福利卡號要先綁定 PX Pay，未綁定沒有福利點回饋（店內、全支付店外都一樣）。"
+        ],
+        "needs_registration": false
+      },
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          8,
+          24,
+          80
+        ],
+        "best": [
+          15,
+          45,
+          150
+        ],
+        "once": [
+          15,
+          45,
+          150
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "一般餐廳（便當店、小吃）"
+        ],
+        "count": 1,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 150
+      },
+      "reviewed": false
+    },
+    {
+      "card_id": "scsb-minions",
+      "card_name": "上海商銀 小小兵回饋卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 12.34,
+        "net_rate_bp": 123,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 12.34,
+        "net_rate_bp": 123,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 12.34,
+        "net_rate_bp": 123,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          12.34,
+          37.02,
+          123.4
+        ],
+        "best": [
+          12.34,
+          37.02,
+          123.4
+        ],
+        "once": [
+          12.34,
+          37.02,
+          123.4
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "Uber Eats",
+          "foodpanda",
+          "星巴克"
+        ],
+        "count": 95,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 123
+      },
+      "reviewed": false
+    },
+    {
+      "card_id": "hsbc-cashback",
+      "card_name": "滙豐現金回饋御璽卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 12.2,
+        "net_rate_bp": 122,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 12.2,
+        "net_rate_bp": 122,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 12.2,
+        "net_rate_bp": 122,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          12.2,
+          36.6,
+          122
+        ],
+        "best": [
+          12.2,
+          36.6,
+          122
+        ],
+        "once": [
+          12.2,
+          36.6,
+          122
+        ]
+      },
+      "tie": true,
+      "reviewed": false
+    },
+    {
+      "card_id": "yuanta-hk-diamond",
+      "card_name": "元大 Hello Kitty 鑽金聯名卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 12,
+        "net_rate_bp": 120,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 12,
+        "net_rate_bp": 120,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 12,
+        "net_rate_bp": 120,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          12,
+          36,
+          120
+        ],
+        "best": [
+          12,
+          36,
+          120
+        ],
+        "once": [
+          12,
+          36,
+          120
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "Uber Eats",
+          "foodpanda",
+          "星巴克"
+        ],
+        "count": 95,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 120
+      },
+      "reviewed": false
+    },
+    {
+      "card_id": "yuanta-securities",
+      "card_name": "元大證券聯名卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 12,
+        "net_rate_bp": 120,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：限元大證券客戶申辦（會員等級影響年費與加碼）"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 12,
+        "net_rate_bp": 120,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：限元大證券客戶申辦（會員等級影響年費與加碼）"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 12,
+        "net_rate_bp": 120,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：限元大證券客戶申辦（會員等級影響年費與加碼）"
+        ],
+        "needs_registration": false
+      },
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          12,
+          36,
+          120
+        ],
+        "best": [
+          12,
+          36,
+          120
+        ],
+        "once": [
+          12,
+          36,
+          120
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "Uber Eats",
+          "foodpanda",
+          "星巴克"
+        ],
+        "count": 95,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 120
+      },
+      "reviewed": false
+    },
+    {
+      "card_id": "sinopac-dawho",
+      "card_name": "永豐 DAWHO 現金回饋信用卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": "dada",
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：須先有永豐 DAWHO 數位存款帳戶；不提供附卡。"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": "dada",
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：須先有永豐 DAWHO 數位存款帳戶；不提供附卡。"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": "plus",
+        "net_twd_per_1000": 50,
+        "net_rate_bp": 500,
+        "cap_twd_max": 1000,
+        "max_spend_twd": 25000,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "需符合「大戶Plus」：當月平均財富 100 萬元以上，且（單筆台幣換外幣 5,000 元以上，或以永豐金證券交割帳戶完成台股交易）。",
+          "需完成「指定任務」：設定 DAWHO 帳戶自動扣繳信用卡款並扣款成功，且使用電子或行動帳單並取消實體帳單；兩項都要達成。",
+          "前提：須先有永豐 DAWHO 數位存款帳戶；不提供附卡。"
+        ],
+        "needs_registration": false
+      },
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          10,
+          30,
+          100
+        ],
+        "best": [
+          50,
+          150,
+          500
+        ],
+        "once": [
+          10,
+          30,
+          100
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "Uber Eats",
+          "foodpanda",
+          "星巴克"
+        ],
+        "count": 95,
+        "total": 97,
+        "scenario": "once",
+        "net_rate_bp": 100
+      },
+      "reviewed": false
+    },
+    {
+      "card_id": "mega-gogoro",
+      "card_name": "兆豐 Gogoro 聯名卡",
+      "confidence": "official_x2",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "tw_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 25,
+        "net_rate_bp": 250,
+        "cap_twd_max": 100,
+        "max_spend_twd": 6666,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "每月登錄：兆豐信用卡綁台灣Pay 掃碼消費每月登錄享 1.5% 刷卡金"
+        ],
+        "needs_registration": true
+      },
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          10,
+          30,
+          100
+        ],
+        "best": [
+          25,
+          75,
+          200
+        ],
+        "once": [
+          10,
+          30,
+          100
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "一般餐廳（便當店、小吃）"
+        ],
+        "count": 1,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 250
+      },
+      "reviewed": false
+    },
+    {
+      "card_id": "mega-dual-currency",
+      "card_name": "兆豐 雙幣鈦金商旅卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 5,
+        "net_rate_bp": 50,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "需完成「電子帳單」：綁定電子帳單（不含行動帳單）並取消紙本。"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "tw_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 25,
+        "net_rate_bp": 250,
+        "cap_twd_max": 100,
+        "max_spend_twd": 6666,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "需完成「電子帳單」：綁定電子帳單（不含行動帳單）並取消紙本。",
+          "每月登錄：兆豐信用卡綁台灣Pay 掃碼消費每月登錄享 1.5% 刷卡金"
+        ],
+        "needs_registration": true
+      },
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          5,
+          15,
+          50
+        ],
+        "best": [
+          25,
+          75,
+          200
+        ],
+        "once": [
+          10,
+          30,
+          100
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "一般餐廳（便當店、小吃）"
+        ],
+        "count": 1,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 250
+      },
+      "reviewed": false
+    },
+    {
+      "card_id": "sinopac-sport",
+      "card_name": "永豐 SPORT 卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 3,
+        "net_rate_bp": 30,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：運動與指定通路加碼要在大咖 DACARD App 註冊，當月達成運動目標，並設定永豐或京城帳戶自動扣繳。"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "需完成「電子或行動帳單」：當月帳單結帳日前設定電子或行動帳單，基本回饋從 0.3% 變 1%。",
+          "前提：運動與指定通路加碼要在大咖 DACARD App 註冊，當月達成運動目標，並設定永豐或京城帳戶自動扣繳。"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "apple_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 50,
+        "net_rate_bp": 500,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "需完成「電子或行動帳單」：當月帳單結帳日前設定電子或行動帳單，基本回饋從 0.3% 變 1%。",
+          "需完成「運動目標 + 自動扣繳」：當月在大咖 DACARD App 累積 10,000 大卡或 Apple Watch 圓滿畫圈 10 次，並在回饋前設定永豐或京城帳戶自動扣繳。",
+          "前提：運動與指定通路加碼要在大咖 DACARD App 註冊，當月達成運動目標，並設定永豐或京城帳戶自動扣繳。"
+        ],
+        "needs_registration": false
+      },
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          3,
+          9,
+          30
+        ],
+        "best": [
+          50,
+          150,
+          500
+        ],
+        "once": [
+          10,
+          30,
+          100
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "星巴克",
+          "一般餐廳（便當店、小吃）",
+          "Mister Donut"
+        ],
+        "count": 3,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 500
+      },
+      "reviewed": false
+    },
+    {
+      "card_id": "ctbc-foodpanda",
+      "card_name": "中信 foodpanda 聯名卡",
+      "confidence": "official_x2",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 0,
+        "net_rate_bp": 0,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "需完成「綁定 pandapay 錢包」：foodpanda 聯名卡未綁定或 pandapay 錢包失效時不給胖達幣。"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 50,
+        "net_rate_bp": 500,
+        "cap_twd_max": 200,
+        "max_spend_twd": 5000,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "需完成「綁定 pandapay 錢包」：foodpanda 聯名卡未綁定或 pandapay 錢包失效時不給胖達幣。",
+          "單筆滿 288 元才有加碼",
+          "總量有限：胖達幣全體每月總回饋上限 250 萬元，額滿停止加碼並於中信網頁公告"
+        ],
+        "needs_registration": false
+      },
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "best": [
+          50,
+          150,
+          300
+        ],
+        "once": [
+          10,
+          30,
+          100
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "foodpanda"
+        ],
+        "count": 1,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 500
+      },
+      "reviewed": false
+    },
+    {
+      "card_id": "ubot-infinite",
+      "card_name": "聯邦 無限卡",
+      "confidence": "official_x2",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 8,
+        "net_rate_bp": 80,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：年收入 NT$200 萬以上"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 8,
+        "net_rate_bp": 80,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：年收入 NT$200 萬以上"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 40,
+        "net_rate_bp": 93,
+        "cap_twd_max": 200,
+        "max_spend_twd": 6666,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "當月累積消費滿 25,000 元才有加碼",
+          "前提：年收入 NT$200 萬以上",
+          "每月登錄：聯邦信用卡 Uber Eats、foodpanda 每月登錄筆筆 3%"
+        ],
+        "needs_registration": true,
+        "threshold_twd": 25000,
+        "txn_rate_bp": 400
+      },
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          8,
+          24,
+          80
+        ],
+        "best": [
+          8,
+          24,
+          80
+        ],
+        "once": [
+          8,
+          24,
+          80
+        ]
+      },
+      "only_at": {
+        "merchant_names": [
+          "Uber Eats",
+          "foodpanda"
+        ],
+        "count": 2,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 93
+      },
+      "reviewed": false
+    },
+    {
+      "card_id": "sinopac-dream",
+      "card_name": "永豐夢行卡（商務御璽／商務鈦金）",
+      "confidence": "official_x2",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": "titanium",
+        "net_twd_per_1000": 3,
+        "net_rate_bp": 30,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "需符合「商務鈦金卡」：2026 下半年一般消費 0.3%，設定電子或行動帳單再加 0.7%；生活特選通路加碼 3% 只限這個卡等。"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": "signature",
+        "net_twd_per_1000": 6,
+        "net_rate_bp": 60,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "需符合「商務御璽卡」：2026 下半年一般消費國內 0.6%、國外 1.5%，不用任務；沒有電子帳單加碼與特選通路加碼。"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": "titanium",
+        "net_twd_per_1000": 40,
+        "net_rate_bp": 400,
+        "cap_twd_max": 300,
+        "max_spend_twd": 10000,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "需符合「商務鈦金卡」：2026 下半年一般消費 0.3%，設定電子或行動帳單再加 0.7%；生活特選通路加碼 3% 只限這個卡等。",
+          "需完成「設定電子或行動帳單」：未設定時一般消費只有 0.3%。",
+          "需完成「電子帳單＋永豐或京城自扣＋登錄」：同時完成：帳單設成電子或行動帳單；帳單結帳日前一個工作日設定正卡人本人的永豐或京城帳戶自動扣繳並扣款成功；完成「2026H2夢行卡生活特選通路加碼活動」登錄（不限名額）。",
+          "登錄：生活特選通路 加碼 3%（需登錄＋任務）"
+        ],
+        "needs_registration": true
+      },
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          3,
+          9,
+          30
+        ],
+        "best": [
+          40,
+          120,
+          400
+        ],
+        "once": [
+          6,
+          18,
+          60
+        ]
+      },
+      "only_at": {
+        "merchant_names": [
+          "Uber Eats",
+          "foodpanda",
+          "星巴克"
+        ],
+        "count": 89,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 400
+      },
+      "reviewed": false
+    },
+    {
+      "card_id": "ubot-omamori",
+      "card_name": "聯邦 幸福御守卡",
+      "confidence": "official_x2",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 5,
+        "net_rate_bp": 50,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 5,
+        "net_rate_bp": 50,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 35,
+        "net_rate_bp": 350,
+        "cap_twd_max": 200,
+        "max_spend_twd": 6666,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "每月登錄：聯邦信用卡 Uber Eats、foodpanda 每月登錄筆筆 3%"
+        ],
+        "needs_registration": true
+      },
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          5,
+          15,
+          50
+        ],
+        "best": [
+          35,
+          105,
+          250
+        ],
+        "once": [
+          5,
+          15,
+          50
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "Uber Eats",
+          "foodpanda"
+        ],
+        "count": 2,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 350
+      },
+      "reviewed": false
+    },
+    {
+      "card_id": "mega-young",
+      "card_name": "兆豐 e秒刷 悠遊／一卡通聯名卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 5,
+        "net_rate_bp": 50,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 5,
+        "net_rate_bp": 50,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "tw_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 20,
+        "net_rate_bp": 200,
+        "cap_twd_max": 100,
+        "max_spend_twd": 6666,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "每月登錄：兆豐信用卡綁台灣Pay 掃碼消費每月登錄享 1.5% 刷卡金"
+        ],
+        "needs_registration": true
+      },
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          5,
+          15,
+          50
+        ],
+        "best": [
+          20,
+          60,
+          150
+        ],
+        "once": [
+          5,
+          15,
+          50
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "一般餐廳（便當店、小吃）"
+        ],
+        "count": 1,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 200
+      },
+      "reviewed": false
+    },
+    {
+      "card_id": "mega-young2",
+      "card_name": "兆豐 e秒刷卡",
+      "confidence": "official_x2",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 5,
+        "net_rate_bp": 50,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 5,
+        "net_rate_bp": 50,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "tw_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 20,
+        "net_rate_bp": 200,
+        "cap_twd_max": 100,
+        "max_spend_twd": 6666,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "每月登錄：兆豐信用卡綁台灣Pay 掃碼消費每月登錄享 1.5% 刷卡金"
+        ],
+        "needs_registration": true
+      },
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          5,
+          15,
+          50
+        ],
+        "best": [
+          20,
+          60,
+          150
+        ],
+        "once": [
+          5,
+          15,
+          50
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "一般餐廳（便當店、小吃）"
+        ],
+        "count": 1,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 200
+      },
+      "reviewed": false
+    },
+    {
+      "card_id": "mega-young-combo",
+      "card_name": "兆豐 e秒萬事通金融信用卡",
+      "confidence": "official_x2",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 5,
+        "net_rate_bp": 50,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：須有兆豐存款帳戶（金融卡）"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 5,
+        "net_rate_bp": 50,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：須有兆豐存款帳戶（金融卡）"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "tw_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 20,
+        "net_rate_bp": 200,
+        "cap_twd_max": 100,
+        "max_spend_twd": 6666,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：須有兆豐存款帳戶（金融卡）",
+          "每月登錄：兆豐信用卡綁台灣Pay 掃碼消費每月登錄享 1.5% 刷卡金"
+        ],
+        "needs_registration": true
+      },
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          5,
+          15,
+          50
+        ],
+        "best": [
+          20,
+          60,
+          150
+        ],
+        "once": [
+          5,
+          15,
+          50
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "一般餐廳（便當店、小吃）"
+        ],
+        "count": 1,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 200
+      },
+      "reviewed": false
+    },
+    {
+      "card_id": "nextbank-dajiang",
+      "card_name": "將來銀行 大將卡（簽帳金融商務御璽卡）",
+      "confidence": "conflict",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 5,
+        "net_rate_bp": 50,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：須開立將來銀行數位存款帳戶。"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 5,
+        "net_rate_bp": 50,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：須開立將來銀行數位存款帳戶。"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 15,
+        "net_rate_bp": 150,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "需完成「前月指定任務（三選一）」：前月新臺幣活存日均 30 萬元；或前月美元活存主帳戶日均 5,000 美元；或前月投資帳戶月均資產 10 萬元並完成投資屬性測驗。",
+          "前提：須開立將來銀行數位存款帳戶。"
+        ],
+        "needs_registration": false
+      },
+      "verified_ai": "2026-11-13",
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          5,
+          15,
+          50
+        ],
+        "best": [
+          15,
+          45,
+          150
+        ],
+        "once": [
+          5,
+          15,
+          50
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "Uber Eats",
+          "foodpanda",
+          "星巴克"
+        ],
+        "count": 95,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 150
+      },
+      "reviewed": false
+    },
+    {
+      "card_id": "firstbank-yixiang",
+      "card_name": "第一銀行 義享天地聯名卡",
+      "confidence": "official_x2",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": "world",
+        "net_twd_per_1000": 4,
+        "net_rate_bp": 40,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": "world",
+        "net_twd_per_1000": 4,
+        "net_rate_bp": 40,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": "world",
+        "net_twd_per_1000": 30,
+        "net_rate_bp": 300,
+        "cap_twd_max": 300,
+        "max_spend_twd": 10000,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "需完成「申請電子帳單」：完成申請電子帳單並登錄活動，精選通路 3% 才算。",
+          "單筆滿 500 元才有加碼",
+          "登錄：精選通路 3% 刷卡金（需登錄、電子帳單、單筆滿 500）"
+        ],
+        "needs_registration": true
+      },
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          4,
+          12,
+          40
+        ],
+        "best": [
+          30,
+          90,
+          300
+        ],
+        "once": [
+          4,
+          12,
+          40
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "Uber Eats",
+          "foodpanda",
+          "麥當勞"
+        ],
+        "count": 96,
+        "total": 97,
+        "scenario": "once",
+        "net_rate_bp": 40
+      },
+      "reviewed": false
+    },
+    {
+      "card_id": "mega-happy-combo",
+      "card_name": "兆豐 e秒Happy金融信用卡",
+      "confidence": "official_x2",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 4,
+        "net_rate_bp": 40,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：須有兆豐存款帳戶（金融卡）"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 4,
+        "net_rate_bp": 40,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：須有兆豐存款帳戶（金融卡）"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "tw_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 19,
+        "net_rate_bp": 190,
+        "cap_twd_max": 100,
+        "max_spend_twd": 6666,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：須有兆豐存款帳戶（金融卡）",
+          "每月登錄：兆豐信用卡綁台灣Pay 掃碼消費每月登錄享 1.5% 刷卡金"
+        ],
+        "needs_registration": true
+      },
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          4,
+          12,
+          40
+        ],
+        "best": [
+          19,
+          57,
+          140
+        ],
+        "once": [
+          4,
+          12,
+          40
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "一般餐廳（便當店、小吃）"
+        ],
+        "count": 1,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 190
+      },
+      "reviewed": false
+    },
+    {
+      "card_id": "ubot-bafu",
+      "card_name": "聯邦 八福公益認同卡",
+      "confidence": "official_x2",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": "platinum",
+        "net_twd_per_1000": 3,
+        "net_rate_bp": 30,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "需符合「白金卡／普卡」：持白金卡或普卡。"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": "platinum",
+        "net_twd_per_1000": 3,
+        "net_rate_bp": 30,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "需符合「白金卡／普卡」：持白金卡或普卡。"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": "titanium",
+        "net_twd_per_1000": 35,
+        "net_rate_bp": 350,
+        "cap_twd_max": 200,
+        "max_spend_twd": 6666,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "需符合「鈦金卡」：持鈦金卡。",
+          "每月登錄：聯邦信用卡 Uber Eats、foodpanda 每月登錄筆筆 3%"
+        ],
+        "needs_registration": true
+      },
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          3,
+          9,
+          30
+        ],
+        "best": [
+          35,
+          105,
+          250
+        ],
+        "once": [
+          3,
+          9,
+          30
+        ]
+      },
+      "only_at": {
+        "merchant_names": [
+          "Uber Eats",
+          "foodpanda"
+        ],
+        "count": 2,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 350
+      },
+      "reviewed": false
+    },
+    {
+      "card_id": "dbs-aov",
+      "card_name": "星展傳說對決聯名卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": "regular",
+        "net_twd_per_1000": 2,
+        "net_rate_bp": 20,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": "regular",
+        "net_twd_per_1000": 2,
+        "net_rate_bp": 20,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": "autopay",
+        "net_twd_per_1000": 100,
+        "net_rate_bp": 1000,
+        "cap_twd_max": 500,
+        "max_spend_twd": 5555,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "需符合「存戶升級（自動轉帳）」：以指定星展帳戶（活期存款、活儲、星禧數位帳戶等）設定信用卡自動轉帳付款。"
+        ],
+        "needs_registration": false
+      },
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          2,
+          6,
+          20
+        ],
+        "best": [
+          100,
+          300,
+          600
+        ],
+        "once": [
+          2,
+          6,
+          20
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "Uber Eats",
+          "foodpanda",
+          "摩斯漢堡"
+        ],
+        "count": 6,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 1000
+      },
+      "reviewed": false
+    },
+    {
+      "card_id": "ubot-npc",
+      "card_name": "聯邦 全國加油聯名卡",
+      "confidence": "official_x2",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 1.67,
+        "net_rate_bp": 17,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 1.67,
+        "net_rate_bp": 17,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 31.67,
+        "net_rate_bp": 317,
+        "cap_twd_max": 200,
+        "max_spend_twd": 6666,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "每月登錄：聯邦信用卡 Uber Eats、foodpanda 每月登錄筆筆 3%"
+        ],
+        "needs_registration": true
+      },
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          1.67,
+          5.01,
+          16.7
+        ],
+        "best": [
+          31.67,
+          95.01,
+          216.7
+        ],
+        "once": [
+          1.67,
+          5.01,
+          16.7
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "Uber Eats",
+          "foodpanda"
+        ],
+        "count": 2,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 317
+      },
+      "reviewed": false
+    },
+    {
+      "card_id": "ubot-breeze-diamond",
+      "card_name": "聯邦 微風晶鑽無限卡",
+      "confidence": "official_x2",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 1.67,
+        "net_rate_bp": 17,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：年收入 NT$200 萬以上"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 1.67,
+        "net_rate_bp": 17,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：年收入 NT$200 萬以上"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 31.67,
+        "net_rate_bp": 317,
+        "cap_twd_max": 200,
+        "max_spend_twd": 6666,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：年收入 NT$200 萬以上",
+          "每月登錄：聯邦信用卡 Uber Eats、foodpanda 每月登錄筆筆 3%"
+        ],
+        "needs_registration": true
+      },
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          1.67,
+          5.01,
+          16.7
+        ],
+        "best": [
+          31.67,
+          95.01,
+          216.7
+        ],
+        "once": [
+          1.67,
+          5.01,
+          16.7
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "Uber Eats",
+          "foodpanda"
+        ],
+        "count": 2,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 317
+      },
+      "reviewed": false
+    },
+    {
+      "card_id": "ubot-breeze-infinite",
+      "card_name": "聯邦 微風無限卡",
+      "confidence": "official_x2",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 1.67,
+        "net_rate_bp": 17,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：年收入 NT$200 萬以上"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 1.67,
+        "net_rate_bp": 17,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：年收入 NT$200 萬以上"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 31.67,
+        "net_rate_bp": 317,
+        "cap_twd_max": 200,
+        "max_spend_twd": 6666,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：年收入 NT$200 萬以上",
+          "每月登錄：聯邦信用卡 Uber Eats、foodpanda 每月登錄筆筆 3%"
+        ],
+        "needs_registration": true
+      },
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          1.67,
+          5.01,
+          16.7
+        ],
+        "best": [
+          31.67,
+          95.01,
+          216.7
+        ],
+        "once": [
+          1.67,
+          5.01,
+          16.7
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "Uber Eats",
+          "foodpanda"
+        ],
+        "count": 2,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 317
+      },
+      "reviewed": false
+    },
+    {
+      "card_id": "ubot-breeze",
+      "card_name": "聯邦 微風聯名卡",
+      "confidence": "official_x2",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 1.67,
+        "net_rate_bp": 17,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 1.67,
+        "net_rate_bp": 17,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 31.67,
+        "net_rate_bp": 317,
+        "cap_twd_max": 200,
+        "max_spend_twd": 6666,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "每月登錄：聯邦信用卡 Uber Eats、foodpanda 每月登錄筆筆 3%"
+        ],
+        "needs_registration": true
+      },
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          1.67,
+          5.01,
+          16.7
+        ],
+        "best": [
+          31.67,
+          95.01,
+          216.7
+        ],
+        "once": [
+          1.67,
+          5.01,
+          16.7
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "Uber Eats",
+          "foodpanda"
+        ],
+        "count": 2,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 317
+      },
+      "reviewed": false
+    },
+    {
+      "card_id": "ubot-breeze-black",
+      "card_name": "聯邦 微風黑鑽無限卡",
+      "confidence": "official_x2",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 1.67,
+        "net_rate_bp": 17,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：年收入 NT$200 萬以上"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 1.67,
+        "net_rate_bp": 17,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：年收入 NT$200 萬以上"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 31.67,
+        "net_rate_bp": 317,
+        "cap_twd_max": 200,
+        "max_spend_twd": 6666,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：年收入 NT$200 萬以上",
+          "每月登錄：聯邦信用卡 Uber Eats、foodpanda 每月登錄筆筆 3%"
+        ],
+        "needs_registration": true
+      },
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          1.67,
+          5.01,
+          16.7
+        ],
+        "best": [
+          31.67,
+          95.01,
+          216.7
+        ],
+        "once": [
+          1.67,
+          5.01,
+          16.7
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "Uber Eats",
+          "foodpanda"
+        ],
+        "count": 2,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 317
+      },
+      "reviewed": false
+    },
+    {
+      "card_id": "fubon-guardians-braves",
+      "card_name": "富邦 悍將勇士聯名卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 0,
+        "net_rate_bp": 0,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 0,
+        "net_rate_bp": 0,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 50,
+        "net_rate_bp": 500,
+        "cap_twd_max": 1000,
+        "max_spend_twd": 20000,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "總量有限：每月限量 5,000 名、每季 15,000 名，額滿提前截止",
+          "登錄：Uber Eats、foodpanda 5% 刷卡金（須登錄）"
+        ],
+        "needs_registration": true
+      },
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "best": [
+          50,
+          150,
+          333.33
+        ],
+        "once": [
+          0,
+          0,
+          0
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "Uber Eats",
+          "foodpanda",
+          "星巴克"
+        ],
+        "count": 93,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 500
+      },
+      "reviewed": false
+    },
+    {
+      "card_id": "feib-happy",
+      "card_name": "遠東快樂信用卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 0,
+        "net_rate_bp": 0,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 0,
+        "net_rate_bp": 0,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "line_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 50,
+        "net_rate_bp": 500,
+        "cap_twd_max": 300,
+        "max_spend_twd": 6000,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "總量有限：每月限登錄 10,000 名",
+          "每月登錄：LINE Pay 最高 5%（每月登錄）"
+        ],
+        "needs_registration": true
+      },
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "best": [
+          50,
+          150,
+          300
+        ],
+        "once": [
+          0,
+          0,
+          0
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "Uber Eats",
+          "foodpanda",
+          "星巴克"
+        ],
+        "count": 4,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 500
+      },
+      "reviewed": false
+    },
+    {
+      "card_id": "nextbank-jiangjiang",
+      "card_name": "將來銀行 將將卡（Visa 簽帳金融卡）",
+      "confidence": "conflict",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 0,
+        "net_rate_bp": 0,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：須開立將來銀行數位存款帳戶。"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 0,
+        "net_rate_bp": 0,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：須開立將來銀行數位存款帳戶。"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 45,
+        "net_rate_bp": 450,
+        "cap_twd_max": 225,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "單筆滿 1,000 元才有加碼",
+          "前提：須開立將來銀行數位存款帳戶。",
+          "每月登錄：理想生活 餐飲、Uber Eats、foodpanda 單筆滿 1,000 送 45 點"
+        ],
+        "needs_registration": true
+      },
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "best": [
+          45,
+          135,
+          225
+        ],
+        "once": [
+          0,
+          0,
+          0
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "Uber Eats",
+          "foodpanda",
+          "麥當勞"
+        ],
+        "count": 95,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 450
+      },
+      "reviewed": false
+    },
+    {
+      "card_id": "mega-world",
+      "card_name": "兆豐 世界卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 0,
+        "net_rate_bp": 0,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：年收入 NT$200 萬以上或兆豐近六個月平均存款 NT$300 萬以上"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 0,
+        "net_rate_bp": 0,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：年收入 NT$200 萬以上或兆豐近六個月平均存款 NT$300 萬以上"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "tw_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 15,
+        "net_rate_bp": 150,
+        "cap_twd_max": 100,
+        "max_spend_twd": 6666,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：年收入 NT$200 萬以上或兆豐近六個月平均存款 NT$300 萬以上",
+          "每月登錄：兆豐信用卡綁台灣Pay 掃碼消費每月登錄享 1.5% 刷卡金"
+        ],
+        "needs_registration": true
+      },
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "best": [
+          15,
+          45,
+          100
+        ],
+        "once": [
+          0,
+          0,
+          0
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "一般餐廳（便當店、小吃）"
+        ],
+        "count": 1,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 150
+      },
+      "reviewed": false
+    },
+    {
+      "card_id": "mega-infinite",
+      "card_name": "兆豐 無限卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 0,
+        "net_rate_bp": 0,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：年收入 NT$200 萬以上或兆豐近六個月平均存款 NT$300 萬以上"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 0,
+        "net_rate_bp": 0,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：年收入 NT$200 萬以上或兆豐近六個月平均存款 NT$300 萬以上"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "tw_pay",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 15,
+        "net_rate_bp": 150,
+        "cap_twd_max": 100,
+        "max_spend_twd": 6666,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：年收入 NT$200 萬以上或兆豐近六個月平均存款 NT$300 萬以上",
+          "每月登錄：兆豐信用卡綁台灣Pay 掃碼消費每月登錄享 1.5% 刷卡金"
+        ],
+        "needs_registration": true
+      },
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "best": [
+          15,
+          45,
+          100
+        ],
+        "once": [
+          0,
+          0,
+          0
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "一般餐廳（便當店、小吃）"
+        ],
+        "count": 1,
+        "total": 97,
+        "scenario": "best",
+        "net_rate_bp": 150
+      },
+      "reviewed": false
+    }
+  ],
+  "promo_ids": []
+}

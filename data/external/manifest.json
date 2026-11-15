@@ -6,7 +6,7 @@
   "sourceApi": "https://pay.elggum.com/api/v1/meta.json",
   "dataDate": "2026-11-14",
   "generatedAt": "2026-11-14T02:49:49.389Z",
-  "syncedAt": "2026-11-15T18:51:03.178547+00:00",
+  "syncedAt": "2026-11-15T18:53:58.333135+00:00",
   "counts": {
     "issuers": 51,
     "cards": 199,
@@ -21,7 +21,9 @@
     "wallets": 23,
     "issuers": 51,
     "promos": 55,
-    "fee_rules": 34
+    "fee_rules": 34,
+    "rankings": 112,
+    "card-scores": 0
   },
   "notes": "Third-party data, not proof of actual reward eligibility. Check the issuing bank's terms.",
   "sha256": {
@@ -33,6 +35,23 @@
     "promos": "48bc3db2e24db5609a882f670c482d9ac7ef3e3db6ec9fcf923ebdbfaec8e646",
     "fee_rules": "60f7c3d6e9b41d2baa135a2a794219f58febbfb437dad351416af21e53393742",
     "sources": "0ad32d184f0c42b64ae390b30788805b99a4d5bb63e20273692171d3b2997bc2",
-    "coverage": "aafdcbb5a5d8e0cb719fbdf9e304843fb7cb3d9aea9bb17518f94c60cd5d1324"
-  }
+    "coverage": "aafdcbb5a5d8e0cb719fbdf9e304843fb7cb3d9aea9bb17518f94c60cd5d1324",
+    "rankings": "cc79a702781d133083c3eaffd72f3eae38fdae5073e7fe18502bd2b01e0656fc",
+    "card-scores": "fc8ff2b792216d7df362932c2ed3d66b5a89e83f24be3266dafe172c5a44212b"
+  },
+  "rankings": {
+    "general": 73,
+    "seven-eleven": 32,
+    "familymart": 32,
+    "convenience": 88,
+    "shopee": 62,
+    "momo": 62,
+    "line-pay": 63,
+    "jkopay": 27,
+    "apple-pay": 60,
+    "overseas": 53,
+    "dining": 93,
+    "online": 85
+  },
+  "rankingErrors": []
 }

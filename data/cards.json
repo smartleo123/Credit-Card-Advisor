@@ -277,6 +277,27 @@
           "note": "合格餐飲總計3.3%；需財富管理等級資格",
           "source": "https://www.cathay-cube.com.tw/cathaybk/personal/product/credit-card/cards/cube-list",
           "verification": "official"
+        },
+        {
+          "id": "cube-curated-convenience",
+          "label": "集精選：7-ELEVEN／全家實體門市",
+          "category": [
+            "convenience"
+          ],
+          "rate": 0.017,
+          "cap": null,
+          "period": "month",
+          "conditions": [
+            "cube-curated"
+          ],
+          "end": "2026-12-31",
+          "note": "指定超商合格交易總回饋2%（基本0.3%+加碼1.7%）；排除菸酒、代收代售、禮券、儲值等；須在消費當日選定集精選方案",
+          "source": "https://www.cathay-cube.com.tw/cathaybk/personal/product/credit-card/cards/cube-list",
+          "verification": "official",
+          "merchants": [
+            "7eleven",
+            "familymart"
+          ]
         }
       ],
       "exclude": [],
@@ -313,6 +334,14 @@
           "limit": "2026/12/31 前",
           "status": "官方已查核",
           "source": "https://www.cathay-cube.com.tw/cathaybk/personal/product/credit-card/cards/cube"
+        },
+        {
+          "category": "convenience",
+          "rate": "集精選 2%",
+          "criteria": "7-ELEVEN、全家實體門市合格消費；消費當日須選定集精選。排除菸酒、代收代售、禮券、儲值等。其他超商需另查核。",
+          "limit": "指定消費2%，非所有超商／支付方式均適用",
+          "status": "官方已查核",
+          "source": "https://www.cathay-cube.com.tw/cathaybk/personal/product/credit-card/cards/cube-list"
         }
       ]
     },
@@ -629,5 +658,40 @@
       "gift": "待核實",
       "channelFacts": []
     }
-  ]
+  ],
+  "merchantPolicies": {
+    "convenience": {
+      "esun-unicard": {
+        "status": "excluded",
+        "merchants": [
+          "7eleven",
+          "familymart",
+          "hilife",
+          "ok"
+        ],
+        "note": "玉山 Unicard 超商交易屬非一般消費，無一般／百大加碼",
+        "source": "https://www.esunbank.com/zh-tw/personal/credit-card/intro/bank-card/unicard"
+      },
+      "ctbc-linepay": {
+        "status": "excluded",
+        "merchants": [
+          "7eleven",
+          "familymart",
+          "hilife",
+          "ok"
+        ],
+        "note": "中國信託 LINE Pay 卡官方將便利商店消費列為不回饋項目",
+        "source": "https://www.ctbcbank.com/content/dam/minisite/long/creditcard/LINEPay/notice.html"
+      },
+      "cathay-cube": {
+        "status": "conditional",
+        "merchants": [
+          "7eleven",
+          "familymart"
+        ],
+        "note": "限集精選方案合格實體門市一般商品；不符合條件不列入已確認回饋",
+        "source": "https://www.cathay-cube.com.tw/cathaybk/personal/product/credit-card/cards/cube-list"
+      }
+    }
+  }
 }

@@ -7,6 +7,7 @@
 
  let catalogShown=24;
  let discoveryRankings={};
+ let fullRewardEvidence={};
  const discoverySlugs=["seven-eleven","familymart","convenience","line-pay","jkopay","apple-pay","shopee","momo","dining","overseas","online","general"];
  const discoveryTitles={"seven-eleven":"7-ELEVEN","familymart":"全家","convenience":"超商","line-pay":"LINE Pay","jkopay":"街口","apple-pay":"Apple Pay","shopee":"蝦皮","momo":"momo","dining":"餐飲","overseas":"海外","online":"網購","general":"一般"};
  function userCards(){try{return JSON.parse(localStorage.getItem("cardwise-tw-settings-v2")||"{}")}catch{return {}}}
@@ -18,6 +19,7 @@
    return valid?valid.replace(/[),;]+$/,""):"";
  }
  function rewardHighlights(cardId){
+   if(fullRewardEvidence[cardId])return fullRewardEvidence[cardId].slice(0,6).map(x=>({slug:x.slug,title:x.title,rate:x.rateBp/100,verified:x.reviewed,requirements:(x.needs||[]).length,details:x.needs||[],capTwd:x.capTwd}));
    const found=[];
    for(const slug of discoverySlugs){
      const d=discoveryRankings[slug];
@@ -49,7 +51,7 @@
      const issuer=issuers[c.issuer]||c.issuer;
      const high=rewardHighlights(c.id);
      const links=officialLink(sourceRow);
-     const evidence=high.length?high.map(v=>'<span class="tag">'+escape(discoveryTitles[v.slug])+' '+v.rate.toFixed(2)+'%'+(v.verified?" · 已複核":" · 未複核")+'</span>').join(""):'<span class="subtle">尚無此處已索引通路的可量化排行，請查看來源資料</span>';
+     const evidence=high.length?high.map(v=>'<span class="tag">'+escape(v.title||discoveryTitles[v.slug]||v.slug)+' '+v.rate.toFixed(2)+'%'+(v.verified?" · 已複核":" · 未複核")+'</span>').join(""):'<span class="subtle">尚無此處已索引通路的可量化排行，請查看來源資料</span>';
      const details=high.length?'<details class="bonus-box"><summary>展開回饋資料來源與條件提醒</summary><p>以下為來源排行榜「一次設定」情境，不等於你已完成所有條件，也不適用於所有消費金額。請點各通路排行榜展開核對需求及回饋上限。</p><a href="#source-rankings">前往通路排行榜 ↗</a></details>':"";
      return '<article class="card full-card"><div class="bank">'+escape(issuer)+'</div><h3>'+escape(c.name)+'</h3><div class="details">'+evidence+'</div>'+details+'<div class="card-footer"><label class="check"><input type="checkbox" data-full-owned="'+escape(c.id)+'" '+(owned.has(c.id)?"checked":"")+'> 我持有這張卡</label>'+(links?'<a href="'+escape(links)+'" target="_blank" rel="noopener noreferrer">銀行來源 ↗</a>':'<a href="https://pay.elggum.com/" target="_blank" rel="noopener noreferrer">資料提供站 ↗</a>')+'</div><p class="subtle">來源卡片 ID：'+escape(c.id)+'；回饋以詳細資格與銀行官網為準</p></article>';
    }).join("");
@@ -85,7 +87,18 @@
      renderFullCards();
      // Original calculator re-reads settings on page refresh; source rankings read current localStorage.
    });
-   renderFullCards();warmRankingHighlights();
+   renderFullCards();
+   const all=data?.metadata?.rankingsIndex||[];
+   const select=el("source-ranking-category");
+   if(select&&all.length){
+     const current=select.value;
+     select.innerHTML=all.map(x=>'<option value="'+escape(x.slug)+'">'+escape(x.title)+'</option>').join("");
+     if(all.some(x=>x.slug===current))select.value=current;
+   }
+   fetch("./data/external/card-reward-highlights.json",{cache:"no-store"})
+     .then(r=>r.ok?r.json():null)
+     .then(x=>{if(x?.license==="CC BY 4.0"&&x?.cards){fullRewardEvidence=x.cards;renderFullCards()}else warmRankingHighlights()})
+     .catch(()=>warmRankingHighlights());
  }
 
  function render(){
@@ -113,6 +126,7 @@
      el("external-status").innerHTML='<strong>同步來源：</strong><a href="https://pay.elggum.com/" target="_blank" rel="noopener noreferrer">台灣支付優惠站</a>　<strong>資料日期：</strong>'+escape(m.dataDate||"來源未提供")+'　<strong>取得日期：</strong>'+escape(m.syncedAt||"未提供")+'<div class="subtle">'+escape(counts)+'</div>';
      render();
      setupFullCards();
+     if(el("card-count"))el("card-count").textContent=(data.datasets.cards||[]).length+" 張卡片已收錄";
    }catch(err){
      el("external-status").textContent="外部 API 的第一份有效快取尚未發布："+err.message+"。GitHub Actions 會自動同步；在完成前，既有核實資料照常使用。";
      el("external-list").innerHTML='<div class="empty">避免顯示空白或編造回饋，外部來源同步成功前不會將其資料納入比較。<a href="https://github.com/smartleo123/Credit-Card-Advisor/actions" target="_blank" rel="noopener noreferrer">查看同步工作流程 ↗</a></div>';

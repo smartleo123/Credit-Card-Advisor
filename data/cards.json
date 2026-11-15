@@ -112,7 +112,13 @@
           "status": "官方已查核",
           "source": "https://event.esunbank.com.tw/credit/unicard/index.html"
         }
-      ]
+      ],
+      "feePolicy": {
+        "assumedAnnualFee": 0,
+        "assumption": "假設已申請並維持符合免年費資格的電子帳單",
+        "method": "e-statement",
+        "verifiedFrom": "https://event.esunbank.com.tw/credit/unicard/index.html"
+      }
     },
     {
       "id": "cathay-cube",
@@ -343,7 +349,13 @@
           "status": "官方已查核",
           "source": "https://www.cathay-cube.com.tw/cathaybk/personal/product/credit-card/cards/cube-list"
         }
-      ]
+      ],
+      "feePolicy": {
+        "assumedAnnualFee": 0,
+        "assumption": "假設已申請並維持符合免年費資格的電子帳單",
+        "method": "e-statement",
+        "verifiedFrom": "https://www.cathay-cube.com.tw/cathaybk/personal/product/credit-card/cards/cube-list"
+      }
     },
     {
       "id": "fubon-j",
@@ -410,7 +422,12 @@
           "status": "官方已查核",
           "source": "https://www.fubon.com/banking/JF/"
         }
-      ]
+      ],
+      "feePolicy": {
+        "assumedAnnualFee": null,
+        "assumption": "未確認可僅憑電子帳單永久免年費",
+        "method": "unverified"
+      }
     },
     {
       "id": "ctbc-linepay",
@@ -467,7 +484,12 @@
           "status": "官方已查核",
           "source": "https://www.ctbcbank.com/content/dam/minisite/long/creditcard/LINEPay/notice.html"
         }
-      ]
+      ],
+      "feePolicy": {
+        "assumedAnnualFee": null,
+        "assumption": "未確認可僅憑電子帳單永久免年費",
+        "method": "unverified"
+      }
     },
     {
       "id": "sinopac-daway",
@@ -551,7 +573,13 @@
           "status": "部分條件待複核",
           "source": "https://bank.sinopac.com/sinopacBT/personal/credit-card/introduction/bankcard/DAWAY.html"
         }
-      ]
+      ],
+      "feePolicy": {
+        "assumedAnnualFee": 0,
+        "assumption": "假設已申請並維持符合免年費資格的電子帳單",
+        "method": "e-statement",
+        "verifiedFrom": "https://bank.sinopac.com/sinopacBT/personal/credit-card/introduction/bankcard/DAWAY.html"
+      }
     },
     {
       "id": "hsbc-liveplus",
@@ -629,7 +657,12 @@
       ],
       "exclude": [],
       "gift": "1,000元首刷禮活動2026/9/30截止，未列入估算",
-      "channelFacts": []
+      "channelFacts": [],
+      "feePolicy": {
+        "assumedAnnualFee": null,
+        "assumption": "未確認可僅憑電子帳單永久免年費",
+        "method": "unverified"
+      }
     },
     {
       "id": "dbs-eco",
@@ -651,7 +684,12 @@
       "rules": [],
       "exclude": [],
       "gift": "待核實",
-      "channelFacts": []
+      "channelFacts": [],
+      "feePolicy": {
+        "assumedAnnualFee": null,
+        "assumption": "未確認可僅憑電子帳單永久免年費",
+        "method": "unverified"
+      }
     },
     {
       "id": "taishin-richart",
@@ -673,7 +711,12 @@
       "rules": [],
       "exclude": [],
       "gift": "待核實",
-      "channelFacts": []
+      "channelFacts": [],
+      "feePolicy": {
+        "assumedAnnualFee": null,
+        "assumption": "未確認可僅憑電子帳單永久免年費",
+        "method": "unverified"
+      }
     }
   ],
   "merchantPolicies": {

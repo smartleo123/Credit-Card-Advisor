@@ -78,3 +78,20 @@ Vanilla HTML / CSS / JavaScript；GitHub Pages 靜態部署；Python 3 標準函
 ## 重新部署
 
 啟用 GitHub Pages 並選擇 GitHub Actions 為來源後，推送到 `main` 分支會觸發 `.github/workflows/deploy.yml` 重新發布網站。也可在 GitHub Actions 頁面手動執行 `Deploy website to GitHub Pages` 工作流程。
+
+## 各通路回饋細節（2026-11-16 新增）
+
+首頁「各家信用卡 × 消費通路明細」支援 LINE Pay、街口、Apple Pay、蝦皮、momo、超商、海外與餐飲，並能依銀行／我的持卡篩選。點擊已核實的回饋格，可查看 **回饋率、資格、上限、來源**。若沒有足夠官方證據，顯示「待查核」，而不是自行套用一般消費率。
+
+目前首批逐通路官方核對包含玉山 Unicard、國泰 CUBE（玩數位／樂饗購分級）、中信 LINE Pay 海外實體、永豐 DAWAY 的部分條款。這仍不是「全台所有卡片、所有通路」的完整資料庫。首頁試算與通路明細資料皆來自 `data/cards.json`；逐通路資料在 `channelFacts` 欄位，詳細回饋計算規則在 `rules` 欄位。
+
+**特別注意：** 2026 年 CUBE 玩數位、樂饗購由權益 Level 1／2／3 對應指定消費 2%／3%／3.3%，要先切換方案；固定回饋方案不可和其他指定方案加碼疊加。若官方沒有揭露可直接計算的加碼上限，本站也不會自行編造上限。
+
+### 值得參考的開源專案
+
+- [stonebomdic/deal-radar](https://github.com/stonebomdic/deal-radar)：台灣銀行爬蟲、回饋活動 API、推薦引擎與排程更新；採 MIT 授權。
+- [tony13382/tw-creditcard-vault](https://github.com/tony13382/tw-creditcard-vault)：官方來源優先、條款查核及回饋排除規則的公開 Obsidian 知識庫；其內容為 CC BY-SA 4.0，**未直接複製到本專案**。
+- [kau10082/Card_Radar](https://github.com/kau10082/Card_Radar)：針對持有卡片、額度上限及實際回饋的比較設計。
+- [astrocamp/20th-Rewardia](https://github.com/astrocamp/20th-Rewardia)：瀏覽器擴充、爬蟲與回饋比較架構參考。
+
+**資料與授權聲明**：只參考設計與公開架構，未直接移植第三方程式碼或複製他人資料表。所有進入回饋細節的數據須有銀行官方條款 URL 與查核日期，回饋更新需人工確認。監測機制僅提醒來源變動，不會自動證明資料已正確更新。

@@ -7,8 +7,8 @@
       "id": "esun-unicard",
       "bank": "玉山銀行",
       "name": "Unicard",
-      "fee": null,
-      "waiver": "年費及免年費條件請查官網",
+      "fee": 3000,
+      "waiver": "首年免年費；次年起每年有消費，或設定玉山自扣／帳單 e 化期間免年費",
       "income": null,
       "application": "https://www.esunbank.com/zh-tw/personal/credit-card/intro/bank-card/unicard",
       "source": "https://event.esunbank.com.tw/credit/unicard/index.html",
@@ -17,7 +17,9 @@
       "pointValue": 1,
       "base": {
         "rate": 0.003,
-        "conditions": [],
+        "conditions": [
+          "esun-estatement"
+        ],
         "note": "須設定電子帳單；1%須同時設定玉山帳戶自動扣繳"
       },
       "rules": [
@@ -84,9 +86,9 @@
       "id": "cathay-cube",
       "bank": "國泰世華",
       "name": "CUBE 信用卡",
-      "fee": null,
-      "waiver": "請見官網最新年費公告",
-      "income": null,
+      "fee": 1800,
+      "waiver": "首年免年費；次年起電子帳單、正卡年刷12次，或正附卡年刷18萬元，符合任一免年費",
+      "income": 200000,
       "application": "https://www.cathaybk.com.tw/cathaybk/promo/event/credit-card/product/CUBE_rights/",
       "source": "https://www.cathaybk.com.tw/cathaybk/promo/event/credit-card/product/CUBE_rights/",
       "verified": "2026-11-16",
@@ -190,8 +192,8 @@
       "id": "ctbc-linepay",
       "bank": "中國信託",
       "name": "LINE Pay 信用卡",
-      "fee": null,
-      "waiver": "首年免年費；2026/12/31 前成功綁定 LINE Pay 享免年費禮遇",
+      "fee": 1800,
+      "waiver": "首年免年費；2026年內綁定 LINE Pay 可免年費；其他減免請依銀行公告",
       "income": 200000,
       "application": "https://www.ctbcbank.com/web/content/twrbo/zh_tw/cc_index/cc_product/cc_introduction_index/C_LINEPay.html",
       "source": "https://www.ctbcbank.com/content/dam/minisite/long/creditcard/LINEPay/notice.html",
@@ -227,8 +229,8 @@
       "id": "sinopac-daway",
       "bank": "永豐銀行",
       "name": "DAWAY 卡",
-      "fee": null,
-      "waiver": "請見官網最新年費公告",
+      "fee": 3000,
+      "waiver": "首年免年費；電子帳單期間免年費，或前12個月刷滿15萬元／12次免次年年費",
       "income": null,
       "application": "https://bank.sinopac.com/sinopacBT/personal/credit-card/introduction/bankcard/DAWAY.html",
       "source": "https://bank.sinopac.com/sinopacBT/personal/credit-card/introduction/bankcard/DAWAY.html",
@@ -296,8 +298,8 @@
       "bank": "滙豐銀行",
       "name": "Live+ 現金回饋卡",
       "fee": null,
-      "waiver": "請見官網最新年費公告",
-      "income": null,
+      "waiver": "需提供年薪70萬元以上薪資財力證明，或本行往來餘額達70萬元；年費待核實",
+      "income": 700000,
       "application": "https://www.hsbc.com.tw/credit-cards/products/liveplus/",
       "source": "https://www.hsbc.com.tw/credit-cards/products/liveplus/",
       "verified": "2026-11-16",
@@ -324,7 +326,8 @@
             "hsbc-eligible"
           ],
           "end": "2026-12-31",
-          "note": "僅官網列名商家，第三方支付可能不認列；精選類別合計加碼上限888元"
+          "note": "僅官網列名商家，第三方支付可能不認列；精選類別合計加碼上限888元",
+          "capGroup": "hsbc-3pct"
         },
         {
           "id": "hsbc-dining",

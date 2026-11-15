@@ -401,7 +401,16 @@
       ],
       "exclude": [],
       "gift": "季別登錄加碼另依名額與條款，不自動算入",
-      "channelFacts": []
+      "channelFacts": [
+        {
+          "category": "convenience",
+          "rate": "一般消費回饋排除",
+          "criteria": "富邦 J 卡官網一般消費定義排除便利商店及經該便利商店行動支付的交易；指定特店活動若另有例外須逐案核實",
+          "limit": "一般消費 0.5%／1% 不適用",
+          "status": "官方已查核",
+          "source": "https://www.fubon.com/banking/JF/"
+        }
+      ]
     },
     {
       "id": "ctbc-linepay",
@@ -699,6 +708,17 @@
         ],
         "note": "限集精選方案合格實體門市一般商品；不符合條件不列入已確認回饋",
         "source": "https://www.cathay-cube.com.tw/cathaybk/personal/product/credit-card/cards/cube-list"
+      },
+      "fubon-j": {
+        "status": "excluded",
+        "merchants": [
+          "7eleven",
+          "familymart",
+          "hilife",
+          "ok"
+        ],
+        "note": "富邦 J 卡 2026 一般消費定義明確排除便利商店（包含經便利商店行動支付）",
+        "source": "https://www.fubon.com/banking/JF/"
       }
     }
   }

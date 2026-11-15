@@ -1,0 +1,4016 @@
+{
+  "license": "CC BY 4.0（https://creativecommons.org/licenses/by/4.0/deed.zh-hant）",
+  "attribution": "台灣支付優惠站 https://pay.elggum.com",
+  "disclaimer_zh": "本資料整理自銀行與支付業者公開資訊，可能有誤或已變更，實際回饋以各機構公告為準。謹慎理財 信用至上。",
+  "data_date": "2026-11-14",
+  "promos": [
+    {
+      "id": "cathay-cube-dining-2026",
+      "title_zh": "國泰 CUBE 卡 週四外出用餐日 5% 券、CUBE 美食家 10% 券",
+      "kind": "perk",
+      "issuer_ids": [
+        "bank-cathay"
+      ],
+      "card_ids": [
+        "cathay-cube"
+      ],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit"
+      ],
+      "period_kind": "custom",
+      "period_label": "2026/6/1–12/31",
+      "valid_from": "2026-06-01",
+      "valid_to": "2026-12-31",
+      "status": "active",
+      "requires_registration": false,
+      "registration_windows": [],
+      "stacking": "stacks",
+      "rules": [],
+      "perks": [
+        {
+          "label_zh": "國內餐廳（不含外送）加碼 5% 優惠券，每張回饋上限 100 點小樹點",
+          "threshold_zh": "每週四在國內餐廳單筆刷滿 2000 元；券於消費後約 13–14 天匯入 CUBE App，30 天內下一次用餐使用"
+        },
+        {
+          "label_zh": "CUBE 美食家 指定餐廳加碼 10% 優惠券 3 張",
+          "threshold_zh": "單月國內餐廳消費累積滿 2 萬元（累積期 5/1–11/30），次月取得；活動期間限一次"
+        }
+      ],
+      "summary_zh": "6/1–12/31 每週四在國內餐廳單筆刷 CUBE 卡滿 2,000 元，會拿到一張下次用餐用的 5% 加碼券（上限 100 點）；不適用外送平台與百貨、飯店、商場內的餐廳。官網方案頁寫這兩個餐飲活動都限切換「樂饗購」方案。這是下次消費的券，不算在當筆回饋裡，所以本站不計入排名。",
+      "source_ids": [
+        "src-cathay-cube-list-model-r11",
+        "src-cathay-cubdining-browser",
+        "src-cathay-cube-list-browser"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-10-19",
+      "verified_at": "2026-10-31"
+    },
+    {
+      "id": "ctbc-linepay-jcb-donki-2026q4",
+      "title_zh": "中信 LINE Pay JCB 卡 唐吉訶德 LINE POINTS 10%（每季登錄）",
+      "kind": "bonus",
+      "issuer_ids": [
+        "bank-ctbc"
+      ],
+      "card_ids": [
+        "ctbc-linepay"
+      ],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit"
+      ],
+      "eligible_note_zh": "限中信 LINE Pay JCB 信用卡；Visa 卡與簽帳金融卡不適用。",
+      "period_kind": "quarter",
+      "period_label": "2026Q4",
+      "valid_from": "2026-10-01",
+      "valid_to": "2026-12-31",
+      "status": "active",
+      "requires_registration": true,
+      "registration_windows": [
+        {
+          "opens_at": "2026-10-06T13:00+08:00",
+          "quota": 5000,
+          "note_zh": "10 月登錄（每季登錄一次就能參加 10–12 月）"
+        },
+        {
+          "opens_at": "2026-11-06T13:00+08:00",
+          "quota": 5000,
+          "note_zh": "11 月登錄名額"
+        },
+        {
+          "opens_at": "2026-12-06T13:00+08:00",
+          "quota": 5000,
+          "note_zh": "12 月登錄名額"
+        }
+      ],
+      "quota_note_zh": "每月 6 日 13:00 開放登錄 5,000 名，額滿即關閉；每季要重新登錄，7–9 月的登錄不能用在 10–12 月。加碼依登錄成功且消費先符合條件的順序回饋。",
+      "stacking": "stacks",
+      "stacking_note_zh": "官網寫 LINE POINTS 10% = 活動加碼 9% + 國內外一般消費 1%，本站只把加碼的 9% 記在活動。",
+      "rules": [
+        {
+          "id": "donki",
+          "label_zh": "唐吉訶德 加碼 9%（限 JCB 卡）",
+          "scope": "merchant",
+          "merchant_ids": [
+            "donki"
+          ],
+          "domestic_only": true,
+          "not_online": true,
+          "rate_bp": 900,
+          "incremental": true,
+          "cap_amount_twd": 200,
+          "cap_period": "quarter",
+          "conditions_zh": "限國內實體門市。帳單上要能看出是指定商店；設在百貨、商場、機場、車站、飯店、賣場或美食街內的店，可能因帳單名稱不同而不算。正附卡合併計算。不限實體卡，綁 LINE Pay、行動支付或第三方支付也算；分期交易沒有 LINE POINTS。每季每戶加碼上限 200 點。",
+          "cap_twd_max": 200,
+          "max_spend_twd": 2222
+        }
+      ],
+      "payout_zh": "LINE POINTS；一般消費 1% 約請款後 5–7 個工作天入點，活動加碼每季發一次（10–12 月的加碼約 2027/3/1 起陸續發送）。",
+      "summary_zh": "每季登錄後，用中信 LINE Pay JCB 卡在唐吉訶德消費，在原本 1% 之外再加 9% LINE POINTS（合計 10%），每季最多加碼 200 點。",
+      "source_ids": [
+        "src-ctbc-linepay-life-2026q4"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-10-22",
+      "verified_at": "2026-10-31"
+    },
+    {
+      "id": "ctbc-linepay-jcb-gu-2026q4",
+      "title_zh": "中信 LINE Pay JCB 卡 GU LINE POINTS 10%（每季登錄）",
+      "kind": "bonus",
+      "issuer_ids": [
+        "bank-ctbc"
+      ],
+      "card_ids": [
+        "ctbc-linepay"
+      ],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit"
+      ],
+      "eligible_note_zh": "限中信 LINE Pay JCB 信用卡；Visa 卡與簽帳金融卡不適用。",
+      "period_kind": "quarter",
+      "period_label": "2026Q4",
+      "valid_from": "2026-10-01",
+      "valid_to": "2026-12-31",
+      "status": "active",
+      "requires_registration": true,
+      "registration_windows": [
+        {
+          "opens_at": "2026-10-06T13:00+08:00",
+          "quota": 5000,
+          "note_zh": "10 月登錄（每季登錄一次就能參加 10–12 月）"
+        },
+        {
+          "opens_at": "2026-11-06T13:00+08:00",
+          "quota": 5000,
+          "note_zh": "11 月登錄名額"
+        },
+        {
+          "opens_at": "2026-12-06T13:00+08:00",
+          "quota": 5000,
+          "note_zh": "12 月登錄名額"
+        }
+      ],
+      "quota_note_zh": "每月 6 日 13:00 開放登錄 5,000 名，額滿即關閉；每季要重新登錄，7–9 月的登錄不能用在 10–12 月。加碼依登錄成功且消費先符合條件的順序回饋。",
+      "stacking": "stacks",
+      "stacking_note_zh": "官網寫 LINE POINTS 10% = 活動加碼 9% + 國內外一般消費 1%，本站只把加碼的 9% 記在活動。",
+      "rules": [
+        {
+          "id": "gu",
+          "label_zh": "GU 加碼 9%（限 JCB 卡）",
+          "scope": "merchant",
+          "merchant_ids": [
+            "gu"
+          ],
+          "domestic_only": true,
+          "rate_bp": 900,
+          "incremental": true,
+          "cap_amount_twd": 200,
+          "cap_period": "quarter",
+          "conditions_zh": "限官方網路商店與國內指定直營店（ATT 4 FUN、LaLaport 南港、西門、Mitsui 林口、苗栗尚順、LaLaport 台中、台中崇德路、Mitsui 台中港、Mitsui 台南）；明曜百貨店限用 LINE Pay 付款。帳單上要能看出是指定商店；設在百貨、商場、機場、車站、飯店、賣場或美食街內的店，可能因帳單名稱不同而不算。正附卡合併計算。不限實體卡，綁 LINE Pay、行動支付或第三方支付也算；分期交易沒有 LINE POINTS。每季每戶加碼上限 200 點。",
+          "cap_twd_max": 200,
+          "max_spend_twd": 2222
+        }
+      ],
+      "payout_zh": "LINE POINTS；一般消費 1% 約請款後 5–7 個工作天入點，活動加碼每季發一次（10–12 月的加碼約 2027/3/1 起陸續發送）。",
+      "summary_zh": "每季登錄後，用中信 LINE Pay JCB 卡在GU消費，在原本 1% 之外再加 9% LINE POINTS（合計 10%），每季最多加碼 200 點。",
+      "source_ids": [
+        "src-ctbc-linepay-shopping-2026q4"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-10-22",
+      "verified_at": "2026-10-22"
+    },
+    {
+      "id": "ctbc-linepay-jcb-kura-2026q4",
+      "title_zh": "中信 LINE Pay JCB 卡 藏壽司 LINE POINTS 10%（每季登錄）",
+      "kind": "bonus",
+      "issuer_ids": [
+        "bank-ctbc"
+      ],
+      "card_ids": [
+        "ctbc-linepay"
+      ],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit"
+      ],
+      "eligible_note_zh": "限中信 LINE Pay JCB 信用卡；Visa 卡與簽帳金融卡不適用。",
+      "period_kind": "quarter",
+      "period_label": "2026Q4",
+      "valid_from": "2026-10-01",
+      "valid_to": "2026-12-31",
+      "status": "active",
+      "requires_registration": true,
+      "registration_windows": [
+        {
+          "opens_at": "2026-10-06T13:00+08:00",
+          "quota": 5000,
+          "note_zh": "10 月登錄（每季登錄一次就能參加 10–12 月）"
+        },
+        {
+          "opens_at": "2026-11-06T13:00+08:00",
+          "quota": 5000,
+          "note_zh": "11 月登錄名額"
+        },
+        {
+          "opens_at": "2026-12-06T13:00+08:00",
+          "quota": 5000,
+          "note_zh": "12 月登錄名額"
+        }
+      ],
+      "quota_note_zh": "每月 6 日 13:00 開放登錄 5,000 名，額滿即關閉；每季要重新登錄，7–9 月的登錄不能用在 10–12 月。加碼依登錄成功且消費先符合條件的順序回饋。",
+      "stacking": "stacks",
+      "stacking_note_zh": "官網寫 LINE POINTS 10% = 活動加碼 9% + 國內外一般消費 1%，本站只把加碼的 9% 記在活動。",
+      "rules": [
+        {
+          "id": "kura",
+          "label_zh": "藏壽司 加碼 9%（限 JCB 卡）",
+          "scope": "merchant",
+          "merchant_ids": [
+            "kura-sushi"
+          ],
+          "domestic_only": true,
+          "not_online": true,
+          "rate_bp": 900,
+          "incremental": true,
+          "cap_amount_twd": 200,
+          "cap_period": "quarter",
+          "conditions_zh": "限國內實體門市。帳單上要能看出是指定商店；設在百貨、商場、機場、車站、飯店、賣場或美食街內的店，可能因帳單名稱不同而不算。正附卡合併計算。不限實體卡，綁 LINE Pay、行動支付或第三方支付也算；分期交易沒有 LINE POINTS。每季每戶加碼上限 200 點。",
+          "cap_twd_max": 200,
+          "max_spend_twd": 2222
+        }
+      ],
+      "payout_zh": "LINE POINTS；一般消費 1% 約請款後 5–7 個工作天入點，活動加碼每季發一次（10–12 月的加碼約 2027/3/1 起陸續發送）。",
+      "summary_zh": "每季登錄後，用中信 LINE Pay JCB 卡在藏壽司消費，在原本 1% 之外再加 9% LINE POINTS（合計 10%），每季最多加碼 200 點。",
+      "source_ids": [
+        "src-ctbc-linepay-food-2026q4"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-10-22",
+      "verified_at": "2026-10-22"
+    },
+    {
+      "id": "ctbc-linepay-jcb-mos-2026q4",
+      "title_zh": "中信 LINE Pay JCB 卡 摩斯漢堡 LINE POINTS 10%（每季登錄）",
+      "kind": "bonus",
+      "issuer_ids": [
+        "bank-ctbc"
+      ],
+      "card_ids": [
+        "ctbc-linepay"
+      ],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit"
+      ],
+      "eligible_note_zh": "限中信 LINE Pay JCB 信用卡；Visa 卡與簽帳金融卡不適用。",
+      "period_kind": "quarter",
+      "period_label": "2026Q4",
+      "valid_from": "2026-10-01",
+      "valid_to": "2026-12-31",
+      "status": "active",
+      "requires_registration": true,
+      "registration_windows": [
+        {
+          "opens_at": "2026-10-06T13:00+08:00",
+          "quota": 5000,
+          "note_zh": "10 月登錄（每季登錄一次就能參加 10–12 月）"
+        },
+        {
+          "opens_at": "2026-11-06T13:00+08:00",
+          "quota": 5000,
+          "note_zh": "11 月登錄名額"
+        },
+        {
+          "opens_at": "2026-12-06T13:00+08:00",
+          "quota": 5000,
+          "note_zh": "12 月登錄名額"
+        }
+      ],
+      "quota_note_zh": "每月 6 日 13:00 開放登錄 5,000 名，額滿即關閉；每季要重新登錄，7–9 月的登錄不能用在 10–12 月。加碼依登錄成功且消費先符合條件的順序回饋。",
+      "stacking": "stacks",
+      "stacking_note_zh": "官網寫 LINE POINTS 10% = 活動加碼 9% + 國內外一般消費 1%，本站只把加碼的 9% 記在活動。",
+      "rules": [
+        {
+          "id": "mos",
+          "label_zh": "摩斯漢堡 加碼 9%（限 JCB 卡）",
+          "scope": "merchant",
+          "merchant_ids": [
+            "mos-burger"
+          ],
+          "domestic_only": true,
+          "rate_bp": 900,
+          "incremental": true,
+          "cap_amount_twd": 200,
+          "cap_period": "quarter",
+          "conditions_zh": "限國內實體門市與 MOS Order App（含儲值）。帳單上要能看出是指定商店；設在百貨、商場、機場、車站、飯店、賣場或美食街內的店，可能因帳單名稱不同而不算。正附卡合併計算。不限實體卡，綁 LINE Pay、行動支付或第三方支付也算；分期交易沒有 LINE POINTS。每季每戶加碼上限 200 點。",
+          "cap_twd_max": 200,
+          "max_spend_twd": 2222
+        }
+      ],
+      "payout_zh": "LINE POINTS；一般消費 1% 約請款後 5–7 個工作天入點，活動加碼每季發一次（10–12 月的加碼約 2027/3/1 起陸續發送）。",
+      "summary_zh": "每季登錄後，用中信 LINE Pay JCB 卡在摩斯漢堡消費，在原本 1% 之外再加 9% LINE POINTS（合計 10%），每季最多加碼 200 點。",
+      "source_ids": [
+        "src-ctbc-linepay-food-2026q4"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-10-22",
+      "verified_at": "2026-10-31"
+    },
+    {
+      "id": "ctbc-linepay-jcb-nitori-2026q4",
+      "title_zh": "中信 LINE Pay JCB 卡 宜得利家居 LINE POINTS 10%（每季登錄）",
+      "kind": "bonus",
+      "issuer_ids": [
+        "bank-ctbc"
+      ],
+      "card_ids": [
+        "ctbc-linepay"
+      ],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit"
+      ],
+      "eligible_note_zh": "限中信 LINE Pay JCB 信用卡；Visa 卡與簽帳金融卡不適用。",
+      "period_kind": "quarter",
+      "period_label": "2026Q4",
+      "valid_from": "2026-10-01",
+      "valid_to": "2026-12-31",
+      "status": "active",
+      "requires_registration": true,
+      "registration_windows": [
+        {
+          "opens_at": "2026-10-06T13:00+08:00",
+          "quota": 5000,
+          "note_zh": "10 月登錄（每季登錄一次就能參加 10–12 月）"
+        },
+        {
+          "opens_at": "2026-11-06T13:00+08:00",
+          "quota": 5000,
+          "note_zh": "11 月登錄名額"
+        },
+        {
+          "opens_at": "2026-12-06T13:00+08:00",
+          "quota": 5000,
+          "note_zh": "12 月登錄名額"
+        }
+      ],
+      "quota_note_zh": "每月 6 日 13:00 開放登錄 5,000 名，額滿即關閉；每季要重新登錄，7–9 月的登錄不能用在 10–12 月。加碼依登錄成功且消費先符合條件的順序回饋。",
+      "stacking": "stacks",
+      "stacking_note_zh": "官網寫 LINE POINTS 10% = 活動加碼 9% + 國內外一般消費 1%，本站只把加碼的 9% 記在活動。",
+      "rules": [
+        {
+          "id": "nitori",
+          "label_zh": "宜得利家居 加碼 9%（限 JCB 卡）",
+          "scope": "merchant",
+          "merchant_ids": [
+            "nitori"
+          ],
+          "domestic_only": true,
+          "rate_bp": 900,
+          "incremental": true,
+          "cap_amount_twd": 200,
+          "cap_period": "quarter",
+          "conditions_zh": "帳單上要能看出是指定商店；設在百貨、商場、機場、車站、飯店、賣場或美食街內的店，可能因帳單名稱不同而不算。正附卡合併計算。不限實體卡，綁 LINE Pay、行動支付或第三方支付也算；分期交易沒有 LINE POINTS。每季每戶加碼上限 200 點。",
+          "cap_twd_max": 200,
+          "max_spend_twd": 2222
+        }
+      ],
+      "payout_zh": "LINE POINTS；一般消費 1% 約請款後 5–7 個工作天入點，活動加碼每季發一次（10–12 月的加碼約 2027/3/1 起陸續發送）。",
+      "summary_zh": "每季登錄後，用中信 LINE Pay JCB 卡在宜得利家居消費，在原本 1% 之外再加 9% LINE POINTS（合計 10%），每季最多加碼 200 點。",
+      "source_ids": [
+        "src-ctbc-linepay-life-2026q4"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-10-22",
+      "verified_at": "2026-10-22"
+    },
+    {
+      "id": "ctbc-linepay-jcb-sushiro-2026q4",
+      "title_zh": "中信 LINE Pay JCB 卡 壽司郎 LINE POINTS 10%（每季登錄）",
+      "kind": "bonus",
+      "issuer_ids": [
+        "bank-ctbc"
+      ],
+      "card_ids": [
+        "ctbc-linepay"
+      ],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit"
+      ],
+      "eligible_note_zh": "限中信 LINE Pay JCB 信用卡；Visa 卡與簽帳金融卡不適用。",
+      "period_kind": "quarter",
+      "period_label": "2026Q4",
+      "valid_from": "2026-10-01",
+      "valid_to": "2026-12-31",
+      "status": "active",
+      "requires_registration": true,
+      "registration_windows": [
+        {
+          "opens_at": "2026-10-06T13:00+08:00",
+          "quota": 5000,
+          "note_zh": "10 月登錄（每季登錄一次就能參加 10–12 月）"
+        },
+        {
+          "opens_at": "2026-11-06T13:00+08:00",
+          "quota": 5000,
+          "note_zh": "11 月登錄名額"
+        },
+        {
+          "opens_at": "2026-12-06T13:00+08:00",
+          "quota": 5000,
+          "note_zh": "12 月登錄名額"
+        }
+      ],
+      "quota_note_zh": "每月 6 日 13:00 開放登錄 5,000 名，額滿即關閉；每季要重新登錄，7–9 月的登錄不能用在 10–12 月。加碼依登錄成功且消費先符合條件的順序回饋。",
+      "stacking": "stacks",
+      "stacking_note_zh": "官網寫 LINE POINTS 10% = 活動加碼 9% + 國內外一般消費 1%，本站只把加碼的 9% 記在活動。",
+      "rules": [
+        {
+          "id": "sushiro",
+          "label_zh": "壽司郎 加碼 9%（限 JCB 卡）",
+          "scope": "merchant",
+          "merchant_ids": [
+            "sushiro"
+          ],
+          "domestic_only": true,
+          "not_online": true,
+          "rate_bp": 900,
+          "incremental": true,
+          "cap_amount_twd": 200,
+          "cap_period": "quarter",
+          "conditions_zh": "限國內實體門市。帳單上要能看出是指定商店；設在百貨、商場、機場、車站、飯店、賣場或美食街內的店，可能因帳單名稱不同而不算。正附卡合併計算。不限實體卡，綁 LINE Pay、行動支付或第三方支付也算；分期交易沒有 LINE POINTS。每季每戶加碼上限 200 點。",
+          "cap_twd_max": 200,
+          "max_spend_twd": 2222
+        }
+      ],
+      "payout_zh": "LINE POINTS；一般消費 1% 約請款後 5–7 個工作天入點，活動加碼每季發一次（10–12 月的加碼約 2027/3/1 起陸續發送）。",
+      "summary_zh": "每季登錄後，用中信 LINE Pay JCB 卡在壽司郎消費，在原本 1% 之外再加 9% LINE POINTS（合計 10%），每季最多加碼 200 點。",
+      "source_ids": [
+        "src-ctbc-linepay-food-2026q4"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-10-22",
+      "verified_at": "2026-10-22"
+    },
+    {
+      "id": "ctbc-linepay-jcb-tigerair-2026q4",
+      "title_zh": "中信 LINE Pay JCB 卡 台灣虎航 LINE POINTS 10%（每季登錄）",
+      "kind": "bonus",
+      "issuer_ids": [
+        "bank-ctbc"
+      ],
+      "card_ids": [
+        "ctbc-linepay"
+      ],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit"
+      ],
+      "eligible_note_zh": "限中信 LINE Pay JCB 信用卡；Visa 卡與簽帳金融卡不適用。",
+      "period_kind": "quarter",
+      "period_label": "2026Q4",
+      "valid_from": "2026-10-01",
+      "valid_to": "2026-12-31",
+      "status": "active",
+      "requires_registration": true,
+      "registration_windows": [
+        {
+          "opens_at": "2026-10-06T13:00+08:00",
+          "quota": 5000,
+          "note_zh": "10 月登錄（每季登錄一次就能參加 10–12 月）"
+        },
+        {
+          "opens_at": "2026-11-06T13:00+08:00",
+          "quota": 5000,
+          "note_zh": "11 月登錄名額"
+        },
+        {
+          "opens_at": "2026-12-06T13:00+08:00",
+          "quota": 5000,
+          "note_zh": "12 月登錄名額"
+        }
+      ],
+      "quota_note_zh": "每月 6 日 13:00 開放登錄 5,000 名，額滿即關閉；每季要重新登錄，7–9 月的登錄不能用在 10–12 月。加碼依登錄成功且消費先符合條件的順序回饋。",
+      "stacking": "stacks",
+      "stacking_note_zh": "官網寫 LINE POINTS 10% = 活動加碼 9% + 國內外一般消費 1%，本站只把加碼的 9% 記在活動。",
+      "rules": [
+        {
+          "id": "tigerair",
+          "label_zh": "台灣虎航 加碼 9%（限 JCB 卡）",
+          "scope": "merchant",
+          "merchant_ids": [
+            "tigerair"
+          ],
+          "domestic_only": true,
+          "rate_bp": 900,
+          "incremental": true,
+          "cap_amount_twd": 200,
+          "cap_period": "quarter",
+          "conditions_zh": "帳單上要能看出是指定商店；設在百貨、商場、機場、車站、飯店、賣場或美食街內的店，可能因帳單名稱不同而不算。正附卡合併計算。不限實體卡，綁 LINE Pay、行動支付或第三方支付也算；分期交易沒有 LINE POINTS。每季每戶加碼上限 200 點。",
+          "cap_twd_max": 200,
+          "max_spend_twd": 2222
+        }
+      ],
+      "payout_zh": "LINE POINTS；一般消費 1% 約請款後 5–7 個工作天入點，活動加碼每季發一次（10–12 月的加碼約 2027/3/1 起陸續發送）。",
+      "summary_zh": "每季登錄後，用中信 LINE Pay JCB 卡在台灣虎航消費，在原本 1% 之外再加 9% LINE POINTS（合計 10%），每季最多加碼 200 點。",
+      "source_ids": [
+        "src-ctbc-linepay-travel-2026q4"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-10-22",
+      "verified_at": "2026-10-31"
+    },
+    {
+      "id": "ctbc-linepay-jcb-uniqlo-2026q4",
+      "title_zh": "中信 LINE Pay JCB 卡 UNIQLO LINE POINTS 10%（每季登錄）",
+      "kind": "bonus",
+      "issuer_ids": [
+        "bank-ctbc"
+      ],
+      "card_ids": [
+        "ctbc-linepay"
+      ],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit"
+      ],
+      "eligible_note_zh": "限中信 LINE Pay JCB 信用卡；Visa 卡與簽帳金融卡不適用。",
+      "period_kind": "quarter",
+      "period_label": "2026Q4",
+      "valid_from": "2026-10-01",
+      "valid_to": "2026-12-31",
+      "status": "active",
+      "requires_registration": true,
+      "registration_windows": [
+        {
+          "opens_at": "2026-10-06T13:00+08:00",
+          "quota": 5000,
+          "note_zh": "10 月登錄（每季登錄一次就能參加 10–12 月）"
+        },
+        {
+          "opens_at": "2026-11-06T13:00+08:00",
+          "quota": 5000,
+          "note_zh": "11 月登錄名額"
+        },
+        {
+          "opens_at": "2026-12-06T13:00+08:00",
+          "quota": 5000,
+          "note_zh": "12 月登錄名額"
+        }
+      ],
+      "quota_note_zh": "每月 6 日 13:00 開放登錄 5,000 名，額滿即關閉；每季要重新登錄，7–9 月的登錄不能用在 10–12 月。加碼依登錄成功且消費先符合條件的順序回饋。",
+      "stacking": "stacks",
+      "stacking_note_zh": "官網寫 LINE POINTS 10% = 活動加碼 9% + 國內外一般消費 1%，本站只把加碼的 9% 記在活動。",
+      "rules": [
+        {
+          "id": "uniqlo",
+          "label_zh": "UNIQLO 加碼 9%（限 JCB 卡）",
+          "scope": "merchant",
+          "merchant_ids": [
+            "uniqlo"
+          ],
+          "domestic_only": true,
+          "rate_bp": 900,
+          "incremental": true,
+          "cap_amount_twd": 200,
+          "cap_period": "quarter",
+          "conditions_zh": "帳單上要能看出是指定商店；設在百貨、商場、機場、車站、飯店、賣場或美食街內的店，可能因帳單名稱不同而不算。正附卡合併計算。不限實體卡，綁 LINE Pay、行動支付或第三方支付也算；分期交易沒有 LINE POINTS。每季每戶加碼上限 200 點。",
+          "cap_twd_max": 200,
+          "max_spend_twd": 2222
+        }
+      ],
+      "payout_zh": "LINE POINTS；一般消費 1% 約請款後 5–7 個工作天入點，活動加碼每季發一次（10–12 月的加碼約 2027/3/1 起陸續發送）。",
+      "summary_zh": "每季登錄後，用中信 LINE Pay JCB 卡在UNIQLO消費，在原本 1% 之外再加 9% LINE POINTS（合計 10%），每季最多加碼 200 點。",
+      "source_ids": [
+        "src-ctbc-linepay-shopping-2026q4"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-10-22",
+      "verified_at": "2026-10-22"
+    },
+    {
+      "id": "ctbc-linepay-overseas-5-2026q4",
+      "title_zh": "中信 LINE Pay 信用卡 國外實體店最高 5%（每週二登錄）",
+      "kind": "bonus",
+      "issuer_ids": [
+        "bank-ctbc"
+      ],
+      "card_ids": [
+        "ctbc-linepay"
+      ],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit"
+      ],
+      "period_kind": "quarter",
+      "period_label": "2026Q4",
+      "valid_from": "2026-10-01",
+      "valid_to": "2026-12-31",
+      "status": "active",
+      "requires_registration": true,
+      "registration_windows": [
+        {
+          "opens_at": "2026-10-06T00:00+08:00",
+          "quota": 3000,
+          "note_zh": "每週二 00:00 開放 3,000 名（本站只列出第一個週二，之後每週相同）"
+        }
+      ],
+      "quota_note_zh": "每週二開放 3,000 名登錄，額滿為止；2.2% 加碼全活動限量 20,000 名，額滿不再回饋；限信用卡，簽帳金融卡不適用。第二來源（卡蹭）寫這個活動是 7/1–9/30 且 9/11 已下架；本站採中信官網目前公告的 10/1–12/31，並標示為資料有衝突。2026-10-31 重看官網活動頁仍寫 2026/10/1–12/31、每週二開放 3,000 名、加碼 2.2% 限量 20,000 名、每歸戶上限 450 點。",
+      "stacking": "stacks",
+      "stacking_note_zh": "官網寫最高 5% 已含原本國外實體 2.8%，所以活動本身加 2.2%。",
+      "rules": [
+        {
+          "id": "ovs22",
+          "label_zh": "國外實體店再加 2.2%",
+          "scope": "general_overseas",
+          "exclude_country_codes": [
+            "AT",
+            "BE",
+            "BG",
+            "HR",
+            "CY",
+            "CZ",
+            "DK",
+            "EE",
+            "FI",
+            "FR",
+            "DE",
+            "GR",
+            "HU",
+            "IE",
+            "IT",
+            "LV",
+            "LT",
+            "LU",
+            "MT",
+            "NL",
+            "PL",
+            "PT",
+            "RO",
+            "SK",
+            "SI",
+            "ES",
+            "SE",
+            "GB",
+            "IS",
+            "LI",
+            "NO"
+          ],
+          "physical_store_only": true,
+          "payment_methods": [
+            "physical",
+            "apple_pay",
+            "google_pay",
+            "samsung_pay"
+          ],
+          "rate_bp": 220,
+          "incremental": true,
+          "cap_amount_twd": 450,
+          "cap_period": "campaign",
+          "conditions_zh": "面對面交易（實體卡或 Apple Pay／Google Pay／Samsung Pay）；網路、條碼與第三方支付不算；排除中信不回饋交易項目列的歐洲經濟區與英國等 31 國實體商店（瑞士不在名單內）。上限為活動期間每歸戶 450 點。",
+          "cap_twd_max": 450,
+          "max_spend_twd": 20454
+        }
+      ],
+      "payout_zh": "依中信活動辦法，以 LINE POINTS 回饋。",
+      "summary_zh": "登錄後用中信 LINE Pay 信用卡在國外實體店消費，在原本 2.8% 之外再加 2.2%，整個活動期間最多 450 點。",
+      "source_ids": [
+        "src-ctbc-linepay-travel"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "conflict",
+      "recorded_at": "2026-10-19",
+      "verified_at": "2026-10-31"
+    },
+    {
+      "id": "ctbc-linepay-visa-airbnb-2026q4",
+      "title_zh": "中信 LINE Pay Visa 卡 Airbnb LINE POINTS 5%（每季登錄）",
+      "kind": "bonus",
+      "issuer_ids": [
+        "bank-ctbc"
+      ],
+      "card_ids": [
+        "ctbc-linepay"
+      ],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit",
+        "debit"
+      ],
+      "eligible_note_zh": "限中信 LINE Pay Visa 卡（信用卡與簽帳金融卡都可以）；JCB 卡不適用。",
+      "period_kind": "quarter",
+      "period_label": "2026Q4",
+      "valid_from": "2026-10-01",
+      "valid_to": "2026-12-31",
+      "status": "active",
+      "requires_registration": true,
+      "registration_windows": [
+        {
+          "opens_at": "2026-10-06T10:00+08:00",
+          "quota": 8000,
+          "note_zh": "10 月登錄（每季登錄一次就能參加 10–12 月）"
+        },
+        {
+          "opens_at": "2026-11-06T10:00+08:00",
+          "quota": 8000,
+          "note_zh": "11 月登錄名額"
+        },
+        {
+          "opens_at": "2026-12-06T10:00+08:00",
+          "quota": 8000,
+          "note_zh": "12 月登錄名額"
+        }
+      ],
+      "quota_note_zh": "每月 6 日 10:00 開放登錄 8,000 名，額滿即關閉；每季要重新登錄，7–9 月的登錄不能用在 10–12 月。加碼依登錄成功且消費先符合條件的順序回饋。",
+      "stacking": "stacks",
+      "stacking_note_zh": "官網寫 LINE POINTS 5% = 活動加碼 4% + 國內外一般消費 1%，本站只把加碼的 4% 記在活動。",
+      "rules": [
+        {
+          "id": "airbnb",
+          "label_zh": "Airbnb 加碼 4%（限 Visa 卡）",
+          "scope": "merchant",
+          "merchant_ids": [
+            "airbnb"
+          ],
+          "rate_bp": 400,
+          "incremental": true,
+          "cap_amount_twd": 100,
+          "cap_period": "quarter",
+          "conditions_zh": "帳單上要能看出是指定商店；設在百貨、商場、機場、車站、飯店、賣場或美食街內的店，可能因帳單名稱不同而不算。正附卡合併計算。不限實體卡，綁 LINE Pay、行動支付或第三方支付也算；分期交易沒有 LINE POINTS。每季每戶加碼上限 100 點。",
+          "cap_twd_max": 100,
+          "max_spend_twd": 2500
+        }
+      ],
+      "payout_zh": "LINE POINTS；一般消費 1% 約請款後 5–7 個工作天入點，活動加碼每季發一次（10–12 月的加碼約 2027/3/1 起陸續發送）。",
+      "summary_zh": "每季登錄後，用中信 LINE Pay Visa 卡在Airbnb消費，在原本 1% 之外再加 4% LINE POINTS（合計 5%），每季最多加碼 100 點。",
+      "source_ids": [
+        "src-ctbc-linepay-travel-2026q4"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-10-22",
+      "verified_at": "2026-10-22"
+    },
+    {
+      "id": "ctbc-linepay-visa-carrefour-2026q4",
+      "title_zh": "中信 LINE Pay Visa 卡 萬家福／樂家康 LINE POINTS 5%（每季登錄）",
+      "kind": "bonus",
+      "issuer_ids": [
+        "bank-ctbc"
+      ],
+      "card_ids": [
+        "ctbc-linepay"
+      ],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit",
+        "debit"
+      ],
+      "eligible_note_zh": "限中信 LINE Pay Visa 卡（信用卡與簽帳金融卡都可以）；JCB 卡不適用。",
+      "period_kind": "quarter",
+      "period_label": "2026Q4",
+      "valid_from": "2026-10-01",
+      "valid_to": "2026-12-31",
+      "status": "active",
+      "requires_registration": true,
+      "registration_windows": [
+        {
+          "opens_at": "2026-10-06T10:00+08:00",
+          "quota": 8000,
+          "note_zh": "10 月登錄（每季登錄一次就能參加 10–12 月）"
+        },
+        {
+          "opens_at": "2026-11-06T10:00+08:00",
+          "quota": 8000,
+          "note_zh": "11 月登錄名額"
+        },
+        {
+          "opens_at": "2026-12-06T10:00+08:00",
+          "quota": 8000,
+          "note_zh": "12 月登錄名額"
+        }
+      ],
+      "quota_note_zh": "每月 6 日 10:00 開放登錄 8,000 名，額滿即關閉；每季要重新登錄，7–9 月的登錄不能用在 10–12 月。加碼依登錄成功且消費先符合條件的順序回饋。",
+      "stacking": "stacks",
+      "stacking_note_zh": "官網寫 LINE POINTS 5% = 活動加碼 4% + 國內外一般消費 1%，本站只把加碼的 4% 記在活動。",
+      "rules": [
+        {
+          "id": "carrefour",
+          "label_zh": "萬家福／樂家康 加碼 4%（限 Visa 卡）",
+          "scope": "merchant",
+          "merchant_ids": [
+            "carrefour",
+            "lejiakang"
+          ],
+          "domestic_only": true,
+          "not_online": true,
+          "rate_bp": 400,
+          "incremental": true,
+          "cap_amount_twd": 100,
+          "cap_period": "quarter",
+          "conditions_zh": "限國內實體門市。帳單上要能看出是指定商店；設在百貨、商場、機場、車站、飯店、賣場或美食街內的店，可能因帳單名稱不同而不算。正附卡合併計算。不限實體卡，綁 LINE Pay、行動支付或第三方支付也算；分期交易沒有 LINE POINTS。每季每戶加碼上限 100 點。",
+          "cap_twd_max": 100,
+          "max_spend_twd": 2500
+        }
+      ],
+      "payout_zh": "LINE POINTS；一般消費 1% 約請款後 5–7 個工作天入點，活動加碼每季發一次（10–12 月的加碼約 2027/3/1 起陸續發送）。",
+      "summary_zh": "每季登錄後，用中信 LINE Pay Visa 卡在萬家福／樂家康消費，在原本 1% 之外再加 4% LINE POINTS（合計 5%），每季最多加碼 100 點。",
+      "source_ids": [
+        "src-ctbc-linepay-life-2026q4"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-10-22",
+      "verified_at": "2026-10-31"
+    },
+    {
+      "id": "ctbc-linepay-visa-coupang-2026q4",
+      "title_zh": "中信 LINE Pay Visa 卡 酷澎 LINE POINTS 5%（每季登錄）",
+      "kind": "bonus",
+      "issuer_ids": [
+        "bank-ctbc"
+      ],
+      "card_ids": [
+        "ctbc-linepay"
+      ],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit",
+        "debit"
+      ],
+      "eligible_note_zh": "限中信 LINE Pay Visa 卡（信用卡與簽帳金融卡都可以）；JCB 卡不適用。",
+      "period_kind": "quarter",
+      "period_label": "2026Q4",
+      "valid_from": "2026-10-01",
+      "valid_to": "2026-12-31",
+      "status": "active",
+      "requires_registration": true,
+      "registration_windows": [
+        {
+          "opens_at": "2026-10-06T10:00+08:00",
+          "quota": 8000,
+          "note_zh": "10 月登錄（每季登錄一次就能參加 10–12 月）"
+        },
+        {
+          "opens_at": "2026-11-06T10:00+08:00",
+          "quota": 8000,
+          "note_zh": "11 月登錄名額"
+        },
+        {
+          "opens_at": "2026-12-06T10:00+08:00",
+          "quota": 8000,
+          "note_zh": "12 月登錄名額"
+        }
+      ],
+      "quota_note_zh": "每月 6 日 10:00 開放登錄 8,000 名，額滿即關閉；每季要重新登錄，7–9 月的登錄不能用在 10–12 月。加碼依登錄成功且消費先符合條件的順序回饋。",
+      "stacking": "stacks",
+      "stacking_note_zh": "官網寫 LINE POINTS 5% = 活動加碼 4% + 國內外一般消費 1%，本站只把加碼的 4% 記在活動。",
+      "rules": [
+        {
+          "id": "coupang",
+          "label_zh": "酷澎 加碼 4%（限 Visa 卡）",
+          "scope": "merchant",
+          "merchant_ids": [
+            "coupang"
+          ],
+          "rate_bp": 400,
+          "incremental": true,
+          "cap_amount_twd": 100,
+          "cap_period": "quarter",
+          "quota_limited_zh": "每月限量登錄 8,000 名，額滿即關閉",
+          "conditions_zh": "含火箭速配與火箭跨境。另有酷澎單筆滿 5,000 元現折（每月限量）是另一個活動，本站未列入。帳單上要能看出是指定商店；設在百貨、商場、機場、車站、飯店、賣場或美食街內的店，可能因帳單名稱不同而不算。正附卡合併計算。不限實體卡，綁 LINE Pay、行動支付或第三方支付也算；分期交易沒有 LINE POINTS。每季每戶加碼上限 100 點。",
+          "cap_twd_max": 100,
+          "max_spend_twd": 2500
+        }
+      ],
+      "payout_zh": "LINE POINTS；一般消費 1% 約請款後 5–7 個工作天入點，活動加碼每季發一次（10–12 月的加碼約 2027/3/1 起陸續發送）。",
+      "summary_zh": "每季登錄後，用中信 LINE Pay Visa 卡在酷澎消費，在原本 1% 之外再加 4% LINE POINTS（合計 5%），每季最多加碼 100 點。",
+      "source_ids": [
+        "src-ctbc-linepay-shopping-2026q4"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-10-22",
+      "verified_at": "2026-10-31"
+    },
+    {
+      "id": "ctbc-linepay-visa-ikea-2026q4",
+      "title_zh": "中信 LINE Pay Visa 卡 IKEA LINE POINTS 5%（每季登錄）",
+      "kind": "bonus",
+      "issuer_ids": [
+        "bank-ctbc"
+      ],
+      "card_ids": [
+        "ctbc-linepay"
+      ],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit",
+        "debit"
+      ],
+      "eligible_note_zh": "限中信 LINE Pay Visa 卡（信用卡與簽帳金融卡都可以）；JCB 卡不適用。",
+      "period_kind": "quarter",
+      "period_label": "2026Q4",
+      "valid_from": "2026-10-01",
+      "valid_to": "2026-12-31",
+      "status": "active",
+      "requires_registration": true,
+      "registration_windows": [
+        {
+          "opens_at": "2026-10-06T10:00+08:00",
+          "quota": 8000,
+          "note_zh": "10 月登錄（每季登錄一次就能參加 10–12 月）"
+        },
+        {
+          "opens_at": "2026-11-06T10:00+08:00",
+          "quota": 8000,
+          "note_zh": "11 月登錄名額"
+        },
+        {
+          "opens_at": "2026-12-06T10:00+08:00",
+          "quota": 8000,
+          "note_zh": "12 月登錄名額"
+        }
+      ],
+      "quota_note_zh": "每月 6 日 10:00 開放登錄 8,000 名，額滿即關閉；每季要重新登錄，7–9 月的登錄不能用在 10–12 月。加碼依登錄成功且消費先符合條件的順序回饋。",
+      "stacking": "stacks",
+      "stacking_note_zh": "官網寫 LINE POINTS 5% = 活動加碼 4% + 國內外一般消費 1%，本站只把加碼的 4% 記在活動。",
+      "rules": [
+        {
+          "id": "ikea",
+          "label_zh": "IKEA 加碼 4%（限 Visa 卡）",
+          "scope": "merchant",
+          "merchant_ids": [
+            "ikea"
+          ],
+          "domestic_only": true,
+          "rate_bp": 400,
+          "incremental": true,
+          "cap_amount_twd": 100,
+          "cap_period": "quarter",
+          "conditions_zh": "帳單上要能看出是指定商店；設在百貨、商場、機場、車站、飯店、賣場或美食街內的店，可能因帳單名稱不同而不算。正附卡合併計算。不限實體卡，綁 LINE Pay、行動支付或第三方支付也算；分期交易沒有 LINE POINTS。每季每戶加碼上限 100 點。",
+          "cap_twd_max": 100,
+          "max_spend_twd": 2500
+        }
+      ],
+      "payout_zh": "LINE POINTS；一般消費 1% 約請款後 5–7 個工作天入點，活動加碼每季發一次（10–12 月的加碼約 2027/3/1 起陸續發送）。",
+      "summary_zh": "每季登錄後，用中信 LINE Pay Visa 卡在IKEA消費，在原本 1% 之外再加 4% LINE POINTS（合計 5%），每季最多加碼 100 點。",
+      "source_ids": [
+        "src-ctbc-linepay-life-2026q4"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-10-22",
+      "verified_at": "2026-10-22"
+    },
+    {
+      "id": "ctbc-linepay-visa-netflix-2026q4",
+      "title_zh": "中信 LINE Pay Visa 卡 Netflix LINE POINTS 5%（每季登錄）",
+      "kind": "bonus",
+      "issuer_ids": [
+        "bank-ctbc"
+      ],
+      "card_ids": [
+        "ctbc-linepay"
+      ],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit",
+        "debit"
+      ],
+      "eligible_note_zh": "限中信 LINE Pay Visa 卡（信用卡與簽帳金融卡都可以）；JCB 卡不適用。",
+      "period_kind": "quarter",
+      "period_label": "2026Q4",
+      "valid_from": "2026-10-01",
+      "valid_to": "2026-12-31",
+      "status": "active",
+      "requires_registration": true,
+      "registration_windows": [
+        {
+          "opens_at": "2026-10-06T10:00+08:00",
+          "quota": 8000,
+          "note_zh": "10 月登錄（每季登錄一次就能參加 10–12 月）"
+        },
+        {
+          "opens_at": "2026-11-06T10:00+08:00",
+          "quota": 8000,
+          "note_zh": "11 月登錄名額"
+        },
+        {
+          "opens_at": "2026-12-06T10:00+08:00",
+          "quota": 8000,
+          "note_zh": "12 月登錄名額"
+        }
+      ],
+      "quota_note_zh": "每月 6 日 10:00 開放登錄 8,000 名，額滿即關閉；每季要重新登錄，7–9 月的登錄不能用在 10–12 月。加碼依登錄成功且消費先符合條件的順序回饋。",
+      "stacking": "stacks",
+      "stacking_note_zh": "官網寫 LINE POINTS 5% = 活動加碼 4% + 國內外一般消費 1%，本站只把加碼的 4% 記在活動。",
+      "rules": [
+        {
+          "id": "netflix",
+          "label_zh": "Netflix 加碼 4%（限 Visa 卡）",
+          "scope": "merchant",
+          "merchant_ids": [
+            "netflix"
+          ],
+          "rate_bp": 400,
+          "incremental": true,
+          "cap_amount_twd": 100,
+          "cap_period": "quarter",
+          "conditions_zh": "帳單上要能看出是指定商店；設在百貨、商場、機場、車站、飯店、賣場或美食街內的店，可能因帳單名稱不同而不算。正附卡合併計算。不限實體卡，綁 LINE Pay、行動支付或第三方支付也算；分期交易沒有 LINE POINTS。每季每戶加碼上限 100 點。",
+          "cap_twd_max": 100,
+          "max_spend_twd": 2500
+        }
+      ],
+      "payout_zh": "LINE POINTS；一般消費 1% 約請款後 5–7 個工作天入點，活動加碼每季發一次（10–12 月的加碼約 2027/3/1 起陸續發送）。",
+      "summary_zh": "每季登錄後，用中信 LINE Pay Visa 卡在Netflix消費，在原本 1% 之外再加 4% LINE POINTS（合計 5%），每季最多加碼 100 點。",
+      "source_ids": [
+        "src-ctbc-linepay-life-2026q4"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-10-22",
+      "verified_at": "2026-10-22"
+    },
+    {
+      "id": "ctbc-linepay-visa-shopee-2026q4",
+      "title_zh": "中信 LINE Pay Visa 卡 蝦皮購物 LINE POINTS 5%（每季登錄）",
+      "kind": "bonus",
+      "issuer_ids": [
+        "bank-ctbc"
+      ],
+      "card_ids": [
+        "ctbc-linepay"
+      ],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit",
+        "debit"
+      ],
+      "eligible_note_zh": "限中信 LINE Pay Visa 卡（信用卡與簽帳金融卡都可以）；JCB 卡不適用。",
+      "period_kind": "quarter",
+      "period_label": "2026Q4",
+      "valid_from": "2026-10-01",
+      "valid_to": "2026-12-31",
+      "status": "active",
+      "requires_registration": true,
+      "registration_windows": [
+        {
+          "opens_at": "2026-10-06T10:00+08:00",
+          "quota": 8000,
+          "note_zh": "10 月登錄（每季登錄一次就能參加 10–12 月）"
+        },
+        {
+          "opens_at": "2026-11-06T10:00+08:00",
+          "quota": 8000,
+          "note_zh": "11 月登錄名額"
+        },
+        {
+          "opens_at": "2026-12-06T10:00+08:00",
+          "quota": 8000,
+          "note_zh": "12 月登錄名額"
+        }
+      ],
+      "quota_note_zh": "每月 6 日 10:00 開放登錄 8,000 名，額滿即關閉；每季要重新登錄，7–9 月的登錄不能用在 10–12 月。加碼依登錄成功且消費先符合條件的順序回饋。",
+      "stacking": "stacks",
+      "stacking_note_zh": "官網寫 LINE POINTS 5% = 活動加碼 4% + 國內外一般消費 1%，本站只把加碼的 4% 記在活動。",
+      "rules": [
+        {
+          "id": "shopee",
+          "label_zh": "蝦皮購物 加碼 4%（限 Visa 卡）",
+          "scope": "merchant",
+          "merchant_ids": [
+            "shopee"
+          ],
+          "rate_bp": 400,
+          "incremental": true,
+          "cap_amount_twd": 100,
+          "cap_period": "quarter",
+          "conditions_zh": "帳單上要能看出是指定商店；設在百貨、商場、機場、車站、飯店、賣場或美食街內的店，可能因帳單名稱不同而不算。正附卡合併計算。不限實體卡，綁 LINE Pay、行動支付或第三方支付也算；分期交易沒有 LINE POINTS。每季每戶加碼上限 100 點。",
+          "cap_twd_max": 100,
+          "max_spend_twd": 2500
+        }
+      ],
+      "payout_zh": "LINE POINTS；一般消費 1% 約請款後 5–7 個工作天入點，活動加碼每季發一次（10–12 月的加碼約 2027/3/1 起陸續發送）。",
+      "summary_zh": "每季登錄後，用中信 LINE Pay Visa 卡在蝦皮購物消費，在原本 1% 之外再加 4% LINE POINTS（合計 5%），每季最多加碼 100 點。",
+      "source_ids": [
+        "src-ctbc-linepay-shopping-2026q4"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-10-22",
+      "verified_at": "2026-10-31"
+    },
+    {
+      "id": "ctbc-linepay-visa-starbucks-2026q4",
+      "title_zh": "中信 LINE Pay Visa 卡 星巴克 LINE POINTS 5%（每季登錄）",
+      "kind": "bonus",
+      "issuer_ids": [
+        "bank-ctbc"
+      ],
+      "card_ids": [
+        "ctbc-linepay"
+      ],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit",
+        "debit"
+      ],
+      "eligible_note_zh": "限中信 LINE Pay Visa 卡（信用卡與簽帳金融卡都可以）；JCB 卡不適用。",
+      "period_kind": "quarter",
+      "period_label": "2026Q4",
+      "valid_from": "2026-10-01",
+      "valid_to": "2026-12-31",
+      "status": "active",
+      "requires_registration": true,
+      "registration_windows": [
+        {
+          "opens_at": "2026-10-06T10:00+08:00",
+          "quota": 8000,
+          "note_zh": "10 月登錄（每季登錄一次就能參加 10–12 月）"
+        },
+        {
+          "opens_at": "2026-11-06T10:00+08:00",
+          "quota": 8000,
+          "note_zh": "11 月登錄名額"
+        },
+        {
+          "opens_at": "2026-12-06T10:00+08:00",
+          "quota": 8000,
+          "note_zh": "12 月登錄名額"
+        }
+      ],
+      "quota_note_zh": "每月 6 日 10:00 開放登錄 8,000 名，額滿即關閉；每季要重新登錄，7–9 月的登錄不能用在 10–12 月。加碼依登錄成功且消費先符合條件的順序回饋。",
+      "stacking": "stacks",
+      "stacking_note_zh": "官網寫 LINE POINTS 5% = 活動加碼 4% + 國內外一般消費 1%，本站只把加碼的 4% 記在活動。",
+      "rules": [
+        {
+          "id": "starbucks",
+          "label_zh": "星巴克 加碼 4%（限 Visa 卡）",
+          "scope": "merchant",
+          "merchant_ids": [
+            "starbucks"
+          ],
+          "domestic_only": true,
+          "rate_bp": 400,
+          "incremental": true,
+          "cap_amount_twd": 100,
+          "cap_period": "quarter",
+          "conditions_zh": "國內消費與儲值都算。帳單上要能看出是指定商店；設在百貨、商場、機場、車站、飯店、賣場或美食街內的店，可能因帳單名稱不同而不算。正附卡合併計算。不限實體卡，綁 LINE Pay、行動支付或第三方支付也算；分期交易沒有 LINE POINTS。每季每戶加碼上限 100 點。",
+          "cap_twd_max": 100,
+          "max_spend_twd": 2500
+        }
+      ],
+      "payout_zh": "LINE POINTS；一般消費 1% 約請款後 5–7 個工作天入點，活動加碼每季發一次（10–12 月的加碼約 2027/3/1 起陸續發送）。",
+      "summary_zh": "每季登錄後，用中信 LINE Pay Visa 卡在星巴克消費，在原本 1% 之外再加 4% LINE POINTS（合計 5%），每季最多加碼 100 點。",
+      "source_ids": [
+        "src-ctbc-linepay-food-2026q4"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-10-22",
+      "verified_at": "2026-10-31"
+    },
+    {
+      "id": "ctbc-linepay-visa-tripcom-2026q4",
+      "title_zh": "中信 LINE Pay Visa 卡 Trip.com LINE POINTS 5%（每季登錄）",
+      "kind": "bonus",
+      "issuer_ids": [
+        "bank-ctbc"
+      ],
+      "card_ids": [
+        "ctbc-linepay"
+      ],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit",
+        "debit"
+      ],
+      "eligible_note_zh": "限中信 LINE Pay Visa 卡（信用卡與簽帳金融卡都可以）；JCB 卡不適用。",
+      "period_kind": "quarter",
+      "period_label": "2026Q4",
+      "valid_from": "2026-10-01",
+      "valid_to": "2026-12-31",
+      "status": "active",
+      "requires_registration": true,
+      "registration_windows": [
+        {
+          "opens_at": "2026-10-06T10:00+08:00",
+          "quota": 8000,
+          "note_zh": "10 月登錄（每季登錄一次就能參加 10–12 月）"
+        },
+        {
+          "opens_at": "2026-11-06T10:00+08:00",
+          "quota": 8000,
+          "note_zh": "11 月登錄名額"
+        },
+        {
+          "opens_at": "2026-12-06T10:00+08:00",
+          "quota": 8000,
+          "note_zh": "12 月登錄名額"
+        }
+      ],
+      "quota_note_zh": "每月 6 日 10:00 開放登錄 8,000 名，額滿即關閉；每季要重新登錄，7–9 月的登錄不能用在 10–12 月。加碼依登錄成功且消費先符合條件的順序回饋。",
+      "stacking": "stacks",
+      "stacking_note_zh": "官網寫 LINE POINTS 5% = 活動加碼 4% + 國內外一般消費 1%，本站只把加碼的 4% 記在活動。",
+      "rules": [
+        {
+          "id": "tripcom",
+          "label_zh": "Trip.com 加碼 4%（限 Visa 卡）",
+          "scope": "merchant",
+          "merchant_ids": [
+            "trip-com"
+          ],
+          "rate_bp": 400,
+          "incremental": true,
+          "cap_amount_twd": 100,
+          "cap_period": "quarter",
+          "conditions_zh": "帳單上要能看出是指定商店；設在百貨、商場、機場、車站、飯店、賣場或美食街內的店，可能因帳單名稱不同而不算。正附卡合併計算。不限實體卡，綁 LINE Pay、行動支付或第三方支付也算；分期交易沒有 LINE POINTS。每季每戶加碼上限 100 點。",
+          "cap_twd_max": 100,
+          "max_spend_twd": 2500
+        }
+      ],
+      "payout_zh": "LINE POINTS；一般消費 1% 約請款後 5–7 個工作天入點，活動加碼每季發一次（10–12 月的加碼約 2027/3/1 起陸續發送）。",
+      "summary_zh": "每季登錄後，用中信 LINE Pay Visa 卡在Trip.com消費，在原本 1% 之外再加 4% LINE POINTS（合計 5%），每季最多加碼 100 點。",
+      "source_ids": [
+        "src-ctbc-linepay-travel-2026q4"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-10-22",
+      "verified_at": "2026-10-31"
+    },
+    {
+      "id": "ctbc-linepay-visa-ubereats-2026q4",
+      "title_zh": "中信 LINE Pay Visa 卡 Uber Eats LINE POINTS 5%（每季登錄）",
+      "kind": "bonus",
+      "issuer_ids": [
+        "bank-ctbc"
+      ],
+      "card_ids": [
+        "ctbc-linepay"
+      ],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit",
+        "debit"
+      ],
+      "eligible_note_zh": "限中信 LINE Pay Visa 卡（信用卡與簽帳金融卡都可以）；JCB 卡不適用。",
+      "period_kind": "quarter",
+      "period_label": "2026Q4",
+      "valid_from": "2026-10-01",
+      "valid_to": "2026-12-31",
+      "status": "active",
+      "requires_registration": true,
+      "registration_windows": [
+        {
+          "opens_at": "2026-10-06T10:00+08:00",
+          "quota": 8000,
+          "note_zh": "10 月登錄（每季登錄一次就能參加 10–12 月）"
+        },
+        {
+          "opens_at": "2026-11-06T10:00+08:00",
+          "quota": 8000,
+          "note_zh": "11 月登錄名額"
+        },
+        {
+          "opens_at": "2026-12-06T10:00+08:00",
+          "quota": 8000,
+          "note_zh": "12 月登錄名額"
+        }
+      ],
+      "quota_note_zh": "每月 6 日 10:00 開放登錄 8,000 名，額滿即關閉；每季要重新登錄，7–9 月的登錄不能用在 10–12 月。加碼依登錄成功且消費先符合條件的順序回饋。",
+      "stacking": "stacks",
+      "stacking_note_zh": "官網寫 LINE POINTS 5% = 活動加碼 4% + 國內外一般消費 1%，本站只把加碼的 4% 記在活動。",
+      "rules": [
+        {
+          "id": "ubereats",
+          "label_zh": "Uber Eats 加碼 4%（限 Visa 卡）",
+          "scope": "merchant",
+          "merchant_ids": [
+            "uber-eats"
+          ],
+          "domestic_only": true,
+          "rate_bp": 400,
+          "incremental": true,
+          "cap_amount_twd": 100,
+          "cap_period": "quarter",
+          "conditions_zh": "帳單上要能看出是指定商店；設在百貨、商場、機場、車站、飯店、賣場或美食街內的店，可能因帳單名稱不同而不算。正附卡合併計算。不限實體卡，綁 LINE Pay、行動支付或第三方支付也算；分期交易沒有 LINE POINTS。每季每戶加碼上限 100 點。",
+          "cap_twd_max": 100,
+          "max_spend_twd": 2500
+        }
+      ],
+      "payout_zh": "LINE POINTS；一般消費 1% 約請款後 5–7 個工作天入點，活動加碼每季發一次（10–12 月的加碼約 2027/3/1 起陸續發送）。",
+      "summary_zh": "每季登錄後，用中信 LINE Pay Visa 卡在Uber Eats消費，在原本 1% 之外再加 4% LINE POINTS（合計 5%），每季最多加碼 100 點。",
+      "source_ids": [
+        "src-ctbc-linepay-food-2026q4"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-10-22",
+      "verified_at": "2026-10-31"
+    },
+    {
+      "id": "dbs-ovs-dining-10pct-2026q4",
+      "title_zh": "星展信用卡 海外實體餐廳 每月登錄享最高 10% 刷卡金",
+      "kind": "bonus",
+      "issuer_ids": [
+        "bank-dbs"
+      ],
+      "card_ids": [],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit"
+      ],
+      "eligible_note_zh": "星展信用卡正卡持卡人登錄，附卡消費合併計算。",
+      "period_kind": "custom",
+      "period_label": "2026/9/1–12/31",
+      "valid_from": "2026-09-01",
+      "valid_to": "2026-12-31",
+      "status": "active",
+      "requires_registration": true,
+      "registration_windows": [
+        {
+          "opens_at": "2026-10-01T15:00+08:00",
+          "closes_at": "2026-10-31T23:59+08:00",
+          "note_zh": "10 月（名額不限，在星展 Card+ 登錄）"
+        },
+        {
+          "opens_at": "2026-11-01T15:00+08:00",
+          "closes_at": "2026-11-30T23:59+08:00",
+          "note_zh": "11 月"
+        },
+        {
+          "opens_at": "2026-12-01T15:00+08:00",
+          "closes_at": "2026-12-31T23:59+08:00",
+          "note_zh": "12 月"
+        }
+      ],
+      "quota_note_zh": "每月要分別登錄；每月全體回饋總額 50 萬元，依消費日先後（同日依金額高低）排序，發完為止。",
+      "stacking": "stacks",
+      "stacking_note_zh": "刷卡金另外發，和卡片本身的海外回饋分開。",
+      "rules": [
+        {
+          "id": "ovsdining",
+          "label_zh": "海外實體餐廳 加碼 10%",
+          "scope": "category",
+          "category_ids": [
+            "dining"
+          ],
+          "exclude_category_ids": [
+            "delivery"
+          ],
+          "currency_rule": "foreign_only",
+          "physical_store_only": true,
+          "rate_bp": 1000,
+          "incremental": true,
+          "cap_amount_twd": 300,
+          "cap_period": "day",
+          "quota_limited_zh": "每月全體回饋總額 50 萬元，依消費日先後（同日依金額高低）排序，額滿為止",
+          "conditions_zh": "每人每天只算當天金額最高的一筆餐飲消費，單日最多 300 元，每月最多 1,000 元；依餐廳類 MCC（5812、5813、5814 等）認定。每月總回饋 50 萬元，依消費日先後排序，額滿就停。",
+          "cap_twd_max": 300,
+          "max_spend_twd": 3000
+        }
+      ],
+      "payout_zh": "刷卡金，回饋給登錄成功的正卡持卡人。",
+      "summary_zh": "9/1–12/31 每月登錄後，刷星展信用卡在海外實體餐廳消費，享 10% 刷卡金，每天只算一筆、單日最多 300 元、每月最多 1,000 元。",
+      "source_ids": [
+        "src-dbs-ovs-dining-2026q4",
+        "src-dbs-ovs-dining-r11"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-10-22",
+      "verified_at": "2026-10-31"
+    },
+    {
+      "id": "esun-autopay-5pct-2026q4",
+      "title_zh": "玉山信用卡 新申辦玉山帳戶自動扣繳卡費並登錄，一般消費加碼 5%（上限 250 元）",
+      "kind": "bonus",
+      "issuer_ids": [
+        "bank-esun"
+      ],
+      "card_ids": [],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit"
+      ],
+      "eligible_note_zh": "玉山信用卡正卡人在活動期間「新」申辦玉山帳戶自動扣繳玉山卡費並登錄才算；2026/9/30 已經是玉山帳戶自扣（已生效）的人不能參加。企業卡、採購卡、簽帳金融卡不適用；帳單地址要在臺澎金馬。Pi 拍錢包信用卡等玉山各卡都適用。",
+      "period_kind": "quarter",
+      "period_label": "2026/10/1–12/31",
+      "valid_from": "2026-10-01",
+      "valid_to": "2026-12-31",
+      "status": "active",
+      "requires_registration": true,
+      "registration_windows": [
+        {
+          "opens_at": "2026-10-01T00:00+08:00",
+          "closes_at": "2026-12-31T23:59+08:00",
+          "note_zh": "活動期間內登錄（官網未另列登錄時段）"
+        }
+      ],
+      "quota_note_zh": "官網沒有寫名額限制；需要登錄。",
+      "stacking": "stacks",
+      "stacking_note_zh": "官網寫的是「加碼」5%，可疊在各卡原本的一般消費回饋上。因為只有活動期間「新」申辦自扣的人才有，本站在玉山各卡結果裡以「限符合資格者」提示顯示，不計入排名或最佳回饋。",
+      "rules": [
+        {
+          "id": "ap5-dom",
+          "label_zh": "新申辦玉山帳戶自扣，一般消費加碼 5%",
+          "scope": "general_domestic",
+          "user_tier": "esun_autopay_first",
+          "requires_task": "活動期間新申辦玉山帳戶自動扣繳玉山卡費（9/30 已生效者不算）",
+          "rate_bp": 500,
+          "incremental": true,
+          "cap_amount_twd": 250,
+          "cap_period": "campaign",
+          "cap_scope": "esun-autopay-5pct-2026q4",
+          "conditions_zh": "活動期間每歸戶最多回饋 250 元（約刷 5,000 元打滿），正附卡合併計算；只算「一般消費」，官網公告的排除項目（例如繳稅、儲值等）不算。回饋前取消自扣就失去資格。",
+          "cap_twd_max": 250,
+          "max_spend_twd": 5000
+        },
+        {
+          "id": "ap5-ovs",
+          "label_zh": "新申辦玉山帳戶自扣，一般消費加碼 5%（國外）",
+          "scope": "general_overseas",
+          "user_tier": "esun_autopay_first",
+          "requires_task": "活動期間新申辦玉山帳戶自動扣繳玉山卡費（9/30 已生效者不算）",
+          "rate_bp": 500,
+          "incremental": true,
+          "cap_amount_twd": 250,
+          "cap_period": "campaign",
+          "cap_scope": "esun-autopay-5pct-2026q4",
+          "conditions_zh": "官網只寫「一般消費」，沒有限國內；與國內共用活動期間 250 元上限。",
+          "cap_twd_max": 250,
+          "max_spend_twd": 5000
+        }
+      ],
+      "payout_zh": "刷卡金，2027 年 2 月起依帳單關帳時間陸續回饋到信用卡帳單。",
+      "summary_zh": "2026/10/1–12/31 在活動期間新申辦玉山帳戶自動扣繳卡費並登錄，玉山信用卡一般消費再加 5% 刷卡金，整個活動每歸戶最多 250 元（刷 5,000 元就到頂）。",
+      "source_ids": [
+        "src-esun-autopay-2026q4"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-10-30",
+      "verified_at": "2026-10-30"
+    },
+    {
+      "id": "esun-cpc-3pct-2026q4",
+      "title_zh": "玉山信用卡 台灣中油直營站 當月加油滿 3,000 元登錄享 3%",
+      "kind": "bonus",
+      "issuer_ids": [
+        "bank-esun"
+      ],
+      "card_ids": [],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit"
+      ],
+      "eligible_note_zh": "玉山信用卡都可以；簽帳金融卡、公司卡、採購卡不適用。",
+      "period_kind": "quarter",
+      "period_label": "2026Q4",
+      "valid_from": "2026-10-01",
+      "valid_to": "2026-12-31",
+      "status": "active",
+      "requires_registration": true,
+      "registration_windows": [
+        {
+          "opens_at": "2026-10-23T12:00+08:00",
+          "closes_at": "2026-10-31T23:59+08:00",
+          "quota": 20000,
+          "note_zh": "10 月"
+        },
+        {
+          "opens_at": "2026-11-23T12:00+08:00",
+          "closes_at": "2026-11-30T23:59+08:00",
+          "quota": 20000,
+          "note_zh": "11 月"
+        },
+        {
+          "opens_at": "2026-12-23T12:00+08:00",
+          "closes_at": "2026-12-31T23:59+08:00",
+          "quota": 20000,
+          "note_zh": "12 月"
+        }
+      ],
+      "quota_note_zh": "每月都要在指定時間登錄，每月限量 20,000 名，額滿即止。",
+      "stacking": "stacks",
+      "stacking_note_zh": "官網寫可同時享有玉山 Unicard 最高 4.5% 或 U Bear 卡綁中油 Pay 最高 10%。",
+      "rules": [
+        {
+          "id": "cpc3",
+          "label_zh": "台灣中油直營站 當月累積滿 3,000 元加碼 3%",
+          "scope": "merchant",
+          "merchant_ids": [
+            "cpc"
+          ],
+          "payment_methods": [
+            "physical",
+            "apple_pay",
+            "google_pay",
+            "samsung_pay"
+          ],
+          "rate_bp": 300,
+          "incremental": true,
+          "min_monthly_spend_twd": 3000,
+          "cap_amount_twd": 100,
+          "cap_period": "month",
+          "conditions_zh": "限台灣中油直營站加油；實體卡或綁 Apple Pay、Google Pay、Samsung Pay、中油 Pay 都可以，LINE Pay、街口、悠遊付、全支付、Pi 拍錢包等不算。當月累積滿 3,000 元才有回饋，每月每歸戶最多 100 點，正附卡合併計算。",
+          "cap_twd_max": 100,
+          "max_spend_twd": 3333
+        }
+      ],
+      "payout_zh": "玉山 e point（1 點＝1 元），次月 20 日起陸續回饋。",
+      "summary_zh": "2026 年第四季每月登錄後，當月用玉山信用卡在台灣中油直營站加油累積滿 3,000 元，再加 3% 玉山 e point，每月最多 100 點。",
+      "source_ids": [
+        "src-esun-cpc-2026q4"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-10-22",
+      "verified_at": "2026-10-22"
+    },
+    {
+      "id": "esun-icashpay-carrefour-2026q4",
+      "title_zh": "玉山信用卡綁 icash Pay 萬家福、樂家康、Mia C'bon 指定日 5% OPENPOINT",
+      "kind": "bonus",
+      "issuer_ids": [
+        "bank-esun"
+      ],
+      "card_ids": [],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit"
+      ],
+      "eligible_note_zh": "限本國人、正卡持卡人登錄；icash Pay 要綁本人的玉山信用卡。",
+      "period_kind": "custom",
+      "period_label": "2026/9/10–12/31",
+      "valid_from": "2026-09-10",
+      "valid_to": "2026-12-31",
+      "status": "active",
+      "requires_registration": true,
+      "registration_windows": [
+        {
+          "opens_at": "2026-10-15T10:00+08:00",
+          "closes_at": "2026-10-31T23:59+08:00",
+          "quota": 1200,
+          "note_zh": "10 月"
+        },
+        {
+          "opens_at": "2026-11-15T10:00+08:00",
+          "closes_at": "2026-11-30T23:59+08:00",
+          "quota": 1200,
+          "note_zh": "11 月"
+        },
+        {
+          "opens_at": "2026-12-15T10:00+08:00",
+          "closes_at": "2026-12-31T23:59+08:00",
+          "quota": 1200,
+          "note_zh": "12 月"
+        }
+      ],
+      "quota_note_zh": "每月 15 日 10:00 開放登錄到月底，每月限量 1,200 名，額滿為止。",
+      "stacking": "unknown",
+      "stacking_note_zh": "回饋是 OPENPOINT 點數（由 uniopen 會員帳戶入點），官網沒寫點數價值與是否影響玉山卡原回饋，本站不自動相加。",
+      "rules": [
+        {
+          "id": "fri",
+          "label_zh": "週五 綁 icash Pay 不限金額 5% OPENPOINT",
+          "scope": "merchant",
+          "merchant_ids": [
+            "carrefour",
+            "lejiakang",
+            "carrefour-online",
+            "mia-cbon"
+          ],
+          "payment_methods": [
+            "icash_pay"
+          ],
+          "day_rule": "friday",
+          "rate_bp": 500,
+          "incremental": true,
+          "cap_amount_twd": 150,
+          "cap_period": "month",
+          "cap_scope": "esun-icashpay-carrefour-2026q4",
+          "conditions_zh": "只限每月 10 日以後的週五到週日（10/16–18、10/23–25、10/30–31、11/13–15、11/20–22、11/27–29、12/11–13、12/18–20、12/25–27；10 月另含 10/10–11）。萬家福線上購物（含家速配）也算，萬家福線上商城與 Mia C'bon 中壢 SOGO、高雄義享、Dream Plaza、台中中友店不算。每個 icash Pay 用戶每月最多 150 點。",
+          "cap_twd_max": 150,
+          "max_spend_twd": 3000
+        },
+        {
+          "id": "weekend",
+          "label_zh": "週六日 綁 icash Pay 不限金額 5% OPENPOINT",
+          "scope": "merchant",
+          "merchant_ids": [
+            "carrefour",
+            "lejiakang",
+            "carrefour-online",
+            "mia-cbon"
+          ],
+          "payment_methods": [
+            "icash_pay"
+          ],
+          "day_rule": "weekend",
+          "rate_bp": 500,
+          "incremental": true,
+          "cap_amount_twd": 150,
+          "cap_period": "month",
+          "cap_scope": "esun-icashpay-carrefour-2026q4",
+          "conditions_zh": "只限每月 10 日以後的週五到週日（10/16–18、10/23–25、10/30–31、11/13–15、11/20–22、11/27–29、12/11–13、12/18–20、12/25–27；10 月另含 10/10–11）。萬家福線上購物（含家速配）也算，萬家福線上商城與 Mia C'bon 中壢 SOGO、高雄義享、Dream Plaza、台中中友店不算。每個 icash Pay 用戶每月最多 150 點（和週五合併計算）。",
+          "cap_twd_max": 150,
+          "max_spend_twd": 3000
+        }
+      ],
+      "payout_zh": "OPENPOINT 點數，最晚在次次月底前匯入 icash Pay 對應的 uniopen 會員帳戶。",
+      "summary_zh": "每月登錄後，在每月 10 日以後的週五到週日，用玉山信用卡綁 icash Pay 在萬家福、樂家康、Mia C'bon 付款，不限金額 5% OPENPOINT，每月最多 150 點。",
+      "source_ids": [
+        "src-esun-icashpay-carrefour-2026q4"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-10-22",
+      "verified_at": "2026-10-22"
+    },
+    {
+      "id": "esun-linepay-5pct-2026q4",
+      "title_zh": "玉山信用卡綁 LINE Pay 單筆滿 500 元登錄享 5%（限活動期間首次綁定者）",
+      "kind": "bonus",
+      "issuer_ids": [
+        "bank-esun"
+      ],
+      "card_ids": [],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit"
+      ],
+      "eligible_note_zh": "要先在 2026/9/1–11/30 完成其中一項任務才有資格：①活動期間首次綁定玉山 LINE 個人化通知；②活動期間首次用玉山信用卡綁定 LINE Pay 並完成消費。2026/8/31 以前就已經用玉山信用卡在 LINE Pay 消費過的人，不算「首次」，只能走第①項（只綁過卡、沒消費過的人仍算首次）。完成任務後每月 15 日 10:00 起要重新登錄，每月限量 5,000 名、限正卡持卡人；活動到 2026/11/30 結束，官網只列 9、10、11 月，沒有 12 月的登錄。",
+      "period_kind": "custom",
+      "period_label": "2026/9/1–11/30",
+      "valid_from": "2026-09-01",
+      "valid_to": "2026-11-30",
+      "status": "active",
+      "requires_registration": true,
+      "registration_windows": [
+        {
+          "opens_at": "2026-10-15T10:00+08:00",
+          "closes_at": "2026-10-31T23:59+08:00",
+          "quota": 5000,
+          "note_zh": "10 月"
+        },
+        {
+          "opens_at": "2026-11-15T10:00+08:00",
+          "closes_at": "2026-11-30T23:59+08:00",
+          "quota": 5000,
+          "note_zh": "11 月"
+        }
+      ],
+      "quota_note_zh": "每月 15 日 10:00 起重新登錄（到月底），每月限量 5,000 名、額滿為止；限正卡持卡人。活動只到 2026/11/30，官網沒有 12 月的登錄梯次。",
+      "stacking": "stacks",
+      "stacking_note_zh": "資格只給活動期間「首次」綁定 LINE 個人化通知或首次用玉山卡在 LINE Pay 消費的人，大多數老卡友拿不到，所以本站不把這 5% 算進任何玉山卡的基本或最佳排名，只在結果附註「限符合資格者」。符合資格的人可自行加上：官網寫搭配 Unicard 原回饋最高 9.5%；U Bear 綁 LINE Pay 一般是網路消費 3%（基本 1%＋網路加碼 2%），符合資格再加 5% 可到 8%（7-ELEVEN、全家、繳保費的 LINE Pay 交易沒有網路加碼 2%）。",
+      "rules": [
+        {
+          "id": "lp5",
+          "label_zh": "LINE Pay 單筆滿 500 元 加碼 5%",
+          "scope": "wallet",
+          "domestic_only": true,
+          "payment_methods": [
+            "line_pay"
+          ],
+          "user_tier": "esun_linepay_first_bind",
+          "requires_task": "首次綁定 LINE 個人化通知，或首次用玉山卡綁 LINE Pay 消費",
+          "rate_bp": 500,
+          "incremental": true,
+          "min_txn_twd": 500,
+          "cap_amount_twd": 500,
+          "cap_period": "month",
+          "conditions_zh": "限活動期間首次綁定者（本站不計入排名，只當附註）。每歸戶每月最多 500 點。需先完成綁定任務（見活動資格說明）。官網只寫新臺幣單筆滿 500 元、特店名稱要是「連加*」「LINEPAY*」「連支*」「LPEPI*」開頭，沒提國外消費，本站先只算國內。僅限正卡、信用卡；簽帳金融卡、公司卡、採購卡不適用。",
+          "cap_twd_max": 500,
+          "max_spend_twd": 10000
+        }
+      ],
+      "payout_zh": "玉山 e point（1 點＝1 元）。",
+      "summary_zh": "9/1–11/30 完成首次綁定任務（8/31 前已用玉山卡在 LINE Pay 消費過的人不算首次綁卡消費）並每月 15 日起登錄（每月限 5,000 名），用玉山信用卡綁 LINE Pay 單筆滿 500 元，筆筆 5% 玉山 e point，每月最多 500 點；活動到 11/30，沒有 12 月梯次。",
+      "source_ids": [
+        "src-esun-linepay-2026q4"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-10-22",
+      "verified_at": "2026-10-30"
+    },
+    {
+      "id": "esun-ubear-new-10pct-2026q4",
+      "title_zh": "玉山 U Bear 新戶優惠：核卡次月起 2 個月不限通路加碼 10%（未計入排名）",
+      "kind": "new_customer",
+      "issuer_ids": [
+        "bank-esun"
+      ],
+      "card_ids": [
+        "esun-ubear"
+      ],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit"
+      ],
+      "eligible_note_zh": "新戶指核卡日前 6 個月內沒有任何一張玉山流通正卡（含認同卡、聯名卡）的人；要在 2026/9/1–11/30 首次申辦 U Bear 正卡並核卡。不用登錄。",
+      "period_kind": "custom",
+      "period_label": "2026/10/1–2027/1/31（依核卡月份）",
+      "valid_from": "2026-10-01",
+      "valid_to": "2027-01-31",
+      "status": "active",
+      "requires_registration": false,
+      "registration_windows": [],
+      "quota_note_zh": "加碼期間依核卡月份：9 月核卡 10/1–11/30、10 月核卡 11/1–12/31、11 月核卡 12/1–2027/1/31。每月上限 300 元、每歸戶上限 600 元，正附卡合併。",
+      "stacking": "stacks",
+      "stacking_note_zh": "官網寫明這 10% 與卡片原權益回饋分開計算。本站把它當新戶優惠另外列出，不計入任何排行分數。",
+      "rules": [
+        {
+          "id": "new10",
+          "label_zh": "新戶核卡次月起 2 個月 不限通路一般消費加碼 10%",
+          "scope": "general_domestic",
+          "user_tier": "new_customer",
+          "rate_bp": 1000,
+          "incremental": true,
+          "cap_amount_twd": 300,
+          "cap_period": "month",
+          "conditions_zh": "每月上限 300 元、每歸戶上限 600 元；LINE Pay 等行動支付也算（官網舉例就是 LINE Pay）。全支付繳費與全聯、大全聯不算一般消費。國外一般消費官網未排除，本站只在國內情境列出。",
+          "cap_twd_max": 300,
+          "max_spend_twd": 3000
+        }
+      ],
+      "payout_zh": "現金回饋，次月 20 日起依關帳時間折抵帳單。",
+      "summary_zh": "新戶 9/1–11/30 首辦 U Bear 核卡後，核卡次月起連續 2 個月不限通路再加碼 10%，每月最多 300 元、每人最多 600 元；只列為新戶優惠，不計入排名。",
+      "source_ids": [
+        "src-esun-ubear-event-20261030"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-10-30",
+      "verified_at": "2026-10-30"
+    },
+    {
+      "id": "esun-ubear-newcard-3ch-10pct-2026q4",
+      "title_zh": "玉山 U Bear 新卡友優惠：核卡後 60 天指定三大通路加碼 10%（未計入排名）",
+      "kind": "new_customer",
+      "issuer_ids": [
+        "bank-esun"
+      ],
+      "card_ids": [
+        "esun-ubear"
+      ],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit"
+      ],
+      "eligible_note_zh": "沒申辦過 U Bear 正卡的人（舊戶也可以），在 2026/9/1–11/30 首次申辦 U Bear 正卡並核卡。不用登錄。",
+      "period_kind": "custom",
+      "period_label": "核卡後 60 天（2026/9/1–11/30 核卡）",
+      "valid_from": "2026-09-01",
+      "valid_to": "2027-01-29",
+      "status": "active",
+      "requires_registration": false,
+      "registration_windows": [],
+      "quota_note_zh": "每歸戶上限 1,200 元，正附卡合併；帳單上要顯示通路名稱，只顯示第三方支付名稱的不算。LINE Pay 不在指定通路內。",
+      "stacking": "stacks",
+      "stacking_note_zh": "本站把它當新戶優惠另外列出，不計入任何排行分數。",
+      "rules": [
+        {
+          "id": "ch3",
+          "label_zh": "新卡友核卡後 60 天 影音遊戲、追星應援、網路購物加碼 10%",
+          "scope": "merchant",
+          "merchant_ids": [
+            "apple-services",
+            "google-play",
+            "gash",
+            "mycard",
+            "tixcraft",
+            "kktix",
+            "ibon-ticket",
+            "shopee",
+            "momo",
+            "pchome",
+            "rakuten-ichiba",
+            "yahoo-shopping"
+          ],
+          "user_tier": "new_customer",
+          "rate_bp": 1000,
+          "incremental": true,
+          "cap_amount_twd": 1200,
+          "cap_period": "campaign",
+          "conditions_zh": "影音遊戲：Apple 媒體服務、Google 媒體服務、GASH、MyCard；追星應援：拓元、KKTIX、遠大、兩廳院文化生活、寬宏、ibon 售票；網路購物：蝦皮、momo、PChome、樂天市場、Yahoo 購物中心。",
+          "cap_twd_max": 1200,
+          "max_spend_twd": 12000
+        }
+      ],
+      "payout_zh": "現金回饋，依核卡月份於 2027/1/15、2/15、3/15 起陸續折抵帳單。",
+      "summary_zh": "沒辦過 U Bear 正卡的人 9/1–11/30 首辦核卡後 60 天內，在指定影音遊戲、追星應援、網路購物通路再加碼 10%，每人最多 1,200 元；只列為新戶優惠，不計入排名。",
+      "source_ids": [
+        "src-esun-ubear-event-20261030"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-10-30",
+      "verified_at": "2026-10-30"
+    },
+    {
+      "id": "esun-unicard-pluspay-family-2026q4",
+      "title_zh": "玉山 Unicard 綁全盈+PAY 全家 5%",
+      "kind": "bonus",
+      "issuer_ids": [
+        "bank-esun"
+      ],
+      "card_ids": [
+        "esun-unicard"
+      ],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit"
+      ],
+      "period_kind": "quarter",
+      "period_label": "2026Q4",
+      "valid_from": "2026-10-01",
+      "valid_to": "2026-12-31",
+      "status": "active",
+      "requires_registration": true,
+      "registration_windows": [
+        {
+          "opens_at": "2026-10-01T10:00+08:00",
+          "quota": 15000,
+          "note_zh": "10 月登錄；當月登錄只算當月消費"
+        },
+        {
+          "opens_at": "2026-11-01T10:00+08:00",
+          "quota": 15000,
+          "note_zh": "11 月登錄"
+        },
+        {
+          "opens_at": "2026-12-01T10:00+08:00",
+          "quota": 15000,
+          "note_zh": "12 月登錄"
+        }
+      ],
+      "stacking": "stacks",
+      "stacking_note_zh": "官網標題寫「加碼 5%」、內文寫「最高 5%」。Unicard 本身在超商不給回饋（官方不回饋項目），所以在全家這 5% 就是全部，不會和卡片原回饋重複計算。",
+      "rules": [
+        {
+          "id": "family5",
+          "label_zh": "全家 用全盈+PAY 綁 Unicard 最高 5%",
+          "scope": "merchant",
+          "merchant_ids": [
+            "familymart"
+          ],
+          "payment_methods": [
+            "pluspay"
+          ],
+          "rate_bp": 500,
+          "incremental": true,
+          "cap_amount_twd": 50,
+          "cap_period": "month",
+          "override_exclusions": [
+            "x-convenience"
+          ],
+          "quota_limited_zh": "每月限量登錄 15,000 名，額滿登錄提前結束",
+          "conditions_zh": "不限金額、不限首綁；每歸戶每月上限 50 點，正附卡合併。另有首次綁全盈+PAY 單筆滿 238 元送 68 點（限量 3 萬名）與繳費滿 1,200 元送 30 元儲值金（每月 100 份），本站未列入計算。",
+          "cap_twd_max": 50,
+          "max_spend_twd": 1000
+        }
+      ],
+      "payout_zh": "玉山 e point（1 點＝1 元）。",
+      "summary_zh": "2026 年第四季，玉山 Unicard 綁全盈+PAY 在全家付款，每月登錄後最高 5%，每月上限 50 點。",
+      "source_ids": [
+        "src-esun-unicard-pluspay"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-10-19",
+      "verified_at": "2026-10-19"
+    },
+    {
+      "id": "firstbank-metro-taipei-5pct-2026q4",
+      "title_zh": "一銀信用卡 台北捷運感應乘車 登錄享 5%",
+      "kind": "bonus",
+      "issuer_ids": [
+        "bank-firstbank"
+      ],
+      "card_ids": [],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit"
+      ],
+      "eligible_note_zh": "第一銀行信用卡持卡人；公司卡與簽帳金融卡不適用。",
+      "period_kind": "quarter",
+      "period_label": "2026Q4",
+      "valid_from": "2026-10-01",
+      "valid_to": "2026-12-31",
+      "status": "active",
+      "requires_registration": true,
+      "registration_windows": [
+        {
+          "opens_at": "2026-10-01T00:00+08:00",
+          "quota": 15000,
+          "note_zh": "活動期間登錄一次就好；官網沒寫開放時間，本站記活動開始日"
+        }
+      ],
+      "quota_note_zh": "限量 15,000 名，登錄關閉就表示名額已滿。",
+      "stacking": "stacks",
+      "stacking_note_zh": "刷卡金另外發，和卡片本身的回饋分開。",
+      "rules": [
+        {
+          "id": "metro5",
+          "label_zh": "台北捷運感應乘車 加碼 5%",
+          "scope": "merchant",
+          "merchant_ids": [
+            "metro-taipei"
+          ],
+          "payment_methods": [
+            "physical",
+            "apple_pay",
+            "google_pay",
+            "samsung_pay"
+          ],
+          "rate_bp": 500,
+          "incremental": true,
+          "cap_amount_twd": 50,
+          "cap_period": "campaign",
+          "conditions_zh": "用一銀實體卡或綁 Apple Pay、Google Pay、Samsung Pay 感應進出站（進出要用同一支手機、同一張卡），臺北捷運全線含環狀線。正附卡合併，整個活動每戶最多 50 元。",
+          "cap_twd_max": 50,
+          "max_spend_twd": 1000
+        }
+      ],
+      "payout_zh": "刷卡金，預計 2027/2/28 前回饋。",
+      "summary_zh": "2026 年第四季登錄後，用一銀信用卡感應搭台北捷運，享 5% 刷卡金，整個活動最多 50 元。",
+      "source_ids": [
+        "src-firstbank-metro-taipei-2026q4"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-10-22",
+      "verified_at": "2026-10-22"
+    },
+    {
+      "id": "firstbank-online-2pct-2026h2",
+      "title_zh": "一銀信用卡 國內外指定網購單筆滿千 登錄享 2%",
+      "kind": "bonus",
+      "issuer_ids": [
+        "bank-firstbank"
+      ],
+      "card_ids": [],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit"
+      ],
+      "eligible_note_zh": "第一銀行信用卡都可以；公司卡與簽帳金融卡不適用，限正卡持卡人登錄。",
+      "period_kind": "half_year",
+      "period_label": "2026H2",
+      "valid_from": "2026-07-01",
+      "valid_to": "2026-12-31",
+      "status": "active",
+      "requires_registration": true,
+      "registration_windows": [
+        {
+          "opens_at": "2026-10-16T16:00+08:00",
+          "quota": 2000,
+          "note_zh": "10 月（當月訂單限當月登錄）"
+        },
+        {
+          "opens_at": "2026-11-16T16:00+08:00",
+          "quota": 2000,
+          "note_zh": "11 月"
+        },
+        {
+          "opens_at": "2026-12-16T16:00+08:00",
+          "quota": 2000,
+          "note_zh": "12 月"
+        }
+      ],
+      "quota_note_zh": "每月限量登錄 2,000 名，依登錄先後回饋，額滿會關閉登錄。",
+      "stacking": "stacks",
+      "stacking_note_zh": "刷卡金另外發，和卡片本身的回饋分開（星璨卡另有指定通路加碼，已記在卡片資料）。",
+      "rules": [
+        {
+          "id": "online2",
+          "label_zh": "指定網購單筆滿 1,000 元 加碼 2%",
+          "scope": "merchant",
+          "merchant_ids": [
+            "books-com",
+            "gomaji",
+            "friday-shopping",
+            "buy123",
+            "rakuten-ichiba",
+            "amazon",
+            "ebay"
+          ],
+          "payment_methods": [
+            "physical",
+            "tw_pay",
+            "jkopay",
+            "line_pay",
+            "apple_pay",
+            "google_pay"
+          ],
+          "rate_bp": 200,
+          "incremental": true,
+          "min_txn_twd": 1000,
+          "cap_amount_twd": 1000,
+          "cap_period": "month",
+          "conditions_zh": "指定網購：博客來、VIVA 美好購物網、GOMAJI、friDay 購物、生活市集、台灣樂天、誠品生活、Amazon、eBay（VIVA 與誠品線上本站沒有對應商店）。單筆或特店分期總額滿 1,000 元，排除由你分期卡、來電分期與 iLEO 自動分期。行動支付只限台灣Pay、街口、LINE Pay、Apple Pay、Google Pay。正附卡合併，每戶每月最多 1,000 元。",
+          "cap_twd_max": 1000,
+          "max_spend_twd": 50000
+        }
+      ],
+      "payout_zh": "刷卡金，每月活動結束後 45 天內回饋。",
+      "summary_zh": "2026 下半年每月登錄後，用一銀信用卡在博客來、Amazon、樂天市場等指定網購單筆滿 1,000 元，加碼 2% 刷卡金，每月最多 1,000 元。",
+      "source_ids": [
+        "src-firstbank-online2-2026h2"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-10-22",
+      "verified_at": "2026-10-22"
+    },
+    {
+      "id": "firstbank-simplemart-5pct-2026",
+      "title_zh": "一銀卡 美廉社實體門市單筆滿 299 元送 5% 刷卡金（每季登錄）",
+      "kind": "bonus",
+      "issuer_ids": [
+        "bank-firstbank"
+      ],
+      "card_ids": [],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit",
+        "debit"
+      ],
+      "eligible_note_zh": "第一銀行信用卡與簽帳金融卡都可以（公司卡除外），限正卡持卡人登錄。",
+      "period_kind": "annual",
+      "period_label": "2026",
+      "valid_from": "2026-01-01",
+      "valid_to": "2026-12-31",
+      "status": "active",
+      "requires_registration": true,
+      "registration_windows": [
+        {
+          "opens_at": "2026-10-01T00:00+08:00",
+          "quota": 1000,
+          "note_zh": "第四季登錄（每季登錄一次，從登錄當月起算）；官網沒寫開放時間，本站記季初"
+        }
+      ],
+      "quota_note_zh": "每季限量 1,000 份，依達成順序計算，額滿會關閉登錄。",
+      "stacking": "stacks",
+      "stacking_note_zh": "刷卡金另外發，和卡片本身的回饋分開。",
+      "rules": [
+        {
+          "id": "sm5",
+          "label_zh": "美廉社實體門市 單筆滿 299 元 5%",
+          "scope": "merchant",
+          "merchant_ids": [
+            "simplemart"
+          ],
+          "physical_store_only": true,
+          "payment_methods": [
+            "physical",
+            "apple_pay",
+            "google_pay",
+            "samsung_pay"
+          ],
+          "rate_bp": 500,
+          "incremental": true,
+          "min_txn_twd": 299,
+          "cap_amount_twd": 15,
+          "cap_period": "txn",
+          "conditions_zh": "每筆最多 15 元；每戶每月最多回饋 2 次、合計 30 元（和小北百貨合併計算）。LINE Pay、街口、台灣Pay 等第三方支付與掃 TWQR 不算；百貨門市與量販門市不算。",
+          "cap_twd_max": 15,
+          "max_spend_twd": 300
+        }
+      ],
+      "payout_zh": "刷卡金，消費後次月底前撥入正卡人帳戶。",
+      "summary_zh": "2026 年每季登錄後，在美廉社實體門市刷一銀卡單筆滿 299 元，送 5% 刷卡金，每筆最多 15 元、每月最多 2 次。",
+      "source_ids": [
+        "src-firstbank-simplemart-2026"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-10-22",
+      "verified_at": "2026-10-22"
+    },
+    {
+      "id": "kgi-tintin-pay10-2026h2",
+      "title_zh": "凱基丁丁藥局悠遊鈦金卡 辦卡後核卡 30 天內綁指定支付 7-11／全家／全聯 10% 刷卡金（不限新舊戶）",
+      "kind": "bonus",
+      "issuer_ids": [
+        "bank-kgi"
+      ],
+      "card_ids": [
+        "kgi-tintin"
+      ],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit"
+      ],
+      "eligible_note_zh": "官網活動標題寫「不限新舊戶」，但只有新申辦這張卡、核卡後 30 天內的消費才算，本站歸在「新辦卡才有」：一般排行不計，「我的卡片」勾新戶才計。條件是 2026/12/31 前完成送件辦丁丁聯名卡（限正卡），核卡後 30 天內以此卡綁定指定支付、在指定通路消費；每戶回饋上限 150 元。",
+      "period_kind": "custom",
+      "period_label": "2026/7/17–2026/12/31",
+      "valid_from": "2026-07-17",
+      "valid_to": "2026-12-31",
+      "status": "active",
+      "requires_registration": false,
+      "registration_windows": [],
+      "quota_note_zh": "送件須在 2026/12/31 前（以本行系統收件日為準）；核卡後 30 天內的消費才算。刷卡金預計核卡後次次月月底前回饋。",
+      "stacking": "stacks",
+      "stacking_note_zh": "官網沒寫與卡片原回饋的疊加方式；這幾個通路的行動支付消費依凱基「一般消費定義」本來就不給紅利，所以本站只計這筆 10%，不會重複加總。",
+      "rules": [
+        {
+          "id": "pay10-711",
+          "label_zh": "核卡 30 天內 7-ELEVEN × 街口支付 10% 刷卡金",
+          "scope": "merchant",
+          "merchant_ids": [
+            "seven-eleven"
+          ],
+          "payment_methods": [
+            "jkopay"
+          ],
+          "user_tier": "new_customer",
+          "rate_bp": 1000,
+          "incremental": true,
+          "cap_amount_twd": 150,
+          "cap_period": "campaign",
+          "cap_scope": "tintin-pay10",
+          "override_exclusions": [
+            "x-cvs-mpay",
+            "x-micropay",
+            "x-pxmart"
+          ],
+          "conditions_zh": "限核卡後 30 天內；每戶（三個通路合計）上限 150 元；不限新舊戶，但要是剛送件辦這張卡。指定實體門市消費不適用。",
+          "cap_twd_max": 150,
+          "max_spend_twd": 1500
+        },
+        {
+          "id": "pay10-px",
+          "label_zh": "核卡 30 天內 全聯福利中心 × 全支付 10% 刷卡金",
+          "scope": "merchant",
+          "merchant_ids": [
+            "pxmart"
+          ],
+          "payment_methods": [
+            "pxpay_plus"
+          ],
+          "user_tier": "new_customer",
+          "rate_bp": 1000,
+          "incremental": true,
+          "cap_amount_twd": 150,
+          "cap_period": "campaign",
+          "cap_scope": "tintin-pay10",
+          "override_exclusions": [
+            "x-cvs-mpay",
+            "x-micropay",
+            "x-pxmart"
+          ],
+          "conditions_zh": "限核卡後 30 天內；每戶（三個通路合計）上限 150 元；不限新舊戶，但要是剛送件辦這張卡。",
+          "cap_twd_max": 150,
+          "max_spend_twd": 1500
+        },
+        {
+          "id": "pay10-fm",
+          "label_zh": "核卡 30 天內 全家便利商店 × 街口支付／全盈+PAY 10% 刷卡金",
+          "scope": "merchant",
+          "merchant_ids": [
+            "familymart"
+          ],
+          "payment_methods": [
+            "jkopay",
+            "pluspay"
+          ],
+          "user_tier": "new_customer",
+          "rate_bp": 1000,
+          "incremental": true,
+          "cap_amount_twd": 150,
+          "cap_period": "campaign",
+          "cap_scope": "tintin-pay10",
+          "override_exclusions": [
+            "x-cvs-mpay",
+            "x-micropay",
+            "x-pxmart"
+          ],
+          "conditions_zh": "限核卡後 30 天內；每戶（三個通路合計）上限 150 元；不限新舊戶，但要是剛送件辦這張卡。",
+          "cap_twd_max": 150,
+          "max_spend_twd": 1500
+        }
+      ],
+      "payout_zh": "刷卡金，預計核卡後次次月月底前回饋至正卡人信用卡帳戶。",
+      "summary_zh": "凱基丁丁卡核卡後 30 天內，綁街口／全支付／全盈+PAY 在 7-11、全聯、全家消費享 10% 刷卡金，每戶最多 150 元；官網寫明不限新舊戶。",
+      "source_ids": [
+        "src-kgi-tintin-page"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-11-04",
+      "verified_at": "2026-11-04"
+    },
+    {
+      "id": "mega-twpay-1p5-2026",
+      "title_zh": "兆豐信用卡綁台灣Pay 掃碼消費每月登錄享 1.5% 刷卡金",
+      "kind": "bonus",
+      "issuer_ids": [
+        "bank-mega"
+      ],
+      "card_ids": [],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit"
+      ],
+      "eligible_note_zh": "兆豐個人信用卡都適用（政府網路採購卡、公司商務卡、VISA 金融卡不適用）。要用兆豐行動銀行 App 或台灣行動支付 App 綁兆豐信用卡，以 QR Code 主掃或出示付款條碼被掃；刷實體卡、NFC 感應、輸入卡號都不算。",
+      "period_kind": "custom",
+      "period_label": "2026/1/1–12/31（每月登錄）",
+      "valid_from": "2026-01-01",
+      "valid_to": "2026-12-31",
+      "status": "active",
+      "requires_registration": true,
+      "registration_windows": [
+        {
+          "opens_at": "2026-10-01T11:00+08:00",
+          "quota": 8000,
+          "note_zh": "10 月"
+        },
+        {
+          "opens_at": "2026-11-02T11:00+08:00",
+          "quota": 8000,
+          "note_zh": "11 月"
+        },
+        {
+          "opens_at": "2026-12-01T11:00+08:00",
+          "quota": 8000,
+          "note_zh": "12 月"
+        }
+      ],
+      "quota_note_zh": "每月第一個銀行營業日上午 11 點開放登錄，每月限 8,000 名，額滿為止；沒登錄當月不回饋，不能補登。",
+      "stacking": "stacks",
+      "stacking_note_zh": "官網沒寫會取代卡片原本的回饋，本站當作加碼另計；原卡回饋是否算台灣Pay掃碼交易，依各卡辦法。",
+      "rules": [
+        {
+          "id": "twpay15",
+          "label_zh": "台灣Pay 掃碼 加碼 1.5% 刷卡金",
+          "scope": "wallet",
+          "exclude_category_ids": [
+            "bills",
+            "stored_value",
+            "tax"
+          ],
+          "domestic_only": true,
+          "payment_methods": [
+            "tw_pay"
+          ],
+          "qr_only": true,
+          "rate_bp": 150,
+          "incremental": true,
+          "cap_amount_twd": 100,
+          "cap_period": "month",
+          "cap_scope": "mega-twpay-15",
+          "conditions_zh": "官網沒寫國外的台灣Pay 掃碼算不算，本站先只算國內。正附卡合併每戶每月上限 100 元，次次月回饋到信用卡帳戶折抵。儲值、菸品、繳費、繳稅、轉帳與其他代收費用不算；官網寫活動的「消費」指一般消費、排除項目依兆豐「一般消費定義」，所以便利商店、全聯／大全聯、小額支付特店、停車費等由各卡的一般消費排除擋掉（2026-10-31 核對）。",
+          "cap_twd_max": 100,
+          "max_spend_twd": 6666
+        }
+      ],
+      "payout_zh": "刷卡金，活動月結束後次次月內折抵信用卡帳款。",
+      "summary_zh": "2026 全年每月登錄（每月第一個營業日 11:00 開放、限 8,000 名），兆豐信用卡綁台灣Pay 掃碼或出示付款碼消費，每筆加碼 1.5% 刷卡金，每戶每月最多 100 元（約 6,667 元消費封頂）；刷卡、感應、輸入卡號不算。",
+      "source_ids": [
+        "src-mega-twpay-1p5-20261030",
+        "src-mega-twpay-1p5-r11"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-10-30",
+      "verified_at": "2026-10-31"
+    },
+    {
+      "id": "mega-young-new-pay-1pct-2026",
+      "title_zh": "兆豐 e秒系列 新戶優惠：指定支付再加碼 1%（未計入排名）",
+      "kind": "new_customer",
+      "issuer_ids": [
+        "bank-mega"
+      ],
+      "card_ids": [
+        "mega-young",
+        "mega-young2",
+        "mega-young-combo"
+      ],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit"
+      ],
+      "eligible_note_zh": "新戶＝112/1/1 以後同一身分證字號從未持有兆豐銀行任一信用卡正卡；2026/1/1–12/31 申辦正卡並核卡，申辦電子帳單（不含行動帳單）並取消紙本、辦理帳戶自動扣繳卡費成功。",
+      "period_kind": "custom",
+      "period_label": "核卡後 12 個月（至 2026 年 12 月帳單結帳日）",
+      "valid_from": "2026-01-01",
+      "valid_to": "2026-12-31",
+      "status": "active",
+      "requires_registration": false,
+      "registration_windows": [],
+      "quota_note_zh": "每期回饋上限 100 元；官網寫適用期間至 2026 年 12 月帳單結帳日。",
+      "stacking": "unknown",
+      "stacking_note_zh": "這筆優惠已另以「新戶才計入」的卡片規則給引擎計算；活動頁僅列出，不重複加總，也不計入任何排行分數。",
+      "rules": [
+        {
+          "id": "pay1",
+          "label_zh": "新戶 Apple Pay／Google Pay／Samsung Pay／台灣Pay 再加碼 1%",
+          "scope": "wallet",
+          "payment_methods": [
+            "apple_pay",
+            "google_pay",
+            "samsung_pay",
+            "tw_pay"
+          ],
+          "user_tier": "new_customer",
+          "rate_bp": 100,
+          "incremental": true,
+          "cap_amount_twd": 100,
+          "cap_period": "statement",
+          "conditions_zh": "台灣Pay 僅限掃碼支付、不含感應；指定支付交易以兆豐判定為準，不含需輸入 CVV2 的交易；回饋須為新增一般消費。",
+          "cap_twd_max": 100,
+          "max_spend_twd": 10000
+        }
+      ],
+      "payout_zh": "現金回饋，折抵次期信用卡帳單。",
+      "summary_zh": "兆豐 e秒系列新戶（2026 年申辦並完成電子帳單＋自動扣繳）用 Apple Pay、Google Pay、Samsung Pay、台灣Pay 付款再加碼 1%（每期上限 100 元）；只列為新戶優惠，不計入排名。",
+      "source_ids": [
+        "src-mega-young-combo-page"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-11-04",
+      "verified_at": "2026-11-04"
+    },
+    {
+      "id": "obank-debit-new-pay-4pct-2026q4",
+      "title_zh": "王道銀行簽帳金融卡 新戶優惠：核卡後 45 天綁定行動支付加碼 4%（未計入排名）",
+      "kind": "new_customer",
+      "issuer_ids": [
+        "bank-obank"
+      ],
+      "card_ids": [
+        "obank-debit"
+      ],
+      "exclude_card_ids": [],
+      "product_types": [
+        "debit"
+      ],
+      "eligible_note_zh": "新戶＝未曾持有王道銀行任一存款帳戶者（銷戶重開不算）；2026/10/1–12/30 活動期間首次申請並成功開立存款帳戶。",
+      "period_kind": "custom",
+      "period_label": "2026/10/1–12/30（核卡後 45 天內）",
+      "valid_from": "2026-10-01",
+      "valid_to": "2026-12-30",
+      "status": "active",
+      "requires_registration": false,
+      "registration_windows": [],
+      "quota_note_zh": "限 6,000 名（依核卡順序），額滿提前結束；每人加碼回饋上限 500 元。",
+      "stacking": "unknown",
+      "stacking_note_zh": "這筆優惠已另以「新戶才計入」的卡片規則給引擎計算；活動頁僅列出，不重複加總，也不計入任何排行分數。",
+      "rules": [
+        {
+          "id": "pay4",
+          "label_zh": "新戶核卡後 45 天 指定行動支付加碼 4%",
+          "scope": "wallet",
+          "payment_methods": [
+            "apple_pay",
+            "line_pay",
+            "jkopay",
+            "easywallet",
+            "pluspay",
+            "ipass_money",
+            "icash_pay",
+            "pxpay_plus"
+          ],
+          "user_tier": "new_customer",
+          "rate_bp": 400,
+          "incremental": true,
+          "cap_amount_twd": 500,
+          "cap_period": "campaign",
+          "quota_limited_zh": "限 6,000 名，依核卡順序，額滿提前結束",
+          "conditions_zh": "限用本行簽帳金融卡綁定指定支付一般消費；帳單店名要顯示指定支付名稱；海外交易手續費另收 1.5% 且不列入加碼。",
+          "cap_twd_max": 500,
+          "max_spend_twd": 12500
+        }
+      ],
+      "payout_zh": "現金回饋。",
+      "summary_zh": "王道新戶核卡後 45 天內用簽帳金融卡綁 Apple Pay、LINE Pay、街口、悠遊付、全盈+、ipass money、icash pay、全支付付款，加碼 4%（上限 500 元、限 6,000 名）；只列為新戶優惠，不計入排名。",
+      "source_ids": [
+        "src-obank-events"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-11-04",
+      "verified_at": "2026-11-04"
+    },
+    {
+      "id": "obank-mobile-pay-2026q4",
+      "title_zh": "王道 刷支付給利就是王道（簽帳金融卡綁行動支付加碼 5%）",
+      "kind": "bonus",
+      "issuer_ids": [
+        "bank-obank"
+      ],
+      "card_ids": [
+        "obank-debit"
+      ],
+      "exclude_card_ids": [],
+      "product_types": [
+        "debit"
+      ],
+      "period_kind": "quarter",
+      "period_label": "2026Q4",
+      "valid_from": "2026-10-01",
+      "valid_to": "2026-12-31",
+      "status": "active",
+      "requires_registration": true,
+      "registration_windows": [
+        {
+          "opens_at": "2026-10-01T12:00+08:00",
+          "quota": 5000,
+          "note_zh": "10 月"
+        },
+        {
+          "opens_at": "2026-11-02T12:00+08:00",
+          "quota": 5000,
+          "note_zh": "11 月（11/1 為假日順延）"
+        },
+        {
+          "opens_at": "2026-12-01T12:00+08:00",
+          "quota": 5000,
+          "note_zh": "12 月"
+        }
+      ],
+      "quota_note_zh": "每月都要重新登錄，只算登錄當月的消費；額滿即關閉。王道財富無限卡免登錄。",
+      "stacking": "stacks",
+      "stacking_note_zh": "官網寫「額外加碼」，與卡片基本 1% 合計 6%。",
+      "rules": [
+        {
+          "id": "pay5",
+          "label_zh": "綁指定行動支付 單筆滿 300 元",
+          "scope": "wallet",
+          "exclude_country_codes": [
+            "AT",
+            "BE",
+            "BG",
+            "HR",
+            "CY",
+            "CZ",
+            "DK",
+            "EE",
+            "FI",
+            "FR",
+            "DE",
+            "GR",
+            "HU",
+            "IE",
+            "IT",
+            "LV",
+            "LT",
+            "LU",
+            "MT",
+            "NL",
+            "PL",
+            "PT",
+            "RO",
+            "SK",
+            "SI",
+            "ES",
+            "SE",
+            "GB",
+            "IS",
+            "LI",
+            "NO"
+          ],
+          "payment_methods": [
+            "apple_pay",
+            "jkopay",
+            "easywallet",
+            "pluspay",
+            "ipass_money",
+            "icash_pay",
+            "pxpay_plus"
+          ],
+          "rate_bp": 500,
+          "stack": "adds",
+          "quote": "指定行動支付刷卡消費單筆滿300元享額外加碼5%回饋",
+          "quote_source_id": "src-obank-events",
+          "incremental": true,
+          "min_txn_twd": 300,
+          "cap_amount_twd": 1200,
+          "cap_period": "month",
+          "conditions_zh": "LINE Pay 帳單名稱須為「連加*」「LINE Pay」「連支＊」或「LINEPAYEPI *」；Uber、Uber Eats 內建的 LINE Pay 不算。官網這檔注意事項沒有排除全聯；明列「不適用全聯場域」的是另一檔「全支付綁定王道簽帳金融卡 5% 全點」，兩檔回饋不同、不要混在一起。",
+          "cap_twd_max": 1200,
+          "max_spend_twd": 24000
+        },
+        {
+          "id": "pay5-lp",
+          "label_zh": "綁 LINE Pay 單筆滿 300 元",
+          "scope": "wallet",
+          "exclude_merchant_ids": [
+            "uber",
+            "uber-eats"
+          ],
+          "exclude_country_codes": [
+            "AT",
+            "BE",
+            "BG",
+            "HR",
+            "CY",
+            "CZ",
+            "DK",
+            "EE",
+            "FI",
+            "FR",
+            "DE",
+            "GR",
+            "HU",
+            "IE",
+            "IT",
+            "LV",
+            "LT",
+            "LU",
+            "MT",
+            "NL",
+            "PL",
+            "PT",
+            "RO",
+            "SK",
+            "SI",
+            "ES",
+            "SE",
+            "GB",
+            "IS",
+            "LI",
+            "NO"
+          ],
+          "payment_methods": [
+            "line_pay"
+          ],
+          "rate_bp": 500,
+          "stack": "adds",
+          "quote": "指定行動支付刷卡消費單筆滿300元享額外加碼5%回饋",
+          "quote_source_id": "src-obank-events",
+          "incremental": true,
+          "min_txn_twd": 300,
+          "cap_amount_twd": 1200,
+          "cap_period": "month",
+          "conditions_zh": "LINE Pay 帳單名稱須為「連加*」「LINE Pay」「連支＊」或「LINEPAYEPI *」；Uber、Uber Eats 內建的 LINE Pay 不算。",
+          "cap_twd_max": 1200,
+          "max_spend_twd": 24000
+        }
+      ],
+      "payout_zh": "消費後次次月底前存入王道帳戶。",
+      "summary_zh": "每月登錄後，用 Apple Pay、LINE Pay 等 8 種行動支付綁王道簽帳金融卡，單筆滿 300 元再加碼 5%，每月最多 1,200 元。",
+      "source_ids": [
+        "src-obank-events"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-10-19",
+      "verified_at": "2026-10-31"
+    },
+    {
+      "id": "obank-overseas-2026q4",
+      "title_zh": "王道 出國、海外網購刷王道 加碼 5%",
+      "kind": "bonus",
+      "issuer_ids": [
+        "bank-obank"
+      ],
+      "card_ids": [
+        "obank-debit"
+      ],
+      "exclude_card_ids": [],
+      "product_types": [
+        "debit"
+      ],
+      "period_kind": "quarter",
+      "period_label": "2026Q4",
+      "valid_from": "2026-10-01",
+      "valid_to": "2026-12-31",
+      "status": "active",
+      "requires_registration": true,
+      "registration_windows": [
+        {
+          "opens_at": "2026-10-01T12:00+08:00",
+          "quota": 3000,
+          "note_zh": "10 月"
+        },
+        {
+          "opens_at": "2026-11-02T12:00+08:00",
+          "quota": 3000,
+          "note_zh": "11 月"
+        },
+        {
+          "opens_at": "2026-12-01T12:00+08:00",
+          "quota": 3000,
+          "note_zh": "12 月"
+        }
+      ],
+      "quota_note_zh": "每月第一個營業日中午 12:00 開放登錄，每月 3,000 名；當月登錄、當月消費才算。王道財富無限卡免登錄。",
+      "stacking": "stacks",
+      "rules": [
+        {
+          "id": "ovs5",
+          "label_zh": "海外實體或海外網路商店一般消費",
+          "scope": "general_overseas",
+          "exclude_country_codes": [
+            "AT",
+            "BE",
+            "BG",
+            "HR",
+            "CY",
+            "CZ",
+            "DK",
+            "EE",
+            "FI",
+            "FR",
+            "DE",
+            "GR",
+            "HU",
+            "IE",
+            "IT",
+            "LV",
+            "LT",
+            "LU",
+            "MT",
+            "NL",
+            "PL",
+            "PT",
+            "RO",
+            "SK",
+            "SI",
+            "ES",
+            "SE",
+            "GB",
+            "IS",
+            "LI",
+            "NO"
+          ],
+          "payment_methods": [
+            "physical"
+          ],
+          "rate_bp": 500,
+          "incremental": true,
+          "cap_amount_twd": 1500,
+          "cap_period": "month",
+          "conditions_zh": "綁 Apple Pay、LINE Pay、街口等行動支付的交易不適用；排除歐洲多國（含英國、冰島、列支敦斯登、挪威）及營業登記在這些國家的商店；海外交易手續費 1.5% 另收且不列入計算。",
+          "cap_twd_max": 1500,
+          "max_spend_twd": 30000
+        }
+      ],
+      "payout_zh": "消費後約兩個月內存入王道帳戶（依官網時程表）。",
+      "summary_zh": "每月登錄後，王道簽帳金融卡在海外（實體或網購）刷卡，再加碼 5%，每月最多 1,500 元；歐洲多國除外。",
+      "source_ids": [
+        "src-obank-events"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-10-19",
+      "verified_at": "2026-10-31"
+    },
+    {
+      "id": "sino-cashcard-jcb-new-designated-6pct-2026q4",
+      "title_zh": "永豐現金回饋 JCB 卡 新申辦優惠：綁定指定支付國內加碼 6%（未計入排名）",
+      "kind": "new_customer",
+      "issuer_ids": [
+        "bank-sinopac"
+      ],
+      "card_ids": [
+        "sino-cashcard-jcb"
+      ],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit"
+      ],
+      "eligible_note_zh": "2026/10/1–12/31 送件、2027/1/15 前核卡的新戶（從未持有永豐信用卡或停卡滿 6 個月）；需完成電子帳單、永豐／京城帳戶自動扣繳、線上登錄（限量 6 萬名）。新卡（非新戶但沒持有過本卡）每期上限只有 50 元，本站以新戶 150 元列出。",
+      "period_kind": "custom",
+      "period_label": "2026/10/1–2027/3/31",
+      "valid_from": "2026-10-01",
+      "valid_to": "2027-03-31",
+      "status": "active",
+      "requires_registration": true,
+      "registration_windows": [
+        {
+          "opens_at": "2026-10-01T00:00:00+08:00",
+          "quota": 60000,
+          "note_zh": "登錄名額限量 6 萬名；官網登錄起訖時間本站沒存到，開始日以申辦期間起日代替"
+        }
+      ],
+      "quota_note_zh": "加碼回饋每期帳單上限新戶 150 元（新卡 50 元）；分期交易不算；全聯、大全聯、超商、稅費等非一般消費不算。",
+      "stacking": "unknown",
+      "stacking_note_zh": "這筆優惠已另以「新戶才計入」的卡片規則給引擎計算；活動頁僅列出，不重複加總，也不計入任何排行分數。",
+      "rules": [
+        {
+          "id": "pay6",
+          "label_zh": "新戶 綁定 街口／Apple Pay／Google Pay 國內一般消費 加碼 6%",
+          "scope": "wallet",
+          "domestic_only": true,
+          "payment_methods": [
+            "jkopay",
+            "apple_pay",
+            "google_pay"
+          ],
+          "user_tier": "new_customer",
+          "rate_bp": 600,
+          "incremental": true,
+          "cap_amount_twd": 150,
+          "cap_period": "statement",
+          "cap_scope": "sino-jcb-new6",
+          "conditions_zh": "限國內一般消費；需完成電子帳單、自動扣繳、登錄三項任務。",
+          "cap_twd_max": 150,
+          "max_spend_twd": 2500
+        },
+        {
+          "id": "delivery6",
+          "label_zh": "新戶 Uber Eats／foodpanda 國內一般消費 加碼 6%",
+          "scope": "merchant",
+          "merchant_ids": [
+            "uber-eats",
+            "foodpanda"
+          ],
+          "domestic_only": true,
+          "user_tier": "new_customer",
+          "rate_bp": 600,
+          "incremental": true,
+          "cap_amount_twd": 150,
+          "cap_period": "statement",
+          "cap_scope": "sino-jcb-new6",
+          "conditions_zh": "官網列 Uber Eats、foodpanda 為適用通路；限國內一般消費；需完成三項任務。",
+          "cap_twd_max": 150,
+          "max_spend_twd": 2500
+        }
+      ],
+      "payout_zh": "當期帳單消費，次期帳單折抵。",
+      "summary_zh": "永豐現金回饋 JCB 卡新戶（10/1–12/31 申辦並完成任務）在街口、Apple Pay、Google Pay、Uber Eats、foodpanda 國內加碼 6%，每期上限 150 元；只列為新戶優惠，不計入排名。",
+      "source_ids": [
+        "src-sino-cashcard-jcb-20261031"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-11-04",
+      "verified_at": "2026-11-04"
+    },
+    {
+      "id": "sinopac-55688-new-app10-2026h2",
+      "title_zh": "永豐 55688 聯名卡 新戶加碼禮：連續 6 個月 55688 APP 綁卡交易加碼 10% T Points（未計入排名）",
+      "kind": "new_customer",
+      "issuer_ids": [
+        "bank-sinopac"
+      ],
+      "card_ids": [
+        "sinopac-55688"
+      ],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit"
+      ],
+      "eligible_note_zh": "活動期間申辦 55688 聯名卡的新戶；需用 55688 APP 即時綁卡功能綁定本人帳號。",
+      "period_kind": "custom",
+      "period_label": "2026/7/1–12/31 申辦（連續 6 個月）",
+      "valid_from": "2026-07-01",
+      "valid_to": "2026-12-31",
+      "status": "active",
+      "requires_registration": false,
+      "registration_windows": [],
+      "quota_note_zh": "每卡戶每月回饋上限 100 T Points，連續 6 個月；實際回饋期間會延續到 2026/12/31 之後，本站只列活動期間。",
+      "stacking": "unknown",
+      "stacking_note_zh": "這筆優惠已另以「新戶才計入」的卡片規則給引擎計算；活動頁僅列出，不重複加總，也不計入任何排行分數。",
+      "rules": [
+        {
+          "id": "app10",
+          "label_zh": "新戶 55688 APP 綁卡交易 連續 6 個月加碼 10% T Points",
+          "scope": "merchant",
+          "merchant_ids": [
+            "taiwan-taxi"
+          ],
+          "payment_methods": [
+            "physical"
+          ],
+          "user_tier": "new_customer",
+          "rate_bp": 1000,
+          "incremental": true,
+          "cap_amount_twd": 100,
+          "cap_period": "month",
+          "conditions_zh": "限 55688 APP 內即時綁卡交易，非 APP 綁卡交易不回饋；T Points 以 1 點約 1 元估算。",
+          "cap_twd_max": 100,
+          "max_spend_twd": 1000
+        }
+      ],
+      "payout_zh": "T Points，每月消費於次次月回饋。",
+      "summary_zh": "永豐 55688 聯名卡新戶在 55688 APP 綁卡付款，連續 6 個月加碼 10% T Points（每月上限 100 點）；只列為新戶優惠，不計入排名。",
+      "source_ids": [
+        "src-sinopac-55688-page"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-11-04",
+      "verified_at": "2026-11-04"
+    },
+    {
+      "id": "sinopac-dawho-new-2026h2",
+      "title_zh": "永豐 DAWHO 新戶 指定行動支付 20% 刷卡金",
+      "kind": "new_customer",
+      "issuer_ids": [
+        "bank-sinopac"
+      ],
+      "card_ids": [
+        "sinopac-dawho"
+      ],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit"
+      ],
+      "period_kind": "half_year",
+      "period_label": "2026H2",
+      "valid_from": "2026-07-01",
+      "valid_to": "2026-12-31",
+      "status": "active",
+      "requires_registration": false,
+      "registration_windows": [],
+      "quota_note_zh": "總限量 10,000 戶，額滿提前結束。須在 2026/12/31 前申請進件、2027/1/15 前核卡。新戶指從未持有永豐信用卡或停卡滿 6 個月。",
+      "stacking": "unknown",
+      "rules": [
+        {
+          "id": "new20",
+          "label_zh": "核卡後 30 天內用指定支付一般消費",
+          "scope": "wallet",
+          "payment_methods": [
+            "line_pay",
+            "apple_pay",
+            "google_pay",
+            "samsung_pay",
+            "pxpay_plus"
+          ],
+          "user_tier": "new_customer",
+          "rate_bp": 2000,
+          "incremental": true,
+          "cap_amount_twd": 500,
+          "cap_period": "campaign",
+          "conditions_zh": "另含 55688 App、Mitsui Shopping Park Pay；消費需在核卡 60 日內請款。",
+          "cap_twd_max": 500,
+          "max_spend_twd": 2500
+        }
+      ],
+      "payout_zh": "刷卡金於核卡 60 日之次月回饋。",
+      "summary_zh": "DAWHO 卡新戶核卡 30 天內，用 LINE Pay、Apple Pay 等指定支付消費享 20% 刷卡金，上限 500 元。",
+      "source_ids": [
+        "src-sinopac-dawho-card"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-10-19",
+      "verified_at": "2026-10-19"
+    },
+    {
+      "id": "sinopac-dual-currency-newcard-pay-2pct-2026h2",
+      "title_zh": "永豐幣倍卡 新申辦優惠：Apple Pay／Google Pay 月月加碼 2%（未計入排名）",
+      "kind": "new_customer",
+      "issuer_ids": [
+        "bank-sinopac"
+      ],
+      "card_ids": [
+        "sinopac-dual-currency"
+      ],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit"
+      ],
+      "eligible_note_zh": "活動期間內申辦幣倍卡者都算新申辦（含永豐信用卡新戶、既有卡友，及既有幣倍卡友加辦不同幣別）。",
+      "period_kind": "custom",
+      "period_label": "2026/7/1–12/31",
+      "valid_from": "2026-07-01",
+      "valid_to": "2026-12-31",
+      "status": "active",
+      "requires_registration": false,
+      "registration_windows": [],
+      "quota_note_zh": "每正卡持卡人（三種幣別合併）每消費月份回饋上限 200 元，於次次月第一個營業日發放。",
+      "stacking": "unknown",
+      "stacking_note_zh": "這筆優惠已另以「新戶才計入」的卡片規則給引擎計算；活動頁僅列出，不重複加總，也不計入任何排行分數。",
+      "rules": [
+        {
+          "id": "pay2",
+          "label_zh": "新申辦 Apple Pay／Google Pay 一般消費加碼 2%",
+          "scope": "wallet",
+          "payment_methods": [
+            "apple_pay",
+            "google_pay"
+          ],
+          "user_tier": "new_customer",
+          "rate_bp": 200,
+          "incremental": true,
+          "cap_amount_twd": 200,
+          "cap_period": "month",
+          "conditions_zh": "限一般消費、不含保費代繳；帳單明細要明確顯示支付名稱；Google Pay 限手機感應或 App 代碼化卡片交易。",
+          "cap_twd_max": 200,
+          "max_spend_twd": 10000
+        }
+      ],
+      "payout_zh": "現金回饋，次次月第一個營業日發放。",
+      "summary_zh": "活動期間新申辦幣倍卡，用 Apple Pay／Google Pay 付款每月加碼 2%（每月上限 200 元）；只列為新申辦優惠，不計入排名。",
+      "source_ids": [
+        "src-sinopac-dual-currency-page"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-11-04",
+      "verified_at": "2026-11-04"
+    },
+    {
+      "id": "sinopac-jcb-googlepay-2026q4",
+      "title_zh": "永豐 JCB 卡綁 Google Pay 累計滿 1,000 元送 100 元刷卡金",
+      "kind": "threshold_bonus",
+      "issuer_ids": [
+        "bank-sinopac"
+      ],
+      "card_ids": [
+        "sino-cashcard-jcb",
+        "sinopac-insurance",
+        "sinopac-mitsui-outlet"
+      ],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit"
+      ],
+      "eligible_note_zh": "限永豐 JCB 信用卡（本站收錄的有現金回饋 JCB 卡、保倍卡、MITSUI OUTLET PARK 聯名卡）。",
+      "period_kind": "quarter",
+      "period_label": "2026Q4",
+      "valid_from": "2026-10-01",
+      "valid_to": "2026-12-31",
+      "status": "active",
+      "requires_registration": true,
+      "registration_windows": [
+        {
+          "opens_at": "2026-10-15T15:00+08:00",
+          "quota": 20000,
+          "note_zh": "活動期間登錄一次就好"
+        }
+      ],
+      "quota_note_zh": "總限量登錄 20,000 名，由正卡人在永豐官網登錄；符合門檻且登錄成功才有回饋。",
+      "stacking": "stacks",
+      "stacking_note_zh": "刷卡金另外發，和卡片本身的回饋分開計算。",
+      "rules": [
+        {
+          "id": "gpay1000",
+          "label_zh": "JCB 卡綁 Google Pay 累計滿 1,000 元送 100 元",
+          "scope": "wallet",
+          "payment_methods": [
+            "google_pay"
+          ],
+          "fixed_twd": 100,
+          "incremental": true,
+          "min_campaign_spend_twd": 1000,
+          "cap_amount_twd": 100,
+          "cap_period": "campaign",
+          "conditions_zh": "國內外消費都算（外幣依新臺幣換算），正附卡合併累計；帳單名稱要是 G、GP 或 MG 開頭的 Google Pay 交易，限手機感應或 App 內代碼化交易，Google Play 等自動扣款不算。每卡戶整個活動最多 100 元。",
+          "cap_twd_max": 100,
+          "max_spend_twd": null
+        }
+      ],
+      "payout_zh": "刷卡金在活動結束後的次次月（2027 年 2 月）起陸續回饋。",
+      "summary_zh": "2026 年第四季登錄後，用永豐 JCB 信用卡綁 Google Pay 累計消費滿 1,000 元，送 100 元刷卡金（限一次）。",
+      "source_ids": [
+        "src-sinopac-jcb-gpay-2026q4"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-10-22",
+      "verified_at": "2026-10-22"
+    },
+    {
+      "id": "sinopac-monthly-super-pay-2026q4",
+      "title_zh": "永豐 月月超級Pay（指定行動支付月累積滿額送刷卡金）",
+      "kind": "tiered_fixed",
+      "issuer_ids": [
+        "bank-sinopac"
+      ],
+      "card_ids": [],
+      "exclude_card_ids": [
+        "sinopac-sport",
+        "sinopac-dual-currency"
+      ],
+      "product_types": [
+        "credit"
+      ],
+      "eligible_note_zh": "永豐信用卡皆可，但 DAWAY 卡、永豐SPORT卡、幣倍卡、八通卡、公司卡、配銷卡、承銷卡、Debit 卡不適用。",
+      "period_kind": "quarter",
+      "period_label": "2026Q4",
+      "valid_from": "2026-10-01",
+      "valid_to": "2026-12-31",
+      "status": "active",
+      "requires_registration": true,
+      "registration_windows": [
+        {
+          "opens_at": "2026-10-15T15:00+08:00",
+          "quota": 4000,
+          "note_zh": "10 月"
+        },
+        {
+          "opens_at": "2026-11-15T15:00+08:00",
+          "quota": 2000,
+          "note_zh": "11 月"
+        },
+        {
+          "opens_at": "2026-12-15T15:00+08:00",
+          "quota": 2000,
+          "note_zh": "12 月"
+        }
+      ],
+      "quota_note_zh": "總限量 8,000 名；由正卡人在永豐官網登錄，登錄後的消費才算。",
+      "stacking": "stacks",
+      "stacking_note_zh": "刷卡金另計，與卡片本身回饋分開。",
+      "rules": [
+        {
+          "id": "tier",
+          "label_zh": "當月用指定支付累積消費達門檻",
+          "scope": "wallet",
+          "payment_methods": [
+            "apple_pay",
+            "google_pay",
+            "samsung_pay",
+            "line_pay",
+            "pxpay_plus"
+          ],
+          "rate_bp": 0,
+          "incremental": true,
+          "cap_amount_twd": 200,
+          "cap_period": "month",
+          "tiered_fixed": [
+            {
+              "min_monthly_spend_twd": 7000,
+              "reward_twd": 50
+            },
+            {
+              "min_monthly_spend_twd": 10000,
+              "reward_twd": 100
+            },
+            {
+              "min_monthly_spend_twd": 15000,
+              "reward_twd": 200
+            }
+          ],
+          "conditions_zh": "正附卡合併計算、每月只取最高一級；外送 App 內建的 LINE Pay（帳單名稱不是「連加*」或「LINE Pay」開頭）不算；Google Pay 須為手機代碼化交易。",
+          "cap_twd_max": 200,
+          "max_spend_twd": null
+        }
+      ],
+      "payout_zh": "刷卡金在消費的次次月回饋（例如 10 月消費、12 月回饋）。",
+      "summary_zh": "每月用 Apple Pay、Google Pay、Samsung Pay、LINE Pay 或全支付刷永豐卡，累積滿 7,000 元送 50 元、滿 1 萬送 100 元、滿 1.5 萬送 200 元刷卡金。",
+      "source_ids": [
+        "src-sinopac-monthly-pay"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-10-19",
+      "verified_at": "2026-10-31"
+    },
+    {
+      "id": "sinopac-new-mobilepay-20pct-2026h2",
+      "title_zh": "永豐 DAWHO／幣倍／SPORT 新戶優惠：核卡後 30 日綁定行動支付最高 20% 刷卡金（未計入排名）",
+      "kind": "new_customer",
+      "issuer_ids": [
+        "bank-sinopac"
+      ],
+      "card_ids": [
+        "sinopac-dawho",
+        "sinopac-dual-currency",
+        "sinopac-sport"
+      ],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit"
+      ],
+      "eligible_note_zh": "新戶＝從未持有永豐銀行信用卡，或停卡已滿 6 個月（含）以上的客戶；2026/7/1–12/31 送件、2027/1/15 前核卡。",
+      "period_kind": "custom",
+      "period_label": "2026/7/1–12/31 申辦（核卡後 30 日內）",
+      "valid_from": "2026-07-01",
+      "valid_to": "2026-12-31",
+      "status": "active",
+      "requires_registration": false,
+      "registration_windows": [],
+      "quota_note_zh": "回饋總限量 17,000 名（DAWHO 10,000、幣倍卡 5,200、SPORT 1,800），額滿提前結束；每人刷卡金上限 500 元。消費最晚須在核卡 60 日內請款，刷卡金於核卡 60 日之次月回饋。",
+      "stacking": "unknown",
+      "stacking_note_zh": "這筆優惠已另以「新戶才計入」的卡片規則給引擎計算；活動頁僅列出，不重複加總，也不計入任何排行分數。",
+      "rules": [
+        {
+          "id": "new20",
+          "label_zh": "新戶核卡後 30 日 綁定行動支付一般消費 刷卡金最高 20%",
+          "scope": "wallet",
+          "payment_methods": [
+            "line_pay",
+            "apple_pay",
+            "google_pay",
+            "samsung_pay",
+            "pxpay_plus"
+          ],
+          "user_tier": "new_customer",
+          "rate_bp": 2000,
+          "incremental": true,
+          "cap_amount_twd": 500,
+          "cap_period": "campaign",
+          "conditions_zh": "官網另列 55688 APP、Mitsui Shopping Park Pay 也算，本站沒有這兩個支付工具所以沒列。帳單要明確顯示支付名稱；LINE Pay 店名須為「連加*」或「LINE Pay」開頭；Google Pay 限手機感應或 App 代碼化卡片交易。",
+          "cap_twd_max": 500,
+          "max_spend_twd": 2500
+        }
+      ],
+      "payout_zh": "刷卡金，核卡 60 日之次月回饋。",
+      "summary_zh": "永豐 DAWHO、幣倍、SPORT 新戶在核卡後 30 日內綁定 LINE Pay、Apple Pay、Google Pay、Samsung Pay、全支付付款，最高 20% 刷卡金（上限 500 元、限量）；只列為新戶優惠，不計入排名。",
+      "source_ids": [
+        "src-sinopac-dual-event-r10"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-11-04",
+      "verified_at": "2026-11-04"
+    },
+    {
+      "id": "sinopac-wowprime-monday-2026q4",
+      "title_zh": "永豐 × 王品瘋Pay 週一加碼 3% 瘋點數",
+      "kind": "bonus",
+      "issuer_ids": [
+        "bank-sinopac"
+      ],
+      "card_ids": [],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit"
+      ],
+      "eligible_note_zh": "永豐信用卡（不含八通卡、公司卡、配銷卡、儲值卡、簽帳金融卡）。",
+      "period_kind": "quarter",
+      "period_label": "2026Q4",
+      "valid_from": "2026-10-01",
+      "valid_to": "2026-12-31",
+      "status": "active",
+      "requires_registration": false,
+      "registration_windows": [],
+      "quota_note_zh": "永豐加碼的總點數有限量，每天 10:30 在王品瘋美食「瘋Pay」活動頁更新前一天的使用狀況，顯示 100% 即用完。",
+      "stacking": "unknown",
+      "stacking_note_zh": "瘋點數與信用卡本身回饋是否同時給，官網未明寫。",
+      "rules": [
+        {
+          "id": "monday",
+          "label_zh": "週一用瘋Pay 綁永豐卡",
+          "scope": "merchant",
+          "merchant_ids": [
+            "wowprime"
+          ],
+          "payment_methods": [
+            "wowprime_pay"
+          ],
+          "day_rule": "monday",
+          "rate_bp": 300,
+          "reward_unit_zh": "王品瘋點數（1 點折抵 1 元）",
+          "incremental": true,
+          "cap_period": "campaign",
+          "conditions_zh": "另有王品會員本身的 3% 瘋點數（非銀行回饋），合計最高 6%。需出示王品瘋美食會員 QR Code。"
+        }
+      ],
+      "payout_zh": "結帳後 7 日內回饋到王品瘋美食會員帳戶。",
+      "summary_zh": "週一在王品集團餐廳用瘋Pay 綁永豐卡，銀行再加碼 3% 瘋點數。",
+      "source_ids": [
+        "src-sinopac-monthly-pay"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-10-19",
+      "verified_at": "2026-10-19"
+    },
+    {
+      "id": "taishin-linepay-points-2026-10",
+      "title_zh": "LINE Pay × 台新卡 指定通路 LINE POINTS 加碼",
+      "kind": "bonus",
+      "issuer_ids": [
+        "bank-taishin"
+      ],
+      "card_ids": [],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit",
+        "debit"
+      ],
+      "period_kind": "custom",
+      "period_label": "2026/10/1–11/15",
+      "valid_from": "2026-10-01",
+      "valid_to": "2026-11-15",
+      "status": "active",
+      "requires_registration": false,
+      "registration_windows": [],
+      "quota_note_zh": "各通路每月有總點數上限，額滿提前結束；由 LINE Pay 系統判定。",
+      "month_status": [
+        {
+          "month": "2026-10",
+          "rule_ids": [
+            "fuel",
+            "taxi",
+            "ubereats",
+            "korea-food",
+            "korea-travel"
+          ],
+          "status": "quota_full",
+          "note_zh": "官網活動一到五都標示 10 月已額滿"
+        },
+        {
+          "month": "2026-11",
+          "rule_ids": [
+            "fuel"
+          ],
+          "status": "quota_full",
+          "note_zh": "官網活動一（加油站）標示 11 月已額滿"
+        }
+      ],
+      "stacking": "unknown",
+      "stacking_note_zh": "LINE POINTS 由 LINE Pay 發放，與卡片本身回饋分開；官網未明寫疊加規則，本站不自動相加。",
+      "rules": [
+        {
+          "id": "fuel",
+          "label_zh": "週一至五 指定加油站人工加油（單筆滿 500）",
+          "scope": "merchant",
+          "merchant_ids": [
+            "cpc",
+            "speedmall-fuel"
+          ],
+          "payment_methods": [
+            "line_pay"
+          ],
+          "day_rule": "weekday",
+          "rate_bp": 200,
+          "incremental": true,
+          "min_txn_twd": 500,
+          "cap_amount_twd": 30,
+          "cap_period": "month",
+          "quota_limited_zh": "10 月全體上限 30 萬點、11/1–11/15 上限 15 萬點，額滿提前結束",
+          "conditions_zh": "台灣中油直營及指定加盟站、台亞、台糖、統一精工速邁樂、山隆指定站的人工加油。",
+          "cap_twd_max": 30,
+          "max_spend_twd": 1500
+        },
+        {
+          "id": "taxi",
+          "label_zh": "週六日 台灣大車隊、yoxi、Uber（單筆滿 200）",
+          "scope": "merchant",
+          "merchant_ids": [
+            "taiwan-taxi",
+            "yoxi",
+            "uber"
+          ],
+          "payment_methods": [
+            "line_pay"
+          ],
+          "day_rule": "weekend",
+          "rate_bp": 200,
+          "incremental": true,
+          "min_txn_twd": 200,
+          "cap_amount_twd": 20,
+          "cap_period": "month",
+          "quota_limited_zh": "10 月全體上限 3 萬點、11/1–11/15 上限 1.5 萬點，額滿提前結束",
+          "cap_twd_max": 20,
+          "max_spend_twd": 1000
+        },
+        {
+          "id": "ubereats",
+          "label_zh": "週一至五 Uber Eats（單筆滿 199）",
+          "scope": "merchant",
+          "merchant_ids": [
+            "uber-eats"
+          ],
+          "payment_methods": [
+            "line_pay"
+          ],
+          "day_rule": "weekday",
+          "rate_bp": 200,
+          "incremental": true,
+          "min_txn_twd": 199,
+          "cap_amount_twd": 30,
+          "cap_period": "month",
+          "quota_limited_zh": "10 月全體上限 30 萬點、11/1–11/15 上限 18 萬點，額滿提前結束",
+          "cap_twd_max": 30,
+          "max_spend_twd": 1500
+        },
+        {
+          "id": "korea-food",
+          "label_zh": "韓國指定吃喝通路",
+          "scope": "country",
+          "country_codes": [
+            "KR"
+          ],
+          "payment_methods": [
+            "line_pay"
+          ],
+          "rate_bp": 800,
+          "incremental": true,
+          "cap_amount_twd": 100,
+          "cap_period": "month",
+          "quota_limited_zh": "10 月全體上限 3 萬點、11/1–11/15 上限 1.5 萬點，額滿提前結束",
+          "conditions_zh": "限指定韓國通路，名單見 LINE Pay 活動頁。",
+          "cap_twd_max": 100,
+          "max_spend_twd": 1250
+        },
+        {
+          "id": "korea-travel",
+          "label_zh": "韓國指定旅遊購物通路",
+          "scope": "country",
+          "country_codes": [
+            "KR"
+          ],
+          "payment_methods": [
+            "line_pay"
+          ],
+          "rate_bp": 300,
+          "incremental": true,
+          "cap_amount_twd": 200,
+          "cap_period": "month",
+          "quota_limited_zh": "10 月全體上限 20 萬點、11/1–11/15 上限 10 萬點，額滿提前結束",
+          "conditions_zh": "限指定韓國通路。",
+          "cap_twd_max": 200,
+          "max_spend_twd": 6666
+        }
+      ],
+      "payout_zh": "LINE POINTS 自付款成功 24 小時起陸續發放。",
+      "summary_zh": "10/1–11/15 用 LINE Pay 綁台新卡，平日 Uber Eats、平日加油、週末叫車各多 2% LINE POINTS，韓國指定通路最高 8%。",
+      "source_ids": [
+        "src-taishin-linepay-q4",
+        "src-taishin-linepay-q4-r11",
+        "src-taishin-linepay-q4-20261107"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-10-19",
+      "verified_at": "2026-10-31"
+    },
+    {
+      "id": "taishin-pxpay-2pct-2026q4",
+      "title_zh": "台新信用卡綁全支付 指定通路實體門市最高 2% 全點",
+      "kind": "bonus",
+      "issuer_ids": [
+        "bank-taishin"
+      ],
+      "card_ids": [],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit"
+      ],
+      "eligible_note_zh": "台新信用卡綁全支付都可以；簽帳金融卡不適用。",
+      "period_kind": "custom",
+      "period_label": "2026/9/28–2027/1/3",
+      "valid_from": "2026-09-28",
+      "valid_to": "2027-01-03",
+      "status": "active",
+      "requires_registration": false,
+      "registration_windows": [],
+      "quota_note_zh": "全支付帳號每週最多 30 點；全體每週限量 10 萬點（9/28–2027/1/3 共 14 週），額滿提前結束，由全支付系統判定。",
+      "stacking": "unknown",
+      "stacking_note_zh": "全點由全支付發放，官網沒寫會不會影響台新卡本身的回饋，本站不自動相加。",
+      "rules": [
+        {
+          "id": "px2",
+          "label_zh": "全支付綁台新卡 指定通路實體門市最高 2% 全點",
+          "scope": "wallet",
+          "exclude_merchant_ids": [
+            "pxmart",
+            "px-mart-large"
+          ],
+          "domestic_only": true,
+          "physical_store_only": true,
+          "payment_methods": [
+            "pxpay_plus"
+          ],
+          "rate_bp": 200,
+          "incremental": true,
+          "cap_period": "none",
+          "quota_limited_zh": "全體每週限量 10 萬點，額滿提前結束；每個全支付帳號每週最多 30 點",
+          "conditions_zh": "限全臺全支付合作品牌的實體門市，不含全聯與大全聯；官網寫「筆筆享最高 2%」。每個全支付帳號每週最多 30 點，每週全體限量 10 萬點。排除菸品、嬰兒配方奶粉、塑膠袋等，以及店家優惠與全點折抵的金額。另有首次用全支付綁台新卡、首筆滿 299 元送 50 點（每週 700 份），本站未列入。"
+        }
+      ],
+      "payout_zh": "全點，由全支付即時贈點（實際依全支付系統為準）。",
+      "summary_zh": "2026/9/28–2027/1/3 用全支付綁台新信用卡，在全支付合作品牌的實體門市（全聯、大全聯除外）付款，最高 2% 全點，每週最多 30 點。",
+      "source_ids": [
+        "src-taishin-pxpay-2026q4",
+        "src-taishin-pxpay-2026q4-r11"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-10-22",
+      "verified_at": "2026-10-31"
+    },
+    {
+      "id": "taishin-richart-insurance-new-2026",
+      "title_zh": "台新 Richart 卡 保險新戶首筆保費一次付清加碼 6%",
+      "kind": "new_customer",
+      "issuer_ids": [
+        "bank-taishin"
+      ],
+      "card_ids": [
+        "taishin-richart"
+      ],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit"
+      ],
+      "period_kind": "custom",
+      "period_label": "2026/7/1–10/31（第一期）、11/1–12/31（第二期）",
+      "valid_from": "2026-07-01",
+      "valid_to": "2026-12-31",
+      "status": "active",
+      "requires_registration": true,
+      "registration_windows": [
+        {
+          "opens_at": "2026-10-30T10:00+08:00",
+          "quota": 200000,
+          "note_zh": "11–12 月第二期：在 Richart Life APP「優惠 > 優惠券 > Richart卡加碼」領「保費新戶最高8%」券，任一天領一次即可，限量 20 萬張、領完為止，只限正卡人領。"
+        }
+      ],
+      "quota_note_zh": "兩期都要在 Richart Life 領券。第二期（11/1–12/31）券從 10/30 10:00 開放、限量 20 萬張；另外要在 12/31 前設定用台新帳戶自動扣繳台新信用卡帳款，而且回饋時還沒取消。",
+      "stacking": "stacks",
+      "stacking_note_zh": "官方試算：免切換原權益 1.3% + 6% = 7.3%；節假日切「假日刷」可到 8%。和保費分期 0 利率只能二選一（同時登錄會優先算分期），也和「保費滿額贈」二選一。",
+      "rules": [
+        {
+          "id": "ins6",
+          "label_zh": "保險新戶首筆保費一次付清（7–10 月）",
+          "scope": "category",
+          "category_ids": [
+            "insurance"
+          ],
+          "user_tier": "insurance_new",
+          "rate_bp": 600,
+          "incremental": true,
+          "cap_amount_twd": 500,
+          "cap_period": "campaign",
+          "valid_to": "2026-10-31",
+          "conditions_zh": "限「保險新戶」的首筆保費且一次付清；不含國外保險交易。",
+          "cap_twd_max": 500,
+          "max_spend_twd": 8333
+        },
+        {
+          "id": "ins6-h2",
+          "label_zh": "保險新戶首筆保費一次付清（11–12 月）",
+          "scope": "category",
+          "category_ids": [
+            "insurance"
+          ],
+          "payment_methods": [
+            "physical",
+            "taishin_pay",
+            "apple_pay",
+            "google_pay",
+            "samsung_pay"
+          ],
+          "user_tier": "insurance_new",
+          "requires_task": "autodebit",
+          "rate_bp": 600,
+          "incremental": true,
+          "cap_amount_twd": 500,
+          "cap_period": "campaign",
+          "valid_from": "2026-11-01",
+          "valid_to": "2026-12-31",
+          "conditions_zh": "這一期的「保險新戶」是指 2025/11/1–2026/10/31 沒用任何台新信用卡刷過保費，或刷的保費累計不超過 1,000 元。要一次付清首筆保費（分期提前結清也算），交易日在 11/1–12/31、2027/1/15 前入帳；每個 ID 只回饋一次、最多 500 點。躉繳、投資型、彈性繳保費、國外保險、非臺灣保險公司扣繳、健保費，以及透過台新銀行通路投保的新契約首期保費都不算。限實體卡（含網路輸入卡號）或台新Pay、Apple Pay、Google錢包、Samsung Pay 綁卡，LINE Pay、街口、台灣Pay、全支付等其他支付不算；簽帳金融卡不算。",
+          "cap_twd_max": 500,
+          "max_spend_twd": 8333
+        }
+      ],
+      "payout_zh": "台新Point（信用卡）。第二期預計 2027/4/30 前一次發到正卡人點數帳戶。",
+      "summary_zh": "保險新戶用 Richart 卡一次付清首筆保費，加碼 6% 台新Point，上限 500 點。原本 10/31 結束，台新已公告 11/1–12/31 第二期：一樣 6%、上限 500 點，但要先在 Richart Life 領券（限量 20 萬張），並設定台新帳戶自動扣繳卡費；「保險新戶」改以 2025/11/1–2026/10/31 有沒有刷過保費來認定。",
+      "source_ids": [
+        "src-taishin-richart-coupon-20261031",
+        "src-taishin-insurance-new-202611",
+        "src-taishin-richart-card",
+        "src-taishin-richart-minisite"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-10-19",
+      "verified_at": "2026-10-31"
+    },
+    {
+      "id": "taishin-richart-perks-2026q4",
+      "title_zh": "台新 Richart 卡 一般消費達檻送 eSIM、機場接送",
+      "kind": "perk",
+      "issuer_ids": [
+        "bank-taishin"
+      ],
+      "card_ids": [
+        "taishin-richart"
+      ],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit"
+      ],
+      "period_kind": "quarter",
+      "period_label": "2026Q4",
+      "valid_from": "2026-10-01",
+      "valid_to": "2026-12-31",
+      "status": "active",
+      "requires_registration": false,
+      "registration_windows": [],
+      "stacking": "stacks",
+      "rules": [],
+      "perks": [
+        {
+          "label_zh": "3 天不限流量 eSIM",
+          "threshold_zh": "當期帳單「0.3% 一般消費」滿 NT$6,000"
+        },
+        {
+          "label_zh": "機場接或送（最多 2 次）",
+          "threshold_zh": "當期帳單「0.3% 一般消費」滿 NT$20,000"
+        }
+      ],
+      "summary_zh": "2026/10–12 月，Richart 卡當期 0.3% 一般消費滿 6,000 元送 3 天 eSIM，滿 2 萬元送機場接或送。",
+      "source_ids": [
+        "src-taishin-richart-card",
+        "src-taishin-richart-minisite"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-10-19",
+      "verified_at": "2026-10-19"
+    },
+    {
+      "id": "tbb-greenlife-new-pay-3pct-2026",
+      "title_zh": "臺灣企銀永續生活卡 新戶首刷禮：核卡後首 6 期帳單綁定行動支付加碼 3%（未計入排名）",
+      "kind": "new_customer",
+      "issuer_ids": [
+        "bank-tbb"
+      ],
+      "card_ids": [
+        "tbb-greenlife-easy",
+        "tbb-greenlife-ipass"
+      ],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit"
+      ],
+      "eligible_note_zh": "新戶＝首次申辦永續生活卡正卡，且申請人於核卡日前 6 個月未曾持有臺灣企銀信用卡正卡者（停用後再申辦不適用）；2026 年核卡並設定電子帳單、不寄送實體帳單。",
+      "period_kind": "custom",
+      "period_label": "2026/1/1–12/31 核卡（核卡後首 6 期帳單）",
+      "valid_from": "2026-01-01",
+      "valid_to": "2026-12-31",
+      "status": "active",
+      "requires_registration": false,
+      "registration_windows": [],
+      "quota_note_zh": "加碼回饋每戶每月上限 300 元；核卡後首 6 期帳單（含無消費的期數）；加碼最快於次次月入帳。本站只列活動期間。",
+      "stacking": "unknown",
+      "stacking_note_zh": "這筆優惠已另以「新戶才計入」的卡片規則給引擎計算；活動頁僅列出，不重複加總，也不計入任何排行分數。",
+      "rules": [
+        {
+          "id": "pay3",
+          "label_zh": "新戶 綁定 6 大行動支付 國內一般消費 加碼 3%",
+          "scope": "wallet",
+          "domestic_only": true,
+          "payment_methods": [
+            "tw_pay",
+            "line_pay",
+            "ipass_money",
+            "easywallet",
+            "gama_pay",
+            "pi_wallet"
+          ],
+          "user_tier": "new_customer",
+          "rate_bp": 300,
+          "incremental": true,
+          "cap_amount_twd": 300,
+          "cap_period": "month",
+          "conditions_zh": "台灣Pay 感應式交易不回饋；各支付以帳單特店名稱判定（LINE Pay 須「連加＊」或「LINE Pay」開頭等）；使用全支付綁卡於超商、繳費、全聯消費不算。官網另有台灣Pay 掃碼再加碼 1.5%（每月上限 100 元），本站未列入。",
+          "cap_twd_max": 300,
+          "max_spend_twd": 10000
+        }
+      ],
+      "payout_zh": "刷卡金，加碼最快於次次月入帳。",
+      "summary_zh": "臺灣企銀永續生活卡新戶（2026 年核卡、申辦電子帳單）核卡後首 6 期帳單，綁定台灣Pay、LINE Pay、iPASS MONEY、悠遊付、橘子支付、Pi 錢包付款，國內一般消費加碼 3%（每月上限 300 元）；只列為新戶優惠，不計入排名。",
+      "source_ids": [
+        "src-tbb-greenlife-easy-r11"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-11-04",
+      "verified_at": "2026-11-04"
+    },
+    {
+      "id": "tcb-lihigh-new-1pct-2026h2",
+      "title_zh": "合庫利high卡 全新卡戶優惠：核卡後 3 個月國內一般消費加碼 1%（未計入排名）",
+      "kind": "new_customer",
+      "issuer_ids": [
+        "bank-tcb"
+      ],
+      "card_ids": [
+        "tcb-lihigh"
+      ],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit"
+      ],
+      "eligible_note_zh": "全新卡戶＝核卡前 6 個月內未持有合庫發行的任一個人信用卡正卡者；2026/7/1–12/31 期間核卡。另有「數位申辦」同額加碼 1%：透過合庫網銀或 APP 申請者。",
+      "period_kind": "custom",
+      "period_label": "2026/7/1–12/31 核卡（核卡日至次月起 3 個月）",
+      "valid_from": "2026-07-01",
+      "valid_to": "2026-12-31",
+      "status": "active",
+      "requires_registration": false,
+      "registration_windows": [],
+      "quota_note_zh": "全新卡戶加碼與數位申辦加碼月上限各 100 元，正附卡合併計算；加碼期間為核卡後 3 個月，本站只列活動期間。",
+      "stacking": "unknown",
+      "stacking_note_zh": "這筆優惠已另以「新戶才計入」的卡片規則給引擎計算；活動頁僅列出，不重複加總，也不計入任何排行分數。",
+      "rules": [
+        {
+          "id": "new1",
+          "label_zh": "全新卡戶 核卡後 3 個月 國內一般消費加碼 1%",
+          "scope": "general_domestic",
+          "user_tier": "new_customer",
+          "rate_bp": 100,
+          "incremental": true,
+          "cap_amount_twd": 100,
+          "cap_period": "month",
+          "cap_scope": "tcb-lihigh-new1",
+          "conditions_zh": "限國內一般消費；以核卡後 3 個月帳單已入帳的消費為準。",
+          "cap_twd_max": 100,
+          "max_spend_twd": 10000
+        },
+        {
+          "id": "digital1",
+          "label_zh": "數位申辦（網銀／APP）核卡後 3 個月 國內一般消費加碼 1%",
+          "scope": "general_domestic",
+          "user_tier": "new_customer",
+          "rate_bp": 100,
+          "incremental": true,
+          "cap_amount_twd": 100,
+          "cap_period": "month",
+          "cap_scope": "tcb-lihigh-digital1",
+          "conditions_zh": "2026/7/1–12/31 透過合庫網銀或 APP 申請者；限國內一般消費。",
+          "cap_twd_max": 100,
+          "max_spend_twd": 10000
+        }
+      ],
+      "payout_zh": "依官網，回饋以帳單已入帳消費計算。",
+      "summary_zh": "合庫利high卡全新卡戶（2026/7/1–12/31 核卡）核卡後 3 個月國內一般消費加碼 1%，數位申辦再加 1%，各月上限 100 元；只列為新戶優惠，不計入排名。",
+      "source_ids": [
+        "src-tcb-lihigh-page"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-11-04",
+      "verified_at": "2026-11-04"
+    },
+    {
+      "id": "twmp-hce-2pct-2026",
+      "title_zh": "台灣行動支付 APP 信用卡感應購物 2% 刷卡金（16 家機構）",
+      "kind": "perk",
+      "issuer_ids": [
+        "bank-bot",
+        "bank-landbank",
+        "bank-tcb",
+        "bank-firstbank",
+        "bank-hncb",
+        "bank-chb",
+        "bank-scsb",
+        "bank-fubon",
+        "bank-mega",
+        "bank-tbb",
+        "bank-sunny",
+        "bank-feib",
+        "bank-yuanta",
+        "bank-taishin",
+        "bank-ctbc"
+      ],
+      "card_ids": [],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit"
+      ],
+      "eligible_note_zh": "臺灣銀行、土地銀行、合作金庫、第一銀行、華南銀行、彰化銀行、上海銀行、台北富邦、兆豐銀行、臺灣企銀、陽信銀行、中華郵政、遠東銀行、元大銀行、台新銀行、中國信託共 16 家（中華郵政只有 Visa 金融卡，本站未收錄）。要用台灣行動支付 APP 綁卡產生 HCE 手機信用卡，在 Android 6.0 以上具 NFC 的手機感應付款；iPhone 不支援，QR 掃碼不算。兆豐的政府採購卡、商務卡、VISA 金融卡不適用。",
+      "period_kind": "custom",
+      "period_label": "2026/1/1–12/31",
+      "valid_from": "2026-01-01",
+      "valid_to": "2026-12-31",
+      "status": "active",
+      "requires_registration": false,
+      "registration_windows": [],
+      "quota_note_zh": "全活動每月回饋總額 60 萬元，額滿當月即停止回饋（APP 推播並在活動頁公告）。",
+      "stacking": "stacks",
+      "stacking_note_zh": "臺灣行動支付公司主辦，官網沒寫會取代卡片原本的回饋；本站的台灣Pay 支付方式沒有分掃碼與 NFC 感應，加上每月總額限量，所以只列為權益、不計入試算。",
+      "rules": [],
+      "perks": [
+        {
+          "label_zh": "台灣行動支付 APP 信用卡 NFC 感應購物 2% 刷卡金，每張實體卡每月上限 100 元（約 5,000 元消費封頂）",
+          "threshold_zh": "不用登錄；限國內一般消費，排除 MCC 5542（加油）、8062（醫院）、9399（政府）、禮券、加值、遊戲點數、稅費、保費、公用事業費與 NCCC 小額支付特店（停車場、販賣機等）；每月總額 60 萬元額滿停止"
+        }
+      ],
+      "payout_zh": "刷卡金，每兩個月結算一次（1–2 月、3–4 月…11–12 月），週期結束後兩個月內回饋到信用卡帳戶。",
+      "summary_zh": "2026 全年不用登錄，用台灣行動支付 APP 綁 16 家參與機構的信用卡，在 Android NFC 手機感應付款，每筆 2% 刷卡金，每張實體卡每月最多 100 元；全活動每月總額 60 萬元，額滿就停。QR 掃碼、iPhone 不適用。",
+      "source_ids": [
+        "src-twmp-2pct-r10"
+      ],
+      "corroborating_source_ids": [
+        "src-mega-twphce-r10",
+        "src-chb-twphce-r10"
+      ],
+      "confidence": "official_x2",
+      "recorded_at": "2026-10-31",
+      "verified_at": "2026-10-31"
+    },
+    {
+      "id": "ubot-delivery-3pct-2026h2",
+      "title_zh": "聯邦信用卡 Uber Eats、foodpanda 每月登錄筆筆 3%",
+      "kind": "bonus",
+      "issuer_ids": [
+        "bank-ubot"
+      ],
+      "card_ids": [],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit"
+      ],
+      "eligible_note_zh": "聯邦信用卡正卡持卡人登錄；Visa 金融卡、商務卡（個人商務卡除外）、採購卡不適用。",
+      "period_kind": "half_year",
+      "period_label": "2026H2",
+      "valid_from": "2026-07-01",
+      "valid_to": "2026-12-31",
+      "status": "active",
+      "requires_registration": true,
+      "registration_windows": [
+        {
+          "opens_at": "2026-10-10T15:00+08:00",
+          "closes_at": "2026-10-31T23:59+08:00",
+          "note_zh": "10 月"
+        },
+        {
+          "opens_at": "2026-11-10T15:00+08:00",
+          "closes_at": "2026-11-30T23:59+08:00",
+          "note_zh": "11 月"
+        },
+        {
+          "opens_at": "2026-12-10T15:00+08:00",
+          "closes_at": "2026-12-31T23:59+08:00",
+          "note_zh": "12 月"
+        }
+      ],
+      "quota_note_zh": "每月 10 日 15:00 開放登錄到月底，登錄後只算當月消費；額滿會提前關閉（官網沒寫名額）。",
+      "stacking": "stacks",
+      "stacking_note_zh": "刷卡金另外發，和卡片本身的回饋分開。",
+      "rules": [
+        {
+          "id": "delivery3",
+          "label_zh": "Uber Eats、foodpanda 加碼 3%",
+          "scope": "merchant",
+          "merchant_ids": [
+            "uber-eats",
+            "foodpanda"
+          ],
+          "rate_bp": 300,
+          "incremental": true,
+          "cap_amount_twd": 200,
+          "cap_period": "month",
+          "conditions_zh": "限 Uber Eats App 與 foodpanda App 的外送交易；Uber One 訂閱、Uber 叫車不算。扣掉 App 優惠券折抵後的實際刷卡金額才算。正附卡合併，每戶每月最多 200 元。",
+          "cap_twd_max": 200,
+          "max_spend_twd": 6666
+        }
+      ],
+      "payout_zh": "刷卡金，消費月的次月底前回饋到正卡人帳戶。",
+      "summary_zh": "2026 下半年每月登錄後，用聯邦信用卡在 Uber Eats、foodpanda 點外送，不限金額 3% 刷卡金，每月最多 200 元。",
+      "source_ids": [
+        "src-ubot-delivery-2026h2"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-10-22",
+      "verified_at": "2026-10-31"
+    },
+    {
+      "id": "ubot-hilife-2026",
+      "title_zh": "聯邦信用卡／金融卡 萊爾富 5% 現折",
+      "kind": "bonus",
+      "issuer_ids": [
+        "bank-ubot"
+      ],
+      "card_ids": [],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit",
+        "debit"
+      ],
+      "period_kind": "annual",
+      "period_label": "2026",
+      "valid_from": "2026-01-01",
+      "valid_to": "2026-12-31",
+      "status": "active",
+      "requires_registration": false,
+      "registration_windows": [],
+      "stacking": "stacks",
+      "stacking_note_zh": "萊爾富交易不算一般消費，沒有卡片原始回饋；現折是唯一的優惠，不能與其他折扣併用。",
+      "rules": [
+        {
+          "id": "hilife5",
+          "label_zh": "萊爾富實體門市 天天現折 5%",
+          "scope": "merchant",
+          "merchant_ids": [
+            "hilife"
+          ],
+          "physical_store_only": true,
+          "payment_methods": [
+            "physical",
+            "apple_pay",
+            "google_pay",
+            "samsung_pay"
+          ],
+          "rate_bp": 500,
+          "incremental": true,
+          "cap_period": "none",
+          "override_exclusions": [
+            "x-cvs"
+          ],
+          "conditions_zh": "不限金額、現折無上限；HiPay 綁卡也適用。LINE Pay、街口、Pi 錢包、自動加值等不適用。排除菸品、代收代售、櫃台酒、折扣商品、禮券等。"
+        }
+      ],
+      "payout_zh": "結帳時直接現折。",
+      "summary_zh": "2026 全年在萊爾富實體門市刷聯邦信用卡或金融卡（含 Apple Pay 等），天天現折 5%，無上限。",
+      "source_ids": [
+        "src-ubot-hilife-2026",
+        "src-ubot-hilife-act"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-10-19",
+      "verified_at": "2026-10-31"
+    },
+    {
+      "id": "ubot-jiho-new-japan-3pct-2026h2",
+      "title_zh": "聯邦吉鶴卡 新戶優惠：日本實體商店消費加碼 3%（未計入排名）",
+      "kind": "new_customer",
+      "issuer_ids": [
+        "bank-ubot"
+      ],
+      "card_ids": [
+        "ubot-jiho"
+      ],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit"
+      ],
+      "eligible_note_zh": "新戶＝核卡前 6 個月內未曾持有任一聯邦信用卡者；2026/7/1–12/31 申辦並核卡。",
+      "period_kind": "custom",
+      "period_label": "2026/7/1–12/31",
+      "valid_from": "2026-07-01",
+      "valid_to": "2026-12-31",
+      "status": "active",
+      "requires_registration": false,
+      "registration_windows": [],
+      "quota_note_zh": "活動期間歸戶回饋上限 600 元；次月 15 日回饋。",
+      "stacking": "unknown",
+      "stacking_note_zh": "這筆優惠已另以「新戶才計入」的卡片規則給引擎計算；活動頁僅列出，不重複加總，也不計入任何排行分數。",
+      "rules": [
+        {
+          "id": "jp3",
+          "label_zh": "新戶 日本實體商店消費加碼 3%",
+          "scope": "country",
+          "country_codes": [
+            "JP"
+          ],
+          "physical_store_only": true,
+          "user_tier": "new_customer",
+          "rate_bp": 300,
+          "incremental": true,
+          "cap_amount_twd": 600,
+          "cap_period": "campaign",
+          "conditions_zh": "日本實體商店指日本當地商店消費，排除網路、交通類交易；回饋金限折抵刷卡消費。",
+          "cap_twd_max": 600,
+          "max_spend_twd": 20000
+        }
+      ],
+      "payout_zh": "次月 15 日回饋至信用卡帳上，限折抵刷卡消費。",
+      "summary_zh": "聯邦吉鶴卡新戶（2026/7/1–12/31 申辦核卡）在日本實體商店消費加碼 3%，活動期間上限 600 元；只列為新戶優惠，不計入排名。",
+      "source_ids": [
+        "src-ubot-jiho-page"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-11-04",
+      "verified_at": "2026-11-04"
+    },
+    {
+      "id": "ubot-subscriptions-2026q4",
+      "title_zh": "聯邦信用卡 指定影音串流、遊戲、AI 訂閱 登錄享 5%（達標 10%）",
+      "kind": "bonus",
+      "issuer_ids": [
+        "bank-ubot"
+      ],
+      "card_ids": [],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit"
+      ],
+      "eligible_note_zh": "聯邦銀行信用卡持卡人登錄即可，正附卡合併計算。",
+      "period_kind": "quarter",
+      "period_label": "2026Q4",
+      "valid_from": "2026-10-01",
+      "valid_to": "2026-12-31",
+      "status": "active",
+      "requires_registration": true,
+      "registration_windows": [
+        {
+          "opens_at": "2026-10-20T15:00+08:00",
+          "closes_at": "2026-10-31T23:59+08:00",
+          "quota": 5000,
+          "note_zh": "10 月開放 5,000 名"
+        },
+        {
+          "opens_at": "2026-11-20T15:00+08:00",
+          "closes_at": "2026-11-30T23:59+08:00",
+          "quota": 3000,
+          "note_zh": "11 月開放 3,000 名"
+        },
+        {
+          "opens_at": "2026-12-20T15:00+08:00",
+          "closes_at": "2026-12-31T23:59+08:00",
+          "quota": 2000,
+          "note_zh": "12 月開放 2,000 名"
+        }
+      ],
+      "quota_note_zh": "總限量 1 萬名；從登錄當月起都有資格，不用每月登錄。",
+      "stacking": "stacks",
+      "stacking_note_zh": "刷卡金另外發，和卡片本身的回饋分開。",
+      "rules": [
+        {
+          "id": "sub5",
+          "label_zh": "指定數位訂閱 加碼 5%",
+          "scope": "merchant",
+          "merchant_ids": [
+            "netflix",
+            "disney-plus",
+            "iqiyi",
+            "youtube-premium",
+            "spotify",
+            "kkbox",
+            "linetv",
+            "kktv",
+            "steam",
+            "playstation-store",
+            "nintendo-eshop",
+            "chatgpt",
+            "canva",
+            "claude",
+            "perplexity",
+            "gemini",
+            "notion"
+          ],
+          "rate_bp": 500,
+          "incremental": true,
+          "cap_amount_twd": 100,
+          "cap_period": "month",
+          "conditions_zh": "指定通路：Netflix、Disney+、愛奇藝、YouTube、Spotify、KKBOX、LINE TV（含 KKTV）、Steam、PlayStation Plus、Nintendo Switch Online、ChatGPT、Canva、Claude、Perplexity、Gemini、Gamma、Notion、Speak AI，帳單上要能看出通路名稱。每月每戶最多 100 元；當月一般消費累積滿 8,000 元升級為 10%，見下一條。",
+          "cap_twd_max": 100,
+          "max_spend_twd": 2000
+        },
+        {
+          "id": "sub10-upgrade",
+          "label_zh": "當月一般消費滿 8,000 元：指定數位訂閱再加 5%（合計 10%）",
+          "scope": "merchant",
+          "merchant_ids": [
+            "netflix",
+            "disney-plus",
+            "iqiyi",
+            "youtube-premium",
+            "spotify",
+            "kkbox",
+            "linetv",
+            "kktv",
+            "steam",
+            "playstation-store",
+            "nintendo-eshop",
+            "chatgpt",
+            "canva",
+            "claude",
+            "perplexity",
+            "gemini",
+            "notion"
+          ],
+          "rate_bp": 500,
+          "stack": "adds",
+          "quote": "當月一般消費累積滿8,000元 指定數位訂閱消費 回饋升級至 10% 刷卡金 （每戶最高贈200元/月）",
+          "quote_source_id": "src-ubot-sub-2026q4",
+          "incremental": true,
+          "min_monthly_spend_twd": 8000,
+          "cap_amount_twd": 100,
+          "cap_period": "month",
+          "conditions_zh": "升級後合計 10%，每月最多 200 元（基本 5% 的 100 元加上這條的 100 元）。",
+          "cap_twd_max": 100,
+          "max_spend_twd": 2000
+        }
+      ],
+      "payout_zh": "刷卡金，消費月的次月底前回饋到正卡人帳戶。",
+      "summary_zh": "2026 年第四季登錄後，用聯邦信用卡付 Netflix、Spotify、ChatGPT、Claude 等指定訂閱，不限金額 5% 刷卡金，每月最多 100 元；當月一般消費滿 8,000 元升級 10%，每月最多 200 元。",
+      "source_ids": [
+        "src-ubot-sub-2026q4"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-10-22",
+      "verified_at": "2026-10-31"
+    }
+  ]
+}

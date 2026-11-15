@@ -1,0 +1,621 @@
+{
+  "license": "CC BY 4.0（https://creativecommons.org/licenses/by/4.0/deed.zh-hant）",
+  "attribution": "台灣支付優惠站 https://pay.elggum.com",
+  "disclaimer_zh": "本資料整理自銀行與支付業者公開資訊，可能有誤或已變更，實際回饋以各機構公告為準。謹慎理財 信用至上。",
+  "data_date": "2026-11-14",
+  "fee_rules": [
+    {
+      "id": "fx-bank-mega",
+      "kind": "fx_fee",
+      "issuer_id": "bank-mega",
+      "card_id": null,
+      "total_bp": 150,
+      "bank_bp": 50,
+      "estimate_bp": 150,
+      "applies_to_zh": "外幣交易，以及在國外以新臺幣交易（含國外網站）",
+      "basis_zh": "加計1.5%",
+      "valid_from": "2025-07-21",
+      "valid_to": null,
+      "source_ids": [
+        "src-csv-cc-fees"
+      ],
+      "confidence": "official_only",
+      "verified_at": "2026-10-19"
+    },
+    {
+      "id": "fx-bank-tcbbank",
+      "kind": "fx_fee",
+      "issuer_id": "bank-tcbbank",
+      "card_id": null,
+      "total_bp": 150,
+      "bank_bp": 50,
+      "estimate_bp": 150,
+      "applies_to_zh": "外幣交易，以及在國外以新臺幣交易（含國外網站）",
+      "basis_zh": "加計1.5%",
+      "valid_from": "2025-07-21",
+      "valid_to": null,
+      "source_ids": [
+        "src-csv-cc-fees"
+      ],
+      "confidence": "official_only",
+      "verified_at": "2026-10-19"
+    },
+    {
+      "id": "fx-bank-taishin",
+      "kind": "fx_fee",
+      "issuer_id": "bank-taishin",
+      "card_id": null,
+      "total_bp": 150,
+      "bank_bp": 50,
+      "estimate_bp": 150,
+      "applies_to_zh": "外幣交易，以及在國外以新臺幣交易（含國外網站）",
+      "basis_zh": "加計1.5%",
+      "valid_from": "2025-07-21",
+      "valid_to": null,
+      "source_ids": [
+        "src-csv-cc-fees"
+      ],
+      "confidence": "official_only",
+      "verified_at": "2026-10-19"
+    },
+    {
+      "id": "fx-bank-skbank",
+      "kind": "fx_fee",
+      "issuer_id": "bank-skbank",
+      "card_id": null,
+      "total_bp": 150,
+      "bank_bp": 50,
+      "estimate_bp": 150,
+      "applies_to_zh": "外幣交易，以及在國外以新臺幣交易（含國外網站）",
+      "basis_zh": "1.5%（國際組織 1% + 銀行 0.5%）",
+      "valid_from": "2025-07-21",
+      "valid_to": null,
+      "source_ids": [
+        "src-csv-cc-fees"
+      ],
+      "confidence": "official_only",
+      "verified_at": "2026-10-19"
+    },
+    {
+      "id": "fx-bank-bot",
+      "kind": "fx_fee",
+      "issuer_id": "bank-bot",
+      "card_id": null,
+      "total_bp": 150,
+      "bank_bp": 50,
+      "estimate_bp": 150,
+      "applies_to_zh": "外幣交易，以及在國外以新臺幣交易（含國外網站）",
+      "basis_zh": "1.5%（含國際組織 1%）",
+      "valid_from": "2025-07-21",
+      "valid_to": null,
+      "source_ids": [
+        "src-csv-cc-fees"
+      ],
+      "confidence": "official_only",
+      "verified_at": "2026-10-19"
+    },
+    {
+      "id": "fx-bank-bok",
+      "kind": "fx_fee",
+      "issuer_id": "bank-bok",
+      "card_id": null,
+      "total_bp": 150,
+      "bank_bp": 50,
+      "estimate_bp": 150,
+      "applies_to_zh": "外幣交易，以及在國外以新臺幣交易（含國外網站）",
+      "basis_zh": "加計1.5%",
+      "valid_from": "2025-07-21",
+      "valid_to": null,
+      "source_ids": [
+        "src-csv-cc-fees"
+      ],
+      "confidence": "official_only",
+      "verified_at": "2026-10-19"
+    },
+    {
+      "id": "fx-bank-hncb",
+      "kind": "fx_fee",
+      "issuer_id": "bank-hncb",
+      "card_id": null,
+      "total_bp": 150,
+      "bank_bp": 50,
+      "estimate_bp": 150,
+      "applies_to_zh": "外幣交易，以及在國外以新臺幣交易（含國外網站）",
+      "basis_zh": "加計1.5%",
+      "valid_from": "2025-07-21",
+      "valid_to": null,
+      "source_ids": [
+        "src-csv-cc-fees"
+      ],
+      "confidence": "official_only",
+      "verified_at": "2026-10-19"
+    },
+    {
+      "id": "fx-bank-feib",
+      "kind": "fx_fee",
+      "issuer_id": "bank-feib",
+      "card_id": null,
+      "total_bp": 150,
+      "bank_bp": 50,
+      "estimate_bp": 150,
+      "applies_to_zh": "外幣交易，以及在國外以新臺幣交易（含國外網站）",
+      "basis_zh": "加計1.5%",
+      "valid_from": "2025-07-21",
+      "valid_to": null,
+      "source_ids": [
+        "src-csv-cc-fees"
+      ],
+      "confidence": "official_only",
+      "verified_at": "2026-10-19"
+    },
+    {
+      "id": "fx-bank-landbank",
+      "kind": "fx_fee",
+      "issuer_id": "bank-landbank",
+      "card_id": null,
+      "total_bp": 150,
+      "bank_bp": 50,
+      "estimate_bp": 150,
+      "applies_to_zh": "外幣交易，以及在國外以新臺幣交易（含國外網站）",
+      "basis_zh": "國際組織 1% + 銀行 0.5%",
+      "valid_from": "2025-07-21",
+      "valid_to": null,
+      "source_ids": [
+        "src-csv-cc-fees"
+      ],
+      "confidence": "official_only",
+      "verified_at": "2026-10-19"
+    },
+    {
+      "id": "fx-bank-tcb",
+      "kind": "fx_fee",
+      "issuer_id": "bank-tcb",
+      "card_id": null,
+      "total_bp": 150,
+      "bank_bp": 50,
+      "estimate_bp": 150,
+      "applies_to_zh": "外幣交易，以及在國外以新臺幣交易（含國外網站）",
+      "basis_zh": "國際組織 1% + 銀行 0.5%",
+      "valid_from": "2025-07-21",
+      "valid_to": null,
+      "source_ids": [
+        "src-csv-cc-fees"
+      ],
+      "confidence": "official_only",
+      "verified_at": "2026-10-19"
+    },
+    {
+      "id": "fx-bank-entie",
+      "kind": "fx_fee",
+      "issuer_id": "bank-entie",
+      "card_id": null,
+      "total_bp": 150,
+      "bank_bp": 50,
+      "estimate_bp": 150,
+      "applies_to_zh": "外幣交易，以及在國外以新臺幣交易（含國外網站）",
+      "basis_zh": "國際組織 1% + 銀行 0.5%",
+      "valid_from": "2025-07-21",
+      "valid_to": null,
+      "source_ids": [
+        "src-csv-cc-fees"
+      ],
+      "confidence": "official_only",
+      "verified_at": "2026-10-19"
+    },
+    {
+      "id": "fx-bank-sc",
+      "kind": "fx_fee",
+      "issuer_id": "bank-sc",
+      "card_id": null,
+      "total_bp": 150,
+      "bank_bp": 50,
+      "estimate_bp": 150,
+      "applies_to_zh": "外幣交易，以及在國外以新臺幣交易（含國外網站）",
+      "basis_zh": "國際組織 1% + 銀行 0.5%",
+      "valid_from": "2025-07-21",
+      "valid_to": null,
+      "source_ids": [
+        "src-csv-cc-fees"
+      ],
+      "confidence": "official_only",
+      "verified_at": "2026-10-19"
+    },
+    {
+      "id": "fx-bank-sunny",
+      "kind": "fx_fee",
+      "issuer_id": "bank-sunny",
+      "card_id": null,
+      "total_bp": 150,
+      "bank_bp": 50,
+      "estimate_bp": 150,
+      "applies_to_zh": "外幣交易，以及在國外以新臺幣交易（含國外網站）",
+      "basis_zh": "國際組織目前 1% + 銀行 0.5%",
+      "valid_from": "2025-07-21",
+      "valid_to": null,
+      "source_ids": [
+        "src-csv-cc-fees"
+      ],
+      "confidence": "official_only",
+      "verified_at": "2026-10-19"
+    },
+    {
+      "id": "fx-bank-ubot",
+      "kind": "fx_fee",
+      "issuer_id": "bank-ubot",
+      "card_id": null,
+      "total_bp": 150,
+      "bank_bp": 50,
+      "estimate_bp": 150,
+      "applies_to_zh": "外幣交易，以及在國外以新臺幣交易（含國外網站）",
+      "basis_zh": "國際組織 1% + 銀行 0.5%",
+      "valid_from": "2025-07-21",
+      "valid_to": null,
+      "source_ids": [
+        "src-csv-cc-fees"
+      ],
+      "confidence": "official_only",
+      "verified_at": "2026-10-19"
+    },
+    {
+      "id": "fx-bank-hwatai",
+      "kind": "fx_fee",
+      "issuer_id": "bank-hwatai",
+      "card_id": null,
+      "total_bp": 135,
+      "bank_bp": null,
+      "estimate_bp": 150,
+      "applies_to_zh": "外幣交易，以及在國外以新臺幣交易（含國外網站）",
+      "basis_zh": "加計1.35%",
+      "valid_from": "2025-07-21",
+      "valid_to": null,
+      "source_ids": [
+        "src-csv-cc-fees"
+      ],
+      "confidence": "official_only",
+      "verified_at": "2026-10-19"
+    },
+    {
+      "id": "fx-card-amex",
+      "kind": "fx_fee",
+      "issuer_id": "card-amex",
+      "card_id": null,
+      "total_bp": 200,
+      "bank_bp": 0,
+      "estimate_bp": 150,
+      "applies_to_zh": "外幣交易，以及在國外以新臺幣交易（含國外網站）",
+      "basis_zh": "國際組織收取 2%（現行）",
+      "valid_from": "2025-07-21",
+      "valid_to": null,
+      "source_ids": [
+        "src-csv-cc-fees"
+      ],
+      "confidence": "official_only",
+      "verified_at": "2026-10-19"
+    },
+    {
+      "id": "fx-bank-cota",
+      "kind": "fx_fee",
+      "issuer_id": "bank-cota",
+      "card_id": null,
+      "total_bp": null,
+      "bank_bp": 50,
+      "estimate_bp": 150,
+      "applies_to_zh": "外幣交易，以及在國外以新臺幣交易（含國外網站）",
+      "basis_zh": "國際組織費用（未寫明費率）+ 銀行 0.5%",
+      "valid_from": "2025-07-21",
+      "valid_to": null,
+      "source_ids": [
+        "src-csv-cc-fees"
+      ],
+      "confidence": "official_only",
+      "verified_at": "2026-10-19"
+    },
+    {
+      "id": "fx-bank-scsb",
+      "kind": "fx_fee",
+      "issuer_id": "bank-scsb",
+      "card_id": null,
+      "total_bp": null,
+      "bank_bp": 50,
+      "estimate_bp": 150,
+      "applies_to_zh": "外幣交易，以及在國外以新臺幣交易（含國外網站）",
+      "basis_zh": "國際組織費用（未寫明費率）+ 銀行 0.5%",
+      "valid_from": "2025-07-21",
+      "valid_to": null,
+      "source_ids": [
+        "src-csv-cc-fees"
+      ],
+      "confidence": "official_only",
+      "verified_at": "2026-10-19"
+    },
+    {
+      "id": "fx-bank-ctbc",
+      "kind": "fx_fee",
+      "issuer_id": "bank-ctbc",
+      "card_id": null,
+      "total_bp": null,
+      "bank_bp": 50,
+      "estimate_bp": 150,
+      "applies_to_zh": "外幣交易，以及在國外以新臺幣交易（含國外網站）",
+      "basis_zh": "國際組織費用（未寫明費率）+ 銀行 0.5%",
+      "valid_from": "2025-07-21",
+      "valid_to": null,
+      "source_ids": [
+        "src-csv-cc-fees"
+      ],
+      "confidence": "official_only",
+      "verified_at": "2026-10-19"
+    },
+    {
+      "id": "fx-bank-yuanta",
+      "kind": "fx_fee",
+      "issuer_id": "bank-yuanta",
+      "card_id": null,
+      "total_bp": null,
+      "bank_bp": 50,
+      "estimate_bp": 150,
+      "applies_to_zh": "外幣交易，以及在國外以新臺幣交易（含國外網站）",
+      "basis_zh": "國際組織費用（未寫明費率）+ 銀行 0.5%",
+      "valid_from": "2025-07-21",
+      "valid_to": null,
+      "source_ids": [
+        "src-csv-cc-fees"
+      ],
+      "confidence": "official_only",
+      "verified_at": "2026-10-19"
+    },
+    {
+      "id": "fx-bank-fubon",
+      "kind": "fx_fee",
+      "issuer_id": "bank-fubon",
+      "card_id": null,
+      "total_bp": null,
+      "bank_bp": 50,
+      "estimate_bp": 150,
+      "applies_to_zh": "外幣交易，以及在國外以新臺幣交易（含國外網站）",
+      "basis_zh": "國際組織費用（未寫明費率）+ 銀行 0.5%",
+      "valid_from": "2025-07-21",
+      "valid_to": null,
+      "source_ids": [
+        "src-csv-cc-fees"
+      ],
+      "confidence": "official_only",
+      "verified_at": "2026-10-19"
+    },
+    {
+      "id": "fx-bank-tbb",
+      "kind": "fx_fee",
+      "issuer_id": "bank-tbb",
+      "card_id": null,
+      "total_bp": null,
+      "bank_bp": 50,
+      "estimate_bp": 150,
+      "applies_to_zh": "外幣交易，以及在國外以新臺幣交易（含國外網站）",
+      "basis_zh": "國際組織費用（未寫明費率）+ 銀行 0.5%",
+      "valid_from": "2025-07-21",
+      "valid_to": null,
+      "source_ids": [
+        "src-csv-cc-fees"
+      ],
+      "confidence": "official_only",
+      "verified_at": "2026-10-19"
+    },
+    {
+      "id": "fx-bank-esun",
+      "kind": "fx_fee",
+      "issuer_id": "bank-esun",
+      "card_id": null,
+      "total_bp": null,
+      "bank_bp": 50,
+      "estimate_bp": 150,
+      "applies_to_zh": "外幣交易，以及在國外以新臺幣交易（含國外網站）",
+      "basis_zh": "國際組織費用（未寫明費率）+ 銀行 0.5%",
+      "valid_from": "2025-07-21",
+      "valid_to": null,
+      "source_ids": [
+        "src-csv-cc-fees"
+      ],
+      "confidence": "official_only",
+      "verified_at": "2026-10-19"
+    },
+    {
+      "id": "fx-bank-sinopac",
+      "kind": "fx_fee",
+      "issuer_id": "bank-sinopac",
+      "card_id": null,
+      "total_bp": null,
+      "bank_bp": 50,
+      "estimate_bp": 150,
+      "applies_to_zh": "外幣交易，以及在國外以新臺幣交易（含國外網站）",
+      "basis_zh": "國際組織費用（未寫明費率）+ 銀行 0.5%",
+      "valid_from": "2025-07-21",
+      "valid_to": null,
+      "source_ids": [
+        "src-csv-cc-fees"
+      ],
+      "confidence": "official_only",
+      "verified_at": "2026-10-19"
+    },
+    {
+      "id": "fx-bank-hsbc",
+      "kind": "fx_fee",
+      "issuer_id": "bank-hsbc",
+      "card_id": null,
+      "total_bp": null,
+      "bank_bp": 50,
+      "estimate_bp": 150,
+      "applies_to_zh": "外幣交易，以及在國外以新臺幣交易（含國外網站）",
+      "basis_zh": "國際組織費用（未寫明費率）+ 銀行 0.5%",
+      "valid_from": "2025-07-21",
+      "valid_to": null,
+      "source_ids": [
+        "src-csv-cc-fees"
+      ],
+      "confidence": "official_only",
+      "verified_at": "2026-10-19"
+    },
+    {
+      "id": "fx-bank-cathay",
+      "kind": "fx_fee",
+      "issuer_id": "bank-cathay",
+      "card_id": null,
+      "total_bp": null,
+      "bank_bp": 50,
+      "estimate_bp": 150,
+      "applies_to_zh": "外幣交易，以及在國外以新臺幣交易（含國外網站）",
+      "basis_zh": "國際組織費用（未寫明費率）+ 銀行 0.5%",
+      "valid_from": "2025-07-21",
+      "valid_to": null,
+      "source_ids": [
+        "src-csv-cc-fees"
+      ],
+      "confidence": "official_only",
+      "verified_at": "2026-10-19"
+    },
+    {
+      "id": "fx-bank-firstbank",
+      "kind": "fx_fee",
+      "issuer_id": "bank-firstbank",
+      "card_id": null,
+      "total_bp": null,
+      "bank_bp": 50,
+      "estimate_bp": 150,
+      "applies_to_zh": "外幣交易，以及在國外以新臺幣交易（含國外網站）",
+      "basis_zh": "國際組織費用（未寫明費率）+ 銀行 0.5%",
+      "valid_from": "2025-07-21",
+      "valid_to": null,
+      "source_ids": [
+        "src-csv-cc-fees"
+      ],
+      "confidence": "official_only",
+      "verified_at": "2026-10-19"
+    },
+    {
+      "id": "fx-bank-kgi",
+      "kind": "fx_fee",
+      "issuer_id": "bank-kgi",
+      "card_id": null,
+      "total_bp": null,
+      "bank_bp": 50,
+      "estimate_bp": 150,
+      "applies_to_zh": "外幣交易，以及在國外以新臺幣交易（含國外網站）",
+      "basis_zh": "國際組織費用（未寫明費率）+ 銀行 0.5%",
+      "valid_from": "2025-07-21",
+      "valid_to": null,
+      "source_ids": [
+        "src-csv-cc-fees"
+      ],
+      "confidence": "official_only",
+      "verified_at": "2026-10-19"
+    },
+    {
+      "id": "fx-bank-chb",
+      "kind": "fx_fee",
+      "issuer_id": "bank-chb",
+      "card_id": null,
+      "total_bp": null,
+      "bank_bp": 50,
+      "estimate_bp": 150,
+      "applies_to_zh": "外幣交易，以及在國外以新臺幣交易（含國外網站）",
+      "basis_zh": "國際組織費用（未寫明費率）+ 銀行 0.5%",
+      "valid_from": "2025-07-21",
+      "valid_to": null,
+      "source_ids": [
+        "src-csv-cc-fees"
+      ],
+      "confidence": "official_only",
+      "verified_at": "2026-10-19"
+    },
+    {
+      "id": "fx-bank-dbs",
+      "kind": "fx_fee",
+      "issuer_id": "bank-dbs",
+      "card_id": null,
+      "total_bp": null,
+      "bank_bp": 50,
+      "estimate_bp": 150,
+      "applies_to_zh": "外幣交易，以及在國外以新臺幣交易（含國外網站）",
+      "basis_zh": "國際組織費用（未寫明費率）+ 銀行 0.5%",
+      "valid_from": "2025-07-21",
+      "valid_to": null,
+      "source_ids": [
+        "src-csv-cc-fees"
+      ],
+      "confidence": "official_only",
+      "verified_at": "2026-10-19"
+    },
+    {
+      "id": "fx-card-rakuten",
+      "kind": "fx_fee",
+      "issuer_id": "card-rakuten",
+      "card_id": null,
+      "total_bp": null,
+      "bank_bp": 50,
+      "estimate_bp": 150,
+      "applies_to_zh": "外幣交易，以及在國外以新臺幣交易（含國外網站）",
+      "basis_zh": "含國際組織費用 + 公司 0.5%",
+      "valid_from": "2025-07-21",
+      "valid_to": null,
+      "source_ids": [
+        "src-csv-cc-fees"
+      ],
+      "confidence": "official_only",
+      "verified_at": "2026-10-19"
+    },
+    {
+      "id": "fx-bank-obank",
+      "kind": "fx_fee",
+      "issuer_id": "bank-obank",
+      "card_id": null,
+      "total_bp": 150,
+      "bank_bp": null,
+      "estimate_bp": 150,
+      "applies_to_zh": "外幣交易，以及在國外以新臺幣交易（含國外網站）",
+      "basis_zh": "簽帳金融卡海外交易手續費另加收 1.5%",
+      "valid_from": "2025-07-21",
+      "valid_to": null,
+      "source_ids": [
+        "src-obank-events"
+      ],
+      "confidence": "official_only",
+      "verified_at": "2026-10-19"
+    },
+    {
+      "id": "dcc-generic",
+      "kind": "dcc_fee",
+      "issuer_id": null,
+      "card_id": null,
+      "total_bp": null,
+      "bank_bp": null,
+      "estimate_bp": null,
+      "applies_to_zh": "在國外刷卡時選擇以新臺幣結帳（DCC 動態貨幣轉換）",
+      "basis_zh": "DCC 由收單端換匯，匯率與加價由商店或收單機構決定，費率不固定；銀行仍會收海外交易服務費，且多數卡的海外加碼不認列。請選當地貨幣結帳。",
+      "valid_from": "2025-07-21",
+      "valid_to": null,
+      "source_ids": [
+        "src-sinopac-dawho-card"
+      ],
+      "confidence": "official_only",
+      "verified_at": "2026-10-19"
+    },
+    {
+      "id": "fx-card-ctbc-hanshin-taichung",
+      "kind": "fx_fee",
+      "issuer_id": "bank-ctbc",
+      "card_id": "ctbc-hanshin-taichung",
+      "total_bp": 0,
+      "bank_bp": 0,
+      "estimate_bp": 0,
+      "applies_to_zh": "官網卡片頁寫國外一般消費免收 1.5% 國外交易手續費（另給館外 0.5% 回饋；免手續費不算回饋）",
+      "basis_zh": "卡片權益（2026-10-30 QA 重新核對）",
+      "valid_from": "2026-04-10",
+      "valid_to": "2026-12-31",
+      "source_ids": [
+        "src-ctbc-hanshin-taichung-page",
+        "src-ctbc-hanshin-page-b"
+      ],
+      "confidence": "official_only",
+      "verified_at": "2026-10-30"
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "license": "CC BY 4.0（https://creativecommons.org/licenses/by/4.0/deed.zh-hant）",
+  "attribution": "台灣支付優惠站 https://pay.elggum.com",
+  "disclaimer_zh": "本資料整理自銀行與支付業者公開資訊，可能有誤或已變更，實際回饋以各機構公告為準。謹慎理財 信用至上。",
+  "data_date": "2026-11-14",
+  "C1_issuers": {
+    "listed_in_fsc_stats": 32,
+    "recorded": 34,
+    "list_checked_within_30d": true,
+    "pass": true
+  },
+  "C2_cards": {
+    "recorded": 190,
+    "catalogue_open_cards": 424,
+    "covered": 189,
+    "denominator": 424,
+    "coverage_pct": 44.6,
+    "closing_soon": [],
+    "unmatched_recorded": [],
+    "catalogue_generated_at": "2026-10-19",
+    "lists_official": 30,
+    "lists_secondary_fallback": [],
+    "lists_unreadable": [
+      "bank-cota"
+    ],
+    "no_open_cards": [
+      "bank-citi"
+    ],
+    "not_card_issuer": [
+      "other-globalpayments",
+      "other-nccc"
+    ],
+    "note_zh": "分母取各發卡機構官網卡片清單中目前開放申辦的個人信用卡（不含簽帳金融卡、公司／採購卡、邀請制、已停辦）。30 家用官網清單；其中 11 家官網清單要 JavaScript，改用瀏覽器逐張看過官網清單（筆記在 research/browser-notes/cards-32-44.md）；1 家讀不到清單、記 0 張（bank-cota）。已公告停止申辦日的卡，到了那天自動離開分母（新光銀行全部卡片 2026/10/30 起停止申辦）。尚未與 Money101（350+）、Cardli（430+）逐張交叉比對（兩站從這台機器連不上）；目前分母 424 張，只能當量級對照。",
+    "pass": false
+  },
+  "C3_epay": {
+    "dedicated_recorded": 10,
+    "dedicated_total": 10,
+    "bank_epay_recorded": 19,
+    "bank_epay_total": 19,
+    "bank_wallet_products": [
+      "esun_wallet",
+      "sinopac_dacard",
+      "taishin_pay",
+      "taishin_pay_plus",
+      "tw_pay"
+    ],
+    "wallets_with_own_rewards": [
+      "line_pay",
+      "jkopay",
+      "pluspay",
+      "easywallet",
+      "icash_pay"
+    ],
+    "token_wallets": 3,
+    "note_zh": "19 家兼營銀行已建檔；有消費者錢包產品資料的是玉山Wallet、台新Pay、台新Pay+、永豐大咖DACARD（原豐錢包已停用）。全支付、LINE Pay 自家 Q4 活動只在 App 內，查無官方新聞稿可交叉核對，未建檔",
+    "pass": false
+  },
+  "C4_debit": {
+    "recorded_cards": 9,
+    "banks_with_debit_data": 8,
+    "denominator": 26,
+    "missing": [
+      "bank-cathay",
+      "bank-chb",
+      "bank-ctbc",
+      "bank-dbs",
+      "bank-esun",
+      "bank-feib",
+      "bank-fubon",
+      "bank-hncb",
+      "bank-mega",
+      "bank-sc",
+      "bank-scsb",
+      "bank-skbank",
+      "bank-sunny",
+      "bank-taishin",
+      "bank-tbb",
+      "bank-tcb",
+      "bank-tcbbank",
+      "bank-ubot"
+    ],
+    "denominator_note_zh": "分母是已確認發行簽帳金融卡的 26 家機構；第三批已逐家查過各銀行官網，沒發簽帳金融卡的銀行不算進分母。",
+    "missing_reason_zh": {
+      "bank-cathay": "有發卡證據，卡片尚未建檔",
+      "bank-chb": "有發卡證據，卡片尚未建檔",
+      "bank-ctbc": "有發卡證據，卡片尚未建檔",
+      "bank-dbs": "有發卡證據，卡片尚未建檔",
+      "bank-esun": "有發卡證據，卡片尚未建檔",
+      "bank-feib": "有發卡證據，卡片尚未建檔",
+      "bank-fubon": "有發卡證據，卡片尚未建檔",
+      "bank-hncb": "有發卡證據，卡片尚未建檔",
+      "bank-mega": "VISA 金融卡頁讀得到，但回饋是紅利點數，折抵價值未寫，尚未建檔",
+      "bank-sc": "有發卡證據，卡片尚未建檔",
+      "bank-scsb": "有發卡證據，卡片尚未建檔",
+      "bank-skbank": "官網為 SPA 殼頁，需瀏覽器",
+      "bank-sunny": "有發卡證據，卡片尚未建檔",
+      "bank-taishin": "有發卡證據，卡片尚未建檔",
+      "bank-tbb": "官網卡片頁與回饋頁連線逾時，見 docs/needs-browser.md",
+      "bank-tcb": "有發卡證據，卡片尚未建檔",
+      "bank-tcbbank": "官網卡片頁抓取失敗，見 docs/needs-browser.md",
+      "bank-ubot": "有發卡證據，卡片尚未建檔"
+    },
+    "pass": false
+  },
+  "C6_sources": {
+    "facts": 254,
+    "with_official_source_fetched_sha256": 254,
+    "verified_2src": 0,
+    "pct_2src": 0,
+    "official_x2": 81,
+    "pct_2src_incl_official_x2": 32
+  },
+  "C7_freshness": {
+    "active_promos": 55,
+    "verified_within_14d": 33
+  },
+  "C8_expired_in_today_json": 0,
+  "confidence_breakdown": {
+    "verified_2src": 0,
+    "official_x2": 81,
+    "official_only": 170,
+    "single_secondary": 0,
+    "conflict": 3
+  }
+}

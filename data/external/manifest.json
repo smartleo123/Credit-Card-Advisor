@@ -1,0 +1,38 @@
+{
+  "provider": "台灣支付優惠站 https://pay.elggum.com",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "providerSite": "https://pay.elggum.com/",
+  "sourceApi": "https://pay.elggum.com/api/v1/meta.json",
+  "dataDate": "2026-11-14",
+  "generatedAt": "2026-11-14T02:49:49.389Z",
+  "syncedAt": "2026-11-15T18:51:03.178547+00:00",
+  "counts": {
+    "issuers": 51,
+    "cards": 199,
+    "promos": 55,
+    "merchants": 473,
+    "wallets": 23,
+    "sources": 1190
+  },
+  "recordCounts": {
+    "cards": 199,
+    "today": 199,
+    "wallets": 23,
+    "issuers": 51,
+    "promos": 55,
+    "fee_rules": 34
+  },
+  "notes": "Third-party data, not proof of actual reward eligibility. Check the issuing bank's terms.",
+  "sha256": {
+    "meta": "729836b14c9d719ff57411aa09907dfd2b66d58712675c1d5bafdb6ce9841d4b",
+    "cards": "b9d9b2ab223eee9666598d67e42b552455b024fd7cad8fe6d155ddeb46454491",
+    "today": "0393d4b6294016317fb95d656e166548736f177aa2447ff898e66efa44e63543",
+    "wallets": "89212f2fb624fd728dab8d80de5b197535c4f3c7ac97482460b24852aa37eced",
+    "issuers": "e94e89cf822c2d0ebfe35cb2170549498b60a634c9d729b7ee90ad230551bafa",
+    "promos": "48bc3db2e24db5609a882f670c482d9ac7ef3e3db6ec9fcf923ebdbfaec8e646",
+    "fee_rules": "60f7c3d6e9b41d2baa135a2a794219f58febbfb437dad351416af21e53393742",
+    "sources": "0ad32d184f0c42b64ae390b30788805b99a4d5bb63e20273692171d3b2997bc2",
+    "coverage": "aafdcbb5a5d8e0cb719fbdf9e304843fb7cb3d9aea9bb17518f94c60cd5d1324"
+  }
+}

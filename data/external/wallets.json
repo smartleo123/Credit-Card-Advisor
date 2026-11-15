@@ -1,0 +1,660 @@
+{
+  "license": "CC BY 4.0（https://creativecommons.org/licenses/by/4.0/deed.zh-hant）",
+  "attribution": "台灣支付優惠站 https://pay.elggum.com",
+  "disclaimer_zh": "本資料整理自銀行與支付業者公開資訊，可能有誤或已變更，實際回饋以各機構公告為準。謹慎理財 信用至上。",
+  "data_date": "2026-11-14",
+  "wallets": [
+    {
+      "id": "physical",
+      "name_zh": "實體卡／線上輸入卡號",
+      "kind": "physical",
+      "operator_id": null,
+      "official_url": null,
+      "promo_index": null,
+      "cross_border": []
+    },
+    {
+      "id": "line_pay",
+      "name_zh": "LINE Pay",
+      "kind": "card_binding_and_epay",
+      "operator_id": "epay-lianjia",
+      "official_url": "https://pay.line.me/portal/tw/main",
+      "promo_index": "https://pay.line.me/portal/tw/about/promotions",
+      "cross_border": [],
+      "notes_zh": "綁定信用卡付款時，多數銀行以帳單商店名稱「連加*」「LINE Pay」等判定；外送或叫車 App 內建的 LINE Pay 結帳，常被銀行排除在加碼之外。 LINE Pay 官網活動頁（瀏覽器存檔 2026-10-19）只有一張卡片連到只在手機 LINE 打開的活動清單，第四季自營活動的完整清單網頁上看不到（app-only，無法查證）。本站只收單一活動頁讀得到、又有第二來源的活動。",
+      "own_rewards": [
+        {
+          "id": "lpm-transit",
+          "label_zh": "LINE Pay Money 乘車碼 前 10 趟 10%＋滿 30 趟再 20%",
+          "funding": [
+            "balance"
+          ],
+          "reward_zh": "LINE POINTS",
+          "rate_bp": 3000,
+          "max_rate": true,
+          "unit_zh": "每月趟數",
+          "conditions_zh": "限 LINE Pay Money 帳戶（不是綁信用卡）用乘車碼；30 趟都要實付大於 0 元。要先在 LINE Pay 設定裡同意「行銷資訊提供政策」。適用範圍照官方活動頁：台北捷運（棕、橘、紅、藍、綠線）、新北捷運環狀線、台北市聯營公車、新北市區公車，2026/11/1 起加入基隆市公車；貓空纜車、三鶯線、淡水輕軌、安坑輕軌不適用。",
+          "valid_from": "2026-10-01",
+          "valid_to": "2026-12-31",
+          "requires_registration": false,
+          "quota_zh": "每月前 10 趟、每筆最多 5 點；滿 30 趟的 20% 每月最多 200 點；每月總回饋量有限（前 10 趟 70 萬點、滿 30 趟 80 萬點），發完為止",
+          "confidence": "official_only",
+          "source_ids": [
+            "src-linepaymoney-transit-q4",
+            "src-linepaymoney-transit-r12"
+          ],
+          "corroborating_source_ids": [],
+          "verified_at": "2026-11-13"
+        },
+        {
+          "id": "lp-poya-wed",
+          "label_zh": "寶雅門市 每週三 單筆滿 650 元 3%",
+          "funding": [
+            "balance",
+            "card"
+          ],
+          "reward_zh": "LINE POINTS",
+          "rate_bp": 300,
+          "unit_zh": "每筆交易",
+          "conditions_zh": "限寶雅實體獨立門市、LINE Pay 條碼付款（綁定的信用卡、簽帳金融卡或 LINE Pay Money）；要先在 LINE Pay 設定裡同意「行銷資訊提供政策」。點數與優惠券折抵的金額不算。",
+          "valid_from": "2026-10-07",
+          "valid_to": "2026-12-30",
+          "requires_registration": false,
+          "confidence": "official_only",
+          "source_ids": [
+            "src-linepay-poya-q4"
+          ],
+          "corroborating_source_ids": [
+            "src-poya-linepay-q4"
+          ],
+          "verified_at": "2026-10-30"
+        }
+      ]
+    },
+    {
+      "id": "jkopay",
+      "name_zh": "街口支付",
+      "kind": "epay_account",
+      "operator_id": "epay-jkopay",
+      "official_url": "https://www.jkopay.com/",
+      "promo_index": "https://mkt.jkopay.com/campaign/newevent",
+      "cross_border": [
+        {
+          "country": "JP",
+          "network": "PayPay",
+          "source_id": "src-taishin-jkopay-card"
+        }
+      ],
+      "own_rewards": [
+        {
+          "id": "jko-balance-1",
+          "label_zh": "街口帳戶餘額付款 1% 街口幣",
+          "funding": [
+            "balance"
+          ],
+          "reward_zh": "街口幣",
+          "rate_bp": 100,
+          "unit_zh": "每筆交易",
+          "conditions_zh": "限銀牌以上會員。用銀行帳戶或信用卡付款不算，那兩種的回饋看各銀行。官方公告寫於 2024 年，官網常見問題目前仍寫 1% 街口幣回饋無上限（限銀牌以上會員）。升銀牌需要的筆數官網沒有寫，本站不列。",
+          "standing": true,
+          "requires_registration": false,
+          "confidence": "official_x2",
+          "source_ids": [
+            "src-jko-announce-2024"
+          ],
+          "corroborating_source_ids": [
+            "src-jko-faq-r12"
+          ],
+          "verified_at": "2026-11-13"
+        },
+        {
+          "id": "jko-memberday",
+          "label_zh": "每月 5 號會員日 指定通路 30%",
+          "funding": [
+            "any"
+          ],
+          "reward_zh": "街口幣",
+          "rate_bp": 3000,
+          "unit_zh": "每筆交易",
+          "conditions_zh": "每月 1–5 號在 App 登記，5 號 10:00–23:59 在指定通路單筆實付滿 100 元。不含生活繳費；車道服務、高速公路休息站、機場、百貨館內門市、星巴克隨行卡儲值不適用。官方頁沒寫限哪種付款來源。",
+          "valid_from": "2026-08-05",
+          "valid_to": "2026-12-05",
+          "requires_registration": true,
+          "quota_zh": "每人每月最多 50 街口幣（約刷 167 元就拿滿）；總量有限，先用先贏；每人每週限回饋一次",
+          "confidence": "official_only",
+          "source_ids": [
+            "src-jko-memberday-browser",
+            "src-jko-memberday-r12"
+          ],
+          "corroborating_source_ids": [],
+          "verified_at": "2026-11-13"
+        },
+        {
+          "id": "jko-bill-hncb",
+          "label_zh": "繳費 用華南銀行帳戶付款 10%",
+          "funding": [
+            "bank_account"
+          ],
+          "reward_zh": "街口幣",
+          "rate_bp": 1000,
+          "unit_zh": "每筆繳費",
+          "conditions_zh": "限街口 App 繳費、華南銀行帳戶扣款。可繳水電瓦斯、中華電信與台灣大電信、路邊停車、有線電視、保費、醫療費、地方稅、綜所稅、臺北市學雜費等；罰鍰、北市以外學雜費、國民年金、健保費不算。要先在活動頁登記（官方頁存檔）。",
+          "valid_from": "2026-10-06",
+          "valid_to": "2026-12-31",
+          "requires_registration": true,
+          "quota_zh": "單筆最多 30 元，每人每月最多 200 元",
+          "confidence": "official_only",
+          "source_ids": [
+            "src-jko-ebill-browser"
+          ],
+          "corroborating_source_ids": [],
+          "verified_at": "2026-10-19"
+        },
+        {
+          "id": "jko-bill-coupon",
+          "label_zh": "當月繳費滿 1,000 元 送 20 元 7-ELEVEN 街口券（2%）",
+          "funding": [
+            "any"
+          ],
+          "reward_zh": "街口券（限 7-ELEVEN 折抵）",
+          "rate_bp": 200,
+          "unit_zh": "每月繳費累計",
+          "conditions_zh": "要手動領券；所有付款工具合併計算。",
+          "valid_from": "2026-07-01",
+          "valid_to": "2026-12-31",
+          "requires_registration": true,
+          "quota_zh": "每人每月一張 20 元券；每月限量 55,000 名；10–11 月領的券用到 12/31",
+          "confidence": "official_only",
+          "source_ids": [
+            "src-jko-ebill-browser"
+          ],
+          "corroborating_source_ids": [],
+          "verified_at": "2026-10-19"
+        },
+        {
+          "id": "jko-bill-jielicun",
+          "label_zh": "街利存新戶 繳費筆筆 3%",
+          "funding": [
+            "bank_account"
+          ],
+          "reward_zh": "街口幣",
+          "rate_bp": 300,
+          "unit_zh": "每筆繳費",
+          "conditions_zh": "限街利存新戶、用街利存帳戶付款繳費。",
+          "valid_from": "2026-07-01",
+          "valid_to": "2027-03-31",
+          "requires_registration": false,
+          "quota_zh": "每人活動期間最多 200 街口幣",
+          "confidence": "official_only",
+          "source_ids": [
+            "src-jko-ebill-browser"
+          ],
+          "corroborating_source_ids": [],
+          "verified_at": "2026-10-19"
+        }
+      ]
+    },
+    {
+      "id": "pxpay_plus",
+      "name_zh": "全支付",
+      "kind": "epay_account",
+      "operator_id": "epay-pxpay",
+      "official_url": "https://www.pxpayplus.com/",
+      "promo_index": null,
+      "cross_border": [],
+      "notes_zh": "全支付自己的第四季活動（新聞報導的火鍋季 12%、55688 10%、foodpanda 1%＋週五 4% 等）在官網、最新消息與活動頁都讀不到：官網活動頁存檔只剩 2022 年舊活動，個別活動頁只在 App 或 JavaScript 載入（app-only，無法查證），所以本站沒有收錄。經濟日報 10/5 的報導（標示全支付提供）可當線索。"
+    },
+    {
+      "id": "pluspay",
+      "name_zh": "全盈+PAY",
+      "kind": "epay_account",
+      "operator_id": "epay-pluspay",
+      "official_url": "https://www.pluspay.com.tw/",
+      "promo_index": "https://www.pluspay.com.tw/News/activity",
+      "cross_border": [],
+      "notes_zh": "第四季官方活動頁（瀏覽器存檔）讀得到；全盈帳戶付款的一般回饋與第四季乘車碼活動，官網都沒有顯示。會員日（每月 1 號）是全家隨買跨店取的商品優惠，不是 % 回饋，未收錄。",
+      "own_rewards": [
+        {
+          "id": "pp-q4-select",
+          "label_zh": "PAY樂時刻 精選實體品牌 單筆滿 1,500 元 10%",
+          "funding": [
+            "balance",
+            "bank_account",
+            "card"
+          ],
+          "reward_zh": "全盈儲值金",
+          "rate_bp": 1000,
+          "unit_zh": "每筆交易",
+          "conditions_zh": "限精選品牌實體門市（全餐、屈臣氏、大樹藥局、丁丁藥局、神腦、DK高博士、貓狗大棧、東森寵物、寵物公園、小林眼鏡、新東陽、摩曼頓、鼎王、築間等），要用全盈付款碼或掃全盈立牌；掃 TWQR 不算。回饋在 2027/2/28 前發。",
+          "valid_from": "2026-10-01",
+          "valid_to": "2026-12-31",
+          "requires_registration": false,
+          "quota_zh": "每人每月最多 300 元；每月活動總額 6 萬元，額滿提前結束",
+          "confidence": "official_only",
+          "source_ids": [
+            "src-pluspay-q4-browser"
+          ],
+          "corroborating_source_ids": [],
+          "verified_at": "2026-10-19"
+        },
+        {
+          "id": "pp-paypay-55",
+          "label_zh": "日本 PayPay 商店 筆筆 5.5%",
+          "funding": [
+            "balance",
+            "bank_account"
+          ],
+          "reward_zh": "全盈儲值金",
+          "rate_bp": 550,
+          "unit_zh": "每筆交易",
+          "conditions_zh": "限日本 PayPay 合作商店實體門市，出示全盈+PAY 日本版付款碼或掃店家 QR Code，用全盈錢包或連結銀行帳戶付款（綁信用卡不算）。",
+          "valid_from": "2026-10-01",
+          "valid_to": "2026-12-31",
+          "requires_registration": false,
+          "quota_zh": "每人每月最多 150 元；每月總額 5 萬元、活動總額 15 萬元。10 月份已在 10/30 08:33 額滿，11、12 月重新計算",
+          "confidence": "official_only",
+          "source_ids": [
+            "src-pluspay-paypay-browser",
+            "src-pluspay-paypay-page",
+            "src-pluspay-news-20261030"
+          ],
+          "corroborating_source_ids": [],
+          "verified_at": "2026-10-30"
+        },
+        {
+          "id": "pp-twqr-15",
+          "label_zh": "TWQR 掃碼 單筆滿 600 元 15%",
+          "funding": [
+            "any"
+          ],
+          "reward_zh": "全盈儲值金",
+          "rate_bp": 1500,
+          "unit_zh": "每筆交易",
+          "conditions_zh": "在支援 TWQR 掃碼的實體商家用全盈+PAY 掃碼付款。",
+          "valid_from": "2026-10-01",
+          "valid_to": "2026-12-31",
+          "requires_registration": false,
+          "quota_zh": "每人每月最多 300 元；每月總額 10 萬元。10 月份已在 10/9 14:01 額滿，11、12 月重新計算",
+          "confidence": "official_only",
+          "source_ids": [
+            "src-pluspay-news-browser"
+          ],
+          "corroborating_source_ids": [],
+          "verified_at": "2026-10-19"
+        },
+        {
+          "id": "pp-paypay-12",
+          "label_zh": "日本 PayPay 單月累積滿 5,000 元 12%（11、12 月）",
+          "funding": [
+            "balance",
+            "bank_account"
+          ],
+          "reward_zh": "全盈儲值金",
+          "rate_bp": 1200,
+          "unit_zh": "單月累計",
+          "conditions_zh": "限日本 PayPay 合作商店實體門市，出示全盈+PAY 日本版付款碼或掃店家 QR Code，用全盈錢包或連結銀行帳戶付款；同一個月合格消費累積滿新臺幣 5,000 元才有回饋。官方活動頁期間為 2026/10/1–12/31、每月額度分開算；官網沒有寫這個 12% 能不能和筆筆 5.5% 並用，本站不當成相加。",
+          "valid_from": "2026-11-01",
+          "valid_to": "2026-12-31",
+          "requires_registration": false,
+          "quota_zh": "每人每月最多 700 元；每月活動總額 3.3 萬元，先到先得、額滿當月即停。10 月份已在 10/10 18:12 額滿，11、12 月重新計算",
+          "confidence": "official_only",
+          "source_ids": [
+            "src-pluspay-paypay-eventjs",
+            "src-pluspay-news-20261030"
+          ],
+          "corroborating_source_ids": [],
+          "verified_at": "2026-10-30"
+        }
+      ]
+    },
+    {
+      "id": "easywallet",
+      "name_zh": "悠遊付",
+      "kind": "epay_account",
+      "operator_id": "epay-easycard",
+      "official_url": "https://easywallet.easycard.com.tw/",
+      "promo_index": "https://easywallet.easycard.com.tw/",
+      "cross_border": [],
+      "own_rewards": [
+        {
+          "id": "ew-rank",
+          "label_zh": "月級挑戰 銀級 2%／金級 2.5%／白金級 3%",
+          "funding": [
+            "balance",
+            "bank_account"
+          ],
+          "reward_zh": "悠遊付回饋金",
+          "rate_bp": 300,
+          "max_rate": true,
+          "unit_zh": "每筆交易",
+          "conditions_zh": "等級看前一個月的筆數與金額：3 筆以上且 1 元以上為銀級、10 筆且 5000 元為金級、20 筆且 10000 元為白金級。限悠遊付錢包或綁定銀行帳戶扣款，綁信用卡不算。白金級在指定停車場、加油站再加 3%（每月上限 100 元）。活動實際到 2027/1/1 凌晨 01:59。",
+          "valid_from": "2026-10-01",
+          "valid_to": "2026-12-31",
+          "requires_registration": false,
+          "quota_zh": "每月上限 銀級 150／金級 200／白金級 300 元，先到先得",
+          "confidence": "official_only",
+          "source_ids": [
+            "src-easycard-rank-q4",
+            "src-easywallet-rank-terms"
+          ],
+          "corroborating_source_ids": [],
+          "verified_at": "2026-10-19"
+        },
+        {
+          "id": "ew-friday",
+          "label_zh": "週五會員日 每筆 2%",
+          "funding": [
+            "balance",
+            "bank_account",
+            "card"
+          ],
+          "reward_zh": "悠遊付回饋金",
+          "rate_bp": 200,
+          "unit_zh": "每週五每筆交易",
+          "conditions_zh": "錢包、銀行帳戶或綁定信用卡扣款都算，可再疊月級挑戰（官方寫最高合計 5%）。儲值、轉帳、提領、菸品、基金等不算；繳地方稅在 10/30–11/27 不算。第一銀行帳戶加碼另列一項。悠遊付網站版（瀏覽器存檔）與悠遊卡公司網站內容一致；找不到同一期（10/2–12/25）的第二來源，所以仍標 official_only。",
+          "valid_from": "2026-10-02",
+          "valid_to": "2026-12-25",
+          "requires_registration": false,
+          "quota_zh": "每週五每戶上限 100 元",
+          "confidence": "official_only",
+          "source_ids": [
+            "src-easycard-friday-q4",
+            "src-easywallet-friday-browser"
+          ],
+          "corroborating_source_ids": [],
+          "verified_at": "2026-10-19"
+        },
+        {
+          "id": "ew-firstbank-friday",
+          "label_zh": "週五 綁第一銀行帳戶 單筆滿 100 元 加碼 5%",
+          "funding": [
+            "bank_account"
+          ],
+          "reward_zh": "悠遊付回饋金",
+          "rate_bp": 500,
+          "unit_zh": "每週五每筆交易",
+          "conditions_zh": "用悠遊付綁定第一銀行新臺幣存款帳戶（含 iLEO 數位帳戶）直接扣款；可和週五 2% 疊加。",
+          "valid_from": "2026-10-02",
+          "valid_to": "2026-12-25",
+          "requires_registration": false,
+          "quota_zh": "每人每週五最多 20 元；每週五總額 2 萬元、活動總額 26 萬元",
+          "confidence": "official_x2",
+          "source_ids": [
+            "src-easywallet-friday-browser",
+            "src-easycard-friday-q4"
+          ],
+          "corroborating_source_ids": [
+            "src-easycard-firstbank-friday-r12"
+          ],
+          "verified_at": "2026-11-13"
+        },
+        {
+          "id": "ew-ride-q4",
+          "label_zh": "雙北捷運公車 單月 11／21／30 趟送回饋券",
+          "funding": [
+            "balance",
+            "bank_account",
+            "card"
+          ],
+          "reward_zh": "悠遊付現金回饋券（20＋30＋50 元）",
+          "unit_zh": "每月累計趟數",
+          "conditions_zh": "用悠遊付乘車碼或嗶乘車搭台北捷運（不含貓纜）、新北環狀線、雙北聯營公車；0 元扣款不計趟數。券有最低消費（滿 50／100／200 元）。可同享北捷常客與轉乘優惠。",
+          "valid_from": "2026-10-01",
+          "valid_to": "2026-11-30",
+          "requires_registration": false,
+          "quota_zh": "20 元券限量 3 萬份、30 元券 1.5 萬份；券須在次月 10 日前用掉",
+          "confidence": "official_only",
+          "source_ids": [
+            "src-easycard-ride-q4"
+          ],
+          "corroborating_source_ids": [],
+          "verified_at": "2026-10-19"
+        }
+      ]
+    },
+    {
+      "id": "ipass_money",
+      "name_zh": "iPASS MONEY",
+      "kind": "epay_account",
+      "operator_id": "epay-ipass",
+      "official_url": "https://www.i-pass.com.tw/",
+      "promo_index": "https://www.i-pass.com.tw/Preferential",
+      "cross_border": []
+    },
+    {
+      "id": "icash_pay",
+      "name_zh": "icash Pay",
+      "kind": "epay_account",
+      "operator_id": "epay-icash",
+      "official_url": "https://www.icashpay.com.tw/",
+      "promo_index": "https://www.icashpay.com.tw/advertMessage/index",
+      "cross_border": [],
+      "own_rewards": [
+        {
+          "id": "icash-sunday-7",
+          "label_zh": "週日最好Pay 7% OPENPOINT",
+          "funding": [
+            "balance",
+            "bank_account"
+          ],
+          "reward_zh": "OPENPOINT",
+          "rate_bp": 700,
+          "unit_zh": "週日單筆滿 200 元",
+          "conditions_zh": "限 icash Pay 帳戶直接扣款或連結銀行帳戶付款，綁信用卡不算；全通路適用。官網兩期活動總覽寫法一致，但沒找到官方以外的來源。",
+          "valid_from": "2026-07-01",
+          "valid_to": "2026-12-31",
+          "requires_registration": false,
+          "quota_zh": "每戶每月上限 200 點",
+          "confidence": "official_only",
+          "source_ids": [
+            "src-icash-promo-2540",
+            "src-icash-promo-2481"
+          ],
+          "corroborating_source_ids": [],
+          "verified_at": "2026-10-19"
+        },
+        {
+          "id": "icash-taiya-25",
+          "label_zh": "台亞石油（人工島）2.5% OPENPOINT",
+          "funding": [
+            "balance",
+            "bank_account"
+          ],
+          "reward_zh": "OPENPOINT",
+          "rate_bp": 250,
+          "unit_zh": "每筆不限金額",
+          "conditions_zh": "限台亞人工加油島；要先完成 icash Pay 註冊並連結指定銀行帳戶。",
+          "valid_from": "2026-10-01",
+          "valid_to": "2026-12-31",
+          "requires_registration": false,
+          "quota_zh": "每戶每月上限 100 點，活動總量 50 萬點",
+          "confidence": "official_only",
+          "source_ids": [
+            "src-icash-taiya-2527",
+            "src-icash-promo-2540"
+          ],
+          "corroborating_source_ids": [],
+          "verified_at": "2026-10-19"
+        },
+        {
+          "id": "icash-transit-30",
+          "label_zh": "乘車碼用點數折抵車資 再回 30%",
+          "funding": [
+            "balance"
+          ],
+          "reward_zh": "OPENPOINT",
+          "rate_bp": 3000,
+          "unit_zh": "以點數折抵的金額計",
+          "conditions_zh": "只針對「用 OPENPOINT 折抵」的那部分車資回 30%（例：車資 40 元、折抵 30 點 → 回 9 點）；限 icash Pay 帳戶餘額付款。",
+          "valid_from": "2026-10-01",
+          "valid_to": "2026-12-31",
+          "requires_registration": false,
+          "quota_zh": "每戶每月上限 100 點，活動總量 30 萬點",
+          "confidence": "official_only",
+          "source_ids": [
+            "src-icash-transit-2544"
+          ],
+          "corroborating_source_ids": [],
+          "verified_at": "2026-10-19"
+        }
+      ]
+    },
+    {
+      "id": "gama_pay",
+      "name_zh": "橘子支付",
+      "kind": "epay_account",
+      "operator_id": "epay-gamapay",
+      "official_url": "https://www.gamapay.com.tw/",
+      "promo_index": "https://www.gamapay.com.tw/",
+      "cross_border": []
+    },
+    {
+      "id": "opay",
+      "name_zh": "歐付寶",
+      "kind": "epay_account",
+      "operator_id": "epay-opay",
+      "official_url": "https://www.opay.tw/",
+      "promo_index": "https://www.opay.tw/Banner/Event",
+      "cross_border": []
+    },
+    {
+      "id": "ezpay",
+      "name_zh": "ezPay 簡單付",
+      "kind": "epay_account",
+      "operator_id": "epay-ezpay",
+      "official_url": "https://www.ezpay.com.tw/",
+      "promo_index": "https://www.ezpay.com.tw/",
+      "cross_border": []
+    },
+    {
+      "id": "esun_wallet",
+      "name_zh": "玉山Wallet（玉山電子支付）",
+      "kind": "bank_wallet",
+      "operator_id": "bank-esun",
+      "official_url": "https://www.esunbank.com/zh-tw/personal/credit-card/payment/e_pay",
+      "promo_index": "https://web.esunbank.com.tw/ECPay/WebPage/electronic_payment/deals-discounts.aspx",
+      "cross_border": [
+        {
+          "country": "JP",
+          "network": "PayPay",
+          "source_id": "src-esun-epay"
+        }
+      ],
+      "notes_zh": "玉山銀行兼營的電子支付，台灣可在 TWQR／台灣Pay 商店掃碼付款，日本可在 PayPay 商店付款，付款來源可選銀行帳戶或電子支付餘額。官方活動多半是單一商圈、夜市或商店的限時回饋（常見 10%～20%），數量太多又很短，本站沒有逐一建檔，請看官方活動列表。維基百科的台灣行動支付列表也把它列為玉山銀行的產品。"
+    },
+    {
+      "id": "sinopac_dacard",
+      "name_zh": "永豐 大咖DACARD（原豐錢包）",
+      "kind": "bank_wallet",
+      "operator_id": "bank-sinopac",
+      "official_url": "https://bank.sinopac.com/sinopacBT/about/introduction/announcement/content/20220215120724790000000000000543.html",
+      "promo_index": null,
+      "cross_border": [],
+      "notes_zh": "永豐銀行公告「豐錢包」App 已在 2022/3/29（民國 111 年）停止服務，主要功能移到大咖 DACARD App；Google Play 上大咖 App 仍在更新（最近 2026/9/23）。永豐舊的豐錢包介紹頁還在線上，寫著可在台灣Pay 通路掃碼，與停用公告衝突，本站以停用公告為準。大咖 App 目前的掃碼付款範圍與自有回饋沒有在官方頁讀到，所以沒有建自有回饋。來源：src-sinopac-funwallet-stop、src-sinopac-funwallet-page、src-play-dacard。"
+    },
+    {
+      "id": "taishin_pay",
+      "name_zh": "台新Pay",
+      "kind": "bank_wallet",
+      "operator_id": "bank-taishin",
+      "official_url": "https://www.taishinbank.com.tw/",
+      "promo_index": null,
+      "cross_border": []
+    },
+    {
+      "id": "taishin_pay_plus",
+      "name_zh": "台新Pay+",
+      "kind": "bank_wallet",
+      "operator_id": "bank-taishin",
+      "official_url": "https://www.taishinbank.com.tw/",
+      "promo_index": null,
+      "cross_border": [
+        {
+          "country": "JP",
+          "network": "台新Pay+ 日本合作通路",
+          "source_id": "src-taishin-richart-minisite"
+        },
+        {
+          "country": "KR",
+          "network": "台新Pay+ 韓國合作通路",
+          "source_id": "src-taishin-richart-minisite"
+        }
+      ]
+    },
+    {
+      "id": "apple_pay",
+      "name_zh": "Apple Pay",
+      "kind": "token_wallet",
+      "operator_id": null,
+      "official_url": "https://www.apple.com/tw/apple-pay/",
+      "promo_index": null,
+      "cross_border": []
+    },
+    {
+      "id": "google_pay",
+      "name_zh": "Google 錢包",
+      "kind": "token_wallet",
+      "operator_id": null,
+      "official_url": "https://wallet.google/",
+      "promo_index": null,
+      "cross_border": []
+    },
+    {
+      "id": "samsung_pay",
+      "name_zh": "Samsung Pay",
+      "kind": "token_wallet",
+      "operator_id": null,
+      "official_url": "https://www.samsung.com/tw/samsung-pay/",
+      "promo_index": null,
+      "cross_border": []
+    },
+    {
+      "id": "garmin_pay",
+      "name_zh": "Garmin Pay",
+      "kind": "token_wallet",
+      "operator_id": null,
+      "official_url": null,
+      "promo_index": null,
+      "cross_border": []
+    },
+    {
+      "id": "wowprime_pay",
+      "name_zh": "王品瘋Pay",
+      "kind": "merchant_wallet",
+      "operator_id": null,
+      "official_url": null,
+      "promo_index": null,
+      "cross_border": []
+    },
+    {
+      "id": "easycard_autoload",
+      "name_zh": "悠遊卡（信用卡自動加值）",
+      "kind": "stored_value",
+      "operator_id": "epay-easycard",
+      "official_url": "https://www.easycard.com.tw/",
+      "promo_index": null,
+      "cross_border": [],
+      "notes_zh": "用聯名悠遊卡自動加值的金額，再拿悠遊卡付款。多數卡片把「自動加值」列為不回饋項目；少數卡另有加值回饋。"
+    },
+    {
+      "id": "pi_wallet",
+      "name_zh": "Pi 拍錢包",
+      "kind": "card_binding_and_epay",
+      "operator_id": null,
+      "official_url": null,
+      "promo_index": null,
+      "cross_border": [],
+      "notes_zh": "尚未查證營運機構與活動頁。"
+    },
+    {
+      "id": "tw_pay",
+      "name_zh": "台灣 Pay",
+      "kind": "bank_wallet",
+      "operator_id": null,
+      "official_url": null,
+      "promo_index": null,
+      "cross_border": [],
+      "notes_zh": "由財金公司建置、各銀行提供的 QR 支付；尚未查證活動頁。"
+    }
+  ]
+}

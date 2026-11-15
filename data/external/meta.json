@@ -1,0 +1,88 @@
+{
+  "license": "CC BY 4.0（https://creativecommons.org/licenses/by/4.0/deed.zh-hant）",
+  "attribution": "台灣支付優惠站 https://pay.elggum.com",
+  "disclaimer_zh": "本資料整理自銀行與支付業者公開資訊，可能有誤或已變更，實際回饋以各機構公告為準。謹慎理財 信用至上。",
+  "api_version": 1,
+  "data_date": "2026-11-14",
+  "generated_at": "2026-11-14T02:49:49.389Z",
+  "site": "https://pay.elggum.com",
+  "counts": {
+    "issuers": 51,
+    "cards": 199,
+    "promos": 55,
+    "merchants": 473,
+    "wallets": 23,
+    "sources": 1190
+  },
+  "endpoints": [
+    "/api/v1/today.json",
+    "/api/v1/cards.json",
+    "/api/v1/cards/{id}.json",
+    "/api/v1/merchants/{id}.json",
+    "/api/v1/countries/{cc}.json",
+    "/api/v1/rankings.json",
+    "/api/v1/rankings/{slug}.json",
+    "/api/v1/card-scores.json",
+    "/api/v1/periods/{label}.json",
+    "/api/v1/coverage.json",
+    "/api/v1/issuers.json",
+    "/api/v1/wallets.json",
+    "/api/v1/promos.json",
+    "/api/v1/fee_rules.json",
+    "/api/v1/sources.json",
+    "/api/v1/changelog.json"
+  ],
+  "periods": [
+    {
+      "label": "2026",
+      "start": "2026-01-01",
+      "end": "2026-12-31",
+      "versions": 199,
+      "promos": 55
+    },
+    {
+      "label": "2026H2",
+      "start": "2026-07-01",
+      "end": "2026-12-31",
+      "versions": 199,
+      "promos": 55
+    },
+    {
+      "label": "2027H1",
+      "start": "2027-01-01",
+      "end": "2027-06-30",
+      "versions": 40,
+      "promos": 4
+    },
+    {
+      "label": "2026Q4",
+      "start": "2026-10-01",
+      "end": "2026-12-31",
+      "versions": 199,
+      "promos": 55
+    },
+    {
+      "label": "2026-10",
+      "start": "2026-10-01",
+      "end": "2026-10-31",
+      "versions": 199,
+      "promos": 55
+    },
+    {
+      "label": "2026-11",
+      "start": "2026-11-01",
+      "end": "2026-11-30",
+      "versions": 199,
+      "promos": 55
+    },
+    {
+      "label": "2026-12",
+      "start": "2026-12-01",
+      "end": "2026-12-31",
+      "versions": 199,
+      "promos": 53
+    }
+  ],
+  "countries_note_zh": "countries/TW.json 是國內版（domestic: true），內容為國內一般商店的前 5 名；其他國家是海外消費。",
+  "point_in_time_zh": "歷史查詢：cards/{id}.json 含全部權益版本（valid_from／valid_to），挑出 valid_from ≤ 日期 ≤ valid_to 的版本即為當日有效版本。"
+}

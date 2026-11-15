@@ -1,0 +1,2760 @@
+{
+  "license": "CC BY 4.0（https://creativecommons.org/licenses/by/4.0/deed.zh-hant）",
+  "attribution": "台灣支付優惠站 https://pay.elggum.com",
+  "disclaimer_zh": "本資料整理自銀行與支付業者公開資訊，可能有誤或已變更，實際回饋以各機構公告為準。謹慎理財 信用至上。",
+  "data_date": "2026-11-14",
+  "issuers": [
+    {
+      "id": "bank-bok",
+      "name_zh": "高雄銀行",
+      "kind": "bank",
+      "fsc_listed": true,
+      "fsc_list_date": "2026-10-19",
+      "bank_code": "016",
+      "fsc_code": "016",
+      "roles": [
+        "credit_card_issuer"
+      ],
+      "issues_credit_cards": true,
+      "official_url": "https://www.bok.com.tw/",
+      "card_list": {
+        "url": "https://www.bok.com.tw/credit-card",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "信用卡 - 高雄銀行"
+      },
+      "promo_index": {
+        "url": "https://www.bok.com.tw/card-preferential",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "刷卡優惠 - 高雄銀行"
+      },
+      "registries": [
+        {
+          "registry": "fsc_cc_stats",
+          "source_url": "https://data.gov.tw/dataset/45209",
+          "listed_name": "高雄銀行",
+          "as_of": "2026-08",
+          "verified_date": "2026-10-19"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "bank-bot",
+      "name_zh": "臺灣銀行",
+      "kind": "bank",
+      "fsc_listed": true,
+      "fsc_list_date": "2026-10-19",
+      "bank_code": "004",
+      "fsc_code": "004",
+      "roles": [
+        "debit_card_issuer",
+        "credit_card_issuer",
+        "epay_concurrent"
+      ],
+      "issues_credit_cards": true,
+      "official_url": "https://www.bot.com.tw/",
+      "card_list": {
+        "url": "https://ecard.bot.com.tw/Pages/Cards/P10.html",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "臺灣銀行 信用卡 卡片介紹"
+      },
+      "promo_index": {
+        "url": "https://ecard.bot.com.tw/Pages/Service/P1.html",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "臺灣銀行 信用卡 卡友權益"
+      },
+      "registries": [
+        {
+          "registry": "fsc_cc_stats",
+          "source_url": "https://data.gov.tw/dataset/45209",
+          "listed_name": "臺灣銀行",
+          "as_of": "2026-08",
+          "verified_date": "2026-10-19"
+        },
+        {
+          "registry": "fsc_epay_bank",
+          "source_url": "https://www.banking.gov.tw/ch/home.jsp?id=606&parentpath=0,590,604&mcustomize=FscSearch_BankType.jsp&type=H21",
+          "code": "004",
+          "verified_date": "2026-10-19"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "bank-cathay",
+      "name_zh": "國泰世華商業銀行",
+      "kind": "bank",
+      "fsc_listed": true,
+      "fsc_list_date": "2026-10-19",
+      "bank_code": "013",
+      "fsc_code": "013",
+      "roles": [
+        "credit_card_issuer",
+        "epay_concurrent",
+        "debit_card_issuer"
+      ],
+      "issues_credit_cards": true,
+      "official_url": "https://www.cathaybk.com.tw/",
+      "card_list": {
+        "url": "https://www.cathay-cube.com.tw/cathaybk/personal/product/credit-card/cards",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "信用卡推薦：國泰世華信用卡比較、優惠與回饋｜國泰世華商業銀行",
+        "note": "頁面以 JS 渲染；標題正確"
+      },
+      "promo_index": {
+        "url": "https://www.cathay-cube.com.tw/cathaybk/personal/event/overview",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "信用卡優惠活動專區｜國泰世華商業銀行",
+        "note": "頁面以 JS 渲染；標題正確"
+      },
+      "registries": [
+        {
+          "registry": "fsc_cc_stats",
+          "source_url": "https://data.gov.tw/dataset/45209",
+          "listed_name": "國泰世華商業銀行",
+          "as_of": "2026-08",
+          "verified_date": "2026-10-19"
+        },
+        {
+          "registry": "fsc_epay_bank",
+          "source_url": "https://www.banking.gov.tw/ch/home.jsp?id=606&parentpath=0,590,604&mcustomize=FscSearch_BankType.jsp&type=H21",
+          "code": "013",
+          "verified_date": "2026-10-19"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "bank-chb",
+      "name_zh": "彰化商業銀行",
+      "kind": "bank",
+      "fsc_listed": true,
+      "fsc_list_date": "2026-10-19",
+      "bank_code": "009",
+      "fsc_code": "009",
+      "roles": [
+        "debit_card_issuer",
+        "credit_card_issuer",
+        "epay_concurrent"
+      ],
+      "issues_credit_cards": true,
+      "official_url": "https://www.bankchb.com/",
+      "card_list": {
+        "url": "https://www.bankchb.com/frontend/subarea.jsp?funcId=f1f12f6d15",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "彰化銀行-信用卡"
+      },
+      "promo_index": {
+        "url": "https://www.bankchb.com/frontend/mashup.jsp?funcId=31c9490515",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "彰化銀行-國際組織優惠專區"
+      },
+      "registries": [
+        {
+          "registry": "fsc_cc_stats",
+          "source_url": "https://data.gov.tw/dataset/45209",
+          "listed_name": "彰化商業銀行",
+          "as_of": "2026-08",
+          "verified_date": "2026-10-19"
+        },
+        {
+          "registry": "fsc_epay_bank",
+          "source_url": "https://www.banking.gov.tw/ch/home.jsp?id=606&parentpath=0,590,604&mcustomize=FscSearch_BankType.jsp&type=H21",
+          "code": "009",
+          "verified_date": "2026-10-19"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "bank-citi",
+      "name_zh": "花旗（台灣）商業銀行",
+      "kind": "bank",
+      "fsc_listed": true,
+      "fsc_list_date": "2026-10-19",
+      "bank_code": "021",
+      "fsc_code": "021",
+      "roles": [
+        "credit_card_issuer"
+      ],
+      "issues_credit_cards": true,
+      "official_url": "https://www.citibank.com.tw/",
+      "card_list": {
+        "url": "https://www.citibank.com.tw/",
+        "status": 200,
+        "result": "generic",
+        "checked": "2026-10-19",
+        "title": "Citi 台灣",
+        "note": "轉址到 Citigroup 台灣介紹頁；花旗台灣消費金融業務已於 2023 年轉讓星展，此處僅存檔"
+      },
+      "promo_index": {
+        "url": null,
+        "status": null,
+        "result": "missing",
+        "checked": "2026-10-19",
+        "note": "尚未找到官方頁面"
+      },
+      "registries": [
+        {
+          "registry": "fsc_cc_stats",
+          "source_url": "https://data.gov.tw/dataset/45209",
+          "listed_name": "花旗(台灣)商業銀行",
+          "as_of": "2026-08",
+          "verified_date": "2026-10-19"
+        }
+      ],
+      "active": true,
+      "notes": "花旗台灣消費金融業務（含信用卡）已於 2023 年轉讓予星展銀行；金管會 2026/8 統計仍列有少量流通卡"
+    },
+    {
+      "id": "bank-cota",
+      "name_zh": "三信商業銀行",
+      "kind": "bank",
+      "fsc_listed": true,
+      "fsc_list_date": "2026-10-19",
+      "bank_code": "147",
+      "fsc_code": "147",
+      "roles": [
+        "credit_card_issuer"
+      ],
+      "issues_credit_cards": true,
+      "official_url": "https://www.cotabank.com.tw/",
+      "card_list": {
+        "url": "https://www.cotabank.com.tw/card/",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "三信商業銀行信用卡中心"
+      },
+      "promo_index": {
+        "url": null,
+        "status": null,
+        "result": "missing",
+        "checked": "2026-10-19",
+        "note": "尚未找到官方頁面"
+      },
+      "registries": [
+        {
+          "registry": "fsc_cc_stats",
+          "source_url": "https://data.gov.tw/dataset/45209",
+          "listed_name": "三信商業銀行",
+          "as_of": "2026-08",
+          "verified_date": "2026-10-19"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "bank-ctbc",
+      "name_zh": "中國信託商業銀行",
+      "kind": "bank",
+      "fsc_listed": true,
+      "fsc_list_date": "2026-10-19",
+      "bank_code": "822",
+      "fsc_code": "822",
+      "roles": [
+        "credit_card_issuer",
+        "epay_concurrent",
+        "debit_card_issuer"
+      ],
+      "issues_credit_cards": true,
+      "official_url": "https://www.ctbcbank.com/",
+      "card_list": {
+        "url": "https://www.ctbcbank.com/twrbo/zh_tw/cc_index/cc_product/cc_introduction_index.html",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "信用卡 - 中國信託"
+      },
+      "promo_index": {
+        "url": "https://www.ctbcbank.com/web/content/twrbo/zh_tw/cc_index.html",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "信用卡/支付 - 中國信託"
+      },
+      "registries": [
+        {
+          "registry": "fsc_cc_stats",
+          "source_url": "https://data.gov.tw/dataset/45209",
+          "listed_name": "中國信託商業銀行",
+          "as_of": "2026-08",
+          "verified_date": "2026-10-19"
+        },
+        {
+          "registry": "fsc_epay_bank",
+          "source_url": "https://www.banking.gov.tw/ch/home.jsp?id=606&parentpath=0,590,604&mcustomize=FscSearch_BankType.jsp&type=H21",
+          "code": "822",
+          "verified_date": "2026-10-19"
+        }
+      ],
+      "active": true,
+      "revolving_rate": {
+        "text_zh": "信用卡循環年利率：ARMs 指數 + 加碼利率（5.97%~13.47%），上限 15%（基準日 104/9/1）；預借現金手續費為預借金額 × 3.5% + NT$150",
+        "source_id": "src-ctbc-uniopen"
+      },
+      "general_exclusions": [
+        {
+          "applies_to": [
+            "credit"
+          ],
+          "source_id": "src-ctbc-nofeedback-2026",
+          "exclusions": [
+            {
+              "id": "x-tuition",
+              "label_zh": "學費",
+              "category_ids": [
+                "tuition"
+              ],
+              "source_id": "src-ctbc-nofeedback-2026",
+              "quote": "學費、稅款、社區管理費"
+            },
+            {
+              "id": "x-tax",
+              "label_zh": "稅款、違規罰緩、政府規費、燃料費",
+              "category_ids": [
+                "tax"
+              ],
+              "source_id": "src-ctbc-nofeedback-2026",
+              "quote": "稅款、社區管理費、違規罰緩、政府規費"
+            },
+            {
+              "id": "x-util",
+              "label_zh": "公用事業費用代扣繳（台電、省水、市水、瓦斯）",
+              "category_ids": [
+                "utilities"
+              ],
+              "source_id": "src-ctbc-nofeedback-2026",
+              "quote": "公用事業費用代扣繳"
+            },
+            {
+              "id": "x-medical",
+              "label_zh": "公立醫療機構費用、醫療費、健保費",
+              "category_ids": [
+                "medical"
+              ],
+              "source_id": "src-ctbc-nofeedback-2026",
+              "quote": "公務機關及公立 醫療機構之相關費用"
+            },
+            {
+              "id": "x-street-parking",
+              "label_zh": "縣市路邊停車費",
+              "category_ids": [
+                "street_parking"
+              ],
+              "source_id": "src-ctbc-nofeedback-2026",
+              "quote": "縣市路邊停車費"
+            },
+            {
+              "id": "x-stored",
+              "label_zh": "儲值卡、儲值金（含自動儲值）",
+              "category_ids": [
+                "stored_value"
+              ],
+              "source_id": "src-ctbc-nofeedback-2026",
+              "quote": "儲值卡、儲值金(含自動儲值)"
+            },
+            {
+              "id": "x-micro",
+              "label_zh": "聯合信用卡處理中心小額支付平台",
+              "micropay": true,
+              "source_id": "src-ctbc-nofeedback-2026",
+              "quote": "聯合信用卡處理中心小額支付平台等"
+            },
+            {
+              "id": "x-tel",
+              "label_zh": "電信費用（各型態繳費方式）",
+              "merchant_ids": [
+                "telecom-generic",
+                "cht-bill",
+                "taiwanmobile-bill"
+              ],
+              "source_id": "src-ctbc-nofeedback-2026",
+              "quote": "電信費用(含實體刷卡、網際網路、行動支付 APP、約定扣繳等各型態繳費方式)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bank-dbs",
+      "name_zh": "星展（台灣）商業銀行",
+      "kind": "bank",
+      "fsc_listed": true,
+      "fsc_list_date": "2026-10-19",
+      "bank_code": "810",
+      "fsc_code": "810",
+      "roles": [
+        "debit_card_issuer",
+        "credit_card_issuer"
+      ],
+      "issues_credit_cards": true,
+      "official_url": "https://www.dbs.com.tw/",
+      "card_list": {
+        "url": "https://www.dbs.com.tw/personal-zh/cards/default.page",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "星展信用卡推薦｜信用卡首刷禮、各項專屬禮遇優惠 | 星展銀行（台灣）"
+      },
+      "promo_index": {
+        "url": "https://www.dbs.com.tw/personal-zh/cards/cards-offers/default.page",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "星展信用卡優惠｜立即查看最新優惠 | 星展銀行（台灣）"
+      },
+      "registries": [
+        {
+          "registry": "fsc_cc_stats",
+          "source_url": "https://data.gov.tw/dataset/45209",
+          "listed_name": "星展(台灣)商業銀行",
+          "as_of": "2026-08",
+          "verified_date": "2026-10-19"
+        }
+      ],
+      "active": true,
+      "revolving_rate": {
+        "text_zh": "循環信用利率 5.99%–14.99%（基準日 113/6/28）；預借現金手續費為預借金額 × 3.5% + 100 元",
+        "source_id": "src-dbs-eco"
+      }
+    },
+    {
+      "id": "bank-entie",
+      "name_zh": "安泰商業銀行",
+      "kind": "bank",
+      "fsc_listed": true,
+      "fsc_list_date": "2026-10-19",
+      "bank_code": "816",
+      "fsc_code": "816",
+      "roles": [
+        "credit_card_issuer"
+      ],
+      "issues_credit_cards": true,
+      "official_url": "https://www.entiebank.com.tw/",
+      "card_list": {
+        "url": "https://www.entiebank.com.tw/entie/0.1.6.7",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "EnTie-Web"
+      },
+      "promo_index": {
+        "url": "https://www.entiebank.com.tw/entie/1_3_2_300",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "EnTie-Web"
+      },
+      "registries": [
+        {
+          "registry": "fsc_cc_stats",
+          "source_url": "https://data.gov.tw/dataset/45209",
+          "listed_name": "安泰商業銀行",
+          "as_of": "2026-08",
+          "verified_date": "2026-10-19"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "bank-esun",
+      "name_zh": "玉山商業銀行",
+      "kind": "bank",
+      "fsc_listed": true,
+      "fsc_list_date": "2026-10-19",
+      "bank_code": "808",
+      "fsc_code": "808",
+      "roles": [
+        "debit_card_issuer",
+        "credit_card_issuer",
+        "epay_concurrent"
+      ],
+      "issues_credit_cards": true,
+      "official_url": "https://www.esunbank.com/",
+      "card_list": {
+        "url": "https://www.esunbank.com/zh-tw/personal/credit-card/intro",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "信用卡介紹 - 玉山銀行"
+      },
+      "promo_index": {
+        "url": "https://www.esunbank.com/zh-tw/personal/credit-card/discount/shops",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "刷卡優惠總覽 - 玉山銀行"
+      },
+      "registries": [
+        {
+          "registry": "fsc_cc_stats",
+          "source_url": "https://data.gov.tw/dataset/45209",
+          "listed_name": "玉山商業銀行",
+          "as_of": "2026-08",
+          "verified_date": "2026-10-19"
+        },
+        {
+          "registry": "fsc_epay_bank",
+          "source_url": "https://www.banking.gov.tw/ch/home.jsp?id=606&parentpath=0,590,604&mcustomize=FscSearch_BankType.jsp&type=H21",
+          "code": "808",
+          "verified_date": "2026-10-19"
+        }
+      ],
+      "active": true,
+      "general_exclusions": [
+        {
+          "applies_to": [
+            "credit"
+          ],
+          "source_id": "src-esun-notice-esuna-r11",
+          "exclusions": [
+            {
+              "id": "x-tax",
+              "label_zh": "查核（定）稅款、政府規費",
+              "category_ids": [
+                "tax"
+              ],
+              "source_id": "src-esun-notice-esuna-r11",
+              "quote": "查核 (定) 稅款"
+            },
+            {
+              "id": "x-tuition",
+              "label_zh": "學費",
+              "category_ids": [
+                "tuition"
+              ],
+              "source_id": "src-esun-notice-esuna-r11",
+              "quote": "學費 (如i繳費平台及學費通繳費平臺等)"
+            },
+            {
+              "id": "x-medical",
+              "label_zh": "醫療費用",
+              "category_ids": [
+                "medical"
+              ],
+              "source_id": "src-esun-notice-esuna-r11",
+              "quote": "醫療費用、政府規費"
+            },
+            {
+              "id": "x-micro",
+              "label_zh": "聯合信用卡處理中心小額支付特約商店",
+              "micropay": true,
+              "source_id": "src-esun-notice-esuna-r11",
+              "quote": "透過「聯合信用卡處理中心」提供之信用卡小額支付特約商店"
+            },
+            {
+              "id": "x-util",
+              "label_zh": "代扣繳台電、自來水、瓦斯費",
+              "category_ids": [
+                "utilities"
+              ],
+              "source_id": "src-esun-notice-esuna-r11",
+              "quote": "台灣電力公司、台灣自來水公司、台北自來水事業處、瓦斯費"
+            },
+            {
+              "id": "x-street-parking",
+              "label_zh": "各縣市路邊停車費代扣繳",
+              "category_ids": [
+                "street_parking"
+              ],
+              "source_id": "src-esun-notice-esuna-r11",
+              "quote": "各縣市路邊停車費、中華電信及民營電信"
+            },
+            {
+              "id": "x-tel",
+              "label_zh": "代扣繳中華電信及民營電信",
+              "merchant_ids": [
+                "telecom-generic",
+                "cht-bill",
+                "taiwanmobile-bill"
+              ],
+              "source_id": "src-esun-notice-esuna-r11",
+              "quote": "各縣市路邊停車費、中華電信及民營電信"
+            },
+            {
+              "id": "x-stored",
+              "label_zh": "儲值卡及電子支付儲值（含自動儲值）",
+              "category_ids": [
+                "stored_value"
+              ],
+              "source_id": "src-esun-notice-esuna-r11",
+              "quote": "儲值卡 (原電子票證) 儲值金 (含自動儲值)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bank-feib",
+      "name_zh": "遠東國際商業銀行",
+      "kind": "bank",
+      "fsc_listed": true,
+      "fsc_list_date": "2026-10-19",
+      "bank_code": "805",
+      "fsc_code": "805",
+      "roles": [
+        "debit_card_issuer",
+        "credit_card_issuer",
+        "epay_concurrent"
+      ],
+      "issues_credit_cards": true,
+      "official_url": "https://www.feib.com.tw/",
+      "card_list": {
+        "url": "https://www.feib.com.tw/introduce/cardInfo?type=1",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "卡片介紹"
+      },
+      "promo_index": {
+        "url": "https://www.feib.com.tw/detail?id=479",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "各類申請分期優惠活動"
+      },
+      "registries": [
+        {
+          "registry": "fsc_cc_stats",
+          "source_url": "https://data.gov.tw/dataset/45209",
+          "listed_name": "遠東國際商業銀行",
+          "as_of": "2026-08",
+          "verified_date": "2026-10-19"
+        },
+        {
+          "registry": "fsc_epay_bank",
+          "source_url": "https://www.banking.gov.tw/ch/home.jsp?id=606&parentpath=0,590,604&mcustomize=FscSearch_BankType.jsp&type=H21",
+          "code": "805",
+          "verified_date": "2026-10-19"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "bank-firstbank",
+      "name_zh": "第一商業銀行",
+      "kind": "bank",
+      "fsc_listed": true,
+      "fsc_list_date": "2026-10-19",
+      "bank_code": "007",
+      "fsc_code": "007",
+      "roles": [
+        "credit_card_issuer",
+        "epay_concurrent",
+        "debit_card_issuer"
+      ],
+      "issues_credit_cards": true,
+      "official_url": "https://www.firstbank.com.tw/",
+      "card_list": {
+        "url": "https://card.firstbank.com.tw/sites/card/touch/1565690685468",
+        "status": 403,
+        "result": "blocked",
+        "checked": "2026-10-19",
+        "title": "Access Denied",
+        "note": "銀行網站對自動化 curl 回 403；以另一個抓取工具確認頁面可載入（2026-10-19）"
+      },
+      "promo_index": {
+        "url": "https://card.firstbank.com.tw/sites/card/touch/1565690686288",
+        "status": 403,
+        "result": "blocked",
+        "checked": "2026-10-19",
+        "title": "Access Denied",
+        "note": "同上；WebFetch 可載入"
+      },
+      "registries": [
+        {
+          "registry": "fsc_cc_stats",
+          "source_url": "https://data.gov.tw/dataset/45209",
+          "listed_name": "第一商業銀行",
+          "as_of": "2026-08",
+          "verified_date": "2026-10-19"
+        },
+        {
+          "registry": "fsc_epay_bank",
+          "source_url": "https://www.banking.gov.tw/ch/home.jsp?id=606&parentpath=0,590,604&mcustomize=FscSearch_BankType.jsp&type=H21",
+          "code": "007",
+          "verified_date": "2026-10-19"
+        }
+      ],
+      "active": true,
+      "revolving_rate": {
+        "text_zh": "差別循環利率：浮動為一銀放款基準利率 + 2.31%–9.31%，固定為 15%，最高 15%（基準日 2015/9/1）；預借現金手續費為預借金額 × 3.5%（最低 100 元）",
+        "source_id": "src-firstbank-ileo"
+      },
+      "general_exclusions": [
+        {
+          "applies_to": [
+            "credit"
+          ],
+          "source_id": "src-firstbank-general-def-r11",
+          "exclusions": [
+            {
+              "id": "x-tax",
+              "label_zh": "稅款、學費、公用事業費不算一般消費",
+              "category_ids": [
+                "tax",
+                "tuition",
+                "utilities"
+              ],
+              "source_id": "src-firstbank-general-def-r11",
+              "quote": "自動加值金、稅款、基金、境外投資交易平臺(如eToro…等)之交易款項及費用、TikTok平台交易、學費、公用事業費、路邊停車費"
+            },
+            {
+              "id": "x-street-park",
+              "label_zh": "路邊停車費不算一般消費",
+              "category_ids": [
+                "street_parking"
+              ],
+              "source_id": "src-firstbank-general-def-r11",
+              "quote": "自動加值金、稅款、基金、境外投資交易平臺(如eToro…等)之交易款項及費用、TikTok平台交易、學費、公用事業費、路邊停車費"
+            },
+            {
+              "id": "x-stored",
+              "label_zh": "自動加值金不算一般消費",
+              "category_ids": [
+                "stored_value"
+              ],
+              "source_id": "src-firstbank-general-def-r11",
+              "quote": "自動加值金、稅款、基金、境外投資交易平臺(如eToro…等)之交易款項及費用、TikTok平台交易、學費、公用事業費、路邊停車費"
+            },
+            {
+              "id": "x-micro",
+              "label_zh": "聯合信用卡處理中心小額支付平台特約商店（如便利超商、速食店、停車費）不算一般消費",
+              "micropay": true,
+              "source_id": "src-firstbank-general-def-r11",
+              "quote": "透過聯合信用卡處理中心小額支付平台之特約商店之消費"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bank-fubon",
+      "name_zh": "台北富邦商業銀行",
+      "kind": "bank",
+      "fsc_listed": true,
+      "fsc_list_date": "2026-10-19",
+      "bank_code": "012",
+      "fsc_code": "012",
+      "roles": [
+        "credit_card_issuer",
+        "epay_concurrent",
+        "debit_card_issuer"
+      ],
+      "issues_credit_cards": true,
+      "official_url": "https://www.fubon.com/banking/",
+      "card_list": {
+        "url": "https://www.fubon.com/banking/personal/credit_card/all_card/all_card.htm",
+        "status": 0,
+        "result": "blocked",
+        "checked": "2026-10-19",
+        "note": "box curl 逾時；WebFetch 可載入並看到卡片總覽"
+      },
+      "promo_index": {
+        "url": "https://cardpromote.taipeifubon.com.tw/promotion",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "富邦信用卡-一卡在手，盡享優惠樂趣無窮"
+      },
+      "registries": [
+        {
+          "registry": "fsc_cc_stats",
+          "source_url": "https://data.gov.tw/dataset/45209",
+          "listed_name": "台北富邦銀行",
+          "as_of": "2026-08",
+          "verified_date": "2026-10-19"
+        },
+        {
+          "registry": "fsc_epay_bank",
+          "source_url": "https://www.banking.gov.tw/ch/home.jsp?id=606&parentpath=0,590,604&mcustomize=FscSearch_BankType.jsp&type=H21",
+          "code": "012",
+          "verified_date": "2026-10-19"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "bank-hncb",
+      "name_zh": "華南商業銀行",
+      "kind": "bank",
+      "fsc_listed": true,
+      "fsc_list_date": "2026-10-19",
+      "bank_code": "008",
+      "fsc_code": "008",
+      "roles": [
+        "credit_card_issuer",
+        "debit_card_issuer"
+      ],
+      "issues_credit_cards": true,
+      "official_url": "https://www.hncb.com.tw/",
+      "card_list": {
+        "url": "https://www.hncb.com.tw/wps/portal/HNCB/card/introduce/othercard/cards_overview",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "卡片總覽"
+      },
+      "promo_index": {
+        "url": "https://www.hncb.com.tw/wps/portal/HNCB/card",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "信用卡：華南銀行"
+      },
+      "registries": [
+        {
+          "registry": "fsc_cc_stats",
+          "source_url": "https://data.gov.tw/dataset/45209",
+          "listed_name": "華南商業銀行",
+          "as_of": "2026-08",
+          "verified_date": "2026-10-19"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "bank-hsbc",
+      "name_zh": "滙豐（台灣）商業銀行",
+      "kind": "bank",
+      "fsc_listed": true,
+      "fsc_list_date": "2026-10-19",
+      "bank_code": "081",
+      "fsc_code": "081",
+      "roles": [
+        "credit_card_issuer"
+      ],
+      "issues_credit_cards": true,
+      "official_url": "https://www.hsbc.com.tw/",
+      "card_list": {
+        "url": "https://www.hsbc.com.tw/credit-cards/",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "信用卡 | 信用卡介紹、刷卡優惠及線上申辦 - 滙豐（台灣）"
+      },
+      "promo_index": {
+        "url": "https://www.hsbc.com.tw/offers/",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "優惠 - 滙豐(台灣)"
+      },
+      "registries": [
+        {
+          "registry": "fsc_cc_stats",
+          "source_url": "https://data.gov.tw/dataset/45209",
+          "listed_name": "滙豐(台灣)商業銀行",
+          "as_of": "2026-08",
+          "verified_date": "2026-10-19"
+        }
+      ],
+      "active": true,
+      "revolving_rate": {
+        "text_zh": "循環信用利率 5.68%–15.00%（基準日 104/9/1）；預借現金手續費每筆 100 元 + 預借金額 × 3.5%",
+        "source_id": "src-hsbc-liveplus"
+      }
+    },
+    {
+      "id": "bank-hwatai",
+      "name_zh": "華泰商業銀行",
+      "kind": "bank",
+      "fsc_listed": true,
+      "fsc_list_date": "2026-10-19",
+      "bank_code": "102",
+      "fsc_code": "102",
+      "roles": [
+        "credit_card_issuer"
+      ],
+      "issues_credit_cards": true,
+      "official_url": "https://www.hwataibank.com.tw/",
+      "card_list": {
+        "url": "https://www.hwataibank.com.tw/personal/card01-02-01/",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "申請條件 – 華泰銀行"
+      },
+      "promo_index": {
+        "url": "https://www.hwataibank.com.tw/home02/home02-07/",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "聰明刷卡快速累積優惠紅利回饋 – 華泰銀行"
+      },
+      "registries": [
+        {
+          "registry": "fsc_cc_stats",
+          "source_url": "https://data.gov.tw/dataset/45209",
+          "listed_name": "華泰商業銀行",
+          "as_of": "2026-08",
+          "verified_date": "2026-10-19"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "bank-kgi",
+      "name_zh": "凱基商業銀行",
+      "kind": "bank",
+      "fsc_listed": true,
+      "fsc_list_date": "2026-10-19",
+      "bank_code": "809",
+      "fsc_code": "809",
+      "roles": [
+        "credit_card_issuer"
+      ],
+      "issues_credit_cards": true,
+      "official_url": "https://www.kgibank.com.tw/",
+      "card_list": {
+        "url": "https://www.kgibank.com.tw/zh-tw/personal/credit-card/list",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "各項信用卡介紹 - 申辦凱基信用卡 放大你的消費回饋 - 凱基銀行 KGI Bank"
+      },
+      "promo_index": {
+        "url": "https://www.kgibank.com.tw/zh-tw/personal/promotion/card-campaign?category=All",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "信用卡優惠活動－各項刷卡活動、信用卡活動登錄 - 凱基銀行 KGI Bank"
+      },
+      "registries": [
+        {
+          "registry": "fsc_cc_stats",
+          "source_url": "https://data.gov.tw/dataset/45209",
+          "listed_name": "凱基商業銀行",
+          "as_of": "2026-08",
+          "verified_date": "2026-10-19"
+        }
+      ],
+      "active": true,
+      "revolving_rate": {
+        "text_zh": "循環信用年利率 6.25%–15%（基準日 104/9/1）；預借現金手續費每筆預借金額 × 3.5% + 100 元",
+        "source_id": "src-kgi-morebuy"
+      },
+      "general_exclusions": [
+        {
+          "applies_to": [
+            "credit"
+          ],
+          "source_id": "src-kgi-general-consumption-r11",
+          "exclusions": [
+            {
+              "id": "x-autoload",
+              "label_zh": "悠遊卡自動加值",
+              "category_ids": [
+                "stored_value"
+              ],
+              "payment_methods": [
+                "easycard_autoload"
+              ],
+              "source_id": "src-kgi-general-consumption-r11",
+              "quote": "悠遊卡自動加值"
+            },
+            {
+              "id": "x-tax",
+              "label_zh": "各項稅款、政府規費、交通罰款",
+              "category_ids": [
+                "tax"
+              ],
+              "source_id": "src-kgi-general-consumption-r11",
+              "quote": "各項稅款之繳納(包括綜合所得稅"
+            },
+            {
+              "id": "x-tuition",
+              "label_zh": "學雜費",
+              "category_ids": [
+                "tuition"
+              ],
+              "source_id": "src-kgi-general-consumption-r11",
+              "quote": "旅行支票、學雜費、透過各繳費平台"
+            },
+            {
+              "id": "x-payplatform",
+              "label_zh": "各繳費平台繳納之費用（如台灣大哥大電信費用）",
+              "merchant_ids": [
+                "taiwanmobile-bill"
+              ],
+              "source_id": "src-kgi-general-consumption-r11",
+              "quote": "電子化繳費稅處理平台繳納之各項費用(如台灣大哥大電信費用)"
+            },
+            {
+              "id": "x-micro",
+              "label_zh": "聯合信用卡處理中心小額支付平台特店（便利超商、速食店、停車費）",
+              "micropay": true,
+              "source_id": "src-kgi-general-consumption-r11",
+              "quote": "之特約商店之消費(如便利超商、速食店、停車費等行業)"
+            },
+            {
+              "id": "x-parking",
+              "label_zh": "行動支付之停車費、公用事業費用中的停車費",
+              "category_ids": [
+                "parking"
+              ],
+              "source_id": "src-kgi-general-consumption-r11",
+              "quote": "瓦斯費、停車費等)"
+            },
+            {
+              "id": "x-cht",
+              "label_zh": "中華電信話費",
+              "merchant_ids": [
+                "cht-bill"
+              ],
+              "source_id": "src-kgi-general-consumption-r11",
+              "quote": "中華電信話費"
+            },
+            {
+              "id": "x-util",
+              "label_zh": "公用事業費用（水、電、瓦斯）",
+              "category_ids": [
+                "utilities"
+              ],
+              "source_id": "src-kgi-general-consumption-r11",
+              "quote": "公用事業費用(如水費、電費、瓦斯費"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bank-landbank",
+      "name_zh": "臺灣土地銀行",
+      "kind": "bank",
+      "fsc_listed": true,
+      "fsc_list_date": "2026-10-19",
+      "bank_code": "005",
+      "fsc_code": "005",
+      "roles": [
+        "debit_card_issuer",
+        "credit_card_issuer",
+        "epay_concurrent"
+      ],
+      "issues_credit_cards": true,
+      "official_url": "https://www.landbank.com.tw/",
+      "card_list": {
+        "url": "https://www.landbank.com.tw/Category/Items/%E4%BF%A1%E7%94%A8%E5%8D%A1%E5%B0%88%E5%8D%80",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "信用卡-信用卡宣導及常見問題-信用卡專區"
+      },
+      "promo_index": {
+        "url": "https://www.landbank.com.tw/Category/Bulletins/%E4%BF%A1%E7%94%A8%E5%8D%A1%E6%9C%80%E6%96%B0%E6%B6%88%E6%81%AF",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "信用卡-信用卡最新消息"
+      },
+      "registries": [
+        {
+          "registry": "fsc_cc_stats",
+          "source_url": "https://data.gov.tw/dataset/45209",
+          "listed_name": "臺灣土地銀行",
+          "as_of": "2026-08",
+          "verified_date": "2026-10-19"
+        },
+        {
+          "registry": "fsc_epay_bank",
+          "source_url": "https://www.banking.gov.tw/ch/home.jsp?id=606&parentpath=0,590,604&mcustomize=FscSearch_BankType.jsp&type=H21",
+          "code": "005",
+          "verified_date": "2026-10-19"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "bank-linebank",
+      "name_zh": "連線商業銀行（LINE Bank）",
+      "kind": "bank",
+      "fsc_listed": false,
+      "fsc_list_date": null,
+      "bank_code": "824",
+      "fsc_code": "824",
+      "roles": [
+        "debit_card_issuer"
+      ],
+      "issues_credit_cards": false,
+      "official_url": "https://www.linebank.com.tw/",
+      "card_list": {
+        "url": null,
+        "status": null,
+        "result": "missing",
+        "checked": "2026-10-19",
+        "note": "尚未找到官方頁面"
+      },
+      "promo_index": {
+        "url": null,
+        "status": null,
+        "result": "missing",
+        "checked": "2026-10-19",
+        "note": "尚未找到官方頁面"
+      },
+      "registries": [
+        {
+          "registry": "none",
+          "source_url": "https://www.linebank.com.tw/faq/05",
+          "verified_date": "2026-10-19",
+          "note": "非金管會信用卡發卡統計名單；為簽帳金融卡發行銀行"
+        }
+      ],
+      "active": true,
+      "notes": "純網路銀行；發行簽帳金融卡「快點卡」。本站的金管會信用卡發卡名單未列此行（官網新聞提到聯名信用卡，發卡方式未查證）。銀行代碼 824"
+    },
+    {
+      "id": "bank-mega",
+      "name_zh": "兆豐國際商業銀行",
+      "kind": "bank",
+      "fsc_listed": true,
+      "fsc_list_date": "2026-10-19",
+      "bank_code": "017",
+      "fsc_code": "017",
+      "roles": [
+        "debit_card_issuer",
+        "credit_card_issuer",
+        "epay_concurrent"
+      ],
+      "issues_credit_cards": true,
+      "official_url": "https://www.megabank.com.tw/",
+      "card_list": {
+        "url": "https://www.megabank.com.tw/personal/credit-card/card/overview",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "卡片總覽"
+      },
+      "promo_index": {
+        "url": "https://www.megabank.com.tw/personal/credit-card/event/overview",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "優惠總覽"
+      },
+      "registries": [
+        {
+          "registry": "fsc_cc_stats",
+          "source_url": "https://data.gov.tw/dataset/45209",
+          "listed_name": "兆豐國際商業銀行",
+          "as_of": "2026-08",
+          "verified_date": "2026-10-19"
+        },
+        {
+          "registry": "fsc_epay_bank",
+          "source_url": "https://www.banking.gov.tw/ch/home.jsp?id=606&parentpath=0,590,604&mcustomize=FscSearch_BankType.jsp&type=H21",
+          "code": "017",
+          "verified_date": "2026-10-19"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "bank-nextbank",
+      "name_zh": "將來商業銀行（NEXT BANK）",
+      "kind": "bank",
+      "fsc_listed": false,
+      "fsc_list_date": null,
+      "bank_code": "823",
+      "fsc_code": "823",
+      "roles": [
+        "debit_card_issuer"
+      ],
+      "issues_credit_cards": false,
+      "official_url": "https://www.nextbank.com.tw/",
+      "card_list": {
+        "url": null,
+        "status": null,
+        "result": "missing",
+        "checked": "2026-10-19",
+        "note": "尚未找到官方頁面"
+      },
+      "promo_index": {
+        "url": null,
+        "status": null,
+        "result": "missing",
+        "checked": "2026-10-19",
+        "note": "尚未找到官方頁面"
+      },
+      "registries": [
+        {
+          "registry": "none",
+          "source_url": "https://www.nextbank.com.tw/product/card",
+          "verified_date": "2026-10-19",
+          "note": "非金管會信用卡發卡統計名單；為簽帳金融卡發行銀行"
+        }
+      ],
+      "active": true,
+      "notes": "純網路銀行；發行簽帳金融卡「將將卡」「大將卡」。銀行代碼 823"
+    },
+    {
+      "id": "bank-obank",
+      "name_zh": "王道商業銀行",
+      "kind": "bank",
+      "fsc_listed": false,
+      "fsc_list_date": null,
+      "bank_code": "048",
+      "fsc_code": "048",
+      "roles": [
+        "debit_card_issuer"
+      ],
+      "issues_credit_cards": false,
+      "official_url": "https://www.o-bank.com/",
+      "card_list": {
+        "url": null,
+        "status": null,
+        "result": "missing",
+        "checked": "2026-10-19",
+        "note": "尚未找到官方頁面"
+      },
+      "promo_index": {
+        "url": null,
+        "status": null,
+        "result": "missing",
+        "checked": "2026-10-19",
+        "note": "尚未找到官方頁面"
+      },
+      "registries": [
+        {
+          "registry": "none",
+          "source_url": "https://www.o-bank.com/",
+          "verified_date": "2026-10-19",
+          "note": "非金管會信用卡發卡統計名單；為簽帳金融卡發行銀行"
+        }
+      ],
+      "active": true,
+      "notes": "不發行信用卡；發行簽帳金融卡。銀行代碼 048"
+    },
+    {
+      "id": "bank-sc",
+      "name_zh": "渣打國際商業銀行",
+      "kind": "bank",
+      "fsc_listed": true,
+      "fsc_list_date": "2026-10-19",
+      "bank_code": "052",
+      "fsc_code": "052",
+      "roles": [
+        "debit_card_issuer",
+        "credit_card_issuer"
+      ],
+      "issues_credit_cards": true,
+      "official_url": "https://www.sc.com/tw/",
+      "card_list": {
+        "url": "https://www.sc.com/tw/credit-cards/",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "信用卡產品總覽 – 渣打銀行台灣"
+      },
+      "promo_index": {
+        "url": "https://www.sc.com/tw/promotions/credit-cards/",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "credit-cards"
+      },
+      "registries": [
+        {
+          "registry": "fsc_cc_stats",
+          "source_url": "https://data.gov.tw/dataset/45209",
+          "listed_name": "渣打國際商業銀行",
+          "as_of": "2026-08",
+          "verified_date": "2026-10-19"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "bank-scsb",
+      "name_zh": "上海商業儲蓄銀行",
+      "kind": "bank",
+      "fsc_listed": true,
+      "fsc_list_date": "2026-10-19",
+      "bank_code": "011",
+      "fsc_code": "011",
+      "roles": [
+        "debit_card_issuer",
+        "credit_card_issuer",
+        "epay_concurrent"
+      ],
+      "issues_credit_cards": true,
+      "official_url": "https://www.scsb.com.tw/",
+      "card_list": {
+        "url": "https://www.scsb.com.tw/content/card",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "上海商業儲蓄銀行"
+      },
+      "promo_index": {
+        "url": "https://www.scsb.com.tw/content/card/hotList",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "上海商業儲蓄銀行"
+      },
+      "registries": [
+        {
+          "registry": "fsc_cc_stats",
+          "source_url": "https://data.gov.tw/dataset/45209",
+          "listed_name": "上海商業儲蓄銀行",
+          "as_of": "2026-08",
+          "verified_date": "2026-10-19"
+        },
+        {
+          "registry": "fsc_epay_bank",
+          "source_url": "https://www.banking.gov.tw/ch/home.jsp?id=606&parentpath=0,590,604&mcustomize=FscSearch_BankType.jsp&type=H21",
+          "code": "011",
+          "verified_date": "2026-10-19"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "bank-sinopac",
+      "name_zh": "永豐商業銀行",
+      "kind": "bank",
+      "fsc_listed": true,
+      "fsc_list_date": "2026-10-19",
+      "bank_code": "807",
+      "fsc_code": "807",
+      "roles": [
+        "credit_card_issuer",
+        "epay_concurrent",
+        "debit_card_issuer"
+      ],
+      "issues_credit_cards": true,
+      "official_url": "https://bank.sinopac.com/",
+      "card_list": {
+        "url": "https://bank.sinopac.com/sinopacBT/personal/credit-card/introduction/list.html",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "永豐銀行 Bank SinoPac"
+      },
+      "promo_index": {
+        "url": "https://bank.sinopac.com/sinopacBT/personal/credit-card/discount/list.html",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "永豐銀行 Bank SinoPac"
+      },
+      "registries": [
+        {
+          "registry": "fsc_cc_stats",
+          "source_url": "https://data.gov.tw/dataset/45209",
+          "listed_name": "永豐商業銀行",
+          "as_of": "2026-08",
+          "verified_date": "2026-10-19"
+        },
+        {
+          "registry": "fsc_epay_bank",
+          "source_url": "https://www.banking.gov.tw/ch/home.jsp?id=606&parentpath=0,590,604&mcustomize=FscSearch_BankType.jsp&type=H21",
+          "code": "807",
+          "verified_date": "2026-10-19"
+        }
+      ],
+      "active": true,
+      "revolving_rate": {
+        "text_zh": "循環信用利率 5%~15%（基準日 2023/3/3）；預借現金手續費為預借金額 × 3.5% + 指定金額",
+        "source_id": "src-sinopac-dawho-card"
+      },
+      "general_exclusions": [
+        {
+          "applies_to": [
+            "credit"
+          ],
+          "source_id": "src-sinopac-general-def-2026h2-r14",
+          "exclusions": [
+            {
+              "id": "x-util",
+              "label_zh": "公共事業費用",
+              "category_ids": [
+                "utilities"
+              ],
+              "source_id": "src-sinopac-general-def-2026h2-r14",
+              "quote": "公共事業費用"
+            },
+            {
+              "id": "x-stored",
+              "label_zh": "信用卡自動儲值金",
+              "category_ids": [
+                "stored_value"
+              ],
+              "source_id": "src-sinopac-general-def-2026h2-r14",
+              "quote": "信用卡自動儲值金"
+            },
+            {
+              "id": "x-tax",
+              "label_zh": "稅款、公路養管費、規費、罰款",
+              "category_ids": [
+                "tax"
+              ],
+              "source_id": "src-sinopac-general-def-2026h2-r14",
+              "quote": "稅款、公路養管費（原汽燃費）"
+            },
+            {
+              "id": "x-medical",
+              "label_zh": "醫療費",
+              "category_ids": [
+                "medical"
+              ],
+              "source_id": "src-sinopac-general-def-2026h2-r14",
+              "quote": "稅款、公路養管費（原汽燃費）、醫療費、學費、規費、罰款"
+            },
+            {
+              "id": "x-tuition",
+              "label_zh": "學費",
+              "category_ids": [
+                "tuition"
+              ],
+              "source_id": "src-sinopac-general-def-2026h2-r14",
+              "quote": "稅款、公路養管費（原汽燃費）、醫療費、學費、規費、罰款"
+            },
+            {
+              "id": "x-payplatform",
+              "label_zh": "各繳費及支付平台繳納之各項費用（含約定扣繳電信）",
+              "merchant_ids": [
+                "telecom-generic",
+                "cht-bill",
+                "taiwanmobile-bill"
+              ],
+              "source_id": "src-sinopac-general-def-2026h2-r14",
+              "quote": "透過各繳費及支付平台（舉例說明：有無繳納手續費之 i 繳費"
+            },
+            {
+              "id": "x-micro",
+              "label_zh": "聯合信用卡處理中心小額支付平台特約商店",
+              "micropay": true,
+              "source_id": "src-sinopac-general-def-2026h2-r14",
+              "quote": "透過「聯合信用卡處理中心」提供之小額支付平台特約商店"
+            },
+            {
+              "id": "x-parking",
+              "label_zh": "停車場、eTag 自動儲值與智慧停車",
+              "category_ids": [
+                "parking"
+              ],
+              "source_id": "src-sinopac-general-def-2026h2-r14",
+              "quote": "停車場等各型態付款之消費、 eTag 自動儲值、 eTag 智慧停車費用"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bank-skbank",
+      "name_zh": "臺灣新光商業銀行",
+      "kind": "bank",
+      "fsc_listed": true,
+      "fsc_list_date": "2026-10-19",
+      "bank_code": "103",
+      "fsc_code": "103",
+      "roles": [
+        "debit_card_issuer",
+        "credit_card_issuer",
+        "epay_concurrent"
+      ],
+      "issues_credit_cards": true,
+      "official_url": "https://www.skbank.com.tw/",
+      "card_list": {
+        "url": "https://www.skbank.com.tw/CC-CreditcardHome/CC-Creditcard",
+        "status": 200,
+        "result": "generic",
+        "checked": "2026-10-19",
+        "title": "新光銀行-嶄新金融服務為您呈現-新光銀行",
+        "note": "回傳通用殼頁（SPA），內容需瀏覽器渲染，待以瀏覽器複驗"
+      },
+      "promo_index": {
+        "url": "https://www.skbank.com.tw/CC-CreditcardHome/CC-Activity",
+        "status": 200,
+        "result": "generic",
+        "checked": "2026-10-19",
+        "title": "新光銀行-嶄新金融服務為您呈現-新光銀行",
+        "note": "同上"
+      },
+      "registries": [
+        {
+          "registry": "fsc_cc_stats",
+          "source_url": "https://data.gov.tw/dataset/45209",
+          "listed_name": "臺灣新光商業銀行",
+          "as_of": "2026-08",
+          "verified_date": "2026-10-19"
+        },
+        {
+          "registry": "fsc_epay_bank",
+          "source_url": "https://www.banking.gov.tw/ch/home.jsp?id=606&parentpath=0,590,604&mcustomize=FscSearch_BankType.jsp&type=H21",
+          "code": "103",
+          "verified_date": "2026-10-19"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "bank-sunny",
+      "name_zh": "陽信商業銀行",
+      "kind": "bank",
+      "fsc_listed": true,
+      "fsc_list_date": "2026-10-19",
+      "bank_code": "108",
+      "fsc_code": "108",
+      "roles": [
+        "debit_card_issuer",
+        "credit_card_issuer",
+        "epay_concurrent"
+      ],
+      "issues_credit_cards": true,
+      "official_url": "https://www.sunnybank.com.tw/",
+      "card_list": {
+        "url": "https://www.sunnybank.com.tw/net/Page/Smenu/125",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "卡片總覽"
+      },
+      "promo_index": {
+        "url": "https://www.sunnybank.com.tw/net/Main/Page/6?onews=1",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "信用卡/簽帳卡"
+      },
+      "registries": [
+        {
+          "registry": "fsc_cc_stats",
+          "source_url": "https://data.gov.tw/dataset/45209",
+          "listed_name": "陽信商業銀行",
+          "as_of": "2026-08",
+          "verified_date": "2026-10-19"
+        },
+        {
+          "registry": "fsc_epay_bank",
+          "source_url": "https://www.banking.gov.tw/ch/home.jsp?id=606&parentpath=0,590,604&mcustomize=FscSearch_BankType.jsp&type=H21",
+          "code": "108",
+          "verified_date": "2026-10-19"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "bank-taishin",
+      "name_zh": "台新國際商業銀行",
+      "kind": "bank",
+      "fsc_listed": true,
+      "fsc_list_date": "2026-10-19",
+      "bank_code": "812",
+      "fsc_code": "812",
+      "roles": [
+        "credit_card_issuer",
+        "epay_concurrent",
+        "debit_card_issuer"
+      ],
+      "issues_credit_cards": true,
+      "official_url": "https://www.taishinbank.com.tw/",
+      "card_list": {
+        "url": "https://www.taishinbank.com.tw/TSB/personal/credit/intro/overview/",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "信用卡總覽，現金回饋卡等各式信用卡回饋相關資訊 - 台新銀行"
+      },
+      "promo_index": {
+        "url": "https://www.taishinbank.com.tw/TSB/personal/credit/discount/favorable/",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "旅遊及海外購物 ： 台新銀行"
+      },
+      "registries": [
+        {
+          "registry": "fsc_cc_stats",
+          "source_url": "https://data.gov.tw/dataset/45209",
+          "listed_name": "台新國際商業銀行",
+          "as_of": "2026-08",
+          "verified_date": "2026-10-19"
+        },
+        {
+          "registry": "fsc_epay_bank",
+          "source_url": "https://www.banking.gov.tw/ch/home.jsp?id=606&parentpath=0,590,604&mcustomize=FscSearch_BankType.jsp&type=H21",
+          "code": "812",
+          "verified_date": "2026-10-19"
+        }
+      ],
+      "active": true,
+      "revolving_rate": {
+        "text_zh": "差別循環信用利率：一般消費及預借現金 2.88%~15%，依電腦評等而定（基準日 115/1/2）；預借現金手續費為預借金額 × 3.5% + NT$150",
+        "source_id": "src-taishin-restricted"
+      },
+      "general_exclusions": [
+        {
+          "applies_to": [
+            "credit"
+          ],
+          "source_id": "src-taishin-restricted-r11",
+          "exclusions": [
+            {
+              "id": "x-media",
+              "label_zh": "媒體服務（YouTube、Spotify、Apple、Google 等）",
+              "merchant_ids": [
+                "youtube-premium",
+                "spotify",
+                "apple-services",
+                "google-play",
+                "google-one"
+              ],
+              "source_id": "src-taishin-restricted-r11",
+              "quote": "YouTube、Spotify、TikTok 抖音、Apple媒體服務"
+            },
+            {
+              "id": "x-stored",
+              "label_zh": "儲值卡自動加值",
+              "category_ids": [
+                "stored_value"
+              ],
+              "source_id": "src-taishin-restricted-r11",
+              "quote": "儲值卡(如悠遊卡/icash卡/一卡通)自動加值"
+            },
+            {
+              "id": "x-util",
+              "label_zh": "代扣繳水費、電費、瓦斯費",
+              "category_ids": [
+                "utilities"
+              ],
+              "source_id": "src-taishin-restricted-r11",
+              "quote": "含水費/電費/瓦斯費、電信費、eTag自動儲值、學費等。"
+            },
+            {
+              "id": "x-tel",
+              "label_zh": "代扣繳電信費",
+              "merchant_ids": [
+                "telecom-generic",
+                "cht-bill",
+                "taiwanmobile-bill"
+              ],
+              "source_id": "src-taishin-restricted-r11",
+              "quote": "含水費/電費/瓦斯費、電信費、eTag自動儲值、學費等。"
+            },
+            {
+              "id": "x-tuition",
+              "label_zh": "代扣繳學費",
+              "category_ids": [
+                "tuition"
+              ],
+              "source_id": "src-taishin-restricted-r11",
+              "quote": "含水費/電費/瓦斯費、電信費、eTag自動儲值、學費等。"
+            },
+            {
+              "id": "x-street-parking",
+              "label_zh": "各縣市路邊停車費",
+              "category_ids": [
+                "street_parking"
+              ],
+              "source_id": "src-taishin-restricted-r11",
+              "quote": "各縣市路邊停車費。"
+            },
+            {
+              "id": "x-micro",
+              "label_zh": "聯合信用卡處理中心小額支付特約商店",
+              "micropay": true,
+              "source_id": "src-taishin-restricted-r11",
+              "quote": "透過「聯合信用卡處理中心」提供之信用卡小額支付"
+            },
+            {
+              "id": "x-tax",
+              "label_zh": "政府規費、違規罰鍰、所得稅、房屋稅等稅費、公路養管費",
+              "category_ids": [
+                "tax"
+              ],
+              "source_id": "src-taishin-restricted-r11",
+              "quote": "政府規費、違規罰鍰。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bank-tbb",
+      "name_zh": "臺灣中小企業銀行",
+      "kind": "bank",
+      "fsc_listed": true,
+      "fsc_list_date": "2026-10-19",
+      "bank_code": "050",
+      "fsc_code": "050",
+      "roles": [
+        "debit_card_issuer",
+        "credit_card_issuer",
+        "epay_concurrent"
+      ],
+      "issues_credit_cards": true,
+      "official_url": "https://www.tbb.com.tw/",
+      "card_list": {
+        "url": "https://www.tbb.com.tw/zh-tw/personal/cards",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "信用卡 : 臺灣企銀"
+      },
+      "promo_index": {
+        "url": "https://www.tbb.com.tw/zh-tw/personal/cards/offers/overview",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "刷卡優惠一覽 : 臺灣企銀"
+      },
+      "registries": [
+        {
+          "registry": "fsc_cc_stats",
+          "source_url": "https://data.gov.tw/dataset/45209",
+          "listed_name": "臺灣中小企業銀行",
+          "as_of": "2026-08",
+          "verified_date": "2026-10-19"
+        },
+        {
+          "registry": "fsc_epay_bank",
+          "source_url": "https://www.banking.gov.tw/ch/home.jsp?id=606&parentpath=0,590,604&mcustomize=FscSearch_BankType.jsp&type=H21",
+          "code": "050",
+          "verified_date": "2026-10-19"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "bank-tcb",
+      "name_zh": "合作金庫商業銀行",
+      "kind": "bank",
+      "fsc_listed": true,
+      "fsc_list_date": "2026-10-19",
+      "bank_code": "006",
+      "fsc_code": "006",
+      "roles": [
+        "debit_card_issuer",
+        "credit_card_issuer",
+        "epay_concurrent"
+      ],
+      "issues_credit_cards": true,
+      "official_url": "https://www.tcb-bank.com.tw/",
+      "card_list": {
+        "url": "https://www.tcb-bank.com.tw/personal-banking/credit-card/intro/overview",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "所有卡片 | 合作金庫商業銀行官方網站"
+      },
+      "promo_index": {
+        "url": "https://www.tcb-bank.com.tw/personal-banking/credit-card/discount/taiwan-pay",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "台灣Pay優惠活動 | 合作金庫商業銀行官方網站"
+      },
+      "registries": [
+        {
+          "registry": "fsc_cc_stats",
+          "source_url": "https://data.gov.tw/dataset/45209",
+          "listed_name": "合作金庫商業銀行",
+          "as_of": "2026-08",
+          "verified_date": "2026-10-19"
+        },
+        {
+          "registry": "fsc_epay_bank",
+          "source_url": "https://www.banking.gov.tw/ch/home.jsp?id=606&parentpath=0,590,604&mcustomize=FscSearch_BankType.jsp&type=H21",
+          "code": "006",
+          "verified_date": "2026-10-19"
+        }
+      ],
+      "active": true,
+      "general_exclusions": [
+        {
+          "applies_to": [
+            "credit"
+          ],
+          "source_id": "src-tcb-cashback-terms-r11",
+          "exclusions": [
+            {
+              "id": "x-tax",
+              "label_zh": "稅款、各項政府規費、交通罰鍰、公務機關費用",
+              "category_ids": [
+                "tax"
+              ],
+              "source_id": "src-tcb-cashback-terms-r11",
+              "quote": "繳納所得稅、地價稅、房屋稅、汽機車牌照稅"
+            },
+            {
+              "id": "x-tuition",
+              "label_zh": "學雜費",
+              "category_ids": [
+                "tuition"
+              ],
+              "source_id": "src-tcb-cashback-terms-r11",
+              "quote": "各類醫療費用、學雜費、停車費、代扣"
+            },
+            {
+              "id": "x-util",
+              "label_zh": "代扣水費、電費、瓦斯費",
+              "category_ids": [
+                "utilities"
+              ],
+              "source_id": "src-tcb-cashback-terms-r11",
+              "quote": "代扣〈如水費、電費、瓦斯費、台電、省水、市水"
+            },
+            {
+              "id": "x-tel",
+              "label_zh": "電信費（含各型態繳費方式）",
+              "merchant_ids": [
+                "telecom-generic",
+                "cht-bill",
+                "taiwanmobile-bill"
+              ],
+              "source_id": "src-tcb-cashback-terms-r11",
+              "quote": "中華電信等各項電信費用等〉。〈含實體刷卡、網際網路、第三方支付"
+            },
+            {
+              "id": "x-stored",
+              "label_zh": "悠遊卡／一卡通／iCASH 自動加值",
+              "category_ids": [
+                "stored_value"
+              ],
+              "source_id": "src-tcb-cashback-terms-r11",
+              "quote": "($)悠遊卡/一卡通/iCASH等自動加值消費。"
+            },
+            {
+              "id": "x-micro",
+              "label_zh": "聯合信用卡處理中心小額支付平台特店",
+              "micropay": true,
+              "source_id": "src-tcb-cashback-terms-r11",
+              "quote": "(M%) 聯合信用卡處理中心小額支付平台 〈如速食店、停車費等〉"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bank-tcbbank",
+      "name_zh": "台中商業銀行",
+      "kind": "bank",
+      "fsc_listed": true,
+      "fsc_list_date": "2026-10-19",
+      "bank_code": "053",
+      "fsc_code": "053",
+      "roles": [
+        "debit_card_issuer",
+        "credit_card_issuer",
+        "epay_concurrent"
+      ],
+      "issues_credit_cards": true,
+      "official_url": "https://www.tcbbank.com.tw/",
+      "card_list": {
+        "url": "https://www.tcbbank.com.tw/creditcard/J_02.html",
+        "status": 0,
+        "result": "unreachable",
+        "checked": "2026-10-19",
+        "note": "box curl 與 WebFetch 皆逾時；網址取自搜尋索引，待複驗"
+      },
+      "promo_index": {
+        "url": null,
+        "status": null,
+        "result": "missing",
+        "checked": "2026-10-19",
+        "note": "尚未找到官方頁面"
+      },
+      "registries": [
+        {
+          "registry": "fsc_cc_stats",
+          "source_url": "https://data.gov.tw/dataset/45209",
+          "listed_name": "台中商業銀行",
+          "as_of": "2026-08",
+          "verified_date": "2026-10-19"
+        },
+        {
+          "registry": "fsc_epay_bank",
+          "source_url": "https://www.banking.gov.tw/ch/home.jsp?id=606&parentpath=0,590,604&mcustomize=FscSearch_BankType.jsp&type=H21",
+          "code": "053",
+          "verified_date": "2026-10-19"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "bank-ubot",
+      "name_zh": "聯邦商業銀行",
+      "kind": "bank",
+      "fsc_listed": true,
+      "fsc_list_date": "2026-10-19",
+      "bank_code": "803",
+      "fsc_code": "803",
+      "roles": [
+        "credit_card_issuer",
+        "debit_card_issuer"
+      ],
+      "issues_credit_cards": true,
+      "official_url": "https://www.ubot.com.tw/",
+      "card_list": {
+        "url": "https://card.ubot.com.tw/Card?category=%E9%A0%82%E7%B4%9A%E5%8D%A1",
+        "status": 200,
+        "result": "generic",
+        "checked": "2026-10-19",
+        "title": "聯邦銀行信用卡",
+        "note": "頁面以 JS 渲染（約 1KB 殼頁），待瀏覽器複驗"
+      },
+      "promo_index": {
+        "url": "https://card.ubot.com.tw/CardActivity?category=%E5%8D%A1%E7%89%87%E5%84%AA%E6%83%A0",
+        "status": 200,
+        "result": "generic",
+        "checked": "2026-10-19",
+        "title": "聯邦銀行信用卡",
+        "note": "同上"
+      },
+      "registries": [
+        {
+          "registry": "fsc_cc_stats",
+          "source_url": "https://data.gov.tw/dataset/45209",
+          "listed_name": "聯邦商業銀行",
+          "as_of": "2026-08",
+          "verified_date": "2026-10-19"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "bank-yuanta",
+      "name_zh": "元大商業銀行",
+      "kind": "bank",
+      "fsc_listed": true,
+      "fsc_list_date": "2026-10-19",
+      "bank_code": "806",
+      "fsc_code": "806",
+      "roles": [
+        "debit_card_issuer",
+        "credit_card_issuer",
+        "epay_concurrent"
+      ],
+      "issues_credit_cards": true,
+      "official_url": "https://www.yuantabank.com.tw/",
+      "card_list": {
+        "url": "https://www.yuantabank.com.tw/bank/creditCard/creditCard/list.do",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "元大商業銀行"
+      },
+      "promo_index": {
+        "url": "https://www.yuantabank.com.tw/bank/creditCard/promotionActivity/list.do",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "元大商業銀行"
+      },
+      "registries": [
+        {
+          "registry": "fsc_cc_stats",
+          "source_url": "https://data.gov.tw/dataset/45209",
+          "listed_name": "元大商業銀行",
+          "as_of": "2026-08",
+          "verified_date": "2026-10-19"
+        },
+        {
+          "registry": "fsc_epay_bank",
+          "source_url": "https://www.banking.gov.tw/ch/home.jsp?id=606&parentpath=0,590,604&mcustomize=FscSearch_BankType.jsp&type=H21",
+          "code": "806",
+          "verified_date": "2026-10-19"
+        }
+      ],
+      "active": true,
+      "general_exclusions": [
+        {
+          "applies_to": [
+            "credit"
+          ],
+          "source_id": "src-yuanta-general-def-r11",
+          "exclusions": [
+            {
+              "id": "x-stored",
+              "label_zh": "自動加值交易",
+              "category_ids": [
+                "stored_value"
+              ],
+              "source_id": "src-yuanta-general-def-r11",
+              "quote": "不含 ：自動加值交易"
+            },
+            {
+              "id": "x-util",
+              "label_zh": "代收代付公用事業費用",
+              "category_ids": [
+                "utilities"
+              ],
+              "source_id": "src-yuanta-general-def-r11",
+              "quote": "代收代付公用事業費用、代收代付學雜費、繳納交通罰款"
+            },
+            {
+              "id": "x-tel-bill",
+              "label_zh": "電信帳單（中華電信、台灣大哥大等）：元大官網把中華電信費用與水電瓦斯同列在「公用事業費代繳服務」，一般消費又不含代收代付公用事業費用與電話語音繳款；官網沒有單獨寫電信費，保守不算（電信門市買手機等一般消費不在此限）",
+              "merchant_ids": [
+                "telecom-generic",
+                "cht-bill",
+                "taiwanmobile-bill"
+              ],
+              "source_id": "src-yuanta-rewards-2026",
+              "quote": "中華電信費用、電費、水費、瓦斯費、路邊停車費約定代繳"
+            },
+            {
+              "id": "x-tuition",
+              "label_zh": "代收代付學雜費",
+              "category_ids": [
+                "tuition"
+              ],
+              "source_id": "src-yuanta-general-def-r11",
+              "quote": "代收代付公用事業費用、代收代付學雜費、繳納交通罰款"
+            },
+            {
+              "id": "x-tax",
+              "label_zh": "交通罰款、各項稅款、換發行照規費、汽車燃料費",
+              "category_ids": [
+                "tax"
+              ],
+              "source_id": "src-yuanta-general-def-r11",
+              "quote": "繳納交通罰款、代繳換發行照規費、代繳汽車燃料費"
+            },
+            {
+              "id": "x-govplatform",
+              "label_zh": "公務機關暨醫療院所信用卡繳費平台（含公立醫院醫療費用）",
+              "category_ids": [
+                "medical",
+                "tax"
+              ],
+              "source_id": "src-yuanta-general-def-r11",
+              "quote": "公務機關暨醫療院所信用卡繳費平台"
+            },
+            {
+              "id": "x-micro",
+              "label_zh": "聯合信用卡處理中心小額支付特約商店（停車場、速食店、便利商店）",
+              "micropay": true,
+              "source_id": "src-yuanta-general-def-r11",
+              "quote": "聯合信用卡處理中心 」提供之信用卡小額支付特約商店之消費（如：停車場、麥當勞等同性質連鎖速食店或便利商店等）"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "card-amex",
+      "name_zh": "台灣美國運通國際股份有限公司",
+      "kind": "card_company",
+      "fsc_listed": true,
+      "fsc_list_date": "2026-10-19",
+      "bank_code": null,
+      "fsc_code": "975",
+      "roles": [
+        "credit_card_issuer",
+        "credit_card_company"
+      ],
+      "issues_credit_cards": true,
+      "official_url": "https://www.americanexpress.com/zh-tw/",
+      "card_list": {
+        "url": "https://www.americanexpress.com/zh-tw/credit-cards/all-cards/",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "台灣美國運通卡，全球支援與服務"
+      },
+      "promo_index": {
+        "url": "https://www.americanexpress.com/zh-tw/benefits/campaigns/",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "本期精選 | 美國運通限時禮遇"
+      },
+      "registries": [
+        {
+          "registry": "fsc_cc_stats",
+          "source_url": "https://data.gov.tw/dataset/45209",
+          "listed_name": "台灣美國運通國際(股)公司",
+          "as_of": "2026-08",
+          "verified_date": "2026-10-19"
+        },
+        {
+          "registry": "fsc_cc_company",
+          "source_url": "https://www.banking.gov.tw/ch/home.jsp?id=606&parentpath=0,590,604&mcustomize=FscSearch_BankType.jsp&type=C",
+          "code": "975",
+          "verified_date": "2026-10-19"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "card-rakuten",
+      "name_zh": "台灣樂天信用卡股份有限公司",
+      "kind": "card_company",
+      "fsc_listed": true,
+      "fsc_list_date": "2026-10-19",
+      "bank_code": null,
+      "fsc_code": "960",
+      "roles": [
+        "credit_card_issuer",
+        "credit_card_company"
+      ],
+      "issues_credit_cards": true,
+      "official_url": "https://www.card.rakuten.com.tw/",
+      "card_list": {
+        "url": "https://www.card.rakuten.com.tw/corp/product/",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "樂天信用卡: 樂天信用卡介紹"
+      },
+      "promo_index": {
+        "url": "https://www.card.rakuten.com.tw/corp/campaign/",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "樂天信用卡: 最新優惠活動"
+      },
+      "registries": [
+        {
+          "registry": "fsc_cc_stats",
+          "source_url": "https://data.gov.tw/dataset/45209",
+          "listed_name": "台灣樂天信用卡股份有限公司",
+          "as_of": "2026-08",
+          "verified_date": "2026-10-19"
+        },
+        {
+          "registry": "fsc_cc_company",
+          "source_url": "https://www.banking.gov.tw/ch/home.jsp?id=606&parentpath=0,590,604&mcustomize=FscSearch_BankType.jsp&type=C",
+          "code": "960",
+          "verified_date": "2026-10-19"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "epay-easycard",
+      "name_zh": "悠遊卡股份有限公司",
+      "kind": "epay_dedicated",
+      "fsc_listed": true,
+      "fsc_list_date": "2026-10-19",
+      "bank_code": null,
+      "fsc_code": "390",
+      "roles": [
+        "epay_dedicated"
+      ],
+      "issues_credit_cards": false,
+      "official_url": "https://www.easycard.com.tw/",
+      "card_list": {
+        "url": null,
+        "status": null,
+        "result": "missing",
+        "checked": "2026-10-19",
+        "note": "非發卡機構"
+      },
+      "promo_index": {
+        "url": "https://easywallet.easycard.com.tw/",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "悠遊付｜一卡一付 無現生活更進一步！"
+      },
+      "registries": [
+        {
+          "registry": "fsc_epay_dedicated",
+          "source_url": "https://www.banking.gov.tw/ch/home.jsp?id=606&parentpath=0,590,604&mcustomize=FscSearch_BankType.jsp&type=H1",
+          "code": "390",
+          "verified_date": "2026-10-19"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "epay-ezpay",
+      "name_zh": "簡單行動支付股份有限公司",
+      "kind": "epay_dedicated",
+      "fsc_listed": true,
+      "fsc_list_date": "2026-10-19",
+      "bank_code": null,
+      "fsc_code": "398",
+      "roles": [
+        "epay_dedicated"
+      ],
+      "issues_credit_cards": false,
+      "official_url": "https://www.ezpay.com.tw/",
+      "card_list": {
+        "url": null,
+        "status": null,
+        "result": "missing",
+        "checked": "2026-10-19",
+        "note": "非發卡機構"
+      },
+      "promo_index": {
+        "url": "https://www.ezpay.com.tw/",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "支付頁 | ezPay簡單付-陪你生活在一起"
+      },
+      "registries": [
+        {
+          "registry": "fsc_epay_dedicated",
+          "source_url": "https://www.banking.gov.tw/ch/home.jsp?id=606&parentpath=0,590,604&mcustomize=FscSearch_BankType.jsp&type=H1",
+          "code": "398",
+          "verified_date": "2026-10-19"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "epay-gamapay",
+      "name_zh": "橘子支行動支付股份有限公司",
+      "kind": "epay_dedicated",
+      "fsc_listed": true,
+      "fsc_list_date": "2026-10-19",
+      "bank_code": null,
+      "fsc_code": "395",
+      "roles": [
+        "epay_dedicated"
+      ],
+      "issues_credit_cards": false,
+      "official_url": "https://www.gamapay.com.tw/",
+      "card_list": {
+        "url": null,
+        "status": null,
+        "result": "missing",
+        "checked": "2026-10-19",
+        "note": "非發卡機構"
+      },
+      "promo_index": {
+        "url": "https://www.gamapay.com.tw/",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "橘子支付"
+      },
+      "registries": [
+        {
+          "registry": "fsc_epay_dedicated",
+          "source_url": "https://www.banking.gov.tw/ch/home.jsp?id=606&parentpath=0,590,604&mcustomize=FscSearch_BankType.jsp&type=H1",
+          "code": "395",
+          "verified_date": "2026-10-19"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "epay-icash",
+      "name_zh": "愛金卡股份有限公司",
+      "kind": "epay_dedicated",
+      "fsc_listed": true,
+      "fsc_list_date": "2026-10-19",
+      "bank_code": null,
+      "fsc_code": "392",
+      "roles": [
+        "epay_dedicated"
+      ],
+      "issues_credit_cards": false,
+      "official_url": "https://www.icashpay.com.tw/",
+      "card_list": {
+        "url": null,
+        "status": null,
+        "result": "missing",
+        "checked": "2026-10-19",
+        "note": "非發卡機構"
+      },
+      "promo_index": {
+        "url": "https://www.icashpay.com.tw/advertMessage/index",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "活動訊息 - icash Pay"
+      },
+      "registries": [
+        {
+          "registry": "fsc_epay_dedicated",
+          "source_url": "https://www.banking.gov.tw/ch/home.jsp?id=606&parentpath=0,590,604&mcustomize=FscSearch_BankType.jsp&type=H1",
+          "code": "392",
+          "verified_date": "2026-10-19"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "epay-ipass",
+      "name_zh": "一卡通票證股份有限公司",
+      "kind": "epay_dedicated",
+      "fsc_listed": true,
+      "fsc_list_date": "2026-10-19",
+      "bank_code": null,
+      "fsc_code": "391",
+      "roles": [
+        "epay_dedicated"
+      ],
+      "issues_credit_cards": false,
+      "official_url": "https://www.i-pass.com.tw/",
+      "card_list": {
+        "url": null,
+        "status": null,
+        "result": "missing",
+        "checked": "2026-10-19",
+        "note": "非發卡機構"
+      },
+      "promo_index": {
+        "url": "https://www.i-pass.com.tw/Preferential",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "優惠活動 - iPASS一卡通"
+      },
+      "registries": [
+        {
+          "registry": "fsc_epay_dedicated",
+          "source_url": "https://www.banking.gov.tw/ch/home.jsp?id=606&parentpath=0,590,604&mcustomize=FscSearch_BankType.jsp&type=H1",
+          "code": "391",
+          "verified_date": "2026-10-19"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "epay-jkopay",
+      "name_zh": "街口電子支付股份有限公司",
+      "kind": "epay_dedicated",
+      "fsc_listed": true,
+      "fsc_list_date": "2026-10-19",
+      "bank_code": null,
+      "fsc_code": "396",
+      "roles": [
+        "epay_dedicated"
+      ],
+      "issues_credit_cards": false,
+      "official_url": "https://www.jkopay.com/",
+      "card_list": {
+        "url": null,
+        "status": null,
+        "result": "missing",
+        "checked": "2026-10-19",
+        "note": "非發卡機構"
+      },
+      "promo_index": {
+        "url": "https://mkt.jkopay.com/campaign/newevent",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "街口支付 - 10月最新活動一次看"
+      },
+      "registries": [
+        {
+          "registry": "fsc_epay_dedicated",
+          "source_url": "https://www.banking.gov.tw/ch/home.jsp?id=606&parentpath=0,590,604&mcustomize=FscSearch_BankType.jsp&type=H1",
+          "code": "396",
+          "verified_date": "2026-10-19"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "epay-lianjia",
+      "name_zh": "連加電子支付股份有限公司",
+      "kind": "epay_dedicated",
+      "fsc_listed": true,
+      "fsc_list_date": "2026-10-19",
+      "bank_code": null,
+      "fsc_code": "387",
+      "roles": [
+        "epay_dedicated"
+      ],
+      "issues_credit_cards": false,
+      "official_url": "https://pay.line.me/portal/tw-lpm/",
+      "card_list": {
+        "url": null,
+        "status": null,
+        "result": "missing",
+        "checked": "2026-10-19",
+        "note": "非發卡機構"
+      },
+      "promo_index": {
+        "url": "https://pay.line.me/portal/tw/about/promotions",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "LINE Pay 行動支付"
+      },
+      "registries": [
+        {
+          "registry": "fsc_epay_dedicated",
+          "source_url": "https://www.banking.gov.tw/ch/home.jsp?id=606&parentpath=0,590,604&mcustomize=FscSearch_BankType.jsp&type=H1",
+          "code": "387",
+          "verified_date": "2026-10-19"
+        }
+      ],
+      "active": true,
+      "notes": "提供 LINE Pay Money 電子支付帳戶；LINE Pay 綁卡付款服務由 LINE Pay 經營"
+    },
+    {
+      "id": "epay-opay",
+      "name_zh": "歐付寶電子支付股份有限公司",
+      "kind": "epay_dedicated",
+      "fsc_listed": true,
+      "fsc_list_date": "2026-10-19",
+      "bank_code": null,
+      "fsc_code": "397",
+      "roles": [
+        "epay_dedicated"
+      ],
+      "issues_credit_cards": false,
+      "official_url": "https://www.opay.tw/",
+      "card_list": {
+        "url": null,
+        "status": null,
+        "result": "missing",
+        "checked": "2026-10-19",
+        "note": "非發卡機構"
+      },
+      "promo_index": {
+        "url": "https://www.opay.tw/Banner/Event",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "活動專區 - 歐付寶O'Pay第三方支付"
+      },
+      "registries": [
+        {
+          "registry": "fsc_epay_dedicated",
+          "source_url": "https://www.banking.gov.tw/ch/home.jsp?id=606&parentpath=0,590,604&mcustomize=FscSearch_BankType.jsp&type=H1",
+          "code": "397",
+          "verified_date": "2026-10-19"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "epay-pluspay",
+      "name_zh": "全盈支付金融科技股份有限公司",
+      "kind": "epay_dedicated",
+      "fsc_listed": true,
+      "fsc_list_date": "2026-10-19",
+      "bank_code": null,
+      "fsc_code": "388",
+      "roles": [
+        "epay_dedicated"
+      ],
+      "issues_credit_cards": false,
+      "official_url": "https://www.pluspay.com.tw/",
+      "card_list": {
+        "url": null,
+        "status": null,
+        "result": "missing",
+        "checked": "2026-10-19",
+        "note": "非發卡機構"
+      },
+      "promo_index": {
+        "url": "https://www.pluspay.com.tw/News/activity",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "全盈+PAY"
+      },
+      "registries": [
+        {
+          "registry": "fsc_epay_dedicated",
+          "source_url": "https://www.banking.gov.tw/ch/home.jsp?id=606&parentpath=0,590,604&mcustomize=FscSearch_BankType.jsp&type=H1",
+          "code": "388",
+          "verified_date": "2026-10-19"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "epay-pxpay",
+      "name_zh": "全支付電子支付股份有限公司",
+      "kind": "epay_dedicated",
+      "fsc_listed": true,
+      "fsc_list_date": "2026-10-19",
+      "bank_code": null,
+      "fsc_code": "389",
+      "roles": [
+        "epay_dedicated"
+      ],
+      "issues_credit_cards": false,
+      "official_url": "https://www.pxpayplus.com/",
+      "card_list": {
+        "url": null,
+        "status": null,
+        "result": "missing",
+        "checked": "2026-10-19",
+        "note": "非發卡機構"
+      },
+      "promo_index": {
+        "url": "https://www.pxpayplus.com/",
+        "status": 200,
+        "result": "ok",
+        "checked": "2026-10-19",
+        "title": "全支付"
+      },
+      "registries": [
+        {
+          "registry": "fsc_epay_dedicated",
+          "source_url": "https://www.banking.gov.tw/ch/home.jsp?id=606&parentpath=0,590,604&mcustomize=FscSearch_BankType.jsp&type=H1",
+          "code": "389",
+          "verified_date": "2026-10-19"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "other-diners",
+      "name_zh": "臺灣大來卡股份有限公司",
+      "kind": "other",
+      "fsc_listed": true,
+      "fsc_list_date": "2026-10-19",
+      "bank_code": null,
+      "fsc_code": "849",
+      "roles": [
+        "credit_card_company"
+      ],
+      "issues_credit_cards": false,
+      "official_url": null,
+      "card_list": {
+        "url": null,
+        "status": null,
+        "result": "missing",
+        "checked": "2026-10-19",
+        "note": "非發卡機構"
+      },
+      "promo_index": {
+        "url": null,
+        "status": null,
+        "result": "missing",
+        "checked": "2026-10-19",
+        "note": "尚未找到官方頁面"
+      },
+      "registries": [
+        {
+          "registry": "fsc_cc_company",
+          "source_url": "https://www.banking.gov.tw/ch/home.jsp?id=606&parentpath=0,590,604&mcustomize=FscSearch_BankType.jsp&type=C",
+          "code": "849",
+          "verified_date": "2026-10-19"
+        }
+      ],
+      "active": true,
+      "notes": "列於金管會「信用卡公司」名單，屬國際組織／品牌在台機構，不直接對消費者發卡"
+    },
+    {
+      "id": "other-globalpayments",
+      "name_zh": "香港商台灣環滙亞太信用卡股份有限公司台灣分公司",
+      "kind": "other",
+      "fsc_listed": true,
+      "fsc_list_date": "2026-10-19",
+      "bank_code": null,
+      "fsc_code": "979",
+      "roles": [
+        "credit_card_issuer",
+        "credit_card_company"
+      ],
+      "issues_credit_cards": false,
+      "official_url": "https://www.globalpayments.com/zh-tw/taiwan",
+      "card_list": {
+        "url": null,
+        "status": null,
+        "result": "missing",
+        "checked": "2026-10-19",
+        "note": "尚未找到官方頁面"
+      },
+      "promo_index": {
+        "url": null,
+        "status": null,
+        "result": "missing",
+        "checked": "2026-10-19",
+        "note": "尚未找到官方頁面"
+      },
+      "registries": [
+        {
+          "registry": "fsc_cc_stats",
+          "source_url": "https://data.gov.tw/dataset/45209",
+          "listed_name": "香港商台灣環滙亞太信用卡",
+          "as_of": "2026-08",
+          "verified_date": "2026-10-19"
+        },
+        {
+          "registry": "fsc_cc_company",
+          "source_url": "https://www.banking.gov.tw/ch/home.jsp?id=606&parentpath=0,590,604&mcustomize=FscSearch_BankType.jsp&type=C",
+          "code": "979",
+          "verified_date": "2026-10-19"
+        }
+      ],
+      "active": true,
+      "notes": "金管會 2026/8 發卡統計中流通卡數為 0；主要為收單／清算業務"
+    },
+    {
+      "id": "other-jcb",
+      "name_zh": "台灣吉世美國際股份有限公司",
+      "kind": "other",
+      "fsc_listed": true,
+      "fsc_list_date": "2026-10-19",
+      "bank_code": null,
+      "fsc_code": "980",
+      "roles": [
+        "credit_card_company"
+      ],
+      "issues_credit_cards": false,
+      "official_url": "https://www.specialoffers.jcb/zh-tw/",
+      "card_list": {
+        "url": null,
+        "status": null,
+        "result": "missing",
+        "checked": "2026-10-19",
+        "note": "非發卡機構"
+      },
+      "promo_index": {
+        "url": null,
+        "status": null,
+        "result": "missing",
+        "checked": "2026-10-19",
+        "note": "尚未找到官方頁面"
+      },
+      "registries": [
+        {
+          "registry": "fsc_cc_company",
+          "source_url": "https://www.banking.gov.tw/ch/home.jsp?id=606&parentpath=0,590,604&mcustomize=FscSearch_BankType.jsp&type=C",
+          "code": "980",
+          "verified_date": "2026-10-19"
+        }
+      ],
+      "active": true,
+      "notes": "列於金管會「信用卡公司」名單，屬國際組織／品牌在台機構，不直接對消費者發卡"
+    },
+    {
+      "id": "other-mastercard",
+      "name_zh": "新加坡商萬事達卡股份有限公司台灣分公司",
+      "kind": "other",
+      "fsc_listed": true,
+      "fsc_list_date": "2026-10-19",
+      "bank_code": null,
+      "fsc_code": "958",
+      "roles": [
+        "credit_card_company"
+      ],
+      "issues_credit_cards": false,
+      "official_url": "https://www.mastercard.com.tw",
+      "card_list": {
+        "url": null,
+        "status": null,
+        "result": "missing",
+        "checked": "2026-10-19",
+        "note": "非發卡機構"
+      },
+      "promo_index": {
+        "url": null,
+        "status": null,
+        "result": "missing",
+        "checked": "2026-10-19",
+        "note": "尚未找到官方頁面"
+      },
+      "registries": [
+        {
+          "registry": "fsc_cc_company",
+          "source_url": "https://www.banking.gov.tw/ch/home.jsp?id=606&parentpath=0,590,604&mcustomize=FscSearch_BankType.jsp&type=C",
+          "code": "958",
+          "verified_date": "2026-10-19"
+        }
+      ],
+      "active": true,
+      "notes": "列於金管會「信用卡公司」名單，屬國際組織／品牌在台機構，不直接對消費者發卡"
+    },
+    {
+      "id": "other-nccc",
+      "name_zh": "財團法人聯合信用卡處理中心",
+      "kind": "other",
+      "fsc_listed": true,
+      "fsc_list_date": "2026-10-19",
+      "bank_code": null,
+      "fsc_code": "956",
+      "roles": [
+        "credit_card_issuer",
+        "credit_card_company"
+      ],
+      "issues_credit_cards": false,
+      "official_url": "https://www.nccc.com.tw/",
+      "card_list": {
+        "url": "https://www.nccc.com.tw/",
+        "status": 200,
+        "result": "generic",
+        "checked": "2026-10-19",
+        "note": "首頁僅 69 bytes 轉址殼；NCCC 主要為收單／清算機構"
+      },
+      "promo_index": {
+        "url": null,
+        "status": null,
+        "result": "missing",
+        "checked": "2026-10-19",
+        "note": "尚未找到官方頁面"
+      },
+      "registries": [
+        {
+          "registry": "fsc_cc_stats",
+          "source_url": "https://data.gov.tw/dataset/45209",
+          "listed_name": "財團法人聯合信用卡處理中心",
+          "as_of": "2026-08",
+          "verified_date": "2026-10-19"
+        },
+        {
+          "registry": "fsc_cc_company",
+          "source_url": "https://www.banking.gov.tw/ch/home.jsp?id=606&parentpath=0,590,604&mcustomize=FscSearch_BankType.jsp&type=C",
+          "code": "956",
+          "verified_date": "2026-10-19"
+        }
+      ],
+      "active": true,
+      "notes": "金管會 2026/8 發卡統計中流通卡數為 0；主要為收單／清算業務"
+    },
+    {
+      "id": "other-visa",
+      "name_zh": "台灣威士卡股份有限公司",
+      "kind": "other",
+      "fsc_listed": true,
+      "fsc_list_date": "2026-10-19",
+      "bank_code": null,
+      "fsc_code": "959",
+      "roles": [
+        "credit_card_company"
+      ],
+      "issues_credit_cards": false,
+      "official_url": "https://www.visa.com.tw",
+      "card_list": {
+        "url": null,
+        "status": null,
+        "result": "missing",
+        "checked": "2026-10-19",
+        "note": "非發卡機構"
+      },
+      "promo_index": {
+        "url": null,
+        "status": null,
+        "result": "missing",
+        "checked": "2026-10-19",
+        "note": "尚未找到官方頁面"
+      },
+      "registries": [
+        {
+          "registry": "fsc_cc_company",
+          "source_url": "https://www.banking.gov.tw/ch/home.jsp?id=606&parentpath=0,590,604&mcustomize=FscSearch_BankType.jsp&type=C",
+          "code": "959",
+          "verified_date": "2026-10-19"
+        }
+      ],
+      "active": true,
+      "notes": "列於金管會「信用卡公司」名單，屬國際組織／品牌在台機構，不直接對消費者發卡"
+    }
+  ]
+}

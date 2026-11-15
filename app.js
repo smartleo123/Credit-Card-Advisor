@@ -25,7 +25,7 @@ function chooseRules(card,cat,date){
   return rules;
 }
 function compute(card,amount,cat,date,annualSpend,fxFee,merchant,policies){
- if(!Number.isFinite(card.base.rate))return null;
+ if(!Number.isFinite(card.base.rate))return {card,status:"unknown",reason:"此卡的基本回饋條款尚未驗證，無法計算"};
  const overseas=cat==="overseas";
  const policy=cat==="convenience" ? policies?.convenience?.[card.id] : null;
  if(cat==="convenience"){

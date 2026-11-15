@@ -52,7 +52,7 @@
      const high=rewardHighlights(c.id);
      const links=officialLink(sourceRow);
      const evidence=high.length?high.map(v=>'<span class="tag">'+escape(v.title||discoveryTitles[v.slug]||v.slug)+' '+v.rate.toFixed(2)+'%'+(v.verified?" · 已複核":" · 未複核")+'</span>').join(""):'<span class="subtle">尚無此處已索引通路的可量化排行，請查看來源資料</span>';
-     const details=high.length?'<details class="bonus-box"><summary>展開回饋資料來源與條件提醒</summary><p>以下為來源排行榜「一次設定」情境，不等於你已完成所有條件，也不適用於所有消費金額。請點各通路排行榜展開核對需求及回饋上限。</p><a href="#source-rankings">前往通路排行榜 ↗</a></details>':"";
+     const details=high.length?'<details class="bonus-box"><summary>查看各通路回饋的上限與條件</summary><p>各數字為來源的一次設定情境，仍須核對實際資格，不能當作任意金額的保證回饋。</p>'+high.map(v=>'<p><b>'+escape(v.title||discoveryTitles[v.slug]||v.slug)+'：'+v.rate.toFixed(2)+'%</b> · '+(v.verified?'已近期複核':'尚未近期複核')+' · 上限：'+(v.capTwd==null?'未列明':'NT$ '+escape(v.capTwd))+'。 '+escape((v.details||[]).join('；')||'詳細條款請到該通路排行查詢')+'</p>').join('')+'<a href="#source-rankings">開啟完整通路榜單 ↗</a></details>':"";
      return '<article class="card full-card"><div class="bank">'+escape(issuer)+'</div><h3>'+escape(c.name)+'</h3><div class="details">'+evidence+'</div>'+details+'<div class="card-footer"><label class="check"><input type="checkbox" data-full-owned="'+escape(c.id)+'" '+(owned.has(c.id)?"checked":"")+'> 我持有這張卡</label>'+(links?'<a href="'+escape(links)+'" target="_blank" rel="noopener noreferrer">銀行來源 ↗</a>':'<a href="https://pay.elggum.com/" target="_blank" rel="noopener noreferrer">資料提供站 ↗</a>')+'</div><p class="subtle">來源卡片 ID：'+escape(c.id)+'；回饋以詳細資格與銀行官網為準</p></article>';
    }).join("");
    box.innerHTML=rows.length?info:'<div class="empty">找不到符合條件的信用卡。</div>';

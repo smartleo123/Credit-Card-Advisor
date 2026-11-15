@@ -1,0 +1,113 @@
+"use strict";
+const $=s=>document.querySelector(s);
+const fmt=n=>new Intl.NumberFormat("zh-TW",{maximumFractionDigits:2}).format(n);
+const money=n=>"NT$ "+fmt(n);
+const KEY="cardwise-tw-settings-v2";
+const today=()=>new Date().toLocaleDateString("en-CA",{timeZone:"Asia/Taipei"});
+const categories={general:"一般消費",linepay:"LINE Pay",jkopay:"街口支付",applepay:"Apple Pay",shopee:"蝦皮購物",momo:"momo 購物網",convenience:"超商",overseas:"海外消費",dining:"餐飲",shopping:"購物"};
+const labels={"esun-autopay":"玉山電子帳單＋本行帳戶自扣","esun-simple":"玉山簡單選（與 UP 選擇一）","esun-up":"玉山 UP 選已符合訂閱／任務","cube-fixed":"CUBE 已切換固定回饋方案","overseas-physical":"海外實體面對面交易","fubon-tasks":"富邦電子帳單＋本行帳戶自扣","j-asia-country":"富邦 J：實際消費在日本／韓國／泰國","daway-bind":"DAWAY 已綁 LINE Pay","daway-go":"DAWAY GO 三項任務皆完成","new-customer":"符合當期信用卡新戶定義","hsbc-eligible":"滙豐該筆為官方指定合格通路","hsbc-autopay":"滙豐本行帳戶自扣任務完成"};
+let catalog=[];
+const defaults=()=>({owned:[],conditions:[],used:{},fee:{},pointValue:{}});
+let settings=load();
+function load(){try{const x=JSON.parse(localStorage.getItem(KEY));return {...defaults(),...x,used:x?.used||{},fee:x?.fee||{},pointValue:x?.pointValue||{}}}catch{return defaults()}}
+function save(){localStorage.setItem(KEY,JSON.stringify(settings))}
+function escapeHtml(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function findLimit(card,rule){return card.id+":"+rule.id}
+function capGroup(card,rule){return card.id+":"+(rule.capGroup||rule.id)}
+function activeRule(rule,date){return (!rule.start||rule.start<=date)&&(!rule.end||date<=rule.end)}
+function conditionsMet(rule){return(rule.conditions||[]).every(x=>settings.conditions.includes(x))}
+function eligible(rule,cat){return (rule.category||[]).includes(cat)||(rule.category||[]).includes("all")}
+function chooseRules(card,cat,date){
+  const rules=(card.rules||[]).filter(r=>eligible(r,cat)&&activeRule(r,date)&&conditionsMet(r));
+  if(card.id==="esun-unicard"&&rules.some(r=>r.id==="esun-up"))return rules.filter(r=>r.id!=="esun-simple");
+  return rules;
+}
+function compute(card,amount,cat,date,annualSpend,fxFee){
+ if(!Number.isFinite(card.base.rate))return null;
+ const overseas=cat==="overseas";
+ const excluded=(card.exclude||[]).includes(cat);
+ if(excluded)return {card,base:0,bonus:0,gross:0,feeCost:0,fxCost:0,net:0,lines:["此類消費可能不屬一般消費，為避免誤判回饋暫以0計"],warnings:["不符合一般消費資格"],eligible:false};
+ const point=Number(settings.pointValue[card.id]??card.pointValue??1);
+ const validPoint=Number.isFinite(point)&&point>=0?point:0;
+ const base=(card.base.conditions||[]).every(x=>settings.conditions.includes(x))?amount*card.base.rate:0;
+ const rules=chooseRules(card,cat,date);
+ let bonus=0;const lines=[card.base.note||"基本回饋"];const usedGroups={};
+ for(const rule of rules){
+  let raw=amount*rule.rate;let cap=rule.cap;
+  if(cap!=null){const group=capGroup(card,rule);const used=Number(settings.used[group]??settings.used[findLimit(card,rule)]??0);const previous=usedGroups[group]||0;raw=Math.max(0,Math.min(raw,cap-Math.max(0,used)-previous));usedGroups[group]=previous+raw}
+  if(raw>0){bonus+=raw;lines.push(rule.label+"：+"+fmt(raw*validPoint)+" 元估值")}
+ }
+ const gross=(base+bonus)*validPoint;
+ const feeInput=settings.fee[card.id];
+ const annualFee=feeInput!==undefined&&feeInput!==""?Number(feeInput):card.fee;
+ const feeKnown=annualFee!==null&&annualFee!==undefined&&Number.isFinite(Number(annualFee))&&Number(annualFee)>=0;
+ // Per-spend proportional allocation. Avoid dividing by zero.
+ const feeCost=feeKnown&&annualSpend>0?Number(annualFee)*amount/annualSpend:0;
+ const fxCost=overseas?amount*fxFee/100:0;
+ const net=gross-feeCost-fxCost;
+ const warnings=[];
+ if(!feeKnown)warnings.push("年費未核實，暫未扣除；可在卡片設定填入");
+ if(cat==="convenience")warnings.push("超商常被排除於一般消費，請查條款");
+ if(["linepay","jkopay","applepay"].includes(cat))warnings.push("實際商戶認列與第三方支付排除依銀行公告");
+ if(cat==="overseas")warnings.push("跨境手續費為估算值，匯率與交易認列可能不同");
+ if(rules.some(r=>r.cap!=null))warnings.push("剩餘上限依你手動填寫的已用點數計算");
+ return {card,base,bonus,gross,feeCost,fxCost,net,lines,warnings,eligible:true};
+}
+function renderConditions(){
+ $("#condition-list").innerHTML=Object.entries(labels).map(([id,label])=>'<label class="check"><input type="checkbox" data-condition="'+escapeHtml(id)+'" '+(settings.conditions.includes(id)?"checked":"")+'> '+escapeHtml(label)+'</label>').join("");
+ $("#condition-list").addEventListener("change",event=>{const id=event.target.dataset.condition;if(!id)return;let s=new Set(settings.conditions);event.target.checked?s.add(id):s.delete(id);
+ if(id==="esun-simple"&&event.target.checked)s.delete("esun-up");
+ if(id==="esun-up"&&event.target.checked)s.delete("esun-simple");
+ settings.conditions=[...s];save();renderConditions();renderResults()}, {once:true});
+}
+function renderResults(){
+ const amount=Math.max(0,Number($("#amount").value)||0),cat=$("#category").value,date=$("#date").value||today();
+ const annualSpend=Math.max(0,Number($("#annual-spend").value)||0),fxFee=Math.max(0,Number($("#fx-fee").value)||0);
+ const scope=$("#scope").value;
+ let results=catalog.filter(c=>scope==="all"||settings.owned.includes(c.id)).map(c=>compute(c,amount,cat,date,annualSpend,fxFee)).filter(Boolean).sort((a,b)=>b.net-a.net);
+ $("#results-summary").textContent=results.length+" 張可估算 · "+categories[cat]+" · "+money(amount);
+ if(!results.length){$("#results").innerHTML='<div class="empty">沒有符合篩選條件且已查證基本回饋的信用卡。請至下方持卡清單選卡，或查看待核實卡片。</div>';return}
+ $("#results").innerHTML=results.map((r,i)=>'<article class="result"><div><div class="bank">'+escapeHtml(r.card.bank)+'　'+(i===0?"★ 目前試算最高":"")+'</div><h3>'+escapeHtml(r.card.name)+'</h3><div class="subtle">基本 '+money(r.base*(settings.pointValue[r.card.id]??r.card.pointValue??1))+' ＋ 加碼 '+money(r.bonus*(settings.pointValue[r.card.id]??r.card.pointValue??1))+'</div></div><div class="score"><strong>'+money(r.net)+'</strong><span>預估淨回饋／本筆</span></div><div class="details"><span class="tag">總回饋現值 '+money(r.gross)+'</span><span class="tag">年費攤提 -'+money(r.feeCost)+'</span><span class="tag">海外手續費 -'+money(r.fxCost)+'</span>'+r.warnings.map(w=>'<span class="tag warn">'+escapeHtml(w)+'</span>').join('')+'</div><div class="details">'+r.lines.map(w=>'<span>· '+escapeHtml(w)+'</span>').join('')+'</div></article>').join("");
+}
+function renderCard(card){
+ const owned=settings.owned.includes(card.id);
+ const amount=card.fee==null?"尚待核實":money(card.fee);
+ const feeOverride=settings.fee[card.id]??"";
+ const pointValue=settings.pointValue[card.id]??card.pointValue??1;
+ const rules=(card.rules||[]).filter(r=>r.cap!=null);
+ const status=card.verified?"已查核部分回饋":"回饋待查核";
+ return '<article class="card"><span class="bank">'+escapeHtml(card.bank)+' · '+status+'</span><h3>'+escapeHtml(card.name)+'</h3><p>'+escapeHtml(card.base.note)+'</p><div class="facts"><div>年費<strong>'+amount+'</strong></div><div>最低年收入<strong>'+(card.income==null?"尚待核實":money(card.income))+'</strong></div><div>免年費方式<strong>'+escapeHtml(card.waiver)+'</strong></div><div>點數形式<strong>'+escapeHtml(card.reward)+'</strong></div></div><div class="card-footer"><label class="check"><input type="checkbox" data-owned="'+escapeHtml(card.id)+'" '+(owned?"checked":"")+'> 我持有這張卡</label><a href="'+escapeHtml(card.source)+'" target="_blank" rel="noopener noreferrer">查看官方條款 ↗</a><a href="'+escapeHtml(card.application)+'" target="_blank" rel="noopener noreferrer">申辦資訊 ↗</a></div><details class="bonus-box"><summary>個人設定：年費、點數價值、已用加碼額度</summary><label>實際年度年費（元）<input type="number" min="0" placeholder="未確認" data-fee="'+escapeHtml(card.id)+'" value="'+escapeHtml(feeOverride)+'"></label><label>每 1 點換算新台幣<input type="number" min="0" step=".01" data-point="'+escapeHtml(card.id)+'" value="'+escapeHtml(pointValue)+'"></label>'+rules.map(rule=>'<label>'+escapeHtml(rule.label)+' 已用點數（'+escapeHtml(rule.period==="statement"?"帳單週期":"每月")+'，上限 '+fmt(rule.cap)+'）<input type="number" min="0" step="1" data-used="'+escapeHtml(capGroup(card,rule))+'" value="'+escapeHtml(settings.used[capGroup(card,rule)]??0)+'"></label>').join('')+'<p>若多項回饋共用上限，請以實際官方條款核對。請手動在新計費週期歸零。</p></details><p class="subtle">查核日：'+escapeHtml(card.verified||"待查核")+' · '+escapeHtml(card.gift||"未登錄首刷禮")+'</p></article>';
+}
+function renderCards(){
+ const q=$("#search").value.trim().toLowerCase(),bank=$("#bank-filter").value,ownedOnly=$("#owned-filter").checked;
+ const filtered=catalog.filter(c=>(bank==="all"||c.bank===bank)&&(!ownedOnly||settings.owned.includes(c.id))&&((c.bank+c.name).toLowerCase().includes(q)));
+ $("#card-grid").innerHTML=filtered.length?filtered.map(renderCard).join(""):'<div class="empty">沒有找到信用卡</div>';
+}
+function renderAlerts(){
+ const now=today();const out=[];
+ for(const card of catalog){for(const r of card.rules||[]){if(!r.end)continue;const days=Math.ceil((new Date(r.end+"T12:00:00Z")-new Date(now+"T12:00:00Z"))/86400000);if(days<0||days<=45)out.push({card:card.name,label:r.label,end:r.end,days})}
+ if(!card.verified)out.push({card:card.name,label:"基本回饋仍待核實",end:"",days:null});
+ if(card.fee===null)out.push({card:card.name,label:"申辦／年費資料未核實",end:"",days:null})}
+ out.sort((a,b)=>(a.days??999)-(b.days??999));
+ $("#alerts-list").innerHTML=out.length?out.slice(0,35).map(a=>'<div class="alert"><span>'+escapeHtml(a.card)+' · '+escapeHtml(a.label)+'</span><b>'+(a.days===null?"待核實":a.days<0?"已到期":a.days===0?"今天到期":a.days+" 天後到期（"+a.end+"）")+'</b></div>').join(''):'<div class="empty">目前沒有 45 天內到期的已知優惠；仍請留意官方更新。</div>';
+}
+function bind(){
+ $("#calculate").addEventListener("click",renderResults);
+ ["amount","category","date","annual-spend","fx-fee","scope"].forEach(id=>$("#"+id).addEventListener("change",renderResults));
+ ["search","bank-filter","owned-filter"].forEach(id=>$("#"+id).addEventListener("input",renderCards));
+ $("#card-grid").addEventListener("change",e=>{let t=e.target;if(t.dataset.owned){settings.owned=t.checked?[...new Set([...settings.owned,t.dataset.owned])]:settings.owned.filter(x=>x!==t.dataset.owned)}
+ if(t.dataset.fee){settings.fee[t.dataset.fee]=t.value}
+ if(t.dataset.point){settings.pointValue[t.dataset.point]=Number(t.value)}
+ if(t.dataset.used){settings.used[t.dataset.used]=Math.max(0,Number(t.value)||0)}
+ save();renderResults()});
+}
+async function init(){
+ $("#date").value=today();bind();
+ try{const res=await fetch("./data/cards.json",{cache:"no-store"});if(!res.ok)throw new Error("HTTP "+res.status);const payload=await res.json();catalog=payload.cards||[];
+ $("#card-count").textContent=catalog.length+" 張卡片追蹤中";
+ $("#verified-date").textContent="資料基準 "+payload.checkedAt;
+ $("#bank-filter").innerHTML='<option value="all">全部銀行</option>'+[...new Set(catalog.map(c=>c.bank))].sort().map(x=>'<option value="'+escapeHtml(x)+'">'+escapeHtml(x)+'</option>').join("");
+ renderConditions();renderCards();renderResults();renderAlerts();
+ }catch(err){$("#results").innerHTML='<div class="empty">資料載入失敗：'+escapeHtml(err.message)+'。請檢查 data/cards.json 路徑與 GitHub Pages 部署。</div>'}
+}
+init();

@@ -5,7 +5,7 @@ const money=n=>"NT$ "+fmt(n);
 const KEY="cardwise-tw-settings-v2";
 const today=()=>new Date().toLocaleDateString("en-CA",{timeZone:"Asia/Taipei"});
 const categories={general:"一般消費",linepay:"LINE Pay",jkopay:"街口支付",applepay:"Apple Pay",shopee:"蝦皮購物",momo:"momo 購物網",convenience:"超商",overseas:"海外消費",dining:"餐飲",shopping:"購物"};
-const labels={"esun-estatement":"玉山已設定帳單 e 化（基本0.3%）","esun-autopay":"玉山電子帳單＋本行帳戶自扣","esun-simple":"玉山簡單選（與 UP 選擇一）","esun-up":"玉山 UP 選已符合訂閱／任務","cube-fixed":"CUBE 已切換固定回饋方案","overseas-physical":"海外實體面對面交易","fubon-tasks":"富邦電子帳單＋本行帳戶自扣","j-asia-country":"富邦 J：實際消費在日本／韓國／泰國","daway-bind":"DAWAY 已綁 LINE Pay","daway-go":"DAWAY GO 三項任務皆完成","new-customer":"符合當期信用卡新戶定義","hsbc-eligible":"滙豐該筆為官方指定合格通路","hsbc-autopay":"滙豐本行帳戶自扣任務完成"};
+const labels={"esun-estatement":"玉山已設定帳單 e 化（基本0.3%）","esun-autopay":"玉山電子帳單＋本行帳戶自扣","esun-simple":"玉山簡單選（與 UP 選擇一）","esun-up":"玉山 UP 選已符合訂閱／任務","cube-fixed":"CUBE 已切換固定回饋方案","overseas-physical":"海外實體面對面交易","fubon-tasks":"富邦電子帳單＋本行帳戶自扣","j-asia-country":"富邦 J：實際消費在日本／韓國／泰國","daway-bind":"DAWAY 已綁 LINE Pay","daway-go":"DAWAY GO 三項任務皆完成","new-customer":"符合當期信用卡新戶定義","hsbc-eligible":"滙豐該筆為官方指定合格通路","hsbc-autopay":"滙豐本行帳戶自扣任務完成","cube-digital":"CUBE 玩數位方案已選定","cube-dining":"CUBE 樂饗購方案已選定","cube-level1":"CUBE Level 1","cube-level2":"CUBE Level 2 已完成升級資格","cube-level3":"CUBE Level 3 財管貴賓"};
 let catalog=[];
 const defaults=()=>({owned:[],conditions:[],used:{},fee:{},pointValue:{}});
 let settings=load();
@@ -19,6 +19,7 @@ function conditionsMet(rule){return(rule.conditions||[]).every(x=>settings.condi
 function eligible(rule,cat){return (rule.category||[]).includes(cat)||(rule.category||[]).includes("all")}
 function chooseRules(card,cat,date){
   const rules=(card.rules||[]).filter(r=>eligible(r,cat)&&activeRule(r,date)&&conditionsMet(r));
+  if(card.id==="cathay-cube"&&rules.some(r=>r.id==="cube-fixed"||r.id==="cube-overseas"))return rules.filter(r=>!r.id.startsWith("cube-digital")&&!r.id.startsWith("cube-dining"));
   if(card.id==="esun-unicard"&&rules.some(r=>r.id==="esun-up"))return rules.filter(r=>r.id!=="esun-simple");
   return rules;
 }
@@ -56,6 +57,8 @@ function compute(card,amount,cat,date,annualSpend,fxFee){
 function renderConditions(){
  $("#condition-list").innerHTML=Object.entries(labels).map(([id,label])=>'<label class="check"><input type="checkbox" data-condition="'+escapeHtml(id)+'" '+(settings.conditions.includes(id)?"checked":"")+'> '+escapeHtml(label)+'</label>').join("");
  $("#condition-list").addEventListener("change",event=>{const id=event.target.dataset.condition;if(!id)return;let s=new Set(settings.conditions);event.target.checked?s.add(id):s.delete(id);
+ if(event.target.checked&&["cube-fixed","cube-digital","cube-dining"].includes(id)){for(const other of ["cube-fixed","cube-digital","cube-dining"])if(other!==id)s.delete(other)}
+ if(event.target.checked&&["cube-level1","cube-level2","cube-level3"].includes(id)){for(const other of ["cube-level1","cube-level2","cube-level3"])if(other!==id)s.delete(other)}
  if(id==="esun-simple"&&event.target.checked)s.delete("esun-up");
  if(id==="esun-up"&&event.target.checked)s.delete("esun-simple");
  settings.conditions=[...s];save();renderConditions();renderResults()}, {once:true});
@@ -83,6 +86,22 @@ function renderCards(){
  const filtered=catalog.filter(c=>(bank==="all"||c.bank===bank)&&(!ownedOnly||settings.owned.includes(c.id))&&((c.bank+c.name).toLowerCase().includes(q)));
  $("#card-grid").innerHTML=filtered.length?filtered.map(renderCard).join(""):'<div class="empty">沒有找到信用卡</div>';
 }
+
+const matrixCategories=["linepay","jkopay","applepay","shopee","momo","convenience","overseas","dining"];
+function renderMatrix(){
+ const target=$("#channel-matrix");if(!target)return;
+ const bank=$("#channel-bank").value,filter=$("#channel-filter").value,owned=$("#channel-owned").checked;
+ const keys=filter==="all"?matrixCategories:[filter];
+ const cards=catalog.filter(c=>(bank==="all"||c.bank===bank)&&(!owned||settings.owned.includes(c.id)));
+ const head=keys.map(k=>'<th>'+escapeHtml(categories[k])+'</th>').join("");
+ const rows=cards.map(c=>'<tr><th><strong>'+escapeHtml(c.name)+'</strong><small>'+escapeHtml(c.bank)+'</small></th>'+keys.map(k=>{
+ const fact=(c.channelFacts||[]).find(x=>x.category===k);
+ if(!fact)return '<td><span class="matrix-unknown">待查核</span></td>';
+ return '<td><details class="matrix-detail"><summary><strong>'+escapeHtml(fact.rate)+'</strong><small>'+escapeHtml(fact.status)+'</small></summary><div class="matrix-info"><p>'+escapeHtml(fact.criteria)+'</p><p><b>上限：</b>'+escapeHtml(fact.limit)+'</p><a href="'+escapeHtml(fact.source||c.source)+'" target="_blank" rel="noopener noreferrer">官方條款 ↗</a></div></details></td>';
+ }).join("")+'</tr>').join("");
+ target.innerHTML=cards.length?'<table class="matrix-table"><thead><tr><th>銀行／卡片</th>'+head+'</tr></thead><tbody>'+rows+'</tbody></table>':'<div class="empty">無符合條件的信用卡</div>';
+}
+
 function renderAlerts(){
  const now=today();const out=[];
  for(const card of catalog){for(const r of card.rules||[]){if(!r.end)continue;const days=Math.ceil((new Date(r.end+"T12:00:00Z")-new Date(now+"T12:00:00Z"))/86400000);if(days<0||days<=45)out.push({card:card.name,label:r.label,end:r.end,days})}
@@ -95,19 +114,21 @@ function bind(){
  $("#calculate").addEventListener("click",renderResults);
  ["amount","category","date","annual-spend","fx-fee","scope"].forEach(id=>$("#"+id).addEventListener("change",renderResults));
  ["search","bank-filter","owned-filter"].forEach(id=>$("#"+id).addEventListener("input",renderCards));
+ ["channel-filter","channel-bank","channel-owned"].forEach(id=>$("#"+id).addEventListener("change",renderMatrix));
  $("#card-grid").addEventListener("change",e=>{let t=e.target;if(t.dataset.owned){settings.owned=t.checked?[...new Set([...settings.owned,t.dataset.owned])]:settings.owned.filter(x=>x!==t.dataset.owned)}
  if(t.dataset.fee){settings.fee[t.dataset.fee]=t.value}
  if(t.dataset.point){settings.pointValue[t.dataset.point]=Number(t.value)}
  if(t.dataset.used){settings.used[t.dataset.used]=Math.max(0,Number(t.value)||0)}
- save();renderResults()});
+ save();renderResults();renderMatrix()});
 }
 async function init(){
  $("#date").value=today();bind();
  try{const res=await fetch("./data/cards.json",{cache:"no-store"});if(!res.ok)throw new Error("HTTP "+res.status);const payload=await res.json();catalog=payload.cards||[];
  $("#card-count").textContent=catalog.length+" 張卡片追蹤中";
  $("#verified-date").textContent="資料基準 "+payload.checkedAt;
+ $("#channel-bank").innerHTML='<option value="all">全部銀行</option>'+[...new Set(catalog.map(c=>c.bank))].sort().map(x=>'<option value="'+escapeHtml(x)+'">'+escapeHtml(x)+'</option>').join("");
  $("#bank-filter").innerHTML='<option value="all">全部銀行</option>'+[...new Set(catalog.map(c=>c.bank))].sort().map(x=>'<option value="'+escapeHtml(x)+'">'+escapeHtml(x)+'</option>').join("");
- renderConditions();renderCards();renderResults();renderAlerts();
+ renderConditions();renderCards();renderMatrix();renderResults();renderAlerts();
  }catch(err){$("#results").innerHTML='<div class="empty">資料載入失敗：'+escapeHtml(err.message)+'。請檢查 data/cards.json 路徑與 GitHub Pages 部署。</div>'}
 }
 init();

@@ -1,0 +1,1464 @@
+{
+  "license": "CC BY 4.0（https://creativecommons.org/licenses/by/4.0/deed.zh-hant）",
+  "attribution": "台灣支付優惠站 https://pay.elggum.com",
+  "disclaimer_zh": "本資料整理自銀行與支付業者公開資訊，可能有誤或已變更，實際回饋以各機構公告為準。謹慎理財 信用至上。",
+  "data_date": "2026-11-14",
+  "slug": "telecom",
+  "title_zh": "電信帳單",
+  "amount_twd": 1000,
+  "monthly_twd": [
+    3000,
+    10000,
+    30000
+  ],
+  "note_zh": "",
+  "default_sort": "once",
+  "ranking_sort_zh": "每張卡有三個數字：basic＝不用做任何事（基本條件：最低等級、不登錄、不做任務、不設薪轉、不算月消費門檻）；once＝做一次就好（同 basic，但活動登錄、只做一次的任務算做完；限量、月消費門檻、每月任務仍不算，once.requirements 列出要做的事）；best＝最佳情況（最高等級、登錄與條件全部達成，best.requirements 列出需要的條件）。陣列預設依 once.net_twd_per_1000 由高到低排序（沒有 once 時用 basic）；有 monthly 的排行改依 monthly.once 的中間檔位（monthly_twd[1]）月回饋排序，差距小於該檔金額 0.05%（以該組第一名為準）標為並列（tie＝true），並列只是標籤、不改次序（只有數字完全相等時才依序再比 basic、best、卡名；expired＝true 的已過期項目一律排在最後）。best 有 threshold_twd 時，表示這個最佳情況要當月或當期帳單累積刷滿 threshold_twd 元才拿得到：best.net_rate_bp 是「刷到門檻那麼多、總共拿多少」的回饋率（這一筆照最佳情況算，為了達到門檻另外要刷的金額照 basic 的回饋率算，加起來除以 threshold_twd），txn_rate_bp 是只看這一筆的回饋率，net_twd_per_1000 仍是這一筆的回饋金額。monthly.best 在小於 threshold_twd 的檔位，光靠這個通路刷不到門檻，數字改用 monthly.once 的同一檔位（沒有 once 用 basic）；大於等於門檻的檔位照原本算。better_at 是同一類別裡回饋比較高的其他商店（例：超商排行用 7-ELEVEN、全家裡比較低的那家排名，萊爾富比較高就寫在這裡），只是附註，不影響名次。only_at 出現時，表示該欄（scenario）的 net_rate_bp 只有 merchant_names 這幾家商店拿得到（最多列 3 家，count＝拿得到的家數，total＝這個類別收錄的商店數），其他商店拿不到這個數字；只有依類別排的排行會有這個欄位，類別內每家商店都拿得到時不會出現。reviewed＝true 是照官網原文二次核對過（90 天內、來源沒有出入）的卡，排在前面、有名次；reviewed＝false 是還沒二次核對的卡，排在後面、沒有名次（各自依上面的規則排序；免年費、活動、期間這類清單不分前後）；有卡回饋大於 0 時，回饋是 0 的卡不列入（免年費清單、以及有 better_at 的卡除外）。",
+  "entries": [
+    {
+      "card_id": "firstbank-ileo",
+      "card_name": "第一銀行 iLEO 信用卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 20,
+        "net_rate_bp": 200,
+        "cap_twd_max": 500,
+        "max_spend_twd": 33333,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 20,
+        "net_rate_bp": 200,
+        "cap_twd_max": 500,
+        "max_spend_twd": 33333,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 20,
+        "net_rate_bp": 200,
+        "cap_twd_max": 500,
+        "max_spend_twd": 33333,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "verified_ai": "2026-11-13",
+      "monthly": {
+        "twd": [
+          3000,
+          10000,
+          30000
+        ],
+        "base": [
+          60,
+          200,
+          600
+        ],
+        "best": [
+          60,
+          200,
+          600
+        ],
+        "once": [
+          60,
+          200,
+          600
+        ]
+      },
+      "tie": true,
+      "reviewed": true
+    },
+    {
+      "card_id": "sinopac-sea-mastercard",
+      "card_name": "永豐 SEA 萬事達卡（限外籍人士）",
+      "confidence": "official_x2",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 0,
+        "net_rate_bp": 0,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：限外籍人士（需居留證與工作證明）"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 30,
+        "net_rate_bp": 300,
+        "cap_twd_max": 100,
+        "max_spend_twd": 4166,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "需完成「申辦電子／行動帳單」：電信 2.4% 需要；一般消費不需要。",
+          "前提：限外籍人士（需居留證與工作證明）"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 30,
+        "net_rate_bp": 300,
+        "cap_twd_max": 100,
+        "max_spend_twd": 4166,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "需完成「申辦電子／行動帳單」：電信 2.4% 需要；一般消費不需要。",
+          "前提：限外籍人士（需居留證與工作證明）"
+        ],
+        "needs_registration": false
+      },
+      "verified_ai": "2026-11-13",
+      "monthly": {
+        "twd": [
+          3000,
+          10000,
+          30000
+        ],
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "best": [
+          90,
+          160,
+          280
+        ],
+        "once": [
+          90,
+          160,
+          280
+        ]
+      },
+      "reviewed": true
+    },
+    {
+      "card_id": "firstbank-wonderful",
+      "card_name": "第一銀行 Wonderful 星璨卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 15,
+        "net_rate_bp": 150,
+        "cap_twd_max": 500,
+        "max_spend_twd": 50000,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 15,
+        "net_rate_bp": 150,
+        "cap_twd_max": 500,
+        "max_spend_twd": 50000,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 15,
+        "net_rate_bp": 150,
+        "cap_twd_max": 500,
+        "max_spend_twd": 50000,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "verified_ai": "2026-11-13",
+      "monthly": {
+        "twd": [
+          3000,
+          10000,
+          30000
+        ],
+        "base": [
+          45,
+          150,
+          450
+        ],
+        "best": [
+          45,
+          150,
+          450
+        ],
+        "once": [
+          45,
+          150,
+          450
+        ]
+      },
+      "reviewed": true
+    },
+    {
+      "card_id": "fubon-open-possible",
+      "card_name": "富邦台灣大哥大 Open Possible 聯名卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": "5g",
+        "tier": null,
+        "net_twd_per_1000": 35,
+        "net_rate_bp": 150,
+        "cap_twd_max": 500,
+        "max_spend_twd": 20000,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [
+          "今天切到「台灣大 5G 門號」方案",
+          "當期帳單累積消費滿 5,000 元才有加碼"
+        ],
+        "needs_registration": false,
+        "threshold_twd": 5000,
+        "txn_rate_bp": 350
+      },
+      "verified_ai": "2026-11-13",
+      "monthly": {
+        "twd": [
+          3000,
+          10000,
+          30000
+        ],
+        "base": [
+          30,
+          100,
+          300
+        ],
+        "best": [
+          30,
+          350,
+          800
+        ],
+        "once": [
+          30,
+          100,
+          300
+        ]
+      },
+      "tie": true,
+      "reviewed": true
+    },
+    {
+      "card_id": "firstbank-ipass",
+      "card_name": "第一銀行一卡通聯名卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "verified_ai": "2026-11-13",
+      "monthly": {
+        "twd": [
+          3000,
+          10000,
+          30000
+        ],
+        "base": [
+          30,
+          100,
+          300
+        ],
+        "best": [
+          30,
+          100,
+          300
+        ],
+        "once": [
+          30,
+          100,
+          300
+        ]
+      },
+      "tie": true,
+      "reviewed": true
+    },
+    {
+      "card_id": "ubot-green",
+      "card_name": "聯邦 綠卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 0,
+        "net_rate_bp": 0,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": 100,
+        "max_spend_twd": 10000,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "需完成「電子化帳單＋自動代扣繳」：成功申辦電子化帳單，並把該費用設定成本卡自動代扣繳。"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": 100,
+        "max_spend_twd": 10000,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "需完成「電子化帳單＋自動代扣繳」：成功申辦電子化帳單，並把該費用設定成本卡自動代扣繳。"
+        ],
+        "needs_registration": false
+      },
+      "verified_ai": "2026-11-01",
+      "monthly": {
+        "twd": [
+          3000,
+          10000,
+          30000
+        ],
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "best": [
+          30,
+          100,
+          100
+        ],
+        "once": [
+          30,
+          100,
+          100
+        ]
+      },
+      "tie": true,
+      "reviewed": true
+    },
+    {
+      "card_id": "firstbank-titanium-travel",
+      "card_name": "第一銀行 鈦金商旅卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 6,
+        "net_rate_bp": 60,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 6,
+        "net_rate_bp": 60,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 6,
+        "net_rate_bp": 60,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "verified_ai": "2026-11-01",
+      "monthly": {
+        "twd": [
+          3000,
+          10000,
+          30000
+        ],
+        "base": [
+          18,
+          60,
+          180
+        ],
+        "best": [
+          18,
+          60,
+          180
+        ],
+        "once": [
+          18,
+          60,
+          180
+        ]
+      },
+      "tie": true,
+      "reviewed": true
+    },
+    {
+      "card_id": "firstbank-dual-titanium",
+      "card_name": "第一銀行 雙幣鈦金商旅卡",
+      "confidence": "official_x2",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 6,
+        "net_rate_bp": 60,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 6,
+        "net_rate_bp": 60,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 6,
+        "net_rate_bp": 60,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "verified_ai": "2026-11-01",
+      "monthly": {
+        "twd": [
+          3000,
+          10000,
+          30000
+        ],
+        "base": [
+          18,
+          60,
+          180
+        ],
+        "best": [
+          18,
+          60,
+          180
+        ],
+        "once": [
+          18,
+          60,
+          180
+        ]
+      },
+      "tie": true,
+      "reviewed": true
+    },
+    {
+      "card_id": "bot-debit",
+      "card_name": "臺灣銀行 達人 Visa 金融卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 5,
+        "net_rate_bp": 50,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "單筆滿 500 元才有加碼",
+          "前提：須有臺灣銀行存款帳戶。"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 6,
+        "net_rate_bp": 60,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "需完成「申辦電子帳單」：申辦臺銀 VISA 金融卡電子帳單的期間，現金紅利再加 0.1%（合計 0.6%）。",
+          "單筆滿 500 元才有加碼",
+          "前提：須有臺灣銀行存款帳戶。"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 6,
+        "net_rate_bp": 60,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "需完成「申辦電子帳單」：申辦臺銀 VISA 金融卡電子帳單的期間，現金紅利再加 0.1%（合計 0.6%）。",
+          "單筆滿 500 元才有加碼",
+          "前提：須有臺灣銀行存款帳戶。"
+        ],
+        "needs_registration": false
+      },
+      "verified_ai": "2026-11-13",
+      "monthly": {
+        "twd": [
+          3000,
+          10000,
+          30000
+        ],
+        "base": [
+          15,
+          50,
+          150
+        ],
+        "best": [
+          18,
+          60,
+          180
+        ],
+        "once": [
+          18,
+          60,
+          180
+        ]
+      },
+      "tie": true,
+      "reviewed": true
+    },
+    {
+      "card_id": "landbank-debit",
+      "card_name": "土地銀行 Debit 金融卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 5,
+        "net_rate_bp": 50,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：須有土地銀行存款帳戶。"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 5,
+        "net_rate_bp": 50,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：須有土地銀行存款帳戶。"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 5,
+        "net_rate_bp": 50,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：須有土地銀行存款帳戶。"
+        ],
+        "needs_registration": false
+      },
+      "verified_ai": "2026-11-13",
+      "monthly": {
+        "twd": [
+          3000,
+          10000,
+          30000
+        ],
+        "base": [
+          15,
+          50,
+          150
+        ],
+        "best": [
+          15,
+          50,
+          150
+        ],
+        "once": [
+          15,
+          50,
+          150
+        ]
+      },
+      "tie": true,
+      "reviewed": true
+    },
+    {
+      "card_id": "firstbank-ileo-debit",
+      "card_name": "第一銀行 iLEO VISA 金融卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 5,
+        "net_rate_bp": 50,
+        "cap_twd_max": 1000,
+        "max_spend_twd": 200000,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：須開立 iLEO 數位帳戶；回饋存入 iLEO 數位帳戶。"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 5,
+        "net_rate_bp": 50,
+        "cap_twd_max": 1000,
+        "max_spend_twd": 200000,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：須開立 iLEO 數位帳戶；回饋存入 iLEO 數位帳戶。"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 5,
+        "net_rate_bp": 50,
+        "cap_twd_max": 1000,
+        "max_spend_twd": 200000,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：須開立 iLEO 數位帳戶；回饋存入 iLEO 數位帳戶。"
+        ],
+        "needs_registration": false
+      },
+      "verified_ai": "2026-11-13",
+      "monthly": {
+        "twd": [
+          3000,
+          10000,
+          30000
+        ],
+        "base": [
+          15,
+          50,
+          150
+        ],
+        "best": [
+          15,
+          50,
+          150
+        ],
+        "once": [
+          15,
+          50,
+          150
+        ]
+      },
+      "tie": true,
+      "reviewed": true
+    },
+    {
+      "card_id": "firstbank-glory",
+      "card_name": "第一銀行 GLORY+ 世界卡",
+      "confidence": "official_x2",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 4,
+        "net_rate_bp": 40,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 4,
+        "net_rate_bp": 40,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 4,
+        "net_rate_bp": 40,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "verified_ai": "2026-11-13",
+      "monthly": {
+        "twd": [
+          3000,
+          10000,
+          30000
+        ],
+        "base": [
+          12,
+          40,
+          120
+        ],
+        "best": [
+          12,
+          40,
+          120
+        ],
+        "once": [
+          12,
+          40,
+          120
+        ]
+      },
+      "tie": true,
+      "reviewed": true
+    },
+    {
+      "card_id": "yuanta-debit",
+      "card_name": "元大 Visa 金融卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 3,
+        "net_rate_bp": 30,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：須有元大活期帳戶；海外刷卡功能要另外申請啟用。"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 3,
+        "net_rate_bp": 30,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：須有元大活期帳戶；海外刷卡功能要另外申請啟用。"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 3,
+        "net_rate_bp": 30,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：須有元大活期帳戶；海外刷卡功能要另外申請啟用。"
+        ],
+        "needs_registration": false
+      },
+      "verified_ai": "2026-11-13",
+      "monthly": {
+        "twd": [
+          3000,
+          10000,
+          30000
+        ],
+        "base": [
+          9,
+          30,
+          90
+        ],
+        "best": [
+          9,
+          30,
+          90
+        ],
+        "once": [
+          9,
+          30,
+          90
+        ]
+      },
+      "tie": true,
+      "reviewed": true
+    },
+    {
+      "card_id": "skbank-skm",
+      "card_name": "新光 新光三越聯名卡",
+      "confidence": "official_x2",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 3,
+        "net_rate_bp": 30,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 3,
+        "net_rate_bp": 30,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 3,
+        "net_rate_bp": 30,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "verified_ai": "2026-11-13",
+      "monthly": {
+        "twd": [
+          3000,
+          10000,
+          30000
+        ],
+        "base": [
+          9,
+          30,
+          90
+        ],
+        "best": [
+          9,
+          30,
+          90
+        ],
+        "once": [
+          9,
+          30,
+          90
+        ]
+      },
+      "tie": true,
+      "reviewed": true
+    },
+    {
+      "card_id": "tcb-house-loan",
+      "card_name": "合庫 愛家卡",
+      "confidence": "official_x2",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": "mortgagor",
+        "net_twd_per_1000": 0,
+        "net_rate_bp": 0,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：限合庫房貸客戶"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": "mortgagor",
+        "net_twd_per_1000": 2,
+        "net_rate_bp": 20,
+        "cap_twd_max": 300,
+        "max_spend_twd": 150000,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "需完成「公用事業費代扣繳」：以 VISA 御璽愛家卡設定代扣中華電信、台電、自來水、瓦斯費；沒設代扣時公用事業費不回饋。",
+          "前提：限合庫房貸客戶"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": "mortgagor",
+        "net_twd_per_1000": 2,
+        "net_rate_bp": 20,
+        "cap_twd_max": 300,
+        "max_spend_twd": 150000,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "需完成「公用事業費代扣繳」：以 VISA 御璽愛家卡設定代扣中華電信、台電、自來水、瓦斯費；沒設代扣時公用事業費不回饋。",
+          "前提：限合庫房貸客戶"
+        ],
+        "needs_registration": false
+      },
+      "verified_ai": "2026-11-13",
+      "monthly": {
+        "twd": [
+          3000,
+          10000,
+          30000
+        ],
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "best": [
+          6,
+          20,
+          60
+        ],
+        "once": [
+          6,
+          20,
+          60
+        ]
+      },
+      "reviewed": true
+    },
+    {
+      "card_id": "ctbc-cht",
+      "card_name": "中信 中華電信聯名卡",
+      "confidence": "official_x2",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 0,
+        "net_rate_bp": 0,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 20,
+        "net_rate_bp": 200,
+        "cap_twd_max": 300,
+        "max_spend_twd": 15000,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "需完成「中華電信帳單代扣繳」：在中華電信設定以本卡定期代扣繳中華電信資費（行動、市話、HiNet 等）。"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 20,
+        "net_rate_bp": 200,
+        "cap_twd_max": 300,
+        "max_spend_twd": 15000,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "需完成「中華電信帳單代扣繳」：在中華電信設定以本卡定期代扣繳中華電信資費（行動、市話、HiNet 等）。"
+        ],
+        "needs_registration": false
+      },
+      "monthly": {
+        "twd": [
+          3000,
+          10000,
+          30000
+        ],
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "best": [
+          60,
+          200,
+          300
+        ],
+        "once": [
+          60,
+          200,
+          300
+        ]
+      },
+      "tie": true,
+      "reviewed": false
+    },
+    {
+      "card_id": "linebank-debit",
+      "card_name": "LINE Bank 快點卡（簽帳金融卡）",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 5,
+        "net_rate_bp": 50,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：須先開立 LINE Bank 帳戶；刷卡時從帳戶圈存，商店請款後扣款。"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 5,
+        "net_rate_bp": 50,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：須先開立 LINE Bank 帳戶；刷卡時從帳戶圈存，商店請款後扣款。"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 5,
+        "net_rate_bp": 50,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：須先開立 LINE Bank 帳戶；刷卡時從帳戶圈存，商店請款後扣款。"
+        ],
+        "needs_registration": false
+      },
+      "monthly": {
+        "twd": [
+          3000,
+          10000,
+          30000
+        ],
+        "base": [
+          15,
+          50,
+          150
+        ],
+        "best": [
+          15,
+          50,
+          150
+        ],
+        "once": [
+          15,
+          50,
+          150
+        ]
+      },
+      "tie": true,
+      "reviewed": false
+    },
+    {
+      "card_id": "firstbank-yixiang",
+      "card_name": "第一銀行 義享天地聯名卡",
+      "confidence": "official_x2",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": "world",
+        "net_twd_per_1000": 4,
+        "net_rate_bp": 40,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": "world",
+        "net_twd_per_1000": 4,
+        "net_rate_bp": 40,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": "world",
+        "net_twd_per_1000": 4,
+        "net_rate_bp": 40,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "monthly": {
+        "twd": [
+          3000,
+          10000,
+          30000
+        ],
+        "base": [
+          12,
+          40,
+          120
+        ],
+        "best": [
+          12,
+          40,
+          120
+        ],
+        "once": [
+          12,
+          40,
+          120
+        ]
+      },
+      "tie": true,
+      "reviewed": false
+    },
+    {
+      "card_id": "firstbank-ifun",
+      "card_name": "第一銀行 i-Fun 愛玩樂卡",
+      "confidence": "official_x2",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 3,
+        "net_rate_bp": 30,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 3,
+        "net_rate_bp": 30,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 5,
+        "net_rate_bp": 34,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "當期帳單累積消費滿 5,000 元才有加碼"
+        ],
+        "needs_registration": false,
+        "threshold_twd": 5000,
+        "txn_rate_bp": 50
+      },
+      "monthly": {
+        "twd": [
+          3000,
+          10000,
+          30000
+        ],
+        "base": [
+          9,
+          30,
+          90
+        ],
+        "best": [
+          9,
+          50,
+          150
+        ],
+        "once": [
+          9,
+          30,
+          90
+        ]
+      },
+      "tie": true,
+      "reviewed": false
+    },
+    {
+      "card_id": "yuanta-world",
+      "card_name": "元大世界卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 3,
+        "net_rate_bp": 30,
+        "cap_twd_max": 500,
+        "max_spend_twd": 166666,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 3,
+        "net_rate_bp": 30,
+        "cap_twd_max": 500,
+        "max_spend_twd": 166666,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 100,
+        "net_rate_bp": 79,
+        "cap_twd_max": 1000,
+        "max_spend_twd": 166666,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "當期帳單累積消費滿 20,000 元才有加碼"
+        ],
+        "needs_registration": false,
+        "threshold_twd": 20000,
+        "txn_rate_bp": 1000
+      },
+      "monthly": {
+        "twd": [
+          3000,
+          10000,
+          30000
+        ],
+        "base": [
+          9,
+          30,
+          90
+        ],
+        "best": [
+          9,
+          30,
+          590
+        ],
+        "once": [
+          9,
+          30,
+          90
+        ]
+      },
+      "tie": true,
+      "reviewed": false
+    }
+  ],
+  "promo_ids": []
+}

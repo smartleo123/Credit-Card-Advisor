@@ -7,7 +7,7 @@
     "sourceApi": "https://pay.elggum.com/api/v1/meta.json",
     "dataDate": "2026-11-14",
     "generatedAt": "2026-11-14T02:49:49.389Z",
-    "syncedAt": "2026-11-15T18:53:58.333135+00:00",
+    "syncedAt": "2026-11-15T19:04:15.473161+00:00",
     "counts": {
       "issuers": 51,
       "cards": 199,
@@ -41,19 +41,569 @@
       "card-scores": "fc8ff2b792216d7df362932c2ed3d66b5a89e83f24be3266dafe172c5a44212b"
     },
     "rankings": {
-      "general": 73,
-      "seven-eleven": 32,
-      "familymart": 32,
-      "convenience": 88,
       "shopee": 62,
       "momo": 62,
-      "line-pay": 63,
-      "jkopay": 27,
-      "apple-pay": 60,
-      "overseas": 53,
+      "general": 73,
+      "online": 85,
+      "general-uncapped": 50,
+      "coupang": 61,
+      "pchome": 63,
+      "taobao": 62,
+      "seven-eleven": 32,
+      "convenience": 88,
+      "familymart": 32,
+      "amazon": 74,
+      "pxmart": 6,
+      "costco": 1,
+      "supermarket": 74,
+      "carrefour": 61,
+      "uber-eats": 80,
       "dining": 93,
-      "online": 85
+      "delivery": 80,
+      "foodpanda": 80,
+      "drinks-coffee": 72,
+      "fast-food": 69,
+      "fuel": 87,
+      "hotpot": 69,
+      "transit": 1,
+      "ev-charging": 63,
+      "thsr": 73,
+      "parking": 59,
+      "tra": 68,
+      "streaming": 75,
+      "drugstore": 62,
+      "taxi": 66,
+      "department": 67,
+      "electronics": 61,
+      "telecom": 20,
+      "insurance": 40,
+      "tax": 1,
+      "utilities": 6,
+      "medical": 0,
+      "pet": 60,
+      "tuition": 0,
+      "new-customer": 0,
+      "movie": 61,
+      "ktv": 63,
+      "student": 0,
+      "miles": 3,
+      "annual-fee-free": 127,
+      "cashback": 61,
+      "cobrand": 10,
+      "debit": 9,
+      "points": 40,
+      "premium": 9,
+      "apple-pay": 60,
+      "business": 2,
+      "line-pay": 63,
+      "mobile-pay": 71,
+      "jkopay": 27,
+      "google-pay": 50,
+      "samsung-pay": 52,
+      "pxpay-plus": 32,
+      "pluspay": 9,
+      "ipass-money": 4,
+      "pi-wallet": 8,
+      "taiwan-pay": 33,
+      "overseas": 53,
+      "overseas-uncapped": 48,
+      "wallet-best-card": 69,
+      "japan": 69,
+      "korea": 64,
+      "icash-pay": 29,
+      "easywallet": 13,
+      "thailand": 63,
+      "singapore": 62,
+      "macau": 62,
+      "hong-kong": 61,
+      "china": 61,
+      "vietnam": 62,
+      "malaysia": 62,
+      "indonesia": 62,
+      "philippines": 62,
+      "uk": 53,
+      "usa": 62,
+      "australia": 62,
+      "canada": 62,
+      "france": 53,
+      "germany": 53,
+      "new-zealand": 62,
+      "italy": 53,
+      "spain": 52,
+      "europe": 52,
+      "switzerland": 62,
+      "overseas-online": 62,
+      "duty-free": 60,
+      "hotel-booking": 69,
+      "travel-insurance": 0,
+      "travel-agency": 63,
+      "airport-transfer": 0,
+      "lounge": 0,
+      "airline": 65,
+      "monthly-2026-10": 0,
+      "quarter-2026q4": 72,
+      "monthly-2026-11": 72,
+      "monthly-2026-12": 72,
+      "double-11": 0,
+      "half-2027h1": 177,
+      "anniversary": 0,
+      "half-2026h2": 72,
+      "mothers-day": 0,
+      "lunar-new-year": 0,
+      "double-12": 0,
+      "618": 0,
+      "black-friday": 0
     },
+    "rankingsIndex": [
+      {
+        "slug": "general",
+        "title": "無腦一卡（不限通路）"
+      },
+      {
+        "slug": "general-uncapped",
+        "title": "國內一般消費・回饋無上限"
+      },
+      {
+        "slug": "online",
+        "title": "網購總排行"
+      },
+      {
+        "slug": "shopee",
+        "title": "蝦皮"
+      },
+      {
+        "slug": "momo",
+        "title": "momo"
+      },
+      {
+        "slug": "pchome",
+        "title": "PChome"
+      },
+      {
+        "slug": "coupang",
+        "title": "酷澎 Coupang"
+      },
+      {
+        "slug": "taobao",
+        "title": "淘寶"
+      },
+      {
+        "slug": "amazon",
+        "title": "Amazon"
+      },
+      {
+        "slug": "convenience",
+        "title": "超商（7-11、全家、萊爾富、OK）"
+      },
+      {
+        "slug": "seven-eleven",
+        "title": "7-ELEVEN"
+      },
+      {
+        "slug": "familymart",
+        "title": "全家"
+      },
+      {
+        "slug": "supermarket",
+        "title": "量販（全聯、大全聯、家樂福、Costco、愛買）"
+      },
+      {
+        "slug": "pxmart",
+        "title": "全聯"
+      },
+      {
+        "slug": "costco",
+        "title": "Costco 好市多"
+      },
+      {
+        "slug": "carrefour",
+        "title": "家樂福"
+      },
+      {
+        "slug": "delivery",
+        "title": "外送（Uber Eats、foodpanda）"
+      },
+      {
+        "slug": "uber-eats",
+        "title": "Uber Eats"
+      },
+      {
+        "slug": "foodpanda",
+        "title": "foodpanda"
+      },
+      {
+        "slug": "dining",
+        "title": "餐廳"
+      },
+      {
+        "slug": "drinks-coffee",
+        "title": "手搖飲和咖啡"
+      },
+      {
+        "slug": "fast-food",
+        "title": "速食"
+      },
+      {
+        "slug": "hotpot",
+        "title": "火鍋燒肉"
+      },
+      {
+        "slug": "fuel",
+        "title": "加油"
+      },
+      {
+        "slug": "ev-charging",
+        "title": "充電"
+      },
+      {
+        "slug": "parking",
+        "title": "停車與 eTag"
+      },
+      {
+        "slug": "transit",
+        "title": "交通（捷運、公車、悠遊卡與一卡通自動加值）"
+      },
+      {
+        "slug": "thsr",
+        "title": "高鐵"
+      },
+      {
+        "slug": "tra",
+        "title": "台鐵"
+      },
+      {
+        "slug": "taxi",
+        "title": "計程車（Uber、LINE GO、台灣大車隊）"
+      },
+      {
+        "slug": "department",
+        "title": "百貨（含週年慶）"
+      },
+      {
+        "slug": "drugstore",
+        "title": "藥妝"
+      },
+      {
+        "slug": "electronics",
+        "title": "3C（Apple、燦坤、全國電子）"
+      },
+      {
+        "slug": "telecom",
+        "title": "電信帳單"
+      },
+      {
+        "slug": "streaming",
+        "title": "串流訂閱（Netflix、Disney+、YouTube、Spotify、ChatGPT）"
+      },
+      {
+        "slug": "insurance",
+        "title": "保費"
+      },
+      {
+        "slug": "tax",
+        "title": "繳稅"
+      },
+      {
+        "slug": "utilities",
+        "title": "水電瓦斯"
+      },
+      {
+        "slug": "tuition",
+        "title": "學費"
+      },
+      {
+        "slug": "medical",
+        "title": "醫療"
+      },
+      {
+        "slug": "pet",
+        "title": "寵物"
+      },
+      {
+        "slug": "movie",
+        "title": "電影"
+      },
+      {
+        "slug": "ktv",
+        "title": "KTV"
+      },
+      {
+        "slug": "new-customer",
+        "title": "新戶首刷禮"
+      },
+      {
+        "slug": "annual-fee-free",
+        "title": "免年費"
+      },
+      {
+        "slug": "student",
+        "title": "學生和新鮮人"
+      },
+      {
+        "slug": "debit",
+        "title": "簽帳金融卡"
+      },
+      {
+        "slug": "cashback",
+        "title": "現金回饋"
+      },
+      {
+        "slug": "miles",
+        "title": "哩程卡（長榮、華航、亞洲萬里通）"
+      },
+      {
+        "slug": "points",
+        "title": "點數卡"
+      },
+      {
+        "slug": "cobrand",
+        "title": "聯名卡"
+      },
+      {
+        "slug": "premium",
+        "title": "頂級卡（貴賓室）"
+      },
+      {
+        "slug": "business",
+        "title": "商務卡"
+      },
+      {
+        "slug": "mobile-pay",
+        "title": "行動支付總排行"
+      },
+      {
+        "slug": "apple-pay",
+        "title": "Apple Pay"
+      },
+      {
+        "slug": "google-pay",
+        "title": "Google Pay"
+      },
+      {
+        "slug": "samsung-pay",
+        "title": "Samsung Pay"
+      },
+      {
+        "slug": "line-pay",
+        "title": "LINE Pay"
+      },
+      {
+        "slug": "jkopay",
+        "title": "街口支付"
+      },
+      {
+        "slug": "pxpay-plus",
+        "title": "全支付"
+      },
+      {
+        "slug": "pluspay",
+        "title": "全盈+PAY"
+      },
+      {
+        "slug": "icash-pay",
+        "title": "icash Pay"
+      },
+      {
+        "slug": "easywallet",
+        "title": "悠遊付"
+      },
+      {
+        "slug": "ipass-money",
+        "title": "iPASS MONEY"
+      },
+      {
+        "slug": "pi-wallet",
+        "title": "Pi 拍錢包"
+      },
+      {
+        "slug": "taiwan-pay",
+        "title": "台灣 Pay"
+      },
+      {
+        "slug": "wallet-best-card",
+        "title": "各錢包綁哪張卡最好"
+      },
+      {
+        "slug": "overseas",
+        "title": "海外消費總排行"
+      },
+      {
+        "slug": "overseas-uncapped",
+        "title": "海外消費・回饋無上限"
+      },
+      {
+        "slug": "japan",
+        "title": "日本"
+      },
+      {
+        "slug": "korea",
+        "title": "韓國"
+      },
+      {
+        "slug": "thailand",
+        "title": "泰國"
+      },
+      {
+        "slug": "singapore",
+        "title": "新加坡"
+      },
+      {
+        "slug": "hong-kong",
+        "title": "香港"
+      },
+      {
+        "slug": "macau",
+        "title": "澳門"
+      },
+      {
+        "slug": "china",
+        "title": "中國"
+      },
+      {
+        "slug": "vietnam",
+        "title": "越南"
+      },
+      {
+        "slug": "malaysia",
+        "title": "馬來西亞"
+      },
+      {
+        "slug": "philippines",
+        "title": "菲律賓"
+      },
+      {
+        "slug": "indonesia",
+        "title": "印尼"
+      },
+      {
+        "slug": "uk",
+        "title": "英國"
+      },
+      {
+        "slug": "usa",
+        "title": "美國"
+      },
+      {
+        "slug": "canada",
+        "title": "加拿大"
+      },
+      {
+        "slug": "australia",
+        "title": "澳洲"
+      },
+      {
+        "slug": "new-zealand",
+        "title": "紐西蘭"
+      },
+      {
+        "slug": "france",
+        "title": "法國"
+      },
+      {
+        "slug": "germany",
+        "title": "德國"
+      },
+      {
+        "slug": "italy",
+        "title": "義大利"
+      },
+      {
+        "slug": "spain",
+        "title": "西班牙"
+      },
+      {
+        "slug": "switzerland",
+        "title": "瑞士"
+      },
+      {
+        "slug": "europe",
+        "title": "歐洲（另標出排除歐洲的卡）"
+      },
+      {
+        "slug": "overseas-online",
+        "title": "海外網購"
+      },
+      {
+        "slug": "hotel-booking",
+        "title": "訂房（Agoda、Booking）"
+      },
+      {
+        "slug": "airline",
+        "title": "航空公司官網"
+      },
+      {
+        "slug": "travel-agency",
+        "title": "旅行社"
+      },
+      {
+        "slug": "duty-free",
+        "title": "免稅店"
+      },
+      {
+        "slug": "travel-insurance",
+        "title": "旅平險"
+      },
+      {
+        "slug": "airport-transfer",
+        "title": "機場接送"
+      },
+      {
+        "slug": "lounge",
+        "title": "貴賓室"
+      },
+      {
+        "slug": "monthly-2026-10",
+        "title": "2026 年 10 月優惠整理"
+      },
+      {
+        "slug": "monthly-2026-11",
+        "title": "2026 年 11 月優惠整理"
+      },
+      {
+        "slug": "monthly-2026-12",
+        "title": "2026 年 12 月優惠整理"
+      },
+      {
+        "slug": "quarter-2026q4",
+        "title": "2026 第四季優惠"
+      },
+      {
+        "slug": "half-2026h2",
+        "title": "2026 下半年優惠"
+      },
+      {
+        "slug": "half-2027h1",
+        "title": "2027 上半年優惠"
+      },
+      {
+        "slug": "double-11",
+        "title": "雙 11"
+      },
+      {
+        "slug": "double-12",
+        "title": "雙 12"
+      },
+      {
+        "slug": "anniversary",
+        "title": "百貨週年慶"
+      },
+      {
+        "slug": "lunar-new-year",
+        "title": "春節"
+      },
+      {
+        "slug": "mothers-day",
+        "title": "母親節"
+      },
+      {
+        "slug": "618",
+        "title": "618"
+      },
+      {
+        "slug": "black-friday",
+        "title": "黑五"
+      }
+    ],
     "rankingErrors": []
   },
   "datasets": {

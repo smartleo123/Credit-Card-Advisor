@@ -230,9 +230,15 @@ def main():
                 ranking_errors.append(row["slug"] + ": " + str(exc)[:180])
     # Cards show a broad survey of merchant-specific rates, but a rate is never
     # labeled guaranteed and is never used as a formula for arbitrary amounts.
+    important = ("general", "general-uncapped", "online", "shopee", "momo",
+                 "pchome", "coupang", "convenience", "seven-eleven",
+                 "familymart", "line-pay", "jkopay", "apple-pay", "dining",
+                 "overseas", "amazon")
     for card_id, entries in evidence.items():
         entries.sort(key=lambda x: (not x["reviewed"], -x["rateBp"], x["title"]))
-        evidence[card_id] = entries[:30]
+        common = [x for x in entries if x["slug"] in important]
+        others = [x for x in entries if x["slug"] not in important]
+        evidence[card_id] = common[:18] + others[:12]
     snapshot["rankings"] = ranking_counts
     snapshot["rankingsIndex"] = ranking_catalog
     snapshot["rankingErrors"] = ranking_errors

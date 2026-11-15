@@ -449,6 +449,14 @@
           "limit": "依官網",
           "status": "官方已查核",
           "source": "https://www.ctbcbank.com/content/dam/minisite/long/creditcard/LINEPay/notice.html"
+        },
+        {
+          "category": "convenience",
+          "rate": "官方排除／無一般消費回饋",
+          "criteria": "中國信託 LINE Pay 卡一般 1% 回饋規則明確排除 7-ELEVEN、全家、萊爾富、OK 等便利商店消費。其他指定活動若有例外須另行查證。",
+          "limit": "一般消費 1% 不適用",
+          "status": "官方已查核",
+          "source": "https://www.ctbcbank.com/content/dam/minisite/long/creditcard/LINEPay/notice.html"
         }
       ]
     },

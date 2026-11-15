@@ -20,3 +20,11 @@
 .matrix-info p{margin:5px 0}.matrix-info a{display:inline-block;margin-top:7px;color:#83e7d2;text-decoration:underline}
 
 [hidden]{display:none!important}
+
+.external-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.external-card{background:#111e30;border:1px solid #30445b;border-radius:14px;padding:20px;min-width:0}
+.external-card h3{font-size:16px;margin:9px 0}
+.external-card p{font-size:12px;color:#aec1d4;line-height:1.75;overflow-wrap:anywhere}
+.external-links a{font-size:12px;color:#84edcf}
+@media(max-width:900px){.external-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.external-grid{grid-template-columns:1fr}}

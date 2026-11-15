@@ -17,7 +17,7 @@ import urllib.request
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "external"
 BASE = "https://pay.elggum.com/api/v1"
-ENDPOINTS = ("meta", "cards", "today", "wallets", "issuers", "promos", "fee_rules", "sources", "coverage")
+ENDPOINTS = ("meta", "cards", "today", "wallets", "issuers", "promos", "fee_rules", "sources", "coverage", "rankings", "card-scores")
 MAX_BYTES = 16_000_000
 MAX_TEXT = 350
 UA = "Credit-Card-Advisor/1.0 (+https://github.com/smartleo123/Credit-Card-Advisor)"
@@ -104,6 +104,8 @@ def compact_rows(obj, kind):
         "promos": ("promos", "promotions", "offers"),
         "fee_rules": ("fee_rules", "rules"),
         "today": ("recommendations", "deals", "offers", "cards", "promos"),
+        "rankings": ("rankings",),
+        "card-scores": ("scores", "cards", "rankings"),
     }
     data = first_collection(obj, options.get(kind, (kind,)))
     rows = []
@@ -168,9 +170,26 @@ def main():
         write_json(OUT / f"{name}.json", data)
         digest = hashlib.sha256(json.dumps(data, ensure_ascii=False, sort_keys=True).encode()).hexdigest()
         snapshot.setdefault("sha256", {})[name] = digest
-        if name in ("cards", "wallets", "issuers", "promos", "fee_rules", "today"):
+        if name in ("cards", "wallets", "issuers", "promos", "fee_rules", "today", "rankings", "card-scores"):
             index[name] = compact_rows(data, name)
             snapshot["recordCounts"][name] = len(index[name])
+    # Source-calculated category rankings are safer than inferring rewards from free text.
+    slugs = ("general", "seven-eleven", "familymart", "convenience", "shopee", "momo",
+             "line-pay", "jkopay", "apple-pay", "overseas", "dining", "online")
+    ranking_errors = []
+    ranking_counts = {}
+    for slug in slugs:
+        try:
+            # fetch() accepts a nested endpoint path with .json suffix.
+            ranking = fetch("rankings/" + slug)
+            if not isinstance(ranking, dict):
+                raise ValueError("expected ranking object")
+            write_json(OUT / "rankings" / (slug + ".json"), ranking)
+            ranking_counts[slug] = len(first_collection(ranking, ("entries", "cards", "rankings", "results")))
+        except Exception as exc:
+            ranking_errors.append(slug + ": " + str(exc)[:180])
+    snapshot["rankings"] = ranking_counts
+    snapshot["rankingErrors"] = ranking_errors
     write_json(OUT / "index.json", {"metadata": snapshot, "datasets": index})
     write_json(existing_manifest, snapshot)
     (OUT / "sync-error.txt").unlink(missing_ok=True)

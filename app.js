@@ -25,8 +25,8 @@ function chooseRules(card,cat,date){
 function compute(card,amount,cat,date,annualSpend,fxFee){
  if(!Number.isFinite(card.base.rate))return null;
  const overseas=cat==="overseas";
- const excluded=(card.exclude||[]).includes(cat);
- if(excluded)return {card,base:0,bonus:0,gross:0,feeCost:0,fxCost:0,net:0,lines:["此類消費可能不屬一般消費，為避免誤判回饋暫以0計"],warnings:["不符合一般消費資格"],eligible:false};
+ const excluded=(card.exclude||[]).includes(cat) || (cat==="convenience" && !(card.include||[]).includes("convenience"));
+ if(excluded)return {card,base:0,bonus:0,gross:0,feeCost:0,fxCost:0,net:0,lines:["此類消費可能不屬一般消費，為避免誤判回饋暫以0計"],warnings:["尚無已確認的超商專屬回饋規則，保守計0"],eligible:false};
  const point=Number(settings.pointValue[card.id]??card.pointValue??1);
  const validPoint=Number.isFinite(point)&&point>=0?point:0;
  const base=(card.base.conditions||[]).every(x=>settings.conditions.includes(x))?amount*card.base.rate:0;

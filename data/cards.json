@@ -1,0 +1,407 @@
+{
+  "schemaVersion": 2,
+  "checkedAt": "2026-11-16",
+  "caveat": "資料依官方頁面截至查核日整理；回饋只對符合銀行規範的一般消費適用。待核實的年費、資格、商戶認列與加碼不應視為保證。",
+  "cards": [
+    {
+      "id": "esun-unicard",
+      "bank": "玉山銀行",
+      "name": "Unicard",
+      "fee": null,
+      "waiver": "年費及免年費條件請查官網",
+      "income": null,
+      "application": "https://www.esunbank.com/zh-tw/personal/credit-card/intro/bank-card/unicard",
+      "source": "https://event.esunbank.com.tw/credit/unicard/index.html",
+      "verified": "2026-11-16",
+      "reward": "玉山 e point",
+      "pointValue": 1,
+      "base": {
+        "rate": 0.003,
+        "conditions": [],
+        "note": "須設定電子帳單；1%須同時設定玉山帳戶自動扣繳"
+      },
+      "rules": [
+        {
+          "id": "esun-base-upgrade",
+          "label": "一般消費自扣升級",
+          "category": [
+            "all"
+          ],
+          "rate": 0.007,
+          "cap": null,
+          "period": "month",
+          "conditions": [
+            "esun-autopay"
+          ],
+          "end": "2026-12-31",
+          "note": "總計一般消費最高 1%"
+        },
+        {
+          "id": "esun-simple",
+          "label": "百大指定通路・簡單選",
+          "category": [
+            "linepay",
+            "jkopay",
+            "shopee",
+            "momo"
+          ],
+          "rate": 0.02,
+          "cap": 1000,
+          "period": "month",
+          "conditions": [
+            "esun-autopay",
+            "esun-simple"
+          ],
+          "end": "2026-12-31",
+          "note": "百大名單及帳單特店認列為準；非所有第三方支付都有回饋"
+        },
+        {
+          "id": "esun-up",
+          "label": "百大指定通路・UP選",
+          "category": [
+            "linepay",
+            "jkopay",
+            "shopee",
+            "momo"
+          ],
+          "rate": 0.035,
+          "cap": 5000,
+          "period": "month",
+          "conditions": [
+            "esun-autopay",
+            "esun-up"
+          ],
+          "end": "2026-12-31",
+          "note": "需完成 UP 選任務或以點數訂閱，且須符合百大指定消費"
+        }
+      ],
+      "exclude": [
+        "convenience"
+      ],
+      "gift": "2026/9/30 截止的限時新戶 Wallet 加碼已結束，勿計入當期試算"
+    },
+    {
+      "id": "cathay-cube",
+      "bank": "國泰世華",
+      "name": "CUBE 信用卡",
+      "fee": null,
+      "waiver": "請見官網最新年費公告",
+      "income": null,
+      "application": "https://www.cathaybk.com.tw/cathaybk/promo/event/credit-card/product/CUBE_rights/",
+      "source": "https://www.cathaybk.com.tw/cathaybk/promo/event/credit-card/product/CUBE_rights/",
+      "verified": "2026-11-16",
+      "reward": "小樹點（信用卡）",
+      "pointValue": 1,
+      "base": {
+        "rate": 0.003,
+        "conditions": [],
+        "note": "一般消費 0.3%；分期、保費等依條款"
+      },
+      "rules": [
+        {
+          "id": "cube-fixed",
+          "label": "固定回饋・一般消費",
+          "category": [
+            "all"
+          ],
+          "rate": 0.009,
+          "cap": null,
+          "period": "month",
+          "conditions": [
+            "cube-fixed"
+          ],
+          "end": "2026-12-31",
+          "note": "固定方案一般合格消費總計1.2%，切換後2027/1/1前不得切回其他方案"
+        },
+        {
+          "id": "cube-overseas",
+          "label": "固定回饋・海外實體",
+          "category": [
+            "overseas"
+          ],
+          "rate": 0.013,
+          "cap": null,
+          "period": "month",
+          "conditions": [
+            "cube-fixed",
+            "overseas-physical"
+          ],
+          "end": "2026-12-31",
+          "note": "固定方案海外實體總計2.5%，含固定回饋1.2%，以增額表示"
+        }
+      ],
+      "exclude": [],
+      "gift": "2026/9/30 前的首刷活動已截止"
+    },
+    {
+      "id": "fubon-j",
+      "bank": "台北富邦",
+      "name": "富邦 J 卡",
+      "fee": null,
+      "waiver": "請見官網最新年費公告",
+      "income": null,
+      "application": "https://www.fubon.com/banking/JF/",
+      "source": "https://www.fubon.com/banking/JF/",
+      "verified": "2026-11-16",
+      "reward": "現金／LINE POINTS（依卡版）",
+      "pointValue": 1,
+      "base": {
+        "rate": 0.005,
+        "conditions": [],
+        "note": "未符合電子帳單及自動扣繳等升級條件時以0.5%保守估算"
+      },
+      "rules": [
+        {
+          "id": "j-domestic",
+          "label": "國內一般消費回饋升級",
+          "category": [
+            "all"
+          ],
+          "rate": 0.005,
+          "cap": null,
+          "period": "month",
+          "conditions": [
+            "fubon-tasks"
+          ],
+          "end": "2026-12-31",
+          "note": "完成本行帳戶自扣及電子帳單，總計1%"
+        },
+        {
+          "id": "j-asia",
+          "label": "日韓泰一般消費",
+          "category": [
+            "overseas"
+          ],
+          "rate": 0.02,
+          "cap": null,
+          "period": "month",
+          "conditions": [
+            "fubon-tasks",
+            "j-asia-country"
+          ],
+          "end": "2026-12-31",
+          "note": "在基本0.5%之上加2%，搭配國內升級後總計3%；國別與消費認列依官網"
+        }
+      ],
+      "exclude": [],
+      "gift": "季別登錄加碼另依名額與條款，不自動算入"
+    },
+    {
+      "id": "ctbc-linepay",
+      "bank": "中國信託",
+      "name": "LINE Pay 信用卡",
+      "fee": null,
+      "waiver": "首年免年費；2026/12/31 前成功綁定 LINE Pay 享免年費禮遇",
+      "income": 200000,
+      "application": "https://www.ctbcbank.com/web/content/twrbo/zh_tw/cc_index/cc_product/cc_introduction_index/C_LINEPay.html",
+      "source": "https://www.ctbcbank.com/content/dam/minisite/long/creditcard/LINEPay/notice.html",
+      "verified": "2026-11-16",
+      "reward": "LINE POINTS",
+      "pointValue": 1,
+      "base": {
+        "rate": 0.01,
+        "conditions": [],
+        "note": "國內外合格一般消費1%，部分支付不回饋"
+      },
+      "rules": [
+        {
+          "id": "ctbc-physical",
+          "label": "海外實體消費加碼",
+          "category": [
+            "overseas"
+          ],
+          "rate": 0.018,
+          "cap": null,
+          "period": "month",
+          "conditions": [
+            "overseas-physical"
+          ],
+          "end": "2026-12-31",
+          "note": "限海外實體面對面交易，總回饋2.8%；海外第三方／條碼支付不適用"
+        }
+      ],
+      "exclude": [],
+      "gift": "一般首刷活動依當期官方公告，沒有可靠金額時不列入試算"
+    },
+    {
+      "id": "sinopac-daway",
+      "bank": "永豐銀行",
+      "name": "DAWAY 卡",
+      "fee": null,
+      "waiver": "請見官網最新年費公告",
+      "income": null,
+      "application": "https://bank.sinopac.com/sinopacBT/personal/credit-card/introduction/bankcard/DAWAY.html",
+      "source": "https://bank.sinopac.com/sinopacBT/personal/credit-card/introduction/bankcard/DAWAY.html",
+      "verified": "2026-11-16",
+      "reward": "LINE POINTS",
+      "pointValue": 1,
+      "base": {
+        "rate": 0.005,
+        "conditions": [
+          "daway-bind"
+        ],
+        "note": "國內一般消費0.5%；需成功綁定 LINE Pay 以領取點數"
+      },
+      "rules": [
+        {
+          "id": "daway-overseas",
+          "label": "海外一般消費",
+          "category": [
+            "overseas"
+          ],
+          "rate": 0.02,
+          "cap": null,
+          "period": "statement",
+          "conditions": [],
+          "end": "2026-12-31",
+          "note": "海外一般消費總計2.5%"
+        },
+        {
+          "id": "daway-line",
+          "label": "LINE Pay 加碼",
+          "category": [
+            "linepay"
+          ],
+          "rate": 0.015,
+          "cap": 300,
+          "period": "statement",
+          "conditions": [
+            "daway-go"
+          ],
+          "end": "2026-12-31",
+          "note": "國內 LINE Pay 加碼，帳單週期300點；總計2%"
+        },
+        {
+          "id": "daway-new",
+          "label": "DAWAY 新戶 LINE Pay 加碼",
+          "category": [
+            "linepay"
+          ],
+          "rate": 0.06,
+          "cap": 500,
+          "period": "statement",
+          "conditions": [
+            "daway-go",
+            "new-customer"
+          ],
+          "end": "2026-12-31",
+          "note": "2026 下半年申辦核卡新戶，符合條件總計8%，每期加碼500點"
+        }
+      ],
+      "exclude": [],
+      "gift": "新戶指定期間及回饋資格依官網；非所有 LINE Pay 商戶為合格消費"
+    },
+    {
+      "id": "hsbc-liveplus",
+      "bank": "滙豐銀行",
+      "name": "Live+ 現金回饋卡",
+      "fee": null,
+      "waiver": "請見官網最新年費公告",
+      "income": null,
+      "application": "https://www.hsbc.com.tw/credit-cards/products/liveplus/",
+      "source": "https://www.hsbc.com.tw/credit-cards/products/liveplus/",
+      "verified": "2026-11-16",
+      "reward": "現金回饋",
+      "pointValue": 1,
+      "base": {
+        "rate": 0.0088,
+        "conditions": [],
+        "note": "一般合格消費0.88%無上限"
+      },
+      "rules": [
+        {
+          "id": "hsbc-shopping",
+          "label": "精選購物／娛樂加碼",
+          "category": [
+            "shopping",
+            "momo",
+            "shopee"
+          ],
+          "rate": 0.03,
+          "cap": 888,
+          "period": "statement",
+          "conditions": [
+            "hsbc-eligible"
+          ],
+          "end": "2026-12-31",
+          "note": "僅官網列名商家，第三方支付可能不認列；精選類別合計加碼上限888元"
+        },
+        {
+          "id": "hsbc-dining",
+          "label": "精選餐飲加碼",
+          "category": [
+            "dining"
+          ],
+          "rate": 0.03,
+          "cap": 888,
+          "capGroup": "hsbc-3pct",
+          "period": "statement",
+          "conditions": [
+            "hsbc-eligible"
+          ],
+          "end": "2026-12-31",
+          "note": "與精選購物／娛樂共用加碼3%上限888元"
+        },
+        {
+          "id": "hsbc-autopay",
+          "label": "本行帳戶自動扣繳加碼",
+          "category": [
+            "all"
+          ],
+          "rate": 0.01,
+          "cap": null,
+          "period": "statement",
+          "conditions": [
+            "hsbc-autopay"
+          ],
+          "end": "2026-12-31",
+          "note": "須符合指定自扣任務；實際優惠以官方規則為準"
+        }
+      ],
+      "exclude": [],
+      "gift": "1,000元首刷禮活動2026/9/30截止，未列入估算"
+    },
+    {
+      "id": "dbs-eco",
+      "bank": "星展銀行",
+      "name": "eco 永續卡",
+      "fee": null,
+      "waiver": "尚待官方年費查核",
+      "income": null,
+      "application": "https://www.dbs.com.tw/personal-zh/cards/dbs_eco/index.html",
+      "source": "https://www.dbs.com.tw/personal-zh/cards/dbs_eco/index.html",
+      "verified": "",
+      "reward": "現金積點",
+      "pointValue": 1,
+      "base": {
+        "rate": null,
+        "conditions": [],
+        "note": "既有資料待再查驗；暫停自動排名"
+      },
+      "rules": [],
+      "exclude": [],
+      "gift": "待核實"
+    },
+    {
+      "id": "taishin-richart",
+      "bank": "台新銀行",
+      "name": "Richart 系列",
+      "fee": null,
+      "waiver": "各卡別條款不同，待逐卡核實",
+      "income": null,
+      "application": "https://www.taishinbank.com.tw/TSB/personal/credit/",
+      "source": "https://www.taishinbank.com.tw/TSB/personal/credit/",
+      "verified": "",
+      "reward": "台新Point",
+      "pointValue": 1,
+      "base": {
+        "rate": null,
+        "conditions": [],
+        "note": "不同權益方案與卡別回饋不應混算，待核實後納入排名"
+      },
+      "rules": [],
+      "exclude": [],
+      "gift": "待核實"
+    }
+  ]
+}

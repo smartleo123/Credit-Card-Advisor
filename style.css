@@ -18,3 +18,5 @@
 .matrix-unknown{color:#91a5b9;font-size:11px}
 .matrix-info{min-width:180px;max-width:280px;color:#c1d2e4;font-size:11px;line-height:1.75;padding:9px 0}
 .matrix-info p{margin:5px 0}.matrix-info a{display:inline-block;margin-top:7px;color:#83e7d2;text-decoration:underline}
+
+[hidden]{display:none!important}

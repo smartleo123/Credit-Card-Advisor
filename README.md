@@ -102,7 +102,8 @@ Vanilla HTML / CSS / JavaScript；GitHub Pages 靜態部署；Python 3 標準函
 
 - **國泰 CUBE 集精選**：7-ELEVEN 與全家實體門市合格消費 **2%**，需先選定集精選方案；排除菸酒、代收代售、儲值與禮券等非合格消費。參考：[國泰官方權益通路](https://www.cathay-cube.com.tw/cathaybk/personal/product/credit-card/cards/cube-list)。
 - **玉山 Unicard**：便利商店屬一般回饋排除項目，Unicard 一般消費及百大加碼不適用。參考：[玉山官方](https://www.esunbank.com/zh-tw/personal/credit-card/intro/bank-card/unicard)。
-- **中國信託 LINE Pay 卡**：官方一般回饋排除便利商店消費。參考：[中信回饋規則](https://www.ctbcbank.com/content/dam/minisite/long/creditcard/LINEPay/notice.html)。
+- **中國信託 LINE Pay 卡**：官方一般回饋排除便利商店消費。
+- **富邦 J 卡**：2026 年一般消費規則排除便利商店（含該超商行動支付）交易。來源：[富邦 J 卡官方條款](https://www.fubon.com/banking/JF/)。參考：[中信回饋規則](https://www.ctbcbank.com/content/dam/minisite/long/creditcard/LINEPay/notice.html)。
 - 其他卡片／超商目前若沒有完整核對，顯示**待核實，不參與排名**，不是假定零元或任何固定回饋率。
 
 試算選擇超商時需指定 7-ELEVEN、全家、萊爾富或 OK。回饋排名只計入具有確認條款且符合已勾選任務的卡片。若尚未確認任務或來源，結果顯示未納入排名、理由及原始來源。這仍不保證全部銀行與所有活動都已覆蓋；交易仍需符合官方商戶識別與請款資格。

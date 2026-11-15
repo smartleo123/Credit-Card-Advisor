@@ -36,7 +36,9 @@
             "esun-autopay"
           ],
           "end": "2026-12-31",
-          "note": "總計一般消費最高 1%"
+          "note": "總計一般消費最高 1%",
+          "source": "https://event.esunbank.com.tw/credit/unicard/index.html",
+          "verification": "需核對官方條款"
         },
         {
           "id": "esun-simple",
@@ -55,7 +57,9 @@
             "esun-simple"
           ],
           "end": "2026-12-31",
-          "note": "百大名單及帳單特店認列為準；非所有第三方支付都有回饋"
+          "note": "百大名單及帳單特店認列為準；非所有第三方支付都有回饋",
+          "source": "https://event.esunbank.com.tw/credit/unicard/index.html",
+          "verification": "需核對官方條款"
         },
         {
           "id": "esun-up",
@@ -74,13 +78,41 @@
             "esun-up"
           ],
           "end": "2026-12-31",
-          "note": "需完成 UP 選任務或以點數訂閱，且須符合百大指定消費"
+          "note": "需完成 UP 選任務或以點數訂閱，且須符合百大指定消費",
+          "source": "https://event.esunbank.com.tw/credit/unicard/index.html",
+          "verification": "需核對官方條款"
         }
       ],
       "exclude": [
         "convenience"
       ],
-      "gift": "2026/9/30 截止的限時新戶 Wallet 加碼已結束，勿計入當期試算"
+      "gift": "2026/9/30 截止的限時新戶 Wallet 加碼已結束，勿計入當期試算",
+      "channelFacts": [
+        {
+          "category": "linepay",
+          "rate": "最高 3%／4.5%",
+          "criteria": "百大指定 LINE Pay 帳單名稱及一般消費資格；簡單選 2% 加碼或 UP 選 3.5% 加碼，另須帳單 e 化與自扣才有一般消費 1%",
+          "limit": "簡單選每月1,000點；UP選每月5,000點",
+          "status": "官方已查核",
+          "source": "https://event.esunbank.com.tw/credit/unicard/index.html"
+        },
+        {
+          "category": "applepay",
+          "rate": "視 Apple Pay 綁定的實際指定商店",
+          "criteria": "Apple Pay 綁 Unicard 支付指定百大通路，銀行仍依帳單名稱認列；不是所有 Apple Pay 都有加碼",
+          "limit": "依所選方案",
+          "status": "官方已查核",
+          "source": "https://event.esunbank.com.tw/credit/unicard/index.html"
+        },
+        {
+          "category": "convenience",
+          "rate": "不適用一般消費回饋",
+          "criteria": "超商屬官方排除的非一般消費",
+          "limit": "—",
+          "status": "官方已查核",
+          "source": "https://event.esunbank.com.tw/credit/unicard/index.html"
+        }
+      ]
     },
     {
       "id": "cathay-cube",
@@ -90,7 +122,7 @@
       "waiver": "首年免年費；次年起電子帳單、正卡年刷12次，或正附卡年刷18萬元，符合任一免年費",
       "income": 200000,
       "application": "https://www.cathaybk.com.tw/cathaybk/promo/event/credit-card/product/CUBE_rights/",
-      "source": "https://www.cathaybk.com.tw/cathaybk/promo/event/credit-card/product/CUBE_rights/",
+      "source": "https://www.cathay-cube.com.tw/cathaybk/personal/product/credit-card/cards/cube-list",
       "verified": "2026-11-16",
       "reward": "小樹點（信用卡）",
       "pointValue": 1,
@@ -113,7 +145,9 @@
             "cube-fixed"
           ],
           "end": "2026-12-31",
-          "note": "固定方案一般合格消費總計1.2%，切換後2027/1/1前不得切回其他方案"
+          "note": "固定方案一般合格消費總計1.2%，切換後2027/1/1前不得切回其他方案",
+          "source": "https://www.cathay-cube.com.tw/cathaybk/personal/product/credit-card/cards/cube-list",
+          "verification": "需核對官方條款"
         },
         {
           "id": "cube-overseas",
@@ -129,11 +163,158 @@
             "overseas-physical"
           ],
           "end": "2026-12-31",
-          "note": "固定方案海外實體總計2.5%，含固定回饋1.2%，以增額表示"
+          "note": "固定方案海外實體總計2.5%，含固定回饋1.2%，以增額表示",
+          "source": "https://www.cathay-cube.com.tw/cathaybk/personal/product/credit-card/cards/cube-list",
+          "verification": "需核對官方條款"
+        },
+        {
+          "id": "cube-digital-l1",
+          "label": "玩數位：蝦皮／momo／指定串流與網購（Level 1）",
+          "category": [
+            "shopee",
+            "momo"
+          ],
+          "rate": 0.017,
+          "cap": null,
+          "period": "month",
+          "conditions": [
+            "cube-digital",
+            "cube-level1"
+          ],
+          "end": "2026-12-31",
+          "note": "一般0.3%+指定1.7%=2%；指定網購、串流與 AI 工具須符合官方列表，分期交易排除",
+          "source": "https://www.cathay-cube.com.tw/cathaybk/personal/product/credit-card/cards/cube-list",
+          "verification": "official"
+        },
+        {
+          "id": "cube-digital-l2",
+          "label": "玩數位：蝦皮／momo／指定串流與網購（Level 2）",
+          "category": [
+            "shopee",
+            "momo"
+          ],
+          "rate": 0.027,
+          "cap": null,
+          "period": "month",
+          "conditions": [
+            "cube-digital",
+            "cube-level2"
+          ],
+          "end": "2026-12-31",
+          "note": "一般0.3%+指定2.7%=3%；須符合次月升級資格，指定通路以官方列表為準",
+          "source": "https://www.cathay-cube.com.tw/cathaybk/personal/product/credit-card/cards/cube-list",
+          "verification": "official"
+        },
+        {
+          "id": "cube-digital-l3",
+          "label": "玩數位：蝦皮／momo／指定串流與網購（Level 3）",
+          "category": [
+            "shopee",
+            "momo"
+          ],
+          "rate": 0.03,
+          "cap": null,
+          "period": "month",
+          "conditions": [
+            "cube-digital",
+            "cube-level3"
+          ],
+          "end": "2026-12-31",
+          "note": "一般0.3%+指定3%=3.3%；須符合財富管理資格",
+          "source": "https://www.cathay-cube.com.tw/cathaybk/personal/product/credit-card/cards/cube-list",
+          "verification": "official"
+        },
+        {
+          "id": "cube-dining-l1",
+          "label": "樂饗購：合格餐飲（Level 1）",
+          "category": [
+            "dining"
+          ],
+          "rate": 0.017,
+          "cap": null,
+          "period": "month",
+          "conditions": [
+            "cube-dining",
+            "cube-level1"
+          ],
+          "end": "2026-12-31",
+          "note": "合格餐飲總計2%，排除部分餐券與非指定消費",
+          "source": "https://www.cathay-cube.com.tw/cathaybk/personal/product/credit-card/cards/cube-list",
+          "verification": "official"
+        },
+        {
+          "id": "cube-dining-l2",
+          "label": "樂饗購：合格餐飲（Level 2）",
+          "category": [
+            "dining"
+          ],
+          "rate": 0.027,
+          "cap": null,
+          "period": "month",
+          "conditions": [
+            "cube-dining",
+            "cube-level2"
+          ],
+          "end": "2026-12-31",
+          "note": "合格餐飲總計3%；需完成權益升級條件",
+          "source": "https://www.cathay-cube.com.tw/cathaybk/personal/product/credit-card/cards/cube-list",
+          "verification": "official"
+        },
+        {
+          "id": "cube-dining-l3",
+          "label": "樂饗購：合格餐飲（Level 3）",
+          "category": [
+            "dining"
+          ],
+          "rate": 0.03,
+          "cap": null,
+          "period": "month",
+          "conditions": [
+            "cube-dining",
+            "cube-level3"
+          ],
+          "end": "2026-12-31",
+          "note": "合格餐飲總計3.3%；需財富管理等級資格",
+          "source": "https://www.cathay-cube.com.tw/cathaybk/personal/product/credit-card/cards/cube-list",
+          "verification": "official"
         }
       ],
       "exclude": [],
-      "gift": "2026/9/30 前的首刷活動已截止"
+      "gift": "2026/9/30 前的首刷活動已截止",
+      "channelFacts": [
+        {
+          "category": "shopee",
+          "rate": "玩數位 2%／3%／3.3%",
+          "criteria": "須在消費當日切換玩數位方案，依 Level 1／2／3 分級；分期僅一般0.3%",
+          "limit": "詳官方方案",
+          "status": "官方已查核",
+          "source": "https://www.cathay-cube.com.tw/cathaybk/personal/product/credit-card/cards/cube-list"
+        },
+        {
+          "category": "momo",
+          "rate": "玩數位 2%／3%／3.3%",
+          "criteria": "同玩數位，指定網購（含 momo）；適用商家及排除品項依官方列表",
+          "limit": "詳官方方案",
+          "status": "官方已查核",
+          "source": "https://www.cathay-cube.com.tw/cathaybk/personal/product/credit-card/cards/cube-list"
+        },
+        {
+          "category": "dining",
+          "rate": "樂饗購 2%／3%／3.3%",
+          "criteria": "須切換樂饗購且屬指定餐飲；部分消費不適用",
+          "limit": "詳官方方案",
+          "status": "官方已查核",
+          "source": "https://www.cathay-cube.com.tw/cathaybk/personal/product/credit-card/cards/cube-list"
+        },
+        {
+          "category": "overseas",
+          "rate": "固定回饋海外實體 2.5%",
+          "criteria": "須切換固定回饋方案，且為海外實體消費；非所有海外網購適用",
+          "limit": "2026/12/31 前",
+          "status": "官方已查核",
+          "source": "https://www.cathay-cube.com.tw/cathaybk/personal/product/credit-card/cards/cube"
+        }
+      ]
     },
     {
       "id": "fubon-j",
@@ -166,7 +347,9 @@
             "fubon-tasks"
           ],
           "end": "2026-12-31",
-          "note": "完成本行帳戶自扣及電子帳單，總計1%"
+          "note": "完成本行帳戶自扣及電子帳單，總計1%",
+          "source": "https://www.fubon.com/banking/JF/",
+          "verification": "需核對官方條款"
         },
         {
           "id": "j-asia",
@@ -182,11 +365,14 @@
             "j-asia-country"
           ],
           "end": "2026-12-31",
-          "note": "在基本0.5%之上加2%，搭配國內升級後總計3%；國別與消費認列依官網"
+          "note": "在基本0.5%之上加2%，搭配國內升級後總計3%；國別與消費認列依官網",
+          "source": "https://www.fubon.com/banking/JF/",
+          "verification": "需核對官方條款"
         }
       ],
       "exclude": [],
-      "gift": "季別登錄加碼另依名額與條款，不自動算入"
+      "gift": "季別登錄加碼另依名額與條款，不自動算入",
+      "channelFacts": []
     },
     {
       "id": "ctbc-linepay",
@@ -219,11 +405,23 @@
             "overseas-physical"
           ],
           "end": "2026-12-31",
-          "note": "限海外實體面對面交易，總回饋2.8%；海外第三方／條碼支付不適用"
+          "note": "限海外實體面對面交易，總回饋2.8%；海外第三方／條碼支付不適用",
+          "source": "https://www.ctbcbank.com/content/dam/minisite/long/creditcard/LINEPay/notice.html",
+          "verification": "需核對官方條款"
         }
       ],
       "exclude": [],
-      "gift": "一般首刷活動依當期官方公告，沒有可靠金額時不列入試算"
+      "gift": "一般首刷活動依當期官方公告，沒有可靠金額時不列入試算",
+      "channelFacts": [
+        {
+          "category": "overseas",
+          "rate": "海外實體 2.8%",
+          "criteria": "海外實體面對面一般消費；海外條碼／第三方支付不適用加碼",
+          "limit": "依官網",
+          "status": "官方已查核",
+          "source": "https://www.ctbcbank.com/content/dam/minisite/long/creditcard/LINEPay/notice.html"
+        }
+      ]
     },
     {
       "id": "sinopac-daway",
@@ -256,7 +454,9 @@
           "period": "statement",
           "conditions": [],
           "end": "2026-12-31",
-          "note": "海外一般消費總計2.5%"
+          "note": "海外一般消費總計2.5%",
+          "source": "https://bank.sinopac.com/sinopacBT/personal/credit-card/introduction/bankcard/DAWAY.html",
+          "verification": "需核對官方條款"
         },
         {
           "id": "daway-line",
@@ -271,7 +471,9 @@
             "daway-go"
           ],
           "end": "2026-12-31",
-          "note": "國內 LINE Pay 加碼，帳單週期300點；總計2%"
+          "note": "國內 LINE Pay 加碼，帳單週期300點；總計2%",
+          "source": "https://bank.sinopac.com/sinopacBT/personal/credit-card/introduction/bankcard/DAWAY.html",
+          "verification": "需核對官方條款"
         },
         {
           "id": "daway-new",
@@ -287,11 +489,23 @@
             "new-customer"
           ],
           "end": "2026-12-31",
-          "note": "2026 下半年申辦核卡新戶，符合條件總計8%，每期加碼500點"
+          "note": "2026 下半年申辦核卡新戶，符合條件總計8%，每期加碼500點",
+          "source": "https://bank.sinopac.com/sinopacBT/personal/credit-card/introduction/bankcard/DAWAY.html",
+          "verification": "需核對官方條款"
         }
       ],
       "exclude": [],
-      "gift": "新戶指定期間及回饋資格依官網；非所有 LINE Pay 商戶為合格消費"
+      "gift": "新戶指定期間及回饋資格依官網；非所有 LINE Pay 商戶為合格消費",
+      "channelFacts": [
+        {
+          "category": "linepay",
+          "rate": "一般 2%；合格新戶最高 8%",
+          "criteria": "需綁 LINE Pay 並達指定任務；8% 限當期合格新戶與期限",
+          "limit": "一般加碼每帳單週期300點；新戶加碼500點",
+          "status": "部分條件待複核",
+          "source": "https://bank.sinopac.com/sinopacBT/personal/credit-card/introduction/bankcard/DAWAY.html"
+        }
+      ]
     },
     {
       "id": "hsbc-liveplus",
@@ -327,7 +541,9 @@
           ],
           "end": "2026-12-31",
           "note": "僅官網列名商家，第三方支付可能不認列；精選類別合計加碼上限888元",
-          "capGroup": "hsbc-3pct"
+          "capGroup": "hsbc-3pct",
+          "source": "https://www.hsbc.com.tw/credit-cards/products/liveplus/",
+          "verification": "需核對官方條款"
         },
         {
           "id": "hsbc-dining",
@@ -343,7 +559,9 @@
             "hsbc-eligible"
           ],
           "end": "2026-12-31",
-          "note": "與精選購物／娛樂共用加碼3%上限888元"
+          "note": "與精選購物／娛樂共用加碼3%上限888元",
+          "source": "https://www.hsbc.com.tw/credit-cards/products/liveplus/",
+          "verification": "需核對官方條款"
         },
         {
           "id": "hsbc-autopay",
@@ -358,11 +576,14 @@
             "hsbc-autopay"
           ],
           "end": "2026-12-31",
-          "note": "須符合指定自扣任務；實際優惠以官方規則為準"
+          "note": "須符合指定自扣任務；實際優惠以官方規則為準",
+          "source": "https://www.hsbc.com.tw/credit-cards/products/liveplus/",
+          "verification": "需核對官方條款"
         }
       ],
       "exclude": [],
-      "gift": "1,000元首刷禮活動2026/9/30截止，未列入估算"
+      "gift": "1,000元首刷禮活動2026/9/30截止，未列入估算",
+      "channelFacts": []
     },
     {
       "id": "dbs-eco",
@@ -383,7 +604,8 @@
       },
       "rules": [],
       "exclude": [],
-      "gift": "待核實"
+      "gift": "待核實",
+      "channelFacts": []
     },
     {
       "id": "taishin-richart",
@@ -404,7 +626,8 @@
       },
       "rules": [],
       "exclude": [],
-      "gift": "待核實"
+      "gift": "待核實",
+      "channelFacts": []
     }
   ]
 }

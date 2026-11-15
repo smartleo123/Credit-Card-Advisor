@@ -95,3 +95,16 @@ Vanilla HTML / CSS / JavaScript；GitHub Pages 靜態部署；Python 3 標準函
 - [astrocamp/20th-Rewardia](https://github.com/astrocamp/20th-Rewardia)：瀏覽器擴充、爬蟲與回饋比較架構參考。
 
 **資料與授權聲明**：只參考設計與公開架構，未直接移植第三方程式碼或複製他人資料表。所有進入回饋細節的數據須有銀行官方條款 URL 與查核日期，回饋更新需人工確認。監測機制僅提醒來源變動，不會自動證明資料已正確更新。
+
+## 2026-11-16：按實際超商核對回饋（修正錯誤零回饋）
+
+此前將「便利商店」所有卡片直接歸零，會錯過通路專屬回饋，是不正確的估算方式。現在改採官方來源的**商戶 × 卡別 × 方案**核實：
+
+- **國泰 CUBE 集精選**：7-ELEVEN 與全家實體門市合格消費 **2%**，需先選定集精選方案；排除菸酒、代收代售、儲值與禮券等非合格消費。參考：[國泰官方權益通路](https://www.cathay-cube.com.tw/cathaybk/personal/product/credit-card/cards/cube-list)。
+- **玉山 Unicard**：便利商店屬一般回饋排除項目，Unicard 一般消費及百大加碼不適用。參考：[玉山官方](https://www.esunbank.com/zh-tw/personal/credit-card/intro/bank-card/unicard)。
+- **中國信託 LINE Pay 卡**：官方一般回饋排除便利商店消費。參考：[中信回饋規則](https://www.ctbcbank.com/content/dam/minisite/long/creditcard/LINEPay/notice.html)。
+- 其他卡片／超商目前若沒有完整核對，顯示**待核實，不參與排名**，不是假定零元或任何固定回饋率。
+
+試算選擇超商時需指定 7-ELEVEN、全家、萊爾富或 OK。回饋排名只計入具有確認條款且符合已勾選任務的卡片。若尚未確認任務或來源，結果顯示未納入排名、理由及原始來源。這仍不保證全部銀行與所有活動都已覆蓋；交易仍需符合官方商戶識別與請款資格。
+
+**後續資料模型改善方向**：分離「實際商戶」「支付工具」「支付場景」「加碼活動」「期間」「登錄資格」「共用上限」，避免把 LINE Pay、Apple Pay 當作可獨立決定回饋的實際通路。

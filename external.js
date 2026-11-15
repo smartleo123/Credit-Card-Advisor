@@ -4,6 +4,90 @@
  const escape=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
  const types={cards:"信用卡",promos:"優惠活動",wallets:"支付工具",fee_rules:"年費規則",today:"當日推薦資料",issuers:"發卡銀行"};
  let data=null;
+
+ let catalogShown=24;
+ let discoveryRankings={};
+ const discoverySlugs=["seven-eleven","familymart","convenience","line-pay","jkopay","apple-pay","shopee","momo","dining","overseas","online","general"];
+ const discoveryTitles={"seven-eleven":"7-ELEVEN","familymart":"全家","convenience":"超商","line-pay":"LINE Pay","jkopay":"街口","apple-pay":"Apple Pay","shopee":"蝦皮","momo":"momo","dining":"餐飲","overseas":"海外","online":"網購","general":"一般"};
+ function userCards(){try{return JSON.parse(localStorage.getItem("cardwise-tw-settings-v2")||"{}")}catch{return {}}}
+ function bankNames(){return Object.fromEntries((data?.datasets?.issuers||[]).map(e=>[e.id,e.name]))}
+ function officialLink(row){
+   const text=row?.search||"";
+   const urls=text.match(/https:\/\/[^\s]+/g)||[];
+   const valid=urls.find(u=>/^https:\/\/(?:www\.)?(?:[\w-]+\.)*(?:com\.tw|gov\.tw|org\.tw|com|tw)\//i.test(u)&&!u.includes(".png")&&!u.includes(".jpg"));
+   return valid?valid.replace(/[),;]+$/,""):"";
+ }
+ function rewardHighlights(cardId){
+   const found=[];
+   for(const slug of discoverySlugs){
+     const d=discoveryRankings[slug];
+     const row=d?.entries?.find(x=>x.card_id===cardId&&!x.expired);
+     const v=row?.once||row?.basic;
+     if(!v||!Number.isFinite(v.net_rate_bp)||v.net_rate_bp<=0)continue;
+     found.push({slug,rate:v.net_rate_bp/100,verified:row.reviewed===true,requirements:v.requirements?.length||0});
+   }
+   return found.sort((a,b)=>Number(b.verified)-Number(a.verified)||b.rate-a.rate).slice(0,4);
+ }
+ function renderFullCards(){
+   const box=el("full-card-grid");if(!box||!data)return;
+   const source=data.datasets.cards||[];
+   const byToday=new Map((data.datasets.today||[]).map(c=>[c.id,c]));
+   const issuers=bankNames(), q=(el("full-card-search").value||"").trim().toLocaleLowerCase();
+   const bank=el("full-card-bank").value, status=el("full-card-status").value;
+   const owned=new Set(userCards().owned||[]);
+   const filtered=source.filter(c=>{
+     if(bank!=="all"&&c.issuer!==bank)return false;
+     if(status==="owned"&&!owned.has(c.id))return false;
+     if(status==="credit"&&!/\bcredit\b/.test(c.search))return false;
+     if(status==="debit"&&!/\bdebit\b/.test(c.search))return false;
+     return (c.name+" "+(issuers[c.issuer]||"")+" "+(byToday.get(c.id)?.search||"")).toLocaleLowerCase().includes(q);
+   });
+   const rows=filtered.slice(0,catalogShown);
+   el("full-card-count").textContent=source.length+" 張卡片 · "+Object.keys(issuers).length+" 家機構 · 資料 "+(data.metadata.dataDate||"待查核");
+   const info=rows.map(c=>{
+     const sourceRow=byToday.get(c.id);
+     const issuer=issuers[c.issuer]||c.issuer;
+     const high=rewardHighlights(c.id);
+     const links=officialLink(sourceRow);
+     const evidence=high.length?high.map(v=>'<span class="tag">'+escape(discoveryTitles[v.slug])+' '+v.rate.toFixed(2)+'%'+(v.verified?" · 已複核":" · 未複核")+'</span>').join(""):'<span class="subtle">尚無此處已索引通路的可量化排行，請查看來源資料</span>';
+     const details=high.length?'<details class="bonus-box"><summary>展開回饋資料來源與條件提醒</summary><p>以下為來源排行榜「一次設定」情境，不等於你已完成所有條件，也不適用於所有消費金額。請點各通路排行榜展開核對需求及回饋上限。</p><a href="#source-rankings">前往通路排行榜 ↗</a></details>':"";
+     return '<article class="card full-card"><div class="bank">'+escape(issuer)+'</div><h3>'+escape(c.name)+'</h3><div class="details">'+evidence+'</div>'+details+'<div class="card-footer"><label class="check"><input type="checkbox" data-full-owned="'+escape(c.id)+'" '+(owned.has(c.id)?"checked":"")+'> 我持有這張卡</label>'+(links?'<a href="'+escape(links)+'" target="_blank" rel="noopener noreferrer">銀行來源 ↗</a>':'<a href="https://pay.elggum.com/" target="_blank" rel="noopener noreferrer">資料提供站 ↗</a>')+'</div><p class="subtle">來源卡片 ID：'+escape(c.id)+'；回饋以詳細資格與銀行官網為準</p></article>';
+   }).join("");
+   box.innerHTML=rows.length?info:'<div class="empty">找不到符合條件的信用卡。</div>';
+   el("full-card-page").textContent="顯示 "+rows.length+" / "+filtered.length+" 張；來源總計 "+source.length+" 張";
+   el("full-card-more").hidden=rows.length>=filtered.length;
+ }
+ async function warmRankingHighlights(){
+   await Promise.allSettled(discoverySlugs.map(async slug=>{
+     if(discoveryRankings[slug])return;
+     const r=await fetch("./data/external/rankings/"+slug+".json",{cache:"no-store"});
+     if(!r.ok)return;
+     const j=await r.json();
+     if(j.slug===slug&&Array.isArray(j.entries))discoveryRankings[slug]=j;
+   }));
+   renderFullCards();
+ }
+ function setupFullCards(){
+   if(!data)return;
+   const options=data.datasets.issuers||[];
+   el("full-card-bank").innerHTML='<option value="all">所有發卡機構</option>'+options.filter(x=>(data.datasets.cards||[]).some(c=>c.issuer===x.id)).sort((a,b)=>a.name.localeCompare(b.name,"zh-Hant")).map(i=>'<option value="'+escape(i.id)+'">'+escape(i.name)+'</option>').join("");
+   el("full-card-search").addEventListener("input",()=>{catalogShown=24;renderFullCards()});
+   el("full-card-bank").addEventListener("change",()=>{catalogShown=24;renderFullCards()});
+   el("full-card-status").addEventListener("change",()=>{catalogShown=24;renderFullCards()});
+   el("full-card-more").addEventListener("click",()=>{catalogShown+=24;renderFullCards()});
+   el("full-card-grid").addEventListener("change",e=>{
+     const id=e.target?.dataset?.fullOwned;
+     if(!id)return;
+     const state=userCards(),set=new Set(state.owned||[]);
+     e.target.checked?set.add(id):set.delete(id);
+     state.owned=[...set];
+     localStorage.setItem("cardwise-tw-settings-v2",JSON.stringify(state));
+     renderFullCards();
+     // Original calculator re-reads settings on page refresh; source rankings read current localStorage.
+   });
+   renderFullCards();warmRankingHighlights();
+ }
+
  function render(){
    const kind=el("external-type").value;
    const q=el("external-search").value.trim().toLocaleLowerCase("zh-Hant");
@@ -28,6 +112,7 @@
      const counts=Object.entries(m.recordCounts||{}).map(([k,v])=>(types[k]||k)+" "+v+" 筆").join(" · ");
      el("external-status").innerHTML='<strong>同步來源：</strong><a href="https://pay.elggum.com/" target="_blank" rel="noopener noreferrer">台灣支付優惠站</a>　<strong>資料日期：</strong>'+escape(m.dataDate||"來源未提供")+'　<strong>取得日期：</strong>'+escape(m.syncedAt||"未提供")+'<div class="subtle">'+escape(counts)+'</div>';
      render();
+     setupFullCards();
    }catch(err){
      el("external-status").textContent="外部 API 的第一份有效快取尚未發布："+err.message+"。GitHub Actions 會自動同步；在完成前，既有核實資料照常使用。";
      el("external-list").innerHTML='<div class="empty">避免顯示空白或編造回饋，外部來源同步成功前不會將其資料納入比較。<a href="https://github.com/smartleo123/Credit-Card-Advisor/actions" target="_blank" rel="noopener noreferrer">查看同步工作流程 ↗</a></div>';

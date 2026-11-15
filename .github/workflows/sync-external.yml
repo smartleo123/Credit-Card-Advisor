@@ -1,5 +1,10 @@
 name: Sync licensed credit card data
 on:
+  push:
+    branches: [main]
+    paths:
+      - scripts/sync_external.py
+      - .github/workflows/sync-external.yml
   schedule:
     - cron: '17 2 * * *' # 10:17 Taipei time; GitHub schedules may run late
   workflow_dispatch:

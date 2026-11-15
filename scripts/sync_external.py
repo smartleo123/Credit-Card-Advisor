@@ -13,6 +13,7 @@ import os
 import re
 import sys
 import urllib.request
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "external"
@@ -173,23 +174,72 @@ def main():
         if name in ("cards", "wallets", "issuers", "promos", "fee_rules", "today", "rankings", "card-scores"):
             index[name] = compact_rows(data, name)
             snapshot["recordCounts"][name] = len(index[name])
-    # Source-calculated category rankings are safer than inferring rewards from free text.
-    slugs = ("general", "seven-eleven", "familymart", "convenience", "shopee", "momo",
-             "line-pay", "jkopay", "apple-pay", "overseas", "dining", "online")
+    # Reuse source-calculated category rewards instead of inferring rates from prose.
+    rank_list = first_collection(payloads["rankings"], ("rankings",))
+    ranking_catalog = [
+        {"slug": entry.get("slug"), "title": entry.get("title_zh") or entry.get("slug")}
+        for entry in rank_list
+        if isinstance(entry, dict) and isinstance(entry.get("slug"), str)
+        and re.fullmatch(r"[a-z0-9-]{2,64}", entry["slug"])
+    ]
     ranking_errors = []
     ranking_counts = {}
-    for slug in slugs:
-        try:
-            # fetch() accepts a nested endpoint path with .json suffix.
-            ranking = fetch("rankings/" + slug)
-            if not isinstance(ranking, dict):
-                raise ValueError("expected ranking object")
-            write_json(OUT / "rankings" / (slug + ".json"), ranking)
-            ranking_counts[slug] = len(first_collection(ranking, ("entries", "cards", "rankings", "results")))
-        except Exception as exc:
-            ranking_errors.append(slug + ": " + str(exc)[:180])
+    evidence = {}
+    def sync_ranking(row):
+        slug = row["slug"]
+        ranking = fetch("rankings/" + slug)
+        if not isinstance(ranking, dict) or ranking.get("slug") != slug:
+            raise ValueError("invalid ranking slug")
+        if "CC BY" not in str(ranking.get("license", "")):
+            raise ValueError("ranking license absent")
+        entries = ranking.get("entries")
+        if not isinstance(entries, list):
+            raise ValueError("ranking entries absent")
+        return row, ranking, entries
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        futures = {pool.submit(sync_ranking, row): row for row in ranking_catalog}
+        for future in as_completed(futures):
+            row = futures[future]
+            try:
+                _, ranking, entries = future.result()
+                slug = row["slug"]
+                write_json(OUT / "rankings" / (slug + ".json"), ranking)
+                ranking_counts[slug] = len(entries)
+                for entry in entries:
+                    if not isinstance(entry, dict) or entry.get("expired"):
+                        continue
+                    card = entry.get("card_id")
+                    if not isinstance(card, str):
+                        continue
+                    one = entry.get("once") or entry.get("basic")
+                    if not isinstance(one, dict):
+                        continue
+                    rate = one.get("net_rate_bp")
+                    if isinstance(rate, bool) or not isinstance(rate, (int, float)) or not (0 < rate <= 10000):
+                        continue
+                    proof = {
+                        "slug": slug, "title": row["title"],
+                        "rateBp": rate, "reviewed": entry.get("reviewed") is True,
+                        "needs": [x[:180] for x in one.get("requirements", [])[:6] if isinstance(x, str)] if isinstance(one.get("requirements"), list) else [],
+                        "method": str(one.get("method") or "")[:60],
+                        "capTwd": one.get("cap_twd_max"),
+                        "dataDate": ranking.get("data_date"),
+                    }
+                    evidence.setdefault(card, []).append(proof)
+            except Exception as exc:
+                ranking_errors.append(row["slug"] + ": " + str(exc)[:180])
+    # Cards show a broad survey of merchant-specific rates, but a rate is never
+    # labeled guaranteed and is never used as a formula for arbitrary amounts.
+    for card_id, entries in evidence.items():
+        entries.sort(key=lambda x: (not x["reviewed"], -x["rateBp"], x["title"]))
+        evidence[card_id] = entries[:30]
     snapshot["rankings"] = ranking_counts
+    snapshot["rankingsIndex"] = ranking_catalog
     snapshot["rankingErrors"] = ranking_errors
+    write_json(OUT / "card-reward-highlights.json", {
+        "provider": ATTRIBUTION, "license": LICENSE, "dataDate": snapshot["dataDate"],
+        "cards": evidence, "notice": "These are source scenarios, not personal guaranteed cashbacks."
+    })
     write_json(OUT / "index.json", {"metadata": snapshot, "datasets": index})
     write_json(existing_manifest, snapshot)
     (OUT / "sync-error.txt").unlink(missing_ok=True)

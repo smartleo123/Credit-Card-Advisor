@@ -33,5 +33,23 @@ class ExternalSyncTests(unittest.TestCase):
             for key in ("basic","once","best"):
                 if row.get(key) is not None:
                     self.assertIsInstance(row[key], dict)
+    def test_expanded_catalog_snapshot(self):
+        root = ROOT / "data/external"
+        manifest_file = root / "manifest.json"
+        highlights_file = root / "card-reward-highlights.json"
+        if not manifest_file.exists() or not highlights_file.exists():
+            self.skipTest("expanded API sync has not completed")
+        manifest = json.loads(manifest_file.read_text(encoding="utf-8"))
+        highlights = json.loads(highlights_file.read_text(encoding="utf-8"))
+        self.assertGreaterEqual(manifest["recordCounts"]["cards"], 100)
+        self.assertGreaterEqual(len(manifest.get("rankings", {})), 50)
+        self.assertEqual(highlights["license"], "CC BY 4.0")
+        self.assertIsInstance(highlights["cards"], dict)
+        for evidence in list(highlights["cards"].values())[:10]:
+            for item in evidence:
+                self.assertIn("title", item)
+                self.assertGreater(item["rateBp"], 0)
+                self.assertIn("reviewed", item)
+
 if __name__ == "__main__":
     unittest.main()

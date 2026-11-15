@@ -53,7 +53,7 @@
      let owned=[];try{owned=JSON.parse(localStorage.getItem("cardwise-tw-settings-v2")||"{}").owned||[]}catch{}
      entries=entries.filter(e=>owned.includes(e.card_id));
    }
-   entries=entries.filter(e=>scenario(e,mode)&&Number.isFinite(Number(scenario(e,mode).net_twd_per_1000)));
+   entries=entries.filter(e=>scenario(e,mode)&&scenario(e,mode).net_twd_per_1000!==null&&scenario(e,mode).net_twd_per_1000!==undefined&&Number.isFinite(Number(scenario(e,mode).net_twd_per_1000)));
    entries.sort((a,b)=>Number(scenario(b,mode).net_twd_per_1000)-Number(scenario(a,mode).net_twd_per_1000));
    const amount=Number(data.amount_twd)||1000;
    el("source-ranking-meta").textContent="資料 "+(data.data_date||"未知")+" · "+(data.title_zh||rankingNames[slug])+" · 以來源單筆 NT$"+amount+" 計算 · "+entries.length+" 張可比較；未進行你的已用額度扣除";

@@ -74,3 +74,7 @@ python3 -m http.server 8000
 ## 技術
 
 Vanilla HTML / CSS / JavaScript；GitHub Pages 靜態部署；Python 3 標準函式庫監控；GitHub Actions CI/CD。沒有連結信用卡帳戶或網銀，不需要帳戶金鑰。
+
+## 重新部署
+
+啟用 GitHub Pages 並選擇 GitHub Actions 為來源後，推送到 `main` 分支會觸發 `.github/workflows/deploy.yml` 重新發布網站。也可在 GitHub Actions 頁面手動執行 `Deploy website to GitHub Pages` 工作流程。

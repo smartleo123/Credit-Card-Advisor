@@ -2,7 +2,7 @@
   "license": "CC BY 4.0（https://creativecommons.org/licenses/by/4.0/deed.zh-hant）",
   "attribution": "台灣支付優惠站 https://pay.elggum.com",
   "disclaimer_zh": "本資料整理自銀行與支付業者公開資訊，可能有誤或已變更，實際回饋以各機構公告為準。謹慎理財 信用至上。",
-  "data_date": "2026-11-14",
+  "data_date": "2026-11-16",
   "slug": "tra",
   "title_zh": "台鐵",
   "amount_twd": 1000,
@@ -4872,77 +4872,6 @@
         ]
       },
       "tie": true,
-      "reviewed": false
-    },
-    {
-      "card_id": "taishin-skm-park",
-      "card_name": "台新 SKM Park Outlets 聯名卡",
-      "confidence": "official_x2",
-      "basic": {
-        "method": "physical",
-        "plan": null,
-        "tier": null,
-        "net_twd_per_1000": 3,
-        "net_rate_bp": 30,
-        "cap_twd_max": null,
-        "max_spend_twd": null,
-        "base_uncapped": false,
-        "cap_points_max": null,
-        "requirements": [],
-        "needs_registration": false
-      },
-      "once": {
-        "method": "physical",
-        "plan": null,
-        "tier": null,
-        "net_twd_per_1000": 3,
-        "net_rate_bp": 30,
-        "cap_twd_max": null,
-        "max_spend_twd": null,
-        "base_uncapped": false,
-        "cap_points_max": null,
-        "requirements": [],
-        "needs_registration": false
-      },
-      "best": {
-        "method": "physical",
-        "plan": null,
-        "tier": null,
-        "net_twd_per_1000": 20,
-        "net_rate_bp": 115,
-        "cap_twd_max": 1000,
-        "max_spend_twd": 58823,
-        "base_uncapped": true,
-        "cap_points_max": null,
-        "requirements": [
-          "當期帳單累積消費滿 2,000 元才有加碼"
-        ],
-        "needs_registration": false,
-        "threshold_twd": 2000,
-        "txn_rate_bp": 200
-      },
-      "monthly": {
-        "twd": [
-          1000,
-          3000,
-          10000
-        ],
-        "base": [
-          3,
-          9,
-          30
-        ],
-        "best": [
-          3,
-          60,
-          200
-        ],
-        "once": [
-          3,
-          9,
-          30
-        ]
-      },
       "reviewed": false
     }
   ],

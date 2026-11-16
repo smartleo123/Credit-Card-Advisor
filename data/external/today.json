@@ -3,8 +3,8 @@
   "attribution": "台灣支付優惠站 https://pay.elggum.com",
   "disclaimer_zh": "本資料整理自銀行與支付業者公開資訊，可能有誤或已變更，實際回饋以各機構公告為準。謹慎理財 信用至上。",
   "api_version": 1,
-  "data_date": "2026-11-14",
-  "generated_at": "2026-11-14T02:49:49.389Z",
+  "data_date": "2026-11-16",
+  "generated_at": "2026-11-16T06:24:56.419Z",
   "cards": [
     {
       "id": "amex-regent",
@@ -54155,167 +54155,6 @@
       "verified_at": "2026-10-19"
     },
     {
-      "id": "taishin-linepay-points-2026-10",
-      "title_zh": "LINE Pay × 台新卡 指定通路 LINE POINTS 加碼",
-      "kind": "bonus",
-      "issuer_ids": [
-        "bank-taishin"
-      ],
-      "card_ids": [],
-      "exclude_card_ids": [],
-      "product_types": [
-        "credit",
-        "debit"
-      ],
-      "period_kind": "custom",
-      "period_label": "2026/10/1–11/15",
-      "valid_from": "2026-10-01",
-      "valid_to": "2026-11-15",
-      "status": "active",
-      "requires_registration": false,
-      "registration_windows": [],
-      "quota_note_zh": "各通路每月有總點數上限，額滿提前結束；由 LINE Pay 系統判定。",
-      "month_status": [
-        {
-          "month": "2026-10",
-          "rule_ids": [
-            "fuel",
-            "taxi",
-            "ubereats",
-            "korea-food",
-            "korea-travel"
-          ],
-          "status": "quota_full",
-          "note_zh": "官網活動一到五都標示 10 月已額滿"
-        },
-        {
-          "month": "2026-11",
-          "rule_ids": [
-            "fuel"
-          ],
-          "status": "quota_full",
-          "note_zh": "官網活動一（加油站）標示 11 月已額滿"
-        }
-      ],
-      "stacking": "unknown",
-      "stacking_note_zh": "LINE POINTS 由 LINE Pay 發放，與卡片本身回饋分開；官網未明寫疊加規則，本站不自動相加。",
-      "rules": [
-        {
-          "id": "fuel",
-          "label_zh": "週一至五 指定加油站人工加油（單筆滿 500）",
-          "scope": "merchant",
-          "merchant_ids": [
-            "cpc",
-            "speedmall-fuel"
-          ],
-          "payment_methods": [
-            "line_pay"
-          ],
-          "day_rule": "weekday",
-          "rate_bp": 200,
-          "incremental": true,
-          "min_txn_twd": 500,
-          "cap_amount_twd": 30,
-          "cap_period": "month",
-          "quota_limited_zh": "10 月全體上限 30 萬點、11/1–11/15 上限 15 萬點，額滿提前結束",
-          "conditions_zh": "台灣中油直營及指定加盟站、台亞、台糖、統一精工速邁樂、山隆指定站的人工加油。",
-          "cap_twd_max": 30,
-          "max_spend_twd": 1500
-        },
-        {
-          "id": "taxi",
-          "label_zh": "週六日 台灣大車隊、yoxi、Uber（單筆滿 200）",
-          "scope": "merchant",
-          "merchant_ids": [
-            "taiwan-taxi",
-            "yoxi",
-            "uber"
-          ],
-          "payment_methods": [
-            "line_pay"
-          ],
-          "day_rule": "weekend",
-          "rate_bp": 200,
-          "incremental": true,
-          "min_txn_twd": 200,
-          "cap_amount_twd": 20,
-          "cap_period": "month",
-          "quota_limited_zh": "10 月全體上限 3 萬點、11/1–11/15 上限 1.5 萬點，額滿提前結束",
-          "cap_twd_max": 20,
-          "max_spend_twd": 1000
-        },
-        {
-          "id": "ubereats",
-          "label_zh": "週一至五 Uber Eats（單筆滿 199）",
-          "scope": "merchant",
-          "merchant_ids": [
-            "uber-eats"
-          ],
-          "payment_methods": [
-            "line_pay"
-          ],
-          "day_rule": "weekday",
-          "rate_bp": 200,
-          "incremental": true,
-          "min_txn_twd": 199,
-          "cap_amount_twd": 30,
-          "cap_period": "month",
-          "quota_limited_zh": "10 月全體上限 30 萬點、11/1–11/15 上限 18 萬點，額滿提前結束",
-          "cap_twd_max": 30,
-          "max_spend_twd": 1500
-        },
-        {
-          "id": "korea-food",
-          "label_zh": "韓國指定吃喝通路",
-          "scope": "country",
-          "country_codes": [
-            "KR"
-          ],
-          "payment_methods": [
-            "line_pay"
-          ],
-          "rate_bp": 800,
-          "incremental": true,
-          "cap_amount_twd": 100,
-          "cap_period": "month",
-          "quota_limited_zh": "10 月全體上限 3 萬點、11/1–11/15 上限 1.5 萬點，額滿提前結束",
-          "conditions_zh": "限指定韓國通路，名單見 LINE Pay 活動頁。",
-          "cap_twd_max": 100,
-          "max_spend_twd": 1250
-        },
-        {
-          "id": "korea-travel",
-          "label_zh": "韓國指定旅遊購物通路",
-          "scope": "country",
-          "country_codes": [
-            "KR"
-          ],
-          "payment_methods": [
-            "line_pay"
-          ],
-          "rate_bp": 300,
-          "incremental": true,
-          "cap_amount_twd": 200,
-          "cap_period": "month",
-          "quota_limited_zh": "10 月全體上限 20 萬點、11/1–11/15 上限 10 萬點，額滿提前結束",
-          "conditions_zh": "限指定韓國通路。",
-          "cap_twd_max": 200,
-          "max_spend_twd": 6666
-        }
-      ],
-      "payout_zh": "LINE POINTS 自付款成功 24 小時起陸續發放。",
-      "summary_zh": "10/1–11/15 用 LINE Pay 綁台新卡，平日 Uber Eats、平日加油、週末叫車各多 2% LINE POINTS，韓國指定通路最高 8%。",
-      "source_ids": [
-        "src-taishin-linepay-q4",
-        "src-taishin-linepay-q4-r11",
-        "src-taishin-linepay-q4-20261107"
-      ],
-      "corroborating_source_ids": [],
-      "confidence": "official_only",
-      "recorded_at": "2026-10-19",
-      "verified_at": "2026-10-31"
-    },
-    {
       "id": "taishin-pxpay-2pct-2026q4",
       "title_zh": "台新信用卡綁全支付 指定通路實體門市最高 2% 全點",
       "kind": "bonus",
@@ -54980,6 +54819,169 @@
       "confidence": "official_only",
       "recorded_at": "2026-10-22",
       "verified_at": "2026-10-31"
+    },
+    {
+      "id": "taishin-linepay-points-2026-10",
+      "title_zh": "LINE Pay × 台新卡 指定通路 LINE POINTS 加碼",
+      "kind": "bonus",
+      "issuer_ids": [
+        "bank-taishin"
+      ],
+      "card_ids": [],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit",
+        "debit"
+      ],
+      "period_kind": "custom",
+      "period_label": "2026/10/1–11/15",
+      "valid_from": "2026-10-01",
+      "valid_to": "2026-11-15",
+      "status": "active",
+      "requires_registration": false,
+      "registration_windows": [],
+      "quota_note_zh": "各通路每月有總點數上限，額滿提前結束；由 LINE Pay 系統判定。",
+      "month_status": [
+        {
+          "month": "2026-10",
+          "rule_ids": [
+            "fuel",
+            "taxi",
+            "ubereats",
+            "korea-food",
+            "korea-travel"
+          ],
+          "status": "quota_full",
+          "note_zh": "官網活動一到五都標示 10 月已額滿"
+        },
+        {
+          "month": "2026-11",
+          "rule_ids": [
+            "fuel"
+          ],
+          "status": "quota_full",
+          "note_zh": "官網活動一（加油站）標示 11 月已額滿"
+        }
+      ],
+      "stacking": "unknown",
+      "stacking_note_zh": "LINE POINTS 由 LINE Pay 發放，與卡片本身回饋分開；官網未明寫疊加規則，本站不自動相加。",
+      "rules": [
+        {
+          "id": "fuel",
+          "label_zh": "週一至五 指定加油站人工加油（單筆滿 500）",
+          "scope": "merchant",
+          "merchant_ids": [
+            "cpc",
+            "speedmall-fuel"
+          ],
+          "payment_methods": [
+            "line_pay"
+          ],
+          "day_rule": "weekday",
+          "rate_bp": 200,
+          "incremental": true,
+          "min_txn_twd": 500,
+          "cap_amount_twd": 30,
+          "cap_period": "month",
+          "quota_limited_zh": "10 月全體上限 30 萬點、11/1–11/15 上限 15 萬點，額滿提前結束",
+          "conditions_zh": "台灣中油直營及指定加盟站、台亞、台糖、統一精工速邁樂、山隆指定站的人工加油。",
+          "cap_twd_max": 30,
+          "max_spend_twd": 1500
+        },
+        {
+          "id": "taxi",
+          "label_zh": "週六日 台灣大車隊、yoxi、Uber（單筆滿 200）",
+          "scope": "merchant",
+          "merchant_ids": [
+            "taiwan-taxi",
+            "yoxi",
+            "uber"
+          ],
+          "payment_methods": [
+            "line_pay"
+          ],
+          "day_rule": "weekend",
+          "rate_bp": 200,
+          "incremental": true,
+          "min_txn_twd": 200,
+          "cap_amount_twd": 20,
+          "cap_period": "month",
+          "quota_limited_zh": "10 月全體上限 3 萬點、11/1–11/15 上限 1.5 萬點，額滿提前結束",
+          "cap_twd_max": 20,
+          "max_spend_twd": 1000
+        },
+        {
+          "id": "ubereats",
+          "label_zh": "週一至五 Uber Eats（單筆滿 199）",
+          "scope": "merchant",
+          "merchant_ids": [
+            "uber-eats"
+          ],
+          "payment_methods": [
+            "line_pay"
+          ],
+          "day_rule": "weekday",
+          "rate_bp": 200,
+          "incremental": true,
+          "min_txn_twd": 199,
+          "cap_amount_twd": 30,
+          "cap_period": "month",
+          "quota_limited_zh": "10 月全體上限 30 萬點、11/1–11/15 上限 18 萬點，額滿提前結束",
+          "cap_twd_max": 30,
+          "max_spend_twd": 1500
+        },
+        {
+          "id": "korea-food",
+          "label_zh": "韓國指定吃喝通路",
+          "scope": "country",
+          "country_codes": [
+            "KR"
+          ],
+          "payment_methods": [
+            "line_pay"
+          ],
+          "rate_bp": 800,
+          "incremental": true,
+          "cap_amount_twd": 100,
+          "cap_period": "month",
+          "quota_limited_zh": "10 月全體上限 3 萬點、11/1–11/15 上限 1.5 萬點，額滿提前結束",
+          "conditions_zh": "限指定韓國通路，名單見 LINE Pay 活動頁。",
+          "cap_twd_max": 100,
+          "max_spend_twd": 1250
+        },
+        {
+          "id": "korea-travel",
+          "label_zh": "韓國指定旅遊購物通路",
+          "scope": "country",
+          "country_codes": [
+            "KR"
+          ],
+          "payment_methods": [
+            "line_pay"
+          ],
+          "rate_bp": 300,
+          "incremental": true,
+          "cap_amount_twd": 200,
+          "cap_period": "month",
+          "quota_limited_zh": "10 月全體上限 20 萬點、11/1–11/15 上限 10 萬點，額滿提前結束",
+          "conditions_zh": "限指定韓國通路。",
+          "cap_twd_max": 200,
+          "max_spend_twd": 6666
+        }
+      ],
+      "payout_zh": "LINE POINTS 自付款成功 24 小時起陸續發放。",
+      "summary_zh": "10/1–11/15 用 LINE Pay 綁台新卡，平日 Uber Eats、平日加油、週末叫車各多 2% LINE POINTS，韓國指定通路最高 8%。",
+      "source_ids": [
+        "src-taishin-linepay-q4",
+        "src-taishin-linepay-q4-r11",
+        "src-taishin-linepay-q4-20261107"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-10-19",
+      "verified_at": "2026-10-31",
+      "expired": true,
+      "expired_zh": "已過期，等待新方案中"
     }
   ],
   "merchants": [

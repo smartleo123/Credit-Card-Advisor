@@ -1,17 +1,17 @@
 {
-  "checkedAt": "2026-11-21T16:23:22+08:00",
+  "checkedAt": "2026-11-22T16:14:44+08:00",
   "sources": [
     {
       "url": "https://bank.sinopac.com/sinopacBT/personal/credit-card/introduction/bankcard/DAWAY.html",
-      "checkedAt": "2026-11-21T16:23:22+08:00",
+      "checkedAt": "2026-11-22T16:14:44+08:00",
       "ok": true,
       "httpStatus": 200,
       "sha256": "bfb52ed8275ff01464a71b18b3aa3c0f2b03aa0956c8c47d94d72d7b2061c700",
-      "changed": true
+      "changed": false
     },
     {
       "url": "https://event.esunbank.com.tw/credit/unicard/index.html",
-      "checkedAt": "2026-11-21T16:23:22+08:00",
+      "checkedAt": "2026-11-22T16:14:44+08:00",
       "ok": true,
       "httpStatus": 200,
       "sha256": "92918fca115f12435aea9ba5c6fd128b37898f3b52e4700a4e9913a93ae54ed4",
@@ -19,7 +19,7 @@
     },
     {
       "url": "https://www.cathay-cube.com.tw/cathaybk/personal/product/credit-card/cards/cube-list",
-      "checkedAt": "2026-11-21T16:23:22+08:00",
+      "checkedAt": "2026-11-22T16:14:44+08:00",
       "ok": true,
       "httpStatus": 200,
       "sha256": "31a7b389f57ca9ab99ba67f8fcd78518f7b07246e390e24de188c930483046c9",
@@ -27,15 +27,15 @@
     },
     {
       "url": "https://www.ctbcbank.com/content/dam/minisite/long/creditcard/LINEPay/notice.html",
-      "checkedAt": "2026-11-21T16:23:22+08:00",
+      "checkedAt": "2026-11-22T16:14:44+08:00",
       "ok": true,
       "httpStatus": 200,
-      "sha256": "f11e606c7757e45b97bdd5c503b633978cd31edf3616279ba25e7ba9a580745b",
+      "sha256": "fa48ee84bc32a104d4e67a2b69fa7daa6e28a1bfdd6254c9419baf9e4e0428ac",
       "changed": true
     },
     {
       "url": "https://www.dbs.com.tw/personal-zh/cards/dbs_eco/index.html",
-      "checkedAt": "2026-11-21T16:23:22+08:00",
+      "checkedAt": "2026-11-22T16:14:44+08:00",
       "ok": true,
       "httpStatus": 200,
       "sha256": "7f966799c7797c619795238ec69f957baf0f4dc18b112d4531c45dedd2d56835",
@@ -43,7 +43,7 @@
     },
     {
       "url": "https://www.fubon.com/banking/JF/",
-      "checkedAt": "2026-11-21T16:23:22+08:00",
+      "checkedAt": "2026-11-22T16:14:44+08:00",
       "ok": true,
       "httpStatus": 200,
       "sha256": "efcaf86dffcad51e5e4554c2926936828025a1f89e42fbfc2f454241251df91f",
@@ -51,18 +51,18 @@
     },
     {
       "url": "https://www.hsbc.com.tw/credit-cards/products/liveplus/",
-      "checkedAt": "2026-11-21T16:23:22+08:00",
+      "checkedAt": "2026-11-22T16:14:44+08:00",
       "ok": true,
       "httpStatus": 200,
-      "sha256": "c2e6f2b24e1599964128c9a43b9cdd39d3edfd89a4237865fe53a2f6b6cafad8",
+      "sha256": "7b4cb4415fdf1d170985183ba2cf9fe78203dbb6a469af43506968100679b478",
       "changed": true
     },
     {
       "url": "https://www.taishinbank.com.tw/TSB/personal/credit/",
-      "checkedAt": "2026-11-21T16:23:22+08:00",
+      "checkedAt": "2026-11-22T16:14:44+08:00",
       "ok": true,
       "httpStatus": 200,
-      "sha256": "d45eba9a76f017a01f3c8b5a1e061362a897adc9a7c454b72991c1fcf8054f33",
+      "sha256": "ea148d0dcad20627fb90315141631444416ab19862aec4337cb0f31d21d94e46",
       "changed": true
     }
   ],

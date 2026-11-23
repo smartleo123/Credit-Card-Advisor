@@ -2,7 +2,7 @@
   "license": "CC BY 4.0（https://creativecommons.org/licenses/by/4.0/deed.zh-hant）",
   "attribution": "台灣支付優惠站 https://pay.elggum.com",
   "disclaimer_zh": "本資料整理自銀行與支付業者公開資訊，可能有誤或已變更，實際回饋以各機構公告為準。謹慎理財 信用至上。",
-  "data_date": "2026-11-16",
+  "data_date": "2026-11-23",
   "slug": "half-2027h1",
   "title_zh": "2027 上半年優惠",
   "amount_twd": 1000,
@@ -455,6 +455,58 @@
         "needs_registration": false
       },
       "reviewed": false
+    },
+    {
+      "card_id": "taishin-jkopay",
+      "card_name": "台新街口聯名卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：回饋為街口幣：交易當下和回饋當下都要在街口支付 App 綁定本卡（身分證字號一致）才有，街口幣只能在街口支付通路折抵。"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：回饋為街口幣：交易當下和回饋當下都要在街口支付 App 綁定本卡（身分證字號一致）才有，街口幣只能在街口支付通路折抵。"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：回饋為街口幣：交易當下和回饋當下都要在街口支付 App 綁定本卡（身分證字號一致）才有，街口幣只能在街口支付通路折抵。"
+        ],
+        "needs_registration": false
+      },
+      "verified_ai": "2026-11-23",
+      "reviewed": true
     },
     {
       "card_id": "fubon-costco",
@@ -2641,7 +2693,7 @@
         ],
         "needs_registration": false
       },
-      "verified_ai": "2026-11-13",
+      "verified_ai": "2026-11-23",
       "expired": true,
       "expired_on": "2026-12-31",
       "expired_zh": "已過期，等待新方案中",
@@ -4402,61 +4454,6 @@
       "reviewed": false
     },
     {
-      "card_id": "taishin-jkopay",
-      "card_name": "台新街口聯名卡",
-      "confidence": "official_only",
-      "basic": {
-        "method": "physical",
-        "plan": null,
-        "tier": null,
-        "net_twd_per_1000": 10,
-        "net_rate_bp": 100,
-        "cap_twd_max": null,
-        "max_spend_twd": null,
-        "base_uncapped": false,
-        "cap_points_max": null,
-        "requirements": [
-          "前提：回饋為街口幣：交易當下和回饋當下都要在街口支付 App 綁定本卡（身分證字號一致）才有，街口幣只能在街口支付通路折抵。"
-        ],
-        "needs_registration": false
-      },
-      "once": {
-        "method": "physical",
-        "plan": null,
-        "tier": null,
-        "net_twd_per_1000": 10,
-        "net_rate_bp": 100,
-        "cap_twd_max": null,
-        "max_spend_twd": null,
-        "base_uncapped": false,
-        "cap_points_max": null,
-        "requirements": [
-          "前提：回饋為街口幣：交易當下和回饋當下都要在街口支付 App 綁定本卡（身分證字號一致）才有，街口幣只能在街口支付通路折抵。"
-        ],
-        "needs_registration": false
-      },
-      "best": {
-        "method": "physical",
-        "plan": null,
-        "tier": null,
-        "net_twd_per_1000": 10,
-        "net_rate_bp": 100,
-        "cap_twd_max": null,
-        "max_spend_twd": null,
-        "base_uncapped": false,
-        "cap_points_max": null,
-        "requirements": [
-          "前提：回饋為街口幣：交易當下和回饋當下都要在街口支付 App 綁定本卡（身分證字號一致）才有，街口幣只能在街口支付通路折抵。"
-        ],
-        "needs_registration": false
-      },
-      "verified_ai": "2026-11-13",
-      "expired": true,
-      "expired_on": "2026-12-31",
-      "expired_zh": "已過期，等待新方案中",
-      "reviewed": false
-    },
-    {
       "card_id": "taishin-dual-currency",
       "card_name": "台新雙幣信用卡（美元／日圓／歐元）",
       "confidence": "official_only",
@@ -5641,58 +5638,6 @@
       "reviewed": false
     },
     {
-      "card_id": "ctbc-hotai",
-      "card_name": "中信 和泰聯名卡",
-      "confidence": "official_x2",
-      "basic": {
-        "method": "physical",
-        "plan": null,
-        "tier": null,
-        "net_twd_per_1000": 0,
-        "net_rate_bp": 0,
-        "cap_twd_max": null,
-        "max_spend_twd": null,
-        "base_uncapped": false,
-        "cap_points_max": null,
-        "requirements": [],
-        "needs_registration": false
-      },
-      "once": {
-        "method": "physical",
-        "plan": null,
-        "tier": null,
-        "net_twd_per_1000": 10,
-        "net_rate_bp": 100,
-        "cap_twd_max": null,
-        "max_spend_twd": null,
-        "base_uncapped": false,
-        "cap_points_max": null,
-        "requirements": [
-          "需完成「和泰聯名卡綁定和泰Pay」：消費當日與請款當日都要是綁定狀態才累點。"
-        ],
-        "needs_registration": false
-      },
-      "best": {
-        "method": "physical",
-        "plan": null,
-        "tier": null,
-        "net_twd_per_1000": 10,
-        "net_rate_bp": 100,
-        "cap_twd_max": null,
-        "max_spend_twd": null,
-        "base_uncapped": false,
-        "cap_points_max": null,
-        "requirements": [
-          "需完成「和泰聯名卡綁定和泰Pay」：消費當日與請款當日都要是綁定狀態才累點。"
-        ],
-        "needs_registration": false
-      },
-      "expired": true,
-      "expired_on": "2026-12-31",
-      "expired_zh": "已過期，等待新方案中",
-      "reviewed": false
-    },
-    {
       "card_id": "ubot-green",
       "card_name": "聯邦 綠卡",
       "confidence": "official_only",
@@ -6455,7 +6400,7 @@
         ],
         "needs_registration": false
       },
-      "verified_ai": "2026-11-13",
+      "verified_ai": "2026-11-23",
       "expired": true,
       "expired_on": "2026-12-31",
       "expired_zh": "已過期，等待新方案中",
@@ -8988,6 +8933,7 @@
         ],
         "needs_registration": true
       },
+      "verified_ai": "2026-11-23",
       "expired": true,
       "expired_on": "2026-12-31",
       "expired_zh": "已過期，等待新方案中",

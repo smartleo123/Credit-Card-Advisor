@@ -2,14 +2,14 @@
   "license": "CC BY 4.0（https://creativecommons.org/licenses/by/4.0/deed.zh-hant）",
   "attribution": "台灣支付優惠站 https://pay.elggum.com",
   "disclaimer_zh": "本資料整理自銀行與支付業者公開資訊，可能有誤或已變更，實際回饋以各機構公告為準。謹慎理財 信用至上。",
-  "data_date": "2026-11-16",
-  "generated_at": "2026-11-16T06:24:56.419Z",
+  "data_date": "2026-11-23",
+  "generated_at": "2026-11-23T09:12:29.533Z",
   "formula_version": "persona-v1",
   "method_zh": "每月淨回饋：把每月刷卡金額（小資 1 萬、一般 3 萬、重度 8 萬）依消費比重分到各商店，每家店用該類別的中間單筆金額算回饋，同一個上限跨商店合併，再扣海外手續費與年費的 1/12。lists[消費習慣][付款習慣] 依 monthly_once（做一次就好）由高到低排序；monthly_base 是不用做任何事的金額；tie＝true 表示和同組並列（差距小於每月消費的 0.05%）。詳見 https://pay.elggum.com/methodology/#score",
   "default_persona": "normal",
   "default_habit": "physical",
   "version": "persona-v1",
-  "date": "2026-11-16",
+  "date": "2026-11-23",
   "tie_ratio": 0.0005,
   "personas": [
     "light",
@@ -503,7 +503,7 @@
             "task",
             "estimated"
           ],
-          "valid_to": "2026-12-31",
+          "valid_to": "2027-06-30",
           "tie": true
         },
         {
@@ -1182,9 +1182,9 @@
         {
           "card_id": "firstbank-wonderful",
           "card_name": "第一銀行 Wonderful 星璨卡",
-          "monthly_once": 49.87,
-          "monthly_base": 49.87,
-          "rate_bp": 49.87,
+          "monthly_once": 49.73,
+          "monthly_base": 49.73,
+          "rate_bp": 49.73,
           "fee_month": 0,
           "fee_month_once": 0,
           "fee_month_base": 0,
@@ -2872,7 +2872,7 @@
             "wallet",
             "estimated"
           ],
-          "valid_to": "2026-12-31",
+          "valid_to": "2027-06-30",
           "tie": true
         },
         {
@@ -3304,21 +3304,6 @@
           "tie": true
         },
         {
-          "card_id": "firstbank-wonderful",
-          "card_name": "第一銀行 Wonderful 星璨卡",
-          "monthly_once": 76.83,
-          "monthly_base": 76.83,
-          "rate_bp": 76.83,
-          "fee_month": 0,
-          "fee_month_once": 0,
-          "fee_month_base": 0,
-          "tags": [
-            "wallet"
-          ],
-          "valid_to": "2026-12-31",
-          "tie": true
-        },
-        {
           "card_id": "sinopac-dawho",
           "card_name": "永豐 DAWHO 現金回饋信用卡",
           "monthly_once": 76.8,
@@ -3328,6 +3313,21 @@
           "fee_month_once": 0,
           "fee_month_base": 0,
           "tags": [],
+          "valid_to": "2026-12-31",
+          "tie": true
+        },
+        {
+          "card_id": "firstbank-wonderful",
+          "card_name": "第一銀行 Wonderful 星璨卡",
+          "monthly_once": 76.69,
+          "monthly_base": 76.69,
+          "rate_bp": 76.69,
+          "fee_month": 0,
+          "fee_month_once": 0,
+          "fee_month_base": 0,
+          "tags": [
+            "wallet"
+          ],
           "valid_to": "2026-12-31",
           "tie": true
         },
@@ -5433,7 +5433,7 @@
             "task",
             "estimated"
           ],
-          "valid_to": "2026-12-31",
+          "valid_to": "2027-06-30",
           "tie": true
         },
         {
@@ -6121,9 +6121,9 @@
         {
           "card_id": "firstbank-wonderful",
           "card_name": "第一銀行 Wonderful 星璨卡",
-          "monthly_once": 147.33,
-          "monthly_base": 147.33,
-          "rate_bp": 49.11,
+          "monthly_once": 146.85,
+          "monthly_base": 146.85,
+          "rate_bp": 48.95,
           "fee_month": 0,
           "fee_month_once": 0,
           "fee_month_base": 0,
@@ -7712,7 +7712,7 @@
             "wallet",
             "estimated"
           ],
-          "valid_to": "2026-12-31",
+          "valid_to": "2027-06-30",
           "tie": true
         },
         {
@@ -8158,9 +8158,9 @@
         {
           "card_id": "firstbank-wonderful",
           "card_name": "第一銀行 Wonderful 星璨卡",
-          "monthly_once": 234.38,
-          "monthly_base": 234.38,
-          "rate_bp": 78.13,
+          "monthly_once": 233.9,
+          "monthly_base": 233.9,
+          "rate_bp": 77.97,
           "fee_month": 0,
           "fee_month_once": 0,
           "fee_month_base": 0,
@@ -10329,7 +10329,7 @@
             "task",
             "estimated"
           ],
-          "valid_to": "2026-12-31",
+          "valid_to": "2027-06-30",
           "tie": true
         },
         {
@@ -11129,9 +11129,9 @@
         {
           "card_id": "firstbank-wonderful",
           "card_name": "第一銀行 Wonderful 星璨卡",
-          "monthly_once": 369.93,
-          "monthly_base": 369.93,
-          "rate_bp": 46.24,
+          "monthly_once": 368.69,
+          "monthly_base": 368.69,
+          "rate_bp": 46.09,
           "fee_month": 0,
           "fee_month_once": 0,
           "fee_month_base": 0,
@@ -12533,7 +12533,7 @@
             "wallet",
             "estimated"
           ],
-          "valid_to": "2026-12-31",
+          "valid_to": "2027-06-30",
           "tie": true
         },
         {
@@ -13128,11 +13128,11 @@
           "tie": true
         },
         {
-          "card_id": "firstbank-wonderful",
-          "card_name": "第一銀行 Wonderful 星璨卡",
-          "monthly_once": 602.14,
-          "monthly_base": 602.14,
-          "rate_bp": 75.27,
+          "card_id": "tbb-visa-infinite",
+          "card_name": "臺企 福企無限卡",
+          "monthly_once": 601.82,
+          "monthly_base": 601.82,
+          "rate_bp": 75.23,
           "fee_month": 0,
           "fee_month_once": 0,
           "fee_month_base": 0,
@@ -13143,11 +13143,11 @@
           "tie": true
         },
         {
-          "card_id": "tbb-visa-infinite",
-          "card_name": "臺企 福企無限卡",
-          "monthly_once": 601.82,
-          "monthly_base": 601.82,
-          "rate_bp": 75.23,
+          "card_id": "firstbank-wonderful",
+          "card_name": "第一銀行 Wonderful 星璨卡",
+          "monthly_once": 600.9,
+          "monthly_base": 600.9,
+          "rate_bp": 75.11,
           "fee_month": 0,
           "fee_month_once": 0,
           "fee_month_base": 0,

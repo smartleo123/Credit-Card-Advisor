@@ -3,8 +3,8 @@
   "attribution": "台灣支付優惠站 https://pay.elggum.com",
   "disclaimer_zh": "本資料整理自銀行與支付業者公開資訊，可能有誤或已變更，實際回饋以各機構公告為準。謹慎理財 信用至上。",
   "api_version": 1,
-  "data_date": "2026-11-16",
-  "generated_at": "2026-11-16T06:24:56.419Z",
+  "data_date": "2026-11-23",
+  "generated_at": "2026-11-23T09:12:29.533Z",
   "cards": [
     {
       "id": "amex-regent",
@@ -4915,7 +4915,7 @@
           "period_label": "2026 全年",
           "valid_from": "2026-01-01",
           "valid_to": "2026-12-31",
-          "next_period_announced": false,
+          "next_period_announced": true,
           "status": "active",
           "recorded_at": "2026-10-19",
           "verified_at": "2026-10-31",
@@ -4928,7 +4928,7 @@
             "src-ctbc-hotai-terms",
             "src-ctbc-hotai-site"
           ],
-          "notes_zh": "2026-10-31 對照中信 115 年度「不回饋交易項目」PDF 補齊共用排除（縣市路邊停車、電信費代扣繳等）。和泰Points 1 點＝1 元，可在和泰集團旗下（TOYOTA、Lexus 服務廠、HOTAI購等）折抵，不能折抵中信帳款；此價值寫到 2026/12/31。指定通路加碼（加油、量販、旅遊、國外 2%；yoxi、iRent、HOTAI購等最高 10%；每卡每月加碼上限 800 點）加油、量販、旅遊與 yoxi 等通路本站未建成規則；卡片頁回饋表寫國外消費＝中信基本 1%＋加碼 1%（合計 2%），2026-10-22 起建成規則，加碼部分依註 2 以每卡每月 800 點上限計。2027/1/1–6/30 yoxi、iRent、HOTAI購等最高 10%（需登錄）已公告，本站未建。第二份官方文件＝中信和泰聯名卡回饋計劃 PDF（點數價值、綁定和泰Pay才累點）與官方活動網站（國內 1%）。",
+          "notes_zh": "2026-10-31 對照中信 115 年度「不回饋交易項目」PDF 補齊共用排除（縣市路邊停車、電信費代扣繳等）。和泰Points 1 點＝1 元，可在和泰集團旗下（TOYOTA、Lexus 服務廠、HOTAI購等）折抵，不能折抵中信帳款；此價值寫到 2026/12/31。指定通路加碼（加油、量販、旅遊、國外 2%；yoxi、iRent、HOTAI購等最高 10%；每卡每月加碼上限 800 點）加油、量販、旅遊與 yoxi 等通路本站未建成規則；卡片頁回饋表寫國外消費＝中信基本 1%＋加碼 1%（合計 2%），2026-10-22 起建成規則，加碼部分依註 2 以每卡每月 800 點上限計。2027/1/1–6/30 yoxi、iRent、HOTAI購等最高 10%（需登錄）已公告，建在 ctbc-hotai@2027h1（只建 yoxi、iRent；其餘通路本站沒有對應商店）。第二份官方文件＝中信和泰聯名卡回饋計劃 PDF（點數價值、綁定和泰Pay才累點）與官方活動網站（國內 1%）。",
           "rules": [
             {
               "id": "base",
@@ -4964,6 +4964,190 @@
               "conditions_zh": "2026/7/1–12/31 指定通路加碼；中信加碼每卡每月上限 800 點（與加油、量販、旅遊等加碼共用）。",
               "cap_twd_max": 800,
               "max_spend_twd": 80000
+            }
+          ],
+          "exclusions": [
+            {
+              "id": "x-tax",
+              "label_zh": "學費、稅款、規費、公用事業費用、縣市路邊停車費、公立醫療費用不回饋",
+              "category_ids": [
+                "tax",
+                "tuition",
+                "utilities",
+                "street_parking",
+                "medical"
+              ],
+              "source_id": "src-ctbc-nofeedback-2026"
+            },
+            {
+              "id": "x-sv",
+              "label_zh": "儲值卡、儲值金（含自動加值）、eTag 儲值不回饋",
+              "category_ids": [
+                "stored_value"
+              ],
+              "source_id": "src-ctbc-nofeedback-2026"
+            },
+            {
+              "id": "x-px",
+              "label_zh": "全聯、大全聯（含 PX Pay）不回饋",
+              "merchant_ids": [
+                "pxmart",
+                "px-mart-large"
+              ],
+              "source_id": "src-ctbc-nofeedback-2026"
+            },
+            {
+              "id": "x-conv",
+              "label_zh": "便利商店（實體與線上）不回饋",
+              "category_ids": [
+                "convenience"
+              ],
+              "source_id": "src-ctbc-nofeedback-2026"
+            },
+            {
+              "id": "x-tel",
+              "label_zh": "電信費（實體刷卡、網路、App、代扣繳都不算；門市買手機等商品不在此限）",
+              "merchant_ids": [
+                "telecom-generic",
+                "cht-bill",
+                "taiwanmobile-bill"
+              ],
+              "source_id": "src-ctbc-nofeedback-2026"
+            },
+            {
+              "id": "x-eu",
+              "label_zh": "歐洲經濟區與英國等 31 國的實體商店消費不回饋",
+              "country_codes": [
+                "AT",
+                "BE",
+                "BG",
+                "HR",
+                "CY",
+                "CZ",
+                "DK",
+                "EE",
+                "FI",
+                "FR",
+                "DE",
+                "GR",
+                "HU",
+                "IE",
+                "IT",
+                "LV",
+                "LT",
+                "LU",
+                "MT",
+                "NL",
+                "PL",
+                "PT",
+                "RO",
+                "SK",
+                "SI",
+                "ES",
+                "SE",
+                "GB",
+                "IS",
+                "LI",
+                "NO"
+              ],
+              "physical_only": true,
+              "source_id": "src-ctbc-nofeedback-2026"
+            },
+            {
+              "id": "x-unverified",
+              "label_zh": "官方注意事項中的排除項目（例如稅款、規費、儲值、預借現金等）未逐條建檔；實際以官方條款為準",
+              "note_only": true,
+              "source_id": "src-ctbc-hotai-page"
+            },
+            {
+              "id": "x-micro",
+              "label_zh": "聯合信用卡處理中心小額支付平台",
+              "source_id": "src-ctbc-nofeedback-2026",
+              "quote": "聯合信用卡處理中心小額支付平台等",
+              "micropay": true,
+              "inherited_from": "bank-ctbc"
+            }
+          ]
+        },
+        {
+          "id": "ctbc-hotai@2027h1",
+          "period_kind": "half_year",
+          "period_label": "2027 上半年",
+          "valid_from": "2027-01-01",
+          "valid_to": "2027-06-30",
+          "next_period_announced": false,
+          "status": "announced",
+          "recorded_at": "2026-11-23",
+          "verified_at": "2026-11-23",
+          "confidence": "official_only",
+          "source_ids": [
+            "src-ctbc-hotai-page-20261123"
+          ],
+          "corroborating_source_ids": [],
+          "notes_zh": "2026-11-23 官網卡片頁公告「自2027年1月1日起，將調整產品優惠內容」，註5 寫明 2027/1/1~2027/6/30 於 yoxi、iRent、HOTAI購商城、充電漫遊、洗車地圖及去趣eSIM 消費，享基本回饋 1%、中信加碼回饋 2% 及「限時」加碼回饋 7%，共計最高 10%（每卡每月加碼上限 800 點，限時 7% 需登錄）。本版只建官網為 2027 年寫明的項目：本站有對應商店的 yoxi、iRent（基本 1%＋加碼 2%＋限時 7%）。卡片頁的「國內新增消費 1% 無上限」寫在活動期間 2026/7/1–2026/12/31 的回饋計劃裡，2027 年沒公告，不帶入；HOTAI購、充電漫遊、洗車地圖、去趣eSIM 本站沒有對應商店，未建。2026 年下半年的加油、量販、旅遊、國外 2% 加碼與和泰集團其他通路官網沒有寫 2027 年是否延續，不帶入，國外一般消費 1% 也不帶入。和泰Points「1點＝1元」只寫到 2026/12/31，之後的計算方式／價值官網說會另行公告在和泰集團會員服務網站，本站暫時沿用 1 點＝1 元估算，2027/1/1 前要重查。",
+          "rules": [
+            {
+              "id": "base",
+              "label_zh": "yoxi、iRent 基本 1% 和泰Points",
+              "scope": "merchant",
+              "merchant_ids": [
+                "yoxi",
+                "irent"
+              ],
+              "requires_task": "bind-hotaipay",
+              "rate_bp": 100,
+              "quote": "享基本回饋 1%、中信加碼回饋 2% 及「限時」加碼回饋 7%，共計最高 10% 和泰Points 回饋（每卡每月加碼回饋上限 800 點）",
+              "quote_source_id": "src-ctbc-hotai-page-20261123",
+              "incremental": false,
+              "cap_period": "none",
+              "conditions_zh": "2027 年其他國內消費的基本回饋官網還沒公告（2026 年的回饋計劃寫到 2026/12/31），本站先不算。"
+            },
+            {
+              "id": "yoxi-irent-plus",
+              "label_zh": "yoxi、iRent 加碼 2%（合計 3%）",
+              "scope": "merchant",
+              "merchant_ids": [
+                "yoxi",
+                "irent"
+              ],
+              "requires_task": "bind-hotaipay",
+              "rate_bp": 200,
+              "stack": "adds",
+              "quote": "享基本回饋 1%、中信加碼回饋 2% 及「限時」加碼回饋 7%，共計最高 10% 和泰Points 回饋（每卡每月加碼回饋上限 800 點）",
+              "quote_source_id": "src-ctbc-hotai-page-20261123",
+              "incremental": true,
+              "cap_amount_twd": 800,
+              "cap_period": "month",
+              "cap_scope": "ctbc-hotai-plus",
+              "valid_from": "2027-01-01",
+              "valid_to": "2027-06-30",
+              "conditions_zh": "yoxi 要用 yoxi APP 叫車、iRent 要用 iRent APP 租車，並用和泰Pay綁定和泰聯名卡付款；中信加碼每卡每月上限 800 點（與限時 7% 共用）。",
+              "cap_twd_max": 800,
+              "max_spend_twd": 40000
+            },
+            {
+              "id": "yoxi-irent-limited",
+              "label_zh": "yoxi、iRent 限時加碼 7%（需登錄，合計最高 10%）",
+              "scope": "merchant",
+              "merchant_ids": [
+                "yoxi",
+                "irent"
+              ],
+              "requires_task": "bind-hotaipay",
+              "rate_bp": 700,
+              "stack": "adds",
+              "quote": "享基本回饋 1%、中信加碼回饋 2% 及「限時」加碼回饋 7%，共計最高 10% 和泰Points 回饋（每卡每月加碼回饋上限 800 點）",
+              "quote_source_id": "src-ctbc-hotai-page-20261123",
+              "incremental": true,
+              "cap_amount_twd": 800,
+              "cap_period": "month",
+              "cap_scope": "ctbc-hotai-plus",
+              "valid_from": "2027-01-01",
+              "valid_to": "2027-06-30",
+              "requires_registration": true,
+              "conditions_zh": "活動期間需於官網活動頁面指定路徑登錄，方享「限時」加碼 7%；付款方式同上；每卡每月加碼上限 800 點（與 2% 加碼共用）。",
+              "cap_twd_max": 800,
+              "max_spend_twd": 11428
             }
           ],
           "exclusions": [
@@ -15190,12 +15374,13 @@
             "src-firstbank-icash-pay3",
             "src-firstbank-icash-711",
             "src-firstbank-icash-711-20261030",
+            "src-firstbank-icash-711-20261123",
             "src-firstbank-general-def-r11"
           ],
           "corroborating_source_ids": [
             "src-711-pay-tools-20261030"
           ],
-          "notes_zh": "一般消費每 15 元 1 點紅利（價值未公布，不排名）。登錄後綁 icash Pay（不含 7-ELEVEN 實體與 App）、全支付（不含全聯、大全聯）、HGPAY、中油PAY、寶雅pay 等指定通路 3% 刷卡金，每戶每月上限 300 元；當月一般消費滿 2,000 元，自動加值 2%（每月上限 50 元）。icash Pay 綁本卡在 7-ELEVEN 實體門市單筆滿 150 元加贈 10% OPENPOINT（每帳戶每月上限 100 點），但一銀每月總額 5 萬點、依交易先後，7–10 月都在月中額滿（2026-10-30 依一銀活動頁與 7-ELEVEN 支付工具頁核對），所以本站基本條件不計入這 10%，只在最佳情況計入並標「總量有限」。OPENPOINT 依統一超商官方 1 點折抵 1 元計。指定通路 11% OPENPOINT（每月限登錄 200 名）、新卡友日韓 5% 本站未計入。2026-10-31 再核兩個活動頁，回饋率、上限、額滿日都沒變。依一銀「一般消費定義」補上排除：全聯／大全聯（含全支付、PX Pay）、超商消費（含 icash Pay 超商）、稅款學費公用事業費、路邊停車、自動加值、聯信小額支付特店都不算一般消費。便利支付 3% 活動頁只排除 7-ELEVEN、沒寫全家等其他超商算不算，但一銀定義把「icash Pay 之超商消費」排除在一般消費外，本站保守不計；7-ELEVEN 的 OPENPOINT 加贈是指定 7-ELEVEN 的活動，不受超商排除。",
+          "notes_zh": "一般消費每 15 元 1 點紅利（價值未公布，不排名）。登錄後綁 icash Pay（不含 7-ELEVEN 實體與 App）、全支付（不含全聯、大全聯）、HGPAY、中油PAY、寶雅pay 等指定通路 3% 刷卡金，每戶每月上限 300 元；當月一般消費滿 2,000 元，自動加值 2%（每月上限 50 元）。icash Pay 綁本卡在 7-ELEVEN 實體門市單筆滿 150 元加贈 10% OPENPOINT（每帳戶每月上限 100 點），但一銀每月總額 5 萬點、依交易先後，7–11 月都在月中額滿（11 月在 11/15 額滿，2026-11-23 依一銀活動頁核對；10 月以前 2026-10-30 依一銀活動頁與 7-ELEVEN 支付工具頁核對），所以本站基本條件不計入這 10%，只在最佳情況計入並標「總量有限」。OPENPOINT 依統一超商官方 1 點折抵 1 元計。指定通路 11% OPENPOINT（每月限登錄 200 名）、新卡友日韓 5% 本站未計入。2026-10-31 再核兩個活動頁，回饋率、上限、額滿日都沒變。依一銀「一般消費定義」補上排除：全聯／大全聯（含全支付、PX Pay）、超商消費（含 icash Pay 超商）、稅款學費公用事業費、路邊停車、自動加值、聯信小額支付特店都不算一般消費。便利支付 3% 活動頁只排除 7-ELEVEN、沒寫全家等其他超商算不算，但一銀定義把「icash Pay 之超商消費」排除在一般消費外，本站保守不計；7-ELEVEN 的 OPENPOINT 加贈是指定 7-ELEVEN 的活動，不受超商排除。",
           "rules": [
             {
               "id": "pts",
@@ -15269,7 +15454,7 @@
               "override_exclusions": [
                 "x-cvs"
               ],
-              "quota_limited_zh": "一銀每月總回饋上限 5 萬點 OPENPOINT、依交易先後，2026 年 7–10 月都在月中額滿（10 月在 10/15 額滿）",
+              "quota_limited_zh": "一銀每月總回饋上限 5 萬點 OPENPOINT、依交易先後，2026 年 7–11 月都在月中額滿（11 月在 11/15 額滿）",
               "conditions_zh": "每帳戶每月上限 100 點；一銀每月總額 5 萬點，先到先得、常在月中額滿，額滿後不補點。基本條件不計入，最佳情況才計入。",
               "cap_twd_max": 100,
               "max_spend_twd": 1000
@@ -17861,20 +18046,21 @@
           "status": "active",
           "recorded_at": "2026-10-19",
           "verified_at": "2026-10-31",
-          "verified_ai": "2026-11-13",
-          "verified_ai_hash": "fc86f57a6774ce1d",
+          "verified_ai": "2026-11-23",
+          "verified_ai_hash": "9254d6b1bc4c0edc",
           "confidence": "official_only",
           "source_ids": [
             "src-firstbank-wonderful-page",
             "src-firstbank-wonderful-select3-2026h2",
             "src-firstbank-wonderful-ch15-2026",
+            "src-firstbank-wonderful-ch15-2026-20261123",
             "src-firstbank-twpay-15-2026",
             "src-firstbank-general-def-r11"
           ],
           "corroborating_source_ids": [
             "src-firstbank-fee-2026-08"
           ],
-          "notes_zh": "官網原文「2026 精選通路加碼 3% 現金回饋 每月回饋上限 300 元」、一般消費 0.5% 無上限；2026-10-22 用瀏覽器讀活動子頁：3% 要登錄（限量 2 萬名）並申請電子帳單或本行帳戶扣繳，百貨名單含台北101、漢神、中友、廣三SOGO、大江、LaLaport、巨城、台茂、CITYLINK、比漾等購物中心（原本誤排除，已改回），海外實體限實體卡、排除行動支付與部分歐洲國家；指定通路 1.5%（加碼 1%，每期上限 500 元，2026 全年）依子頁名單補建；台灣Pay 掃碼 1.5%（每月上限 100 元）補建。第二份官方文件＝第一銀行費用收費標準 2026.8 版（印證年費）。2026-10-31 再核官網：指定通路 1.5% 名單含電信（手機資費自動扣繳或現場繳費與直營店）與 LINE Pay、街口、Pi 錢包、歐付寶、橘子支付，和本站一致；依一銀「一般消費定義」補上全聯、超商、稅費、路邊停車、自動加值、小額支付特店與部分歐洲國家實體商店排除。",
+          "notes_zh": "官網原文「2026 精選通路加碼 3% 現金回饋 每月回饋上限 300 元」、一般消費 0.5% 無上限；2026-10-22 用瀏覽器讀活動子頁：3% 要登錄（限量 2 萬名）並申請電子帳單或本行帳戶扣繳，百貨名單含台北101、漢神、中友、廣三SOGO、大江、LaLaport、巨城、台茂、CITYLINK、比漾等購物中心（原本誤排除，已改回），海外實體限實體卡、排除行動支付與部分歐洲國家；指定通路 1.5%（加碼 1%，每期上限 500 元，2026 全年）依子頁名單補建；台灣Pay 掃碼 1.5%（每月上限 100 元）補建。第二份官方文件＝第一銀行費用收費標準 2026.8 版（印證年費）。2026-10-31 再核官網：指定通路 1.5% 名單含電信（手機資費自動扣繳或現場繳費與直營店）與 LINE Pay、街口、Pi 錢包、歐付寶、橘子支付，和本站一致；依一銀「一般消費定義」補上全聯、超商、稅費、路邊停車、自動加值、小額支付特店與部分歐洲國家實體商店排除。2026-11-23 再讀指定通路 1.5% 活動頁，愛上網名單已不含 KKTV（10 月存檔有），本站同步移除 KKTV；其他名單、加碼 1%、每期 500 元上限沒變。",
           "rules": [
             {
               "id": "base",
@@ -17982,7 +18168,6 @@
                 "kkbox",
                 "netflix",
                 "spotify",
-                "kktv",
                 "steam",
                 "nintendo-eshop",
                 "playstation-store",
@@ -26855,7 +27040,7 @@
           "status": "active",
           "recorded_at": "2026-10-19",
           "verified_at": "2026-10-31",
-          "verified_ai": "2026-11-13",
+          "verified_ai": "2026-11-23",
           "verified_ai_hash": "a222d8df7b3523a8",
           "confidence": "conflict",
           "source_ids": [
@@ -27018,6 +27203,8 @@
           "status": "active",
           "recorded_at": "2026-10-19",
           "verified_at": "2026-10-31",
+          "verified_ai": "2026-11-23",
+          "verified_ai_hash": "8a3d4270fcab8718",
           "confidence": "conflict",
           "source_ids": [
             "src-nextbank-jiangjiang",
@@ -36388,21 +36575,22 @@
         {
           "id": "taishin-jkopay@2026",
           "period_kind": "annual",
-          "period_label": "2026",
+          "period_label": "2026/1–2027/6",
           "valid_from": "2026-01-01",
-          "valid_to": "2026-12-31",
+          "valid_to": "2027-06-30",
           "next_period_announced": false,
           "status": "active",
           "recorded_at": "2026-10-19",
           "verified_at": "2026-10-31",
-          "verified_ai": "2026-11-13",
-          "verified_ai_hash": "e0ecb010ee6b03b8",
+          "verified_ai": "2026-11-23",
+          "verified_ai_hash": "3e61dbc3669e37b8",
           "confidence": "official_only",
           "source_ids": [
             "src-taishin-jkopay-card",
             "src-taishin-restricted",
             "src-taishin-jkopay-20261030",
-            "src-taishin-jkopay-card-r11"
+            "src-taishin-jkopay-card-r11",
+            "src-taishin-jkopay-card-20261123"
           ],
           "corroborating_source_ids": [],
           "rules": [
@@ -36411,6 +36599,8 @@
               "label_zh": "一般消費",
               "scope": "general_domestic",
               "rate_bp": 100,
+              "quote": "活動期間：2026/1/1~2027/6/30 適用卡別：街口聯名卡",
+              "quote_source_id": "src-taishin-jkopay-card-20261123",
               "incremental": false,
               "cap_period": "none"
             },
@@ -36508,12 +36698,14 @@
                 "jkopay"
               ],
               "rate_bp": 15,
+              "quote": "2027/1/1~6/30每月限量33,500名",
+              "quote_source_id": "src-taishin-jkopay-card-20261123",
               "incremental": false,
               "cap_period": "none",
               "override_exclusions": [
                 "x-utilities"
               ],
-              "conditions_zh": "繳費基本 0.15%；當月繳費滿 1,000 元可再領 2% 券（每月上限 20 元，每月 55,000 名）。"
+              "conditions_zh": "繳費基本 0.15%；當月繳費滿 1,000 元可再領 2% 券（每月上限 20 元；2026/7–12 每月 55,000 名，2027/1–6 每月 33,500 名；2027 年發的券改可全通路折抵，繳費與四大超商除外）。"
             }
           ],
           "exclusions": [
@@ -47808,10 +48000,11 @@
             "src-ubot-laidian-20261030",
             "src-ubot-laidian-apply-pdf-2026",
             "src-ubot-laidian-page-r11",
+            "src-ubot-laidian-page-r11-20261123",
             "src-ubot-nofeedback"
           ],
           "corroborating_source_ids": [],
-          "notes_zh": "國外 3% 包含歐洲實體商店（期間限定）。偶數日 LINE Pay 指定通路加碼 5%：每月 2、4、6… 偶數日用 LINE Pay 綁賴點卡在指定通路（王品、麥當勞、摩斯等官網名單）單筆滿 100 元，再加 5%，每個 LINE Pay 帳號每月最多 150 點，全活動每月總量 100 萬點、額滿即止（10 月在 10/14 06:30 額滿），帳單特店名稱要是「連加＊」或「連支＊」，部分商場內櫃位或網購不算。本站的規則格式還不能表示「偶數日」和每月總量，所以這項只列在說明、不計入金額（2026-10-30 依官網注意事項確認）。新戶 LINE Pay 加碼 4% 已用「新戶」身分建成規則，只在選了新戶身分時計入。新戶保費加碼 1% 要另外條件，未自動計入。萊爾富 5% 現折另見聯邦萊爾富活動（萊爾富交易非一般消費，沒有 1% 基本回饋）。2026-10-31 重新核對卡片頁注意事項：回饋率、上限、新戶與偶數日條件不變；依注意事項第 12 點連到的聯邦「一般消費定義」補上超商、速食店、全聯、繳費、儲值、小額支付特店等不回饋項目。",
+          "notes_zh": "國外 3% 包含歐洲實體商店（期間限定）。偶數日 LINE Pay 指定通路加碼 5%：每月 2、4、6… 偶數日用 LINE Pay 綁賴點卡在指定通路（王品、麥當勞、摩斯等官網名單）單筆滿 100 元，再加 5%，每個 LINE Pay 帳號每月最多 150 點，全活動每月總量 100 萬點、額滿即止（10 月在 10/14 06:30 額滿、11 月在 11/14 16:15 額滿），帳單特店名稱要是「連加＊」或「連支＊」，部分商場內櫃位或網購不算。本站的規則格式還不能表示「偶數日」和每月總量，所以這項只列在說明、不計入金額（2026-10-30 依官網注意事項確認）。新戶 LINE Pay 加碼 4% 已用「新戶」身分建成規則，只在選了新戶身分時計入。新戶保費加碼 1% 要另外條件，未自動計入。萊爾富 5% 現折另見聯邦萊爾富活動（萊爾富交易非一般消費，沒有 1% 基本回饋）。2026-10-31 重新核對卡片頁注意事項：回饋率、上限、新戶與偶數日條件不變；依注意事項第 12 點連到的聯邦「一般消費定義」補上超商、速食店、全聯、繳費、儲值、小額支付特店等不回饋項目。",
           "rules": [
             {
               "id": "base",
@@ -54837,7 +55030,7 @@
       "period_label": "2026/10/1–11/15",
       "valid_from": "2026-10-01",
       "valid_to": "2026-11-15",
-      "status": "active",
+      "status": "expired",
       "requires_registration": false,
       "registration_windows": [],
       "quota_note_zh": "各通路每月有總點數上限，額滿提前結束；由 LINE Pay 系統判定。",
@@ -66632,6 +66825,15 @@
       "sha256": "146ed08850a7851b3a1df8ebcb0627d76c87e038b0afa8b68f968bf96f76b63c"
     },
     {
+      "id": "src-ctbc-hotai-page-20261123",
+      "url": "https://www.ctbcbank.com/content/twrbo/zh_tw/cc_index/cc_product/cc_introduction_index/C_HOTAI.html",
+      "title_zh": "中信 和泰聯名卡 卡片頁（2026-11-23 瀏覽器存檔，已公告 2027/1/1 起新優惠）",
+      "publisher": "中國信託銀行",
+      "kind": "official",
+      "fetched_at": "2026-11-23T16:15+08:00",
+      "sha256": "7abf6d9fb54f88a6e662c05012c4bbdee05a8d1dc4afc9f91c20c77aced08755"
+    },
+    {
       "id": "src-ctbc-hotai-page-b",
       "url": "https://www.ctbcbank.com/twrbo/zh_tw/cc_index/cc_product/cc_introduction_index/C_HOTAI.html",
       "title_zh": "中信 和泰聯名卡 卡片頁（2026-10-22 文字存檔）",
@@ -67748,6 +67950,15 @@
       "sha256": "352bbcefdf1b1e7e5f96513d7f198ee4e52b55cc3c7d3f55d4598c9cf2128407"
     },
     {
+      "id": "src-firstbank-icash-711-20261123",
+      "url": "https://card.firstbank.com.tw/sites/card/zh_TW/1565705469150",
+      "title_zh": "icash 聯名卡 7-ELEVEN 10% OPENPOINT 活動頁（2026-11-23 重讀，含每月額滿公告）",
+      "publisher": "第一銀行",
+      "kind": "official",
+      "fetched_at": "2026-11-23T16:16+08:00",
+      "sha256": "9c8782fe207ed2fc520b527132bd9da846d89629a917f9e3dd575f7abd7dac81"
+    },
+    {
       "id": "src-firstbank-icash-browser",
       "url": "https://card.firstbank.com.tw/sites/card/zh_TW/1565690689020",
       "title_zh": "icash 聯名卡 卡片頁（含年費）",
@@ -68097,6 +68308,15 @@
       "kind": "official",
       "fetched_at": "2026-10-22T21:51+08:00",
       "sha256": "7ff18c7a15a851b137ff792b0d2de116a22a65cbe1c439394242d09848da6d9a"
+    },
+    {
+      "id": "src-firstbank-wonderful-ch15-2026-20261123",
+      "url": "https://card.firstbank.com.tw/sites/card/zh_TW/1565705350045",
+      "title_zh": "星璨卡 2026 指定通路刷卡 1.5% 現金回饋（2026-11-23 重讀）",
+      "publisher": "第一銀行",
+      "kind": "official",
+      "fetched_at": "2026-11-23T16:16+08:00",
+      "sha256": "7ea2d968c344ad2dfd9ced2995ce0eaa669b883f87bfb7f167586f27aee94c2f"
     },
     {
       "id": "src-firstbank-wonderful-page",
@@ -70205,6 +70425,15 @@
       "sha256": "13fa76cebea5c79a645ee2c88f0decfd5089ab2b8ed347446f86dfaa796ebd9e"
     },
     {
+      "id": "src-taishin-jkopay-card-20261123",
+      "url": "https://www.taishinbank.com.tw/TSB/personal/credit/intro/overview/cg038/card001/",
+      "title_zh": "街口聯名卡 卡片頁（2027/6/30 前權益，2026-11-23）",
+      "publisher": "台新銀行",
+      "kind": "official",
+      "fetched_at": "2026-11-23T16:16+08:00",
+      "sha256": "da37e52df41ae8e20cf4b91508e191462917430381c514452f2468cee708c2a5"
+    },
+    {
       "id": "src-taishin-jkopay-card-r11",
       "url": "https://www.taishinbank.com.tw/TSB/personal/credit/intro/overview/cg038/card001/",
       "title_zh": "台新街口聯名卡 卡片頁（2026 精選通路）",
@@ -71274,6 +71503,15 @@
       "kind": "official",
       "fetched_at": "2026-10-31T12:46+08:00",
       "sha256": "b59b1ed0f90214824b2f8a604ce48ee6168fa6d38c437666e9141d2811fe7df9"
+    },
+    {
+      "id": "src-ubot-laidian-page-r11-20261123",
+      "url": "https://card.ubot.com.tw/eCard_source/html/CardDetail/cardDetail201.htm",
+      "title_zh": "聯邦賴點卡 卡片頁（2026-11-23 重抓：偶數日 LINE Pay 11 月額滿）",
+      "publisher": "聯邦商業銀行",
+      "kind": "official",
+      "fetched_at": "2026-11-23T16:18+08:00",
+      "sha256": "8f8121827de5f27d6d0df30d96d98ecae439554a2c56e83a5932e5d7c47915bc"
     },
     {
       "id": "src-ubot-linebank-page",

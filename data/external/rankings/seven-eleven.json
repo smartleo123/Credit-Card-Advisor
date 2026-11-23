@@ -2,7 +2,7 @@
   "license": "CC BY 4.0（https://creativecommons.org/licenses/by/4.0/deed.zh-hant）",
   "attribution": "台灣支付優惠站 https://pay.elggum.com",
   "disclaimer_zh": "本資料整理自銀行與支付業者公開資訊，可能有誤或已變更，實際回饋以各機構公告為準。謹慎理財 信用至上。",
-  "data_date": "2026-11-16",
+  "data_date": "2026-11-23",
   "slug": "seven-eleven",
   "title_zh": "7-ELEVEN",
   "amount_twd": 1000,
@@ -979,7 +979,7 @@
         ],
         "needs_registration": false
       },
-      "verified_ai": "2026-11-13",
+      "verified_ai": "2026-11-23",
       "monthly": {
         "twd": [
           500,
@@ -1647,7 +1647,7 @@
         "cap_points_max": null,
         "requirements": [
           "單筆滿 150 元才有加碼",
-          "總量有限：一銀每月總回饋上限 5 萬點 OPENPOINT、依交易先後，2026 年 7–10 月都在月中額滿（10 月在 10/15 額滿）"
+          "總量有限：一銀每月總回饋上限 5 萬點 OPENPOINT、依交易先後，2026 年 7–11 月都在月中額滿（11 月在 11/15 額滿）"
         ],
         "needs_registration": false
       },
@@ -2386,6 +2386,7 @@
         ],
         "needs_registration": true
       },
+      "verified_ai": "2026-11-23",
       "monthly": {
         "twd": [
           500,

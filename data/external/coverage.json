@@ -2,11 +2,11 @@
   "license": "CC BY 4.0（https://creativecommons.org/licenses/by/4.0/deed.zh-hant）",
   "attribution": "台灣支付優惠站 https://pay.elggum.com",
   "disclaimer_zh": "本資料整理自銀行與支付業者公開資訊，可能有誤或已變更，實際回饋以各機構公告為準。謹慎理財 信用至上。",
-  "data_date": "2026-11-16",
+  "data_date": "2026-11-23",
   "C1_issuers": {
     "listed_in_fsc_stats": 32,
     "recorded": 34,
-    "list_checked_within_30d": true,
+    "list_checked_within_30d": false,
     "pass": true
   },
   "C2_cards": {
@@ -104,8 +104,8 @@
     "pass": false
   },
   "C6_sources": {
-    "facts": 254,
-    "with_official_source_fetched_sha256": 254,
+    "facts": 255,
+    "with_official_source_fetched_sha256": 255,
     "verified_2src": 0,
     "pct_2src": 0,
     "official_x2": 81,
@@ -113,13 +113,13 @@
   },
   "C7_freshness": {
     "active_promos": 54,
-    "verified_within_14d": 10
+    "verified_within_14d": 0
   },
   "C8_expired_in_today_json": 0,
   "confidence_breakdown": {
     "verified_2src": 0,
     "official_x2": 81,
-    "official_only": 170,
+    "official_only": 171,
     "single_secondary": 0,
     "conflict": 3
   }

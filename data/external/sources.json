@@ -2,8 +2,66 @@
   "license": "CC BY 4.0（https://creativecommons.org/licenses/by/4.0/deed.zh-hant）",
   "attribution": "台灣支付優惠站 https://pay.elggum.com",
   "disclaimer_zh": "本資料整理自銀行與支付業者公開資訊，可能有誤或已變更，實際回饋以各機構公告為準。謹慎理財 信用至上。",
-  "data_date": "2026-11-16",
+  "data_date": "2026-11-23",
   "sources": [
+    {
+      "id": "src-ubot-laidian-page-r11-20261123",
+      "url": "https://card.ubot.com.tw/eCard_source/html/CardDetail/cardDetail201.htm",
+      "kind": "official",
+      "publisher": "聯邦商業銀行",
+      "title_zh": "聯邦賴點卡 卡片頁（2026-11-23 重抓：偶數日 LINE Pay 11 月額滿）",
+      "http_status": 200,
+      "fetched_at": "2026-11-23T16:18+08:00",
+      "sha256": "8f8121827de5f27d6d0df30d96d98ecae439554a2c56e83a5932e5d7c47915bc",
+      "archived_path": "research/snapshots/d1b099ae7964-8f8121827de5f27d.txt"
+    },
+    {
+      "id": "src-ctbc-hotai-page-20261123",
+      "url": "https://www.ctbcbank.com/content/twrbo/zh_tw/cc_index/cc_product/cc_introduction_index/C_HOTAI.html",
+      "kind": "official",
+      "publisher": "中國信託銀行",
+      "title_zh": "中信 和泰聯名卡 卡片頁（2026-11-23 瀏覽器存檔，已公告 2027/1/1 起新優惠）",
+      "http_status": 200,
+      "fetched_at": "2026-11-23T16:15+08:00",
+      "sha256": "7abf6d9fb54f88a6e662c05012c4bbdee05a8d1dc4afc9f91c20c77aced08755",
+      "archived_path": "research/snapshots/dabf05855dc9-7abf6d9fb54f88a6.txt",
+      "note_zh": "瀏覽器抓取（渲染後頁面轉文字）"
+    },
+    {
+      "id": "src-taishin-jkopay-card-20261123",
+      "url": "https://www.taishinbank.com.tw/TSB/personal/credit/intro/overview/cg038/card001/",
+      "kind": "official",
+      "publisher": "台新銀行",
+      "title_zh": "街口聯名卡 卡片頁（2027/6/30 前權益，2026-11-23）",
+      "http_status": 200,
+      "fetched_at": "2026-11-23T16:16+08:00",
+      "sha256": "da37e52df41ae8e20cf4b91508e191462917430381c514452f2468cee708c2a5",
+      "archived_path": "research/snapshots/36ba06f04b20-da37e52df41ae8e2.txt"
+    },
+    {
+      "id": "src-firstbank-icash-711-20261123",
+      "url": "https://card.firstbank.com.tw/sites/card/zh_TW/1565705469150",
+      "kind": "official",
+      "publisher": "第一銀行",
+      "title_zh": "icash 聯名卡 7-ELEVEN 10% OPENPOINT 活動頁（2026-11-23 重讀，含每月額滿公告）",
+      "http_status": 200,
+      "fetched_at": "2026-11-23T16:16+08:00",
+      "sha256": "9c8782fe207ed2fc520b527132bd9da846d89629a917f9e3dd575f7abd7dac81",
+      "archived_path": "research/snapshots/2f1d619dd22e-9c8782fe207ed2fc.txt",
+      "note_zh": "瀏覽器抓取（渲染後頁面轉文字）"
+    },
+    {
+      "id": "src-firstbank-wonderful-ch15-2026-20261123",
+      "url": "https://card.firstbank.com.tw/sites/card/zh_TW/1565705350045",
+      "kind": "official",
+      "publisher": "第一銀行",
+      "title_zh": "星璨卡 2026 指定通路刷卡 1.5% 現金回饋（2026-11-23 重讀）",
+      "http_status": 200,
+      "fetched_at": "2026-11-23T16:16+08:00",
+      "sha256": "7ea2d968c344ad2dfd9ced2995ce0eaa669b883f87bfb7f167586f27aee94c2f",
+      "archived_path": "research/snapshots/58d0d2c2bb4b-7ea2d968c344ad2d.txt",
+      "note_zh": "瀏覽器抓取（渲染後頁面轉文字）"
+    },
     {
       "id": "src-711-pay-tools-20261031",
       "url": "https://www.7-11.com.tw/service/Pay.aspx",

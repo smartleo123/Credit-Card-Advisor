@@ -3205,6 +3205,80 @@
       "reviewed": false
     },
     {
+      "card_id": "sinopac-daway",
+      "card_name": "永豐 DAWAY 卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": "daway",
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": "daway",
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": "daway",
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
+        ],
+        "needs_registration": false
+      },
+      "monthly": {
+        "twd": [
+          5000,
+          20000,
+          50000
+        ],
+        "base": [
+          50,
+          200,
+          500
+        ],
+        "best": [
+          50,
+          200,
+          500
+        ],
+        "once": [
+          50,
+          200,
+          500
+        ]
+      },
+      "tie": true,
+      "reviewed": false
+    },
+    {
       "card_id": "mega-world",
       "card_name": "兆豐 世界卡",
       "confidence": "official_only",

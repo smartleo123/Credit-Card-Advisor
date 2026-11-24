@@ -2655,6 +2655,80 @@
       "reviewed": false
     },
     {
+      "card_id": "sinopac-daway",
+      "card_name": "永豐 DAWAY 卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": "daway",
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": "daway",
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": "daway",
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
+        ],
+        "needs_registration": false
+      },
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          10,
+          30,
+          100
+        ],
+        "best": [
+          10,
+          30,
+          100
+        ],
+        "once": [
+          10,
+          30,
+          100
+        ]
+      },
+      "tie": true,
+      "reviewed": false
+    },
+    {
       "card_id": "mega-world",
       "card_name": "兆豐 世界卡",
       "confidence": "official_only",
@@ -4052,152 +4126,6 @@
           5,
           15,
           50
-        ],
-        "best": [
-          5,
-          15,
-          50
-        ],
-        "once": [
-          5,
-          15,
-          50
-        ]
-      },
-      "tie": true,
-      "reviewed": false
-    },
-    {
-      "card_id": "cathay-cashback-signature",
-      "card_name": "國泰世華 現金回饋御璽卡",
-      "confidence": "official_only",
-      "basic": {
-        "method": "physical",
-        "plan": null,
-        "tier": null,
-        "net_twd_per_1000": 5,
-        "net_rate_bp": 50,
-        "cap_twd_max": null,
-        "max_spend_twd": null,
-        "base_uncapped": false,
-        "cap_points_max": null,
-        "requirements": [
-          "前提：現職滿一年且年收入 NT$60 萬以上。"
-        ],
-        "needs_registration": false
-      },
-      "once": {
-        "method": "physical",
-        "plan": null,
-        "tier": null,
-        "net_twd_per_1000": 5,
-        "net_rate_bp": 50,
-        "cap_twd_max": null,
-        "max_spend_twd": null,
-        "base_uncapped": false,
-        "cap_points_max": null,
-        "requirements": [
-          "前提：現職滿一年且年收入 NT$60 萬以上。"
-        ],
-        "needs_registration": false
-      },
-      "best": {
-        "method": "physical",
-        "plan": null,
-        "tier": null,
-        "net_twd_per_1000": 5,
-        "net_rate_bp": 50,
-        "cap_twd_max": null,
-        "max_spend_twd": null,
-        "base_uncapped": false,
-        "cap_points_max": null,
-        "requirements": [
-          "前提：現職滿一年且年收入 NT$60 萬以上。"
-        ],
-        "needs_registration": false
-      },
-      "monthly": {
-        "twd": [
-          1000,
-          3000,
-          10000
-        ],
-        "base": [
-          5,
-          15,
-          50
-        ],
-        "best": [
-          5,
-          15,
-          50
-        ],
-        "once": [
-          5,
-          15,
-          50
-        ]
-      },
-      "tie": true,
-      "reviewed": false
-    },
-    {
-      "card_id": "ctbc-hotai",
-      "card_name": "中信 和泰聯名卡",
-      "confidence": "official_x2",
-      "basic": {
-        "method": "physical",
-        "plan": null,
-        "tier": null,
-        "net_twd_per_1000": -15,
-        "net_rate_bp": -150,
-        "cap_twd_max": null,
-        "max_spend_twd": null,
-        "base_uncapped": false,
-        "cap_points_max": null,
-        "requirements": [],
-        "needs_registration": false
-      },
-      "once": {
-        "method": "physical",
-        "plan": null,
-        "tier": null,
-        "net_twd_per_1000": 5,
-        "net_rate_bp": 50,
-        "cap_twd_max": 800,
-        "max_spend_twd": 80000,
-        "base_uncapped": true,
-        "cap_points_max": null,
-        "requirements": [
-          "需完成「和泰聯名卡綁定和泰Pay」：消費當日與請款當日都要是綁定狀態才累點。"
-        ],
-        "needs_registration": false
-      },
-      "best": {
-        "method": "physical",
-        "plan": null,
-        "tier": null,
-        "net_twd_per_1000": 5,
-        "net_rate_bp": 50,
-        "cap_twd_max": 800,
-        "max_spend_twd": 80000,
-        "base_uncapped": true,
-        "cap_points_max": null,
-        "requirements": [
-          "需完成「和泰聯名卡綁定和泰Pay」：消費當日與請款當日都要是綁定狀態才累點。"
-        ],
-        "needs_registration": false
-      },
-      "monthly": {
-        "twd": [
-          1000,
-          3000,
-          10000
-        ],
-        "base": [
-          -15,
-          -45,
-          -150
         ],
         "best": [
           5,

@@ -4,7 +4,7 @@
   "disclaimer_zh": "本資料整理自銀行與支付業者公開資訊，可能有誤或已變更，實際回饋以各機構公告為準。謹慎理財 信用至上。",
   "api_version": 1,
   "data_date": "2026-11-23",
-  "generated_at": "2026-11-23T09:12:29.533Z",
+  "generated_at": "2026-11-23T11:52:49.924Z",
   "cards": [
     {
       "id": "amex-regent",
@@ -30214,6 +30214,310 @@
       ]
     },
     {
+      "id": "sinopac-daway",
+      "issuer_id": "bank-sinopac",
+      "name_zh": "永豐 DAWAY 卡",
+      "product_type": "credit",
+      "networks": [],
+      "card_level_zh": "依卡等",
+      "tags": [
+        "points",
+        "line_points"
+      ],
+      "card_page_url": "https://bank.sinopac.com/sinopacbt/personal/credit-card/introduction/bankcard/DAWAY.html",
+      "apply_url": "https://bank.sinopac.com/sinopacbt/personal/credit-card/introduction/bankcard/DAWAY.html",
+      "image": "/cards-img/sinopac-daway.webp",
+      "image_source": "https://bank.sinopac.com/upload/sinopac/picture/1a031c04197000006d75.png",
+      "image_fetched_at": "2026-10-20",
+      "image_fit": "contain",
+      "image_note": "官方卡面為直式，整張置中顯示",
+      "requires_zh": "回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。",
+      "reward": {
+        "kind": "partner_points",
+        "unit_zh": "LINE POINTS",
+        "point_value_twd": null,
+        "point_value_note_zh": "本站以 1 點 = 1 元估算，標示 ⚠️。",
+        "delivery_zh": "基礎回饋逐筆四捨五入，商店請款後 5 個營業日回饋到綁定的 LINE Pay 帳號；LINE Pay 加碼按結帳週期計算，帳單次月底前回饋。",
+        "expiry_zh": "LINE POINTS 自最後一次獲得點數當日起算 180 日。",
+        "source_ids": [
+          "src-sinopac-daway-card"
+        ]
+      },
+      "annual_fee": {
+        "min_twd": 0,
+        "max_twd": 3000,
+        "first_year_free": true,
+        "waiver_zh": "申請電子或行動帳單並取消實體帳單期間，正附卡都免年費。",
+        "confidence": "official_only",
+        "source_ids": [
+          "src-sinopac-daway-card-20261123"
+        ],
+        "waivers": [
+          {
+            "kind": "e_statement",
+            "source_id": "src-sinopac-daway-card-20261123",
+            "quote": "申請信用卡電子或行動對帳單且取消實體帳單，於電子或行動帳單申請期間，正、附卡皆享免年費之優惠"
+          }
+        ]
+      },
+      "user_tiers": [
+        {
+          "key": "daway",
+          "name_zh": "一般",
+          "condition_zh": "預設。"
+        },
+        {
+          "key": "daway_go",
+          "name_zh": "DAWAY GO",
+          "condition_zh": "① 設定永豐或京城帳戶自動扣繳永豐卡款 ② 設定電子或行動帳單 ③ 成為永豐網銀會員並完成投資屬性問卷；在帳單結帳當月底前達成。"
+        },
+        {
+          "key": "new_customer",
+          "name_zh": "新戶（且為 DAWAY GO）",
+          "condition_zh": "從未持有永豐信用卡或停卡滿 6 個月，於 2026/7/1–12/31 申請並核卡。"
+        }
+      ],
+      "plans": [],
+      "term_versions": [
+        {
+          "id": "sinopac-daway@2026H2",
+          "period_kind": "half_year",
+          "period_label": "2026H2",
+          "valid_from": "2026-07-01",
+          "valid_to": "2026-12-31",
+          "next_period_announced": false,
+          "status": "active",
+          "recorded_at": "2026-10-19",
+          "verified_at": "2026-11-23",
+          "confidence": "official_only",
+          "source_ids": [
+            "src-sinopac-daway-card-20261123",
+            "src-sinopac-daway-card",
+            "src-sinopac-daway-event",
+            "src-sinopac-general-def"
+          ],
+          "corroborating_source_ids": [],
+          "notes_zh": "2026-11-23 重抓官網卡片頁：基礎回饋、DAWAY GO 加碼、新戶再加碼的比例與上限都沒變，只新增 Weverse、韓國 Starfield 等海外指定店家活動，本站沒有對應商店所以沒列。DAWAY 卡在一般消費定義的英國／歐盟實體商店排除卡別名單內。",
+          "rules": [
+            {
+              "id": "base-dom",
+              "label_zh": "國內一般消費",
+              "scope": "general_domestic",
+              "rate_bp": 50,
+              "incremental": false,
+              "cap_period": "none"
+            },
+            {
+              "id": "base-ovs",
+              "label_zh": "國外一般消費",
+              "scope": "general_overseas",
+              "rate_bp": 250,
+              "incremental": false,
+              "cap_period": "none"
+            },
+            {
+              "id": "go-lp",
+              "label_zh": "DAWAY GO 綁 LINE Pay 加碼",
+              "scope": "wallet",
+              "wallet_ids": [
+                "line_pay"
+              ],
+              "payment_methods": [
+                "line_pay"
+              ],
+              "user_tier": "daway_go",
+              "rate_bp": 150,
+              "stack": "adds",
+              "quote": "一般消費綁定LINE Pay國內最高享LINE POINTS 8%；國外最高享 LINE POINTS 10%",
+              "quote_source_id": "src-sinopac-daway-card-20261123",
+              "incremental": true,
+              "cap_amount_twd": 300,
+              "cap_period": "statement",
+              "cap_scope": "daway-go",
+              "cap_twd_max": null,
+              "max_spend_twd": null,
+              "cap_points_max": 300
+            },
+            {
+              "id": "new-lp",
+              "label_zh": "新戶 綁 LINE Pay 加碼",
+              "scope": "wallet",
+              "wallet_ids": [
+                "line_pay"
+              ],
+              "payment_methods": [
+                "line_pay"
+              ],
+              "user_tier": "new_customer",
+              "rate_bp": 600,
+              "stack": "adds",
+              "quote": "DAWAY卡 LINE Pay 新戶再加碼",
+              "quote_source_id": "src-sinopac-daway-card-20261123",
+              "eligibility": "new_cardholder",
+              "incremental": true,
+              "cap_amount_twd": 500,
+              "cap_period": "statement",
+              "cap_scope": "daway-new",
+              "conditions_zh": "新戶也同時享 DAWAY GO 加碼（官網試算範例）。",
+              "cap_twd_max": null,
+              "max_spend_twd": null,
+              "cap_points_max": 500
+            }
+          ],
+          "exclusions": [
+            {
+              "id": "x-eu-physical",
+              "label_zh": "英國及歐盟國家實體商店（DAWAY 卡屬指定卡別）",
+              "country_codes": [
+                "AT",
+                "BE",
+                "BG",
+                "HR",
+                "CY",
+                "CZ",
+                "DK",
+                "EE",
+                "FI",
+                "FR",
+                "DE",
+                "GR",
+                "HU",
+                "IE",
+                "IT",
+                "LV",
+                "LT",
+                "LU",
+                "MT",
+                "NL",
+                "PL",
+                "PT",
+                "RO",
+                "SK",
+                "SI",
+                "ES",
+                "SE",
+                "GB"
+              ],
+              "physical_only": true,
+              "source_id": "src-sinopac-general-def",
+              "quote": "指定卡別一般消費回饋項目排除英國及歐盟商店實體交易"
+            },
+            {
+              "id": "x-pxmart",
+              "label_zh": "全聯、大全聯",
+              "merchant_ids": [
+                "pxmart",
+                "px-mart-large"
+              ],
+              "source_id": "src-sinopac-general-def"
+            },
+            {
+              "id": "x-convenience",
+              "label_zh": "連鎖便利商店",
+              "category_ids": [
+                "convenience"
+              ],
+              "source_id": "src-sinopac-general-def"
+            },
+            {
+              "id": "x-stored-value",
+              "label_zh": "信用卡自動儲值",
+              "payment_methods": [
+                "easycard_autoload"
+              ],
+              "source_id": "src-sinopac-general-def"
+            },
+            {
+              "id": "x-installment",
+              "label_zh": "分期交易",
+              "note_only": true,
+              "source_id": "src-sinopac-general-def"
+            },
+            {
+              "id": "x-util",
+              "label_zh": "公共事業費用",
+              "source_id": "src-sinopac-general-def-2026h2-r14",
+              "quote": "公共事業費用",
+              "category_ids": [
+                "utilities"
+              ],
+              "inherited_from": "bank-sinopac"
+            },
+            {
+              "id": "x-stored",
+              "label_zh": "信用卡自動儲值金",
+              "source_id": "src-sinopac-general-def-2026h2-r14",
+              "quote": "信用卡自動儲值金",
+              "category_ids": [
+                "stored_value"
+              ],
+              "inherited_from": "bank-sinopac"
+            },
+            {
+              "id": "x-tax",
+              "label_zh": "稅款、公路養管費、規費、罰款",
+              "source_id": "src-sinopac-general-def-2026h2-r14",
+              "quote": "稅款、公路養管費（原汽燃費）",
+              "category_ids": [
+                "tax"
+              ],
+              "inherited_from": "bank-sinopac"
+            },
+            {
+              "id": "x-medical",
+              "label_zh": "醫療費",
+              "source_id": "src-sinopac-general-def-2026h2-r14",
+              "quote": "稅款、公路養管費（原汽燃費）、醫療費、學費、規費、罰款",
+              "category_ids": [
+                "medical"
+              ],
+              "inherited_from": "bank-sinopac"
+            },
+            {
+              "id": "x-tuition",
+              "label_zh": "學費",
+              "source_id": "src-sinopac-general-def-2026h2-r14",
+              "quote": "稅款、公路養管費（原汽燃費）、醫療費、學費、規費、罰款",
+              "category_ids": [
+                "tuition"
+              ],
+              "inherited_from": "bank-sinopac"
+            },
+            {
+              "id": "x-payplatform",
+              "label_zh": "各繳費及支付平台繳納之各項費用（含約定扣繳電信）",
+              "source_id": "src-sinopac-general-def-2026h2-r14",
+              "quote": "透過各繳費及支付平台（舉例說明：有無繳納手續費之 i 繳費",
+              "merchant_ids": [
+                "telecom-generic",
+                "cht-bill",
+                "taiwanmobile-bill"
+              ],
+              "inherited_from": "bank-sinopac"
+            },
+            {
+              "id": "x-micro",
+              "label_zh": "聯合信用卡處理中心小額支付平台特約商店",
+              "source_id": "src-sinopac-general-def-2026h2-r14",
+              "quote": "透過「聯合信用卡處理中心」提供之小額支付平台特約商店",
+              "micropay": true,
+              "inherited_from": "bank-sinopac"
+            },
+            {
+              "id": "x-parking",
+              "label_zh": "停車場、eTag 自動儲值與智慧停車",
+              "source_id": "src-sinopac-general-def-2026h2-r14",
+              "quote": "停車場等各型態付款之消費、 eTag 自動儲值、 eTag 智慧停車費用",
+              "category_ids": [
+                "parking"
+              ],
+              "inherited_from": "bank-sinopac"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "sinopac-dawho-debit",
       "issuer_id": "bank-sinopac",
       "name_zh": "永豐 DAWHO 現金回饋 Debit 卡",
@@ -53980,6 +54284,129 @@
       "verified_at": "2026-11-04"
     },
     {
+      "id": "sinopac-daway-1000days-2026q4",
+      "title_zh": "永豐 DAWAY 千日慶 LINE Pay 累積滿 3 萬加碼 3%",
+      "kind": "threshold_bonus",
+      "issuer_ids": [
+        "bank-sinopac"
+      ],
+      "card_ids": [
+        "sinopac-daway"
+      ],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit"
+      ],
+      "period_kind": "quarter",
+      "period_label": "2026Q4",
+      "valid_from": "2026-10-01",
+      "valid_to": "2026-12-31",
+      "status": "active",
+      "requires_registration": true,
+      "registration_windows": [
+        {
+          "opens_at": "2026-10-01T00:00+08:00",
+          "quota": 100000,
+          "note_zh": "活動期間登錄，限量 10 萬名（官網未寫開放時刻，以活動期間起日記錄）"
+        }
+      ],
+      "quota_note_zh": "限量登錄 100,000 名。",
+      "stacking": "stacks",
+      "stacking_note_zh": "官網寫可與新戶 LINE Pay 最高 10% 疊加。",
+      "rules": [
+        {
+          "id": "cum30k",
+          "label_zh": "活動期間 LINE Pay 一般消費累積滿 30,000 元",
+          "scope": "wallet",
+          "payment_methods": [
+            "line_pay"
+          ],
+          "rate_bp": 300,
+          "stack": "adds",
+          "quote": "與原權益新戶LINE Pay最高10% LINE POINTS疊加可享最高13%",
+          "quote_source_id": "src-sinopac-daway-card-20261123",
+          "incremental": true,
+          "min_campaign_spend_twd": 30000,
+          "cap_amount_twd": 1000,
+          "cap_period": "campaign",
+          "conditions_zh": "達 3 萬門檻後才有 3% 加碼，上限 1,000 點。另有抽獎與單筆滿萬折 300 元券（每月 750 張）。",
+          "cap_twd_max": 1000,
+          "max_spend_twd": 33333
+        }
+      ],
+      "payout_zh": "LINE POINTS（官網未寫入點日）。",
+      "summary_zh": "登錄後，10–12 月用 LINE Pay 綁 DAWAY 卡累積滿 3 萬元，再加碼 3% LINE POINTS，最多 1,000 點。",
+      "source_ids": [
+        "src-sinopac-daway-card-20261123"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-10-19",
+      "verified_at": "2026-11-23"
+    },
+    {
+      "id": "sinopac-daway-coupang-wed-2026q4",
+      "title_zh": "永豐 DAWAY 卡 × 酷澎 每週三 LINE Pay 加碼 5%",
+      "kind": "bonus",
+      "issuer_ids": [
+        "bank-sinopac"
+      ],
+      "card_ids": [
+        "sinopac-daway"
+      ],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit"
+      ],
+      "period_kind": "quarter",
+      "period_label": "2026Q4",
+      "event_labels": [
+        "double-11"
+      ],
+      "valid_from": "2026-10-01",
+      "valid_to": "2026-12-31",
+      "status": "active",
+      "requires_registration": false,
+      "registration_windows": [],
+      "quota_note_zh": "每個 LINE 帳號每月最多 75 點；活動總量每月 20 萬點。",
+      "stacking": "stacks",
+      "stacking_note_zh": "官網明寫可與 DAWAY 原權益疊加，最高 13%。",
+      "rules": [
+        {
+          "id": "wed",
+          "label_zh": "週三在酷澎用 LINE Pay 付 DAWAY 卡",
+          "scope": "merchant",
+          "merchant_ids": [
+            "coupang"
+          ],
+          "payment_methods": [
+            "line_pay"
+          ],
+          "day_rule": "wednesday",
+          "rate_bp": 500,
+          "stack": "adds",
+          "quote": "與DAWAY卡原權益疊加最高可享13% LINE POINTS",
+          "quote_source_id": "src-sinopac-daway-event",
+          "incremental": true,
+          "cap_amount_twd": 75,
+          "cap_period": "month",
+          "conditions_zh": "不含「火箭跨境」商品與 WOW 會員訂閱；需在 LINE Pay 設定中同意行銷資訊提供政策。",
+          "cap_twd_max": 75,
+          "max_spend_twd": 1500
+        }
+      ],
+      "payout_zh": "LINE POINTS，付款成功 24 小時起陸續發放。",
+      "summary_zh": "每週三在酷澎用 LINE Pay 綁 DAWAY 卡付款，多 5% LINE POINTS（每月最多 75 點）。",
+      "source_ids": [
+        "src-sinopac-daway-event",
+        "src-sinopac-daway-card-20261123"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-10-19",
+      "verified_at": "2026-11-23"
+    },
+    {
       "id": "sinopac-dawho-new-2026h2",
       "title_zh": "永豐 DAWHO 新戶 指定行動支付 20% 刷卡金",
       "kind": "new_customer",
@@ -54158,6 +54585,7 @@
       ],
       "card_ids": [],
       "exclude_card_ids": [
+        "sinopac-daway",
         "sinopac-sport",
         "sinopac-dual-currency"
       ],
@@ -69919,6 +70347,33 @@
       "kind": "official",
       "fetched_at": "2026-10-19T23:11+08:00",
       "sha256": "5efb7103edd217fc2ccb551bcd4c50dd4ed749b5baf2f557abce68c02b686ce3"
+    },
+    {
+      "id": "src-sinopac-daway-card",
+      "url": "https://bank.sinopac.com/sinopacbt/personal/credit-card/introduction/bankcard/DAWAY.html",
+      "title_zh": "DAWAY 卡 卡片頁",
+      "publisher": "永豐銀行",
+      "kind": "official",
+      "fetched_at": "2026-10-19T19:11+08:00",
+      "sha256": "702eb1ffe6832ffc7c00cde34199ba8d242c06ba181efaa1fef39f375778926e"
+    },
+    {
+      "id": "src-sinopac-daway-card-20261123",
+      "url": "https://bank.sinopac.com/sinopacbt/personal/credit-card/introduction/bankcard/DAWAY.html",
+      "title_zh": "DAWAY 卡 卡片頁（2026-11-23 重抓）",
+      "publisher": "永豐銀行",
+      "kind": "official",
+      "fetched_at": "2026-11-23T17:35+08:00",
+      "sha256": "93d00926cb60fb45835a2af51623bc03bea7ba4340a101912b4837c30ee29e79"
+    },
+    {
+      "id": "src-sinopac-daway-event",
+      "url": "https://bank.sinopac.com/sinopacBT/webevents/2024_DAWAY/index.html",
+      "title_zh": "DAWAY 卡 活動網頁",
+      "publisher": "永豐銀行",
+      "kind": "official",
+      "fetched_at": "2026-10-19T19:11+08:00",
+      "sha256": "c24414d174c2b3404dd1bec1244b0496a7dce49d487eec9d22a6868196eb2940"
     },
     {
       "id": "src-sinopac-dawho-card",

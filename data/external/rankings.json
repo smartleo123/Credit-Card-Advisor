@@ -8,7 +8,7 @@
     {
       "slug": "general",
       "title_zh": "無腦一卡（不限通路）",
-      "entries": 73
+      "entries": 74
     },
     {
       "slug": "general-uncapped",
@@ -18,7 +18,7 @@
     {
       "slug": "online",
       "title_zh": "網購總排行",
-      "entries": 85
+      "entries": 86
     },
     {
       "slug": "shopee",
@@ -28,27 +28,27 @@
     {
       "slug": "momo",
       "title_zh": "momo",
-      "entries": 62
+      "entries": 63
     },
     {
       "slug": "pchome",
       "title_zh": "PChome",
-      "entries": 63
+      "entries": 64
     },
     {
       "slug": "coupang",
       "title_zh": "酷澎 Coupang",
-      "entries": 61
+      "entries": 62
     },
     {
       "slug": "taobao",
       "title_zh": "淘寶",
-      "entries": 62
+      "entries": 61
     },
     {
       "slug": "amazon",
       "title_zh": "Amazon",
-      "entries": 74
+      "entries": 67
     },
     {
       "slug": "convenience",
@@ -68,7 +68,7 @@
     {
       "slug": "supermarket",
       "title_zh": "量販（全聯、大全聯、家樂福、Costco、愛買）",
-      "entries": 74
+      "entries": 75
     },
     {
       "slug": "pxmart",
@@ -88,27 +88,27 @@
     {
       "slug": "delivery",
       "title_zh": "外送（Uber Eats、foodpanda）",
-      "entries": 80
+      "entries": 81
     },
     {
       "slug": "uber-eats",
       "title_zh": "Uber Eats",
-      "entries": 80
+      "entries": 81
     },
     {
       "slug": "foodpanda",
       "title_zh": "foodpanda",
-      "entries": 80
+      "entries": 81
     },
     {
       "slug": "dining",
       "title_zh": "餐廳",
-      "entries": 93
+      "entries": 94
     },
     {
       "slug": "drinks-coffee",
       "title_zh": "手搖飲和咖啡",
-      "entries": 72
+      "entries": 73
     },
     {
       "slug": "fast-food",
@@ -123,7 +123,7 @@
     {
       "slug": "fuel",
       "title_zh": "加油",
-      "entries": 87
+      "entries": 88
     },
     {
       "slug": "ev-charging",
@@ -153,12 +153,12 @@
     {
       "slug": "taxi",
       "title_zh": "計程車（Uber、LINE GO、台灣大車隊）",
-      "entries": 66
+      "entries": 67
     },
     {
       "slug": "department",
       "title_zh": "百貨（含週年慶）",
-      "entries": 67
+      "entries": 68
     },
     {
       "slug": "drugstore",
@@ -228,7 +228,7 @@
     {
       "slug": "annual-fee-free",
       "title_zh": "免年費",
-      "entries": 127
+      "entries": 128
     },
     {
       "slug": "student",
@@ -253,7 +253,7 @@
     {
       "slug": "points",
       "title_zh": "點數卡",
-      "entries": 40
+      "entries": 41
     },
     {
       "slug": "cobrand",
@@ -273,7 +273,7 @@
     {
       "slug": "mobile-pay",
       "title_zh": "行動支付總排行",
-      "entries": 71
+      "entries": 72
     },
     {
       "slug": "apple-pay",
@@ -293,7 +293,7 @@
     {
       "slug": "line-pay",
       "title_zh": "LINE Pay",
-      "entries": 63
+      "entries": 64
     },
     {
       "slug": "jkopay",
@@ -338,7 +338,7 @@
     {
       "slug": "wallet-best-card",
       "title_zh": "各錢包綁哪張卡最好",
-      "entries": 69
+      "entries": 70
     },
     {
       "slug": "overseas",
@@ -353,17 +353,17 @@
     {
       "slug": "japan",
       "title_zh": "日本",
-      "entries": 69
+      "entries": 70
     },
     {
       "slug": "korea",
       "title_zh": "韓國",
-      "entries": 64
+      "entries": 65
     },
     {
       "slug": "thailand",
       "title_zh": "泰國",
-      "entries": 63
+      "entries": 64
     },
     {
       "slug": "singapore",
@@ -378,7 +378,7 @@
     {
       "slug": "macau",
       "title_zh": "澳門",
-      "entries": 62
+      "entries": 61
     },
     {
       "slug": "china",
@@ -388,17 +388,17 @@
     {
       "slug": "vietnam",
       "title_zh": "越南",
-      "entries": 62
+      "entries": 61
     },
     {
       "slug": "malaysia",
       "title_zh": "馬來西亞",
-      "entries": 62
+      "entries": 61
     },
     {
       "slug": "philippines",
       "title_zh": "菲律賓",
-      "entries": 62
+      "entries": 61
     },
     {
       "slug": "indonesia",
@@ -423,12 +423,12 @@
     {
       "slug": "australia",
       "title_zh": "澳洲",
-      "entries": 62
+      "entries": 61
     },
     {
       "slug": "new-zealand",
       "title_zh": "紐西蘭",
-      "entries": 62
+      "entries": 61
     },
     {
       "slug": "france",
@@ -463,17 +463,17 @@
     {
       "slug": "overseas-online",
       "title_zh": "海外網購",
-      "entries": 62
+      "entries": 63
     },
     {
       "slug": "hotel-booking",
       "title_zh": "訂房（Agoda、Booking）",
-      "entries": 69
+      "entries": 70
     },
     {
       "slug": "airline",
       "title_zh": "航空公司官網",
-      "entries": 65
+      "entries": 66
     },
     {
       "slug": "travel-agency",
@@ -483,7 +483,7 @@
     {
       "slug": "duty-free",
       "title_zh": "免稅店",
-      "entries": 60
+      "entries": 61
     },
     {
       "slug": "travel-insurance",
@@ -508,27 +508,27 @@
     {
       "slug": "monthly-2026-11",
       "title_zh": "2026 年 11 月優惠整理",
-      "entries": 72
+      "entries": 73
     },
     {
       "slug": "monthly-2026-12",
       "title_zh": "2026 年 12 月優惠整理",
-      "entries": 72
+      "entries": 73
     },
     {
       "slug": "quarter-2026q4",
       "title_zh": "2026 第四季優惠",
-      "entries": 72
+      "entries": 73
     },
     {
       "slug": "half-2026h2",
       "title_zh": "2026 下半年優惠",
-      "entries": 72
+      "entries": 73
     },
     {
       "slug": "half-2027h1",
       "title_zh": "2027 上半年優惠",
-      "entries": 176
+      "entries": 177
     },
     {
       "slug": "double-11",

@@ -10,11 +10,11 @@
     "pass": true
   },
   "C2_cards": {
-    "recorded": 190,
+    "recorded": 191,
     "catalogue_open_cards": 424,
-    "covered": 189,
+    "covered": 190,
     "denominator": 424,
-    "coverage_pct": 44.6,
+    "coverage_pct": 44.8,
     "closing_soon": [],
     "unmatched_recorded": [],
     "catalogue_generated_at": "2026-10-19",
@@ -104,22 +104,22 @@
     "pass": false
   },
   "C6_sources": {
-    "facts": 255,
-    "with_official_source_fetched_sha256": 255,
+    "facts": 258,
+    "with_official_source_fetched_sha256": 258,
     "verified_2src": 0,
     "pct_2src": 0,
     "official_x2": 81,
-    "pct_2src_incl_official_x2": 32
+    "pct_2src_incl_official_x2": 31
   },
   "C7_freshness": {
-    "active_promos": 54,
-    "verified_within_14d": 0
+    "active_promos": 56,
+    "verified_within_14d": 2
   },
   "C8_expired_in_today_json": 0,
   "confidence_breakdown": {
     "verified_2src": 0,
     "official_x2": 81,
-    "official_only": 171,
+    "official_only": 174,
     "single_secondary": 0,
     "conflict": 3
   }

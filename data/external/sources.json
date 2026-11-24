@@ -28,6 +28,17 @@
       "note_zh": "瀏覽器抓取（渲染後頁面轉文字）"
     },
     {
+      "id": "src-sinopac-daway-card-20261123",
+      "url": "https://bank.sinopac.com/sinopacbt/personal/credit-card/introduction/bankcard/DAWAY.html",
+      "kind": "official",
+      "publisher": "永豐銀行",
+      "title_zh": "DAWAY 卡 卡片頁（2026-11-23 重抓）",
+      "http_status": 200,
+      "fetched_at": "2026-11-23T17:35+08:00",
+      "sha256": "93d00926cb60fb45835a2af51623bc03bea7ba4340a101912b4837c30ee29e79",
+      "archived_path": "research/snapshots/717b45584391-93d00926cb60fb45.txt"
+    },
+    {
       "id": "src-taishin-jkopay-card-20261123",
       "url": "https://www.taishinbank.com.tw/TSB/personal/credit/intro/overview/cg038/card001/",
       "kind": "official",

@@ -2790,6 +2790,80 @@
       "reviewed": false
     },
     {
+      "card_id": "sinopac-daway",
+      "card_name": "永豐 DAWAY 卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": "daway",
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": "daway",
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": "daway",
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
+        ],
+        "needs_registration": false
+      },
+      "monthly": {
+        "twd": [
+          5000,
+          20000,
+          50000
+        ],
+        "base": [
+          50,
+          200,
+          500
+        ],
+        "best": [
+          50,
+          200,
+          500
+        ],
+        "once": [
+          50,
+          200,
+          500
+        ]
+      },
+      "tie": true,
+      "reviewed": false
+    },
+    {
       "card_id": "mega-world",
       "card_name": "兆豐 世界卡",
       "confidence": "official_only",
@@ -4113,152 +4187,6 @@
           25,
           100,
           250
-        ],
-        "best": [
-          25,
-          100,
-          250
-        ],
-        "once": [
-          25,
-          100,
-          250
-        ]
-      },
-      "tie": true,
-      "reviewed": false
-    },
-    {
-      "card_id": "tcb-dual",
-      "card_name": "合庫 雙幣信用卡",
-      "confidence": "official_x2",
-      "basic": {
-        "method": "physical",
-        "plan": null,
-        "tier": null,
-        "net_twd_per_1000": 5,
-        "net_rate_bp": 50,
-        "cap_twd_max": null,
-        "max_spend_twd": null,
-        "base_uncapped": false,
-        "cap_points_max": null,
-        "requirements": [
-          "前提：須有合庫新臺幣及外幣存款帳戶"
-        ],
-        "needs_registration": false
-      },
-      "once": {
-        "method": "physical",
-        "plan": null,
-        "tier": null,
-        "net_twd_per_1000": 5,
-        "net_rate_bp": 50,
-        "cap_twd_max": null,
-        "max_spend_twd": null,
-        "base_uncapped": false,
-        "cap_points_max": null,
-        "requirements": [
-          "前提：須有合庫新臺幣及外幣存款帳戶"
-        ],
-        "needs_registration": false
-      },
-      "best": {
-        "method": "physical",
-        "plan": null,
-        "tier": null,
-        "net_twd_per_1000": 5,
-        "net_rate_bp": 50,
-        "cap_twd_max": null,
-        "max_spend_twd": null,
-        "base_uncapped": false,
-        "cap_points_max": null,
-        "requirements": [
-          "前提：須有合庫新臺幣及外幣存款帳戶"
-        ],
-        "needs_registration": false
-      },
-      "monthly": {
-        "twd": [
-          5000,
-          20000,
-          50000
-        ],
-        "base": [
-          25,
-          100,
-          250
-        ],
-        "best": [
-          25,
-          100,
-          250
-        ],
-        "once": [
-          25,
-          100,
-          250
-        ]
-      },
-      "tie": true,
-      "reviewed": false
-    },
-    {
-      "card_id": "ctbc-foodpanda",
-      "card_name": "中信 foodpanda 聯名卡",
-      "confidence": "official_x2",
-      "basic": {
-        "method": "physical",
-        "plan": null,
-        "tier": null,
-        "net_twd_per_1000": -15,
-        "net_rate_bp": -150,
-        "cap_twd_max": null,
-        "max_spend_twd": null,
-        "base_uncapped": false,
-        "cap_points_max": null,
-        "requirements": [],
-        "needs_registration": false
-      },
-      "once": {
-        "method": "physical",
-        "plan": null,
-        "tier": null,
-        "net_twd_per_1000": 5,
-        "net_rate_bp": 50,
-        "cap_twd_max": null,
-        "max_spend_twd": null,
-        "base_uncapped": false,
-        "cap_points_max": null,
-        "requirements": [
-          "需完成「綁定 pandapay 錢包」：foodpanda 聯名卡未綁定或 pandapay 錢包失效時不給胖達幣。"
-        ],
-        "needs_registration": false
-      },
-      "best": {
-        "method": "physical",
-        "plan": null,
-        "tier": null,
-        "net_twd_per_1000": 5,
-        "net_rate_bp": 50,
-        "cap_twd_max": null,
-        "max_spend_twd": null,
-        "base_uncapped": false,
-        "cap_points_max": null,
-        "requirements": [
-          "需完成「綁定 pandapay 錢包」：foodpanda 聯名卡未綁定或 pandapay 錢包失效時不給胖達幣。"
-        ],
-        "needs_registration": false
-      },
-      "monthly": {
-        "twd": [
-          5000,
-          20000,
-          50000
-        ],
-        "base": [
-          -75,
-          -300,
-          -750
         ],
         "best": [
           25,

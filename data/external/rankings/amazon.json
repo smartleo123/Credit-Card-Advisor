@@ -1674,288 +1674,6 @@
       "reviewed": true
     },
     {
-      "card_id": "sino-green",
-      "card_name": "永豐 現金回饋 Green 卡",
-      "confidence": "official_only",
-      "basic": {
-        "method": "physical",
-        "plan": null,
-        "tier": null,
-        "net_twd_per_1000": 5,
-        "net_rate_bp": 50,
-        "cap_twd_max": null,
-        "max_spend_twd": null,
-        "base_uncapped": false,
-        "cap_points_max": null,
-        "requirements": [],
-        "needs_registration": false
-      },
-      "once": {
-        "method": "physical",
-        "plan": null,
-        "tier": null,
-        "net_twd_per_1000": 5,
-        "net_rate_bp": 50,
-        "cap_twd_max": null,
-        "max_spend_twd": null,
-        "base_uncapped": false,
-        "cap_points_max": null,
-        "requirements": [],
-        "needs_registration": false
-      },
-      "best": {
-        "method": "physical",
-        "plan": null,
-        "tier": null,
-        "net_twd_per_1000": 5,
-        "net_rate_bp": 50,
-        "cap_twd_max": null,
-        "max_spend_twd": null,
-        "base_uncapped": false,
-        "cap_points_max": null,
-        "requirements": [],
-        "needs_registration": false
-      },
-      "verified_ai": "2026-11-13",
-      "monthly": {
-        "twd": [
-          1000,
-          3000,
-          10000
-        ],
-        "base": [
-          5,
-          15,
-          50
-        ],
-        "best": [
-          5,
-          15,
-          50
-        ],
-        "once": [
-          5,
-          15,
-          50
-        ]
-      },
-      "tie": true,
-      "reviewed": true
-    },
-    {
-      "card_id": "sinopac-wbfu",
-      "card_name": "永豐永富世界卡",
-      "confidence": "official_only",
-      "basic": {
-        "method": "physical",
-        "plan": null,
-        "tier": null,
-        "net_twd_per_1000": 5,
-        "net_rate_bp": 50,
-        "cap_twd_max": null,
-        "max_spend_twd": null,
-        "base_uncapped": false,
-        "cap_points_max": null,
-        "requirements": [
-          "前提：2026/7/1 起限永豐尊榮理財會員（永傳／永富／永聚會員）申辦；已持有永豐信用卡者額度要 20 萬元以上。"
-        ],
-        "needs_registration": false
-      },
-      "once": {
-        "method": "physical",
-        "plan": null,
-        "tier": null,
-        "net_twd_per_1000": 5,
-        "net_rate_bp": 50,
-        "cap_twd_max": null,
-        "max_spend_twd": null,
-        "base_uncapped": false,
-        "cap_points_max": null,
-        "requirements": [
-          "前提：2026/7/1 起限永豐尊榮理財會員（永傳／永富／永聚會員）申辦；已持有永豐信用卡者額度要 20 萬元以上。"
-        ],
-        "needs_registration": false
-      },
-      "best": {
-        "method": "physical",
-        "plan": null,
-        "tier": null,
-        "net_twd_per_1000": 5,
-        "net_rate_bp": 50,
-        "cap_twd_max": null,
-        "max_spend_twd": null,
-        "base_uncapped": false,
-        "cap_points_max": null,
-        "requirements": [
-          "前提：2026/7/1 起限永豐尊榮理財會員（永傳／永富／永聚會員）申辦；已持有永豐信用卡者額度要 20 萬元以上。"
-        ],
-        "needs_registration": false
-      },
-      "verified_ai": "2026-11-13",
-      "monthly": {
-        "twd": [
-          1000,
-          3000,
-          10000
-        ],
-        "base": [
-          5,
-          15,
-          50
-        ],
-        "best": [
-          5,
-          15,
-          50
-        ],
-        "once": [
-          5,
-          15,
-          50
-        ]
-      },
-      "tie": true,
-      "reviewed": true
-    },
-    {
-      "card_id": "hsbc-travelone-signature",
-      "card_name": "滙豐 旅人御璽卡",
-      "confidence": "official_only",
-      "basic": {
-        "method": "physical",
-        "plan": null,
-        "tier": null,
-        "net_twd_per_1000": 5,
-        "net_rate_bp": 50,
-        "cap_twd_max": null,
-        "max_spend_twd": null,
-        "base_uncapped": false,
-        "cap_points_max": null,
-        "requirements": [],
-        "needs_registration": false
-      },
-      "once": {
-        "method": "physical",
-        "plan": null,
-        "tier": null,
-        "net_twd_per_1000": 5,
-        "net_rate_bp": 50,
-        "cap_twd_max": null,
-        "max_spend_twd": null,
-        "base_uncapped": false,
-        "cap_points_max": null,
-        "requirements": [],
-        "needs_registration": false
-      },
-      "best": {
-        "method": "physical",
-        "plan": null,
-        "tier": null,
-        "net_twd_per_1000": 5,
-        "net_rate_bp": 50,
-        "cap_twd_max": null,
-        "max_spend_twd": null,
-        "base_uncapped": false,
-        "cap_points_max": null,
-        "requirements": [],
-        "needs_registration": false
-      },
-      "verified_ai": "2026-11-13",
-      "monthly": {
-        "twd": [
-          1000,
-          3000,
-          10000
-        ],
-        "base": [
-          5,
-          15,
-          50
-        ],
-        "best": [
-          5,
-          15,
-          50
-        ],
-        "once": [
-          5,
-          15,
-          50
-        ]
-      },
-      "tie": true,
-      "reviewed": true
-    },
-    {
-      "card_id": "tbb-artfun",
-      "card_name": "臺企 藝FUN悠遊御璽卡",
-      "confidence": "official_x2",
-      "basic": {
-        "method": "physical",
-        "plan": null,
-        "tier": null,
-        "net_twd_per_1000": 5,
-        "net_rate_bp": 50,
-        "cap_twd_max": null,
-        "max_spend_twd": null,
-        "base_uncapped": false,
-        "cap_points_max": null,
-        "requirements": [],
-        "needs_registration": false
-      },
-      "once": {
-        "method": "physical",
-        "plan": null,
-        "tier": null,
-        "net_twd_per_1000": 5,
-        "net_rate_bp": 50,
-        "cap_twd_max": null,
-        "max_spend_twd": null,
-        "base_uncapped": false,
-        "cap_points_max": null,
-        "requirements": [],
-        "needs_registration": false
-      },
-      "best": {
-        "method": "physical",
-        "plan": null,
-        "tier": null,
-        "net_twd_per_1000": 5,
-        "net_rate_bp": 50,
-        "cap_twd_max": null,
-        "max_spend_twd": null,
-        "base_uncapped": false,
-        "cap_points_max": null,
-        "requirements": [],
-        "needs_registration": false
-      },
-      "verified_ai": "2026-11-01",
-      "monthly": {
-        "twd": [
-          1000,
-          3000,
-          10000
-        ],
-        "base": [
-          5,
-          15,
-          50
-        ],
-        "best": [
-          5,
-          15,
-          50
-        ],
-        "once": [
-          5,
-          15,
-          50
-        ]
-      },
-      "tie": true,
-      "reviewed": true
-    },
-    {
       "card_id": "firstbank-wonderful",
       "card_name": "第一銀行 Wonderful 星璨卡",
       "confidence": "official_only",
@@ -3318,6 +3036,80 @@
         "cap_points_max": null,
         "requirements": [
           "前提：固定年收入 NT$300 萬以上（官網申辦資格）"
+        ],
+        "needs_registration": false
+      },
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          10,
+          30,
+          100
+        ],
+        "best": [
+          10,
+          30,
+          100
+        ],
+        "once": [
+          10,
+          30,
+          100
+        ]
+      },
+      "tie": true,
+      "reviewed": false
+    },
+    {
+      "card_id": "sinopac-daway",
+      "card_name": "永豐 DAWAY 卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": "daway",
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": "daway",
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": "daway",
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
         ],
         "needs_registration": false
       },
@@ -4734,284 +4526,6 @@
         "requirements": [
           "前提：須有合庫新臺幣及外幣存款帳戶"
         ],
-        "needs_registration": false
-      },
-      "monthly": {
-        "twd": [
-          1000,
-          3000,
-          10000
-        ],
-        "base": [
-          5,
-          15,
-          50
-        ],
-        "best": [
-          5,
-          15,
-          50
-        ],
-        "once": [
-          5,
-          15,
-          50
-        ]
-      },
-      "tie": true,
-      "reviewed": false
-    },
-    {
-      "card_id": "cathay-cashback-signature",
-      "card_name": "國泰世華 現金回饋御璽卡",
-      "confidence": "official_only",
-      "basic": {
-        "method": "physical",
-        "plan": null,
-        "tier": null,
-        "net_twd_per_1000": 5,
-        "net_rate_bp": 50,
-        "cap_twd_max": null,
-        "max_spend_twd": null,
-        "base_uncapped": false,
-        "cap_points_max": null,
-        "requirements": [
-          "前提：現職滿一年且年收入 NT$60 萬以上。"
-        ],
-        "needs_registration": false
-      },
-      "once": {
-        "method": "physical",
-        "plan": null,
-        "tier": null,
-        "net_twd_per_1000": 5,
-        "net_rate_bp": 50,
-        "cap_twd_max": null,
-        "max_spend_twd": null,
-        "base_uncapped": false,
-        "cap_points_max": null,
-        "requirements": [
-          "前提：現職滿一年且年收入 NT$60 萬以上。"
-        ],
-        "needs_registration": false
-      },
-      "best": {
-        "method": "physical",
-        "plan": null,
-        "tier": null,
-        "net_twd_per_1000": 5,
-        "net_rate_bp": 50,
-        "cap_twd_max": null,
-        "max_spend_twd": null,
-        "base_uncapped": false,
-        "cap_points_max": null,
-        "requirements": [
-          "前提：現職滿一年且年收入 NT$60 萬以上。"
-        ],
-        "needs_registration": false
-      },
-      "monthly": {
-        "twd": [
-          1000,
-          3000,
-          10000
-        ],
-        "base": [
-          5,
-          15,
-          50
-        ],
-        "best": [
-          5,
-          15,
-          50
-        ],
-        "once": [
-          5,
-          15,
-          50
-        ]
-      },
-      "tie": true,
-      "reviewed": false
-    },
-    {
-      "card_id": "tbb-smeg",
-      "card_name": "臺企 信保基金111關懷認同卡",
-      "confidence": "official_x2",
-      "basic": {
-        "method": "physical",
-        "plan": null,
-        "tier": null,
-        "net_twd_per_1000": 5,
-        "net_rate_bp": 50,
-        "cap_twd_max": null,
-        "max_spend_twd": null,
-        "base_uncapped": false,
-        "cap_points_max": null,
-        "requirements": [],
-        "needs_registration": false
-      },
-      "once": {
-        "method": "physical",
-        "plan": null,
-        "tier": null,
-        "net_twd_per_1000": 5,
-        "net_rate_bp": 50,
-        "cap_twd_max": null,
-        "max_spend_twd": null,
-        "base_uncapped": false,
-        "cap_points_max": null,
-        "requirements": [],
-        "needs_registration": false
-      },
-      "best": {
-        "method": "physical",
-        "plan": null,
-        "tier": null,
-        "net_twd_per_1000": 5,
-        "net_rate_bp": 50,
-        "cap_twd_max": null,
-        "max_spend_twd": null,
-        "base_uncapped": false,
-        "cap_points_max": null,
-        "requirements": [],
-        "needs_registration": false
-      },
-      "monthly": {
-        "twd": [
-          1000,
-          3000,
-          10000
-        ],
-        "base": [
-          5,
-          15,
-          50
-        ],
-        "best": [
-          5,
-          15,
-          50
-        ],
-        "once": [
-          5,
-          15,
-          50
-        ]
-      },
-      "tie": true,
-      "reviewed": false
-    },
-    {
-      "card_id": "tbb-lionsclub",
-      "card_name": "臺企 國際獅子會台灣總會認同卡",
-      "confidence": "official_x2",
-      "basic": {
-        "method": "physical",
-        "plan": null,
-        "tier": null,
-        "net_twd_per_1000": 5,
-        "net_rate_bp": 50,
-        "cap_twd_max": null,
-        "max_spend_twd": null,
-        "base_uncapped": false,
-        "cap_points_max": null,
-        "requirements": [],
-        "needs_registration": false
-      },
-      "once": {
-        "method": "physical",
-        "plan": null,
-        "tier": null,
-        "net_twd_per_1000": 5,
-        "net_rate_bp": 50,
-        "cap_twd_max": null,
-        "max_spend_twd": null,
-        "base_uncapped": false,
-        "cap_points_max": null,
-        "requirements": [],
-        "needs_registration": false
-      },
-      "best": {
-        "method": "physical",
-        "plan": null,
-        "tier": null,
-        "net_twd_per_1000": 5,
-        "net_rate_bp": 50,
-        "cap_twd_max": null,
-        "max_spend_twd": null,
-        "base_uncapped": false,
-        "cap_points_max": null,
-        "requirements": [],
-        "needs_registration": false
-      },
-      "monthly": {
-        "twd": [
-          1000,
-          3000,
-          10000
-        ],
-        "base": [
-          5,
-          15,
-          50
-        ],
-        "best": [
-          5,
-          15,
-          50
-        ],
-        "once": [
-          5,
-          15,
-          50
-        ]
-      },
-      "tie": true,
-      "reviewed": false
-    },
-    {
-      "card_id": "tbb-eldercaring",
-      "card_name": "臺企 銀色之愛信用卡",
-      "confidence": "official_x2",
-      "basic": {
-        "method": "physical",
-        "plan": null,
-        "tier": null,
-        "net_twd_per_1000": 5,
-        "net_rate_bp": 50,
-        "cap_twd_max": null,
-        "max_spend_twd": null,
-        "base_uncapped": false,
-        "cap_points_max": null,
-        "requirements": [],
-        "needs_registration": false
-      },
-      "once": {
-        "method": "physical",
-        "plan": null,
-        "tier": null,
-        "net_twd_per_1000": 5,
-        "net_rate_bp": 50,
-        "cap_twd_max": null,
-        "max_spend_twd": null,
-        "base_uncapped": false,
-        "cap_points_max": null,
-        "requirements": [],
-        "needs_registration": false
-      },
-      "best": {
-        "method": "physical",
-        "plan": null,
-        "tier": null,
-        "net_twd_per_1000": 5,
-        "net_rate_bp": 50,
-        "cap_twd_max": null,
-        "max_spend_twd": null,
-        "base_uncapped": false,
-        "cap_points_max": null,
-        "requirements": [],
         "needs_registration": false
       },
       "monthly": {

@@ -1894,84 +1894,6 @@
       "reviewed": true
     },
     {
-      "card_id": "tcb-ntuh",
-      "card_name": "合庫 台大醫院卡",
-      "confidence": "official_x2",
-      "basic": {
-        "method": "physical",
-        "plan": null,
-        "tier": null,
-        "net_twd_per_1000": 5,
-        "net_rate_bp": 50,
-        "cap_twd_max": null,
-        "max_spend_twd": null,
-        "base_uncapped": false,
-        "cap_points_max": null,
-        "requirements": [
-          "申辦資格限制：需為台大醫院在職員工才能申請；另須成年、在合庫開立活期性存款且無不良信用紀錄（依合庫官網卡片頁）。",
-          "前提：限台大醫院員工"
-        ],
-        "needs_registration": false
-      },
-      "once": {
-        "method": "physical",
-        "plan": null,
-        "tier": null,
-        "net_twd_per_1000": 5,
-        "net_rate_bp": 50,
-        "cap_twd_max": null,
-        "max_spend_twd": null,
-        "base_uncapped": false,
-        "cap_points_max": null,
-        "requirements": [
-          "申辦資格限制：需為台大醫院在職員工才能申請；另須成年、在合庫開立活期性存款且無不良信用紀錄（依合庫官網卡片頁）。",
-          "前提：限台大醫院員工"
-        ],
-        "needs_registration": false
-      },
-      "best": {
-        "method": "physical",
-        "plan": null,
-        "tier": null,
-        "net_twd_per_1000": 5,
-        "net_rate_bp": 50,
-        "cap_twd_max": null,
-        "max_spend_twd": null,
-        "base_uncapped": false,
-        "cap_points_max": null,
-        "requirements": [
-          "申辦資格限制：需為台大醫院在職員工才能申請；另須成年、在合庫開立活期性存款且無不良信用紀錄（依合庫官網卡片頁）。",
-          "前提：限台大醫院員工"
-        ],
-        "needs_registration": false
-      },
-      "verified_ai": "2026-11-01",
-      "monthly": {
-        "twd": [
-          5000,
-          20000,
-          50000
-        ],
-        "base": [
-          25,
-          100,
-          250
-        ],
-        "best": [
-          25,
-          100,
-          250
-        ],
-        "once": [
-          25,
-          100,
-          250
-        ]
-      },
-      "tie": true,
-      "reviewed": true
-    },
-    {
       "card_id": "taishin-richart",
       "card_name": "台新 Richart 卡",
       "confidence": "official_only",
@@ -2761,6 +2683,80 @@
         "cap_points_max": null,
         "requirements": [
           "前提：固定年收入 NT$300 萬以上（官網申辦資格）"
+        ],
+        "needs_registration": false
+      },
+      "monthly": {
+        "twd": [
+          5000,
+          20000,
+          50000
+        ],
+        "base": [
+          50,
+          200,
+          500
+        ],
+        "best": [
+          50,
+          200,
+          500
+        ],
+        "once": [
+          50,
+          200,
+          500
+        ]
+      },
+      "tie": true,
+      "reviewed": false
+    },
+    {
+      "card_id": "sinopac-daway",
+      "card_name": "永豐 DAWAY 卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": "daway",
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": "daway",
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": "daway",
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
         ],
         "needs_registration": false
       },

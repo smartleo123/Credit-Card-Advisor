@@ -824,6 +824,13 @@
       "current_version": "sinopac-braille@2026q4"
     },
     {
+      "id": "sinopac-daway",
+      "name_zh": "永豐 DAWAY 卡",
+      "issuer_id": "bank-sinopac",
+      "product_type": "credit",
+      "current_version": "sinopac-daway@2026H2"
+    },
+    {
       "id": "sinopac-dawho-debit",
       "name_zh": "永豐 DAWHO 現金回饋 Debit 卡",
       "issuer_id": "bank-sinopac",

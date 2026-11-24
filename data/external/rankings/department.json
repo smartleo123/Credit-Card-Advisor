@@ -4941,6 +4941,92 @@
       "reviewed": false
     },
     {
+      "card_id": "sinopac-daway",
+      "card_name": "永豐 DAWAY 卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": "daway",
+        "net_twd_per_1000": 5,
+        "net_rate_bp": 50,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": "daway",
+        "net_twd_per_1000": 5,
+        "net_rate_bp": 50,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "line_pay",
+        "plan": null,
+        "tier": "daway_go",
+        "net_twd_per_1000": 20,
+        "net_rate_bp": 200,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": true,
+        "cap_points_max": 300,
+        "requirements": [
+          "需符合「DAWAY GO」：① 設定永豐或京城帳戶自動扣繳永豐卡款 ② 設定電子或行動帳單 ③ 成為永豐網銀會員並完成投資屬性問卷；在帳單結帳當月底前達成。",
+          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
+        ],
+        "needs_registration": false
+      },
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          5,
+          15,
+          50
+        ],
+        "best": [
+          20,
+          60,
+          200
+        ],
+        "once": [
+          5,
+          15,
+          50
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "新光三越",
+          "遠東SOGO",
+          "遠東百貨"
+        ],
+        "count": 13,
+        "total": 27,
+        "scenario": "best",
+        "net_rate_bp": 200
+      },
+      "reviewed": false
+    },
+    {
       "card_id": "nextbank-dajiang",
       "card_name": "將來銀行 大將卡（簽帳金融商務御璽卡）",
       "confidence": "conflict",

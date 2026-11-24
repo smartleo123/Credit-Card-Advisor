@@ -6,151 +6,151 @@
     "providerSite": "https://pay.elggum.com/",
     "sourceApi": "https://pay.elggum.com/api/v1/meta.json",
     "dataDate": "2026-11-23",
-    "generatedAt": "2026-11-23T09:12:29.533Z",
-    "syncedAt": "2026-11-23T10:43:54.259044+00:00",
+    "generatedAt": "2026-11-23T11:52:49.924Z",
+    "syncedAt": "2026-11-24T12:27:31.710085+00:00",
     "counts": {
       "issuers": 51,
-      "cards": 199,
-      "promos": 55,
+      "cards": 200,
+      "promos": 57,
       "merchants": 473,
       "wallets": 23,
-      "sources": 1195
+      "sources": 1196
     },
     "recordCounts": {
-      "cards": 199,
-      "today": 199,
+      "cards": 200,
+      "today": 200,
       "wallets": 23,
       "issuers": 51,
-      "promos": 55,
+      "promos": 57,
       "fee_rules": 34,
       "rankings": 112,
       "card-scores": 0
     },
     "notes": "Third-party data, not proof of actual reward eligibility. Check the issuing bank's terms.",
     "sha256": {
-      "meta": "8083326ff2b4448eddacfbcd4d483c51a648d83a8eeeb6ba312b758421e0bc1a",
-      "cards": "49f390bd6e6da2becc919c73268e4ab9b66c90bba48ce67cc491bf41419b69a4",
-      "today": "73b481910ce3098aa98ad0fa5b205e982d07271b5d731b13518b8f5d24364e08",
+      "meta": "bc4b7530bc51f0a7d89ab5aa9b416a183a1e3c834632ae0a2024d60fa26a401e",
+      "cards": "43385650ee69f75a9c687f1e821efacd0b428643f2229b87f4ab311e14e0aa79",
+      "today": "c5c0c72e97b4fa76865cb90bd757beec23929567748461decdf2b887d519ca0f",
       "wallets": "8819cef73b3787c54ec2bd4f9808b53851518b9863de13ea5f91dc3f69c09ca1",
       "issuers": "14afa661e668db3b7b1dcd97eb58b7607e4b7e286fcb4144ef6bbe615df57be6",
-      "promos": "4fca2bbd6b58809a0090192e659a56c70895b73560f0431bbcf4f849d9f877f0",
+      "promos": "60451bb4c9dfe3fb850202eac2b1e5a69266fb359fa473510bdedabba7ae94af",
       "fee_rules": "c8bdbedb859811edd85d622cac1402adc4d5367adc3d73b78de0b70b1223264d",
-      "sources": "fcc8c6c3b91c50f9e53e964d8d0a26e6dafecfee57b3a476e2e932c4997b31a3",
-      "coverage": "cbaaf8c2fc8b6308aa0f9b8f9cd544ce90a1acb8ed913e0edecad1b3dd639fba",
-      "rankings": "010e01c38d7df51b612a9efeb5ef8ebff9cd14a6c6a59f8ec23d03322355c7d2",
-      "card-scores": "86f91eaeaafd47ea4d94f8c9a27a6e8059acbb8e26ae0f6393b98eb48e1b94af"
+      "sources": "71830655e65ce0c13437daabe4b7a28a210e96f0c0805553c547f27fbc4844d6",
+      "coverage": "904cba0513a9150a529dc054717fe570caa11cf6db1378b840e00e8fef382a45",
+      "rankings": "91350763d8291d8b3314dbdb367d993686db37ffcc40593048fe09c32df6a0df",
+      "card-scores": "d1b712eac1def696ff62e40477fc0c6c426b677af66b2f99e413338f4be369d1"
     },
     "rankings": {
-      "general": 73,
       "general-uncapped": 50,
-      "momo": 62,
-      "coupang": 61,
-      "pchome": 63,
       "shopee": 62,
-      "taobao": 62,
-      "online": 85,
+      "online": 86,
+      "general": 74,
+      "taobao": 61,
       "convenience": 88,
-      "supermarket": 74,
-      "amazon": 74,
-      "familymart": 32,
+      "coupang": 62,
+      "pchome": 64,
       "seven-eleven": 32,
-      "costco": 1,
-      "carrefour": 61,
       "pxmart": 6,
-      "uber-eats": 80,
-      "foodpanda": 80,
-      "dining": 93,
-      "drinks-coffee": 72,
-      "delivery": 80,
+      "amazon": 67,
+      "costco": 1,
+      "familymart": 32,
+      "carrefour": 61,
+      "momo": 63,
+      "delivery": 81,
+      "supermarket": 75,
       "fast-food": 69,
-      "hotpot": 69,
-      "fuel": 87,
-      "transit": 1,
+      "uber-eats": 81,
+      "foodpanda": 81,
+      "dining": 94,
+      "drinks-coffee": 73,
+      "ev-charging": 63,
       "parking": 59,
       "thsr": 72,
-      "taxi": 66,
-      "ev-charging": 63,
       "tra": 67,
+      "transit": 1,
+      "hotpot": 69,
+      "fuel": 88,
       "drugstore": 62,
       "telecom": 20,
-      "streaming": 75,
       "electronics": 61,
-      "insurance": 40,
-      "utilities": 6,
-      "tuition": 0,
+      "streaming": 75,
+      "taxi": 67,
+      "department": 68,
       "tax": 1,
-      "department": 67,
+      "insurance": 40,
+      "tuition": 0,
+      "utilities": 6,
       "medical": 0,
-      "movie": 61,
       "ktv": 63,
-      "pet": 60,
-      "student": 0,
-      "new-customer": 0,
-      "annual-fee-free": 127,
       "debit": 9,
-      "miles": 3,
+      "movie": 61,
+      "pet": 60,
+      "new-customer": 0,
       "cashback": 61,
-      "points": 40,
+      "miles": 3,
+      "student": 0,
+      "annual-fee-free": 128,
       "business": 2,
-      "cobrand": 10,
       "premium": 9,
-      "mobile-pay": 71,
-      "apple-pay": 60,
-      "google-pay": 50,
-      "pxpay-plus": 32,
+      "cobrand": 10,
       "samsung-pay": 52,
+      "google-pay": 50,
+      "apple-pay": 60,
       "jkopay": 27,
-      "line-pay": 63,
-      "pluspay": 9,
-      "easywallet": 13,
-      "icash-pay": 29,
+      "pxpay-plus": 32,
+      "points": 41,
+      "mobile-pay": 72,
       "pi-wallet": 8,
-      "ipass-money": 4,
       "taiwan-pay": 33,
+      "line-pay": 64,
+      "icash-pay": 29,
+      "easywallet": 13,
+      "pluspay": 9,
+      "ipass-money": 4,
       "overseas": 53,
-      "wallet-best-card": 69,
       "overseas-uncapped": 48,
-      "japan": 69,
-      "korea": 64,
-      "singapore": 62,
+      "wallet-best-card": 70,
+      "thailand": 64,
+      "korea": 65,
       "hong-kong": 61,
-      "thailand": 63,
-      "macau": 62,
+      "singapore": 62,
+      "japan": 70,
+      "macau": 61,
       "china": 61,
-      "vietnam": 62,
-      "malaysia": 62,
-      "philippines": 62,
-      "indonesia": 62,
+      "vietnam": 61,
       "uk": 53,
-      "usa": 62,
-      "australia": 62,
-      "new-zealand": 62,
-      "canada": 62,
+      "malaysia": 61,
+      "indonesia": 62,
       "france": 53,
-      "spain": 52,
-      "germany": 53,
+      "canada": 62,
+      "philippines": 61,
+      "australia": 61,
       "italy": 53,
+      "spain": 52,
+      "new-zealand": 61,
       "europe": 52,
+      "usa": 62,
+      "germany": 53,
       "switzerland": 62,
-      "overseas-online": 62,
-      "airline": 65,
-      "hotel-booking": 69,
-      "duty-free": 60,
       "travel-agency": 63,
       "travel-insurance": 0,
-      "monthly-2026-10": 0,
+      "hotel-booking": 70,
       "airport-transfer": 0,
+      "overseas-online": 63,
       "lounge": 0,
-      "quarter-2026q4": 72,
-      "monthly-2026-11": 72,
-      "monthly-2026-12": 72,
-      "half-2026h2": 72,
-      "double-11": 0,
-      "half-2027h1": 176,
+      "duty-free": 61,
+      "airline": 66,
+      "monthly-2026-10": 0,
       "double-12": 0,
+      "quarter-2026q4": 73,
+      "monthly-2026-12": 73,
+      "double-11": 0,
+      "half-2026h2": 73,
+      "monthly-2026-11": 73,
+      "lunar-new-year": 0,
+      "half-2027h1": 177,
       "mothers-day": 0,
       "anniversary": 0,
-      "lunar-new-year": 0,
       "618": 0,
       "black-friday": 0
     },
@@ -1542,6 +1542,14 @@
         "issuer": "bank-sinopac",
         "summary": "永豐點字金融信用卡",
         "search": "sinopac-braille 永豐點字金融信用卡 bank-sinopac credit sinopac-braille@2026q4",
+        "url": ""
+      },
+      {
+        "id": "sinopac-daway",
+        "name": "永豐 DAWAY 卡",
+        "issuer": "bank-sinopac",
+        "summary": "永豐 DAWAY 卡",
+        "search": "sinopac-daway 永豐 DAWAY 卡 bank-sinopac credit sinopac-daway@2026H2",
         "url": ""
       },
       {
@@ -3139,6 +3147,14 @@
         "url": ""
       },
       {
+        "id": "sinopac-daway",
+        "name": "永豐 DAWAY 卡",
+        "issuer": "bank-sinopac",
+        "summary": "永豐 DAWAY 卡",
+        "search": "sinopac-daway bank-sinopac 永豐 DAWAY 卡 credit 依卡等 points line_points https://bank.sinopac.com/sinopacbt/personal/credit-card/introduction/bankcard/DAWAY.html https://bank.sinopac.com/sinopacbt/personal/credit-card/introduction/bankcard/DAWAY.html https://bank.sinopac.com/upload/sinopac/picture/1a031c04197000006d75.png 2026-10-20 contain 官方卡面為直式，整張置中顯示 回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。 partner_points LINE POINTS 本站以 1 點 = 1 元估算，標示 ⚠️。 基礎回饋逐筆四捨五入，商店請款後 5 個營業日回饋到綁定的 LINE Pay 帳號；LINE Pay 加碼按結帳週期計算，帳單次月底前回饋。 LINE POINTS 自最後一次獲得點數當日起算 180 日。 src-sinopac-daway-card 0 3000 True 申請電子或行動帳單並取消實體帳單期間，正附卡都免年費。 official_only src-sinopac-daway-card-20261123 daway 一般 預設。 daway_go DAWAY GO ① 設定永豐或京城帳戶自動扣繳永豐卡款 ② 設定電子或行動帳單 ③ 成為永豐網銀會員並完成投資屬性問卷；在帳單結帳當月底前達成。 new_customer 新戶（且為 DAWAY GO） 從未持有永豐信用卡或停卡滿 6 個月，於 2026/7/1–12/31 申請並核卡。 sinopac-daway@2026H2 half_year 2026H2 2026-07-01 2026-12-31 False active 2026-10-19 2026-11-23 official_only 2026-11-23 重抓官網卡片頁：基礎回饋、DAWAY GO 加碼、新戶再加碼的比例與上限都沒變，只新增 Weverse、韓國 Starfield 等海外指定店家活動，本站沒有對應商店所以沒列。DAWAY 卡在一般消費定義的英國／歐盟實體商店排除卡別名單內。",
+        "url": ""
+      },
+      {
         "id": "sinopac-dawho-debit",
         "name": "永豐 DAWHO 現金回饋 Debit 卡",
         "issuer": "bank-sinopac",
@@ -4697,6 +4713,22 @@
         "url": ""
       },
       {
+        "id": "sinopac-daway-1000days-2026q4",
+        "name": "永豐 DAWAY 千日慶 LINE Pay 累積滿 3 萬加碼 3%",
+        "issuer": "",
+        "summary": "登錄後，10–12 月用 LINE Pay 綁 DAWAY 卡累積滿 3 萬元，再加碼 3% LINE POINTS，最多 1,000 點。",
+        "search": "sinopac-daway-1000days-2026q4 永豐 DAWAY 千日慶 LINE Pay 累積滿 3 萬加碼 3% threshold_bonus bank-sinopac sinopac-daway credit quarter 2026Q4 2026-10-01 2026-12-31 active True 2026-10-01T00:00+08:00 100000 活動期間登錄，限量 10 萬名（官網未寫開放時刻，以活動期間起日記錄） 限量登錄 100,000 名。 stacks 官網寫可與新戶 LINE Pay 最高 10% 疊加。 cum30k 活動期間 LINE Pay 一般消費累積滿 30,000 元 wallet 300 adds 與原權益新戶LINE Pay最高10% LINE POINTS疊加可享最高13% src-sinopac-daway-card-20261123 True 30000 1000 campaign 達 3 萬門檻後才有 3% 加碼，上限 1,000 點。另有抽獎與單筆滿萬折 300 元券（每月 750 張）。 1000 33333 LINE POINTS（官網未寫入點日）。 登錄後，10–12 月用 LINE Pay 綁 DAWAY 卡累積滿 3 萬元，再加碼 3% LINE POINTS，最多 1,000 點。 src-sinopac-daway-card-20261123 official_only 2026-10-19 2026-11-23",
+        "url": ""
+      },
+      {
+        "id": "sinopac-daway-coupang-wed-2026q4",
+        "name": "永豐 DAWAY 卡 × 酷澎 每週三 LINE Pay 加碼 5%",
+        "issuer": "",
+        "summary": "每週三在酷澎用 LINE Pay 綁 DAWAY 卡付款，多 5% LINE POINTS（每月最多 75 點）。",
+        "search": "sinopac-daway-coupang-wed-2026q4 永豐 DAWAY 卡 × 酷澎 每週三 LINE Pay 加碼 5% bonus bank-sinopac sinopac-daway credit quarter 2026Q4 double-11 2026-10-01 2026-12-31 active False 每個 LINE 帳號每月最多 75 點；活動總量每月 20 萬點。 stacks 官網明寫可與 DAWAY 原權益疊加，最高 13%。 wed 週三在酷澎用 LINE Pay 付 DAWAY 卡 merchant wednesday 500 adds 與DAWAY卡原權益疊加最高可享13% LINE POINTS src-sinopac-daway-event True 75 month 不含「火箭跨境」商品與 WOW 會員訂閱；需在 LINE Pay 設定中同意行銷資訊提供政策。 75 1500 LINE POINTS，付款成功 24 小時起陸續發放。 每週三在酷澎用 LINE Pay 綁 DAWAY 卡付款，多 5% LINE POINTS（每月最多 75 點）。 src-sinopac-daway-event src-sinopac-daway-card-20261123 official_only 2026-10-19 2026-11-23",
+        "url": ""
+      },
+      {
         "id": "sinopac-dawho-new-2026h2",
         "name": "永豐 DAWHO 新戶 指定行動支付 20% 刷卡金",
         "issuer": "",
@@ -4725,7 +4757,7 @@
         "name": "永豐 月月超級Pay（指定行動支付月累積滿額送刷卡金）",
         "issuer": "",
         "summary": "每月用 Apple Pay、Google Pay、Samsung Pay、LINE Pay 或全支付刷永豐卡，累積滿 7,000 元送 50 元、滿 1 萬送 100 元、滿 1.5 萬送 200 元刷卡金。",
-        "search": "sinopac-monthly-super-pay-2026q4 永豐 月月超級Pay（指定行動支付月累積滿額送刷卡金） tiered_fixed bank-sinopac sinopac-sport sinopac-dual-currency credit 永豐信用卡皆可，但 DAWAY 卡、永豐SPORT卡、幣倍卡、八通卡、公司卡、配銷卡、承銷卡、Debit 卡不適用。 quarter 2026Q4 2026-10-01 2026-12-31 active True 2026-10-15T15:00+08:00 4000 10 月 2026-11-15T15:00+08:00 2000 11 月 2026-12-15T15:00+08:00 2000 12 月 總限量 8,000 名；由正卡人在永豐官網登錄，登錄後的消費才算。 stacks 刷卡金另計，與卡片本身回饋分開。 tier 當月用指定支付累積消費達門檻 wallet 0 True 200 month 正附卡合併計算、每月只取最高一級；外送 App 內建的 LINE Pay（帳單名稱不是「連加*」或「LINE Pay」開頭）不算；Google Pay 須為手機代碼化交易。 200 刷卡金在消費的次次月回饋（例如 10 月消費、12 月回饋）。 每月用 Apple Pay、Google Pay、Samsung Pay、LINE Pay 或全支付刷永豐卡，累積滿 7,000 元送 50 元、滿 1 萬送 100 元、滿 1.5 萬送 200 元刷卡金。 src-sinopac-monthly-pay official_only 2026-10-19 2026-10-31",
+        "search": "sinopac-monthly-super-pay-2026q4 永豐 月月超級Pay（指定行動支付月累積滿額送刷卡金） tiered_fixed bank-sinopac sinopac-daway sinopac-sport sinopac-dual-currency credit 永豐信用卡皆可，但 DAWAY 卡、永豐SPORT卡、幣倍卡、八通卡、公司卡、配銷卡、承銷卡、Debit 卡不適用。 quarter 2026Q4 2026-10-01 2026-12-31 active True 2026-10-15T15:00+08:00 4000 10 月 2026-11-15T15:00+08:00 2000 11 月 2026-12-15T15:00+08:00 2000 12 月 總限量 8,000 名；由正卡人在永豐官網登錄，登錄後的消費才算。 stacks 刷卡金另計，與卡片本身回饋分開。 tier 當月用指定支付累積消費達門檻 wallet 0 True 200 month 正附卡合併計算、每月只取最高一級；外送 App 內建的 LINE Pay（帳單名稱不是「連加*」或「LINE Pay」開頭）不算；Google Pay 須為手機代碼化交易。 200 刷卡金在消費的次次月回饋（例如 10 月消費、12 月回饋）。 每月用 Apple Pay、Google Pay、Samsung Pay、LINE Pay 或全支付刷永豐卡，累積滿 7,000 元送 50 元、滿 1 萬送 100 元、滿 1.5 萬送 200 元刷卡金。 src-sinopac-monthly-pay official_only 2026-10-19 2026-10-31",
         "url": ""
       },
       {
@@ -5113,7 +5145,7 @@
         "name": "無腦一卡（不限通路）",
         "issuer": "",
         "summary": "",
-        "search": "general 無腦一卡（不限通路） 73",
+        "search": "general 無腦一卡（不限通路） 74",
         "url": ""
       },
       {
@@ -5129,7 +5161,7 @@
         "name": "網購總排行",
         "issuer": "",
         "summary": "",
-        "search": "online 網購總排行 85",
+        "search": "online 網購總排行 86",
         "url": ""
       },
       {
@@ -5145,7 +5177,7 @@
         "name": "momo",
         "issuer": "",
         "summary": "",
-        "search": "momo momo 62",
+        "search": "momo momo 63",
         "url": ""
       },
       {
@@ -5153,7 +5185,7 @@
         "name": "PChome",
         "issuer": "",
         "summary": "",
-        "search": "pchome PChome 63",
+        "search": "pchome PChome 64",
         "url": ""
       },
       {
@@ -5161,7 +5193,7 @@
         "name": "酷澎 Coupang",
         "issuer": "",
         "summary": "",
-        "search": "coupang 酷澎 Coupang 61",
+        "search": "coupang 酷澎 Coupang 62",
         "url": ""
       },
       {
@@ -5169,7 +5201,7 @@
         "name": "淘寶",
         "issuer": "",
         "summary": "",
-        "search": "taobao 淘寶 62",
+        "search": "taobao 淘寶 61",
         "url": ""
       },
       {
@@ -5177,7 +5209,7 @@
         "name": "Amazon",
         "issuer": "",
         "summary": "",
-        "search": "amazon Amazon 74",
+        "search": "amazon Amazon 67",
         "url": ""
       },
       {
@@ -5209,7 +5241,7 @@
         "name": "量販（全聯、大全聯、家樂福、Costco、愛買）",
         "issuer": "",
         "summary": "",
-        "search": "supermarket 量販（全聯、大全聯、家樂福、Costco、愛買） 74",
+        "search": "supermarket 量販（全聯、大全聯、家樂福、Costco、愛買） 75",
         "url": ""
       },
       {
@@ -5241,7 +5273,7 @@
         "name": "外送（Uber Eats、foodpanda）",
         "issuer": "",
         "summary": "",
-        "search": "delivery 外送（Uber Eats、foodpanda） 80",
+        "search": "delivery 外送（Uber Eats、foodpanda） 81",
         "url": ""
       },
       {
@@ -5249,7 +5281,7 @@
         "name": "Uber Eats",
         "issuer": "",
         "summary": "",
-        "search": "uber-eats Uber Eats 80",
+        "search": "uber-eats Uber Eats 81",
         "url": ""
       },
       {
@@ -5257,7 +5289,7 @@
         "name": "foodpanda",
         "issuer": "",
         "summary": "",
-        "search": "foodpanda foodpanda 80",
+        "search": "foodpanda foodpanda 81",
         "url": ""
       },
       {
@@ -5265,7 +5297,7 @@
         "name": "餐廳",
         "issuer": "",
         "summary": "",
-        "search": "dining 餐廳 93",
+        "search": "dining 餐廳 94",
         "url": ""
       },
       {
@@ -5273,7 +5305,7 @@
         "name": "手搖飲和咖啡",
         "issuer": "",
         "summary": "",
-        "search": "drinks-coffee 手搖飲和咖啡 72",
+        "search": "drinks-coffee 手搖飲和咖啡 73",
         "url": ""
       },
       {
@@ -5297,7 +5329,7 @@
         "name": "加油",
         "issuer": "",
         "summary": "",
-        "search": "fuel 加油 87",
+        "search": "fuel 加油 88",
         "url": ""
       },
       {
@@ -5345,7 +5377,7 @@
         "name": "計程車（Uber、LINE GO、台灣大車隊）",
         "issuer": "",
         "summary": "",
-        "search": "taxi 計程車（Uber、LINE GO、台灣大車隊） 66",
+        "search": "taxi 計程車（Uber、LINE GO、台灣大車隊） 67",
         "url": ""
       },
       {
@@ -5353,7 +5385,7 @@
         "name": "百貨（含週年慶）",
         "issuer": "",
         "summary": "",
-        "search": "department 百貨（含週年慶） 67",
+        "search": "department 百貨（含週年慶） 68",
         "url": ""
       },
       {
@@ -5465,7 +5497,7 @@
         "name": "免年費",
         "issuer": "",
         "summary": "",
-        "search": "annual-fee-free 免年費 127",
+        "search": "annual-fee-free 免年費 128",
         "url": ""
       },
       {
@@ -5505,7 +5537,7 @@
         "name": "點數卡",
         "issuer": "",
         "summary": "",
-        "search": "points 點數卡 40",
+        "search": "points 點數卡 41",
         "url": ""
       },
       {
@@ -5537,7 +5569,7 @@
         "name": "行動支付總排行",
         "issuer": "",
         "summary": "",
-        "search": "mobile-pay 行動支付總排行 71",
+        "search": "mobile-pay 行動支付總排行 72",
         "url": ""
       },
       {
@@ -5569,7 +5601,7 @@
         "name": "LINE Pay",
         "issuer": "",
         "summary": "",
-        "search": "line-pay LINE Pay 63",
+        "search": "line-pay LINE Pay 64",
         "url": ""
       },
       {
@@ -5641,7 +5673,7 @@
         "name": "各錢包綁哪張卡最好",
         "issuer": "",
         "summary": "",
-        "search": "wallet-best-card 各錢包綁哪張卡最好 69",
+        "search": "wallet-best-card 各錢包綁哪張卡最好 70",
         "url": ""
       },
       {
@@ -5665,7 +5697,7 @@
         "name": "日本",
         "issuer": "",
         "summary": "",
-        "search": "japan 日本 69",
+        "search": "japan 日本 70",
         "url": ""
       },
       {
@@ -5673,7 +5705,7 @@
         "name": "韓國",
         "issuer": "",
         "summary": "",
-        "search": "korea 韓國 64",
+        "search": "korea 韓國 65",
         "url": ""
       },
       {
@@ -5681,7 +5713,7 @@
         "name": "泰國",
         "issuer": "",
         "summary": "",
-        "search": "thailand 泰國 63",
+        "search": "thailand 泰國 64",
         "url": ""
       },
       {
@@ -5705,7 +5737,7 @@
         "name": "澳門",
         "issuer": "",
         "summary": "",
-        "search": "macau 澳門 62",
+        "search": "macau 澳門 61",
         "url": ""
       },
       {
@@ -5721,7 +5753,7 @@
         "name": "越南",
         "issuer": "",
         "summary": "",
-        "search": "vietnam 越南 62",
+        "search": "vietnam 越南 61",
         "url": ""
       },
       {
@@ -5729,7 +5761,7 @@
         "name": "馬來西亞",
         "issuer": "",
         "summary": "",
-        "search": "malaysia 馬來西亞 62",
+        "search": "malaysia 馬來西亞 61",
         "url": ""
       },
       {
@@ -5737,7 +5769,7 @@
         "name": "菲律賓",
         "issuer": "",
         "summary": "",
-        "search": "philippines 菲律賓 62",
+        "search": "philippines 菲律賓 61",
         "url": ""
       },
       {
@@ -5777,7 +5809,7 @@
         "name": "澳洲",
         "issuer": "",
         "summary": "",
-        "search": "australia 澳洲 62",
+        "search": "australia 澳洲 61",
         "url": ""
       },
       {
@@ -5785,7 +5817,7 @@
         "name": "紐西蘭",
         "issuer": "",
         "summary": "",
-        "search": "new-zealand 紐西蘭 62",
+        "search": "new-zealand 紐西蘭 61",
         "url": ""
       },
       {
@@ -5841,7 +5873,7 @@
         "name": "海外網購",
         "issuer": "",
         "summary": "",
-        "search": "overseas-online 海外網購 62",
+        "search": "overseas-online 海外網購 63",
         "url": ""
       },
       {
@@ -5849,7 +5881,7 @@
         "name": "訂房（Agoda、Booking）",
         "issuer": "",
         "summary": "",
-        "search": "hotel-booking 訂房（Agoda、Booking） 69",
+        "search": "hotel-booking 訂房（Agoda、Booking） 70",
         "url": ""
       },
       {
@@ -5857,7 +5889,7 @@
         "name": "航空公司官網",
         "issuer": "",
         "summary": "",
-        "search": "airline 航空公司官網 65",
+        "search": "airline 航空公司官網 66",
         "url": ""
       },
       {
@@ -5873,7 +5905,7 @@
         "name": "免稅店",
         "issuer": "",
         "summary": "",
-        "search": "duty-free 免稅店 60",
+        "search": "duty-free 免稅店 61",
         "url": ""
       },
       {
@@ -5913,7 +5945,7 @@
         "name": "2026 年 11 月優惠整理",
         "issuer": "",
         "summary": "",
-        "search": "monthly-2026-11 2026 年 11 月優惠整理 72",
+        "search": "monthly-2026-11 2026 年 11 月優惠整理 73",
         "url": ""
       },
       {
@@ -5921,7 +5953,7 @@
         "name": "2026 年 12 月優惠整理",
         "issuer": "",
         "summary": "",
-        "search": "monthly-2026-12 2026 年 12 月優惠整理 72",
+        "search": "monthly-2026-12 2026 年 12 月優惠整理 73",
         "url": ""
       },
       {
@@ -5929,7 +5961,7 @@
         "name": "2026 第四季優惠",
         "issuer": "",
         "summary": "",
-        "search": "quarter-2026q4 2026 第四季優惠 72",
+        "search": "quarter-2026q4 2026 第四季優惠 73",
         "url": ""
       },
       {
@@ -5937,7 +5969,7 @@
         "name": "2026 下半年優惠",
         "issuer": "",
         "summary": "",
-        "search": "half-2026h2 2026 下半年優惠 72",
+        "search": "half-2026h2 2026 下半年優惠 73",
         "url": ""
       },
       {
@@ -5945,7 +5977,7 @@
         "name": "2027 上半年優惠",
         "issuer": "",
         "summary": "",
-        "search": "half-2027h1 2027 上半年優惠 176",
+        "search": "half-2027h1 2027 上半年優惠 177",
         "url": ""
       },
       {

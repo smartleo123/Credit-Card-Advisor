@@ -2818,6 +2818,129 @@
       "verified_at": "2026-11-04"
     },
     {
+      "id": "sinopac-daway-1000days-2026q4",
+      "title_zh": "永豐 DAWAY 千日慶 LINE Pay 累積滿 3 萬加碼 3%",
+      "kind": "threshold_bonus",
+      "issuer_ids": [
+        "bank-sinopac"
+      ],
+      "card_ids": [
+        "sinopac-daway"
+      ],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit"
+      ],
+      "period_kind": "quarter",
+      "period_label": "2026Q4",
+      "valid_from": "2026-10-01",
+      "valid_to": "2026-12-31",
+      "status": "active",
+      "requires_registration": true,
+      "registration_windows": [
+        {
+          "opens_at": "2026-10-01T00:00+08:00",
+          "quota": 100000,
+          "note_zh": "活動期間登錄，限量 10 萬名（官網未寫開放時刻，以活動期間起日記錄）"
+        }
+      ],
+      "quota_note_zh": "限量登錄 100,000 名。",
+      "stacking": "stacks",
+      "stacking_note_zh": "官網寫可與新戶 LINE Pay 最高 10% 疊加。",
+      "rules": [
+        {
+          "id": "cum30k",
+          "label_zh": "活動期間 LINE Pay 一般消費累積滿 30,000 元",
+          "scope": "wallet",
+          "payment_methods": [
+            "line_pay"
+          ],
+          "rate_bp": 300,
+          "stack": "adds",
+          "quote": "與原權益新戶LINE Pay最高10% LINE POINTS疊加可享最高13%",
+          "quote_source_id": "src-sinopac-daway-card-20261123",
+          "incremental": true,
+          "min_campaign_spend_twd": 30000,
+          "cap_amount_twd": 1000,
+          "cap_period": "campaign",
+          "conditions_zh": "達 3 萬門檻後才有 3% 加碼，上限 1,000 點。另有抽獎與單筆滿萬折 300 元券（每月 750 張）。",
+          "cap_twd_max": 1000,
+          "max_spend_twd": 33333
+        }
+      ],
+      "payout_zh": "LINE POINTS（官網未寫入點日）。",
+      "summary_zh": "登錄後，10–12 月用 LINE Pay 綁 DAWAY 卡累積滿 3 萬元，再加碼 3% LINE POINTS，最多 1,000 點。",
+      "source_ids": [
+        "src-sinopac-daway-card-20261123"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-10-19",
+      "verified_at": "2026-11-23"
+    },
+    {
+      "id": "sinopac-daway-coupang-wed-2026q4",
+      "title_zh": "永豐 DAWAY 卡 × 酷澎 每週三 LINE Pay 加碼 5%",
+      "kind": "bonus",
+      "issuer_ids": [
+        "bank-sinopac"
+      ],
+      "card_ids": [
+        "sinopac-daway"
+      ],
+      "exclude_card_ids": [],
+      "product_types": [
+        "credit"
+      ],
+      "period_kind": "quarter",
+      "period_label": "2026Q4",
+      "event_labels": [
+        "double-11"
+      ],
+      "valid_from": "2026-10-01",
+      "valid_to": "2026-12-31",
+      "status": "active",
+      "requires_registration": false,
+      "registration_windows": [],
+      "quota_note_zh": "每個 LINE 帳號每月最多 75 點；活動總量每月 20 萬點。",
+      "stacking": "stacks",
+      "stacking_note_zh": "官網明寫可與 DAWAY 原權益疊加，最高 13%。",
+      "rules": [
+        {
+          "id": "wed",
+          "label_zh": "週三在酷澎用 LINE Pay 付 DAWAY 卡",
+          "scope": "merchant",
+          "merchant_ids": [
+            "coupang"
+          ],
+          "payment_methods": [
+            "line_pay"
+          ],
+          "day_rule": "wednesday",
+          "rate_bp": 500,
+          "stack": "adds",
+          "quote": "與DAWAY卡原權益疊加最高可享13% LINE POINTS",
+          "quote_source_id": "src-sinopac-daway-event",
+          "incremental": true,
+          "cap_amount_twd": 75,
+          "cap_period": "month",
+          "conditions_zh": "不含「火箭跨境」商品與 WOW 會員訂閱；需在 LINE Pay 設定中同意行銷資訊提供政策。",
+          "cap_twd_max": 75,
+          "max_spend_twd": 1500
+        }
+      ],
+      "payout_zh": "LINE POINTS，付款成功 24 小時起陸續發放。",
+      "summary_zh": "每週三在酷澎用 LINE Pay 綁 DAWAY 卡付款，多 5% LINE POINTS（每月最多 75 點）。",
+      "source_ids": [
+        "src-sinopac-daway-event",
+        "src-sinopac-daway-card-20261123"
+      ],
+      "corroborating_source_ids": [],
+      "confidence": "official_only",
+      "recorded_at": "2026-10-19",
+      "verified_at": "2026-11-23"
+    },
+    {
       "id": "sinopac-dawho-new-2026h2",
       "title_zh": "永豐 DAWHO 新戶 指定行動支付 20% 刷卡金",
       "kind": "new_customer",
@@ -2996,6 +3119,7 @@
       ],
       "card_ids": [],
       "exclude_card_ids": [
+        "sinopac-daway",
         "sinopac-sport",
         "sinopac-dual-currency"
       ],

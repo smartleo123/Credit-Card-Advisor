@@ -3,7 +3,7 @@
   "attribution": "台灣支付優惠站 https://pay.elggum.com",
   "disclaimer_zh": "本資料整理自銀行與支付業者公開資訊，可能有誤或已變更，實際回饋以各機構公告為準。謹慎理財 信用至上。",
   "data_date": "2026-11-23",
-  "generated_at": "2026-11-23T09:12:29.533Z",
+  "generated_at": "2026-11-23T11:52:49.924Z",
   "formula_version": "persona-v1",
   "method_zh": "每月淨回饋：把每月刷卡金額（小資 1 萬、一般 3 萬、重度 8 萬）依消費比重分到各商店，每家店用該類別的中間單筆金額算回饋，同一個上限跨商店合併，再扣海外手續費與年費的 1/12。lists[消費習慣][付款習慣] 依 monthly_once（做一次就好）由高到低排序；monthly_base 是不用做任何事的金額；tie＝true 表示和同組並列（差距小於每月消費的 0.05%）。詳見 https://pay.elggum.com/methodology/#score",
   "default_persona": "normal",
@@ -1270,6 +1270,22 @@
           "fee_month_base": 0,
           "tags": [
             "task"
+          ],
+          "valid_to": "2026-12-31",
+          "tie": true
+        },
+        {
+          "card_id": "sinopac-daway",
+          "card_name": "永豐 DAWAY 卡",
+          "monthly_once": 43.05,
+          "monthly_base": -206.95,
+          "rate_bp": 43.05,
+          "fee_month": 0,
+          "fee_month_once": 0,
+          "fee_month_base": 250,
+          "tags": [
+            "task",
+            "estimated"
           ],
           "valid_to": "2026-12-31",
           "tie": true
@@ -3766,6 +3782,22 @@
           "tie": true
         },
         {
+          "card_id": "sinopac-daway",
+          "card_name": "永豐 DAWAY 卡",
+          "monthly_once": 43.05,
+          "monthly_base": -206.95,
+          "rate_bp": 43.05,
+          "fee_month": 0,
+          "fee_month_once": 0,
+          "fee_month_base": 250,
+          "tags": [
+            "task",
+            "estimated"
+          ],
+          "valid_to": "2026-12-31",
+          "tie": true
+        },
+        {
           "card_id": "taishin-everrich",
           "card_name": "台新昇恆昌聯名卡（御璽／白金／普卡）",
           "monthly_once": 42.73,
@@ -6199,6 +6231,22 @@
           "fee_month_base": 0,
           "tags": [],
           "valid_to": null,
+          "tie": true
+        },
+        {
+          "card_id": "sinopac-daway",
+          "card_name": "永豐 DAWAY 卡",
+          "monthly_once": 132.06,
+          "monthly_base": -117.94,
+          "rate_bp": 44.02,
+          "fee_month": 0,
+          "fee_month_once": 0,
+          "fee_month_base": 250,
+          "tags": [
+            "task",
+            "estimated"
+          ],
+          "valid_to": "2026-12-31",
           "tie": true
         },
         {
@@ -8696,6 +8744,22 @@
           "tie": true
         },
         {
+          "card_id": "sinopac-daway",
+          "card_name": "永豐 DAWAY 卡",
+          "monthly_once": 132.06,
+          "monthly_base": -117.94,
+          "rate_bp": 44.02,
+          "fee_month": 0,
+          "fee_month_once": 0,
+          "fee_month_base": 250,
+          "tags": [
+            "task",
+            "estimated"
+          ],
+          "valid_to": "2026-12-31",
+          "tie": true
+        },
+        {
           "card_id": "taishin-everrich",
           "card_name": "台新昇恆昌聯名卡（御璽／白金／普卡）",
           "monthly_once": 131.98,
@@ -11149,6 +11213,22 @@
           "fee_month_once": 0,
           "fee_month_base": 0,
           "tags": [],
+          "valid_to": "2026-12-31",
+          "tie": true
+        },
+        {
+          "card_id": "sinopac-daway",
+          "card_name": "永豐 DAWAY 卡",
+          "monthly_once": 364.66,
+          "monthly_base": 114.66,
+          "rate_bp": 45.58,
+          "fee_month": 0,
+          "fee_month_once": 0,
+          "fee_month_base": 250,
+          "tags": [
+            "task",
+            "estimated"
+          ],
           "valid_to": "2026-12-31",
           "tie": true
         },
@@ -13652,6 +13732,22 @@
           "fee_month_base": 0,
           "tags": [
             "wallet"
+          ],
+          "valid_to": "2026-12-31",
+          "tie": true
+        },
+        {
+          "card_id": "sinopac-daway",
+          "card_name": "永豐 DAWAY 卡",
+          "monthly_once": 364.66,
+          "monthly_base": 114.66,
+          "rate_bp": 45.58,
+          "fee_month": 0,
+          "fee_month_once": 0,
+          "fee_month_base": 250,
+          "tags": [
+            "task",
+            "estimated"
           ],
           "valid_to": "2026-12-31",
           "tie": true

@@ -4517,6 +4517,90 @@
       "reviewed": false
     },
     {
+      "card_id": "sinopac-daway",
+      "card_name": "永豐 DAWAY 卡",
+      "confidence": "official_only",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": "daway",
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
+        ],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": "daway",
+        "net_twd_per_1000": 10,
+        "net_rate_bp": 100,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": false,
+        "cap_points_max": null,
+        "requirements": [
+          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
+        ],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "line_pay",
+        "plan": null,
+        "tier": "daway_go",
+        "net_twd_per_1000": 20,
+        "net_rate_bp": 200,
+        "cap_twd_max": null,
+        "max_spend_twd": null,
+        "base_uncapped": true,
+        "cap_points_max": 300,
+        "requirements": [
+          "需符合「DAWAY GO」：① 設定永豐或京城帳戶自動扣繳永豐卡款 ② 設定電子或行動帳單 ③ 成為永豐網銀會員並完成投資屬性問卷；在帳單結帳當月底前達成。",
+          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
+        ],
+        "needs_registration": false
+      },
+      "monthly": {
+        "twd": [
+          5000,
+          20000,
+          50000
+        ],
+        "base": [
+          50,
+          200,
+          500
+        ],
+        "best": [
+          100,
+          400,
+          550
+        ],
+        "once": [
+          50,
+          200,
+          500
+        ]
+      },
+      "tie": true,
+      "only_at": {
+        "merchant_names": [
+          "Klook"
+        ],
+        "count": 1,
+        "total": 8,
+        "scenario": "best",
+        "net_rate_bp": 200
+      },
+      "reviewed": false
+    },
+    {
       "card_id": "mega-gogoro",
       "card_name": "兆豐 Gogoro 聯名卡",
       "confidence": "official_x2",

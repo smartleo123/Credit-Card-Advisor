@@ -17053,6 +17053,152 @@
         "dataDate": "2026-11-23"
       }
     ],
+    "sinopac-mitsui-outlet": [
+      {
+        "slug": "pchome",
+        "title": "PChome",
+        "rateBp": 730,
+        "reviewed": true,
+        "needs": [
+          "需完成「電子／行動帳單＋永豐或京城帳戶自扣」：活動期間同時設定電子或行動帳單，以及用永豐或京城銀行帳戶自動扣繳永豐信用卡帳款（回饋前要完成並扣款成功）。",
+          "登錄：全盈+PAY 特選通路 7% 刷卡金（需登錄＋任務）"
+        ],
+        "method": "pluspay",
+        "capTwd": 100,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "dining",
+        "title": "餐廳",
+        "rateBp": 730,
+        "reviewed": true,
+        "needs": [
+          "需完成「電子／行動帳單＋永豐或京城帳戶自扣」：活動期間同時設定電子或行動帳單，以及用永豐或京城銀行帳戶自動扣繳永豐信用卡帳款（回饋前要完成並扣款成功）。",
+          "登錄：館外實體餐飲 7% 刷卡金（需登錄＋任務）"
+        ],
+        "method": "physical",
+        "capTwd": 100,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "familymart",
+        "title": "全家",
+        "rateBp": 700,
+        "reviewed": true,
+        "needs": [
+          "需完成「電子／行動帳單＋永豐或京城帳戶自扣」：活動期間同時設定電子或行動帳單，以及用永豐或京城銀行帳戶自動扣繳永豐信用卡帳款（回饋前要完成並扣款成功）。",
+          "登錄：全盈+PAY 特選通路 7% 刷卡金（需登錄＋任務）"
+        ],
+        "method": "pluspay",
+        "capTwd": 100,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "pluspay",
+        "title": "全盈+PAY",
+        "rateBp": 730,
+        "reviewed": true,
+        "needs": [
+          "需完成「電子／行動帳單＋永豐或京城帳戶自扣」：活動期間同時設定電子或行動帳單，以及用永豐或京城銀行帳戶自動扣繳永豐信用卡帳款（回饋前要完成並扣款成功）。",
+          "登錄：全盈+PAY 特選通路 7% 刷卡金（需登錄＋任務）"
+        ],
+        "method": "pluspay",
+        "capTwd": 100,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "tra",
+        "title": "台鐵",
+        "rateBp": 730,
+        "reviewed": true,
+        "needs": [
+          "需完成「電子／行動帳單＋永豐或京城帳戶自扣」：活動期間同時設定電子或行動帳單，以及用永豐或京城銀行帳戶自動扣繳永豐信用卡帳款（回饋前要完成並扣款成功）。",
+          "登錄：全盈+PAY 特選通路 7% 刷卡金（需登錄＋任務）"
+        ],
+        "method": "pluspay",
+        "capTwd": 100,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "drinks-coffee",
+        "title": "手搖飲和咖啡",
+        "rateBp": 730,
+        "reviewed": true,
+        "needs": [
+          "需完成「電子／行動帳單＋永豐或京城帳戶自扣」：活動期間同時設定電子或行動帳單，以及用永豐或京城銀行帳戶自動扣繳永豐信用卡帳款（回饋前要完成並扣款成功）。",
+          "登錄：館外實體餐飲 7% 刷卡金（需登錄＋任務）"
+        ],
+        "method": "physical",
+        "capTwd": 100,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "hotpot",
+        "title": "火鍋燒肉",
+        "rateBp": 730,
+        "reviewed": true,
+        "needs": [
+          "需完成「電子／行動帳單＋永豐或京城帳戶自扣」：活動期間同時設定電子或行動帳單，以及用永豐或京城銀行帳戶自動扣繳永豐信用卡帳款（回饋前要完成並扣款成功）。",
+          "登錄：館外實體餐飲 7% 刷卡金（需登錄＋任務）"
+        ],
+        "method": "physical",
+        "capTwd": 100,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "fast-food",
+        "title": "速食",
+        "rateBp": 730,
+        "reviewed": true,
+        "needs": [
+          "需完成「電子／行動帳單＋永豐或京城帳戶自扣」：活動期間同時設定電子或行動帳單，以及用永豐或京城銀行帳戶自動扣繳永豐信用卡帳款（回饋前要完成並扣款成功）。",
+          "登錄：館外實體餐飲 7% 刷卡金（需登錄＋任務）"
+        ],
+        "method": "physical",
+        "capTwd": 100,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "annual-fee-free",
+        "title": "免年費",
+        "rateBp": 30,
+        "reviewed": true,
+        "needs": [],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "pxpay-plus",
+        "title": "全支付",
+        "rateBp": 30,
+        "reviewed": true,
+        "needs": [],
+        "method": "pxpay_plus",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "cobrand",
+        "title": "聯名卡",
+        "rateBp": 30,
+        "reviewed": true,
+        "needs": [],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "points",
+        "title": "點數卡",
+        "rateBp": 30,
+        "reviewed": true,
+        "needs": [],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      }
+    ],
     "esun-ecard": [
       {
         "slug": "pchome",
@@ -17273,188 +17419,6 @@
         ],
         "method": "pluspay",
         "capTwd": 250,
-        "dataDate": "2026-11-23"
-      }
-    ],
-    "firstbank-icash": [
-      {
-        "slug": "general",
-        "title": "無腦一卡（不限通路）",
-        "rateBp": 300,
-        "reviewed": true,
-        "needs": [
-          "登錄：便利支付 3% 刷卡金（需登錄）"
-        ],
-        "method": "icash_pay",
-        "capTwd": 300,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "online",
-        "title": "網購總排行",
-        "rateBp": 300,
-        "reviewed": true,
-        "needs": [
-          "登錄：便利支付 3% 刷卡金（需登錄）"
-        ],
-        "method": "icash_pay",
-        "capTwd": 300,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "dining",
-        "title": "餐廳",
-        "rateBp": 300,
-        "reviewed": true,
-        "needs": [
-          "登錄：便利支付 3% 刷卡金（需登錄）"
-        ],
-        "method": "icash_pay",
-        "capTwd": 300,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "half-2026h2",
-        "title": "2026 下半年優惠",
-        "rateBp": 300,
-        "reviewed": true,
-        "needs": [
-          "登錄：便利支付 3% 刷卡金（需登錄）"
-        ],
-        "method": "icash_pay",
-        "capTwd": 300,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "monthly-2026-11",
-        "title": "2026 年 11 月優惠整理",
-        "rateBp": 300,
-        "reviewed": true,
-        "needs": [
-          "登錄：便利支付 3% 刷卡金（需登錄）"
-        ],
-        "method": "icash_pay",
-        "capTwd": 300,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "monthly-2026-12",
-        "title": "2026 年 12 月優惠整理",
-        "rateBp": 300,
-        "reviewed": true,
-        "needs": [
-          "登錄：便利支付 3% 刷卡金（需登錄）"
-        ],
-        "method": "icash_pay",
-        "capTwd": 300,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "quarter-2026q4",
-        "title": "2026 第四季優惠",
-        "rateBp": 300,
-        "reviewed": true,
-        "needs": [
-          "登錄：便利支付 3% 刷卡金（需登錄）"
-        ],
-        "method": "icash_pay",
-        "capTwd": 300,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "electronics",
-        "title": "3C（Apple、燦坤、全國電子）",
-        "rateBp": 300,
-        "reviewed": true,
-        "needs": [
-          "登錄：便利支付 3% 刷卡金（需登錄）"
-        ],
-        "method": "icash_pay",
-        "capTwd": 300,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "ktv",
-        "title": "KTV",
-        "rateBp": 300,
-        "reviewed": true,
-        "needs": [
-          "登錄：便利支付 3% 刷卡金（需登錄）"
-        ],
-        "method": "icash_pay",
-        "capTwd": 300,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "icash-pay",
-        "title": "icash Pay",
-        "rateBp": 300,
-        "reviewed": true,
-        "needs": [
-          "登錄：便利支付 3% 刷卡金（需登錄）"
-        ],
-        "method": "icash_pay",
-        "capTwd": 300,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "parking",
-        "title": "停車與 eTag",
-        "rateBp": 300,
-        "reviewed": true,
-        "needs": [
-          "登錄：便利支付 3% 刷卡金（需登錄）"
-        ],
-        "method": "icash_pay",
-        "capTwd": 300,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "annual-fee-free",
-        "title": "免年費",
-        "rateBp": 300,
-        "reviewed": true,
-        "needs": [
-          "登錄：便利支付 3% 刷卡金（需登錄）"
-        ],
-        "method": "icash_pay",
-        "capTwd": 300,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "pxpay-plus",
-        "title": "全支付",
-        "rateBp": 300,
-        "reviewed": true,
-        "needs": [
-          "登錄：便利支付 3% 刷卡金（需登錄）"
-        ],
-        "method": "pxpay_plus",
-        "capTwd": 300,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "fuel",
-        "title": "加油",
-        "rateBp": 300,
-        "reviewed": true,
-        "needs": [
-          "登錄：便利支付 3% 刷卡金（需登錄）"
-        ],
-        "method": "icash_pay",
-        "capTwd": 300,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "tra",
-        "title": "台鐵",
-        "rateBp": 300,
-        "reviewed": true,
-        "needs": [
-          "登錄：便利支付 3% 刷卡金（需登錄）"
-        ],
-        "method": "pxpay_plus",
-        "capTwd": 300,
         "dataDate": "2026-11-23"
       }
     ],
@@ -17728,6 +17692,430 @@
         ],
         "method": "line_pay",
         "capTwd": 200,
+        "dataDate": "2026-11-23"
+      }
+    ],
+    "sinopac-daway": [
+      {
+        "slug": "amazon",
+        "title": "Amazon",
+        "rateBp": 100,
+        "reviewed": false,
+        "needs": [
+          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
+        ],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "online",
+        "title": "網購總排行",
+        "rateBp": 100,
+        "reviewed": false,
+        "needs": [
+          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
+        ],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "line-pay",
+        "title": "LINE Pay",
+        "rateBp": 50,
+        "reviewed": false,
+        "needs": [
+          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
+        ],
+        "method": "line_pay",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "pchome",
+        "title": "PChome",
+        "rateBp": 50,
+        "reviewed": false,
+        "needs": [
+          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
+        ],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "momo",
+        "title": "momo",
+        "rateBp": 50,
+        "reviewed": false,
+        "needs": [
+          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
+        ],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "general",
+        "title": "無腦一卡（不限通路）",
+        "rateBp": 50,
+        "reviewed": false,
+        "needs": [
+          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
+        ],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "coupang",
+        "title": "酷澎 Coupang",
+        "rateBp": 50,
+        "reviewed": false,
+        "needs": [
+          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
+        ],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "dining",
+        "title": "餐廳",
+        "rateBp": 50,
+        "reviewed": false,
+        "needs": [
+          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
+        ],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "china",
+        "title": "中國",
+        "rateBp": 100,
+        "reviewed": false,
+        "needs": [
+          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
+        ],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "canada",
+        "title": "加拿大",
+        "rateBp": 100,
+        "reviewed": false,
+        "needs": [
+          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
+        ],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "indonesia",
+        "title": "印尼",
+        "rateBp": 100,
+        "reviewed": false,
+        "needs": [
+          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
+        ],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "singapore",
+        "title": "新加坡",
+        "rateBp": 100,
+        "reviewed": false,
+        "needs": [
+          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
+        ],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "japan",
+        "title": "日本",
+        "rateBp": 100,
+        "reviewed": false,
+        "needs": [
+          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
+        ],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "thailand",
+        "title": "泰國",
+        "rateBp": 100,
+        "reviewed": false,
+        "needs": [
+          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
+        ],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "overseas-online",
+        "title": "海外網購",
+        "rateBp": 100,
+        "reviewed": false,
+        "needs": [
+          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
+        ],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "taobao",
+        "title": "淘寶",
+        "rateBp": 100,
+        "reviewed": false,
+        "needs": [
+          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
+        ],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "australia",
+        "title": "澳洲",
+        "rateBp": 100,
+        "reviewed": false,
+        "needs": [
+          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
+        ],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "macau",
+        "title": "澳門",
+        "rateBp": 100,
+        "reviewed": false,
+        "needs": [
+          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
+        ],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "switzerland",
+        "title": "瑞士",
+        "rateBp": 100,
+        "reviewed": false,
+        "needs": [
+          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
+        ],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "new-zealand",
+        "title": "紐西蘭",
+        "rateBp": 100,
+        "reviewed": false,
+        "needs": [
+          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
+        ],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      }
+    ],
+    "firstbank-icash": [
+      {
+        "slug": "general",
+        "title": "無腦一卡（不限通路）",
+        "rateBp": 300,
+        "reviewed": true,
+        "needs": [
+          "登錄：便利支付 3% 刷卡金（需登錄）"
+        ],
+        "method": "icash_pay",
+        "capTwd": 300,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "online",
+        "title": "網購總排行",
+        "rateBp": 300,
+        "reviewed": true,
+        "needs": [
+          "登錄：便利支付 3% 刷卡金（需登錄）"
+        ],
+        "method": "icash_pay",
+        "capTwd": 300,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "dining",
+        "title": "餐廳",
+        "rateBp": 300,
+        "reviewed": true,
+        "needs": [
+          "登錄：便利支付 3% 刷卡金（需登錄）"
+        ],
+        "method": "icash_pay",
+        "capTwd": 300,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "half-2026h2",
+        "title": "2026 下半年優惠",
+        "rateBp": 300,
+        "reviewed": true,
+        "needs": [
+          "登錄：便利支付 3% 刷卡金（需登錄）"
+        ],
+        "method": "icash_pay",
+        "capTwd": 300,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "monthly-2026-11",
+        "title": "2026 年 11 月優惠整理",
+        "rateBp": 300,
+        "reviewed": true,
+        "needs": [
+          "登錄：便利支付 3% 刷卡金（需登錄）"
+        ],
+        "method": "icash_pay",
+        "capTwd": 300,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "monthly-2026-12",
+        "title": "2026 年 12 月優惠整理",
+        "rateBp": 300,
+        "reviewed": true,
+        "needs": [
+          "登錄：便利支付 3% 刷卡金（需登錄）"
+        ],
+        "method": "icash_pay",
+        "capTwd": 300,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "quarter-2026q4",
+        "title": "2026 第四季優惠",
+        "rateBp": 300,
+        "reviewed": true,
+        "needs": [
+          "登錄：便利支付 3% 刷卡金（需登錄）"
+        ],
+        "method": "icash_pay",
+        "capTwd": 300,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "electronics",
+        "title": "3C（Apple、燦坤、全國電子）",
+        "rateBp": 300,
+        "reviewed": true,
+        "needs": [
+          "登錄：便利支付 3% 刷卡金（需登錄）"
+        ],
+        "method": "icash_pay",
+        "capTwd": 300,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "ktv",
+        "title": "KTV",
+        "rateBp": 300,
+        "reviewed": true,
+        "needs": [
+          "登錄：便利支付 3% 刷卡金（需登錄）"
+        ],
+        "method": "icash_pay",
+        "capTwd": 300,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "icash-pay",
+        "title": "icash Pay",
+        "rateBp": 300,
+        "reviewed": true,
+        "needs": [
+          "登錄：便利支付 3% 刷卡金（需登錄）"
+        ],
+        "method": "icash_pay",
+        "capTwd": 300,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "parking",
+        "title": "停車與 eTag",
+        "rateBp": 300,
+        "reviewed": true,
+        "needs": [
+          "登錄：便利支付 3% 刷卡金（需登錄）"
+        ],
+        "method": "icash_pay",
+        "capTwd": 300,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "annual-fee-free",
+        "title": "免年費",
+        "rateBp": 300,
+        "reviewed": true,
+        "needs": [
+          "登錄：便利支付 3% 刷卡金（需登錄）"
+        ],
+        "method": "icash_pay",
+        "capTwd": 300,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "pxpay-plus",
+        "title": "全支付",
+        "rateBp": 300,
+        "reviewed": true,
+        "needs": [
+          "登錄：便利支付 3% 刷卡金（需登錄）"
+        ],
+        "method": "pxpay_plus",
+        "capTwd": 300,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "fuel",
+        "title": "加油",
+        "rateBp": 300,
+        "reviewed": true,
+        "needs": [
+          "登錄：便利支付 3% 刷卡金（需登錄）"
+        ],
+        "method": "icash_pay",
+        "capTwd": 300,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "tra",
+        "title": "台鐵",
+        "rateBp": 300,
+        "reviewed": true,
+        "needs": [
+          "登錄：便利支付 3% 刷卡金（需登錄）"
+        ],
+        "method": "pxpay_plus",
+        "capTwd": 300,
         "dataDate": "2026-11-23"
       }
     ],
@@ -19423,248 +19811,6 @@
         "dataDate": "2026-11-23"
       }
     ],
-    "sinopac-daway": [
-      {
-        "slug": "amazon",
-        "title": "Amazon",
-        "rateBp": 100,
-        "reviewed": false,
-        "needs": [
-          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
-        ],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "online",
-        "title": "網購總排行",
-        "rateBp": 100,
-        "reviewed": false,
-        "needs": [
-          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
-        ],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "line-pay",
-        "title": "LINE Pay",
-        "rateBp": 50,
-        "reviewed": false,
-        "needs": [
-          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
-        ],
-        "method": "line_pay",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "pchome",
-        "title": "PChome",
-        "rateBp": 50,
-        "reviewed": false,
-        "needs": [
-          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
-        ],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "momo",
-        "title": "momo",
-        "rateBp": 50,
-        "reviewed": false,
-        "needs": [
-          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
-        ],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "general",
-        "title": "無腦一卡（不限通路）",
-        "rateBp": 50,
-        "reviewed": false,
-        "needs": [
-          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
-        ],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "coupang",
-        "title": "酷澎 Coupang",
-        "rateBp": 50,
-        "reviewed": false,
-        "needs": [
-          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
-        ],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "dining",
-        "title": "餐廳",
-        "rateBp": 50,
-        "reviewed": false,
-        "needs": [
-          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
-        ],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "china",
-        "title": "中國",
-        "rateBp": 100,
-        "reviewed": false,
-        "needs": [
-          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
-        ],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "canada",
-        "title": "加拿大",
-        "rateBp": 100,
-        "reviewed": false,
-        "needs": [
-          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
-        ],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "indonesia",
-        "title": "印尼",
-        "rateBp": 100,
-        "reviewed": false,
-        "needs": [
-          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
-        ],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "singapore",
-        "title": "新加坡",
-        "rateBp": 100,
-        "reviewed": false,
-        "needs": [
-          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
-        ],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "japan",
-        "title": "日本",
-        "rateBp": 100,
-        "reviewed": false,
-        "needs": [
-          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
-        ],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "thailand",
-        "title": "泰國",
-        "rateBp": 100,
-        "reviewed": false,
-        "needs": [
-          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
-        ],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "overseas-online",
-        "title": "海外網購",
-        "rateBp": 100,
-        "reviewed": false,
-        "needs": [
-          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
-        ],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "taobao",
-        "title": "淘寶",
-        "rateBp": 100,
-        "reviewed": false,
-        "needs": [
-          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
-        ],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "australia",
-        "title": "澳洲",
-        "rateBp": 100,
-        "reviewed": false,
-        "needs": [
-          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
-        ],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "macau",
-        "title": "澳門",
-        "rateBp": 100,
-        "reviewed": false,
-        "needs": [
-          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
-        ],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "switzerland",
-        "title": "瑞士",
-        "rateBp": 100,
-        "reviewed": false,
-        "needs": [
-          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
-        ],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "new-zealand",
-        "title": "紐西蘭",
-        "rateBp": 100,
-        "reviewed": false,
-        "needs": [
-          "前提：回饋為 LINE POINTS，刷卡前須先把 DAWAY 卡綁定 LINE Pay（台灣 LINE 帳號）。"
-        ],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      }
-    ],
     "chb-my-cash": [
       {
         "slug": "dining",
@@ -20829,6 +20975,201 @@
         "dataDate": "2026-11-23"
       }
     ],
+    "sinopac-dawho-debit": [
+      {
+        "slug": "amazon",
+        "title": "Amazon",
+        "rateBp": 100,
+        "reviewed": true,
+        "needs": [
+          "今天切到「開啟多幣別功能」方案",
+          "前提：須有永豐 DAWHO 數位存款帳戶；多幣別功能須在開戶申請時開啟（2021/9/1 起新申辦者）。"
+        ],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "overseas",
+        "title": "海外消費總排行",
+        "rateBp": 100,
+        "reviewed": true,
+        "needs": [
+          "今天切到「開啟多幣別功能」方案",
+          "前提：須有永豐 DAWHO 數位存款帳戶；多幣別功能須在開戶申請時開啟（2021/9/1 起新申辦者）。"
+        ],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "familymart",
+        "title": "全家",
+        "rateBp": 60,
+        "reviewed": true,
+        "needs": [
+          "前提：須有永豐 DAWHO 數位存款帳戶；多幣別功能須在開戶申請時開啟（2021/9/1 起新申辦者）。"
+        ],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "insurance",
+        "title": "保費",
+        "rateBp": 110,
+        "reviewed": true,
+        "needs": [
+          "前提：須有永豐 DAWHO 數位存款帳戶；多幣別功能須在開戶申請時開啟（2021/9/1 起新申辦者）。"
+        ],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "china",
+        "title": "中國",
+        "rateBp": 100,
+        "reviewed": true,
+        "needs": [
+          "今天切到「開啟多幣別功能」方案",
+          "前提：須有永豐 DAWHO 數位存款帳戶；多幣別功能須在開戶申請時開啟（2021/9/1 起新申辦者）。"
+        ],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "canada",
+        "title": "加拿大",
+        "rateBp": 100,
+        "reviewed": true,
+        "needs": [
+          "今天切到「開啟多幣別功能」方案",
+          "前提：須有永豐 DAWHO 數位存款帳戶；多幣別功能須在開戶申請時開啟（2021/9/1 起新申辦者）。"
+        ],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "indonesia",
+        "title": "印尼",
+        "rateBp": 100,
+        "reviewed": true,
+        "needs": [
+          "今天切到「開啟多幣別功能」方案",
+          "前提：須有永豐 DAWHO 數位存款帳戶；多幣別功能須在開戶申請時開啟（2021/9/1 起新申辦者）。"
+        ],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "germany",
+        "title": "德國",
+        "rateBp": 100,
+        "reviewed": true,
+        "needs": [
+          "今天切到「開啟多幣別功能」方案",
+          "前提：須有永豐 DAWHO 數位存款帳戶；多幣別功能須在開戶申請時開啟（2021/9/1 起新申辦者）。"
+        ],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "singapore",
+        "title": "新加坡",
+        "rateBp": 100,
+        "reviewed": true,
+        "needs": [
+          "今天切到「開啟多幣別功能」方案",
+          "前提：須有永豐 DAWHO 數位存款帳戶；多幣別功能須在開戶申請時開啟（2021/9/1 起新申辦者）。"
+        ],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "japan",
+        "title": "日本",
+        "rateBp": 100,
+        "reviewed": true,
+        "needs": [
+          "今天切到「開啟多幣別功能」方案",
+          "前提：須有永豐 DAWHO 數位存款帳戶；多幣別功能須在開戶申請時開啟（2021/9/1 起新申辦者）。"
+        ],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "europe",
+        "title": "歐洲（另標出排除歐洲的卡）",
+        "rateBp": 100,
+        "reviewed": true,
+        "needs": [
+          "今天切到「開啟多幣別功能」方案",
+          "前提：須有永豐 DAWHO 數位存款帳戶；多幣別功能須在開戶申請時開啟（2021/9/1 起新申辦者）。"
+        ],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "france",
+        "title": "法國",
+        "rateBp": 100,
+        "reviewed": true,
+        "needs": [
+          "今天切到「開啟多幣別功能」方案",
+          "前提：須有永豐 DAWHO 數位存款帳戶；多幣別功能須在開戶申請時開啟（2021/9/1 起新申辦者）。"
+        ],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "thailand",
+        "title": "泰國",
+        "rateBp": 100,
+        "reviewed": true,
+        "needs": [
+          "今天切到「開啟多幣別功能」方案",
+          "前提：須有永豐 DAWHO 數位存款帳戶；多幣別功能須在開戶申請時開啟（2021/9/1 起新申辦者）。"
+        ],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "overseas-uncapped",
+        "title": "海外消費・回饋無上限",
+        "rateBp": 100,
+        "reviewed": true,
+        "needs": [
+          "今天切到「開啟多幣別功能」方案",
+          "前提：須有永豐 DAWHO 數位存款帳戶；多幣別功能須在開戶申請時開啟（2021/9/1 起新申辦者）。"
+        ],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "overseas-online",
+        "title": "海外網購",
+        "rateBp": 100,
+        "reviewed": true,
+        "needs": [
+          "今天切到「開啟多幣別功能」方案",
+          "前提：須有永豐 DAWHO 數位存款帳戶；多幣別功能須在開戶申請時開啟（2021/9/1 起新申辦者）。"
+        ],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      }
+    ],
     "tbb-visa-infinite": [
       {
         "slug": "seven-eleven",
@@ -21042,960 +21383,6 @@
         "needs": [],
         "method": "physical",
         "capTwd": 2000,
-        "dataDate": "2026-11-23"
-      }
-    ],
-    "tbb-artfun": [
-      {
-        "slug": "seven-eleven",
-        "title": "7-ELEVEN",
-        "rateBp": 200,
-        "reviewed": true,
-        "needs": [
-          "限掃碼付款（感應支付不算）"
-        ],
-        "method": "tw_pay",
-        "capTwd": 100,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "familymart",
-        "title": "全家",
-        "rateBp": 200,
-        "reviewed": true,
-        "needs": [
-          "限掃碼付款（感應支付不算）"
-        ],
-        "method": "tw_pay",
-        "capTwd": 100,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "general",
-        "title": "無腦一卡（不限通路）",
-        "rateBp": 200,
-        "reviewed": true,
-        "needs": [
-          "限掃碼付款（感應支付不算）"
-        ],
-        "method": "tw_pay",
-        "capTwd": 100,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "convenience",
-        "title": "超商（7-11、全家、萊爾富、OK）",
-        "rateBp": 200,
-        "reviewed": true,
-        "needs": [
-          "限掃碼付款（感應支付不算）"
-        ],
-        "method": "tw_pay",
-        "capTwd": 100,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "dining",
-        "title": "餐廳",
-        "rateBp": 200,
-        "reviewed": true,
-        "needs": [
-          "限掃碼付款（感應支付不算）"
-        ],
-        "method": "tw_pay",
-        "capTwd": 100,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "overseas",
-        "title": "海外消費總排行",
-        "rateBp": 50,
-        "reviewed": true,
-        "needs": [],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "half-2026h2",
-        "title": "2026 下半年優惠",
-        "rateBp": 200,
-        "reviewed": true,
-        "needs": [
-          "限掃碼付款（感應支付不算）"
-        ],
-        "method": "tw_pay",
-        "capTwd": 100,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "monthly-2026-11",
-        "title": "2026 年 11 月優惠整理",
-        "rateBp": 200,
-        "reviewed": true,
-        "needs": [
-          "限掃碼付款（感應支付不算）"
-        ],
-        "method": "tw_pay",
-        "capTwd": 100,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "monthly-2026-12",
-        "title": "2026 年 12 月優惠整理",
-        "rateBp": 200,
-        "reviewed": true,
-        "needs": [
-          "限掃碼付款（感應支付不算）"
-        ],
-        "method": "tw_pay",
-        "capTwd": 100,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "quarter-2026q4",
-        "title": "2026 第四季優惠",
-        "rateBp": 200,
-        "reviewed": true,
-        "needs": [
-          "限掃碼付款（感應支付不算）"
-        ],
-        "method": "tw_pay",
-        "capTwd": 100,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "parking",
-        "title": "停車與 eTag",
-        "rateBp": 200,
-        "reviewed": true,
-        "needs": [
-          "限掃碼付款（感應支付不算）"
-        ],
-        "method": "tw_pay",
-        "capTwd": 100,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "annual-fee-free",
-        "title": "免年費",
-        "rateBp": 200,
-        "reviewed": true,
-        "needs": [
-          "限掃碼付款（感應支付不算）"
-        ],
-        "method": "tw_pay",
-        "capTwd": 100,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "taiwan-pay",
-        "title": "台灣 Pay",
-        "rateBp": 200,
-        "reviewed": true,
-        "needs": [
-          "限掃碼付款（感應支付不算）"
-        ],
-        "method": "tw_pay",
-        "capTwd": 100,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "cashback",
-        "title": "現金回饋",
-        "rateBp": 200,
-        "reviewed": true,
-        "needs": [
-          "限掃碼付款（感應支付不算）"
-        ],
-        "method": "tw_pay",
-        "capTwd": 100,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "germany",
-        "title": "德國",
-        "rateBp": 50,
-        "reviewed": true,
-        "needs": [],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "europe",
-        "title": "歐洲（另標出排除歐洲的卡）",
-        "rateBp": 50,
-        "reviewed": true,
-        "needs": [],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "france",
-        "title": "法國",
-        "rateBp": 50,
-        "reviewed": true,
-        "needs": [],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "overseas-uncapped",
-        "title": "海外消費・回饋無上限",
-        "rateBp": 50,
-        "reviewed": true,
-        "needs": [],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      }
-    ],
-    "tbb-visa-platinum": [
-      {
-        "slug": "seven-eleven",
-        "title": "7-ELEVEN",
-        "rateBp": 170,
-        "reviewed": true,
-        "needs": [
-          "需符合「當期刷卡 1～49,999 元」：0.2%",
-          "限掃碼付款（感應支付不算）"
-        ],
-        "method": "tw_pay",
-        "capTwd": 1600,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "familymart",
-        "title": "全家",
-        "rateBp": 170,
-        "reviewed": true,
-        "needs": [
-          "需符合「當期刷卡 1～49,999 元」：0.2%",
-          "限掃碼付款（感應支付不算）"
-        ],
-        "method": "tw_pay",
-        "capTwd": 1600,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "general",
-        "title": "無腦一卡（不限通路）",
-        "rateBp": 170,
-        "reviewed": true,
-        "needs": [
-          "需符合「當期刷卡 1～49,999 元」：0.2%",
-          "限掃碼付款（感應支付不算）"
-        ],
-        "method": "tw_pay",
-        "capTwd": 1600,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "convenience",
-        "title": "超商（7-11、全家、萊爾富、OK）",
-        "rateBp": 170,
-        "reviewed": true,
-        "needs": [
-          "需符合「當期刷卡 1～49,999 元」：0.2%",
-          "限掃碼付款（感應支付不算）"
-        ],
-        "method": "tw_pay",
-        "capTwd": 1600,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "dining",
-        "title": "餐廳",
-        "rateBp": 170,
-        "reviewed": true,
-        "needs": [
-          "需符合「當期刷卡 1～49,999 元」：0.2%",
-          "限掃碼付款（感應支付不算）"
-        ],
-        "method": "tw_pay",
-        "capTwd": 1600,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "half-2026h2",
-        "title": "2026 下半年優惠",
-        "rateBp": 170,
-        "reviewed": true,
-        "needs": [
-          "需符合「當期刷卡 1～49,999 元」：0.2%",
-          "限掃碼付款（感應支付不算）"
-        ],
-        "method": "tw_pay",
-        "capTwd": 1600,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "monthly-2026-11",
-        "title": "2026 年 11 月優惠整理",
-        "rateBp": 170,
-        "reviewed": true,
-        "needs": [
-          "需符合「當期刷卡 1～49,999 元」：0.2%",
-          "限掃碼付款（感應支付不算）"
-        ],
-        "method": "tw_pay",
-        "capTwd": 1600,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "monthly-2026-12",
-        "title": "2026 年 12 月優惠整理",
-        "rateBp": 170,
-        "reviewed": true,
-        "needs": [
-          "需符合「當期刷卡 1～49,999 元」：0.2%",
-          "限掃碼付款（感應支付不算）"
-        ],
-        "method": "tw_pay",
-        "capTwd": 1600,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "quarter-2026q4",
-        "title": "2026 第四季優惠",
-        "rateBp": 170,
-        "reviewed": true,
-        "needs": [
-          "需符合「當期刷卡 1～49,999 元」：0.2%",
-          "限掃碼付款（感應支付不算）"
-        ],
-        "method": "tw_pay",
-        "capTwd": 1600,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "parking",
-        "title": "停車與 eTag",
-        "rateBp": 170,
-        "reviewed": true,
-        "needs": [
-          "需符合「當期刷卡 1～49,999 元」：0.2%",
-          "限掃碼付款（感應支付不算）"
-        ],
-        "method": "tw_pay",
-        "capTwd": 1600,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "annual-fee-free",
-        "title": "免年費",
-        "rateBp": 170,
-        "reviewed": true,
-        "needs": [
-          "需符合「當期刷卡 1～49,999 元」：0.2%",
-          "限掃碼付款（感應支付不算）"
-        ],
-        "method": "tw_pay",
-        "capTwd": 1600,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "taiwan-pay",
-        "title": "台灣 Pay",
-        "rateBp": 170,
-        "reviewed": true,
-        "needs": [
-          "需符合「當期刷卡 1～49,999 元」：0.2%",
-          "限掃碼付款（感應支付不算）"
-        ],
-        "method": "tw_pay",
-        "capTwd": 1600,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "cashback",
-        "title": "現金回饋",
-        "rateBp": 170,
-        "reviewed": true,
-        "needs": [
-          "需符合「當期刷卡 1～49,999 元」：0.2%",
-          "限掃碼付款（感應支付不算）"
-        ],
-        "method": "tw_pay",
-        "capTwd": 1600,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "thsr",
-        "title": "高鐵",
-        "rateBp": 20,
-        "reviewed": true,
-        "needs": [
-          "需符合「當期刷卡 1～49,999 元」：0.2%"
-        ],
-        "method": "physical",
-        "capTwd": 1500,
-        "dataDate": "2026-11-23"
-      }
-    ],
-    "taishin-daquanlian": [
-      {
-        "slug": "general",
-        "title": "無腦一卡（不限通路）",
-        "rateBp": 150,
-        "reviewed": false,
-        "needs": [
-          "需完成「台新帳戶自動扣繳卡費」：設定台新帳戶自動扣繳卡費，全支付店外才是 1.5%（否則 0.8%）。",
-          "前提：大全聯福利卡號要先綁定 PX Pay，未綁定沒有福利點回饋（店內、全支付店外都一樣）。"
-        ],
-        "method": "pxpay_plus",
-        "capTwd": 1500,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "dining",
-        "title": "餐廳",
-        "rateBp": 150,
-        "reviewed": false,
-        "needs": [
-          "需完成「台新帳戶自動扣繳卡費」：設定台新帳戶自動扣繳卡費，全支付店外才是 1.5%（否則 0.8%）。",
-          "前提：大全聯福利卡號要先綁定 PX Pay，未綁定沒有福利點回饋（店內、全支付店外都一樣）。"
-        ],
-        "method": "pxpay_plus",
-        "capTwd": 1500,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "supermarket",
-        "title": "量販（全聯、大全聯、家樂福、Costco、愛買）",
-        "rateBp": 700,
-        "reviewed": false,
-        "needs": [
-          "需完成「綁定 PX Pay」：大全聯信用卡福利卡號要先綁定 PX Pay 才有店內回饋。",
-          "單筆滿 1,000 元才有加碼",
-          "前提：大全聯福利卡號要先綁定 PX Pay，未綁定沒有福利點回饋（店內、全支付店外都一樣）。"
-        ],
-        "method": "pxpay_plus",
-        "capTwd": 400,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "half-2026h2",
-        "title": "2026 下半年優惠",
-        "rateBp": 150,
-        "reviewed": false,
-        "needs": [
-          "需完成「台新帳戶自動扣繳卡費」：設定台新帳戶自動扣繳卡費，全支付店外才是 1.5%（否則 0.8%）。",
-          "前提：大全聯福利卡號要先綁定 PX Pay，未綁定沒有福利點回饋（店內、全支付店外都一樣）。"
-        ],
-        "method": "pxpay_plus",
-        "capTwd": 1500,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "monthly-2026-11",
-        "title": "2026 年 11 月優惠整理",
-        "rateBp": 150,
-        "reviewed": false,
-        "needs": [
-          "需完成「台新帳戶自動扣繳卡費」：設定台新帳戶自動扣繳卡費，全支付店外才是 1.5%（否則 0.8%）。",
-          "前提：大全聯福利卡號要先綁定 PX Pay，未綁定沒有福利點回饋（店內、全支付店外都一樣）。"
-        ],
-        "method": "pxpay_plus",
-        "capTwd": 1500,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "monthly-2026-12",
-        "title": "2026 年 12 月優惠整理",
-        "rateBp": 150,
-        "reviewed": false,
-        "needs": [
-          "需完成「台新帳戶自動扣繳卡費」：設定台新帳戶自動扣繳卡費，全支付店外才是 1.5%（否則 0.8%）。",
-          "前提：大全聯福利卡號要先綁定 PX Pay，未綁定沒有福利點回饋（店內、全支付店外都一樣）。"
-        ],
-        "method": "pxpay_plus",
-        "capTwd": 1500,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "quarter-2026q4",
-        "title": "2026 第四季優惠",
-        "rateBp": 150,
-        "reviewed": false,
-        "needs": [
-          "需完成「台新帳戶自動扣繳卡費」：設定台新帳戶自動扣繳卡費，全支付店外才是 1.5%（否則 0.8%）。",
-          "前提：大全聯福利卡號要先綁定 PX Pay，未綁定沒有福利點回饋（店內、全支付店外都一樣）。"
-        ],
-        "method": "pxpay_plus",
-        "capTwd": 1500,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "parking",
-        "title": "停車與 eTag",
-        "rateBp": 150,
-        "reviewed": false,
-        "needs": [
-          "需完成「台新帳戶自動扣繳卡費」：設定台新帳戶自動扣繳卡費，全支付店外才是 1.5%（否則 0.8%）。",
-          "前提：大全聯福利卡號要先綁定 PX Pay，未綁定沒有福利點回饋（店內、全支付店外都一樣）。"
-        ],
-        "method": "pxpay_plus",
-        "capTwd": 1500,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "annual-fee-free",
-        "title": "免年費",
-        "rateBp": 150,
-        "reviewed": false,
-        "needs": [
-          "需完成「台新帳戶自動扣繳卡費」：設定台新帳戶自動扣繳卡費，全支付店外才是 1.5%（否則 0.8%）。",
-          "前提：大全聯福利卡號要先綁定 PX Pay，未綁定沒有福利點回饋（店內、全支付店外都一樣）。"
-        ],
-        "method": "pxpay_plus",
-        "capTwd": 1500,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "pxpay-plus",
-        "title": "全支付",
-        "rateBp": 150,
-        "reviewed": false,
-        "needs": [
-          "需完成「台新帳戶自動扣繳卡費」：設定台新帳戶自動扣繳卡費，全支付店外才是 1.5%（否則 0.8%）。",
-          "前提：大全聯福利卡號要先綁定 PX Pay，未綁定沒有福利點回饋（店內、全支付店外都一樣）。"
-        ],
-        "method": "pxpay_plus",
-        "capTwd": 1500,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "tra",
-        "title": "台鐵",
-        "rateBp": 150,
-        "reviewed": false,
-        "needs": [
-          "需完成「台新帳戶自動扣繳卡費」：設定台新帳戶自動扣繳卡費，全支付店外才是 1.5%（否則 0.8%）。",
-          "前提：大全聯福利卡號要先綁定 PX Pay，未綁定沒有福利點回饋（店內、全支付店外都一樣）。"
-        ],
-        "method": "pxpay_plus",
-        "capTwd": 1500,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "wallet-best-card",
-        "title": "各錢包綁哪張卡最好",
-        "rateBp": 150,
-        "reviewed": false,
-        "needs": [
-          "需完成「台新帳戶自動扣繳卡費」：設定台新帳戶自動扣繳卡費，全支付店外才是 1.5%（否則 0.8%）。",
-          "前提：大全聯福利卡號要先綁定 PX Pay，未綁定沒有福利點回饋（店內、全支付店外都一樣）。"
-        ],
-        "method": "pxpay_plus",
-        "capTwd": 1500,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "mobile-pay",
-        "title": "行動支付總排行",
-        "rateBp": 150,
-        "reviewed": false,
-        "needs": [
-          "需完成「台新帳戶自動扣繳卡費」：設定台新帳戶自動扣繳卡費，全支付店外才是 1.5%（否則 0.8%）。",
-          "前提：大全聯福利卡號要先綁定 PX Pay，未綁定沒有福利點回饋（店內、全支付店外都一樣）。"
-        ],
-        "method": "pxpay_plus",
-        "capTwd": 1500,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "points",
-        "title": "點數卡",
-        "rateBp": 150,
-        "reviewed": false,
-        "needs": [
-          "需完成「台新帳戶自動扣繳卡費」：設定台新帳戶自動扣繳卡費，全支付店外才是 1.5%（否則 0.8%）。",
-          "前提：大全聯福利卡號要先綁定 PX Pay，未綁定沒有福利點回饋（店內、全支付店外都一樣）。"
-        ],
-        "method": "pxpay_plus",
-        "capTwd": 1500,
-        "dataDate": "2026-11-23"
-      }
-    ],
-    "tbb-yilan": [
-      {
-        "slug": "seven-eleven",
-        "title": "7-ELEVEN",
-        "rateBp": 180,
-        "reviewed": false,
-        "needs": [
-          "需符合「當期一般消費未滿 3 萬元」：依當期帳單可計回饋的消費合計。",
-          "限掃碼付款（感應支付不算）"
-        ],
-        "method": "tw_pay",
-        "capTwd": 100,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "familymart",
-        "title": "全家",
-        "rateBp": 180,
-        "reviewed": false,
-        "needs": [
-          "需符合「當期一般消費未滿 3 萬元」：依當期帳單可計回饋的消費合計。",
-          "限掃碼付款（感應支付不算）"
-        ],
-        "method": "tw_pay",
-        "capTwd": 100,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "general",
-        "title": "無腦一卡（不限通路）",
-        "rateBp": 180,
-        "reviewed": false,
-        "needs": [
-          "需符合「當期一般消費未滿 3 萬元」：依當期帳單可計回饋的消費合計。",
-          "限掃碼付款（感應支付不算）"
-        ],
-        "method": "tw_pay",
-        "capTwd": 100,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "convenience",
-        "title": "超商（7-11、全家、萊爾富、OK）",
-        "rateBp": 180,
-        "reviewed": false,
-        "needs": [
-          "需符合「當期一般消費未滿 3 萬元」：依當期帳單可計回饋的消費合計。",
-          "限掃碼付款（感應支付不算）"
-        ],
-        "method": "tw_pay",
-        "capTwd": 100,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "dining",
-        "title": "餐廳",
-        "rateBp": 180,
-        "reviewed": false,
-        "needs": [
-          "需符合「當期一般消費未滿 3 萬元」：依當期帳單可計回饋的消費合計。",
-          "限掃碼付款（感應支付不算）"
-        ],
-        "method": "tw_pay",
-        "capTwd": 100,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "half-2026h2",
-        "title": "2026 下半年優惠",
-        "rateBp": 180,
-        "reviewed": false,
-        "needs": [
-          "需符合「當期一般消費未滿 3 萬元」：依當期帳單可計回饋的消費合計。",
-          "限掃碼付款（感應支付不算）"
-        ],
-        "method": "tw_pay",
-        "capTwd": 100,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "monthly-2026-11",
-        "title": "2026 年 11 月優惠整理",
-        "rateBp": 180,
-        "reviewed": false,
-        "needs": [
-          "需符合「當期一般消費未滿 3 萬元」：依當期帳單可計回饋的消費合計。",
-          "限掃碼付款（感應支付不算）"
-        ],
-        "method": "tw_pay",
-        "capTwd": 100,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "monthly-2026-12",
-        "title": "2026 年 12 月優惠整理",
-        "rateBp": 180,
-        "reviewed": false,
-        "needs": [
-          "需符合「當期一般消費未滿 3 萬元」：依當期帳單可計回饋的消費合計。",
-          "限掃碼付款（感應支付不算）"
-        ],
-        "method": "tw_pay",
-        "capTwd": 100,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "quarter-2026q4",
-        "title": "2026 第四季優惠",
-        "rateBp": 180,
-        "reviewed": false,
-        "needs": [
-          "需符合「當期一般消費未滿 3 萬元」：依當期帳單可計回饋的消費合計。",
-          "限掃碼付款（感應支付不算）"
-        ],
-        "method": "tw_pay",
-        "capTwd": 100,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "parking",
-        "title": "停車與 eTag",
-        "rateBp": 180,
-        "reviewed": false,
-        "needs": [
-          "需符合「當期一般消費未滿 3 萬元」：依當期帳單可計回饋的消費合計。",
-          "限掃碼付款（感應支付不算）"
-        ],
-        "method": "tw_pay",
-        "capTwd": 100,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "annual-fee-free",
-        "title": "免年費",
-        "rateBp": 180,
-        "reviewed": false,
-        "needs": [
-          "需符合「當期一般消費未滿 3 萬元」：依當期帳單可計回饋的消費合計。",
-          "限掃碼付款（感應支付不算）"
-        ],
-        "method": "tw_pay",
-        "capTwd": 100,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "taiwan-pay",
-        "title": "台灣 Pay",
-        "rateBp": 180,
-        "reviewed": false,
-        "needs": [
-          "需符合「當期一般消費未滿 3 萬元」：依當期帳單可計回饋的消費合計。",
-          "限掃碼付款（感應支付不算）"
-        ],
-        "method": "tw_pay",
-        "capTwd": 100,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "cashback",
-        "title": "現金回饋",
-        "rateBp": 180,
-        "reviewed": false,
-        "needs": [
-          "需符合「當期一般消費未滿 3 萬元」：依當期帳單可計回饋的消費合計。",
-          "限掃碼付款（感應支付不算）"
-        ],
-        "method": "tw_pay",
-        "capTwd": 100,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "thsr",
-        "title": "高鐵",
-        "rateBp": 30,
-        "reviewed": false,
-        "needs": [
-          "需符合「當期一般消費未滿 3 萬元」：依當期帳單可計回饋的消費合計。"
-        ],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      }
-    ],
-    "sinopac-dawho-debit": [
-      {
-        "slug": "amazon",
-        "title": "Amazon",
-        "rateBp": 100,
-        "reviewed": true,
-        "needs": [
-          "今天切到「開啟多幣別功能」方案",
-          "前提：須有永豐 DAWHO 數位存款帳戶；多幣別功能須在開戶申請時開啟（2021/9/1 起新申辦者）。"
-        ],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "overseas",
-        "title": "海外消費總排行",
-        "rateBp": 100,
-        "reviewed": true,
-        "needs": [
-          "今天切到「開啟多幣別功能」方案",
-          "前提：須有永豐 DAWHO 數位存款帳戶；多幣別功能須在開戶申請時開啟（2021/9/1 起新申辦者）。"
-        ],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "familymart",
-        "title": "全家",
-        "rateBp": 60,
-        "reviewed": true,
-        "needs": [
-          "前提：須有永豐 DAWHO 數位存款帳戶；多幣別功能須在開戶申請時開啟（2021/9/1 起新申辦者）。"
-        ],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "insurance",
-        "title": "保費",
-        "rateBp": 110,
-        "reviewed": true,
-        "needs": [
-          "前提：須有永豐 DAWHO 數位存款帳戶；多幣別功能須在開戶申請時開啟（2021/9/1 起新申辦者）。"
-        ],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "china",
-        "title": "中國",
-        "rateBp": 100,
-        "reviewed": true,
-        "needs": [
-          "今天切到「開啟多幣別功能」方案",
-          "前提：須有永豐 DAWHO 數位存款帳戶；多幣別功能須在開戶申請時開啟（2021/9/1 起新申辦者）。"
-        ],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "canada",
-        "title": "加拿大",
-        "rateBp": 100,
-        "reviewed": true,
-        "needs": [
-          "今天切到「開啟多幣別功能」方案",
-          "前提：須有永豐 DAWHO 數位存款帳戶；多幣別功能須在開戶申請時開啟（2021/9/1 起新申辦者）。"
-        ],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "indonesia",
-        "title": "印尼",
-        "rateBp": 100,
-        "reviewed": true,
-        "needs": [
-          "今天切到「開啟多幣別功能」方案",
-          "前提：須有永豐 DAWHO 數位存款帳戶；多幣別功能須在開戶申請時開啟（2021/9/1 起新申辦者）。"
-        ],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "germany",
-        "title": "德國",
-        "rateBp": 100,
-        "reviewed": true,
-        "needs": [
-          "今天切到「開啟多幣別功能」方案",
-          "前提：須有永豐 DAWHO 數位存款帳戶；多幣別功能須在開戶申請時開啟（2021/9/1 起新申辦者）。"
-        ],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "singapore",
-        "title": "新加坡",
-        "rateBp": 100,
-        "reviewed": true,
-        "needs": [
-          "今天切到「開啟多幣別功能」方案",
-          "前提：須有永豐 DAWHO 數位存款帳戶；多幣別功能須在開戶申請時開啟（2021/9/1 起新申辦者）。"
-        ],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "japan",
-        "title": "日本",
-        "rateBp": 100,
-        "reviewed": true,
-        "needs": [
-          "今天切到「開啟多幣別功能」方案",
-          "前提：須有永豐 DAWHO 數位存款帳戶；多幣別功能須在開戶申請時開啟（2021/9/1 起新申辦者）。"
-        ],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "europe",
-        "title": "歐洲（另標出排除歐洲的卡）",
-        "rateBp": 100,
-        "reviewed": true,
-        "needs": [
-          "今天切到「開啟多幣別功能」方案",
-          "前提：須有永豐 DAWHO 數位存款帳戶；多幣別功能須在開戶申請時開啟（2021/9/1 起新申辦者）。"
-        ],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "france",
-        "title": "法國",
-        "rateBp": 100,
-        "reviewed": true,
-        "needs": [
-          "今天切到「開啟多幣別功能」方案",
-          "前提：須有永豐 DAWHO 數位存款帳戶；多幣別功能須在開戶申請時開啟（2021/9/1 起新申辦者）。"
-        ],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "thailand",
-        "title": "泰國",
-        "rateBp": 100,
-        "reviewed": true,
-        "needs": [
-          "今天切到「開啟多幣別功能」方案",
-          "前提：須有永豐 DAWHO 數位存款帳戶；多幣別功能須在開戶申請時開啟（2021/9/1 起新申辦者）。"
-        ],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "overseas-uncapped",
-        "title": "海外消費・回饋無上限",
-        "rateBp": 100,
-        "reviewed": true,
-        "needs": [
-          "今天切到「開啟多幣別功能」方案",
-          "前提：須有永豐 DAWHO 數位存款帳戶；多幣別功能須在開戶申請時開啟（2021/9/1 起新申辦者）。"
-        ],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "overseas-online",
-        "title": "海外網購",
-        "rateBp": 100,
-        "reviewed": true,
-        "needs": [
-          "今天切到「開啟多幣別功能」方案",
-          "前提：須有永豐 DAWHO 數位存款帳戶；多幣別功能須在開戶申請時開啟（2021/9/1 起新申辦者）。"
-        ],
-        "method": "physical",
-        "capTwd": null,
         "dataDate": "2026-11-23"
       }
     ],
@@ -22938,6 +22325,765 @@
         "dataDate": "2026-11-23"
       }
     ],
+    "tbb-artfun": [
+      {
+        "slug": "seven-eleven",
+        "title": "7-ELEVEN",
+        "rateBp": 200,
+        "reviewed": true,
+        "needs": [
+          "限掃碼付款（感應支付不算）"
+        ],
+        "method": "tw_pay",
+        "capTwd": 100,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "familymart",
+        "title": "全家",
+        "rateBp": 200,
+        "reviewed": true,
+        "needs": [
+          "限掃碼付款（感應支付不算）"
+        ],
+        "method": "tw_pay",
+        "capTwd": 100,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "general",
+        "title": "無腦一卡（不限通路）",
+        "rateBp": 200,
+        "reviewed": true,
+        "needs": [
+          "限掃碼付款（感應支付不算）"
+        ],
+        "method": "tw_pay",
+        "capTwd": 100,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "convenience",
+        "title": "超商（7-11、全家、萊爾富、OK）",
+        "rateBp": 200,
+        "reviewed": true,
+        "needs": [
+          "限掃碼付款（感應支付不算）"
+        ],
+        "method": "tw_pay",
+        "capTwd": 100,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "dining",
+        "title": "餐廳",
+        "rateBp": 200,
+        "reviewed": true,
+        "needs": [
+          "限掃碼付款（感應支付不算）"
+        ],
+        "method": "tw_pay",
+        "capTwd": 100,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "overseas",
+        "title": "海外消費總排行",
+        "rateBp": 50,
+        "reviewed": true,
+        "needs": [],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "half-2026h2",
+        "title": "2026 下半年優惠",
+        "rateBp": 200,
+        "reviewed": true,
+        "needs": [
+          "限掃碼付款（感應支付不算）"
+        ],
+        "method": "tw_pay",
+        "capTwd": 100,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "monthly-2026-11",
+        "title": "2026 年 11 月優惠整理",
+        "rateBp": 200,
+        "reviewed": true,
+        "needs": [
+          "限掃碼付款（感應支付不算）"
+        ],
+        "method": "tw_pay",
+        "capTwd": 100,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "monthly-2026-12",
+        "title": "2026 年 12 月優惠整理",
+        "rateBp": 200,
+        "reviewed": true,
+        "needs": [
+          "限掃碼付款（感應支付不算）"
+        ],
+        "method": "tw_pay",
+        "capTwd": 100,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "quarter-2026q4",
+        "title": "2026 第四季優惠",
+        "rateBp": 200,
+        "reviewed": true,
+        "needs": [
+          "限掃碼付款（感應支付不算）"
+        ],
+        "method": "tw_pay",
+        "capTwd": 100,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "parking",
+        "title": "停車與 eTag",
+        "rateBp": 200,
+        "reviewed": true,
+        "needs": [
+          "限掃碼付款（感應支付不算）"
+        ],
+        "method": "tw_pay",
+        "capTwd": 100,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "annual-fee-free",
+        "title": "免年費",
+        "rateBp": 200,
+        "reviewed": true,
+        "needs": [
+          "限掃碼付款（感應支付不算）"
+        ],
+        "method": "tw_pay",
+        "capTwd": 100,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "taiwan-pay",
+        "title": "台灣 Pay",
+        "rateBp": 200,
+        "reviewed": true,
+        "needs": [
+          "限掃碼付款（感應支付不算）"
+        ],
+        "method": "tw_pay",
+        "capTwd": 100,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "cashback",
+        "title": "現金回饋",
+        "rateBp": 200,
+        "reviewed": true,
+        "needs": [
+          "限掃碼付款（感應支付不算）"
+        ],
+        "method": "tw_pay",
+        "capTwd": 100,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "germany",
+        "title": "德國",
+        "rateBp": 50,
+        "reviewed": true,
+        "needs": [],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "europe",
+        "title": "歐洲（另標出排除歐洲的卡）",
+        "rateBp": 50,
+        "reviewed": true,
+        "needs": [],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "france",
+        "title": "法國",
+        "rateBp": 50,
+        "reviewed": true,
+        "needs": [],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "overseas-uncapped",
+        "title": "海外消費・回饋無上限",
+        "rateBp": 50,
+        "reviewed": true,
+        "needs": [],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      }
+    ],
+    "tbb-visa-platinum": [
+      {
+        "slug": "seven-eleven",
+        "title": "7-ELEVEN",
+        "rateBp": 170,
+        "reviewed": true,
+        "needs": [
+          "需符合「當期刷卡 1～49,999 元」：0.2%",
+          "限掃碼付款（感應支付不算）"
+        ],
+        "method": "tw_pay",
+        "capTwd": 1600,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "familymart",
+        "title": "全家",
+        "rateBp": 170,
+        "reviewed": true,
+        "needs": [
+          "需符合「當期刷卡 1～49,999 元」：0.2%",
+          "限掃碼付款（感應支付不算）"
+        ],
+        "method": "tw_pay",
+        "capTwd": 1600,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "general",
+        "title": "無腦一卡（不限通路）",
+        "rateBp": 170,
+        "reviewed": true,
+        "needs": [
+          "需符合「當期刷卡 1～49,999 元」：0.2%",
+          "限掃碼付款（感應支付不算）"
+        ],
+        "method": "tw_pay",
+        "capTwd": 1600,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "convenience",
+        "title": "超商（7-11、全家、萊爾富、OK）",
+        "rateBp": 170,
+        "reviewed": true,
+        "needs": [
+          "需符合「當期刷卡 1～49,999 元」：0.2%",
+          "限掃碼付款（感應支付不算）"
+        ],
+        "method": "tw_pay",
+        "capTwd": 1600,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "dining",
+        "title": "餐廳",
+        "rateBp": 170,
+        "reviewed": true,
+        "needs": [
+          "需符合「當期刷卡 1～49,999 元」：0.2%",
+          "限掃碼付款（感應支付不算）"
+        ],
+        "method": "tw_pay",
+        "capTwd": 1600,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "half-2026h2",
+        "title": "2026 下半年優惠",
+        "rateBp": 170,
+        "reviewed": true,
+        "needs": [
+          "需符合「當期刷卡 1～49,999 元」：0.2%",
+          "限掃碼付款（感應支付不算）"
+        ],
+        "method": "tw_pay",
+        "capTwd": 1600,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "monthly-2026-11",
+        "title": "2026 年 11 月優惠整理",
+        "rateBp": 170,
+        "reviewed": true,
+        "needs": [
+          "需符合「當期刷卡 1～49,999 元」：0.2%",
+          "限掃碼付款（感應支付不算）"
+        ],
+        "method": "tw_pay",
+        "capTwd": 1600,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "monthly-2026-12",
+        "title": "2026 年 12 月優惠整理",
+        "rateBp": 170,
+        "reviewed": true,
+        "needs": [
+          "需符合「當期刷卡 1～49,999 元」：0.2%",
+          "限掃碼付款（感應支付不算）"
+        ],
+        "method": "tw_pay",
+        "capTwd": 1600,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "quarter-2026q4",
+        "title": "2026 第四季優惠",
+        "rateBp": 170,
+        "reviewed": true,
+        "needs": [
+          "需符合「當期刷卡 1～49,999 元」：0.2%",
+          "限掃碼付款（感應支付不算）"
+        ],
+        "method": "tw_pay",
+        "capTwd": 1600,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "parking",
+        "title": "停車與 eTag",
+        "rateBp": 170,
+        "reviewed": true,
+        "needs": [
+          "需符合「當期刷卡 1～49,999 元」：0.2%",
+          "限掃碼付款（感應支付不算）"
+        ],
+        "method": "tw_pay",
+        "capTwd": 1600,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "annual-fee-free",
+        "title": "免年費",
+        "rateBp": 170,
+        "reviewed": true,
+        "needs": [
+          "需符合「當期刷卡 1～49,999 元」：0.2%",
+          "限掃碼付款（感應支付不算）"
+        ],
+        "method": "tw_pay",
+        "capTwd": 1600,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "taiwan-pay",
+        "title": "台灣 Pay",
+        "rateBp": 170,
+        "reviewed": true,
+        "needs": [
+          "需符合「當期刷卡 1～49,999 元」：0.2%",
+          "限掃碼付款（感應支付不算）"
+        ],
+        "method": "tw_pay",
+        "capTwd": 1600,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "cashback",
+        "title": "現金回饋",
+        "rateBp": 170,
+        "reviewed": true,
+        "needs": [
+          "需符合「當期刷卡 1～49,999 元」：0.2%",
+          "限掃碼付款（感應支付不算）"
+        ],
+        "method": "tw_pay",
+        "capTwd": 1600,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "thsr",
+        "title": "高鐵",
+        "rateBp": 20,
+        "reviewed": true,
+        "needs": [
+          "需符合「當期刷卡 1～49,999 元」：0.2%"
+        ],
+        "method": "physical",
+        "capTwd": 1500,
+        "dataDate": "2026-11-23"
+      }
+    ],
+    "taishin-daquanlian": [
+      {
+        "slug": "general",
+        "title": "無腦一卡（不限通路）",
+        "rateBp": 150,
+        "reviewed": false,
+        "needs": [
+          "需完成「台新帳戶自動扣繳卡費」：設定台新帳戶自動扣繳卡費，全支付店外才是 1.5%（否則 0.8%）。",
+          "前提：大全聯福利卡號要先綁定 PX Pay，未綁定沒有福利點回饋（店內、全支付店外都一樣）。"
+        ],
+        "method": "pxpay_plus",
+        "capTwd": 1500,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "dining",
+        "title": "餐廳",
+        "rateBp": 150,
+        "reviewed": false,
+        "needs": [
+          "需完成「台新帳戶自動扣繳卡費」：設定台新帳戶自動扣繳卡費，全支付店外才是 1.5%（否則 0.8%）。",
+          "前提：大全聯福利卡號要先綁定 PX Pay，未綁定沒有福利點回饋（店內、全支付店外都一樣）。"
+        ],
+        "method": "pxpay_plus",
+        "capTwd": 1500,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "supermarket",
+        "title": "量販（全聯、大全聯、家樂福、Costco、愛買）",
+        "rateBp": 700,
+        "reviewed": false,
+        "needs": [
+          "需完成「綁定 PX Pay」：大全聯信用卡福利卡號要先綁定 PX Pay 才有店內回饋。",
+          "單筆滿 1,000 元才有加碼",
+          "前提：大全聯福利卡號要先綁定 PX Pay，未綁定沒有福利點回饋（店內、全支付店外都一樣）。"
+        ],
+        "method": "pxpay_plus",
+        "capTwd": 400,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "half-2026h2",
+        "title": "2026 下半年優惠",
+        "rateBp": 150,
+        "reviewed": false,
+        "needs": [
+          "需完成「台新帳戶自動扣繳卡費」：設定台新帳戶自動扣繳卡費，全支付店外才是 1.5%（否則 0.8%）。",
+          "前提：大全聯福利卡號要先綁定 PX Pay，未綁定沒有福利點回饋（店內、全支付店外都一樣）。"
+        ],
+        "method": "pxpay_plus",
+        "capTwd": 1500,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "monthly-2026-11",
+        "title": "2026 年 11 月優惠整理",
+        "rateBp": 150,
+        "reviewed": false,
+        "needs": [
+          "需完成「台新帳戶自動扣繳卡費」：設定台新帳戶自動扣繳卡費，全支付店外才是 1.5%（否則 0.8%）。",
+          "前提：大全聯福利卡號要先綁定 PX Pay，未綁定沒有福利點回饋（店內、全支付店外都一樣）。"
+        ],
+        "method": "pxpay_plus",
+        "capTwd": 1500,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "monthly-2026-12",
+        "title": "2026 年 12 月優惠整理",
+        "rateBp": 150,
+        "reviewed": false,
+        "needs": [
+          "需完成「台新帳戶自動扣繳卡費」：設定台新帳戶自動扣繳卡費，全支付店外才是 1.5%（否則 0.8%）。",
+          "前提：大全聯福利卡號要先綁定 PX Pay，未綁定沒有福利點回饋（店內、全支付店外都一樣）。"
+        ],
+        "method": "pxpay_plus",
+        "capTwd": 1500,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "quarter-2026q4",
+        "title": "2026 第四季優惠",
+        "rateBp": 150,
+        "reviewed": false,
+        "needs": [
+          "需完成「台新帳戶自動扣繳卡費」：設定台新帳戶自動扣繳卡費，全支付店外才是 1.5%（否則 0.8%）。",
+          "前提：大全聯福利卡號要先綁定 PX Pay，未綁定沒有福利點回饋（店內、全支付店外都一樣）。"
+        ],
+        "method": "pxpay_plus",
+        "capTwd": 1500,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "parking",
+        "title": "停車與 eTag",
+        "rateBp": 150,
+        "reviewed": false,
+        "needs": [
+          "需完成「台新帳戶自動扣繳卡費」：設定台新帳戶自動扣繳卡費，全支付店外才是 1.5%（否則 0.8%）。",
+          "前提：大全聯福利卡號要先綁定 PX Pay，未綁定沒有福利點回饋（店內、全支付店外都一樣）。"
+        ],
+        "method": "pxpay_plus",
+        "capTwd": 1500,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "annual-fee-free",
+        "title": "免年費",
+        "rateBp": 150,
+        "reviewed": false,
+        "needs": [
+          "需完成「台新帳戶自動扣繳卡費」：設定台新帳戶自動扣繳卡費，全支付店外才是 1.5%（否則 0.8%）。",
+          "前提：大全聯福利卡號要先綁定 PX Pay，未綁定沒有福利點回饋（店內、全支付店外都一樣）。"
+        ],
+        "method": "pxpay_plus",
+        "capTwd": 1500,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "pxpay-plus",
+        "title": "全支付",
+        "rateBp": 150,
+        "reviewed": false,
+        "needs": [
+          "需完成「台新帳戶自動扣繳卡費」：設定台新帳戶自動扣繳卡費，全支付店外才是 1.5%（否則 0.8%）。",
+          "前提：大全聯福利卡號要先綁定 PX Pay，未綁定沒有福利點回饋（店內、全支付店外都一樣）。"
+        ],
+        "method": "pxpay_plus",
+        "capTwd": 1500,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "tra",
+        "title": "台鐵",
+        "rateBp": 150,
+        "reviewed": false,
+        "needs": [
+          "需完成「台新帳戶自動扣繳卡費」：設定台新帳戶自動扣繳卡費，全支付店外才是 1.5%（否則 0.8%）。",
+          "前提：大全聯福利卡號要先綁定 PX Pay，未綁定沒有福利點回饋（店內、全支付店外都一樣）。"
+        ],
+        "method": "pxpay_plus",
+        "capTwd": 1500,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "wallet-best-card",
+        "title": "各錢包綁哪張卡最好",
+        "rateBp": 150,
+        "reviewed": false,
+        "needs": [
+          "需完成「台新帳戶自動扣繳卡費」：設定台新帳戶自動扣繳卡費，全支付店外才是 1.5%（否則 0.8%）。",
+          "前提：大全聯福利卡號要先綁定 PX Pay，未綁定沒有福利點回饋（店內、全支付店外都一樣）。"
+        ],
+        "method": "pxpay_plus",
+        "capTwd": 1500,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "mobile-pay",
+        "title": "行動支付總排行",
+        "rateBp": 150,
+        "reviewed": false,
+        "needs": [
+          "需完成「台新帳戶自動扣繳卡費」：設定台新帳戶自動扣繳卡費，全支付店外才是 1.5%（否則 0.8%）。",
+          "前提：大全聯福利卡號要先綁定 PX Pay，未綁定沒有福利點回饋（店內、全支付店外都一樣）。"
+        ],
+        "method": "pxpay_plus",
+        "capTwd": 1500,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "points",
+        "title": "點數卡",
+        "rateBp": 150,
+        "reviewed": false,
+        "needs": [
+          "需完成「台新帳戶自動扣繳卡費」：設定台新帳戶自動扣繳卡費，全支付店外才是 1.5%（否則 0.8%）。",
+          "前提：大全聯福利卡號要先綁定 PX Pay，未綁定沒有福利點回饋（店內、全支付店外都一樣）。"
+        ],
+        "method": "pxpay_plus",
+        "capTwd": 1500,
+        "dataDate": "2026-11-23"
+      }
+    ],
+    "tbb-yilan": [
+      {
+        "slug": "seven-eleven",
+        "title": "7-ELEVEN",
+        "rateBp": 180,
+        "reviewed": false,
+        "needs": [
+          "需符合「當期一般消費未滿 3 萬元」：依當期帳單可計回饋的消費合計。",
+          "限掃碼付款（感應支付不算）"
+        ],
+        "method": "tw_pay",
+        "capTwd": 100,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "familymart",
+        "title": "全家",
+        "rateBp": 180,
+        "reviewed": false,
+        "needs": [
+          "需符合「當期一般消費未滿 3 萬元」：依當期帳單可計回饋的消費合計。",
+          "限掃碼付款（感應支付不算）"
+        ],
+        "method": "tw_pay",
+        "capTwd": 100,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "general",
+        "title": "無腦一卡（不限通路）",
+        "rateBp": 180,
+        "reviewed": false,
+        "needs": [
+          "需符合「當期一般消費未滿 3 萬元」：依當期帳單可計回饋的消費合計。",
+          "限掃碼付款（感應支付不算）"
+        ],
+        "method": "tw_pay",
+        "capTwd": 100,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "convenience",
+        "title": "超商（7-11、全家、萊爾富、OK）",
+        "rateBp": 180,
+        "reviewed": false,
+        "needs": [
+          "需符合「當期一般消費未滿 3 萬元」：依當期帳單可計回饋的消費合計。",
+          "限掃碼付款（感應支付不算）"
+        ],
+        "method": "tw_pay",
+        "capTwd": 100,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "dining",
+        "title": "餐廳",
+        "rateBp": 180,
+        "reviewed": false,
+        "needs": [
+          "需符合「當期一般消費未滿 3 萬元」：依當期帳單可計回饋的消費合計。",
+          "限掃碼付款（感應支付不算）"
+        ],
+        "method": "tw_pay",
+        "capTwd": 100,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "half-2026h2",
+        "title": "2026 下半年優惠",
+        "rateBp": 180,
+        "reviewed": false,
+        "needs": [
+          "需符合「當期一般消費未滿 3 萬元」：依當期帳單可計回饋的消費合計。",
+          "限掃碼付款（感應支付不算）"
+        ],
+        "method": "tw_pay",
+        "capTwd": 100,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "monthly-2026-11",
+        "title": "2026 年 11 月優惠整理",
+        "rateBp": 180,
+        "reviewed": false,
+        "needs": [
+          "需符合「當期一般消費未滿 3 萬元」：依當期帳單可計回饋的消費合計。",
+          "限掃碼付款（感應支付不算）"
+        ],
+        "method": "tw_pay",
+        "capTwd": 100,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "monthly-2026-12",
+        "title": "2026 年 12 月優惠整理",
+        "rateBp": 180,
+        "reviewed": false,
+        "needs": [
+          "需符合「當期一般消費未滿 3 萬元」：依當期帳單可計回饋的消費合計。",
+          "限掃碼付款（感應支付不算）"
+        ],
+        "method": "tw_pay",
+        "capTwd": 100,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "quarter-2026q4",
+        "title": "2026 第四季優惠",
+        "rateBp": 180,
+        "reviewed": false,
+        "needs": [
+          "需符合「當期一般消費未滿 3 萬元」：依當期帳單可計回饋的消費合計。",
+          "限掃碼付款（感應支付不算）"
+        ],
+        "method": "tw_pay",
+        "capTwd": 100,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "parking",
+        "title": "停車與 eTag",
+        "rateBp": 180,
+        "reviewed": false,
+        "needs": [
+          "需符合「當期一般消費未滿 3 萬元」：依當期帳單可計回饋的消費合計。",
+          "限掃碼付款（感應支付不算）"
+        ],
+        "method": "tw_pay",
+        "capTwd": 100,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "annual-fee-free",
+        "title": "免年費",
+        "rateBp": 180,
+        "reviewed": false,
+        "needs": [
+          "需符合「當期一般消費未滿 3 萬元」：依當期帳單可計回饋的消費合計。",
+          "限掃碼付款（感應支付不算）"
+        ],
+        "method": "tw_pay",
+        "capTwd": 100,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "taiwan-pay",
+        "title": "台灣 Pay",
+        "rateBp": 180,
+        "reviewed": false,
+        "needs": [
+          "需符合「當期一般消費未滿 3 萬元」：依當期帳單可計回饋的消費合計。",
+          "限掃碼付款（感應支付不算）"
+        ],
+        "method": "tw_pay",
+        "capTwd": 100,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "cashback",
+        "title": "現金回饋",
+        "rateBp": 180,
+        "reviewed": false,
+        "needs": [
+          "需符合「當期一般消費未滿 3 萬元」：依當期帳單可計回饋的消費合計。",
+          "限掃碼付款（感應支付不算）"
+        ],
+        "method": "tw_pay",
+        "capTwd": 100,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "thsr",
+        "title": "高鐵",
+        "rateBp": 30,
+        "reviewed": false,
+        "needs": [
+          "需符合「當期一般消費未滿 3 萬元」：依當期帳單可計回饋的消費合計。"
+        ],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      }
+    ],
     "fubon-open-possible": [
       {
         "slug": "seven-eleven",
@@ -23117,6 +23263,48 @@
         "slug": "telecom",
         "title": "電信帳單",
         "rateBp": 100,
+        "reviewed": true,
+        "needs": [],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      }
+    ],
+    "skbank-skm": [
+      {
+        "slug": "familymart",
+        "title": "全家",
+        "rateBp": 30,
+        "reviewed": true,
+        "needs": [],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "pxmart",
+        "title": "全聯",
+        "rateBp": 30,
+        "reviewed": true,
+        "needs": [],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "telecom",
+        "title": "電信帳單",
+        "rateBp": 30,
+        "reviewed": true,
+        "needs": [],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "points",
+        "title": "點數卡",
+        "rateBp": 30,
         "reviewed": true,
         "needs": [],
         "method": "physical",
@@ -23970,292 +24158,6 @@
         "dataDate": "2026-11-23"
       }
     ],
-    "sinopac-mitsui-outlet": [
-      {
-        "slug": "pchome",
-        "title": "PChome",
-        "rateBp": 730,
-        "reviewed": true,
-        "needs": [
-          "需完成「電子／行動帳單＋永豐或京城帳戶自扣」：活動期間同時設定電子或行動帳單，以及用永豐或京城銀行帳戶自動扣繳永豐信用卡帳款（回饋前要完成並扣款成功）。",
-          "登錄：全盈+PAY 特選通路 7% 刷卡金（需登錄＋任務）"
-        ],
-        "method": "pluspay",
-        "capTwd": 100,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "dining",
-        "title": "餐廳",
-        "rateBp": 730,
-        "reviewed": true,
-        "needs": [
-          "需完成「電子／行動帳單＋永豐或京城帳戶自扣」：活動期間同時設定電子或行動帳單，以及用永豐或京城銀行帳戶自動扣繳永豐信用卡帳款（回饋前要完成並扣款成功）。",
-          "登錄：館外實體餐飲 7% 刷卡金（需登錄＋任務）"
-        ],
-        "method": "physical",
-        "capTwd": 100,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "familymart",
-        "title": "全家",
-        "rateBp": 700,
-        "reviewed": true,
-        "needs": [
-          "需完成「電子／行動帳單＋永豐或京城帳戶自扣」：活動期間同時設定電子或行動帳單，以及用永豐或京城銀行帳戶自動扣繳永豐信用卡帳款（回饋前要完成並扣款成功）。",
-          "登錄：全盈+PAY 特選通路 7% 刷卡金（需登錄＋任務）"
-        ],
-        "method": "pluspay",
-        "capTwd": 100,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "pluspay",
-        "title": "全盈+PAY",
-        "rateBp": 730,
-        "reviewed": true,
-        "needs": [
-          "需完成「電子／行動帳單＋永豐或京城帳戶自扣」：活動期間同時設定電子或行動帳單，以及用永豐或京城銀行帳戶自動扣繳永豐信用卡帳款（回饋前要完成並扣款成功）。",
-          "登錄：全盈+PAY 特選通路 7% 刷卡金（需登錄＋任務）"
-        ],
-        "method": "pluspay",
-        "capTwd": 100,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "tra",
-        "title": "台鐵",
-        "rateBp": 730,
-        "reviewed": true,
-        "needs": [
-          "需完成「電子／行動帳單＋永豐或京城帳戶自扣」：活動期間同時設定電子或行動帳單，以及用永豐或京城銀行帳戶自動扣繳永豐信用卡帳款（回饋前要完成並扣款成功）。",
-          "登錄：全盈+PAY 特選通路 7% 刷卡金（需登錄＋任務）"
-        ],
-        "method": "pluspay",
-        "capTwd": 100,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "drinks-coffee",
-        "title": "手搖飲和咖啡",
-        "rateBp": 730,
-        "reviewed": true,
-        "needs": [
-          "需完成「電子／行動帳單＋永豐或京城帳戶自扣」：活動期間同時設定電子或行動帳單，以及用永豐或京城銀行帳戶自動扣繳永豐信用卡帳款（回饋前要完成並扣款成功）。",
-          "登錄：館外實體餐飲 7% 刷卡金（需登錄＋任務）"
-        ],
-        "method": "physical",
-        "capTwd": 100,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "hotpot",
-        "title": "火鍋燒肉",
-        "rateBp": 730,
-        "reviewed": true,
-        "needs": [
-          "需完成「電子／行動帳單＋永豐或京城帳戶自扣」：活動期間同時設定電子或行動帳單，以及用永豐或京城銀行帳戶自動扣繳永豐信用卡帳款（回饋前要完成並扣款成功）。",
-          "登錄：館外實體餐飲 7% 刷卡金（需登錄＋任務）"
-        ],
-        "method": "physical",
-        "capTwd": 100,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "fast-food",
-        "title": "速食",
-        "rateBp": 730,
-        "reviewed": true,
-        "needs": [
-          "需完成「電子／行動帳單＋永豐或京城帳戶自扣」：活動期間同時設定電子或行動帳單，以及用永豐或京城銀行帳戶自動扣繳永豐信用卡帳款（回饋前要完成並扣款成功）。",
-          "登錄：館外實體餐飲 7% 刷卡金（需登錄＋任務）"
-        ],
-        "method": "physical",
-        "capTwd": 100,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "annual-fee-free",
-        "title": "免年費",
-        "rateBp": 30,
-        "reviewed": true,
-        "needs": [],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "pxpay-plus",
-        "title": "全支付",
-        "rateBp": 30,
-        "reviewed": true,
-        "needs": [],
-        "method": "pxpay_plus",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "cobrand",
-        "title": "聯名卡",
-        "rateBp": 30,
-        "reviewed": true,
-        "needs": [],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "points",
-        "title": "點數卡",
-        "rateBp": 30,
-        "reviewed": true,
-        "needs": [],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      }
-    ],
-    "firstbank-ileo-debit": [
-      {
-        "slug": "half-2027h1",
-        "title": "2027 上半年優惠",
-        "rateBp": 50,
-        "reviewed": true,
-        "needs": [
-          "前提：須開立 iLEO 數位帳戶；回饋存入 iLEO 數位帳戶。"
-        ],
-        "method": "physical",
-        "capTwd": 1000,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "google-pay",
-        "title": "Google Pay",
-        "rateBp": 50,
-        "reviewed": true,
-        "needs": [
-          "前提：須開立 iLEO 數位帳戶；回饋存入 iLEO 數位帳戶。"
-        ],
-        "method": "google_pay",
-        "capTwd": 1000,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "samsung-pay",
-        "title": "Samsung Pay",
-        "rateBp": 50,
-        "reviewed": true,
-        "needs": [
-          "前提：須開立 iLEO 數位帳戶；回饋存入 iLEO 數位帳戶。"
-        ],
-        "method": "samsung_pay",
-        "capTwd": 1000,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "annual-fee-free",
-        "title": "免年費",
-        "rateBp": 50,
-        "reviewed": true,
-        "needs": [
-          "前提：須開立 iLEO 數位帳戶；回饋存入 iLEO 數位帳戶。"
-        ],
-        "method": "physical",
-        "capTwd": 1000,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "pxmart",
-        "title": "全聯",
-        "rateBp": 50,
-        "reviewed": true,
-        "needs": [
-          "前提：須開立 iLEO 數位帳戶；回饋存入 iLEO 數位帳戶。"
-        ],
-        "method": "physical",
-        "capTwd": 1000,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "debit",
-        "title": "簽帳金融卡",
-        "rateBp": 50,
-        "reviewed": true,
-        "needs": [
-          "前提：須開立 iLEO 數位帳戶；回饋存入 iLEO 數位帳戶。"
-        ],
-        "method": "physical",
-        "capTwd": 1000,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "supermarket",
-        "title": "量販（全聯、大全聯、家樂福、Costco、愛買）",
-        "rateBp": 50,
-        "reviewed": true,
-        "needs": [
-          "前提：須開立 iLEO 數位帳戶；回饋存入 iLEO 數位帳戶。"
-        ],
-        "method": "physical",
-        "capTwd": 1000,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "telecom",
-        "title": "電信帳單",
-        "rateBp": 50,
-        "reviewed": true,
-        "needs": [
-          "前提：須開立 iLEO 數位帳戶；回饋存入 iLEO 數位帳戶。"
-        ],
-        "method": "physical",
-        "capTwd": 1000,
-        "dataDate": "2026-11-23"
-      }
-    ],
-    "skbank-skm": [
-      {
-        "slug": "familymart",
-        "title": "全家",
-        "rateBp": 30,
-        "reviewed": true,
-        "needs": [],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "pxmart",
-        "title": "全聯",
-        "rateBp": 30,
-        "reviewed": true,
-        "needs": [],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "telecom",
-        "title": "電信帳單",
-        "rateBp": 30,
-        "reviewed": true,
-        "needs": [],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "points",
-        "title": "點數卡",
-        "rateBp": 30,
-        "reviewed": true,
-        "needs": [],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      }
-    ],
     "dbs-eco-plus": [
       {
         "slug": "apple-pay",
@@ -24537,6 +24439,171 @@
         "needs": [],
         "method": "physical",
         "capTwd": null,
+        "dataDate": "2026-11-23"
+      }
+    ],
+    "firstbank-ileo-debit": [
+      {
+        "slug": "half-2027h1",
+        "title": "2027 上半年優惠",
+        "rateBp": 50,
+        "reviewed": true,
+        "needs": [
+          "前提：須開立 iLEO 數位帳戶；回饋存入 iLEO 數位帳戶。"
+        ],
+        "method": "physical",
+        "capTwd": 1000,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "google-pay",
+        "title": "Google Pay",
+        "rateBp": 50,
+        "reviewed": true,
+        "needs": [
+          "前提：須開立 iLEO 數位帳戶；回饋存入 iLEO 數位帳戶。"
+        ],
+        "method": "google_pay",
+        "capTwd": 1000,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "samsung-pay",
+        "title": "Samsung Pay",
+        "rateBp": 50,
+        "reviewed": true,
+        "needs": [
+          "前提：須開立 iLEO 數位帳戶；回饋存入 iLEO 數位帳戶。"
+        ],
+        "method": "samsung_pay",
+        "capTwd": 1000,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "annual-fee-free",
+        "title": "免年費",
+        "rateBp": 50,
+        "reviewed": true,
+        "needs": [
+          "前提：須開立 iLEO 數位帳戶；回饋存入 iLEO 數位帳戶。"
+        ],
+        "method": "physical",
+        "capTwd": 1000,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "pxmart",
+        "title": "全聯",
+        "rateBp": 50,
+        "reviewed": true,
+        "needs": [
+          "前提：須開立 iLEO 數位帳戶；回饋存入 iLEO 數位帳戶。"
+        ],
+        "method": "physical",
+        "capTwd": 1000,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "debit",
+        "title": "簽帳金融卡",
+        "rateBp": 50,
+        "reviewed": true,
+        "needs": [
+          "前提：須開立 iLEO 數位帳戶；回饋存入 iLEO 數位帳戶。"
+        ],
+        "method": "physical",
+        "capTwd": 1000,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "supermarket",
+        "title": "量販（全聯、大全聯、家樂福、Costco、愛買）",
+        "rateBp": 50,
+        "reviewed": true,
+        "needs": [
+          "前提：須開立 iLEO 數位帳戶；回饋存入 iLEO 數位帳戶。"
+        ],
+        "method": "physical",
+        "capTwd": 1000,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "telecom",
+        "title": "電信帳單",
+        "rateBp": 50,
+        "reviewed": true,
+        "needs": [
+          "前提：須開立 iLEO 數位帳戶；回饋存入 iLEO 數位帳戶。"
+        ],
+        "method": "physical",
+        "capTwd": 1000,
+        "dataDate": "2026-11-23"
+      }
+    ],
+    "firstbank-living-green": [
+      {
+        "slug": "ev-charging",
+        "title": "充電",
+        "rateBp": 500,
+        "reviewed": false,
+        "needs": [
+          "單筆滿 1,000 元才有加碼",
+          "登錄：樂活通路 5%（需登錄、單筆滿千）"
+        ],
+        "method": "physical",
+        "capTwd": 200,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "tra",
+        "title": "台鐵",
+        "rateBp": 500,
+        "reviewed": false,
+        "needs": [
+          "單筆滿 1,000 元才有加碼",
+          "登錄：樂活通路 5%（需登錄、單筆滿千）"
+        ],
+        "method": "physical",
+        "capTwd": 200,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "drugstore",
+        "title": "藥妝",
+        "rateBp": 500,
+        "reviewed": false,
+        "needs": [
+          "單筆滿 1,000 元才有加碼",
+          "登錄：樂活通路 5%（需登錄、單筆滿千）"
+        ],
+        "method": "physical",
+        "capTwd": 200,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "supermarket",
+        "title": "量販（全聯、大全聯、家樂福、Costco、愛買）",
+        "rateBp": 500,
+        "reviewed": false,
+        "needs": [
+          "單筆滿 1,000 元才有加碼",
+          "登錄：樂活通路 5%（需登錄、單筆滿千）"
+        ],
+        "method": "physical",
+        "capTwd": 200,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "thsr",
+        "title": "高鐵",
+        "rateBp": 500,
+        "reviewed": false,
+        "needs": [
+          "單筆滿 1,000 元才有加碼",
+          "登錄：樂活通路 5%（需登錄、單筆滿千）"
+        ],
+        "method": "physical",
+        "capTwd": 200,
         "dataDate": "2026-11-23"
       }
     ],
@@ -24980,115 +25047,6 @@
         "dataDate": "2026-11-23"
       }
     ],
-    "firstbank-living-green": [
-      {
-        "slug": "ev-charging",
-        "title": "充電",
-        "rateBp": 500,
-        "reviewed": false,
-        "needs": [
-          "單筆滿 1,000 元才有加碼",
-          "登錄：樂活通路 5%（需登錄、單筆滿千）"
-        ],
-        "method": "physical",
-        "capTwd": 200,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "tra",
-        "title": "台鐵",
-        "rateBp": 500,
-        "reviewed": false,
-        "needs": [
-          "單筆滿 1,000 元才有加碼",
-          "登錄：樂活通路 5%（需登錄、單筆滿千）"
-        ],
-        "method": "physical",
-        "capTwd": 200,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "drugstore",
-        "title": "藥妝",
-        "rateBp": 500,
-        "reviewed": false,
-        "needs": [
-          "單筆滿 1,000 元才有加碼",
-          "登錄：樂活通路 5%（需登錄、單筆滿千）"
-        ],
-        "method": "physical",
-        "capTwd": 200,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "supermarket",
-        "title": "量販（全聯、大全聯、家樂福、Costco、愛買）",
-        "rateBp": 500,
-        "reviewed": false,
-        "needs": [
-          "單筆滿 1,000 元才有加碼",
-          "登錄：樂活通路 5%（需登錄、單筆滿千）"
-        ],
-        "method": "physical",
-        "capTwd": 200,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "thsr",
-        "title": "高鐵",
-        "rateBp": 500,
-        "reviewed": false,
-        "needs": [
-          "單筆滿 1,000 元才有加碼",
-          "登錄：樂活通路 5%（需登錄、單筆滿千）"
-        ],
-        "method": "physical",
-        "capTwd": 200,
-        "dataDate": "2026-11-23"
-      }
-    ],
-    "tcb-i-sport": [
-      {
-        "slug": "ev-charging",
-        "title": "充電",
-        "rateBp": 50,
-        "reviewed": false,
-        "needs": [],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "annual-fee-free",
-        "title": "免年費",
-        "rateBp": 50,
-        "reviewed": false,
-        "needs": [],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "tra",
-        "title": "台鐵",
-        "rateBp": 50,
-        "reviewed": false,
-        "needs": [],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "thsr",
-        "title": "高鐵",
-        "rateBp": 50,
-        "reviewed": false,
-        "needs": [],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      }
-    ],
     "esun-icash": [
       {
         "slug": "icash-pay",
@@ -25161,23 +25119,15 @@
         "dataDate": "2026-11-23"
       }
     ],
-    "scb-cashback": [
+    "ctbc-lexus": [
       {
-        "slug": "parking",
-        "title": "停車與 eTag",
-        "rateBp": 100,
+        "slug": "fuel",
+        "title": "加油",
+        "rateBp": 133,
         "reviewed": false,
-        "needs": [],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "cashback",
-        "title": "現金回饋",
-        "rateBp": 100,
-        "reviewed": false,
-        "needs": [],
+        "needs": [
+          "前提：LEXUS 車主或車主的配偶、子女、父母、兄弟姊妹；固定年收入 NT$120 萬以上或近 2 個月平均資產 150 萬元以上"
+        ],
         "method": "physical",
         "capTwd": null,
         "dataDate": "2026-11-23"
@@ -25275,20 +25225,6 @@
         "reviewed": false,
         "needs": [
           "前提：限公務人員"
-        ],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      }
-    ],
-    "ctbc-lexus": [
-      {
-        "slug": "fuel",
-        "title": "加油",
-        "rateBp": 133,
-        "reviewed": false,
-        "needs": [
-          "前提：LEXUS 車主或車主的配偶、子女、父母、兄弟姊妹；固定年收入 NT$120 萬以上或近 2 個月平均資產 150 萬元以上"
         ],
         "method": "physical",
         "capTwd": null,
@@ -25891,51 +25827,114 @@
         "dataDate": "2026-11-23"
       }
     ],
-    "sinopac-sea-mastercard": [
+    "tcb-i-sport": [
       {
-        "slug": "telecom",
-        "title": "電信帳單",
-        "rateBp": 300,
-        "reviewed": true,
-        "needs": [
-          "需完成「申辦電子／行動帳單」：電信 2.4% 需要；一般消費不需要。",
-          "前提：限外籍人士（需居留證與工作證明）"
-        ],
+        "slug": "ev-charging",
+        "title": "充電",
+        "rateBp": 50,
+        "reviewed": false,
+        "needs": [],
         "method": "physical",
-        "capTwd": 100,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "google-pay",
-        "title": "Google Pay",
-        "rateBp": 60,
-        "reviewed": true,
-        "needs": [
-          "前提：限外籍人士（需居留證與工作證明）"
-        ],
-        "method": "google_pay",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "samsung-pay",
-        "title": "Samsung Pay",
-        "rateBp": 60,
-        "reviewed": true,
-        "needs": [
-          "前提：限外籍人士（需居留證與工作證明）"
-        ],
-        "method": "samsung_pay",
         "capTwd": null,
         "dataDate": "2026-11-23"
       },
       {
         "slug": "annual-fee-free",
         "title": "免年費",
-        "rateBp": 60,
+        "rateBp": 50,
+        "reviewed": false,
+        "needs": [],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "tra",
+        "title": "台鐵",
+        "rateBp": 50,
+        "reviewed": false,
+        "needs": [],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "thsr",
+        "title": "高鐵",
+        "rateBp": 50,
+        "reviewed": false,
+        "needs": [],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      }
+    ],
+    "scb-cashback": [
+      {
+        "slug": "parking",
+        "title": "停車與 eTag",
+        "rateBp": 100,
+        "reviewed": false,
+        "needs": [],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "cashback",
+        "title": "現金回饋",
+        "rateBp": 100,
+        "reviewed": false,
+        "needs": [],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      }
+    ],
+    "taishin-benz-infinite": [
+      {
+        "slug": "travel-agency",
+        "title": "旅行社",
+        "rateBp": 300,
         "reviewed": true,
         "needs": [
-          "前提：限外籍人士（需居留證與工作證明）"
+          "前提：限 Mercedes-Benz 車主申辦"
+        ],
+        "method": "physical",
+        "capTwd": 10000,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "department",
+        "title": "百貨（含週年慶）",
+        "rateBp": 300,
+        "reviewed": true,
+        "needs": [
+          "前提：限 Mercedes-Benz 車主申辦"
+        ],
+        "method": "physical",
+        "capTwd": 10000,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "half-2027h1",
+        "title": "2027 上半年優惠",
+        "rateBp": 30,
+        "reviewed": true,
+        "needs": [
+          "前提：限 Mercedes-Benz 車主申辦"
+        ],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "insurance",
+        "title": "保費",
+        "rateBp": 30,
+        "reviewed": true,
+        "needs": [
+          "前提：限 Mercedes-Benz 車主申辦"
         ],
         "method": "physical",
         "capTwd": null,
@@ -25944,13 +25943,186 @@
       {
         "slug": "pxpay-plus",
         "title": "全支付",
-        "rateBp": 60,
+        "rateBp": 30,
         "reviewed": true,
         "needs": [
-          "前提：限外籍人士（需居留證與工作證明）"
+          "前提：限 Mercedes-Benz 車主申辦"
         ],
         "method": "pxpay_plus",
         "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "tax",
+        "title": "繳稅",
+        "rateBp": 30,
+        "reviewed": true,
+        "needs": [
+          "前提：限 Mercedes-Benz 車主申辦"
+        ],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "premium",
+        "title": "頂級卡（貴賓室）",
+        "rateBp": 30,
+        "reviewed": true,
+        "needs": [
+          "前提：限 Mercedes-Benz 車主申辦"
+        ],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "points",
+        "title": "點數卡",
+        "rateBp": 30,
+        "reviewed": true,
+        "needs": [
+          "前提：限 Mercedes-Benz 車主申辦"
+        ],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      }
+    ],
+    "ctbc-sogo": [
+      {
+        "slug": "department",
+        "title": "百貨（含週年慶）",
+        "rateBp": 300,
+        "reviewed": false,
+        "needs": [],
+        "method": "physical",
+        "capTwd": 2500,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "google-pay",
+        "title": "Google Pay",
+        "rateBp": 50,
+        "reviewed": false,
+        "needs": [],
+        "method": "google_pay",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "samsung-pay",
+        "title": "Samsung Pay",
+        "rateBp": 50,
+        "reviewed": false,
+        "needs": [],
+        "method": "samsung_pay",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "china",
+        "title": "中國",
+        "rateBp": 50,
+        "reviewed": false,
+        "needs": [],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "canada",
+        "title": "加拿大",
+        "rateBp": 50,
+        "reviewed": false,
+        "needs": [],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "indonesia",
+        "title": "印尼",
+        "rateBp": 50,
+        "reviewed": false,
+        "needs": [],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "singapore",
+        "title": "新加坡",
+        "rateBp": 50,
+        "reviewed": false,
+        "needs": [],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "thailand",
+        "title": "泰國",
+        "rateBp": 50,
+        "reviewed": false,
+        "needs": [],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "australia",
+        "title": "澳洲",
+        "rateBp": 50,
+        "reviewed": false,
+        "needs": [],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "macau",
+        "title": "澳門",
+        "rateBp": 50,
+        "reviewed": false,
+        "needs": [],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "switzerland",
+        "title": "瑞士",
+        "rateBp": 50,
+        "reviewed": false,
+        "needs": [],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "new-zealand",
+        "title": "紐西蘭",
+        "rateBp": 50,
+        "reviewed": false,
+        "needs": [],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      }
+    ],
+    "firstbank-mandarina": [
+      {
+        "slug": "department",
+        "title": "百貨（含週年慶）",
+        "rateBp": 300,
+        "reviewed": false,
+        "needs": [
+          "單筆滿 1,000 元才有加碼",
+          "登錄：百貨公司 單筆滿 1,000 元 3% 刷卡金（需登錄）"
+        ],
+        "method": "physical",
+        "capTwd": 300,
         "dataDate": "2026-11-23"
       }
     ],
@@ -26223,241 +26395,6 @@
         ],
         "method": "physical",
         "capTwd": null,
-        "dataDate": "2026-11-23"
-      }
-    ],
-    "taishin-benz-infinite": [
-      {
-        "slug": "travel-agency",
-        "title": "旅行社",
-        "rateBp": 300,
-        "reviewed": true,
-        "needs": [
-          "前提：限 Mercedes-Benz 車主申辦"
-        ],
-        "method": "physical",
-        "capTwd": 10000,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "department",
-        "title": "百貨（含週年慶）",
-        "rateBp": 300,
-        "reviewed": true,
-        "needs": [
-          "前提：限 Mercedes-Benz 車主申辦"
-        ],
-        "method": "physical",
-        "capTwd": 10000,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "half-2027h1",
-        "title": "2027 上半年優惠",
-        "rateBp": 30,
-        "reviewed": true,
-        "needs": [
-          "前提：限 Mercedes-Benz 車主申辦"
-        ],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "insurance",
-        "title": "保費",
-        "rateBp": 30,
-        "reviewed": true,
-        "needs": [
-          "前提：限 Mercedes-Benz 車主申辦"
-        ],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "pxpay-plus",
-        "title": "全支付",
-        "rateBp": 30,
-        "reviewed": true,
-        "needs": [
-          "前提：限 Mercedes-Benz 車主申辦"
-        ],
-        "method": "pxpay_plus",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "tax",
-        "title": "繳稅",
-        "rateBp": 30,
-        "reviewed": true,
-        "needs": [
-          "前提：限 Mercedes-Benz 車主申辦"
-        ],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "premium",
-        "title": "頂級卡（貴賓室）",
-        "rateBp": 30,
-        "reviewed": true,
-        "needs": [
-          "前提：限 Mercedes-Benz 車主申辦"
-        ],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "points",
-        "title": "點數卡",
-        "rateBp": 30,
-        "reviewed": true,
-        "needs": [
-          "前提：限 Mercedes-Benz 車主申辦"
-        ],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      }
-    ],
-    "ctbc-sogo": [
-      {
-        "slug": "department",
-        "title": "百貨（含週年慶）",
-        "rateBp": 300,
-        "reviewed": false,
-        "needs": [],
-        "method": "physical",
-        "capTwd": 2500,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "google-pay",
-        "title": "Google Pay",
-        "rateBp": 50,
-        "reviewed": false,
-        "needs": [],
-        "method": "google_pay",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "samsung-pay",
-        "title": "Samsung Pay",
-        "rateBp": 50,
-        "reviewed": false,
-        "needs": [],
-        "method": "samsung_pay",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "china",
-        "title": "中國",
-        "rateBp": 50,
-        "reviewed": false,
-        "needs": [],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "canada",
-        "title": "加拿大",
-        "rateBp": 50,
-        "reviewed": false,
-        "needs": [],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "indonesia",
-        "title": "印尼",
-        "rateBp": 50,
-        "reviewed": false,
-        "needs": [],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "singapore",
-        "title": "新加坡",
-        "rateBp": 50,
-        "reviewed": false,
-        "needs": [],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "thailand",
-        "title": "泰國",
-        "rateBp": 50,
-        "reviewed": false,
-        "needs": [],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "australia",
-        "title": "澳洲",
-        "rateBp": 50,
-        "reviewed": false,
-        "needs": [],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "macau",
-        "title": "澳門",
-        "rateBp": 50,
-        "reviewed": false,
-        "needs": [],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "switzerland",
-        "title": "瑞士",
-        "rateBp": 50,
-        "reviewed": false,
-        "needs": [],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      },
-      {
-        "slug": "new-zealand",
-        "title": "紐西蘭",
-        "rateBp": 50,
-        "reviewed": false,
-        "needs": [],
-        "method": "physical",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      }
-    ],
-    "firstbank-mandarina": [
-      {
-        "slug": "department",
-        "title": "百貨（含週年慶）",
-        "rateBp": 300,
-        "reviewed": false,
-        "needs": [
-          "單筆滿 1,000 元才有加碼",
-          "登錄：百貨公司 單筆滿 1,000 元 3% 刷卡金（需登錄）"
-        ],
-        "method": "physical",
-        "capTwd": 300,
         "dataDate": "2026-11-23"
       }
     ],
@@ -26813,6 +26750,69 @@
         "reviewed": false,
         "needs": [],
         "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      }
+    ],
+    "sinopac-sea-mastercard": [
+      {
+        "slug": "telecom",
+        "title": "電信帳單",
+        "rateBp": 300,
+        "reviewed": true,
+        "needs": [
+          "需完成「申辦電子／行動帳單」：電信 2.4% 需要；一般消費不需要。",
+          "前提：限外籍人士（需居留證與工作證明）"
+        ],
+        "method": "physical",
+        "capTwd": 100,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "google-pay",
+        "title": "Google Pay",
+        "rateBp": 60,
+        "reviewed": true,
+        "needs": [
+          "前提：限外籍人士（需居留證與工作證明）"
+        ],
+        "method": "google_pay",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "samsung-pay",
+        "title": "Samsung Pay",
+        "rateBp": 60,
+        "reviewed": true,
+        "needs": [
+          "前提：限外籍人士（需居留證與工作證明）"
+        ],
+        "method": "samsung_pay",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "annual-fee-free",
+        "title": "免年費",
+        "rateBp": 60,
+        "reviewed": true,
+        "needs": [
+          "前提：限外籍人士（需居留證與工作證明）"
+        ],
+        "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      },
+      {
+        "slug": "pxpay-plus",
+        "title": "全支付",
+        "rateBp": 60,
+        "reviewed": true,
+        "needs": [
+          "前提：限外籍人士（需居留證與工作證明）"
+        ],
+        "method": "pxpay_plus",
         "capTwd": null,
         "dataDate": "2026-11-23"
       }
@@ -27323,18 +27323,6 @@
         "dataDate": "2026-11-23"
       }
     ],
-    "rakuten-tigerair": [
-      {
-        "slug": "jkopay",
-        "title": "街口支付",
-        "rateBp": 50,
-        "reviewed": false,
-        "needs": [],
-        "method": "jkopay",
-        "capTwd": null,
-        "dataDate": "2026-11-23"
-      }
-    ],
     "taishin-skm": [
       {
         "slug": "pxpay-plus",
@@ -27353,6 +27341,18 @@
         "reviewed": false,
         "needs": [],
         "method": "physical",
+        "capTwd": null,
+        "dataDate": "2026-11-23"
+      }
+    ],
+    "rakuten-tigerair": [
+      {
+        "slug": "jkopay",
+        "title": "街口支付",
+        "rateBp": 50,
+        "reviewed": false,
+        "needs": [],
+        "method": "jkopay",
         "capTwd": null,
         "dataDate": "2026-11-23"
       }

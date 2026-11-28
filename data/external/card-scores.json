@@ -2,14 +2,14 @@
   "license": "CC BY 4.0（https://creativecommons.org/licenses/by/4.0/deed.zh-hant）",
   "attribution": "台灣支付優惠站 https://pay.elggum.com",
   "disclaimer_zh": "本資料整理自銀行與支付業者公開資訊，可能有誤或已變更，實際回饋以各機構公告為準。謹慎理財 信用至上。",
-  "data_date": "2026-11-23",
-  "generated_at": "2026-11-23T11:52:49.924Z",
+  "data_date": "2026-11-28",
+  "generated_at": "2026-11-28T05:37:59.563Z",
   "formula_version": "persona-v1",
   "method_zh": "每月淨回饋：把每月刷卡金額（小資 1 萬、一般 3 萬、重度 8 萬）依消費比重分到各商店，每家店用該類別的中間單筆金額算回饋，同一個上限跨商店合併，再扣海外手續費與年費的 1/12。lists[消費習慣][付款習慣] 依 monthly_once（做一次就好）由高到低排序；monthly_base 是不用做任何事的金額；tie＝true 表示和同組並列（差距小於每月消費的 0.05%）。詳見 https://pay.elggum.com/methodology/#score",
   "default_persona": "normal",
   "default_habit": "physical",
   "version": "persona-v1",
-  "date": "2026-11-23",
+  "date": "2026-11-28",
   "tie_ratio": 0.0005,
   "personas": [
     "light",
@@ -275,6 +275,22 @@
           "tie": true
         },
         {
+          "card_id": "chb-my-shopping",
+          "card_name": "彰銀鈦金商旅卡（My購卡）",
+          "monthly_once": 114.62,
+          "monthly_base": 111.1,
+          "rate_bp": 114.62,
+          "fee_month": 0,
+          "fee_month_once": 0,
+          "fee_month_base": 0,
+          "tags": [
+            "register",
+            "task"
+          ],
+          "valid_to": "2026-12-31",
+          "tie": true
+        },
+        {
           "card_id": "esun-ubear",
           "card_name": "玉山 U Bear 信用卡",
           "monthly_once": 112.99,
@@ -303,23 +319,7 @@
             "wallet"
           ],
           "valid_to": "2026-12-31",
-          "tie": true
-        },
-        {
-          "card_id": "chb-my-shopping",
-          "card_name": "彰銀鈦金商旅卡（My購卡）",
-          "monthly_once": 109.52,
-          "monthly_base": 106,
-          "rate_bp": 109.52,
-          "fee_month": 0,
-          "fee_month_once": 0,
-          "fee_month_base": 0,
-          "tags": [
-            "register",
-            "task"
-          ],
-          "valid_to": "2026-12-31",
-          "tie": true
+          "tie": false
         },
         {
           "card_id": "ubot-linebank",
@@ -2211,9 +2211,9 @@
         {
           "card_id": "taishin-skm",
           "card_name": "台新 新光三越聯名卡（無限／世界卡）",
-          "monthly_once": -360.51,
-          "monthly_base": -360.51,
-          "rate_bp": -360.51,
+          "monthly_once": -360.37,
+          "monthly_base": -360.37,
+          "rate_bp": -360.37,
           "fee_month": 375,
           "fee_month_once": 375,
           "fee_month_base": 375,
@@ -2738,6 +2738,23 @@
           "tie": true
         },
         {
+          "card_id": "chb-my-shopping",
+          "card_name": "彰銀鈦金商旅卡（My購卡）",
+          "monthly_once": 118.04,
+          "monthly_base": 114.52,
+          "rate_bp": 118.04,
+          "fee_month": 0,
+          "fee_month_once": 0,
+          "fee_month_base": 0,
+          "tags": [
+            "register",
+            "task",
+            "wallet"
+          ],
+          "valid_to": "2026-12-31",
+          "tie": true
+        },
+        {
           "card_id": "sino-cashcard-jcb",
           "card_name": "永豐 現金回饋 JCB 卡",
           "monthly_once": 117.66,
@@ -2787,23 +2804,6 @@
           "monthly_once": 114.58,
           "monthly_base": 14.58,
           "rate_bp": 114.58,
-          "fee_month": 0,
-          "fee_month_once": 0,
-          "fee_month_base": 0,
-          "tags": [
-            "register",
-            "task",
-            "wallet"
-          ],
-          "valid_to": "2026-12-31",
-          "tie": true
-        },
-        {
-          "card_id": "chb-my-shopping",
-          "card_name": "彰銀鈦金商旅卡（My購卡）",
-          "monthly_once": 112.95,
-          "monthly_base": 109.43,
-          "rate_bp": 112.95,
           "fee_month": 0,
           "fee_month_once": 0,
           "fee_month_base": 0,
@@ -4737,9 +4737,9 @@
         {
           "card_id": "taishin-skm",
           "card_name": "台新 新光三越聯名卡（無限／世界卡）",
-          "monthly_once": -360.48,
-          "monthly_base": -360.48,
-          "rate_bp": -360.48,
+          "monthly_once": -360.34,
+          "monthly_base": -360.34,
+          "rate_bp": -360.34,
           "fee_month": 375,
           "fee_month_once": 375,
           "fee_month_base": 375,
@@ -5195,6 +5195,22 @@
           "tie": true
         },
         {
+          "card_id": "chb-my-shopping",
+          "card_name": "彰銀鈦金商旅卡（My購卡）",
+          "monthly_once": 332.65,
+          "monthly_base": 321.02,
+          "rate_bp": 110.88,
+          "fee_month": 0,
+          "fee_month_once": 0,
+          "fee_month_base": 0,
+          "tags": [
+            "register",
+            "task"
+          ],
+          "valid_to": "2026-12-31",
+          "tie": true
+        },
+        {
           "card_id": "sino-green",
           "card_name": "永豐 現金回饋 Green 卡",
           "monthly_once": 325.24,
@@ -5204,22 +5220,6 @@
           "fee_month_once": 0,
           "fee_month_base": 0,
           "tags": [
-            "task"
-          ],
-          "valid_to": "2026-12-31",
-          "tie": true
-        },
-        {
-          "card_id": "chb-my-shopping",
-          "card_name": "彰銀鈦金商旅卡（My購卡）",
-          "monthly_once": 321.42,
-          "monthly_base": 309.79,
-          "rate_bp": 107.14,
-          "fee_month": 0,
-          "fee_month_once": 0,
-          "fee_month_base": 0,
-          "tags": [
-            "register",
             "task"
           ],
           "valid_to": "2026-12-31",
@@ -6716,6 +6716,21 @@
           "tie": true
         },
         {
+          "card_id": "taishin-skm",
+          "card_name": "台新 新光三越聯名卡（無限／世界卡）",
+          "monthly_once": 44,
+          "monthly_base": 44,
+          "rate_bp": 14.67,
+          "fee_month": 0,
+          "fee_month_once": 0,
+          "fee_month_base": 0,
+          "tags": [
+            "estimated"
+          ],
+          "valid_to": "2026-12-31",
+          "tie": true
+        },
+        {
           "card_id": "taishin-skm-park",
           "card_name": "台新 SKM Park Outlets 聯名卡",
           "monthly_once": 43.53,
@@ -6725,21 +6740,6 @@
           "fee_month_once": 0,
           "fee_month_base": 0,
           "tags": [],
-          "valid_to": "2026-12-31",
-          "tie": true
-        },
-        {
-          "card_id": "taishin-skm",
-          "card_name": "台新 新光三越聯名卡（無限／世界卡）",
-          "monthly_once": 43.53,
-          "monthly_base": 43.53,
-          "rate_bp": 14.51,
-          "fee_month": 0,
-          "fee_month_once": 0,
-          "fee_month_base": 0,
-          "tags": [
-            "estimated"
-          ],
           "valid_to": "2026-12-31",
           "tie": true
         },
@@ -7668,7 +7668,24 @@
             "wallet"
           ],
           "valid_to": "2026-12-31",
-          "tie": false
+          "tie": true
+        },
+        {
+          "card_id": "chb-my-shopping",
+          "card_name": "彰銀鈦金商旅卡（My購卡）",
+          "monthly_once": 340.2,
+          "monthly_base": 328.57,
+          "rate_bp": 113.4,
+          "fee_month": 0,
+          "fee_month_once": 0,
+          "fee_month_base": 0,
+          "tags": [
+            "register",
+            "task",
+            "wallet"
+          ],
+          "valid_to": "2026-12-31",
+          "tie": true
         },
         {
           "card_id": "ctbc-allme",
@@ -7680,23 +7697,6 @@
           "fee_month_once": 0,
           "fee_month_base": 0,
           "tags": [
-            "wallet"
-          ],
-          "valid_to": "2026-12-31",
-          "tie": true
-        },
-        {
-          "card_id": "chb-my-shopping",
-          "card_name": "彰銀鈦金商旅卡（My購卡）",
-          "monthly_once": 328.98,
-          "monthly_base": 317.35,
-          "rate_bp": 109.66,
-          "fee_month": 0,
-          "fee_month_once": 0,
-          "fee_month_base": 0,
-          "tags": [
-            "register",
-            "task",
             "wallet"
           ],
           "valid_to": "2026-12-31",
@@ -9246,6 +9246,22 @@
           "tie": true
         },
         {
+          "card_id": "taishin-skm",
+          "card_name": "台新 新光三越聯名卡（無限／世界卡）",
+          "monthly_once": 44.08,
+          "monthly_base": 44.08,
+          "rate_bp": 14.69,
+          "fee_month": 0,
+          "fee_month_once": 0,
+          "fee_month_base": 0,
+          "tags": [
+            "wallet",
+            "estimated"
+          ],
+          "valid_to": "2026-12-31",
+          "tie": true
+        },
+        {
           "card_id": "taishin-skm-park",
           "card_name": "台新 SKM Park Outlets 聯名卡",
           "monthly_once": 43.62,
@@ -9256,22 +9272,6 @@
           "fee_month_base": 0,
           "tags": [
             "wallet"
-          ],
-          "valid_to": "2026-12-31",
-          "tie": true
-        },
-        {
-          "card_id": "taishin-skm",
-          "card_name": "台新 新光三越聯名卡（無限／世界卡）",
-          "monthly_once": 43.62,
-          "monthly_base": 43.62,
-          "rate_bp": 14.54,
-          "fee_month": 0,
-          "fee_month_once": 0,
-          "fee_month_base": 0,
-          "tags": [
-            "wallet",
-            "estimated"
           ],
           "valid_to": "2026-12-31",
           "tie": true
@@ -10066,6 +10066,22 @@
           "tie": false
         },
         {
+          "card_id": "chb-my-shopping",
+          "card_name": "彰銀鈦金商旅卡（My購卡）",
+          "monthly_once": 865.54,
+          "monthly_base": 835.84,
+          "rate_bp": 108.19,
+          "fee_month": 0,
+          "fee_month_once": 0,
+          "fee_month_base": 0,
+          "tags": [
+            "register",
+            "task"
+          ],
+          "valid_to": "2026-12-31",
+          "tie": true
+        },
+        {
           "card_id": "hsbc-travelone-signature",
           "card_name": "滙豐 旅人御璽卡",
           "monthly_once": 854.32,
@@ -10088,22 +10104,6 @@
           "fee_month_once": 0,
           "fee_month_base": 0,
           "tags": [
-            "task"
-          ],
-          "valid_to": "2026-12-31",
-          "tie": true
-        },
-        {
-          "card_id": "chb-my-shopping",
-          "card_name": "彰銀鈦金商旅卡（My購卡）",
-          "monthly_once": 836.88,
-          "monthly_base": 807.17,
-          "rate_bp": 104.61,
-          "fee_month": 0,
-          "fee_month_once": 0,
-          "fee_month_base": 0,
-          "tags": [
-            "register",
             "task"
           ],
           "valid_to": "2026-12-31",
@@ -11812,6 +11812,21 @@
           "tie": true
         },
         {
+          "card_id": "taishin-skm",
+          "card_name": "台新 新光三越聯名卡（無限／世界卡）",
+          "monthly_once": 91.11,
+          "monthly_base": 91.11,
+          "rate_bp": 11.39,
+          "fee_month": 0,
+          "fee_month_once": 0,
+          "fee_month_base": 0,
+          "tags": [
+            "estimated"
+          ],
+          "valid_to": "2026-12-31",
+          "tie": true
+        },
+        {
           "card_id": "taishin-skm-park",
           "card_name": "台新 SKM Park Outlets 聯名卡",
           "monthly_once": 89.92,
@@ -11821,21 +11836,6 @@
           "fee_month_once": 0,
           "fee_month_base": 0,
           "tags": [],
-          "valid_to": "2026-12-31",
-          "tie": true
-        },
-        {
-          "card_id": "taishin-skm",
-          "card_name": "台新 新光三越聯名卡（無限／世界卡）",
-          "monthly_once": 89.92,
-          "monthly_base": 89.92,
-          "rate_bp": 11.24,
-          "fee_month": 0,
-          "fee_month_once": 0,
-          "fee_month_base": 0,
-          "tags": [
-            "estimated"
-          ],
           "valid_to": "2026-12-31",
           "tie": true
         },
@@ -12511,6 +12511,23 @@
           "tie": true
         },
         {
+          "card_id": "chb-my-shopping",
+          "card_name": "彰銀鈦金商旅卡（My購卡）",
+          "monthly_once": 884.83,
+          "monthly_base": 855.13,
+          "rate_bp": 110.6,
+          "fee_month": 0,
+          "fee_month_once": 0,
+          "fee_month_base": 0,
+          "tags": [
+            "register",
+            "task",
+            "wallet"
+          ],
+          "valid_to": "2026-12-31",
+          "tie": true
+        },
+        {
           "card_id": "ctbc-allme",
           "card_name": "中信 ALL ME 卡",
           "monthly_once": 861.69,
@@ -12520,23 +12537,6 @@
           "fee_month_once": 0,
           "fee_month_base": 0,
           "tags": [
-            "wallet"
-          ],
-          "valid_to": "2026-12-31",
-          "tie": true
-        },
-        {
-          "card_id": "chb-my-shopping",
-          "card_name": "彰銀鈦金商旅卡（My購卡）",
-          "monthly_once": 856.16,
-          "monthly_base": 826.46,
-          "rate_bp": 107.02,
-          "fee_month": 0,
-          "fee_month_once": 0,
-          "fee_month_base": 0,
-          "tags": [
-            "register",
-            "task",
             "wallet"
           ],
           "valid_to": "2026-12-31",
@@ -14359,6 +14359,22 @@
           "tie": true
         },
         {
+          "card_id": "taishin-skm",
+          "card_name": "台新 新光三越聯名卡（無限／世界卡）",
+          "monthly_once": 91.34,
+          "monthly_base": 91.34,
+          "rate_bp": 11.42,
+          "fee_month": 0,
+          "fee_month_once": 0,
+          "fee_month_base": 0,
+          "tags": [
+            "wallet",
+            "estimated"
+          ],
+          "valid_to": "2026-12-31",
+          "tie": true
+        },
+        {
           "card_id": "taishin-skm-park",
           "card_name": "台新 SKM Park Outlets 聯名卡",
           "monthly_once": 90.15,
@@ -14369,22 +14385,6 @@
           "fee_month_base": 0,
           "tags": [
             "wallet"
-          ],
-          "valid_to": "2026-12-31",
-          "tie": true
-        },
-        {
-          "card_id": "taishin-skm",
-          "card_name": "台新 新光三越聯名卡（無限／世界卡）",
-          "monthly_once": 90.15,
-          "monthly_base": 90.15,
-          "rate_bp": 11.27,
-          "fee_month": 0,
-          "fee_month_once": 0,
-          "fee_month_base": 0,
-          "tags": [
-            "wallet",
-            "estimated"
           ],
           "valid_to": "2026-12-31",
           "tie": true

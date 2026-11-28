@@ -2,7 +2,7 @@
   "license": "CC BY 4.0（https://creativecommons.org/licenses/by/4.0/deed.zh-hant）",
   "attribution": "台灣支付優惠站 https://pay.elggum.com",
   "disclaimer_zh": "本資料整理自銀行與支付業者公開資訊，可能有誤或已變更，實際回饋以各機構公告為準。謹慎理財 信用至上。",
-  "data_date": "2026-11-23",
+  "data_date": "2026-11-28",
   "slug": "shopee",
   "title_zh": "蝦皮",
   "amount_twd": 1000,
@@ -824,7 +824,6 @@
           200
         ]
       },
-      "tie": true,
       "reviewed": true
     },
     {
@@ -2599,6 +2598,74 @@
       "reviewed": true
     },
     {
+      "card_id": "chb-my-shopping",
+      "card_name": "彰銀鈦金商旅卡（My購卡）",
+      "confidence": "official_x2",
+      "basic": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 40,
+        "net_rate_bp": 400,
+        "cap_twd_max": 300,
+        "max_spend_twd": 10000,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "once": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 40,
+        "net_rate_bp": 400,
+        "cap_twd_max": 300,
+        "max_spend_twd": 10000,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "best": {
+        "method": "physical",
+        "plan": null,
+        "tier": null,
+        "net_twd_per_1000": 40,
+        "net_rate_bp": 400,
+        "cap_twd_max": 300,
+        "max_spend_twd": 10000,
+        "base_uncapped": true,
+        "cap_points_max": null,
+        "requirements": [],
+        "needs_registration": false
+      },
+      "monthly": {
+        "twd": [
+          1000,
+          3000,
+          10000
+        ],
+        "base": [
+          40,
+          120,
+          400
+        ],
+        "best": [
+          40,
+          120,
+          400
+        ],
+        "once": [
+          40,
+          120,
+          400
+        ]
+      },
+      "tie": true,
+      "reviewed": false
+    },
+    {
       "card_id": "scsb-teresa",
       "card_name": "上海商銀 TeresaCard 悠遊極緻卡",
       "confidence": "official_only",
@@ -3160,74 +3227,6 @@
           200
         ]
       },
-      "reviewed": false
-    },
-    {
-      "card_id": "chb-my-shopping",
-      "card_name": "彰銀鈦金商旅卡（My購卡）",
-      "confidence": "official_x2",
-      "basic": {
-        "method": "physical",
-        "plan": null,
-        "tier": null,
-        "net_twd_per_1000": 20,
-        "net_rate_bp": 200,
-        "cap_twd_max": 300,
-        "max_spend_twd": 30000,
-        "base_uncapped": true,
-        "cap_points_max": null,
-        "requirements": [],
-        "needs_registration": false
-      },
-      "once": {
-        "method": "physical",
-        "plan": null,
-        "tier": null,
-        "net_twd_per_1000": 20,
-        "net_rate_bp": 200,
-        "cap_twd_max": 300,
-        "max_spend_twd": 30000,
-        "base_uncapped": true,
-        "cap_points_max": null,
-        "requirements": [],
-        "needs_registration": false
-      },
-      "best": {
-        "method": "physical",
-        "plan": null,
-        "tier": null,
-        "net_twd_per_1000": 20,
-        "net_rate_bp": 200,
-        "cap_twd_max": 300,
-        "max_spend_twd": 30000,
-        "base_uncapped": true,
-        "cap_points_max": null,
-        "requirements": [],
-        "needs_registration": false
-      },
-      "monthly": {
-        "twd": [
-          1000,
-          3000,
-          10000
-        ],
-        "base": [
-          20,
-          60,
-          200
-        ],
-        "best": [
-          20,
-          60,
-          200
-        ],
-        "once": [
-          20,
-          60,
-          200
-        ]
-      },
-      "tie": true,
       "reviewed": false
     },
     {
